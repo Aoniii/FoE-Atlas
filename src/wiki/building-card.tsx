@@ -2,7 +2,7 @@ import type { AgeBuilding, Output, Reward } from "@/core/building"
 import { roadShare, tileCount } from "@/core/efficiency"
 import type { StatKey } from "@/core/stats"
 import { localized, useI18n } from "@/lib/i18n"
-import { formatNumber, formatStat, longStatLabel } from "./format"
+import { eventLabel, formatNumber, formatStat, longStatLabel } from "./format"
 import { StatIcon } from "./stat-icon"
 
 // Everything a building gives at the selected age, shown when hovering its name
@@ -31,7 +31,9 @@ export function BuildingCard({ building }: { building: AgeBuilding }) {
             {formatNumber(tileCount(building.size, building.road), locale, 1)}{" "}
             {t.wiki.tiles.toLowerCase()}
           </p>
-          {building.event && <p className="text-xs text-muted-foreground">{building.event}</p>}
+          {building.event && (
+            <p className="text-xs text-muted-foreground">{eventLabel(building, locale)}</p>
+          )}
         </div>
       </div>
 

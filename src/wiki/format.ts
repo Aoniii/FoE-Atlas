@@ -1,5 +1,7 @@
+import type { AgeBuilding } from "@/core/building"
+import { EVENTS } from "@/core/events"
 import { STATS, type StatDef, type StatKey } from "@/core/stats"
-import type { Locale, Messages } from "@/lib/i18n"
+import { localized, type Locale, type Messages } from "@/lib/i18n"
 
 export function formatNumber(value: number, locale: Locale, maximumFractionDigits = 0): string {
   return new Intl.NumberFormat(locale, { maximumFractionDigits }).format(value)
@@ -18,4 +20,16 @@ const GROUPED_LABELS = new Set(["goods", "attacking_army", "defending_army", "qu
 export function longStatLabel(t: Messages, key: StatKey): string {
   const { group } = STATS[key] as StatDef
   return GROUPED_LABELS.has(group) ? `${t.statGroups[group]} · ${t.stats[key]}` : t.stats[key]
+}
+
+// Event family name, or its raw id when not named yet in src/core/events.ts
+export function eventName(id: string, locale: Locale): string {
+  return EVENTS[id] ? localized(EVENTS[id], locale) : id
+}
+
+// "Hiver 2025"
+export function eventLabel(building: AgeBuilding, locale: Locale): string | undefined {
+  if (!building.event) return undefined
+  const name = eventName(building.event, locale)
+  return building.eventYear ? `${name} ${building.eventYear}` : name
 }

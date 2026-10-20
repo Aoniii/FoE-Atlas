@@ -79,7 +79,9 @@ export const BuildingSchema = z.object({
   name: LocalizedSchema,
   type: BuildingTypeSchema,
   image: z.url().optional(),
+  // Event family id (see events.ts) and year, from the image asset id
   event: z.string().optional(),
+  eventYear: z.number().int().optional(),
   // Upgrade chain (e.g. Terrace Farm Lv. 1 -> Lv. 2): every level is its own building
   chain: z.object({ id: z.string().min(1), level: z.number().int().positive() }).optional(),
   size: SizeSchema,

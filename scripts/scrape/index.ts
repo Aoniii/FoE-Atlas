@@ -12,6 +12,7 @@ import { createInterface } from "node:readline/promises"
 import { parseArgs, parseEnv } from "node:util"
 import { z } from "zod"
 import { BuildingSchema, LocalizedSchema, type Building } from "../../src/core/building"
+import { eventFromAsset } from "./events"
 import { statIcons, typeFromId } from "./mappings"
 import {
   buildingIdFromUrl,
@@ -229,12 +230,14 @@ async function main() {
   let invalid = 0
   for (const [id, { title, building }] of parsed) {
     const override = overrides[id] ?? {}
+    const event = eventFromAsset(building.assetId)
     const candidate: Building = {
       id,
       name: { fr: frTitles.get(id) ?? title, en: title, ...override.name },
       type: typeFromId(building.assetId),
       image: building.image,
-      event: override.event ?? building.event,
+      event: override.event ?? event?.event,
+      eventYear: event?.year,
       chain: chainOf(title, titles),
       size: building.size,
       road: building.road,

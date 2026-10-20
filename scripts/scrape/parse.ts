@@ -22,7 +22,6 @@ export type ParsedBuilding = {
   image: string
   size: Size
   road: Road
-  event?: string
   ages: Partial<Record<AgeId, AgeData>>
 }
 
@@ -370,7 +369,6 @@ export function parseBuildingPage(wikitext: string): {
   const street = property(wikitext, "Required Street") ?? property(wikitext, "Street") ?? ""
   const lanes = street.match(/(\d)x\d/)?.[1]
   const road: Road = lanes === "2" ? "two_lane" : lanes === "1" ? "road" : "none"
-  const event = stripMarkup(property(wikitext, "Introduced with") ?? "") || undefined
 
   const rows = parseEraTable(wikitext)
   // Single-age buildings, settlements and Great Buildings use another table layout
@@ -417,7 +415,6 @@ export function parseBuildingPage(wikitext: string): {
       image: image[0],
       size: { w: Number(sizeMatch[1]), h: Number(sizeMatch[2]) },
       road,
-      event,
       ages,
     },
     issues,

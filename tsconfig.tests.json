@@ -4,5 +4,11 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tests.tsbuildinfo",
     "types": ["vite/client", "node"]
   },
-  "include": ["src", "scripts/scrape/parse.ts", "scripts/scrape/mappings.ts", "tests"]
+  "include": [
+    "src",
+    "scripts/scrape/parse.ts",
+    "scripts/scrape/mappings.ts",
+    "scripts/scrape/events.ts",
+    "tests"
+  ]
 }

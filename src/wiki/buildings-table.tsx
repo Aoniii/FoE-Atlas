@@ -20,7 +20,7 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 import { localized, useI18n, type Locale, type Messages } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { BuildingCard } from "./building-card"
-import { formatNumber, formatStat, longStatLabel } from "./format"
+import { eventLabel, formatNumber, formatStat, longStatLabel } from "./format"
 import { StatIcon } from "./stat-icon"
 import type { WikiRow } from "./data"
 
@@ -120,7 +120,7 @@ function NameCell({ row }: { row: WikiRow }) {
       <HoverCardContent side="right" align="start" className="w-80">
         <BuildingCard building={building} />
       </HoverCardContent>
-      {building.event && <Sub>{building.event}</Sub>}
+      {building.event && <Sub>{eventLabel(building, locale)}</Sub>}
     </HoverCard>
   )
 }

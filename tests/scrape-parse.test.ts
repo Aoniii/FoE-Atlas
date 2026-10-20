@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs"
 import { describe, expect, it } from "vitest"
+import { eventFromAsset } from "../scripts/scrape/events"
 import { iconKey, isBuildingPage, parseBuildingPage } from "../scripts/scrape/parse"
 
 // Trimmed copy of the official wiki page structure (values shortened)
@@ -19,14 +20,13 @@ describe("scraper parser", () => {
     )
   })
 
-  it("reads asset id, image, size, road and event", () => {
+  it("reads asset id, image, size and road", () => {
     expect(building).toMatchObject({
       assetId: "P_SS_MultiAge_Expedition16",
       image:
         "https://foeen.innogamescdn.com/assets/city/buildings/P_SS_MultiAge_Expedition16-cf9a5a730.png",
       size: { w: 5, h: 6 },
       road: "road",
-      event: "Events and Questlines",
     })
   })
 
@@ -127,5 +127,27 @@ describe("scraper parser, age-independent properties", () => {
 
   it("reports productions that are not daily", () => {
     expect(issues).toContainEqual({ kind: "non_daily_production", detail: "10h Production" })
+  })
+})
+
+describe("event from asset id", () => {
+  it.each([
+    ["W_SS_MultiAge_WIN25A2", { event: "winter", year: 2025 }],
+    ["W_SS_MultiAge_FALL24D1", { event: "fall", year: 2024 }],
+    ["W_SS_MultiAge_COP24E7TEMP", { event: "cultural_settlements", year: 2024 }],
+    ["R_SS_MultiAge_SummerBonus21b", { event: "summer", year: 2021 }],
+    ["W_SS_MultiAge_HalloweenBonusGP22g", { event: "halloween", year: 2022 }],
+    ["W_SS_MultiAge_GBGWatchtower2023B", { event: "gbg", year: 2023 }],
+    ["P_SS_MultiAge_Expedition16", { event: "guild_expeditions", year: 2016 }],
+    ["R_SS_MultiAge_CulturalBuilding7i", { event: "cultural_settlements" }],
+    ["W_SS_MultiAge_Anw23A1", { event: "old", year: 2023 }],
+    ["D_SS_MultiAge_SpringBonusSet18a", { event: "spring", year: 2018 }],
+    ["R_SS_MultiAge_EasterBonus4", { event: "easter" }],
+  ])("%s", (assetId, expected) => {
+    expect(eventFromAsset(assetId)).toEqual(expected)
+  })
+
+  it("ignores ids that are not special buildings", () => {
+    expect(eventFromAsset("R_BronzeAge_Hut1")).toBeUndefined()
   })
 })

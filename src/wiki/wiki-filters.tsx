@@ -42,7 +42,7 @@ type FiltersProps = {
   ages: AgeId[]
   age: AgeId
   onAgeChange: (age: AgeId) => void
-  events: string[]
+  events: { value: string; label: string }[]
   event: string | undefined
   onEventChange: (event: string | undefined) => void
   visibleStats: StatKey[]
@@ -57,10 +57,7 @@ export function WikiFilters(props: FiltersProps) {
     value: age.id,
     label: localized(age.name, locale),
   }))
-  const eventItems = [
-    { value: ALL_EVENTS, label: t.wiki.allEvents },
-    ...props.events.map((event) => ({ value: event, label: event })),
-  ]
+  const eventItems = [{ value: ALL_EVENTS, label: t.wiki.allEvents }, ...props.events]
 
   return (
     <div className="flex flex-wrap items-end gap-3">

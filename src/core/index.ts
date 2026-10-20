@@ -1,4 +1,5 @@
 export * from "./ages"
 export * from "./building"
 export * from "./efficiency"
+export * from "./events"
 export * from "./stats"

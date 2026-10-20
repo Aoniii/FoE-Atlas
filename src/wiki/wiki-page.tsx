@@ -7,7 +7,7 @@ import { useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
 import { BuildingsTable } from "./buildings-table"
 import { toRows } from "./data"
-import { formatNumber } from "./format"
+import { eventName, formatNumber } from "./format"
 import { StatIconsContext } from "./stat-icons-context"
 import { ScorePanel, WikiFilters } from "./wiki-filters"
 
@@ -45,10 +45,14 @@ export function WikiPage() {
 
   const types = useMemo(() => [...new Set(buildings.map((b) => b.type))].sort(), [buildings])
   const ofType = useMemo(() => buildings.filter((b) => b.type === type), [buildings, type])
-  const events = useMemo(
-    () => [...new Set(ofType.flatMap((b) => (b.event ? [b.event] : [])))].sort(),
-    [ofType],
-  )
+  // Event families present, with their number of buildings, sorted by name
+  const events = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const b of ofType) if (b.event) counts.set(b.event, (counts.get(b.event) ?? 0) + 1)
+    return [...counts]
+      .map(([id, count]) => ({ value: id, label: `${eventName(id, locale)} (${count})` }))
+      .sort((a, b) => a.label.localeCompare(b.label, locale))
+  }, [ofType, locale])
   const showScore = type === "special" && scoreKeys.length > 0
   const rows = useMemo(() => {
     const shown = search.event ? ofType.filter((b) => b.event === search.event) : ofType
