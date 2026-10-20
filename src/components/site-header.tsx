@@ -18,7 +18,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="mx-auto flex h-14 w-full max-w-screen-2xl items-center gap-2 px-4">
         <Link to="/" className="mr-2 flex items-center gap-2" aria-label="FoE Atlas">
-          <img src="/favicon.svg" alt="" className="size-6" />
+          <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="size-6" />
           <span className="hidden font-semibold sm:inline">FoE Atlas</span>
         </Link>
         <nav className="flex items-center gap-1">

@@ -16,8 +16,13 @@ function HomePage() {
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-8 py-10">
       <section className="flex flex-col items-start gap-4">
-        <img src="/favicon.svg" alt="" className="size-14" />
-        <h1 className="text-4xl font-semibold tracking-tight">FoE Atlas</h1>
+        <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="size-14" />
+        <h1 className="flex items-baseline gap-3 text-4xl font-semibold tracking-tight">
+          FoE Atlas
+          <span className="font-mono text-sm font-normal text-muted-foreground">
+            v{__APP_VERSION__}
+          </span>
+        </h1>
         <p className="text-lg text-muted-foreground">{t.home.tagline}</p>
         <Link to="/wiki" className={buttonVariants({ size: "lg" })}>
           {t.home.openWiki}
