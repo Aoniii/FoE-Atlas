@@ -20,12 +20,13 @@ const DEFAULT_VISIBLE: StatKey[] = [
   "def_army_att_classic",
   "def_army_def_classic",
 ]
-// FP, goods of the 3 ages and every army boost (both armies, all contexts)
+// FP, goods of the 3 ages, guild goods and every army boost (both armies, all contexts)
 const DEFAULT_SCORE: StatKey[] = [
   "fp",
   "goods_prev",
   "goods",
   "goods_next",
+  "guild_goods",
   ...statsOfGroup("attacking_army"),
   ...statsOfGroup("defending_army"),
 ]
@@ -39,7 +40,7 @@ export function WikiPage() {
   const type: BuildingType = search.type ?? "special"
   const age = search.age ?? LATEST_AGE
   const [visibleStats, setVisibleStats] = usePersistentState("wiki.columns.v2", DEFAULT_VISIBLE)
-  const [scoreKeys, setScoreKeys] = usePersistentState("wiki.score.v2", DEFAULT_SCORE)
+  const [scoreKeys, setScoreKeys] = usePersistentState("wiki.score.v3", DEFAULT_SCORE)
 
   const types = useMemo(() => [...new Set(buildings.map((b) => b.type))].sort(), [buildings])
   const ofType = useMemo(() => buildings.filter((b) => b.type === type), [buildings, type])
@@ -81,6 +82,10 @@ export function WikiPage() {
         onEventChange={(value) => navigate({ search: (s) => ({ ...s, event: value }) })}
         visibleStats={visibleStats}
         onToggleStat={(key, on) => setVisibleStats((list) => toggle(list, key, on))}
+        onReset={() => {
+          setVisibleStats(DEFAULT_VISIBLE)
+          setScoreKeys(DEFAULT_SCORE)
+        }}
       />
 
       {type === "special" && (

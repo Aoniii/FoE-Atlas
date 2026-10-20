@@ -106,6 +106,13 @@ function buildColumns(t: Messages, locale: Locale) {
   ])
 }
 
+// Column widths in px (the name column wraps, numbers never do)
+function columnWidth(id: string): number {
+  if (id === "name") return 280
+  if (id === "tiles" || id === "score") return 96
+  return 120
+}
+
 function Sub({ children }: { children: React.ReactNode }) {
   return <span className="block text-xs text-muted-foreground">{children}</span>
 }
@@ -208,7 +215,9 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
   const paddingBottom = items.length
     ? virtualizer.getTotalSize() - (items[items.length - 1].end - scrollMargin)
     : 0
-  const columnCount = table.getVisibleLeafColumns().length
+  const leafColumns = table.getVisibleLeafColumns()
+  const columnCount = leafColumns.length
+  const tableWidth = leafColumns.reduce((sum, column) => sum + columnWidth(column.id), 0)
 
   if (!sortedRows.length) {
     return <p className="py-10 text-center text-muted-foreground">{t.wiki.empty}</p>
@@ -216,7 +225,16 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
 
   return (
     <div className="overflow-x-auto rounded-lg border">
-      <table className="w-full border-collapse text-sm">
+      {/* Fixed widths: with virtualized rows, content-based widths would change on scroll */}
+      <table
+        className="w-full table-fixed border-collapse text-sm"
+        style={{ minWidth: tableWidth }}
+      >
+        <colgroup>
+          {leafColumns.map((column) => (
+            <col key={column.id} style={{ width: columnWidth(column.id) }} />
+          ))}
+        </colgroup>
         <thead className="bg-muted/40">
           {table.getHeaderGroups().map((group) => (
             <tr key={group.id}>
@@ -265,8 +283,8 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
                     className={cn(
                       "px-3 py-2 align-top whitespace-nowrap",
                       cell.column.id === "name"
-                        ? "min-w-64 text-left whitespace-normal"
-                        : "min-w-24 text-right",
+                        ? "text-left whitespace-normal"
+                        : "truncate text-right",
                     )}
                   >
                     {cell.column.id === "name" &&

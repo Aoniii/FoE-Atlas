@@ -1,4 +1,4 @@
-import { Columns3 } from "lucide-react"
+import { Columns3, RotateCcw } from "lucide-react"
 import { AGES, type AgeId } from "@/core/ages"
 import type { BuildingType } from "@/core/building"
 import { isScorable } from "@/core/efficiency"
@@ -47,6 +47,7 @@ type FiltersProps = {
   onEventChange: (event: string | undefined) => void
   visibleStats: StatKey[]
   onToggleStat: (key: StatKey, visible: boolean) => void
+  onReset: () => void
 }
 
 export function WikiFilters(props: FiltersProps) {
@@ -150,6 +151,11 @@ export function WikiFilters(props: FiltersProps) {
           </DropdownMenuContent>
         </DropdownMenu>
       </Field>
+
+      <Button variant="ghost" onClick={props.onReset}>
+        <RotateCcw />
+        {t.wiki.reset}
+      </Button>
     </div>
   )
 }
