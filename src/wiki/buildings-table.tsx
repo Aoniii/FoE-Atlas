@@ -16,12 +16,11 @@ import {
 import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react"
 import { STATS, STAT_KEYS, type StatKey } from "@/core/stats"
-import { Badge } from "@/components/ui/badge"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { localized, useI18n, type Locale, type Messages } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { BuildingCard } from "./building-card"
-import { eventLabel, formatNumber, formatStat, fullStatLabel } from "./format"
+import { eventLabel, formatNumber, formatStat, fullStatLabel, scoreColor } from "./format"
 import { StatIcon } from "./stat-icon"
 import type { WikiRow } from "./data"
 
@@ -36,6 +35,21 @@ const helper = createColumnHelper<typeof features, WikiRow>()
 
 function buildColumns(t: Messages, locale: Locale) {
   return helper.columns([
+    // First column: the score as a colored pill (see scoreColor)
+    helper.accessor((row) => row.score, {
+      id: "score",
+      header: t.wiki.score,
+      sortDescFirst: true,
+      enableHiding: false,
+      cell: ({ row }) => (
+        <span
+          className="inline-block min-w-14 rounded-full px-2.5 py-0.5 text-center text-xs font-semibold text-white"
+          style={{ backgroundColor: scoreColor(row.original.score) }}
+        >
+          {formatNumber(row.original.score, locale, 2)}
+        </span>
+      ),
+    }),
     helper.accessor((row) => localized(row.building.name, locale), {
       id: "name",
       header: t.wiki.building,
@@ -82,17 +96,6 @@ function buildColumns(t: Messages, locale: Locale) {
         },
       }),
     ),
-    helper.accessor((row) => row.score, {
-      id: "score",
-      header: t.wiki.score,
-      sortDescFirst: true,
-      enableHiding: false,
-      cell: ({ row }) => (
-        <span className="font-semibold text-primary">
-          {formatNumber(row.original.score, locale, 2)}
-        </span>
-      ),
-    }),
   ])
 }
 
@@ -276,11 +279,6 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
                         : "truncate text-right",
                     )}
                   >
-                    {cell.column.id === "name" &&
-                      item.index === 0 &&
-                      sorting[0]?.id === "score" && (
-                        <Badge className="mr-2 align-middle">{t.wiki.top}</Badge>
-                      )}
                     <table.FlexRender cell={cell} />
                   </td>
                 ))}
