@@ -58,9 +58,11 @@ function addRewards(stats: StatBlock, rewards: Reward[], factor: number) {
 
 // Flattens an age's details into one value per stat. Random rewards count
 // for their expected value (chance x amount); items are display-only.
-export function aggregateStats(age: AgeData): StatBlock {
+// The building is assumed motivated unless told otherwise.
+export function aggregateStats(age: AgeData, { motivated = true } = {}): StatBlock {
   const stats: StatBlock = { ...age.passive }
   for (const output of age.production) {
+    if (output.motivated && !motivated) continue
     if (output.kind === "guaranteed") addRewards(stats, output.rewards, 1)
     else for (const option of output.options) addRewards(stats, option.rewards, option.chance / 100)
   }

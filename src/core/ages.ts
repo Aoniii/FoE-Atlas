@@ -31,6 +31,10 @@ export const AGES = [
     id: "SpaceAgeSpaceHub",
     name: { fr: "Âge spatial – Chantier spatial", en: "Space Age Space Hub" },
   },
+  {
+    id: "StellarAgeDiscovery",
+    name: { fr: "Âge stellaire – Découverte", en: "Stellar Age: Discovery" },
+  },
 ] as const
 
 export type AgeId = (typeof AGES)[number]["id"]

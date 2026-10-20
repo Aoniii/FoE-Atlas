@@ -1,7 +1,7 @@
 PID_FILE := .dev.pid
 LOG_FILE := .dev.log
 
-.PHONY: dev stop format check test
+.PHONY: dev stop format check test scraper
 
 # Start the Vite dev server in the background (own process group, so stop kills it all)
 dev:
@@ -38,3 +38,7 @@ check:
 # Run unit tests
 test:
 	pnpm test
+
+# Scrape the official wiki into data/ (ARGS="--limit 10" for a sample, "--offline" to re-parse the cache)
+scraper:
+	GAME_VERSION=$(GAME_VERSION) pnpm scrape $(ARGS)

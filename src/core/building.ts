@@ -26,11 +26,17 @@ export const RandomOptionSchema = z.object({
   rewards: z.array(RewardSchema).min(1),
 })
 
-// One line of the 24h production: always given, or one random pick among options
+// One line of the 24h production: always given, or one random pick among options.
+// `motivated`: only produced when the building is motivated.
 export const OutputSchema = z.discriminatedUnion("kind", [
-  z.object({ kind: z.literal("guaranteed"), rewards: z.array(RewardSchema).min(1) }),
+  z.object({
+    kind: z.literal("guaranteed"),
+    motivated: z.boolean().optional(),
+    rewards: z.array(RewardSchema).min(1),
+  }),
   z.object({
     kind: z.literal("random"),
+    motivated: z.boolean().optional(),
     options: z
       .array(RandomOptionSchema)
       .min(1)
@@ -68,6 +74,7 @@ export const SizeSchema = z.object({
 })
 
 export const BuildingSchema = z.object({
+  // Slug of the English wiki title: unique, unlike image asset ids shared by levels
   id: z.string().min(1),
   name: LocalizedSchema,
   type: BuildingTypeSchema,

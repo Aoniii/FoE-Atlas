@@ -91,9 +91,34 @@ describe("score", () => {
   })
 })
 
+describe("aggregateStats", () => {
+  const age = {
+    passive: {},
+    production: [
+      {
+        kind: "guaranteed" as const,
+        rewards: [{ type: "stat" as const, stat: "fp" as const, amount: 5 }],
+      },
+      {
+        kind: "guaranteed" as const,
+        motivated: true,
+        rewards: [{ type: "stat" as const, stat: "fp" as const, amount: 3 }],
+      },
+    ],
+  }
+
+  it("counts motivated production by default", () => {
+    expect(aggregateStats(age)).toEqual({ fp: 8 })
+  })
+
+  it("can ignore motivated production", () => {
+    expect(aggregateStats(age, { motivated: false })).toEqual({ fp: 5 })
+  })
+})
+
 describe("BuildingSchema", () => {
   const terraceFarm = {
-    id: "P_SS_MultiAge_Expedition16",
+    id: "terrace_farm",
     name: { fr: "Ferme en terrasses", en: "Terrace Farm" },
     type: "special",
     chain: { id: "terrace_farm", level: 1 },
