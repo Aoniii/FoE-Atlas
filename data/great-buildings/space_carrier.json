@@ -1,0 +1,790 @@
+{
+  "id": "space_carrier",
+  "name": {
+    "fr": "Transporteur spatial",
+    "en": "Space Carrier"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_SpaceAgeAsteroidBelt_Landmark1-fba95eec0.png",
+  "age": "SpaceAgeAsteroidBelt",
+  "size": {
+    "w": 7,
+    "h": 4
+  },
+  "road": "road",
+  "description": {
+    "fr": "Le transporteur spatial relie les cités tout autour du globe et même sur d'autres planètes. Les communications améliorées augmentent les richesses de notre cité principale.",
+    "en": "The Space Carrier connects cities all around the globe and even other planets. Thus, better communication increases the resources in our main city."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_special_goods-ce3ff4ea1.png",
+      "name": {
+        "fr": "Navette orbitale",
+        "en": "Orbital Transfer"
+      },
+      "text": {
+        "fr": "Produit des ressources spéciales toutes les 24 heures après avoir atteint le Futur arctique. Les chances et types de ressources spéciales varient dans les âges ultérieurs au Futur arctique. Produit des médailles des âges précédents.",
+        "en": "Produces special resources every 24 hours after reaching Arctic Future. The chances and types of special resources vary in the eras after Arctic Future. Produces medals in previous eras."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_diplomatic_gifts-855d0b0bf.png",
+      "name": {
+        "fr": "Cadeaux diplomatiques",
+        "en": "Diplomatic Gifts"
+      },
+      "text": {
+        "fr": "Les premières combinaisons réussies lors d'une négociation (colonies exclues) ont une chance de vous octroyer une récompense aléatoire.",
+        "en": "The first number of victorious negotiation combination games (excluding settlements) have a chance of providing you with a random reward."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_special_goods-ce3ff4ea1.png",
+        "label": {
+          "fr": "Navette orbitale",
+          "en": "Orbital Transfer"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_diplomatic_gifts-855d0b0bf.png",
+        "label": {
+          "fr": "Cadeaux diplomatiques (#)",
+          "en": "Diplomatic Gifts (#)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_diplomatic_gifts-855d0b0bf.png",
+        "label": {
+          "fr": "Cadeaux diplomatiques (%)",
+          "en": "Diplomatic Gifts (%)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 90,
+        "values": [
+          "10",
+          "4",
+          "7%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 150,
+        "values": [
+          "12",
+          "4",
+          "9%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 260,
+        "values": [
+          "14",
+          "4",
+          "11%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 390,
+        "values": [
+          "16",
+          "4",
+          "13%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 540,
+        "values": [
+          "17",
+          "5",
+          "15%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 670,
+        "values": [
+          "19",
+          "5",
+          "17%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 830,
+        "values": [
+          "21",
+          "5",
+          "19%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 990,
+        "values": [
+          "23",
+          "5",
+          "21%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 1140,
+        "values": [
+          "24",
+          "5",
+          "23%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 1300,
+        "values": [
+          "26",
+          "5",
+          "25%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 1333,
+        "values": [
+          "28",
+          "5",
+          "25.62%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 1366,
+        "values": [
+          "29",
+          "5",
+          "26.25%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 1400,
+        "values": [
+          "30",
+          "5",
+          "26.87%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 1435,
+        "values": [
+          "31",
+          "5",
+          "27.49%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 1471,
+        "values": [
+          "32",
+          "5",
+          "28.11%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1508,
+        "values": [
+          "33",
+          "6",
+          "28.72%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1546,
+        "values": [
+          "34",
+          "6",
+          "29.33%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1584,
+        "values": [
+          "35",
+          "6",
+          "29.93%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1624,
+        "values": [
+          "36",
+          "6",
+          "30.53%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1665,
+        "values": [
+          "37",
+          "6",
+          "31.12%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1706,
+        "values": [
+          "38",
+          "6",
+          "31.71%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1749,
+        "values": [
+          "39",
+          "6",
+          "32.28%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1793,
+        "values": [
+          "40",
+          "6",
+          "32.85%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1837,
+        "values": [
+          "41",
+          "6",
+          "33.41%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1883,
+        "values": [
+          "42",
+          "6",
+          "33.96%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1930,
+        "values": [
+          "43",
+          "6",
+          "34.5%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1979,
+        "values": [
+          "44",
+          "6",
+          "35.03%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 2028,
+        "values": [
+          "45",
+          "7",
+          "35.55%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 2079,
+        "values": [
+          "46",
+          "7",
+          "36.06%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 2131,
+        "values": [
+          "47",
+          "7",
+          "36.55%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 2184,
+        "values": [
+          "48",
+          "7",
+          "37.04%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 2239,
+        "values": [
+          "49",
+          "7",
+          "37.51%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 2294,
+        "values": [
+          "50",
+          "7",
+          "37.98%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 2352,
+        "values": [
+          "51",
+          "7",
+          "38.43%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 2411,
+        "values": [
+          "52",
+          "7",
+          "38.86%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 2471,
+        "values": [
+          "53",
+          "7",
+          "39.29%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 2533,
+        "values": [
+          "53",
+          "7",
+          "39.71%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 2596,
+        "values": [
+          "54",
+          "7",
+          "40.11%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 2661,
+        "values": [
+          "55",
+          "7",
+          "40.5%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 2727,
+        "values": [
+          "56",
+          "7",
+          "40.88%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 2796,
+        "values": [
+          "57",
+          "8",
+          "41.25%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 2865,
+        "values": [
+          "58",
+          "8",
+          "41.6%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 2937,
+        "values": [
+          "58",
+          "8",
+          "41.94%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 3010,
+        "values": [
+          "59",
+          "8",
+          "42.28%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 3086,
+        "values": [
+          "60",
+          "8",
+          "42.6%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 3163,
+        "values": [
+          "61",
+          "8",
+          "42.91%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 3242,
+        "values": [
+          "61",
+          "8",
+          "43.21%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 3323,
+        "values": [
+          "62",
+          "8",
+          "43.49%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 3406,
+        "values": [
+          "63",
+          "8",
+          "43.77%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 3491,
+        "values": [
+          "64",
+          "8",
+          "44.04%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 3578,
+        "values": [
+          "64",
+          "8",
+          "44.3%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 3668,
+        "values": [
+          "65",
+          "8",
+          "44.55%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 3759,
+        "values": [
+          "65",
+          "8",
+          "44.78%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 3853,
+        "values": [
+          "66",
+          "8",
+          "45.01%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 3950,
+        "values": [
+          "67",
+          "8",
+          "45.23%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 4049,
+        "values": [
+          "67",
+          "8",
+          "45.44%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 4150,
+        "values": [
+          "68",
+          "8",
+          "45.65%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 4253,
+        "values": [
+          "68",
+          "9",
+          "45.84%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 4360,
+        "values": [
+          "69",
+          "9",
+          "46.03%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 4469,
+        "values": [
+          "69",
+          "9",
+          "46.21%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 4580,
+        "values": [
+          "70",
+          "9",
+          "46.38%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 4695,
+        "values": [
+          "70",
+          "9",
+          "46.54%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 4812,
+        "values": [
+          "70",
+          "9",
+          "46.7%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 4933,
+        "values": [
+          "71",
+          "9",
+          "46.85%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 5056,
+        "values": [
+          "71",
+          "9",
+          "47%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 5182,
+        "values": [
+          "72",
+          "9",
+          "47.13%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 5312,
+        "values": [
+          "72",
+          "9",
+          "47.27%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 5445,
+        "values": [
+          "72",
+          "9",
+          "47.39%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 5581,
+        "values": [
+          "73",
+          "9",
+          "47.51%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 5720,
+        "values": [
+          "73",
+          "9",
+          "47.63%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 5863,
+        "values": [
+          "73",
+          "9",
+          "47.74%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 6010,
+        "values": [
+          "74",
+          "9",
+          "47.84%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 6160,
+        "values": [
+          "74",
+          "9",
+          "47.95%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 6314,
+        "values": [
+          "74",
+          "9",
+          "48.04%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 6472,
+        "values": [
+          "74",
+          "9",
+          "48.13%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 6634,
+        "values": [
+          "75",
+          "9",
+          "48.22%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 6799,
+        "values": [
+          "75",
+          "9",
+          "48.31%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 6969,
+        "values": [
+          "75",
+          "9",
+          "48.39%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 7144,
+        "values": [
+          "75",
+          "9",
+          "48.46%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 7322,
+        "values": [
+          "76",
+          "9",
+          "48.53%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Space_Carrier"
+}

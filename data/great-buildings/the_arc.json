@@ -1,0 +1,703 @@
+{
+  "id": "the_arc",
+  "name": {
+    "fr": "L'arche",
+    "en": "The Arc"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_FutureEra_Landmark1-da6d0a716.png",
+  "age": "FutureEra",
+  "size": {
+    "w": 7,
+    "h": 5
+  },
+  "road": "road",
+  "description": {
+    "fr": "Conçu à des fins scientifiques, le projet d'arche à biosphère gigantesque permet l'existence de plusieurs écosystèmes dans une installation fermée et auto-régulée. Les scientifiques du monde entier s'y rassemblent pour faire part de leurs idées uniques sur la planète.",
+    "en": "Built for scientific purposes, the gigantic Arc biosphere project offers a set of different ecosystems in a closed, self-regulated facility. Scientists from all around the world gather to contribute unique insights into our planet."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+      "name": {
+        "fr": "Ressources de la guilde",
+        "en": "Guild Goods"
+      },
+      "text": {
+        "fr": "Produit une certaine quantité de chaque ressource actuelle pour la trésorerie de la guilde. Ne se collecte qu'en étant membre d'une guilde.",
+        "en": "Produces some of each current good for the guild's treasury. Can only be collected when in a guild."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_contribution_boost-90fde6ed1.png",
+      "name": {
+        "fr": "Bonus de contribution",
+        "en": "Contribution Boost"
+      },
+      "text": {
+        "fr": "Les récompenses de contribution augmentent d'un certain pourcentage.",
+        "en": "Contribution Rewards are increased by a percentage."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+        "label": {
+          "fr": "Ressources de la guilde",
+          "en": "Guild Goods"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_contribution_boost-90fde6ed1.png",
+        "label": {
+          "fr": "Bonus de contribution",
+          "en": "Contribution Boost"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 70,
+        "values": [
+          "9",
+          "10%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 110,
+        "values": [
+          "10",
+          "12%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 200,
+        "values": [
+          "12",
+          "14%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 290,
+        "values": [
+          "13",
+          "17%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 400,
+        "values": [
+          "15",
+          "19%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 510,
+        "values": [
+          "16",
+          "22%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 620,
+        "values": [
+          "18",
+          "24%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 740,
+        "values": [
+          "19",
+          "26%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 860,
+        "values": [
+          "21",
+          "29%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 970,
+        "values": [
+          "22",
+          "31%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 995,
+        "values": [
+          "24",
+          "32%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 1020,
+        "values": [
+          "26",
+          "33%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 1045,
+        "values": [
+          "28",
+          "34%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 1071,
+        "values": [
+          "30",
+          "35%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 1098,
+        "values": [
+          "32",
+          "36%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1125,
+        "values": [
+          "34",
+          "37%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1154,
+        "values": [
+          "36",
+          "38%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1182,
+        "values": [
+          "38",
+          "39%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1212,
+        "values": [
+          "40",
+          "40%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1242,
+        "values": [
+          "42",
+          "41%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1273,
+        "values": [
+          "44",
+          "42%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1305,
+        "values": [
+          "46",
+          "43%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1338,
+        "values": [
+          "48",
+          "44%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1371,
+        "values": [
+          "50",
+          "45%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1405,
+        "values": [
+          "52",
+          "46%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1440,
+        "values": [
+          "54",
+          "47%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1476,
+        "values": [
+          "56",
+          "48%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1513,
+        "values": [
+          "58",
+          "49%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1551,
+        "values": [
+          "60",
+          "50%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1590,
+        "values": [
+          "62",
+          "51%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1630,
+        "values": [
+          "64",
+          "52%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1670,
+        "values": [
+          "66",
+          "53%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 1712,
+        "values": [
+          "68",
+          "54%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 1755,
+        "values": [
+          "70",
+          "55%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 1799,
+        "values": [
+          "72",
+          "56%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 1844,
+        "values": [
+          "74",
+          "57%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 1890,
+        "values": [
+          "76",
+          "58%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 1937,
+        "values": [
+          "78",
+          "59%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 1986,
+        "values": [
+          "80",
+          "60%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 2035,
+        "values": [
+          "82",
+          "61%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 2086,
+        "values": [
+          "84",
+          "62%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 2138,
+        "values": [
+          "86",
+          "63%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 2192,
+        "values": [
+          "88",
+          "64%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 2246,
+        "values": [
+          "90",
+          "65%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 2303,
+        "values": [
+          "92",
+          "66%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 2360,
+        "values": [
+          "94",
+          "67%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 2419,
+        "values": [
+          "96",
+          "68%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 2480,
+        "values": [
+          "98",
+          "69%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 2541,
+        "values": [
+          "100",
+          "70%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 2605,
+        "values": [
+          "102",
+          "71%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 2670,
+        "values": [
+          "104",
+          "72%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 2737,
+        "values": [
+          "106",
+          "73%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 2805,
+        "values": [
+          "108",
+          "74%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 2875,
+        "values": [
+          "110",
+          "75%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 2947,
+        "values": [
+          "112",
+          "76%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 3021,
+        "values": [
+          "114",
+          "77%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 3096,
+        "values": [
+          "116",
+          "78%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 3174,
+        "values": [
+          "118",
+          "79%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 3253,
+        "values": [
+          "120",
+          "79.5%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 3334,
+        "values": [
+          "122",
+          "80%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 3418,
+        "values": [
+          "124",
+          "80.5%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 3503,
+        "values": [
+          "126",
+          "81%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 3591,
+        "values": [
+          "128",
+          "81.5%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 3681,
+        "values": [
+          "130",
+          "82%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 3773,
+        "values": [
+          "132",
+          "82.5%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 3867,
+        "values": [
+          "134",
+          "83%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 3964,
+        "values": [
+          "136",
+          "83.5%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 4063,
+        "values": [
+          "138",
+          "84%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 4164,
+        "values": [
+          "140",
+          "84.5%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 4268,
+        "values": [
+          "142",
+          "85%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 4375,
+        "values": [
+          "144",
+          "85.5%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 4484,
+        "values": [
+          "146",
+          "86%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 4596,
+        "values": [
+          "148",
+          "86.5%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 4711,
+        "values": [
+          "150",
+          "87%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 4829,
+        "values": [
+          "152",
+          "87.5%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 4950,
+        "values": [
+          "154",
+          "88%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 5074,
+        "values": [
+          "156",
+          "88.5%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 5200,
+        "values": [
+          "158",
+          "89%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 5330,
+        "values": [
+          "160",
+          "89.5%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 5464,
+        "values": [
+          "162",
+          "90%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=The_Arc"
+}

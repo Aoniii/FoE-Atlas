@@ -1,0 +1,703 @@
+{
+  "id": "stellar_warship",
+  "name": {
+    "fr": "Vaisseau de guerre stellaire",
+    "en": "Stellar Warship"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_SpaceAgeSpaceHub_Landmark1-1d9cc8d89.png",
+  "age": "SpaceAgeSpaceHub",
+  "size": {
+    "w": 5,
+    "h": 3
+  },
+  "road": "road",
+  "description": {
+    "fr": "Le vaisseau de guerre stellaire est la pierre angulaire de la domination intergalactique. Seuls les meilleurs capitaines étaient autorisés à piloter ce vaisseau. Maintenant qu'il est inopérant, il a trouvé une nouvelle fonction.",
+    "en": "The Stellar Warship is a cornerstone of intergalactic dominance. Only the best captains were allowed to fly this ship. Now that it is inoperative, it found a new purpose."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_penal_unit-3746eef4e.png",
+      "name": {
+        "fr": "Unité pénitentiaire",
+        "en": "Penal Unit"
+      },
+      "text": {
+        "fr": "Produit des unités sans rattachement d'un bâtiment militaire dans la cité du joueur toutes les 24 heures. Le temps peut être réduit par le bonus de recrutement de guilde. Cap à 200.",
+        "en": "Produces unattached units of a military building in the player's city every 24 hours. The time can be reduced by the Guild Recruitment Boost. Caps at 200."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_attacker_defender-05f3ddc0e.png",
+      "name": {
+        "fr": "Attaquants et défenseurs - Attaque et défense",
+        "en": "Attackers & Defenders - Attack & Defense"
+      },
+      "text": {
+        "fr": "Les valeurs d'attaque et de défense des unités attaquantes et défensives sont améliorées d'un certain pourcentage.",
+        "en": "Both attacking and defending units have their attack and defense values boosted by a percentage."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_penal_unit-3746eef4e.png",
+        "label": {
+          "fr": "Unité pénitentiaire",
+          "en": "Penal Unit"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_attacker_defender-05f3ddc0e.png",
+        "label": {
+          "fr": "Attaquants et défenseurs - Attaque et défense",
+          "en": "Attackers & Defenders - Attack & Defense"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 1040,
+        "values": [
+          "2",
+          "5%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 1550,
+        "values": [
+          "4",
+          "10%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 2880,
+        "values": [
+          "6",
+          "15%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 4430,
+        "values": [
+          "8",
+          "20%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 5870,
+        "values": [
+          "10",
+          "25%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 7420,
+        "values": [
+          "12",
+          "30%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 9180,
+        "values": [
+          "14",
+          "35%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 10800,
+        "values": [
+          "16",
+          "40%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 12670,
+        "values": [
+          "18",
+          "45%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 14330,
+        "values": [
+          "20",
+          "50%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 14689,
+        "values": [
+          "22",
+          "55%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 15056,
+        "values": [
+          "24",
+          "60%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 15432,
+        "values": [
+          "26",
+          "65%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 15818,
+        "values": [
+          "28",
+          "70%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 16214,
+        "values": [
+          "30",
+          "75%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 16619,
+        "values": [
+          "32",
+          "80%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 17034,
+        "values": [
+          "34",
+          "85%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 17460,
+        "values": [
+          "36",
+          "90%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 17897,
+        "values": [
+          "38",
+          "95%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 18344,
+        "values": [
+          "40",
+          "100%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 18803,
+        "values": [
+          "42",
+          "105%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 19273,
+        "values": [
+          "44",
+          "110%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 19755,
+        "values": [
+          "46",
+          "115%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 20248,
+        "values": [
+          "48",
+          "120%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 20755,
+        "values": [
+          "50",
+          "125%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 21273,
+        "values": [
+          "52",
+          "130%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 21805,
+        "values": [
+          "54",
+          "135%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 22350,
+        "values": [
+          "56",
+          "140%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 22909,
+        "values": [
+          "58",
+          "145%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 23482,
+        "values": [
+          "60",
+          "150%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 24069,
+        "values": [
+          "62",
+          "155%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 24671,
+        "values": [
+          "64",
+          "160%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 25287,
+        "values": [
+          "66",
+          "165%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 25920,
+        "values": [
+          "68",
+          "170%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 26568,
+        "values": [
+          "70",
+          "175%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 27232,
+        "values": [
+          "72",
+          "180%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 27912,
+        "values": [
+          "74",
+          "185%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 28610,
+        "values": [
+          "76",
+          "190%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 29326,
+        "values": [
+          "78",
+          "195%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 30059,
+        "values": [
+          "80",
+          "200%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 30810,
+        "values": [
+          "82",
+          "205%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 31580,
+        "values": [
+          "84",
+          "210%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 32370,
+        "values": [
+          "86",
+          "215%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 33179,
+        "values": [
+          "88",
+          "220%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 34009,
+        "values": [
+          "90",
+          "225%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 34859,
+        "values": [
+          "92",
+          "230%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 35730,
+        "values": [
+          "94",
+          "235%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 36623,
+        "values": [
+          "96",
+          "240%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 37539,
+        "values": [
+          "98",
+          "245%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 38477,
+        "values": [
+          "100",
+          "250%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 39439,
+        "values": [
+          "102",
+          "255%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 40425,
+        "values": [
+          "104",
+          "260%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 41436,
+        "values": [
+          "106",
+          "265%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 42472,
+        "values": [
+          "108",
+          "270%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 43534,
+        "values": [
+          "110",
+          "275%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 44622,
+        "values": [
+          "112",
+          "280%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 45738,
+        "values": [
+          "114",
+          "285%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 46881,
+        "values": [
+          "116",
+          "290%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 48053,
+        "values": [
+          "118",
+          "295%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 49254,
+        "values": [
+          "120",
+          "300%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 50486,
+        "values": [
+          "122",
+          "305%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 51748,
+        "values": [
+          "124",
+          "310%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 53041,
+        "values": [
+          "126",
+          "315%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 54367,
+        "values": [
+          "128",
+          "320%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 55727,
+        "values": [
+          "130",
+          "325%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 57120,
+        "values": [
+          "132",
+          "330%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 58548,
+        "values": [
+          "134",
+          "335%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 60011,
+        "values": [
+          "136",
+          "340%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 61512,
+        "values": [
+          "138",
+          "345%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 63049,
+        "values": [
+          "140",
+          "350%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 64626,
+        "values": [
+          "142",
+          "355%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 66241,
+        "values": [
+          "144",
+          "360%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 67897,
+        "values": [
+          "146",
+          "365%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 69595,
+        "values": [
+          "148",
+          "370%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 71335,
+        "values": [
+          "150",
+          "375%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 73118,
+        "values": [
+          "152",
+          "380%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 74946,
+        "values": [
+          "154",
+          "385%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 76820,
+        "values": [
+          "156",
+          "390%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 78740,
+        "values": [
+          "158",
+          "395%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 80709,
+        "values": [
+          "160",
+          "400%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Stellar_Warship"
+}

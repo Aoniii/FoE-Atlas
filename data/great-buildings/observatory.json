@@ -1,0 +1,702 @@
+{
+  "id": "observatory",
+  "name": {
+    "fr": "Observatoire",
+    "en": "Observatory"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_AllAge_EasterBonus4-870c88d53.png",
+  "size": {
+    "w": 3,
+    "h": 3
+  },
+  "road": "road",
+  "description": {
+    "fr": "Initialement construit pour observer les phénomènes célestes, l'imposant observatoire permet d'acquérir des connaissances d'une valeur incomparable pour les alliances. Au-delà de l'observation des étoiles et du ciel, surveiller ce qu'il se passe au sol permet de détecter plus facilement les nouvelles ressources et de prendre de l'avance sur les concurrents.",
+    "en": "Originally built to look at celestial events, the towering Observatory gathers knowledge that proves to be unrivaled in its value for alliances. Aside from watching the stars and the sky, monitoring terrestrial events helps to detect new resources and to gain an edge over the competitors."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+      "name": {
+        "fr": "Ressources de la guilde",
+        "en": "Guild Goods"
+      },
+      "text": {
+        "fr": "Produit une certaine quantité de chaque ressource actuelle pour la trésorerie de la guilde. Ne se collecte qu'en étant membre d'une guilde.",
+        "en": "Produces some of each current good for the guild's treasury. Can only be collected when in a guild."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_defender-6e0afd1e0.png",
+      "name": {
+        "fr": "Défenseurs - Attaque et défense",
+        "en": "Defenders - Attack & Defense"
+      },
+      "text": {
+        "fr": "Les unités de défense voient leurs valeurs d'attaque et de défense améliorées d'un certain pourcentage.",
+        "en": "Defending units have their attack and defense values boosted by a percentage."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+        "label": {
+          "fr": "Ressources de la guilde",
+          "en": "Guild Goods"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_defender-6e0afd1e0.png",
+        "label": {
+          "fr": "Défenseurs - Attaque et défense",
+          "en": "Defenders - Attack & Defense"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 50,
+        "values": [
+          "3",
+          "3%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 70,
+        "values": [
+          "4",
+          "6%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 130,
+        "values": [
+          "4",
+          "9%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 200,
+        "values": [
+          "5",
+          "12%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 270,
+        "values": [
+          "6",
+          "15%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 330,
+        "values": [
+          "6",
+          "18%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 420,
+        "values": [
+          "7",
+          "21%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 490,
+        "values": [
+          "7",
+          "24%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 570,
+        "values": [
+          "8",
+          "27%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 650,
+        "values": [
+          "8",
+          "30%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 667,
+        "values": [
+          "10",
+          "30.5%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 683,
+        "values": [
+          "12",
+          "31%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 700,
+        "values": [
+          "14",
+          "31.5%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 718,
+        "values": [
+          "16",
+          "32%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 736,
+        "values": [
+          "18",
+          "32.5%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 754,
+        "values": [
+          "20",
+          "33%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 773,
+        "values": [
+          "22",
+          "33.5%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 792,
+        "values": [
+          "24",
+          "34%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 812,
+        "values": [
+          "26",
+          "34.5%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 833,
+        "values": [
+          "28",
+          "35%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 853,
+        "values": [
+          "30",
+          "35.5%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 875,
+        "values": [
+          "32",
+          "36%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 897,
+        "values": [
+          "34",
+          "36.5%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 919,
+        "values": [
+          "36",
+          "37%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 942,
+        "values": [
+          "38",
+          "37.5%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 965,
+        "values": [
+          "40",
+          "38%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 990,
+        "values": [
+          "42",
+          "38.5%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1014,
+        "values": [
+          "44",
+          "39%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1040,
+        "values": [
+          "46",
+          "39.5%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1066,
+        "values": [
+          "48",
+          "40%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1092,
+        "values": [
+          "50",
+          "40.5%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1120,
+        "values": [
+          "52",
+          "41%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 1147,
+        "values": [
+          "54",
+          "41.5%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 1176,
+        "values": [
+          "56",
+          "42%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 1206,
+        "values": [
+          "58",
+          "42.5%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 1236,
+        "values": [
+          "60",
+          "43%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 1267,
+        "values": [
+          "62",
+          "43.5%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 1298,
+        "values": [
+          "64",
+          "44%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 1331,
+        "values": [
+          "66",
+          "44.5%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 1364,
+        "values": [
+          "68",
+          "45%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 1398,
+        "values": [
+          "70",
+          "45.5%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 1433,
+        "values": [
+          "72",
+          "46%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 1469,
+        "values": [
+          "74",
+          "46.5%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 1505,
+        "values": [
+          "76",
+          "47%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 1543,
+        "values": [
+          "78",
+          "47.5%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 1582,
+        "values": [
+          "80",
+          "48%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 1621,
+        "values": [
+          "82",
+          "48.5%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 1662,
+        "values": [
+          "84",
+          "49%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 1703,
+        "values": [
+          "86",
+          "49.5%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 1746,
+        "values": [
+          "88",
+          "50%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 1789,
+        "values": [
+          "90",
+          "50.5%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 1834,
+        "values": [
+          "92",
+          "51%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 1880,
+        "values": [
+          "94",
+          "51.5%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 1927,
+        "values": [
+          "96",
+          "52%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 1975,
+        "values": [
+          "98",
+          "52.5%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 2025,
+        "values": [
+          "100",
+          "53%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 2075,
+        "values": [
+          "102",
+          "53.5%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 2127,
+        "values": [
+          "104",
+          "54%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 2180,
+        "values": [
+          "106",
+          "54.5%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 2235,
+        "values": [
+          "108",
+          "55%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 2290,
+        "values": [
+          "110",
+          "55.5%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 2348,
+        "values": [
+          "112",
+          "56%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 2406,
+        "values": [
+          "114",
+          "56.5%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 2467,
+        "values": [
+          "116",
+          "57%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 2528,
+        "values": [
+          "118",
+          "57.5%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 2591,
+        "values": [
+          "120",
+          "58%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 2656,
+        "values": [
+          "122",
+          "58.5%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 2723,
+        "values": [
+          "124",
+          "59%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 2791,
+        "values": [
+          "126",
+          "59.5%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 2860,
+        "values": [
+          "128",
+          "60%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 2932,
+        "values": [
+          "130",
+          "60.5%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 3005,
+        "values": [
+          "132",
+          "61%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 3080,
+        "values": [
+          "134",
+          "61.5%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 3157,
+        "values": [
+          "136",
+          "62%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 3236,
+        "values": [
+          "138",
+          "62.5%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 3317,
+        "values": [
+          "140",
+          "63%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 3400,
+        "values": [
+          "142",
+          "63.5%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 3485,
+        "values": [
+          "144",
+          "64%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 3572,
+        "values": [
+          "146",
+          "64.5%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 3661,
+        "values": [
+          "148",
+          "65%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Observatory"
+}

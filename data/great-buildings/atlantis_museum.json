@@ -1,0 +1,703 @@
+{
+  "id": "atlantis_museum",
+  "name": {
+    "fr": "Musée de l'Atlantide",
+    "en": "Atlantis Museum"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_OceanicFuture_Landmark1-f81626456.png",
+  "age": "OceanicFuture",
+  "size": {
+    "w": 6,
+    "h": 7
+  },
+  "road": "road",
+  "description": {
+    "fr": "Autrefois un imposant monument dédié à la puissance dévastatrice de son empire, il a été récemment redécouvert et transformé en un musée populaire. Certains pensent qu'il s'agit de la seule preuve concrète de l'existence de l'Atlantide, ce qui suffit à entretenir le mythe.",
+    "en": "Once a fearless monument to the plunderous might of its empire, recently it was rediscovered and converted into a popular museum. Some consider it to be the only concrete proof of Atlantis' existence, enough to keep the myth alive."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_goods-ecf3d9439.png",
+      "name": {
+        "fr": "Production de ressources",
+        "en": "Good production"
+      },
+      "text": {
+        "fr": "Produit des ressources aléatoires de l'âge du joueur toutes les 24 heures. À partir de l'Ère Moderne, produit deux fois plus de ressources non raffinées.",
+        "en": "Produces random goods from the players age every 24 hours. From Modern Era onwards produces twice as many unrefined goods instead."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_plunder_and_pillage-b57d09b6c.png",
+      "name": {
+        "fr": "Pillage et saccage",
+        "en": "Plunder and Pillage"
+      },
+      "text": {
+        "fr": "Ajoute une chance de doubler les richesses pillées.",
+        "en": "Adds a chance of doubling plundered resources."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_goods-ecf3d9439.png",
+        "label": {
+          "fr": "Production de ressources",
+          "en": "Good production"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_plunder_and_pillage-b57d09b6c.png",
+        "label": {
+          "fr": "Pillage et saccage",
+          "en": "Plunder and Pillage"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 80,
+        "values": [
+          "10",
+          "12%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 130,
+        "values": [
+          "12",
+          "13%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 240,
+        "values": [
+          "14",
+          "14.25%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 350,
+        "values": [
+          "15",
+          "15.4%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 470,
+        "values": [
+          "17",
+          "16.6%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 610,
+        "values": [
+          "19",
+          "17.8%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 740,
+        "values": [
+          "21",
+          "19%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 880,
+        "values": [
+          "22",
+          "20.25%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 1020,
+        "values": [
+          "24",
+          "21.5%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 1160,
+        "values": [
+          "26",
+          "22.75%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 1189,
+        "values": [
+          "27",
+          "23.86%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 1219,
+        "values": [
+          "28",
+          "24.24%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 1250,
+        "values": [
+          "29",
+          "24.62%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 1281,
+        "values": [
+          "30",
+          "25%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 1313,
+        "values": [
+          "31",
+          "25.38%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1346,
+        "values": [
+          "32",
+          "25.76%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1379,
+        "values": [
+          "33",
+          "26.14%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1414,
+        "values": [
+          "34",
+          "26.51%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1449,
+        "values": [
+          "35",
+          "26.89%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1485,
+        "values": [
+          "36",
+          "27.27%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1523,
+        "values": [
+          "37",
+          "27.64%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1561,
+        "values": [
+          "38",
+          "28.02%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1600,
+        "values": [
+          "39",
+          "28.39%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1640,
+        "values": [
+          "40",
+          "28.76%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1681,
+        "values": [
+          "41",
+          "29.13%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1723,
+        "values": [
+          "42",
+          "29.5%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1766,
+        "values": [
+          "43",
+          "29.86%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1810,
+        "values": [
+          "44",
+          "30.22%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1855,
+        "values": [
+          "45",
+          "30.59%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1901,
+        "values": [
+          "46",
+          "30.94%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1949,
+        "values": [
+          "47",
+          "31.3%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1998,
+        "values": [
+          "48",
+          "31.65%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 2047,
+        "values": [
+          "49",
+          "32%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 2099,
+        "values": [
+          "50",
+          "32.35%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 2151,
+        "values": [
+          "51",
+          "32.7%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 2205,
+        "values": [
+          "52",
+          "33.04%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 2260,
+        "values": [
+          "53",
+          "33.38%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 2316,
+        "values": [
+          "54",
+          "33.71%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 2374,
+        "values": [
+          "55",
+          "34.04%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 2434,
+        "values": [
+          "56",
+          "34.37%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 2495,
+        "values": [
+          "57",
+          "34.69%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 2557,
+        "values": [
+          "58",
+          "35.01%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 2621,
+        "values": [
+          "59",
+          "35.33%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 2686,
+        "values": [
+          "60",
+          "35.64%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 2753,
+        "values": [
+          "61",
+          "35.95%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 2822,
+        "values": [
+          "62",
+          "36.25%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 2893,
+        "values": [
+          "63",
+          "36.55%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 2965,
+        "values": [
+          "64",
+          "36.85%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 3039,
+        "values": [
+          "65",
+          "37.14%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 3115,
+        "values": [
+          "66",
+          "37.43%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 3193,
+        "values": [
+          "67",
+          "37.71%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 3273,
+        "values": [
+          "68",
+          "37.99%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 3355,
+        "values": [
+          "69",
+          "38.26%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 3439,
+        "values": [
+          "70",
+          "38.53%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 3524,
+        "values": [
+          "71",
+          "38.8%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 3613,
+        "values": [
+          "72",
+          "39.06%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 3703,
+        "values": [
+          "73",
+          "39.32%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 3795,
+        "values": [
+          "74",
+          "39.57%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 3890,
+        "values": [
+          "75",
+          "39.82%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 3988,
+        "values": [
+          "76",
+          "40.06%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 4087,
+        "values": [
+          "77",
+          "40.3%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 4189,
+        "values": [
+          "78",
+          "40.53%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 4294,
+        "values": [
+          "79",
+          "40.77%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 4401,
+        "values": [
+          "80",
+          "40.99%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 4511,
+        "values": [
+          "81",
+          "41.21%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 4624,
+        "values": [
+          "82",
+          "41.43%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 4740,
+        "values": [
+          "83",
+          "41.64%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 4858,
+        "values": [
+          "84",
+          "41.85%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 4980,
+        "values": [
+          "85",
+          "42.06%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 5104,
+        "values": [
+          "86",
+          "42.26%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 5232,
+        "values": [
+          "87",
+          "42.45%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 5363,
+        "values": [
+          "88",
+          "42.65%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 5497,
+        "values": [
+          "89",
+          "42.83%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 5634,
+        "values": [
+          "90",
+          "43.02%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 5775,
+        "values": [
+          "91",
+          "43.2%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 5919,
+        "values": [
+          "92",
+          "43.37%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 6067,
+        "values": [
+          "93",
+          "43.55%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 6219,
+        "values": [
+          "94",
+          "43.71%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 6374,
+        "values": [
+          "95",
+          "43.88%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 6534,
+        "values": [
+          "96",
+          "44.04%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Atlantis_Museum"
+}

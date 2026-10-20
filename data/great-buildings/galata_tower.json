@@ -1,0 +1,790 @@
+{
+  "id": "galata_tower",
+  "name": {
+    "fr": "Tour de Galata",
+    "en": "Galata Tower"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_EarlyMiddleAge_Landmark3-8a95b9871.png",
+  "age": "EarlyMiddleAge",
+  "size": {
+    "w": 3,
+    "h": 3
+  },
+  "road": "road",
+  "description": {
+    "fr": "Cette tour en pierre médiévale servait à surveiller le port de la Corne d'Or, à Istanbul. Après la conquête de Constantinople en 1453, la tour a été utilisée pour repérer les incendies dans la cité.",
+    "en": "This medieval stone tower was utilized for surveillance of the harbor in the Golden Horn, Istanbul. After the conquest of Constantinople in 1453, the tower was used to detect fires in the city."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_goods-ecf3d9439.png",
+      "name": {
+        "fr": "Production de ressources",
+        "en": "Good production"
+      },
+      "text": {
+        "fr": "Produit des ressources aléatoires de l'âge du joueur toutes les 24 heures. À partir de l'Ère Moderne, produit deux fois plus de ressources non raffinées.",
+        "en": "Produces random goods from the players age every 24 hours. From Modern Era onwards produces twice as many unrefined goods instead."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_plunder_repel-74e9ea181.png",
+      "name": {
+        "fr": "Résistance au pillage",
+        "en": "Plunder Repel"
+      },
+      "text": {
+        "fr": "Les premières tentatives de pillage que nous subissons ont une chance d'être repoussées.",
+        "en": "The first number of suffered plunder attempts have a chance of being repelled."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_goods-ecf3d9439.png",
+        "label": {
+          "fr": "Production de ressources",
+          "en": "Good production"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_plunder_repel-74e9ea181.png",
+        "label": {
+          "fr": "Résistance au pillage (#)",
+          "en": "Plunder Repel (#)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_plunder_repel-74e9ea181.png",
+        "label": {
+          "fr": "Résistance au pillage (%)",
+          "en": "Plunder Repel (%)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 20,
+        "values": [
+          "5",
+          "2",
+          "16%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 40,
+        "values": [
+          "5",
+          "2",
+          "18%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 60,
+        "values": [
+          "6",
+          "2",
+          "20%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 130,
+        "values": [
+          "7",
+          "2",
+          "22%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 210,
+        "values": [
+          "8",
+          "2",
+          "23%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 290,
+        "values": [
+          "8",
+          "2",
+          "24%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 370,
+        "values": [
+          "9",
+          "2",
+          "25%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 460,
+        "values": [
+          "10",
+          "2",
+          "26%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 550,
+        "values": [
+          "11",
+          "2",
+          "27%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 650,
+        "values": [
+          "12",
+          "2",
+          "28%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 667,
+        "values": [
+          "13",
+          "2",
+          "28.73%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 683,
+        "values": [
+          "14",
+          "2",
+          "29.06%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 700,
+        "values": [
+          "15",
+          "3",
+          "29.38%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 718,
+        "values": [
+          "16",
+          "3",
+          "29.71%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 736,
+        "values": [
+          "17",
+          "3",
+          "30.04%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 754,
+        "values": [
+          "18",
+          "3",
+          "30.37%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 773,
+        "values": [
+          "19",
+          "3",
+          "30.69%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 792,
+        "values": [
+          "20",
+          "3",
+          "31.02%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 812,
+        "values": [
+          "21",
+          "3",
+          "31.35%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 833,
+        "values": [
+          "22",
+          "3",
+          "31.68%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 853,
+        "values": [
+          "23",
+          "3",
+          "32.01%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 875,
+        "values": [
+          "24",
+          "3",
+          "32.34%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 897,
+        "values": [
+          "25",
+          "3",
+          "32.67%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 919,
+        "values": [
+          "26",
+          "3",
+          "33%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 942,
+        "values": [
+          "27",
+          "3",
+          "33.33%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 965,
+        "values": [
+          "28",
+          "3",
+          "33.66%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 990,
+        "values": [
+          "29",
+          "3",
+          "33.99%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1014,
+        "values": [
+          "30",
+          "4",
+          "34.32%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1040,
+        "values": [
+          "31",
+          "4",
+          "34.65%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1066,
+        "values": [
+          "32",
+          "4",
+          "34.98%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1092,
+        "values": [
+          "33",
+          "4",
+          "35.31%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1120,
+        "values": [
+          "34",
+          "4",
+          "35.63%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 1147,
+        "values": [
+          "35",
+          "4",
+          "35.96%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 1176,
+        "values": [
+          "36",
+          "4",
+          "36.29%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 1206,
+        "values": [
+          "37",
+          "4",
+          "36.62%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 1236,
+        "values": [
+          "38",
+          "4",
+          "36.94%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 1267,
+        "values": [
+          "39",
+          "4",
+          "37.27%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 1298,
+        "values": [
+          "40",
+          "4",
+          "37.59%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 1331,
+        "values": [
+          "41",
+          "4",
+          "37.91%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 1364,
+        "values": [
+          "42",
+          "4",
+          "38.24%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 1398,
+        "values": [
+          "43",
+          "4",
+          "38.56%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 1433,
+        "values": [
+          "44",
+          "4",
+          "38.88%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 1469,
+        "values": [
+          "45",
+          "4",
+          "39.2%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 1505,
+        "values": [
+          "46",
+          "5",
+          "39.51%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 1543,
+        "values": [
+          "47",
+          "5",
+          "39.83%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 1582,
+        "values": [
+          "48",
+          "5",
+          "40.15%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 1621,
+        "values": [
+          "49",
+          "5",
+          "40.46%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 1662,
+        "values": [
+          "50",
+          "5",
+          "40.77%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 1703,
+        "values": [
+          "51",
+          "5",
+          "41.08%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 1746,
+        "values": [
+          "52",
+          "5",
+          "41.39%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 1789,
+        "values": [
+          "53",
+          "5",
+          "41.7%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 1834,
+        "values": [
+          "54",
+          "5",
+          "42.01%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 1880,
+        "values": [
+          "55",
+          "5",
+          "42.31%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 1927,
+        "values": [
+          "56",
+          "5",
+          "42.61%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 1975,
+        "values": [
+          "57",
+          "5",
+          "42.91%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 2025,
+        "values": [
+          "58",
+          "5",
+          "43.21%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 2075,
+        "values": [
+          "59",
+          "5",
+          "43.51%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 2127,
+        "values": [
+          "60",
+          "5",
+          "43.81%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 2180,
+        "values": [
+          "61",
+          "5",
+          "44.1%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 2235,
+        "values": [
+          "62",
+          "5",
+          "44.39%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 2290,
+        "values": [
+          "63",
+          "5",
+          "44.68%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 2348,
+        "values": [
+          "64",
+          "5",
+          "44.97%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 2406,
+        "values": [
+          "65",
+          "5",
+          "45.25%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 2467,
+        "values": [
+          "66",
+          "5",
+          "45.54%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 2528,
+        "values": [
+          "67",
+          "5",
+          "45.82%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 2591,
+        "values": [
+          "68",
+          "5",
+          "46.1%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 2656,
+        "values": [
+          "69",
+          "5",
+          "46.38%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 2723,
+        "values": [
+          "70",
+          "5",
+          "46.65%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 2791,
+        "values": [
+          "71",
+          "5",
+          "46.92%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 2860,
+        "values": [
+          "72",
+          "5",
+          "47.19%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 2932,
+        "values": [
+          "73",
+          "6",
+          "47.46%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 3005,
+        "values": [
+          "74",
+          "6",
+          "47.73%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 3080,
+        "values": [
+          "75",
+          "6",
+          "47.99%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 3157,
+        "values": [
+          "76",
+          "6",
+          "48.25%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 3236,
+        "values": [
+          "77",
+          "6",
+          "48.51%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 3317,
+        "values": [
+          "78",
+          "6",
+          "48.76%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 3400,
+        "values": [
+          "79",
+          "6",
+          "49.02%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 3485,
+        "values": [
+          "80",
+          "6",
+          "49.27%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 3572,
+        "values": [
+          "81",
+          "6",
+          "49.52%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 3661,
+        "values": [
+          "82",
+          "6",
+          "49.76%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Galata_Tower"
+}

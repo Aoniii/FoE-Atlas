@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WikiRouteImport } from './routes/wiki'
 import { Route as BuildingsIdRouteImport } from './routes/buildings.$id'
+import { Route as GreatBuildingsIdRouteImport } from './routes/great-buildings.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -28,35 +29,44 @@ const BuildingsIdRoute = BuildingsIdRouteImport.update({
   path: '/buildings/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GreatBuildingsIdRoute = GreatBuildingsIdRouteImport.update({
+  id: '/great-buildings/$id',
+  path: '/great-buildings/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/wiki': typeof WikiRoute
   '/buildings/$id': typeof BuildingsIdRoute
+  '/great-buildings/$id': typeof GreatBuildingsIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/wiki': typeof WikiRoute
   '/buildings/$id': typeof BuildingsIdRoute
+  '/great-buildings/$id': typeof GreatBuildingsIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/wiki': typeof WikiRoute
   '/buildings/$id': typeof BuildingsIdRoute
+  '/great-buildings/$id': typeof GreatBuildingsIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/wiki' | '/buildings/$id'
+  fullPaths: '/' | '/wiki' | '/buildings/$id' | '/great-buildings/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/wiki' | '/buildings/$id'
-  id: '__root__' | '/' | '/wiki' | '/buildings/$id'
+  to: '/' | '/wiki' | '/buildings/$id' | '/great-buildings/$id'
+  id: '__root__' | '/' | '/wiki' | '/buildings/$id' | '/great-buildings/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   WikiRoute: typeof WikiRoute
   BuildingsIdRoute: typeof BuildingsIdRoute
+  GreatBuildingsIdRoute: typeof GreatBuildingsIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -82,6 +92,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BuildingsIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/great-buildings/$id': {
+      id: '/great-buildings/$id'
+      path: '/great-buildings/$id'
+      fullPath: '/great-buildings/$id'
+      preLoaderRoute: typeof GreatBuildingsIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   WikiRoute: WikiRoute,
   BuildingsIdRoute: BuildingsIdRoute,
+  GreatBuildingsIdRoute: GreatBuildingsIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

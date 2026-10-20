@@ -1,0 +1,703 @@
+{
+  "id": "atomium",
+  "name": {
+    "fr": "Atomium",
+    "en": "Atomium"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_ModernEra_Landmark2-51f98f888.png",
+  "age": "ModernEra",
+  "size": {
+    "w": 7,
+    "h": 6
+  },
+  "road": "road",
+  "description": {
+    "fr": "Construit lors de l'exposition universelle de 1958, la première après la seconde guerre mondiale, l'Atomium est rapidement devenu un symbole de Bruxelles. Il continue de représenter l'esprit d'entreprise, le progrès technologique et la coopération, un élément clé pour le futur de l'Europe.",
+    "en": "Built for the World Expo '58, the first after World War II, the Atomium quickly became an iconic landmark of Brussels. It continues to represent the spirit of endeavor, technological advancement and co-operation that is the key to Europe's future."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+      "name": {
+        "fr": "Ressources de la guilde",
+        "en": "Guild Goods"
+      },
+      "text": {
+        "fr": "Produit une certaine quantité de chaque ressource actuelle pour la trésorerie de la guilde. Ne se collecte qu'en étant membre d'une guilde.",
+        "en": "Produces some of each current good for the guild's treasury. Can only be collected when in a guild."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_happy-685b0c0a0.png",
+      "name": {
+        "fr": "Satisfaction",
+        "en": "Happiness"
+      },
+      "text": {
+        "fr": "Fournit Satisfaction.",
+        "en": "Provides Happiness."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+        "label": {
+          "fr": "Ressources de la guilde",
+          "en": "Guild Goods"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_happy-685b0c0a0.png",
+        "label": {
+          "fr": "Satisfaction",
+          "en": "Happiness"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 60,
+        "values": [
+          "6",
+          "2,400"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 100,
+        "values": [
+          "7",
+          "2,740"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 180,
+        "values": [
+          "8",
+          "3,290"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 270,
+        "values": [
+          "9",
+          "3,970"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 360,
+        "values": [
+          "11",
+          "4,750"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 460,
+        "values": [
+          "12",
+          "5,610"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 560,
+        "values": [
+          "13",
+          "6,540"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 670,
+        "values": [
+          "14",
+          "7,540"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 770,
+        "values": [
+          "15",
+          "8,600"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 880,
+        "values": [
+          "17",
+          "9,700"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 902,
+        "values": [
+          "19",
+          "10,174"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 925,
+        "values": [
+          "21",
+          "10,626"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 948,
+        "values": [
+          "23",
+          "11,060"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 972,
+        "values": [
+          "25",
+          "11,478"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 996,
+        "values": [
+          "27",
+          "11,881"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1021,
+        "values": [
+          "29",
+          "12,270"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1047,
+        "values": [
+          "31",
+          "12,648"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1073,
+        "values": [
+          "33",
+          "13,014"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1099,
+        "values": [
+          "35",
+          "13,371"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1127,
+        "values": [
+          "37",
+          "13,718"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1155,
+        "values": [
+          "39",
+          "14,057"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1184,
+        "values": [
+          "41",
+          "14,388"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1214,
+        "values": [
+          "43",
+          "14,711"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1244,
+        "values": [
+          "45",
+          "15,028"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1275,
+        "values": [
+          "47",
+          "15,338"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1307,
+        "values": [
+          "49",
+          "15,641"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1340,
+        "values": [
+          "51",
+          "15,939"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1373,
+        "values": [
+          "53",
+          "16,232"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1407,
+        "values": [
+          "55",
+          "16,519"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1442,
+        "values": [
+          "57",
+          "16,801"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1479,
+        "values": [
+          "59",
+          "17,079"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1515,
+        "values": [
+          "61",
+          "17,352"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 1553,
+        "values": [
+          "63",
+          "17,621"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 1592,
+        "values": [
+          "65",
+          "17,886"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 1632,
+        "values": [
+          "67",
+          "18,148"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 1673,
+        "values": [
+          "69",
+          "18,405"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 1715,
+        "values": [
+          "71",
+          "18,659"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 1757,
+        "values": [
+          "73",
+          "18,909"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 1801,
+        "values": [
+          "75",
+          "19,156"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 1846,
+        "values": [
+          "77",
+          "19,400"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 1893,
+        "values": [
+          "79",
+          "19,642"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 1940,
+        "values": [
+          "81",
+          "19,880"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 1988,
+        "values": [
+          "83",
+          "20,115"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 2038,
+        "values": [
+          "85",
+          "20,347"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 2089,
+        "values": [
+          "87",
+          "20,577"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 2141,
+        "values": [
+          "89",
+          "20,805"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 2195,
+        "values": [
+          "91",
+          "21,030"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 2250,
+        "values": [
+          "93",
+          "21,252"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 2306,
+        "values": [
+          "95",
+          "21,472"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 2363,
+        "values": [
+          "97",
+          "21,690"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 2422,
+        "values": [
+          "99",
+          "21,906"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 2483,
+        "values": [
+          "101",
+          "22,120"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 2545,
+        "values": [
+          "103",
+          "22,332"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 2609,
+        "values": [
+          "105",
+          "22,541"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 2674,
+        "values": [
+          "107",
+          "22,749"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 2741,
+        "values": [
+          "109",
+          "22,955"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 2809,
+        "values": [
+          "111",
+          "23,159"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 2879,
+        "values": [
+          "113",
+          "23,361"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 2951,
+        "values": [
+          "115",
+          "23,562"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 3025,
+        "values": [
+          "117",
+          "23,761"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 3101,
+        "values": [
+          "119",
+          "23,958"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 3178,
+        "values": [
+          "121",
+          "24,153"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 3258,
+        "values": [
+          "123",
+          "24,347"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 3339,
+        "values": [
+          "125",
+          "24,540"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 3423,
+        "values": [
+          "127",
+          "24,731"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 3508,
+        "values": [
+          "129",
+          "24,920"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 3596,
+        "values": [
+          "131",
+          "25,108"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 3686,
+        "values": [
+          "133",
+          "25,295"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 3778,
+        "values": [
+          "135",
+          "25,480"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 3872,
+        "values": [
+          "137",
+          "25,664"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 3969,
+        "values": [
+          "139",
+          "25,847"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 4068,
+        "values": [
+          "141",
+          "26,028"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 4170,
+        "values": [
+          "143",
+          "26,208"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 4274,
+        "values": [
+          "145",
+          "26,387"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 4381,
+        "values": [
+          "147",
+          "26,565"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 4491,
+        "values": [
+          "149",
+          "26,742"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 4603,
+        "values": [
+          "151",
+          "26,917"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 4718,
+        "values": [
+          "153",
+          "27,091"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 4836,
+        "values": [
+          "155",
+          "27,264"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 4957,
+        "values": [
+          "157",
+          "27,436"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Atomium"
+}

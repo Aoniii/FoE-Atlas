@@ -1,0 +1,790 @@
+{
+  "id": "the_blue_galaxy",
+  "name": {
+    "fr": "La galaxie bleue",
+    "en": "The Blue Galaxy"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_OceanicFuture_Landmark3-a9e0bf538.png",
+  "age": "OceanicFuture",
+  "size": {
+    "w": 7,
+    "h": 5
+  },
+  "road": "road",
+  "description": {
+    "fr": "La galaxie bleue possède la collection de méduses la plus complète de toute la planète. Elle permet aussi à ses visiteurs de découvrir la sensation d'être dans les profondeurs bleues.",
+    "en": "The Blue Galaxy has the world's most complete collection of jellyfish. It also lets its visitors experience the wonder of being deep in the blue depths."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_medals-d29e77a05.png",
+      "name": {
+        "fr": "Production de médailles",
+        "en": "Medal production"
+      },
+      "text": {
+        "fr": "Produit Médailles toutes les 24 heures.",
+        "en": "Produces Medals every 24 hours."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_double_collect-d6be5219d.png",
+      "name": {
+        "fr": "Collecte doublée",
+        "en": "Double Collection"
+      },
+      "text": {
+        "fr": "Pour les premiers bâtiments collectés, il y a une chance de doubler les richesses obtenues. Ne concerne pas les bâtiments militaires et grands monuments.",
+        "en": "For the first number of buildings collected, there is a chance the collection is doubled. Excludes military and great buildings."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_medals-d29e77a05.png",
+        "label": {
+          "fr": "Production de médailles",
+          "en": "Medal production"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_double_collect-d6be5219d.png",
+        "label": {
+          "fr": "Collecte doublée (#)",
+          "en": "Double Collection (#)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_double_collect-d6be5219d.png",
+        "label": {
+          "fr": "Collecte doublée (%)",
+          "en": "Double Collection (%)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 80,
+        "values": [
+          "140",
+          "4",
+          "17%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 130,
+        "values": [
+          "153",
+          "4",
+          "19%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 240,
+        "values": [
+          "170",
+          "5",
+          "21%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 350,
+        "values": [
+          "190",
+          "5",
+          "23%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 470,
+        "values": [
+          "214",
+          "5",
+          "25%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 610,
+        "values": [
+          "239",
+          "5",
+          "27%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 740,
+        "values": [
+          "267",
+          "5",
+          "29%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 880,
+        "values": [
+          "296",
+          "5",
+          "30%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 1020,
+        "values": [
+          "328",
+          "6",
+          "31%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 1160,
+        "values": [
+          "404",
+          "6",
+          "32%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 1189,
+        "values": [
+          "437",
+          "6",
+          "33%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 1219,
+        "values": [
+          "468",
+          "6",
+          "34%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 1250,
+        "values": [
+          "499",
+          "6",
+          "35%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 1281,
+        "values": [
+          "529",
+          "6",
+          "35%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 1313,
+        "values": [
+          "559",
+          "7",
+          "36%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1346,
+        "values": [
+          "589",
+          "7",
+          "37%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1379,
+        "values": [
+          "618",
+          "7",
+          "38%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1414,
+        "values": [
+          "647",
+          "7",
+          "38%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1449,
+        "values": [
+          "676",
+          "7",
+          "39%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1485,
+        "values": [
+          "704",
+          "8",
+          "40%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1523,
+        "values": [
+          "732",
+          "8",
+          "40%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1561,
+        "values": [
+          "760",
+          "8",
+          "41%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1600,
+        "values": [
+          "787",
+          "8",
+          "42%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1640,
+        "values": [
+          "814",
+          "8",
+          "42%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1681,
+        "values": [
+          "841",
+          "8",
+          "43%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1723,
+        "values": [
+          "868",
+          "9",
+          "43%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1766,
+        "values": [
+          "895",
+          "9",
+          "44%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1810,
+        "values": [
+          "921",
+          "9",
+          "45%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1855,
+        "values": [
+          "947",
+          "9",
+          "45%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1901,
+        "values": [
+          "973",
+          "9",
+          "46%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1949,
+        "values": [
+          "999",
+          "9",
+          "47%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1998,
+        "values": [
+          "1,025",
+          "10",
+          "47%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 2047,
+        "values": [
+          "1,051",
+          "10",
+          "48%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 2099,
+        "values": [
+          "1,076",
+          "10",
+          "49%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 2151,
+        "values": [
+          "1,101",
+          "10",
+          "49%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 2205,
+        "values": [
+          "1,126",
+          "10",
+          "50%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 2260,
+        "values": [
+          "1,151",
+          "10",
+          "50%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 2316,
+        "values": [
+          "1,176",
+          "11",
+          "51%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 2374,
+        "values": [
+          "1,201",
+          "11",
+          "52%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 2434,
+        "values": [
+          "1,225",
+          "11",
+          "52%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 2495,
+        "values": [
+          "1,250",
+          "11",
+          "53%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 2557,
+        "values": [
+          "1,274",
+          "11",
+          "53%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 2621,
+        "values": [
+          "1,298",
+          "11",
+          "54%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 2686,
+        "values": [
+          "1,322",
+          "11",
+          "54%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 2753,
+        "values": [
+          "1,346",
+          "12",
+          "55%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 2822,
+        "values": [
+          "1,370",
+          "12",
+          "55%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 2893,
+        "values": [
+          "1,394",
+          "12",
+          "56%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 2965,
+        "values": [
+          "1,418",
+          "12",
+          "56%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 3039,
+        "values": [
+          "1,441",
+          "12",
+          "57%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 3115,
+        "values": [
+          "1,465",
+          "12",
+          "57%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 3193,
+        "values": [
+          "1,488",
+          "12",
+          "58%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 3273,
+        "values": [
+          "1,511",
+          "12",
+          "58%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 3355,
+        "values": [
+          "1,534",
+          "12",
+          "59%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 3439,
+        "values": [
+          "1,558",
+          "13",
+          "59%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 3524,
+        "values": [
+          "1,581",
+          "13",
+          "60%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 3613,
+        "values": [
+          "1,603",
+          "13",
+          "60%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 3703,
+        "values": [
+          "1,626",
+          "13",
+          "61%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 3795,
+        "values": [
+          "1,649",
+          "13",
+          "61%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 3890,
+        "values": [
+          "1,672",
+          "13",
+          "61%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 3988,
+        "values": [
+          "1,694",
+          "13",
+          "62%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 4087,
+        "values": [
+          "1,717",
+          "13",
+          "62%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 4189,
+        "values": [
+          "1,739",
+          "13",
+          "62%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 4294,
+        "values": [
+          "1,762",
+          "13",
+          "63%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 4401,
+        "values": [
+          "1,784",
+          "13",
+          "63%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 4511,
+        "values": [
+          "1,806",
+          "13",
+          "64%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 4624,
+        "values": [
+          "1,829",
+          "13",
+          "64%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 4740,
+        "values": [
+          "1,851",
+          "14",
+          "64%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 4858,
+        "values": [
+          "1,873",
+          "14",
+          "65%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 4980,
+        "values": [
+          "1,895",
+          "14",
+          "65%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 5104,
+        "values": [
+          "1,917",
+          "14",
+          "65%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 5232,
+        "values": [
+          "1,939",
+          "14",
+          "65%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 5363,
+        "values": [
+          "1,960",
+          "14",
+          "66%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 5497,
+        "values": [
+          "1,982",
+          "14",
+          "66%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 5634,
+        "values": [
+          "2,004",
+          "14",
+          "66%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 5775,
+        "values": [
+          "2,026",
+          "14",
+          "67%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 5919,
+        "values": [
+          "2,047",
+          "14",
+          "67%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 6067,
+        "values": [
+          "2,069",
+          "14",
+          "67%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 6219,
+        "values": [
+          "2,090",
+          "14",
+          "67%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 6374,
+        "values": [
+          "2,111",
+          "14",
+          "68%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 6534,
+        "values": [
+          "2,133",
+          "14",
+          "68%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=The_Blue_Galaxy"
+}

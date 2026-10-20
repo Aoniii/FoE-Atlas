@@ -1,0 +1,703 @@
+{
+  "id": "shattered_horizon_siphon",
+  "name": {
+    "fr": "Siphon d'horizon brisé",
+    "en": "Shattered Horizon Siphon"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_StellarAgeDiscovery_Landmark1-f88e94040.png",
+  "age": "StellarAgeDiscovery",
+  "size": {
+    "w": 4,
+    "h": 4
+  },
+  "road": "road",
+  "description": {
+    "fr": "Le Siphon de l'Horizon brisé a été construit selon des spécifications récupérées auprès des restes de l'Intelligence synthétique, bien qu'aucun ingénieur n'ait pleinement compris les plans qu'il a suivis. En son cœur tourbillonne une fracture capturée de l'espace lui-même. Certains croient que cette anomalie n'est destinée qu'à être observée. D'autres pensent qu'elle nous observe.",
+    "en": "The Shattered Horizon Siphon was built to specifications recovered from the Synthetic Intelligence Remnants, though no engineer fully understood the Blueprints they followed. At its heart swirls a captured fracture of space itself. Some believe the anomaly is meant only to be observed. Others believe it is observing."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_supplies-d07694640.png",
+      "name": {
+        "fr": "Production de marchandises",
+        "en": "Supply production"
+      },
+      "text": {
+        "fr": "Produit Marchandises toutes les 24 heures.",
+        "en": "Produces Supplies every 24 hours."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_attacker_defender-05f3ddc0e.png",
+      "name": {
+        "fr": "Attaquants et défenseurs - Attaque et défense",
+        "en": "Attackers & Defenders - Attack & Defense"
+      },
+      "text": {
+        "fr": "Les valeurs d'attaque et de défense des unités attaquantes et défensives sont améliorées d'un certain pourcentage.",
+        "en": "Both attacking and defending units have their attack and defense values boosted by a percentage."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_supplies-d07694640.png",
+        "label": {
+          "fr": "Production de marchandises",
+          "en": "Supply production"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_attacker_defender-05f3ddc0e.png",
+        "label": {
+          "fr": "Attaquants et défenseurs - Attaque et défense",
+          "en": "Attackers & Defenders - Attack & Defense"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 1240,
+        "values": [
+          "205,000",
+          "5%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 1750,
+        "values": [
+          "217,800",
+          "10%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 3080,
+        "values": [
+          "230,600",
+          "15%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 4630,
+        "values": [
+          "273,600",
+          "20%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 6070,
+        "values": [
+          "288,000",
+          "25%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 7620,
+        "values": [
+          "338,600",
+          "30%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 9380,
+        "values": [
+          "354,800",
+          "35%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 11000,
+        "values": [
+          "407,400",
+          "40%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 12870,
+        "values": [
+          "425,000",
+          "45%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 14530,
+        "values": [
+          "486,000",
+          "50%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 14894,
+        "values": [
+          "547,492",
+          "55%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 15266,
+        "values": [
+          "610,398",
+          "60%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 15648,
+        "values": [
+          "674,630",
+          "65%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 16039,
+        "values": [
+          "740,111",
+          "70%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 16440,
+        "values": [
+          "806,772",
+          "75%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 16851,
+        "values": [
+          "874,554",
+          "80%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 17272,
+        "values": [
+          "943,404",
+          "85%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 17704,
+        "values": [
+          "1,013,275",
+          "90%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 18146,
+        "values": [
+          "1,084,123",
+          "95%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 18600,
+        "values": [
+          "1,155,910",
+          "100%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 19065,
+        "values": [
+          "1,228,600",
+          "105%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 19542,
+        "values": [
+          "1,302,161",
+          "110%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 20030,
+        "values": [
+          "1,376,563",
+          "115%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 20531,
+        "values": [
+          "1,451,779",
+          "120%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 21044,
+        "values": [
+          "1,527,782",
+          "125%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 21570,
+        "values": [
+          "1,604,549",
+          "130%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 22110,
+        "values": [
+          "1,682,059",
+          "135%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 22662,
+        "values": [
+          "1,760,289",
+          "140%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 23229,
+        "values": [
+          "1,839,221",
+          "145%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 23810,
+        "values": [
+          "1,918,836",
+          "150%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 24405,
+        "values": [
+          "1,999,118",
+          "155%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 25015,
+        "values": [
+          "2,080,050",
+          "160%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 25640,
+        "values": [
+          "2,161,617",
+          "165%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 26281,
+        "values": [
+          "2,243,804",
+          "170%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 26938,
+        "values": [
+          "2,326,598",
+          "175%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 27612,
+        "values": [
+          "2,409,986",
+          "180%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 28302,
+        "values": [
+          "2,493,954",
+          "185%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 29010,
+        "values": [
+          "2,578,492",
+          "190%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 29735,
+        "values": [
+          "2,663,588",
+          "195%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 30478,
+        "values": [
+          "2,749,232",
+          "200%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 31240,
+        "values": [
+          "2,835,412",
+          "205%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 32021,
+        "values": [
+          "2,922,119",
+          "210%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 32822,
+        "values": [
+          "3,009,345",
+          "215%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 33642,
+        "values": [
+          "3,097,078",
+          "220%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 34483,
+        "values": [
+          "3,185,312",
+          "225%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 35345,
+        "values": [
+          "3,274,037",
+          "230%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 36229,
+        "values": [
+          "3,363,246",
+          "235%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 37135,
+        "values": [
+          "3,452,931",
+          "240%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 38063,
+        "values": [
+          "3,543,084",
+          "245%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 39014,
+        "values": [
+          "3,633,698",
+          "250%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 39990,
+        "values": [
+          "3,724,766",
+          "255%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 40990,
+        "values": [
+          "3,816,282",
+          "260%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 42014,
+        "values": [
+          "3,908,239",
+          "265%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 43065,
+        "values": [
+          "4,000,631",
+          "270%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 44141,
+        "values": [
+          "4,093,452",
+          "275%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 45245,
+        "values": [
+          "4,186,695",
+          "280%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 46376,
+        "values": [
+          "4,280,356",
+          "285%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 47535,
+        "values": [
+          "4,374,428",
+          "290%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 48724,
+        "values": [
+          "4,468,907",
+          "295%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 49942,
+        "values": [
+          "4,563,787",
+          "300%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 51190,
+        "values": [
+          "4,659,063",
+          "305%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 52470,
+        "values": [
+          "4,754,731",
+          "310%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 53782,
+        "values": [
+          "4,850,785",
+          "315%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 55126,
+        "values": [
+          "4,947,221",
+          "320%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 56504,
+        "values": [
+          "5,044,034",
+          "325%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 57917,
+        "values": [
+          "5,141,221",
+          "330%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 59365,
+        "values": [
+          "5,238,776",
+          "335%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 60849,
+        "values": [
+          "5,336,696",
+          "340%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 62370,
+        "values": [
+          "5,434,977",
+          "345%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 63929,
+        "values": [
+          "5,533,614",
+          "350%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 65528,
+        "values": [
+          "5,632,604",
+          "355%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 67166,
+        "values": [
+          "5,731,944",
+          "360%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 68845,
+        "values": [
+          "5,831,629",
+          "365%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 70566,
+        "values": [
+          "5,931,656",
+          "370%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 72330,
+        "values": [
+          "6,032,022",
+          "375%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 74138,
+        "values": [
+          "6,132,722",
+          "380%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 75992,
+        "values": [
+          "6,233,755",
+          "385%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 77892,
+        "values": [
+          "6,335,116",
+          "390%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 79839,
+        "values": [
+          "6,436,802",
+          "395%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 81835,
+        "values": [
+          "6,538,811",
+          "400%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Shattered_Horizon_Siphon"
+}

@@ -3,10 +3,13 @@
 //   public/data/<AgeId>.json    every building available in that age, with that age's data only
 //   public/data/buildings/<id>.json   one building with all its ages and its other levels
 //   public/data/search.json     names of every building for the search bar
+//   public/data/great-buildings.json         Great Buildings grid (name, image, age)
+//   public/data/great-buildings/<id>.json    one Great Building with every level
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs"
 import { AGE_IDS, type AgeId } from "../src/core/ages"
 import { BuildingSchema, type AgeBuilding, type BuildingPage } from "../src/core/building"
+import { GreatBuildingSchema, type GreatBuildingCard } from "../src/core/great-building"
 import type { SearchEntry } from "../src/core/search"
 
 const SOURCE = "data/buildings"
@@ -23,7 +26,7 @@ const icons = existsSync("data/icons.json")
 // Files are replaced in place, never the whole folder: the Vite dev server
 // stops serving a public folder that is deleted and recreated
 mkdirSync(OUTPUT, { recursive: true })
-const written = new Set(["index.json", "search.json"])
+const written = new Set(["index.json", "search.json", "great-buildings.json"])
 
 const ages: { id: AgeId; buildings: number }[] = []
 for (const ageId of AGE_IDS) {
@@ -39,10 +42,22 @@ for (const ageId of AGE_IDS) {
 
 writeFileSync(
   `${OUTPUT}/index.json`,
-  JSON.stringify({ gameVersion: meta.gameVersion, scrapedAt: meta.scrapedAt, ages, icons }),
+  JSON.stringify({
+    gameVersion: meta.gameVersion,
+    scrapedAt: meta.scrapedAt,
+    ages,
+    icons,
+    // Building types with data, for the type filter
+    types: [
+      ...new Set(buildings.map((b) => b.type)),
+      ...(existsSync("data/great-buildings") ? ["great_building"] : []),
+    ],
+  }),
 )
 for (const file of readdirSync(OUTPUT)) {
-  if (file !== "buildings" && !written.has(file)) rmSync(`${OUTPUT}/${file}`)
+  if (!["buildings", "great-buildings"].includes(file) && !written.has(file)) {
+    rmSync(`${OUTPUT}/${file}`)
+  }
 }
 
 // Light index for the search bar: names, image and source only
@@ -77,5 +92,30 @@ for (const building of buildings) {
 for (const file of readdirSync(BUILDINGS_OUTPUT)) {
   if (!pages.has(file)) rmSync(`${BUILDINGS_OUTPUT}/${file}`)
 }
+
+// Great Buildings: a light grid file and one file per building
+const GB_SOURCE = "data/great-buildings"
+const GB_OUTPUT = `${OUTPUT}/great-buildings`
+const greatBuildings = existsSync(GB_SOURCE)
+  ? readdirSync(GB_SOURCE)
+      .filter((file) => file.endsWith(".json"))
+      .map((file) =>
+        GreatBuildingSchema.parse(JSON.parse(readFileSync(`${GB_SOURCE}/${file}`, "utf8"))),
+      )
+  : []
+mkdirSync(GB_OUTPUT, { recursive: true })
+const cards: GreatBuildingCard[] = greatBuildings.map(({ id, name, image, age }) => ({
+  id,
+  name,
+  image,
+  age,
+}))
+writeFileSync(`${OUTPUT}/great-buildings.json`, JSON.stringify(cards))
+const gbFiles = new Set<string>()
+for (const gb of greatBuildings) {
+  writeFileSync(`${GB_OUTPUT}/${gb.id}.json`, JSON.stringify(gb))
+  gbFiles.add(`${gb.id}.json`)
+}
+for (const file of readdirSync(GB_OUTPUT)) if (!gbFiles.has(file)) rmSync(`${GB_OUTPUT}/${file}`)
 
 console.log(`${buildings.length} buildings bundled into ${ages.length} ages (${OUTPUT})`)

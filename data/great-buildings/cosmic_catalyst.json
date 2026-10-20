@@ -1,0 +1,703 @@
+{
+  "id": "cosmic_catalyst",
+  "name": {
+    "fr": "Catalyseur cosmique",
+    "en": "Cosmic Catalyst"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_SpaceAgeSpaceHub_Landmark2-683a3a207.png",
+  "age": "SpaceAgeSpaceHub",
+  "size": {
+    "w": 4,
+    "h": 4
+  },
+  "road": "road",
+  "description": {
+    "fr": "Nombreux sont ceux qui n'ont pas réussi à construire un catalyseur aussi magnifique. Il s'agit sans aucun doute de la deuxième pierre angulaire de la domination intergalactique. Rares sont ceux qui savent le construire, et encore plus rares sont ceux qui savent le faire fonctionner.",
+    "en": "Many have failed to build such a magnificent Catalyst. It is without a doubt the second cornerstone of intergalactic dominance. Only a few know how to build it, and even less how to operate it."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+      "name": {
+        "fr": "Ressources de la guilde",
+        "en": "Guild Goods"
+      },
+      "text": {
+        "fr": "Produit une certaine quantité de chaque ressource actuelle pour la trésorerie de la guilde. Ne se collecte qu'en étant membre d'une guilde.",
+        "en": "Produces some of each current good for the guild's treasury. Can only be collected when in a guild."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_critical_hit_chance-2b5603a4b.png",
+      "name": {
+        "fr": "Coup critique",
+        "en": "Critical Hit"
+      },
+      "text": {
+        "fr": "Accorde une chance d'infliger 150% de points de dégâts aux unités ennemies du même âge que vos unités. Cap à 25%.",
+        "en": "Grants a chance to deal 150% damage against enemy units from the same Age as your units. Caps at 25%."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+        "label": {
+          "fr": "Ressources de la guilde",
+          "en": "Guild Goods"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_critical_hit_chance-2b5603a4b.png",
+        "label": {
+          "fr": "Coup critique",
+          "en": "Critical Hit"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 840,
+        "values": [
+          "5",
+          "1%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 1250,
+        "values": [
+          "10",
+          "2%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 2320,
+        "values": [
+          "15",
+          "3%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 3570,
+        "values": [
+          "20",
+          "4%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 4730,
+        "values": [
+          "25",
+          "5%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 5970,
+        "values": [
+          "30",
+          "6%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 7400,
+        "values": [
+          "35",
+          "7%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 8700,
+        "values": [
+          "40",
+          "8%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 10210,
+        "values": [
+          "45",
+          "9%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 11540,
+        "values": [
+          "50",
+          "10%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 11829,
+        "values": [
+          "55",
+          "10.17%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 12125,
+        "values": [
+          "60",
+          "10.33%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 12428,
+        "values": [
+          "65",
+          "10.5%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 12739,
+        "values": [
+          "70",
+          "10.67%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 13057,
+        "values": [
+          "75",
+          "10.83%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 13383,
+        "values": [
+          "80",
+          "11%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 13718,
+        "values": [
+          "85",
+          "11.17%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 14061,
+        "values": [
+          "90",
+          "11.33%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 14412,
+        "values": [
+          "95",
+          "11.5%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 14773,
+        "values": [
+          "100",
+          "11.67%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 15142,
+        "values": [
+          "105",
+          "11.83%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 15521,
+        "values": [
+          "110",
+          "12%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 15909,
+        "values": [
+          "115",
+          "12.17%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 16306,
+        "values": [
+          "120",
+          "12.33%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 16714,
+        "values": [
+          "125",
+          "12.5%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 17132,
+        "values": [
+          "130",
+          "12.67%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 17560,
+        "values": [
+          "135",
+          "12.83%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 17999,
+        "values": [
+          "140",
+          "13%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 18449,
+        "values": [
+          "145",
+          "13.17%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 18910,
+        "values": [
+          "150",
+          "13.33%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 19383,
+        "values": [
+          "155",
+          "13.5%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 19867,
+        "values": [
+          "160",
+          "13.67%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 20364,
+        "values": [
+          "165",
+          "13.83%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 20873,
+        "values": [
+          "170",
+          "14%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 21395,
+        "values": [
+          "175",
+          "14.17%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 21930,
+        "values": [
+          "180",
+          "14.33%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 22478,
+        "values": [
+          "185",
+          "14.5%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 23040,
+        "values": [
+          "190",
+          "14.67%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 23616,
+        "values": [
+          "195",
+          "14.83%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 24206,
+        "values": [
+          "200",
+          "15%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 24812,
+        "values": [
+          "205",
+          "15.17%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 25432,
+        "values": [
+          "210",
+          "15.33%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 26068,
+        "values": [
+          "215",
+          "15.5%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 26719,
+        "values": [
+          "220",
+          "15.67%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 27387,
+        "values": [
+          "225",
+          "15.83%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 28072,
+        "values": [
+          "230",
+          "16%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 28774,
+        "values": [
+          "235",
+          "16.17%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 29493,
+        "values": [
+          "240",
+          "16.33%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 30230,
+        "values": [
+          "245",
+          "16.5%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 30986,
+        "values": [
+          "250",
+          "16.67%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 31761,
+        "values": [
+          "255",
+          "16.83%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 32555,
+        "values": [
+          "260",
+          "17%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 33369,
+        "values": [
+          "265",
+          "17.17%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 34203,
+        "values": [
+          "270",
+          "17.33%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 35058,
+        "values": [
+          "275",
+          "17.5%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 35934,
+        "values": [
+          "280",
+          "17.67%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 36833,
+        "values": [
+          "285",
+          "17.83%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 37753,
+        "values": [
+          "290",
+          "18%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 38697,
+        "values": [
+          "295",
+          "18.17%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 39665,
+        "values": [
+          "300",
+          "18.33%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 40656,
+        "values": [
+          "305",
+          "18.5%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 41673,
+        "values": [
+          "310",
+          "18.67%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 42715,
+        "values": [
+          "315",
+          "18.83%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 43782,
+        "values": [
+          "320",
+          "19%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 44877,
+        "values": [
+          "325",
+          "19.17%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 45999,
+        "values": [
+          "330",
+          "19.33%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 47149,
+        "values": [
+          "335",
+          "19.5%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 48328,
+        "values": [
+          "340",
+          "19.67%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 49536,
+        "values": [
+          "345",
+          "19.83%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 50774,
+        "values": [
+          "350",
+          "20%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 52043,
+        "values": [
+          "355",
+          "20.17%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 53344,
+        "values": [
+          "360",
+          "20.33%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 54678,
+        "values": [
+          "365",
+          "20.5%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 56045,
+        "values": [
+          "370",
+          "20.67%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 57446,
+        "values": [
+          "375",
+          "20.83%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 58882,
+        "values": [
+          "380",
+          "21%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 60354,
+        "values": [
+          "385",
+          "21.17%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 61863,
+        "values": [
+          "390",
+          "21.33%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 63410,
+        "values": [
+          "395",
+          "21.5%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 64995,
+        "values": [
+          "400",
+          "21.67%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Cosmic_Catalyst"
+}

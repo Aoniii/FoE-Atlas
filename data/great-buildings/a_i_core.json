@@ -1,0 +1,790 @@
+{
+  "id": "a_i_core",
+  "name": {
+    "fr": "Noyau d'I.A.",
+    "en": "A.I. Core"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_SpaceAgeJupiterMoon_Landmark1-bec190586.png",
+  "age": "SpaceAgeJupiterMoon",
+  "size": {
+    "w": 5,
+    "h": 5
+  },
+  "road": "road",
+  "description": {
+    "fr": "Le noyau d'I.A. est un superordinateur central traitant une énorme quantité de données. Il a été créé pour identifier et analyser toutes les ressources produites, collectées et importées. Grâce à ses algorithmes d'apprentissage profond uniques, il peut augmenter la productivité des ressources spéciales de votre cité principale.",
+    "en": "The A.I. Core is a central supercomputer, processing massive amounts of data. It was created to identify and analyze produced, collected, and imported goods of any type. Due to its unique deep-learning algorithms, it can increase the special goods productivity of your main city."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+      "name": {
+        "fr": "Ressources de la guilde",
+        "en": "Guild Goods"
+      },
+      "text": {
+        "fr": "Produit une certaine quantité de chaque ressource actuelle pour la trésorerie de la guilde. Ne se collecte qu'en étant membre d'une guilde.",
+        "en": "Produces some of each current good for the guild's treasury. Can only be collected when in a guild."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_algorithmic_core-c5a6b5ba1.png",
+      "name": {
+        "fr": "Noyau algorithmique",
+        "en": "Algorithmic Core"
+      },
+      "text": {
+        "fr": "Améliore les premières collectes de ressources spéciales des productions après avoir atteint le Futur arctique. Améliore les marchandises des ères précédentes à la place.",
+        "en": "Boosts the first special good collections from productions after reaching Arctic Future. Boosts supplies in earlier eras instead."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+        "label": {
+          "fr": "Ressources de la guilde",
+          "en": "Guild Goods"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_algorithmic_core-c5a6b5ba1.png",
+        "label": {
+          "fr": "Noyau algorithmique (#)",
+          "en": "Algorithmic Core (#)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_algorithmic_core-c5a6b5ba1.png",
+        "label": {
+          "fr": "Noyau algorithmique (%)",
+          "en": "Algorithmic Core (%)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 100,
+        "values": [
+          "12",
+          "4",
+          "5%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 150,
+        "values": [
+          "13",
+          "4",
+          "6%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 280,
+        "values": [
+          "15",
+          "4",
+          "7%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 430,
+        "values": [
+          "16",
+          "4",
+          "9%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 570,
+        "values": [
+          "18",
+          "5",
+          "10%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 720,
+        "values": [
+          "19",
+          "5",
+          "11%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 890,
+        "values": [
+          "21",
+          "5",
+          "12%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 1050,
+        "values": [
+          "22",
+          "5",
+          "13%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 1230,
+        "values": [
+          "24",
+          "5",
+          "15%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 1390,
+        "values": [
+          "25",
+          "5",
+          "17%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 1425,
+        "values": [
+          "27",
+          "5",
+          "18.18%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 1461,
+        "values": [
+          "29",
+          "5",
+          "18.64%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 1497,
+        "values": [
+          "31",
+          "5",
+          "19.11%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 1535,
+        "values": [
+          "33",
+          "5",
+          "19.59%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 1573,
+        "values": [
+          "35",
+          "5",
+          "20.07%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1612,
+        "values": [
+          "37",
+          "6",
+          "20.55%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1653,
+        "values": [
+          "39",
+          "6",
+          "21.03%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1694,
+        "values": [
+          "41",
+          "6",
+          "21.52%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1736,
+        "values": [
+          "43",
+          "6",
+          "22.01%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1780,
+        "values": [
+          "45",
+          "6",
+          "22.51%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1824,
+        "values": [
+          "47",
+          "6",
+          "23%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1870,
+        "values": [
+          "49",
+          "6",
+          "23.5%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1917,
+        "values": [
+          "51",
+          "6",
+          "24%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1965,
+        "values": [
+          "53",
+          "6",
+          "24.5%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 2014,
+        "values": [
+          "55",
+          "6",
+          "25%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 2064,
+        "values": [
+          "57",
+          "6",
+          "25.5%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 2116,
+        "values": [
+          "59",
+          "6",
+          "26%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 2168,
+        "values": [
+          "61",
+          "7",
+          "26.5%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 2223,
+        "values": [
+          "63",
+          "7",
+          "27%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 2278,
+        "values": [
+          "65",
+          "7",
+          "27.49%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 2335,
+        "values": [
+          "67",
+          "7",
+          "27.99%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 2393,
+        "values": [
+          "69",
+          "7",
+          "28.48%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 2453,
+        "values": [
+          "71",
+          "7",
+          "28.97%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 2515,
+        "values": [
+          "73",
+          "7",
+          "29.45%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 2577,
+        "values": [
+          "75",
+          "7",
+          "29.93%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 2642,
+        "values": [
+          "77",
+          "7",
+          "30.41%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 2708,
+        "values": [
+          "79",
+          "7",
+          "30.89%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 2776,
+        "values": [
+          "81",
+          "7",
+          "31.36%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 2845,
+        "values": [
+          "83",
+          "7",
+          "31.82%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 2916,
+        "values": [
+          "85",
+          "7",
+          "32.28%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 2989,
+        "values": [
+          "87",
+          "8",
+          "32.74%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 3064,
+        "values": [
+          "89",
+          "8",
+          "33.19%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 3140,
+        "values": [
+          "91",
+          "8",
+          "33.63%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 3219,
+        "values": [
+          "93",
+          "8",
+          "34.07%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 3299,
+        "values": [
+          "95",
+          "8",
+          "34.5%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 3382,
+        "values": [
+          "97",
+          "8",
+          "34.92%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 3466,
+        "values": [
+          "99",
+          "8",
+          "35.34%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 3553,
+        "values": [
+          "101",
+          "8",
+          "35.75%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 3642,
+        "values": [
+          "103",
+          "8",
+          "36.16%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 3733,
+        "values": [
+          "105",
+          "8",
+          "36.55%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 3826,
+        "values": [
+          "107",
+          "8",
+          "36.94%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 3922,
+        "values": [
+          "109",
+          "8",
+          "37.32%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 4020,
+        "values": [
+          "111",
+          "8",
+          "37.7%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 4120,
+        "values": [
+          "113",
+          "8",
+          "38.07%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 4223,
+        "values": [
+          "115",
+          "8",
+          "38.43%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 4329,
+        "values": [
+          "117",
+          "8",
+          "38.78%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 4437,
+        "values": [
+          "119",
+          "8",
+          "39.12%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 4548,
+        "values": [
+          "121",
+          "9",
+          "39.46%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 4662,
+        "values": [
+          "123",
+          "9",
+          "39.79%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 4778,
+        "values": [
+          "125",
+          "9",
+          "40.11%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 4898,
+        "values": [
+          "127",
+          "9",
+          "40.42%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 5020,
+        "values": [
+          "129",
+          "9",
+          "40.73%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 5145,
+        "values": [
+          "131",
+          "9",
+          "41.03%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 5274,
+        "values": [
+          "133",
+          "9",
+          "41.32%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 5406,
+        "values": [
+          "135",
+          "9",
+          "41.6%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 5541,
+        "values": [
+          "137",
+          "9",
+          "41.88%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 5680,
+        "values": [
+          "139",
+          "9",
+          "42.15%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 5822,
+        "values": [
+          "141",
+          "9",
+          "42.41%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 5967,
+        "values": [
+          "143",
+          "9",
+          "42.66%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 6116,
+        "values": [
+          "145",
+          "9",
+          "42.91%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 6269,
+        "values": [
+          "147",
+          "9",
+          "43.15%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 6426,
+        "values": [
+          "149",
+          "9",
+          "43.38%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 6586,
+        "values": [
+          "151",
+          "9",
+          "43.61%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 6751,
+        "values": [
+          "153",
+          "9",
+          "43.83%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 6920,
+        "values": [
+          "155",
+          "9",
+          "44.04%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 7093,
+        "values": [
+          "157",
+          "9",
+          "44.25%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 7270,
+        "values": [
+          "159",
+          "9",
+          "44.45%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 7452,
+        "values": [
+          "161",
+          "9",
+          "44.64%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 7638,
+        "values": [
+          "163",
+          "9",
+          "44.83%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 7829,
+        "values": [
+          "165",
+          "9",
+          "45.01%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=A.I._Core"
+}

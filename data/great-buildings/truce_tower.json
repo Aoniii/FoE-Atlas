@@ -1,0 +1,790 @@
+{
+  "id": "truce_tower",
+  "name": {
+    "fr": "Tour de la trêve",
+    "en": "Truce Tower"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_TomorrowEra_Landmark2-837cbc8ec.png",
+  "age": "TomorrowEra",
+  "size": {
+    "w": 6,
+    "h": 5
+  },
+  "road": "road",
+  "description": {
+    "fr": "Construite pour être l'emblème d'une grande unité. Ce bâtiment enfoncé dans le sol comprend différents éléments architecturaux derrière un solide vitrage. La structure grandiose et semi-fermée rappelle une cathédrale et s'incline délicatement sur elle-même, devenant ainsi un symbole de coopération et de collaboration.",
+    "en": "Constructed to be an emblem of great unity. The sunken building comprises a number of distinct architectural elements held behind a strong glass casing. The spectacular scale of the semi-enclosed, cathedral-like structure gently leans into itself, thus becoming a symbol of cooperation and collaboration."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_supplies-d07694640.png",
+      "name": {
+        "fr": "Production de marchandises",
+        "en": "Supply production"
+      },
+      "text": {
+        "fr": "Produit Marchandises toutes les 24 heures.",
+        "en": "Produces Supplies every 24 hours."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_aid_goods-01b049e94.png",
+      "name": {
+        "fr": "Ressources d'entraide",
+        "en": "Aid Goods"
+      },
+      "text": {
+        "fr": "Les premières fois que vous aidez un bâtiment, vous recevez une ressource aléatoire de l'âge du bâtiment.",
+        "en": "The first number of times you aid a building you get a random good from that building's age."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_supplies-d07694640.png",
+        "label": {
+          "fr": "Production de marchandises",
+          "en": "Supply production"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_aid_goods-01b049e94.png",
+        "label": {
+          "fr": "Ressources d'entraide (#)",
+          "en": "Aid Goods (#)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_aid_goods-01b049e94.png",
+        "label": {
+          "fr": "Ressources d'entraide (Goods)",
+          "en": "Aid Goods (Goods)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 70,
+        "values": [
+          "14,100",
+          "12",
+          "1"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 100,
+        "values": [
+          "16,500",
+          "15",
+          "1"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 190,
+        "values": [
+          "18,800",
+          "18",
+          "1"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 280,
+        "values": [
+          "23,200",
+          "21",
+          "1"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 380,
+        "values": [
+          "25,800",
+          "24",
+          "1"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 480,
+        "values": [
+          "29,700",
+          "27",
+          "1"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 590,
+        "values": [
+          "33,600",
+          "30",
+          "1"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 710,
+        "values": [
+          "37,500",
+          "33",
+          "1"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 810,
+        "values": [
+          "41,300",
+          "36",
+          "1"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 930,
+        "values": [
+          "45,200",
+          "39",
+          "1"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 954,
+        "values": [
+          "50,919",
+          "40",
+          "1"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 978,
+        "values": [
+          "56,770",
+          "41",
+          "1"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 1002,
+        "values": [
+          "62,744",
+          "42",
+          "1"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 1027,
+        "values": [
+          "68,834",
+          "43",
+          "1"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 1053,
+        "values": [
+          "75,034",
+          "44",
+          "1"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1079,
+        "values": [
+          "81,338",
+          "45",
+          "1"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1106,
+        "values": [
+          "87,741",
+          "46",
+          "1"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1134,
+        "values": [
+          "94,239",
+          "47",
+          "1"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1162,
+        "values": [
+          "100,828",
+          "48",
+          "1"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1191,
+        "values": [
+          "107,505",
+          "49",
+          "1"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1221,
+        "values": [
+          "114,265",
+          "50",
+          "1"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1251,
+        "values": [
+          "121,107",
+          "51",
+          "1"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1283,
+        "values": [
+          "128,027",
+          "52",
+          "1"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1315,
+        "values": [
+          "135,022",
+          "53",
+          "1"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1347,
+        "values": [
+          "142,090",
+          "54",
+          "1"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1381,
+        "values": [
+          "149,230",
+          "55",
+          "1"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1416,
+        "values": [
+          "156,439",
+          "56",
+          "1"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1451,
+        "values": [
+          "163,715",
+          "57",
+          "1"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1487,
+        "values": [
+          "171,056",
+          "58",
+          "1"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1524,
+        "values": [
+          "178,460",
+          "59",
+          "1"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1563,
+        "values": [
+          "185,927",
+          "60",
+          "1"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1602,
+        "values": [
+          "193,454",
+          "61",
+          "1"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 1642,
+        "values": [
+          "201,040",
+          "62",
+          "1"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 1683,
+        "values": [
+          "208,684",
+          "63",
+          "1"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 1725,
+        "values": [
+          "216,384",
+          "64",
+          "1"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 1768,
+        "values": [
+          "224,139",
+          "65",
+          "1"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 1812,
+        "values": [
+          "231,948",
+          "66",
+          "1"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 1857,
+        "values": [
+          "239,811",
+          "67",
+          "1"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 1904,
+        "values": [
+          "247,725",
+          "68",
+          "1"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 1951,
+        "values": [
+          "255,690",
+          "69",
+          "1"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 2000,
+        "values": [
+          "263,705",
+          "70",
+          "1"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 2050,
+        "values": [
+          "271,770",
+          "71",
+          "1"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 2101,
+        "values": [
+          "279,882",
+          "72",
+          "1"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 2154,
+        "values": [
+          "288,041",
+          "73",
+          "1"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 2208,
+        "values": [
+          "296,248",
+          "74",
+          "1"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 2263,
+        "values": [
+          "304,499",
+          "75",
+          "1"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 2319,
+        "values": [
+          "312,796",
+          "76",
+          "1"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 2377,
+        "values": [
+          "321,137",
+          "77",
+          "1"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 2437,
+        "values": [
+          "329,522",
+          "78",
+          "1"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 2498,
+        "values": [
+          "337,949",
+          "79",
+          "1"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 2560,
+        "values": [
+          "346,419",
+          "80",
+          "1"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 2624,
+        "values": [
+          "354,930",
+          "81",
+          "1"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 2690,
+        "values": [
+          "363,483",
+          "82",
+          "1"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 2757,
+        "values": [
+          "372,076",
+          "83",
+          "1"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 2826,
+        "values": [
+          "380,708",
+          "84",
+          "1"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 2896,
+        "values": [
+          "389,380",
+          "85",
+          "1"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 2969,
+        "values": [
+          "398,091",
+          "86",
+          "1"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 3043,
+        "values": [
+          "406,840",
+          "87",
+          "1"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 3119,
+        "values": [
+          "415,627",
+          "88",
+          "1"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 3197,
+        "values": [
+          "424,451",
+          "89",
+          "1"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 3277,
+        "values": [
+          "433,313",
+          "90",
+          "1"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 3359,
+        "values": [
+          "442,210",
+          "91",
+          "1"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 3443,
+        "values": [
+          "451,143",
+          "92",
+          "1"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 3529,
+        "values": [
+          "460,112",
+          "93",
+          "1"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 3617,
+        "values": [
+          "469,116",
+          "94",
+          "1"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 3707,
+        "values": [
+          "478,155",
+          "95",
+          "1"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 3800,
+        "values": [
+          "487,228",
+          "96",
+          "1"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 3895,
+        "values": [
+          "496,335",
+          "97",
+          "1"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 3993,
+        "values": [
+          "505,476",
+          "98",
+          "1"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 4092,
+        "values": [
+          "514,649",
+          "99",
+          "1"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 4195,
+        "values": [
+          "523,856",
+          "100",
+          "1"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 4299,
+        "values": [
+          "533,095",
+          "101",
+          "1"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 4407,
+        "values": [
+          "542,366",
+          "102",
+          "1"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 4517,
+        "values": [
+          "551,669",
+          "103",
+          "1"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 4630,
+        "values": [
+          "561,003",
+          "104",
+          "1"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 4746,
+        "values": [
+          "570,369",
+          "105",
+          "1"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 4864,
+        "values": [
+          "579,765",
+          "106",
+          "1"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 4986,
+        "values": [
+          "589,192",
+          "107",
+          "1"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 5111,
+        "values": [
+          "598,650",
+          "108",
+          "1"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 5238,
+        "values": [
+          "608,137",
+          "109",
+          "1"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Truce_Tower"
+}

@@ -1,0 +1,790 @@
+{
+  "id": "the_virgo_project",
+  "name": {
+    "fr": "Le Projet Virgo",
+    "en": "The Virgo Project"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_SpaceAgeMars_Landmark2-053698660.png",
+  "age": "SpaceAgeMars",
+  "size": {
+    "w": 5,
+    "h": 5
+  },
+  "road": "road",
+  "description": {
+    "fr": "Le Projet Virgo fut créé pour envoyer des sondes dans l'espace. Une erreur lors de sa construction l'empêcha de remplir les fonctions désirées, et l'installation fut alors réaménagée pour lancer des missiles militaires.",
+    "en": "The Virgo Project was built to launch probes into space. An error in its construction made its original purpose impractical, so the facility was refitted to launch military missiles instead."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_coins-d8012c389.png",
+      "name": {
+        "fr": "Production de pièces",
+        "en": "Coin production"
+      },
+      "text": {
+        "fr": "Produit Pièces toutes les 24 heures.",
+        "en": "Produces Coins every 24 hours."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_missile_launch-c9163f103.png",
+      "name": {
+        "fr": "Lancement de missile",
+        "en": "Missile Launch"
+      },
+      "text": {
+        "fr": "Lors des premières batailles, vous avez une chance de tuer la moitié des unités ennemies au début du combat. La compétence ne s'applique qu'à la première vague des batailles en deux vagues.",
+        "en": "For the first number of battles, there is a chance of killing half the enemy units at the start of the battle. For two-wave battles, the skill applies only to the first wave."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_coins-d8012c389.png",
+        "label": {
+          "fr": "Production de pièces",
+          "en": "Coin production"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_missile_launch-c9163f103.png",
+        "label": {
+          "fr": "Lancement de missile (#)",
+          "en": "Missile Launch (#)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_missile_launch-c9163f103.png",
+        "label": {
+          "fr": "Lancement de missile (%)",
+          "en": "Missile Launch (%)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 90,
+        "values": [
+          "20,000",
+          "3",
+          "20%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 140,
+        "values": [
+          "23,300",
+          "3",
+          "22%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 250,
+        "values": [
+          "26,700",
+          "3",
+          "24%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 380,
+        "values": [
+          "39,100",
+          "3",
+          "26%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 520,
+        "values": [
+          "43,400",
+          "3",
+          "28%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 650,
+        "values": [
+          "57,800",
+          "3",
+          "30%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 800,
+        "values": [
+          "65,300",
+          "3",
+          "32%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 940,
+        "values": [
+          "83,500",
+          "3",
+          "34%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 1110,
+        "values": [
+          "92,200",
+          "3",
+          "36%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 1250,
+        "values": [
+          "100,800",
+          "3",
+          "38%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 1282,
+        "values": [
+          "113,554",
+          "3",
+          "39.18%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 1314,
+        "values": [
+          "126,601",
+          "3",
+          "40.32%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 1347,
+        "values": [
+          "139,924",
+          "3",
+          "41.46%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 1380,
+        "values": [
+          "153,505",
+          "3",
+          "42.58%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 1415,
+        "values": [
+          "167,331",
+          "3",
+          "43.68%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1450,
+        "values": [
+          "181,389",
+          "3",
+          "44.77%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1486,
+        "values": [
+          "195,669",
+          "3",
+          "45.83%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1524,
+        "values": [
+          "210,161",
+          "4",
+          "46.88%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1562,
+        "values": [
+          "224,855",
+          "4",
+          "47.9%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1601,
+        "values": [
+          "239,745",
+          "4",
+          "48.89%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1641,
+        "values": [
+          "254,821",
+          "4",
+          "49.86%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1682,
+        "values": [
+          "270,078",
+          "4",
+          "50.8%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1724,
+        "values": [
+          "285,510",
+          "4",
+          "51.72%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1767,
+        "values": [
+          "301,110",
+          "4",
+          "52.61%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1811,
+        "values": [
+          "316,874",
+          "4",
+          "53.46%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1856,
+        "values": [
+          "332,796",
+          "4",
+          "54.29%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1903,
+        "values": [
+          "348,872",
+          "4",
+          "55.09%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1950,
+        "values": [
+          "365,097",
+          "4",
+          "55.85%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1999,
+        "values": [
+          "381,468",
+          "4",
+          "56.59%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 2049,
+        "values": [
+          "397,981",
+          "4",
+          "57.3%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 2100,
+        "values": [
+          "414,632",
+          "4",
+          "57.98%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 2152,
+        "values": [
+          "431,418",
+          "4",
+          "58.63%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 2206,
+        "values": [
+          "448,336",
+          "4",
+          "59.25%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 2261,
+        "values": [
+          "465,382",
+          "4",
+          "59.84%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 2318,
+        "values": [
+          "482,554",
+          "4",
+          "60.41%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 2376,
+        "values": [
+          "499,849",
+          "4",
+          "60.95%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 2435,
+        "values": [
+          "517,265",
+          "4",
+          "61.46%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 2496,
+        "values": [
+          "534,799",
+          "4",
+          "61.95%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 2559,
+        "values": [
+          "552,448",
+          "4",
+          "62.41%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 2622,
+        "values": [
+          "570,211",
+          "4",
+          "62.85%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 2688,
+        "values": [
+          "588,086",
+          "4",
+          "63.26%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 2755,
+        "values": [
+          "606,070",
+          "4",
+          "63.66%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 2824,
+        "values": [
+          "624,161",
+          "4",
+          "64.03%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 2895,
+        "values": [
+          "642,357",
+          "4",
+          "64.39%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 2967,
+        "values": [
+          "660,658",
+          "5",
+          "64.72%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 3041,
+        "values": [
+          "679,060",
+          "5",
+          "65.04%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 3117,
+        "values": [
+          "697,563",
+          "5",
+          "65.34%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 3195,
+        "values": [
+          "716,164",
+          "5",
+          "65.62%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 3275,
+        "values": [
+          "734,862",
+          "5",
+          "65.89%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 3357,
+        "values": [
+          "753,656",
+          "5",
+          "66.14%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 3441,
+        "values": [
+          "772,545",
+          "5",
+          "66.37%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 3527,
+        "values": [
+          "791,526",
+          "5",
+          "66.59%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 3615,
+        "values": [
+          "810,598",
+          "5",
+          "66.8%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 3705,
+        "values": [
+          "829,761",
+          "5",
+          "67%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 3798,
+        "values": [
+          "849,013",
+          "5",
+          "67.19%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 3893,
+        "values": [
+          "868,352",
+          "5",
+          "67.36%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 3990,
+        "values": [
+          "887,778",
+          "5",
+          "67.53%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 4090,
+        "values": [
+          "907,289",
+          "5",
+          "67.68%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 4192,
+        "values": [
+          "926,885",
+          "5",
+          "67.83%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 4297,
+        "values": [
+          "946,564",
+          "5",
+          "67.96%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 4404,
+        "values": [
+          "966,325",
+          "5",
+          "68.09%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 4514,
+        "values": [
+          "986,167",
+          "5",
+          "68.21%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 4627,
+        "values": [
+          "1,006,089",
+          "5",
+          "68.32%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 4743,
+        "values": [
+          "1,026,091",
+          "5",
+          "68.43%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 4861,
+        "values": [
+          "1,046,170",
+          "5",
+          "68.53%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 4983,
+        "values": [
+          "1,066,328",
+          "5",
+          "68.62%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 5108,
+        "values": [
+          "1,086,561",
+          "5",
+          "68.71%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 5235,
+        "values": [
+          "1,106,871",
+          "5",
+          "68.79%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 5366,
+        "values": [
+          "1,127,255",
+          "5",
+          "68.87%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 5500,
+        "values": [
+          "1,147,713",
+          "5",
+          "68.94%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 5638,
+        "values": [
+          "1,168,244",
+          "5",
+          "69.01%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 5779,
+        "values": [
+          "1,188,848",
+          "5",
+          "69.07%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 5923,
+        "values": [
+          "1,209,523",
+          "5",
+          "69.13%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 6071,
+        "values": [
+          "1,230,270",
+          "5",
+          "69.18%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 6223,
+        "values": [
+          "1,251,086",
+          "5",
+          "69.24%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 6379,
+        "values": [
+          "1,271,972",
+          "5",
+          "69.28%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 6538,
+        "values": [
+          "1,292,927",
+          "5",
+          "69.33%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 6701,
+        "values": [
+          "1,313,950",
+          "5",
+          "69.37%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 6869,
+        "values": [
+          "1,335,041",
+          "5",
+          "69.41%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 7041,
+        "values": [
+          "1,356,198",
+          "5",
+          "69.45%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=The_Virgo_Project"
+}

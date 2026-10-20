@@ -1,0 +1,790 @@
+{
+  "id": "st_mark_s_basilica",
+  "name": {
+    "fr": "Basilique Saint-Marc",
+    "en": "St. Mark's Basilica"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_HighMiddleAge_Landmark1-2d2f516da.png",
+  "age": "HighMiddleAge",
+  "size": {
+    "w": 6,
+    "h": 6
+  },
+  "road": "road",
+  "description": {
+    "fr": "Construite par les marchands de la République vénitienne, la Basilique Saint-Marc reflète la richesse des maîtres de la Cité des Doges. À travers les siècles, de nombreux ajouts et décorations ont été faits, principalement apportés à Venise depuis de lointaines contrées.",
+    "en": "Built by Merchants of the Venetian Republic, St. Mark's Basilica reflected the wealth and power of the Venetian traders. Over the centuries more and more extensions and decorations were added, most brought to Venice from far away places."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_goods-ecf3d9439.png",
+      "name": {
+        "fr": "Production de ressources",
+        "en": "Good production"
+      },
+      "text": {
+        "fr": "Produit des ressources aléatoires de l'âge du joueur toutes les 24 heures. À partir de l'Ère Moderne, produit deux fois plus de ressources non raffinées.",
+        "en": "Produces random goods from the players age every 24 hours. From Modern Era onwards produces twice as many unrefined goods instead."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_coins-d8012c389.png",
+      "name": {
+        "fr": "Bonus pièces",
+        "en": "Coin boost"
+      },
+      "text": {
+        "fr": "Les premières collectes de production de Pièces sont augmentées d'un certain pourcentage.",
+        "en": "The first number of collected Coins productions are boosted by a percentage."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_goods-ecf3d9439.png",
+        "label": {
+          "fr": "Production de ressources",
+          "en": "Good production"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_coins-d8012c389.png",
+        "label": {
+          "fr": "Bonus pièces (#)",
+          "en": "Coin boost (#)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_coins-d8012c389.png",
+        "label": {
+          "fr": "Bonus pièces (%)",
+          "en": "Coin boost (%)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 50,
+        "values": [
+          "10",
+          "90",
+          "100%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 70,
+        "values": [
+          "12",
+          "90",
+          "120%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 130,
+        "values": [
+          "13",
+          "90",
+          "135%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 200,
+        "values": [
+          "15",
+          "90",
+          "150%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 270,
+        "values": [
+          "17",
+          "90",
+          "170%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 330,
+        "values": [
+          "18",
+          "90",
+          "185%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 420,
+        "values": [
+          "20",
+          "90",
+          "200%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 490,
+        "values": [
+          "22",
+          "90",
+          "220%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 570,
+        "values": [
+          "24",
+          "90",
+          "235%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 650,
+        "values": [
+          "25",
+          "90",
+          "250%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 667,
+        "values": [
+          "26",
+          "90",
+          "255%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 683,
+        "values": [
+          "27",
+          "90",
+          "260%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 700,
+        "values": [
+          "28",
+          "90",
+          "265%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 718,
+        "values": [
+          "29",
+          "90",
+          "270%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 736,
+        "values": [
+          "30",
+          "90",
+          "275%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 754,
+        "values": [
+          "31",
+          "90",
+          "280%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 773,
+        "values": [
+          "32",
+          "90",
+          "285%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 792,
+        "values": [
+          "33",
+          "90",
+          "290%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 812,
+        "values": [
+          "34",
+          "90",
+          "295%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 833,
+        "values": [
+          "35",
+          "90",
+          "300%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 853,
+        "values": [
+          "36",
+          "90",
+          "305%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 875,
+        "values": [
+          "37",
+          "90",
+          "310%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 897,
+        "values": [
+          "38",
+          "90",
+          "315%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 919,
+        "values": [
+          "39",
+          "90",
+          "320%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 942,
+        "values": [
+          "40",
+          "90",
+          "325%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 965,
+        "values": [
+          "41",
+          "90",
+          "330%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 990,
+        "values": [
+          "42",
+          "90",
+          "335%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1014,
+        "values": [
+          "43",
+          "90",
+          "340%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1040,
+        "values": [
+          "44",
+          "90",
+          "345%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1066,
+        "values": [
+          "45",
+          "90",
+          "350%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1092,
+        "values": [
+          "46",
+          "90",
+          "355%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1120,
+        "values": [
+          "47",
+          "90",
+          "360%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 1147,
+        "values": [
+          "48",
+          "90",
+          "365%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 1176,
+        "values": [
+          "49",
+          "90",
+          "370%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 1206,
+        "values": [
+          "50",
+          "90",
+          "375%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 1236,
+        "values": [
+          "51",
+          "90",
+          "380%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 1267,
+        "values": [
+          "52",
+          "90",
+          "385%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 1298,
+        "values": [
+          "53",
+          "90",
+          "390%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 1331,
+        "values": [
+          "54",
+          "90",
+          "395%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 1364,
+        "values": [
+          "55",
+          "90",
+          "400%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 1398,
+        "values": [
+          "56",
+          "90",
+          "405%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 1433,
+        "values": [
+          "57",
+          "90",
+          "410%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 1469,
+        "values": [
+          "58",
+          "90",
+          "415%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 1505,
+        "values": [
+          "59",
+          "90",
+          "420%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 1543,
+        "values": [
+          "60",
+          "90",
+          "425%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 1582,
+        "values": [
+          "61",
+          "90",
+          "430%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 1621,
+        "values": [
+          "62",
+          "90",
+          "435%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 1662,
+        "values": [
+          "63",
+          "90",
+          "440%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 1703,
+        "values": [
+          "64",
+          "90",
+          "445%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 1746,
+        "values": [
+          "65",
+          "90",
+          "450%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 1789,
+        "values": [
+          "66",
+          "90",
+          "455%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 1834,
+        "values": [
+          "67",
+          "90",
+          "460%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 1880,
+        "values": [
+          "68",
+          "90",
+          "465%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 1927,
+        "values": [
+          "69",
+          "90",
+          "470%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 1975,
+        "values": [
+          "70",
+          "90",
+          "475%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 2025,
+        "values": [
+          "71",
+          "90",
+          "480%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 2075,
+        "values": [
+          "72",
+          "90",
+          "485%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 2127,
+        "values": [
+          "73",
+          "90",
+          "490%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 2180,
+        "values": [
+          "74",
+          "90",
+          "495%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 2235,
+        "values": [
+          "75",
+          "90",
+          "500%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 2290,
+        "values": [
+          "76",
+          "90",
+          "505%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 2348,
+        "values": [
+          "77",
+          "90",
+          "510%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 2406,
+        "values": [
+          "78",
+          "90",
+          "515%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 2467,
+        "values": [
+          "79",
+          "90",
+          "520%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 2528,
+        "values": [
+          "80",
+          "90",
+          "525%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 2591,
+        "values": [
+          "81",
+          "90",
+          "530%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 2656,
+        "values": [
+          "82",
+          "90",
+          "535%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 2723,
+        "values": [
+          "83",
+          "90",
+          "540%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 2791,
+        "values": [
+          "84",
+          "90",
+          "545%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 2860,
+        "values": [
+          "85",
+          "90",
+          "550%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 2932,
+        "values": [
+          "86",
+          "90",
+          "555%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 3005,
+        "values": [
+          "87",
+          "90",
+          "560%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 3080,
+        "values": [
+          "88",
+          "90",
+          "565%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 3157,
+        "values": [
+          "89",
+          "90",
+          "570%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 3236,
+        "values": [
+          "90",
+          "90",
+          "575%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 3317,
+        "values": [
+          "91",
+          "90",
+          "580%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 3400,
+        "values": [
+          "92",
+          "90",
+          "585%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 3485,
+        "values": [
+          "93",
+          "90",
+          "590%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 3572,
+        "values": [
+          "94",
+          "90",
+          "595%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 3661,
+        "values": [
+          "95",
+          "90",
+          "600%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=St._Mark's_Basilica"
+}

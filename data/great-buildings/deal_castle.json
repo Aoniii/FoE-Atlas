@@ -1,0 +1,703 @@
+{
+  "id": "deal_castle",
+  "name": {
+    "fr": "Château de Deal",
+    "en": "Deal Castle"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_ColonialAge_Landmark2-0d97eaa6f.png",
+  "age": "ColonialAge",
+  "size": {
+    "w": 7,
+    "h": 7
+  },
+  "road": "road",
+  "description": {
+    "fr": "Construit par Henri VIII pour contrer une menace d'invasion franco-espagnole, le Château de Deal est une forteresse très résistante qui a été pensée pour se défendre contre les attaques maritimes.",
+    "en": "Constructed by Henry VIII to counter the threat of a joined Franco-Spanish invasion, Deal Castle has stood the test of time, proving a valuable strategic asset to British resilience throughout the ages."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_medals-d29e77a05.png",
+      "name": {
+        "fr": "Production de médailles",
+        "en": "Medal production"
+      },
+      "text": {
+        "fr": "Produit Médailles toutes les 24 heures.",
+        "en": "Produces Medals every 24 hours."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_defender-6e0afd1e0.png",
+      "name": {
+        "fr": "Défenseurs - Attaque et défense",
+        "en": "Defenders - Attack & Defense"
+      },
+      "text": {
+        "fr": "Les unités de défense voient leurs valeurs d'attaque et de défense améliorées d'un certain pourcentage.",
+        "en": "Defending units have their attack and defense values boosted by a percentage."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_medals-d29e77a05.png",
+        "label": {
+          "fr": "Production de médailles",
+          "en": "Medal production"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_defender-6e0afd1e0.png",
+        "label": {
+          "fr": "Défenseurs - Attaque et défense",
+          "en": "Defenders - Attack & Defense"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 50,
+        "values": [
+          "40",
+          "3%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 90,
+        "values": [
+          "46",
+          "6%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 150,
+        "values": [
+          "54",
+          "9%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 220,
+        "values": [
+          "64",
+          "12%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 310,
+        "values": [
+          "74",
+          "15%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 380,
+        "values": [
+          "86",
+          "18%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 480,
+        "values": [
+          "99",
+          "21%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 560,
+        "values": [
+          "113",
+          "24%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 650,
+        "values": [
+          "128",
+          "27%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 740,
+        "values": [
+          "170",
+          "30%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 759,
+        "values": [
+          "184",
+          "30.5%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 778,
+        "values": [
+          "197",
+          "31%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 797,
+        "values": [
+          "210",
+          "31.5%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 817,
+        "values": [
+          "223",
+          "32%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 838,
+        "values": [
+          "236",
+          "32.5%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 859,
+        "values": [
+          "248",
+          "33%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 880,
+        "values": [
+          "260",
+          "33.5%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 902,
+        "values": [
+          "273",
+          "34%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 925,
+        "values": [
+          "285",
+          "34.5%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 948,
+        "values": [
+          "296",
+          "35%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 971,
+        "values": [
+          "308",
+          "35.5%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 996,
+        "values": [
+          "320",
+          "36%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1021,
+        "values": [
+          "332",
+          "36.5%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1046,
+        "values": [
+          "343",
+          "37%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1072,
+        "values": [
+          "354",
+          "37.5%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1099,
+        "values": [
+          "366",
+          "38%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1126,
+        "values": [
+          "377",
+          "38.5%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1155,
+        "values": [
+          "388",
+          "39%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1184,
+        "values": [
+          "399",
+          "39.5%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1213,
+        "values": [
+          "410",
+          "40%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1243,
+        "values": [
+          "421",
+          "40.5%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1274,
+        "values": [
+          "432",
+          "41%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 1306,
+        "values": [
+          "442",
+          "41.5%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 1339,
+        "values": [
+          "453",
+          "42%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 1372,
+        "values": [
+          "464",
+          "42.5%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 1407,
+        "values": [
+          "474",
+          "43%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 1442,
+        "values": [
+          "485",
+          "43.5%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 1478,
+        "values": [
+          "495",
+          "44%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 1515,
+        "values": [
+          "506",
+          "44.5%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 1553,
+        "values": [
+          "516",
+          "45%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 1592,
+        "values": [
+          "526",
+          "45.5%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 1631,
+        "values": [
+          "536",
+          "46%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 1672,
+        "values": [
+          "547",
+          "46.5%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 1714,
+        "values": [
+          "557",
+          "47%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 1757,
+        "values": [
+          "567",
+          "47.5%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 1801,
+        "values": [
+          "577",
+          "48%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 1846,
+        "values": [
+          "587",
+          "48.5%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 1892,
+        "values": [
+          "597",
+          "49%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 1939,
+        "values": [
+          "607",
+          "49.5%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 1987,
+        "values": [
+          "617",
+          "50%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 2037,
+        "values": [
+          "626",
+          "50.5%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 2088,
+        "values": [
+          "636",
+          "51%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 2140,
+        "values": [
+          "646",
+          "51.5%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 2194,
+        "values": [
+          "656",
+          "52%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 2249,
+        "values": [
+          "665",
+          "52.5%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 2305,
+        "values": [
+          "675",
+          "53%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 2362,
+        "values": [
+          "685",
+          "53.5%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 2421,
+        "values": [
+          "694",
+          "54%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 2482,
+        "values": [
+          "704",
+          "54.5%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 2544,
+        "values": [
+          "713",
+          "55%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 2608,
+        "values": [
+          "723",
+          "55.5%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 2673,
+        "values": [
+          "732",
+          "56%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 2740,
+        "values": [
+          "742",
+          "56.5%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 2808,
+        "values": [
+          "751",
+          "57%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 2878,
+        "values": [
+          "760",
+          "57.5%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 2950,
+        "values": [
+          "770",
+          "58%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 3024,
+        "values": [
+          "779",
+          "58.5%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 3099,
+        "values": [
+          "788",
+          "59%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 3177,
+        "values": [
+          "798",
+          "59.5%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 3256,
+        "values": [
+          "807",
+          "60%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 3338,
+        "values": [
+          "816",
+          "60.5%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 3421,
+        "values": [
+          "825",
+          "61%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 3507,
+        "values": [
+          "834",
+          "61.5%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 3594,
+        "values": [
+          "844",
+          "62%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 3684,
+        "values": [
+          "853",
+          "62.5%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 3776,
+        "values": [
+          "862",
+          "63%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 3871,
+        "values": [
+          "871",
+          "63.5%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 3967,
+        "values": [
+          "880",
+          "64%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 4067,
+        "values": [
+          "889",
+          "64.5%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 4168,
+        "values": [
+          "898",
+          "65%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Deal_Castle"
+}

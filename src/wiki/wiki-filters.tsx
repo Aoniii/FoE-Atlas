@@ -82,24 +82,28 @@ export function WikiFilters(props: FiltersProps) {
         </Select>
       </Field>
 
-      <Field label={t.wiki.age}>
-        <Select
-          items={ageItems}
-          value={props.age}
-          onValueChange={(value) => value && props.onAgeChange(value as AgeId)}
-        >
-          <SelectTrigger className="min-w-56">
-            <SelectValue />
-          </SelectTrigger>
-          <SelectContent alignItemWithTrigger={false} className="w-auto min-w-(--anchor-width)">
-            {ageItems.map((item) => (
-              <SelectItem key={item.value} value={item.value}>
-                {item.label}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </Field>
+      {props.type !== "great_building" && (
+        <>
+          <Field label={t.wiki.age}>
+            <Select
+              items={ageItems}
+              value={props.age}
+              onValueChange={(value) => value && props.onAgeChange(value as AgeId)}
+            >
+              <SelectTrigger className="min-w-56">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent alignItemWithTrigger={false} className="w-auto min-w-(--anchor-width)">
+                {ageItems.map((item) => (
+                  <SelectItem key={item.value} value={item.value}>
+                    {item.label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </Field>
+        </>
+      )}
 
       {props.type === "special" && (
         <Field label={t.wiki.event}>
@@ -124,38 +128,42 @@ export function WikiFilters(props: FiltersProps) {
         </Field>
       )}
 
-      <Field label={t.wiki.columns}>
-        <DropdownMenu>
-          <DropdownMenuTrigger render={<Button variant="outline" />}>
-            <Columns3 />
-            {props.visibleStats.length}
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="start" className="max-h-96 w-60">
-            {STAT_GROUPS.map((group, index) => (
-              <DropdownMenuGroup key={group}>
-                {index > 0 && <DropdownMenuSeparator />}
-                <DropdownMenuLabel>{t.statGroups[group]}</DropdownMenuLabel>
-                {statsOfGroup(group).map((key) => (
-                  <DropdownMenuCheckboxItem
-                    key={key}
-                    checked={props.visibleStats.includes(key)}
-                    onCheckedChange={(checked) => props.onToggleStat(key, checked)}
-                    closeOnClick={false}
-                  >
-                    <StatIcon stat={key} />
-                    {t.stats[key]}
-                  </DropdownMenuCheckboxItem>
+      {props.type !== "great_building" && (
+        <>
+          <Field label={t.wiki.columns}>
+            <DropdownMenu>
+              <DropdownMenuTrigger render={<Button variant="outline" />}>
+                <Columns3 />
+                {props.visibleStats.length}
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="max-h-96 w-60">
+                {STAT_GROUPS.map((group, index) => (
+                  <DropdownMenuGroup key={group}>
+                    {index > 0 && <DropdownMenuSeparator />}
+                    <DropdownMenuLabel>{t.statGroups[group]}</DropdownMenuLabel>
+                    {statsOfGroup(group).map((key) => (
+                      <DropdownMenuCheckboxItem
+                        key={key}
+                        checked={props.visibleStats.includes(key)}
+                        onCheckedChange={(checked) => props.onToggleStat(key, checked)}
+                        closeOnClick={false}
+                      >
+                        <StatIcon stat={key} />
+                        {t.stats[key]}
+                      </DropdownMenuCheckboxItem>
+                    ))}
+                  </DropdownMenuGroup>
                 ))}
-              </DropdownMenuGroup>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </Field>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </Field>
 
-      <Button variant="ghost" onClick={props.onReset}>
-        <RotateCcw />
-        {t.wiki.reset}
-      </Button>
+          <Button variant="ghost" onClick={props.onReset}>
+            <RotateCcw />
+            {t.wiki.reset}
+          </Button>
+        </>
+      )}
     </div>
   )
 }

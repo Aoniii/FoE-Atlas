@@ -7,6 +7,7 @@ import { getPreferredAge, setPreferredAge } from "@/lib/age-preference"
 import { useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
 import { BuildingsTable } from "./buildings-table"
+import { GreatBuildingGrid } from "./great-building-grid"
 import { toRows } from "./data"
 import { eventName, formatNumber } from "./format"
 import { StatIconsContext } from "./stat-icons-context"
@@ -37,14 +38,18 @@ export function WikiPage() {
   const { t, locale } = useI18n()
   const search = route.useSearch()
   const navigate = route.useNavigate()
-  const { index, buildings } = route.useLoaderData()
+  const { index, buildings, greatBuildings } = route.useLoaderData()
 
   const type: BuildingType = search.type ?? "special"
   const age = search.age ?? getPreferredAge() ?? LATEST_AGE
   const [visibleStats, setVisibleStats] = usePersistentState("wiki.columns.v2", DEFAULT_VISIBLE)
   const [scoreKeys, setScoreKeys] = usePersistentState("wiki.score.v3", DEFAULT_SCORE)
 
-  const types = useMemo(() => [...new Set(buildings.map((b) => b.type))].sort(), [buildings])
+  const types = useMemo(
+    () => index.types ?? [...new Set(buildings.map((b) => b.type))].sort(),
+    [index.types, buildings],
+  )
+  const isGreatBuildings = type === "great_building"
   const ofType = useMemo(() => buildings.filter((b) => b.type === type), [buildings, type])
   // Event families present, with their number of buildings, sorted by name
   const events = useMemo(() => {
@@ -69,7 +74,8 @@ export function WikiPage() {
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h1 className="text-2xl font-semibold">{t.nav.wiki}</h1>
           <p className="text-xs text-muted-foreground">
-            {formatNumber(rows.length, locale)} {t.wiki.buildings}
+            {formatNumber(isGreatBuildings ? greatBuildings.length : rows.length, locale)}{" "}
+            {t.wiki.buildings}
             {index.gameVersion && ` · ${t.wiki.gameVersion} ${index.gameVersion}`} ·{" "}
             {t.wiki.updated} {new Date(index.scrapedAt).toLocaleDateString(locale)}
           </p>
@@ -98,6 +104,8 @@ export function WikiPage() {
           }}
         />
 
+        {isGreatBuildings && <GreatBuildingGrid cards={greatBuildings} />}
+
         {type === "special" && (
           <ScorePanel
             scoreKeys={scoreKeys}
@@ -105,7 +113,9 @@ export function WikiPage() {
           />
         )}
 
-        <BuildingsTable rows={rows} visibleStats={visibleStats} showScore={showScore} />
+        {!isGreatBuildings && (
+          <BuildingsTable rows={rows} visibleStats={visibleStats} showScore={showScore} />
+        )}
       </div>
     </StatIconsContext>
   )

@@ -1,0 +1,790 @@
+{
+  "id": "the_kraken",
+  "name": {
+    "fr": "Le Kraken",
+    "en": "The Kraken"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_OceanicFuture_Landmark2-a6f5f84a0.png",
+  "age": "OceanicFuture",
+  "size": {
+    "w": 5,
+    "h": 5
+  },
+  "road": "road",
+  "description": {
+    "fr": "Libérez le Kraken !",
+    "en": "Release the Kraken!"
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_forgepoints-e3ed48926.png",
+      "name": {
+        "fr": "Recherches",
+        "en": "Research"
+      },
+      "text": {
+        "fr": "Produit Points Forge toutes les 24 heures.",
+        "en": "Produces Forge Points every 24 hours."
+      }
+    },
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_first_strike-fc4d9e07f.png",
+      "name": {
+        "fr": "Première frappe",
+        "en": "First Strike"
+      },
+      "text": {
+        "fr": "Lors des premières batailles, vous avez une chance de tuer une unité ennemie au début du combat. La compétence ne s'applique qu'à la première vague des batailles en deux vagues.",
+        "en": "For the first number of battles, there is a chance to kill one enemy unit at the start of battle. For two-wave battles, the skill applies only to the first wave."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_forgepoints-e3ed48926.png",
+        "label": {
+          "fr": "Recherches",
+          "en": "Research"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_first_strike-fc4d9e07f.png",
+        "label": {
+          "fr": "Première frappe (#)",
+          "en": "First Strike (#)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_first_strike-fc4d9e07f.png",
+        "label": {
+          "fr": "Première frappe (%)",
+          "en": "First Strike (%)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 80,
+        "values": [
+          "1",
+          "10",
+          "20%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 130,
+        "values": [
+          "1",
+          "10",
+          "21%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 240,
+        "values": [
+          "3",
+          "10",
+          "22%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 350,
+        "values": [
+          "3",
+          "11",
+          "23%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 470,
+        "values": [
+          "4",
+          "11",
+          "25%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 610,
+        "values": [
+          "4",
+          "11",
+          "27%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 740,
+        "values": [
+          "5",
+          "11",
+          "28%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 880,
+        "values": [
+          "5",
+          "12",
+          "29%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 1020,
+        "values": [
+          "6",
+          "12",
+          "31%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 1160,
+        "values": [
+          "8",
+          "12",
+          "32%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 1189,
+        "values": [
+          "8",
+          "12",
+          "33.92%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 1219,
+        "values": [
+          "9",
+          "13",
+          "35.43%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 1250,
+        "values": [
+          "10",
+          "13",
+          "36.97%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 1281,
+        "values": [
+          "11",
+          "13",
+          "38.54%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 1313,
+        "values": [
+          "12",
+          "13",
+          "40.13%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 1346,
+        "values": [
+          "12",
+          "13",
+          "41.74%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 1379,
+        "values": [
+          "13",
+          "14",
+          "43.37%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 1414,
+        "values": [
+          "14",
+          "14",
+          "45.02%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 1449,
+        "values": [
+          "15",
+          "14",
+          "46.67%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 1485,
+        "values": [
+          "16",
+          "14",
+          "48.33%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 1523,
+        "values": [
+          "16",
+          "15",
+          "50%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 1561,
+        "values": [
+          "17",
+          "15",
+          "51.67%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 1600,
+        "values": [
+          "18",
+          "15",
+          "53.33%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 1640,
+        "values": [
+          "19",
+          "15",
+          "54.98%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 1681,
+        "values": [
+          "20",
+          "16",
+          "56.63%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 1723,
+        "values": [
+          "20",
+          "16",
+          "58.26%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 1766,
+        "values": [
+          "21",
+          "16",
+          "59.87%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1810,
+        "values": [
+          "22",
+          "16",
+          "61.46%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1855,
+        "values": [
+          "23",
+          "17",
+          "63.03%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1901,
+        "values": [
+          "24",
+          "17",
+          "64.57%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1949,
+        "values": [
+          "24",
+          "17",
+          "66.08%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1998,
+        "values": [
+          "25",
+          "17",
+          "67.55%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 2047,
+        "values": [
+          "26",
+          "17",
+          "69%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 2099,
+        "values": [
+          "27",
+          "18",
+          "70.41%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 2151,
+        "values": [
+          "28",
+          "18",
+          "71.78%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 2205,
+        "values": [
+          "28",
+          "18",
+          "73.11%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 2260,
+        "values": [
+          "29",
+          "18",
+          "74.4%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 2316,
+        "values": [
+          "30",
+          "18",
+          "75.65%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 2374,
+        "values": [
+          "31",
+          "19",
+          "76.85%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 2434,
+        "values": [
+          "32",
+          "19",
+          "78.02%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 2495,
+        "values": [
+          "32",
+          "19",
+          "79.14%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 2557,
+        "values": [
+          "33",
+          "19",
+          "80.22%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 2621,
+        "values": [
+          "34",
+          "19",
+          "81.26%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 2686,
+        "values": [
+          "35",
+          "20",
+          "82.25%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 2753,
+        "values": [
+          "36",
+          "20",
+          "83.2%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 2822,
+        "values": [
+          "36",
+          "20",
+          "84.11%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 2893,
+        "values": [
+          "37",
+          "20",
+          "84.98%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 2965,
+        "values": [
+          "38",
+          "20",
+          "85.81%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 3039,
+        "values": [
+          "39",
+          "20",
+          "86.61%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 3115,
+        "values": [
+          "40",
+          "21",
+          "87.36%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 3193,
+        "values": [
+          "40",
+          "21",
+          "88.08%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 3273,
+        "values": [
+          "41",
+          "21",
+          "88.76%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 3355,
+        "values": [
+          "42",
+          "21",
+          "89.41%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 3439,
+        "values": [
+          "43",
+          "21",
+          "90.02%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 3524,
+        "values": [
+          "44",
+          "21",
+          "90.61%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 3613,
+        "values": [
+          "44",
+          "21",
+          "91.16%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 3703,
+        "values": [
+          "45",
+          "21",
+          "91.68%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 3795,
+        "values": [
+          "46",
+          "22",
+          "92.18%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 3890,
+        "values": [
+          "47",
+          "22",
+          "92.64%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 3988,
+        "values": [
+          "48",
+          "22",
+          "93.09%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 4087,
+        "values": [
+          "48",
+          "22",
+          "93.5%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 4189,
+        "values": [
+          "49",
+          "22",
+          "93.9%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 4294,
+        "values": [
+          "50",
+          "22",
+          "94.27%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 4401,
+        "values": [
+          "51",
+          "22",
+          "94.62%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 4511,
+        "values": [
+          "52",
+          "22",
+          "94.95%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 4624,
+        "values": [
+          "52",
+          "22",
+          "95.26%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 4740,
+        "values": [
+          "53",
+          "23",
+          "95.55%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 4858,
+        "values": [
+          "54",
+          "23",
+          "95.82%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 4980,
+        "values": [
+          "55",
+          "23",
+          "96.08%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 5104,
+        "values": [
+          "56",
+          "23",
+          "96.33%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 5232,
+        "values": [
+          "56",
+          "23",
+          "96.56%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 5363,
+        "values": [
+          "57",
+          "23",
+          "96.77%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 5497,
+        "values": [
+          "58",
+          "23",
+          "96.97%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 5634,
+        "values": [
+          "59",
+          "23",
+          "97.16%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 5775,
+        "values": [
+          "60",
+          "23",
+          "97.34%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 5919,
+        "values": [
+          "60",
+          "23",
+          "97.51%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 6067,
+        "values": [
+          "61",
+          "23",
+          "97.66%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 6219,
+        "values": [
+          "62",
+          "23",
+          "97.81%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 6374,
+        "values": [
+          "63",
+          "23",
+          "97.95%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 6534,
+        "values": [
+          "64",
+          "23",
+          "98.08%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=The_Kraken"
+}

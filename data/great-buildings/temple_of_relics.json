@@ -1,0 +1,691 @@
+{
+  "id": "temple_of_relics",
+  "name": {
+    "fr": "Temple des reliques",
+    "en": "Temple of Relics"
+  },
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_AllAge_Expedition-7c3ab1b4c.png",
+  "size": {
+    "w": 6,
+    "h": 6
+  },
+  "road": "road",
+  "description": {
+    "fr": "Le temple des reliques est basé sur une sagesse antique obtenue lors des expéditions de guilde. Il renferme des connaissances sur de rares reliques que vous pourriez découvrir en explorant la carte d'expédition.",
+    "en": "The Temple of Relics is based on ancient wisdom gathered during your Guild Expeditions. It holds knowledge of rare Relics that you might discover while exploring the Expedition Map."
+  },
+  "boosts": [
+    {
+      "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_relic_hunt-5f47d1985.png",
+      "name": {
+        "fr": "Chasse à la relique",
+        "en": "Relic Hunt"
+      },
+      "text": {
+        "fr": "Chance de faire apparaître une relique cachée sur la carte d'expédition de guilde après avoir résolu une rencontre.",
+        "en": "A chance for spawning a hidden Relic reward on the Guild Expedition Map after solving an encounter."
+      }
+    }
+  ],
+  "levels": {
+    "columns": [
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_relic_hunt-5f47d1985.png",
+        "label": {
+          "fr": "Chasse à la relique (%)",
+          "en": "Relic Hunt (%)"
+        }
+      },
+      {
+        "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_relic_hunt-5f47d1985.png",
+        "label": {
+          "fr": "Chasse à la relique (Rare Totem %)",
+          "en": "Relic Hunt (Rare Totem %)"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "level": 1,
+        "cost": 50,
+        "values": [
+          "12%",
+          "1%"
+        ]
+      },
+      {
+        "level": 2,
+        "cost": 70,
+        "values": [
+          "12%",
+          "1.5%"
+        ]
+      },
+      {
+        "level": 3,
+        "cost": 130,
+        "values": [
+          "13%",
+          "2%"
+        ]
+      },
+      {
+        "level": 4,
+        "cost": 200,
+        "values": [
+          "13%",
+          "2.5%"
+        ]
+      },
+      {
+        "level": 5,
+        "cost": 270,
+        "values": [
+          "14%",
+          "3%"
+        ]
+      },
+      {
+        "level": 6,
+        "cost": 330,
+        "values": [
+          "14%",
+          "3.5%"
+        ]
+      },
+      {
+        "level": 7,
+        "cost": 420,
+        "values": [
+          "14%",
+          "4%"
+        ]
+      },
+      {
+        "level": 8,
+        "cost": 490,
+        "values": [
+          "15%",
+          "4.5%"
+        ]
+      },
+      {
+        "level": 9,
+        "cost": 570,
+        "values": [
+          "15%",
+          "5%"
+        ]
+      },
+      {
+        "level": 10,
+        "cost": 650,
+        "values": [
+          "16%",
+          "5.5%"
+        ]
+      },
+      {
+        "level": 11,
+        "cost": 667,
+        "values": [
+          "16%",
+          "5.88%"
+        ]
+      },
+      {
+        "level": 12,
+        "cost": 683,
+        "values": [
+          "17%",
+          "6.09%"
+        ]
+      },
+      {
+        "level": 13,
+        "cost": 700,
+        "values": [
+          "17%",
+          "6.3%"
+        ]
+      },
+      {
+        "level": 14,
+        "cost": 718,
+        "values": [
+          "18%",
+          "6.51%"
+        ]
+      },
+      {
+        "level": 15,
+        "cost": 736,
+        "values": [
+          "18%",
+          "6.72%"
+        ]
+      },
+      {
+        "level": 16,
+        "cost": 754,
+        "values": [
+          "18%",
+          "6.93%"
+        ]
+      },
+      {
+        "level": 17,
+        "cost": 773,
+        "values": [
+          "19%",
+          "7.14%"
+        ]
+      },
+      {
+        "level": 18,
+        "cost": 792,
+        "values": [
+          "19%",
+          "7.34%"
+        ]
+      },
+      {
+        "level": 19,
+        "cost": 812,
+        "values": [
+          "20%",
+          "7.55%"
+        ]
+      },
+      {
+        "level": 20,
+        "cost": 833,
+        "values": [
+          "20%",
+          "7.75%"
+        ]
+      },
+      {
+        "level": 21,
+        "cost": 853,
+        "values": [
+          "20%",
+          "7.95%"
+        ]
+      },
+      {
+        "level": 22,
+        "cost": 875,
+        "values": [
+          "21%",
+          "8.16%"
+        ]
+      },
+      {
+        "level": 23,
+        "cost": 897,
+        "values": [
+          "21%",
+          "8.36%"
+        ]
+      },
+      {
+        "level": 24,
+        "cost": 919,
+        "values": [
+          "21%",
+          "8.56%"
+        ]
+      },
+      {
+        "level": 25,
+        "cost": 942,
+        "values": [
+          "22%",
+          "8.76%"
+        ]
+      },
+      {
+        "level": 26,
+        "cost": 965,
+        "values": [
+          "22%",
+          "8.95%"
+        ]
+      },
+      {
+        "level": 27,
+        "cost": 990,
+        "values": [
+          "22%",
+          "9.15%"
+        ]
+      },
+      {
+        "level": 28,
+        "cost": 1014,
+        "values": [
+          "23%",
+          "9.35%"
+        ]
+      },
+      {
+        "level": 29,
+        "cost": 1040,
+        "values": [
+          "23%",
+          "9.54%"
+        ]
+      },
+      {
+        "level": 30,
+        "cost": 1066,
+        "values": [
+          "23%",
+          "9.74%"
+        ]
+      },
+      {
+        "level": 31,
+        "cost": 1092,
+        "values": [
+          "24%",
+          "9.93%"
+        ]
+      },
+      {
+        "level": 32,
+        "cost": 1120,
+        "values": [
+          "24%",
+          "10.12%"
+        ]
+      },
+      {
+        "level": 33,
+        "cost": 1147,
+        "values": [
+          "24%",
+          "10.31%"
+        ]
+      },
+      {
+        "level": 34,
+        "cost": 1176,
+        "values": [
+          "25%",
+          "10.5%"
+        ]
+      },
+      {
+        "level": 35,
+        "cost": 1206,
+        "values": [
+          "25%",
+          "10.69%"
+        ]
+      },
+      {
+        "level": 36,
+        "cost": 1236,
+        "values": [
+          "25%",
+          "10.88%"
+        ]
+      },
+      {
+        "level": 37,
+        "cost": 1267,
+        "values": [
+          "25%",
+          "11.06%"
+        ]
+      },
+      {
+        "level": 38,
+        "cost": 1298,
+        "values": [
+          "26%",
+          "11.25%"
+        ]
+      },
+      {
+        "level": 39,
+        "cost": 1331,
+        "values": [
+          "26%",
+          "11.43%"
+        ]
+      },
+      {
+        "level": 40,
+        "cost": 1364,
+        "values": [
+          "26%",
+          "11.61%"
+        ]
+      },
+      {
+        "level": 41,
+        "cost": 1398,
+        "values": [
+          "26%",
+          "11.8%"
+        ]
+      },
+      {
+        "level": 42,
+        "cost": 1433,
+        "values": [
+          "27%",
+          "11.98%"
+        ]
+      },
+      {
+        "level": 43,
+        "cost": 1469,
+        "values": [
+          "27%",
+          "12.16%"
+        ]
+      },
+      {
+        "level": 44,
+        "cost": 1505,
+        "values": [
+          "27%",
+          "12.33%"
+        ]
+      },
+      {
+        "level": 45,
+        "cost": 1543,
+        "values": [
+          "27%",
+          "12.51%"
+        ]
+      },
+      {
+        "level": 46,
+        "cost": 1582,
+        "values": [
+          "28%",
+          "12.69%"
+        ]
+      },
+      {
+        "level": 47,
+        "cost": 1621,
+        "values": [
+          "28%",
+          "12.86%"
+        ]
+      },
+      {
+        "level": 48,
+        "cost": 1662,
+        "values": [
+          "28%",
+          "13.04%"
+        ]
+      },
+      {
+        "level": 49,
+        "cost": 1703,
+        "values": [
+          "28%",
+          "13.21%"
+        ]
+      },
+      {
+        "level": 50,
+        "cost": 1746,
+        "values": [
+          "28%",
+          "13.38%"
+        ]
+      },
+      {
+        "level": 51,
+        "cost": 1789,
+        "values": [
+          "28%",
+          "13.55%"
+        ]
+      },
+      {
+        "level": 52,
+        "cost": 1834,
+        "values": [
+          "28%",
+          "13.72%"
+        ]
+      },
+      {
+        "level": 53,
+        "cost": 1880,
+        "values": [
+          "29%",
+          "13.89%"
+        ]
+      },
+      {
+        "level": 54,
+        "cost": 1927,
+        "values": [
+          "29%",
+          "14.06%"
+        ]
+      },
+      {
+        "level": 55,
+        "cost": 1975,
+        "values": [
+          "29%",
+          "14.23%"
+        ]
+      },
+      {
+        "level": 56,
+        "cost": 2025,
+        "values": [
+          "29%",
+          "14.39%"
+        ]
+      },
+      {
+        "level": 57,
+        "cost": 2075,
+        "values": [
+          "30%",
+          "14.56%"
+        ]
+      },
+      {
+        "level": 58,
+        "cost": 2127,
+        "values": [
+          "30%",
+          "14.72%"
+        ]
+      },
+      {
+        "level": 59,
+        "cost": 2180,
+        "values": [
+          "30%",
+          "14.88%"
+        ]
+      },
+      {
+        "level": 60,
+        "cost": 2235,
+        "values": [
+          "30%",
+          "15.04%"
+        ]
+      },
+      {
+        "level": 61,
+        "cost": 2290,
+        "values": [
+          "30%",
+          "15.2%"
+        ]
+      },
+      {
+        "level": 62,
+        "cost": 2348,
+        "values": [
+          "30%",
+          "15.36%"
+        ]
+      },
+      {
+        "level": 63,
+        "cost": 2406,
+        "values": [
+          "30%",
+          "15.52%"
+        ]
+      },
+      {
+        "level": 64,
+        "cost": 2467,
+        "values": [
+          "31%",
+          "15.68%"
+        ]
+      },
+      {
+        "level": 65,
+        "cost": 2528,
+        "values": [
+          "31%",
+          "15.83%"
+        ]
+      },
+      {
+        "level": 66,
+        "cost": 2591,
+        "values": [
+          "31%",
+          "15.99%"
+        ]
+      },
+      {
+        "level": 67,
+        "cost": 2656,
+        "values": [
+          "31%",
+          "16.14%"
+        ]
+      },
+      {
+        "level": 68,
+        "cost": 2723,
+        "values": [
+          "31%",
+          "16.29%"
+        ]
+      },
+      {
+        "level": 69,
+        "cost": 2791,
+        "values": [
+          "31%",
+          "16.44%"
+        ]
+      },
+      {
+        "level": 70,
+        "cost": 2860,
+        "values": [
+          "31%",
+          "16.59%"
+        ]
+      },
+      {
+        "level": 71,
+        "cost": 2932,
+        "values": [
+          "31%",
+          "16.74%"
+        ]
+      },
+      {
+        "level": 72,
+        "cost": 3005,
+        "values": [
+          "31%",
+          "16.89%"
+        ]
+      },
+      {
+        "level": 73,
+        "cost": 3080,
+        "values": [
+          "32%",
+          "17.04%"
+        ]
+      },
+      {
+        "level": 74,
+        "cost": 3157,
+        "values": [
+          "32%",
+          "17.19%"
+        ]
+      },
+      {
+        "level": 75,
+        "cost": 3236,
+        "values": [
+          "32%",
+          "17.33%"
+        ]
+      },
+      {
+        "level": 76,
+        "cost": 3317,
+        "values": [
+          "32%",
+          "17.47%"
+        ]
+      },
+      {
+        "level": 77,
+        "cost": 3400,
+        "values": [
+          "32%",
+          "17.62%"
+        ]
+      },
+      {
+        "level": 78,
+        "cost": 3485,
+        "values": [
+          "32%",
+          "17.76%"
+        ]
+      },
+      {
+        "level": 79,
+        "cost": 3572,
+        "values": [
+          "32%",
+          "17.9%"
+        ]
+      },
+      {
+        "level": 80,
+        "cost": 3661,
+        "values": [
+          "32%",
+          "18.04%"
+        ]
+      }
+    ]
+  },
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Temple_of_Relics"
+}

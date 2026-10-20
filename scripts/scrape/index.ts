@@ -12,18 +12,26 @@ import { createInterface } from "node:readline/promises"
 import { parseArgs, parseEnv } from "node:util"
 import { z } from "zod"
 import { BuildingSchema, LocalizedSchema, type Building } from "../../src/core/building"
+import { GreatBuildingSchema, type GreatBuilding } from "../../src/core/great-building"
 import { buildChains, slug } from "./chains"
 import { eventFromAsset } from "./events"
+import {
+  greatBuildingAsset,
+  isGreatBuildingPage,
+  parseGreatBuildingPage,
+  parseGreatBuildingTexts,
+} from "./great-buildings"
 import { statIcons, typeFromId } from "./mappings"
 import {
   buildingIdFromUrl,
   collectIconUrls,
+  iconKey,
   isBuildingPage,
   parseBuildingPage,
   type Issue,
   type ParsedBuilding,
 } from "./parse"
-import { WikiClient, syncPages } from "./wiki"
+import { WikiClient, loadCache, syncPages } from "./wiki"
 
 // Overridable to test against a local fake wiki
 const WIKIS = {
@@ -32,6 +40,7 @@ const WIKIS = {
 }
 const CACHE_DIR = "scripts/.cache"
 const DATA_DIR = "data/buildings"
+const GB_DIR = "data/great-buildings"
 const ENV_FILE = ".env"
 // Hand-written corrections applied on top of the wiki, kept across runs
 const OVERRIDES_FILE = "scripts/scrape/overrides.json"
@@ -261,6 +270,74 @@ async function main() {
     for (const file of readdirSync(DATA_DIR)) if (!written.has(file)) rmSync(`${DATA_DIR}/${file}`)
   }
 
+  // Great Buildings: their own pages and files, French texts matched on the image asset id
+  const frCache = loadCache(`${CACHE_DIR}/fr.json`)
+  const frGreatBuildings = new Map<string, { title: string; content: string }>()
+  for (const [title, page] of Object.entries(frCache)) {
+    const assetId = greatBuildingAsset(page.content)
+    // A level table ("Niveau") tells the building page from lists sharing its image
+    const hasLevels = /^!.*\|\s*Niveau\s*$/m.test(page.content)
+    if (assetId && hasLevels && !isPlaceholder(title) && !frGreatBuildings.has(assetId)) {
+      frGreatBuildings.set(assetId, { title, content: page.content })
+    }
+  }
+  mkdirSync(GB_DIR, { recursive: true })
+  const gbWritten = new Set<string>()
+  const sameIcon = (a?: string, b?: string) => !!a && !!b && iconKey(a) === iconKey(b)
+  for (const [title, page] of Object.entries(enCache)) {
+    if (isPlaceholder(title) || !isGreatBuildingPage(page.content)) continue
+    const gb = parseGreatBuildingPage(page.content)
+    if (!gb) {
+      issues.push({ kind: "unsupported_format", detail: "great building", page: title })
+      continue
+    }
+    const fr = frGreatBuildings.get(gb.assetId)
+    const frTexts = fr ? parseGreatBuildingTexts(fr.content) : undefined
+    const frBoost = (icon?: string) => frTexts?.boosts.find((b) => sameIcon(b.icon, icon))
+    const candidate: GreatBuilding = {
+      id: slug(title),
+      name: { fr: fr?.title ?? title, en: title },
+      image: gb.image,
+      age: gb.age,
+      size: gb.size,
+      road: gb.road,
+      description: { fr: frTexts?.description || gb.description, en: gb.description },
+      boosts: gb.boosts.map((boost) => ({
+        icon: boost.icon,
+        name: { fr: frBoost(boost.icon)?.name || boost.name, en: boost.name },
+        text: { fr: frBoost(boost.icon)?.text || boost.text, en: boost.text },
+      })),
+      levels: {
+        // Headers take the name of the boost with the same icon
+        columns: gb.levels.columns.map((column) => {
+          const boost = gb.boosts.find((b) => sameIcon(b.icon, column.icon))
+          const frName = frBoost(column.icon)?.name || boost?.name || ""
+          const enName = boost?.name || ""
+          // Sub-columns ("#", "%") keep their boost name: "Good production (%)"
+          const label = (name: string) =>
+            column.label && name ? `${name} (${column.label})` : column.label || name
+          return { icon: column.icon, label: { fr: label(frName), en: label(enName) } }
+        }),
+        rows: gb.levels.rows,
+      },
+      sourceUrl: pageUrl("en", title),
+    }
+    const result = GreatBuildingSchema.safeParse(candidate)
+    if (!result.success) {
+      issues.push({
+        kind: "unparsed_text",
+        detail: `invalid: ${result.error.message}`,
+        page: title,
+      })
+      continue
+    }
+    writeFileSync(`${GB_DIR}/${candidate.id}.json`, JSON.stringify(result.data, null, 2) + "\n")
+    gbWritten.add(`${candidate.id}.json`)
+  }
+  if (!limit) {
+    for (const file of readdirSync(GB_DIR)) if (!gbWritten.has(file)) rmSync(`${GB_DIR}/${file}`)
+  }
+
   const missingFr = [...parsed.keys()].filter(
     (id) => !frTitles.has(id) && !overrides[id]?.name?.fr,
   ).length
@@ -291,6 +368,7 @@ async function main() {
 
   console.log(`\n${written.size} buildings written to ${DATA_DIR} (${invalid} invalid)`)
   console.log(`French names missing: ${missingFr}`)
+  console.log(`${gbWritten.size} great buildings written to ${GB_DIR}`)
   console.log(`Requests: en ${en.requests}, fr ${fr.requests}`)
   for (const [kind, details] of Object.entries(grouped)) {
     console.log(`  ${kind}: ${Object.keys(details).length} distinct`)
