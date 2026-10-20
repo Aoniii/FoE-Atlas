@@ -105,7 +105,8 @@ function buildColumns(t: Messages, locale: Locale) {
 // Column widths in px (the name column wraps, numbers never do)
 function columnWidth(id: string): number {
   if (id === "name") return 280
-  if (id === "tiles" || id === "score") return 96
+  if (id === "score") return 88
+  if (id === "tiles") return 96
   return 120
 }
 
@@ -248,7 +249,9 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
                   key={header.id}
                   className={cn(
                     "border-b px-3 py-2 font-medium text-muted-foreground",
-                    header.column.id === "name" ? "text-left" : "text-right",
+                    header.column.id === "name" || header.column.id === "score"
+                      ? "text-left"
+                      : "text-right",
                   )}
                 >
                   <SortableHeader header={header} />
@@ -279,7 +282,9 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
                       "px-3 py-2 align-top whitespace-nowrap",
                       cell.column.id === "name"
                         ? "text-left whitespace-normal"
-                        : "truncate text-right",
+                        : cell.column.id === "score"
+                          ? "text-left"
+                          : "truncate text-right",
                     )}
                   >
                     <table.FlexRender cell={cell} />
