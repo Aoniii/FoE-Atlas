@@ -28,6 +28,8 @@ export const GreatBuildingSchema = z.object({
         level: z.number().int().positive(),
         cost: z.number().optional(),
         values: z.array(z.string()),
+        // Beyond the wiki: cost from the game formula, bonuses from a fitted progression
+        computed: z.boolean().optional(),
       }),
     ),
   }),
@@ -35,6 +37,9 @@ export const GreatBuildingSchema = z.object({
 })
 
 export type GreatBuilding = z.infer<typeof GreatBuildingSchema>
+
+// Highest level offered by the level picker and the rush calculator
+export const GB_MAX_LEVEL = 400
 
 // Light entry of the Great Buildings grid
 export type GreatBuildingCard = Pick<GreatBuilding, "id" | "name" | "image" | "age">

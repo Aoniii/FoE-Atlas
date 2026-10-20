@@ -2,6 +2,8 @@ import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import { AGES } from "@/core/ages"
 import { roadShare, tileCount } from "@/core/efficiency"
+import { GB_MAX_LEVEL } from "@/core/great-building"
+import { levelCost } from "@/core/rush"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Slider } from "@/components/ui/slider"
@@ -28,12 +30,16 @@ export function GreatBuildingPage() {
   const navigate = route.useNavigate()
 
   const rows = gb.levels.rows
-  const maxLevel = rows.at(-1)?.level ?? 1
+  // Bonuses come from the wiki (80 levels), costs from the game formula (any level)
+  const knownLevel = rows.filter((r) => !r.computed).at(-1)?.level ?? 1
+  const maxLevel = GB_MAX_LEVEL
   const level = Math.min(Math.max(search.level ?? 1, 1), maxLevel)
   const row = rows.find((r) => r.level === level)
-  // Forge Points needed from level 0 to each level
-  const totals = rows.reduce<number[]>((acc, r) => [...acc, (acc.at(-1) ?? 0) + (r.cost ?? 0)], [])
-  const total = totals[rows.findIndex((r) => r.level === level)]
+  const firstTenCosts = rows.filter((r) => r.level <= 10).map((r) => r.cost ?? 0)
+  const cost = levelCost(firstTenCosts, level)
+  // Forge Points needed from level 0 to the selected level
+  let total = 0
+  for (let l = 1; l <= level; l++) total += levelCost(firstTenCosts, l)
   const age = AGES.find((a) => a.id === gb.age)
   const name = localized(gb.name, locale)
   const otherName = locale === "en" ? gb.name.fr : gb.name.en
@@ -105,8 +111,9 @@ export function GreatBuildingPage() {
       {/* Level picker: slider or number, mirrored in the URL (?level=) */}
       <section className="flex flex-col gap-4 rounded-lg border p-4">
         <div className="flex flex-wrap items-center gap-4">
-          <h2 className="font-medium">
+          <h2 className="flex items-center gap-2 font-medium">
             {t.greatBuilding.atLevel.replace("{level}", String(level))}
+            {row?.computed && <Badge variant="outline">{t.greatBuilding.computed}</Badge>}
           </h2>
           <Input
             type="number"
@@ -130,22 +137,20 @@ export function GreatBuildingPage() {
           />
         </div>
         <p className="text-xs text-muted-foreground">
-          {t.greatBuilding.available.replace("{count}", String(maxLevel))}
+          {t.greatBuilding.available.replace("{count}", String(knownLevel))}
         </p>
-        {row && (
-          <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-            <Stat label={t.greatBuilding.cost} value={formatNumber(row.cost ?? 0, locale)} />
-            <Stat label={t.greatBuilding.totalCost} value={formatNumber(total ?? 0, locale)} />
-            {gb.levels.columns.map((column, index) => (
-              <Stat
-                key={index}
-                icon={column.icon}
-                label={localized(column.label, locale)}
-                value={formatValue(row.values[index], locale)}
-              />
-            ))}
-          </dl>
-        )}
+        <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          <Stat label={t.greatBuilding.cost} value={formatNumber(cost, locale)} />
+          <Stat label={t.greatBuilding.totalCost} value={formatNumber(total, locale)} />
+          {gb.levels.columns.map((column, index) => (
+            <Stat
+              key={index}
+              icon={column.icon}
+              label={localized(column.label, locale)}
+              value={formatValue(row?.values[index], locale)}
+            />
+          ))}
+        </dl>
       </section>
       {rewards && <RushCalculator gb={gb} tables={rewards} />}
     </div>

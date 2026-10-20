@@ -4,6 +4,7 @@
 // every level of the official wiki).
 
 import { AGES, type AgeId } from "./ages"
+import { GB_MAX_LEVEL } from "./great-building"
 
 // First place base reward, keyed by FoE Helper era id, indexed by level - 1
 export type RewardTables = Record<string, number[]>
@@ -90,7 +91,7 @@ export function rushPlan(options: {
 }): RushPlan {
   const era = eraId(options.age)
   const curve = p1Curve(options.tables)
-  const maxLevel = Math.max(options.tables[era]?.length ?? 0, curve.length)
+  const maxLevel = Math.min(GB_MAX_LEVEL, Math.max(options.tables[era]?.length ?? 0, curve.length))
   const levels: RushLevel[] = []
   for (let level = options.from + 1; level <= Math.min(options.to, maxLevel); level++) {
     const cost = levelCost(options.firstTenCosts, level)

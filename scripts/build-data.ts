@@ -9,7 +9,14 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs"
 import { AGE_IDS, type AgeId } from "../src/core/ages"
 import { BuildingSchema, type AgeBuilding, type BuildingPage } from "../src/core/building"
-import { GreatBuildingSchema, type GreatBuildingCard } from "../src/core/great-building"
+import { fitColumn, valueAt } from "../src/core/gb-extrapolate"
+import {
+  GB_MAX_LEVEL,
+  GreatBuildingSchema,
+  type GreatBuilding,
+  type GreatBuildingCard,
+} from "../src/core/great-building"
+import { levelCost } from "../src/core/rush"
 import type { SearchEntry } from "../src/core/search"
 
 const SOURCE = "data/buildings"
@@ -99,6 +106,40 @@ if (existsSync("data/gb-rewards.json")) {
   writeFileSync(`${OUTPUT}/gb-rewards.json`, JSON.stringify(rewards))
 }
 
+// Extends a Great Building to GB_MAX_LEVEL: exact costs, bonuses of every column a
+// progression reproduces exactly (see gb-extrapolate.ts), empty otherwise
+const unmodeled: string[] = []
+function extendLevels(gb: GreatBuilding): GreatBuilding {
+  const rows = gb.levels.rows
+  const last = rows.at(-1)?.level ?? 0
+  const firstTenCosts = rows.filter((r) => r.level <= 10).map((r) => r.cost ?? 0)
+  const columns = gb.levels.columns.map((column, index) => {
+    const raw = rows.map((r) => r.values[index] ?? "")
+    const numbers = raw.map((v) => v.match(/^([\d,]+(?:\.\d+)?)\s*%?$/)?.[1])
+    if (numbers.some((n) => n === undefined)) return undefined
+    const values = [0, ...numbers.map((n) => Number(n!.replace(/,/g, "")))]
+    const decimals = Math.max(...numbers.map((n) => n!.split(".")[1]?.length ?? 0))
+    const model = fitColumn(values, decimals)
+    if (!model) unmodeled.push(`${gb.id}: ${column.label.en}`)
+    return model && { model, values, decimals, percent: raw.some((v) => v.endsWith("%")) }
+  })
+  const extra = []
+  for (let level = last + 1; level <= GB_MAX_LEVEL; level++) {
+    extra.push({
+      level,
+      cost: levelCost(firstTenCosts, level),
+      computed: true,
+      values: columns.map((column) => {
+        if (!column) return ""
+        const value = valueAt(column.model, column.values, level)
+        const text = value.toLocaleString("en-US", { maximumFractionDigits: column.decimals })
+        return column.percent ? `${text}%` : text
+      }),
+    })
+  }
+  return { ...gb, levels: { ...gb.levels, rows: [...rows, ...extra] } }
+}
+
 // Great Buildings: a light grid file and one file per building
 const GB_SOURCE = "data/great-buildings"
 const GB_OUTPUT = `${OUTPUT}/great-buildings`
@@ -119,9 +160,13 @@ const cards: GreatBuildingCard[] = greatBuildings.map(({ id, name, image, age })
 writeFileSync(`${OUTPUT}/great-buildings.json`, JSON.stringify(cards))
 const gbFiles = new Set<string>()
 for (const gb of greatBuildings) {
-  writeFileSync(`${GB_OUTPUT}/${gb.id}.json`, JSON.stringify(gb))
+  writeFileSync(`${GB_OUTPUT}/${gb.id}.json`, JSON.stringify(extendLevels(gb)))
   gbFiles.add(`${gb.id}.json`)
 }
 for (const file of readdirSync(GB_OUTPUT)) if (!gbFiles.has(file)) rmSync(`${GB_OUTPUT}/${file}`)
+if (unmodeled.length) {
+  console.log(`Great Building bonuses known up to the wiki level only (${unmodeled.length}):`)
+  for (const column of unmodeled) console.log(`  ${column}`)
+}
 
 console.log(`${buildings.length} buildings bundled into ${ages.length} ages (${OUTPUT})`)
