@@ -9,19 +9,11 @@ import { Input } from "@/components/ui/input"
 import { Slider } from "@/components/ui/slider"
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
-import { formatNumber } from "./format"
+import { CompareButton } from "@/compare/compare-button"
+import { formatNumber, formatValue } from "./format"
 import { RushCalculator } from "./rush-calculator"
 
 const route = getRouteApi("/great-buildings/$id")
-
-// Wiki values are English-formatted text ("1,100", "12.5%"): reformat numbers for the locale
-function formatValue(value: string | undefined, locale: string): string {
-  if (!value) return "–"
-  const match = value.match(/^([\d,]+(?:\.\d+)?)(\s*%)?$/)
-  if (!match) return value
-  const number = formatNumber(Number(match[1].replace(/,/g, "")), locale, 2)
-  return match[2] ? `${number} %` : number
-}
 
 // One page for every Great Building: /great-buildings/<id>?level=<n>
 export function GreatBuildingPage() {
@@ -62,7 +54,12 @@ export function GreatBuildingPage() {
       <header className="flex flex-col gap-4 sm:flex-row sm:items-start">
         <img src={gb.image} alt="" className="size-48 shrink-0 object-contain" />
         <div className="flex flex-col gap-2">
-          <h1 className="text-2xl font-semibold">{name}</h1>
+          <div className="flex flex-wrap items-center gap-3">
+            <h1 className="text-2xl font-semibold">{name}</h1>
+            <CompareButton
+              item={{ kind: "great_building", id: gb.id, name: gb.name, image: gb.image }}
+            />
+          </div>
           {otherName !== name && <p className="text-muted-foreground">{otherName}</p>}
           <div className="flex flex-wrap gap-1.5">
             <Badge variant="secondary">{t.types.great_building}</Badge>

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react"
 import { useNavigate } from "@tanstack/react-router"
 import { Search } from "lucide-react"
+import { AGES } from "@/core/ages"
 import { searchBuildings, type SearchEntry } from "@/core/search"
 import { Button } from "@/components/ui/button"
 import {
@@ -14,6 +15,11 @@ import {
 } from "@/components/ui/command"
 import { localized, useI18n } from "@/lib/i18n"
 import { eventName } from "@/wiki/format"
+
+const ageName = (age: string, locale: string) => {
+  const found = AGES.find((a) => a.id === age)
+  return found ? localized(found.name, locale) : age
+}
 
 // Loaded once, on the first opening only
 let indexPromise: Promise<SearchEntry[]> | undefined
@@ -55,10 +61,14 @@ export function SearchCommand() {
     [entries, query, locale],
   )
 
-  function select(id: string) {
+  function select(entry: SearchEntry) {
     setOpen(false)
     setQuery("")
-    navigate({ to: "/buildings/$id", params: { id } })
+    if (entry.kind === "great_building") {
+      navigate({ to: "/great-buildings/$id", params: { id: entry.id } })
+    } else {
+      navigate({ to: "/buildings/$id", params: { id: entry.id } })
+    }
   }
 
   return (
@@ -97,7 +107,7 @@ export function SearchCommand() {
             {results.length > 0 && (
               <CommandGroup heading={t.search.buildings}>
                 {results.map((entry) => (
-                  <CommandItem key={entry.id} value={entry.id} onSelect={() => select(entry.id)}>
+                  <CommandItem key={entry.id} value={entry.id} onSelect={() => select(entry)}>
                     {entry.image ? (
                       <img src={entry.image} alt="" className="size-8 shrink-0 object-contain" />
                     ) : (
@@ -107,8 +117,10 @@ export function SearchCommand() {
                       <span className="truncate">{localized(entry.name, locale)}</span>
                       <span className="truncate text-xs text-muted-foreground">
                         {locale === "en" ? entry.name.fr : entry.name.en}
-                        {entry.event &&
-                          ` · ${eventName(entry.event, locale)}${entry.eventYear ? ` ${entry.eventYear}` : ""}`}
+                        {entry.kind === "great_building"
+                          ? ` · ${t.types.great_building}${entry.age ? ` · ${ageName(entry.age, locale)}` : ""}`
+                          : entry.event &&
+                            ` · ${eventName(entry.event, locale)}${entry.eventYear ? ` ${entry.eventYear}` : ""}`}
                       </span>
                     </div>
                   </CommandItem>

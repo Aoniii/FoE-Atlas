@@ -14,6 +14,7 @@ import {
 import { getPreferredAge, setPreferredAge } from "@/lib/age-preference"
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
+import { CompareButton } from "@/compare/compare-button"
 import { AgeDetails } from "./building-card"
 import { chainStepLabels } from "./chain-labels"
 import { ScorePill } from "./score-pill"
@@ -74,7 +75,17 @@ export function BuildingPage() {
             <img src={building.image} alt="" className="size-40 shrink-0 object-contain" />
           )}
           <div className="flex flex-col gap-2">
-            <h1 className="text-2xl font-semibold">{name}</h1>
+            <div className="flex flex-wrap items-center gap-3">
+              <h1 className="text-2xl font-semibold">{name}</h1>
+              <CompareButton
+                item={{
+                  kind: "building",
+                  id: building.id,
+                  name: building.name,
+                  image: building.image,
+                }}
+              />
+            </div>
             {otherName !== name && <p className="text-muted-foreground">{otherName}</p>}
             <div className="flex flex-wrap gap-1.5">
               <Badge variant="secondary">{t.types[building.type]}</Badge>

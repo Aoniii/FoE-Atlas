@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router"
 import { AGES } from "@/core/ages"
 import type { GreatBuildingCard } from "@/core/great-building"
+import { CompareButton } from "@/compare/compare-button"
 import { localized, useI18n, type Locale } from "@/lib/i18n"
 
 const ageIndex = (card: GreatBuildingCard) =>
@@ -26,8 +27,13 @@ export function GreatBuildingGrid({ cards }: { cards: GreatBuildingCard[] }) {
             key={card.id}
             to="/great-buildings/$id"
             params={{ id: card.id }}
-            className="flex flex-col items-center gap-2 rounded-lg border p-4 text-center transition-colors hover:border-primary/50 hover:bg-muted/30"
+            className="relative flex flex-col items-center gap-2 rounded-lg border p-4 text-center transition-colors hover:border-primary/50 hover:bg-muted/30"
           >
+            <CompareButton
+              iconOnly
+              className="absolute top-2 right-2"
+              item={{ kind: "great_building", id: card.id, name: card.name, image: card.image }}
+            />
             <span className="font-medium">{localized(card.name, locale)}</span>
             <img src={card.image} alt="" loading="lazy" className="h-40 w-full object-contain" />
             <span className="text-sm text-muted-foreground">

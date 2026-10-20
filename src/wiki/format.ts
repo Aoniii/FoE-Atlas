@@ -111,3 +111,12 @@ export function scoreColor(score: number): { background: string; foreground: str
     foreground: dark ? "#000" : "#fff",
   }
 }
+
+// Wiki values are English-formatted text ("1,100", "12.5%"): reformat numbers for the locale
+export function formatValue(value: string | undefined, locale: Locale): string {
+  if (!value) return "–"
+  const match = value.match(/^([\d,]+(?:\.\d+)?)(\s*%)?$/)
+  if (!match) return value
+  const number = formatNumber(Number(match[1].replace(/,/g, "")), locale, 2)
+  return match[2] ? `${number} %` : number
+}

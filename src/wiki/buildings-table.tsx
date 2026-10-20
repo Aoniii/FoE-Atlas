@@ -19,6 +19,7 @@ import { STATS, STAT_KEYS, type StatKey } from "@/core/stats"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { localized, useI18n, type Locale, type Messages } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
+import { CompareButton } from "@/compare/compare-button"
 import { BuildingCard } from "./building-card"
 import { eventLabel, formatNumber, formatStat, fullStatLabel } from "./format"
 import { ScorePill } from "./score-pill"
@@ -113,18 +114,27 @@ function NameCell({ row }: { row: WikiRow }) {
   const { age } = wikiRoute.useSearch()
   const { building } = row
   return (
-    <HoverCard>
-      <HoverCardTrigger
-        render={<Link to="/buildings/$id" params={{ id: building.id }} search={{ age }} />}
-        className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
-      >
-        {localized(building.name, locale)}
-      </HoverCardTrigger>
-      <HoverCardContent side="right" align="start" className="w-80">
-        <BuildingCard building={building} />
-      </HoverCardContent>
-      {building.event && <Sub>{eventLabel(building, locale)}</Sub>}
-    </HoverCard>
+    <div className="flex items-start justify-between gap-1">
+      <div className="min-w-0">
+        <HoverCard>
+          <HoverCardTrigger
+            render={<Link to="/buildings/$id" params={{ id: building.id }} search={{ age }} />}
+            className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
+          >
+            {localized(building.name, locale)}
+          </HoverCardTrigger>
+          <HoverCardContent side="right" align="start" className="w-80">
+            <BuildingCard building={building} />
+          </HoverCardContent>
+        </HoverCard>
+        {building.event && <Sub>{eventLabel(building, locale)}</Sub>}
+      </div>
+      <CompareButton
+        iconOnly
+        className="shrink-0"
+        item={{ kind: "building", id: building.id, name: building.name, image: building.image }}
+      />
+    </div>
   )
 }
 

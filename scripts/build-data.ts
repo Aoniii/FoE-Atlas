@@ -169,6 +169,16 @@ const cards: GreatBuildingCard[] = greatBuildings.map(({ id, name, image, age })
   age,
 }))
 writeFileSync(`${OUTPUT}/great-buildings.json`, JSON.stringify(cards))
+// Great Buildings are searchable too
+const gbSearch: SearchEntry[] = greatBuildings.map(({ id, name, image, age }) => ({
+  id,
+  name,
+  image,
+  age,
+  kind: "great_building",
+}))
+writeFileSync(`${OUTPUT}/search.json`, JSON.stringify([...search, ...gbSearch]))
+
 const gbFiles = new Set<string>()
 for (const gb of greatBuildings) {
   writeFileSync(`${GB_OUTPUT}/${gb.id}.json`, JSON.stringify(extendLevels(gb)))

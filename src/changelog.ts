@@ -12,6 +12,14 @@ export const CHANGELOG: Release[] = [
         fr: "Tableau des bâtiments à hauteur d'écran : en-têtes toujours visibles, la page défile d'abord puis les lignes, sans barre de défilement",
         en: "Screen-height buildings table: headers always visible, the page scrolls first then the rows, without a scrollbar",
       },
+      {
+        fr: "Mode comparaison : jusqu'à 4 bâtiments ou Grands Monuments côte à côte, meilleure valeur en vert, écarts et décomposition du score",
+        en: "Comparison mode: up to 4 buildings or Great Buildings side by side, best value in green, differences and score breakdown",
+      },
+      {
+        fr: "Les Grands Monuments apparaissent dans la recherche",
+        en: "Great Buildings show up in the search",
+      },
     ],
   },
   {

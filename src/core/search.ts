@@ -1,6 +1,11 @@
+import type { AgeId } from "./ages"
 import type { Building } from "./building"
 
-export type SearchEntry = Pick<Building, "id" | "name" | "image" | "event" | "eventYear">
+// Special buildings, and Great Buildings (kind + their age instead of an event)
+export type SearchEntry = Pick<Building, "id" | "name" | "image" | "event" | "eventYear"> & {
+  kind?: "great_building"
+  age?: AgeId
+}
 
 // "Château d'Été" -> "chateau d ete": accents, case and punctuation do not matter
 export function normalize(text: string): string {
