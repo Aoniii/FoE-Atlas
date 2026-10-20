@@ -9,9 +9,19 @@ dev:
 		echo "Dev server already running (PID $$(cat $(PID_FILE)))"; \
 	else \
 		setsid pnpm dev > $(LOG_FILE) 2>&1 & echo $$! > $(PID_FILE); \
-		sleep 2; \
-		echo "Dev server started (PID $$(cat $(PID_FILE))), logs in $(LOG_FILE)"; \
-		grep -m1 "Local:" $(LOG_FILE) || true; \
+		for i in $$(seq 60); do \
+			grep -q "Local:" $(LOG_FILE) && break; \
+			kill -0 $$(cat $(PID_FILE)) 2>/dev/null || break; \
+			sleep 0.5; \
+		done; \
+		if grep -q "Local:" $(LOG_FILE); then \
+			echo "Dev server started (PID $$(cat $(PID_FILE))), logs in $(LOG_FILE)"; \
+			grep -m1 "Local:" $(LOG_FILE); \
+		else \
+			echo "Dev server did not start, last logs:"; \
+			tail -n 20 $(LOG_FILE); \
+			rm -f $(PID_FILE); \
+		fi; \
 	fi
 
 # Stop the dev server started by `make dev`
