@@ -35,7 +35,14 @@ const helper = createColumnHelper<typeof features, WikiRow>()
 
 function buildColumns(t: Messages, locale: Locale) {
   return helper.columns([
-    // First column: the score as a colored pill (see scoreColor)
+    helper.accessor((row) => localized(row.building.name, locale), {
+      id: "name",
+      header: t.wiki.building,
+      sortFn: "text",
+      enableHiding: false,
+      cell: ({ row }) => <NameCell row={row.original} />,
+    }),
+    // Score as a colored pill (see scoreColor), right after the name
     helper.accessor((row) => row.score, {
       id: "score",
       header: t.wiki.score,
@@ -52,13 +59,6 @@ function buildColumns(t: Messages, locale: Locale) {
           {formatNumber(row.original.score, locale, 2)}
         </span>
       ),
-    }),
-    helper.accessor((row) => localized(row.building.name, locale), {
-      id: "name",
-      header: t.wiki.building,
-      sortFn: "text",
-      enableHiding: false,
-      cell: ({ row }) => <NameCell row={row.original} />,
     }),
     helper.accessor((row) => row.tiles, {
       id: "tiles",
