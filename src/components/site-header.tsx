@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router"
-import { Search } from "lucide-react"
-import { Button, buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { SearchCommand } from "@/search/search-command"
 import { ModeToggle } from "@/components/mode-toggle"
 import { useI18n } from "@/lib/i18n"
 
@@ -27,16 +27,7 @@ export function SiteHeader() {
           </Link>
         </nav>
         <div className="ml-auto flex items-center gap-2">
-          {/* Search is not implemented yet: placeholder for the layout */}
-          <Button
-            variant="outline"
-            size="sm"
-            disabled
-            className="w-9 justify-start px-0 text-muted-foreground sm:w-56 sm:px-2.5"
-          >
-            <Search className="mx-auto sm:mx-0" />
-            <span className="hidden sm:inline">{t.search.placeholder}</span>
-          </Button>
+          <SearchCommand />
           <LanguageSwitcher />
           <ModeToggle />
         </div>

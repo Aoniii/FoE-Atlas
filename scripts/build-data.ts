@@ -2,10 +2,12 @@
 //   public/data/index.json      meta + available ages
 //   public/data/<AgeId>.json    every building available in that age, with that age's data only
 //   public/data/buildings/<id>.json   one building with all its ages and its other levels
+//   public/data/search.json     names of every building for the search bar
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs"
 import { AGE_IDS, type AgeId } from "../src/core/ages"
 import { BuildingSchema, type AgeBuilding, type BuildingPage } from "../src/core/building"
+import type { SearchEntry } from "../src/core/search"
 
 const SOURCE = "data/buildings"
 const OUTPUT = "public/data"
@@ -21,7 +23,7 @@ const icons = existsSync("data/icons.json")
 // Files are replaced in place, never the whole folder: the Vite dev server
 // stops serving a public folder that is deleted and recreated
 mkdirSync(OUTPUT, { recursive: true })
-const written = new Set(["index.json"])
+const written = new Set(["index.json", "search.json"])
 
 const ages: { id: AgeId; buildings: number }[] = []
 for (const ageId of AGE_IDS) {
@@ -42,6 +44,16 @@ writeFileSync(
 for (const file of readdirSync(OUTPUT)) {
   if (file !== "buildings" && !written.has(file)) rmSync(`${OUTPUT}/${file}`)
 }
+
+// Light index for the search bar: names, image and source only
+const search: SearchEntry[] = buildings.map(({ id, name, image, event, eventYear }) => ({
+  id,
+  name,
+  image,
+  event,
+  eventYear,
+}))
+writeFileSync(`${OUTPUT}/search.json`, JSON.stringify(search))
 
 // One file per building for its own page, with the other levels of its chain
 const BUILDINGS_OUTPUT = `${OUTPUT}/buildings`
