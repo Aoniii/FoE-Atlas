@@ -28,6 +28,10 @@ export const CHANGELOG: Release[] = [
         fr: "Monuments : bonus au-delà du niveau 80 (chances, nombres, boosts) repris des relevés de FOE Assistant, jusqu'au niveau 110 à 200 selon le GM",
         en: "Great Buildings: bonuses beyond level 80 (chances, counts, boosts) from FOE Assistant's readings, up to level 110 to 200 depending on the building",
       },
+      {
+        fr: "Monuments : les bonus sans formule exacte sont estimés avec une courbe approchée au-delà des niveaux connus, au lieu de rester vides",
+        en: "Great Buildings: bonuses with no exact formula are estimated with an approximate curve beyond the known levels, instead of staying empty",
+      },
     ],
   },
   {

@@ -10,7 +10,13 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync
 import { AGE_IDS, type AgeId } from "../src/core/ages"
 import { BuildingSchema, type AgeBuilding, type BuildingPage } from "../src/core/building"
 import { aggregateStats } from "../src/core/efficiency"
-import { fitColumn, valueAt } from "../src/core/gb-extrapolate"
+import {
+  approxValueAt,
+  fitApproximate,
+  fitColumn,
+  valueAt,
+  type ApproxModel,
+} from "../src/core/gb-extrapolate"
 import { MANUAL_GB_MODELS } from "../src/core/gb-models"
 import {
   GB_MAX_LEVEL,
@@ -129,6 +135,21 @@ const gbReadings: Record<string, Record<string, Record<string, number>>> = exist
 // in-game readings, a progression reproducing every known level exactly (see
 // gb-extrapolate.ts), empty otherwise
 const unmodeled: string[] = []
+const approximated: string[] = []
+
+// Between two known levels: straight line; beyond the last one: the approximate curve
+function approximateAt(
+  approx: ApproxModel | undefined,
+  points: [number, number][],
+  level: number,
+): number | undefined {
+  const next = points.findIndex(([l]) => l > level)
+  if (next === -1) return approx && approxValueAt(approx, level)
+  const [[l0, v0], [l1, v1]] = [points[next - 1], points[next]]
+  const factor = 10 ** (approx?.decimals ?? 0)
+  return Math.floor((v0 + ((v1 - v0) * (level - l0)) / (l1 - l0)) * factor + 1e-9) / factor
+}
+
 function extendLevels(gb: GreatBuilding): GreatBuilding {
   const rows = gb.levels.rows
   const last = rows.at(-1)?.level ?? 0
@@ -155,11 +176,22 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
       if (model && readLevels.some((l) => Math.abs(valueAt(model!, values, l) - read[l]) > 1e-6))
         model = undefined
     }
-    if (!model) {
-      const upTo = readLevels.length ? ` (read up to ${Math.max(...readLevels)})` : ""
-      unmodeled.push(`${gb.id}: ${column.label.en}${upTo}`)
-    }
-    return { kind: "fitted" as const, model, read, values, decimals, percent }
+    if (model) return { kind: "fitted" as const, model, read, values, decimals, percent }
+    // No exact model: approximate curve beyond the last known level, straight line
+    // between two readings with unknown levels in between
+    const known = new Map<number, number>([
+      ...values.slice(1).map((value, i) => [i + 1, value] as [number, number]),
+      ...readLevels.map((level) => [level, read[level]] as [number, number]),
+    ])
+    const points = [...known].sort(([a], [b]) => a - b)
+    const approx = fitApproximate(points, decimals, percent)
+    if (approx) {
+      const upTo = readLevels.length ? `read up to ${Math.max(...readLevels)}, ` : ""
+      approximated.push(
+        `${gb.id}: ${column.label.en} (${upTo}${approx.form}, ±${approx.error.toFixed(2)})`,
+      )
+    } else unmodeled.push(`${gb.id}: ${column.label.en}`)
+    return { kind: "approx" as const, approx, points, read, decimals, percent }
   })
   const extra = []
   for (let level = last + 1; level <= GB_MAX_LEVEL; level++) {
@@ -172,7 +204,9 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
         const value =
           column.kind === "manual"
             ? (column.manual.readings?.[level] ?? column.read[level] ?? column.manual.value(level))
-            : (column.read[level] ?? (column.model && valueAt(column.model, column.values, level)))
+            : column.kind === "fitted"
+              ? (column.read[level] ?? valueAt(column.model, column.values, level))
+              : (column.read[level] ?? approximateAt(column.approx, column.points, level))
         if (value === undefined) return ""
         const text = value.toLocaleString("en-US", { maximumFractionDigits: column.decimals })
         return column.percent ? `${text}%` : text
@@ -223,8 +257,16 @@ for (const gb of greatBuildings) {
   gbFiles.add(`${gb.id}.json`)
 }
 for (const file of readdirSync(GB_OUTPUT)) if (!gbFiles.has(file)) rmSync(`${GB_OUTPUT}/${file}`)
+if (approximated.length) {
+  console.log(
+    `Great Building bonuses approximated beyond the known levels (${approximated.length}):`,
+  )
+  for (const column of approximated) console.log(`  ${column}`)
+}
 if (unmodeled.length) {
-  console.log(`Great Building bonuses with no formula beyond the known levels (${unmodeled.length}):`)
+  console.log(
+    `Great Building bonuses with no formula beyond the known levels (${unmodeled.length}):`,
+  )
   for (const column of unmodeled) console.log(`  ${column}`)
 }
 
