@@ -17,7 +17,7 @@ import {
   valueAt,
   type ApproxModel,
 } from "../src/core/gb-extrapolate"
-import { MANUAL_GB_MODELS } from "../src/core/gb-models"
+import { GB_CAPS, MANUAL_GB_MODELS } from "../src/core/gb-models"
 import {
   GB_MAX_LEVEL,
   GreatBuildingSchema,
@@ -199,7 +199,7 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
       level,
       cost: levelCost(firstTenCosts, level),
       computed: true,
-      values: columns.map((column) => {
+      values: columns.map((column, index) => {
         if (!column) return ""
         const value =
           column.kind === "manual"
@@ -208,7 +208,10 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
               ? (column.read[level] ?? valueAt(column.model, column.values, level))
               : (column.read[level] ?? approximateAt(column.approx, column.points, level))
         if (value === undefined) return ""
-        const text = value.toLocaleString("en-US", { maximumFractionDigits: column.decimals })
+        const cap = GB_CAPS[gb.id]?.[gb.levels.columns[index].label.en] ?? Infinity
+        const text = Math.min(value, cap).toLocaleString("en-US", {
+          maximumFractionDigits: column.decimals,
+        })
         return column.percent ? `${text}%` : text
       }),
     })

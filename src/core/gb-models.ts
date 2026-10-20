@@ -51,6 +51,11 @@ export const MANUAL_GB_MODELS: Record<string, Record<string, ManualModel>> = {
   },
 }
 
+// Highest value a bonus can reach in game: computed levels stop there
+export const GB_CAPS: Record<string, Record<string, number>> = {
+  cosmic_catalyst: { "Critical Hit": 25 },
+}
+
 export function manualValue(model: ManualModel, level: number): number {
   return model.readings?.[level] ?? model.value(level)
 }

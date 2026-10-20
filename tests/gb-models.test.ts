@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { MANUAL_GB_MODELS, manualValue } from "@/core/gb-models"
+import { GB_CAPS, MANUAL_GB_MODELS, manualValue } from "@/core/gb-models"
 
 const relic = MANUAL_GB_MODELS.temple_of_relics["Relic Hunt (%)"]
 const rare = MANUAL_GB_MODELS.temple_of_relics["Relic Hunt (Rare Totem %)"]
@@ -58,5 +58,11 @@ describe("Rain Forest Project model", () => {
     for (let level = 81; level < 400; level++) {
       expect(aid.value(level + 1)).toBeGreaterThanOrEqual(aid.value(level))
     }
+  })
+})
+
+describe("Great Building caps", () => {
+  it("caps the Cosmic Catalyst critical hit at 25%", () => {
+    expect(GB_CAPS.cosmic_catalyst["Critical Hit"]).toBe(25)
   })
 })
