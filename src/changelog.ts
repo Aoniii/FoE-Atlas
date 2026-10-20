@@ -17,8 +17,8 @@ export const CHANGELOG: Release[] = [
         en: "“Uncheck all” button for the efficiency score",
       },
       {
-        fr: "Score en première colonne, dans une pastille colorée de violet (0) à bleu (10 et plus)",
-        en: "Score in the first column, in a pill colored from violet (0) to blue (10 and more)",
+        fr: "Score en première colonne, dans une pastille colorée de violet (0) à bleu (10 et plus), au texte toujours lisible",
+        en: "Score in the first column, in a pill colored from violet (0) to blue (10 and more), with always readable text",
       },
     ],
   },

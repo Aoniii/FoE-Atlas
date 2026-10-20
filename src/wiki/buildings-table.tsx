@@ -43,8 +43,11 @@ function buildColumns(t: Messages, locale: Locale) {
       enableHiding: false,
       cell: ({ row }) => (
         <span
-          className="inline-block min-w-14 rounded-full px-2.5 py-0.5 text-center text-xs font-semibold text-white"
-          style={{ backgroundColor: scoreColor(row.original.score) }}
+          className="inline-block min-w-14 rounded-full px-2.5 py-0.5 text-center text-xs font-semibold"
+          style={{
+            backgroundColor: scoreColor(row.original.score).background,
+            color: scoreColor(row.original.score).foreground,
+          }}
         >
           {formatNumber(row.original.score, locale, 2)}
         </span>
