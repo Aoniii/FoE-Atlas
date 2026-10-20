@@ -111,10 +111,12 @@ export function GreatBuildingPage() {
       {/* Level picker: slider or number, mirrored in the URL (?level=) */}
       <section className="flex flex-col gap-4 rounded-lg border p-4">
         <div className="flex flex-wrap items-center gap-4">
-          <h2 className="flex items-center gap-2 font-medium">
-            {t.greatBuilding.atLevel.replace("{level}", String(level))}
+          <div className="flex flex-col items-start gap-1">
+            <h2 className="font-medium">
+              {t.greatBuilding.atLevel.replace("{level}", String(level))}
+            </h2>
             {row?.computed && <Badge variant="outline">{t.greatBuilding.computed}</Badge>}
-          </h2>
+          </div>
           <Input
             type="number"
             min={1}
