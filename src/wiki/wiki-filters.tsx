@@ -2,7 +2,7 @@ import { Columns3, RotateCcw } from "lucide-react"
 import { AGES, type AgeId } from "@/core/ages"
 import type { BuildingType } from "@/core/building"
 import { isScorable } from "@/core/efficiency"
-import type { StatKey } from "@/core/stats"
+import { STAT_GROUPS, statsOfGroup, type StatKey } from "@/core/stats"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
@@ -22,7 +22,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { localized, useI18n } from "@/lib/i18n"
-import { STAT_GROUPS, statsOfGroup } from "./buildings-table"
+import { StatIcon } from "./stat-icon"
 
 const ALL_EVENTS = "__all__"
 
@@ -143,6 +143,7 @@ export function WikiFilters(props: FiltersProps) {
                     onCheckedChange={(checked) => props.onToggleStat(key, checked)}
                     closeOnClick={false}
                   >
+                    <StatIcon stat={key} />
                     {t.stats[key]}
                   </DropdownMenuCheckboxItem>
                 ))}
@@ -184,6 +185,7 @@ export function ScorePanel({ scoreKeys, onToggle }: ScorePanelProps) {
                     checked={scoreKeys.includes(key)}
                     onCheckedChange={(checked) => onToggle(key, checked)}
                   />
+                  <StatIcon stat={key} />
                   {t.stats[key]}
                 </label>
               ))}

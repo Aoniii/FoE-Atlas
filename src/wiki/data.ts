@@ -7,6 +7,8 @@ export type DataIndex = {
   gameVersion: string | null
   scrapedAt: string
   ages: { id: AgeId; buildings: number }[]
+  // Stat -> icon URL from the game CDN
+  icons: Partial<Record<StatKey, string>>
 }
 
 // One table row: the building plus everything computed from it

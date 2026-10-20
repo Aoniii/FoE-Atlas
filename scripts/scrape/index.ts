@@ -12,9 +12,10 @@ import { createInterface } from "node:readline/promises"
 import { parseArgs, parseEnv } from "node:util"
 import { z } from "zod"
 import { BuildingSchema, LocalizedSchema, type Building } from "../../src/core/building"
-import { typeFromId } from "./mappings"
+import { statIcons, typeFromId } from "./mappings"
 import {
   buildingIdFromUrl,
+  collectIconUrls,
   isBuildingPage,
   parseBuildingPage,
   type Issue,
@@ -254,6 +255,11 @@ async function main() {
     writeFileSync(`${DATA_DIR}/${id}.json`, JSON.stringify(result.data, null, 2) + "\n")
     written.add(`${id}.json`)
   }
+
+  // Stat icons (data/icons.json), taken from every page of the English wiki
+  const iconUrls = new Map<string, string>()
+  for (const page of Object.values(enCache)) collectIconUrls(page.content, iconUrls)
+  writeFileSync("data/icons.json", JSON.stringify(statIcons(iconUrls), null, 2) + "\n")
 
   // A full run removes buildings that disappeared from the wiki
   if (!limit) {

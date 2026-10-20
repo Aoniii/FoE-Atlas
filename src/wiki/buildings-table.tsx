@@ -14,13 +14,14 @@ import {
   type SortingState,
 } from "@tanstack/react-table"
 import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react"
-import { STATS, type StatGroup, type StatKey } from "@/core/stats"
+import { STATS, STAT_GROUPS, statsOfGroup, type StatKey } from "@/core/stats"
 import { Badge } from "@/components/ui/badge"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { localized, useI18n, type Locale, type Messages } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { BuildingCard } from "./building-card"
 import { formatNumber, formatStat } from "./format"
+import { StatIcon } from "./stat-icon"
 import type { WikiRow } from "./data"
 
 const features = tableFeatures({
@@ -31,12 +32,6 @@ const features = tableFeatures({
 })
 
 const helper = createColumnHelper<typeof features, WikiRow>()
-
-export const STAT_GROUPS = [...new Set(Object.values(STATS).map((def) => def.group))] as StatGroup[]
-
-export function statsOfGroup(group: StatGroup): StatKey[] {
-  return (Object.keys(STATS) as StatKey[]).filter((key) => STATS[key].group === group)
-}
 
 function buildColumns(t: Messages, locale: Locale) {
   return helper.columns([
@@ -148,6 +143,7 @@ function SortableHeader({ header }: { header: Header<typeof features, WikiRow, u
         sorted && "text-foreground",
       )}
     >
+      {header.column.id in STATS && <StatIcon stat={header.column.id as StatKey} />}
       {header.column.columnDef.header as string}
       <Icon className={cn("size-3.5", !sorted && "opacity-40")} />
     </button>

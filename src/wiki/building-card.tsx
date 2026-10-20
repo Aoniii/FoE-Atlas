@@ -3,6 +3,7 @@ import { roadShare, tileCount } from "@/core/efficiency"
 import type { StatKey } from "@/core/stats"
 import { localized, useI18n } from "@/lib/i18n"
 import { formatNumber, formatStat, longStatLabel } from "./format"
+import { StatIcon } from "./stat-icon"
 
 // Everything a building gives at the selected age, shown when hovering its name
 export function BuildingCard({ building }: { building: AgeBuilding }) {
@@ -37,7 +38,8 @@ export function BuildingCard({ building }: { building: AgeBuilding }) {
       {passive.length > 0 && (
         <Section title={t.wiki.passive}>
           {passive.map(([key, value]) => (
-            <li key={key}>
+            <li key={key} className="flex items-center gap-1.5">
+              <StatIcon stat={key} />
               {formatStat(key, value, locale)} {longStatLabel(t, key)}
             </li>
           ))}
@@ -110,7 +112,8 @@ function RewardLabel({ reward }: { reward: Reward }) {
   const { t, locale } = useI18n()
   if (reward.type === "stat") {
     return (
-      <span>
+      <span className="inline-flex items-center gap-1.5">
+        <StatIcon stat={reward.stat} />
         {formatStat(reward.stat, reward.amount, locale, 2)} {longStatLabel(t, reward.stat)}
       </span>
     )

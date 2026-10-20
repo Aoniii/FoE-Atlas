@@ -81,3 +81,9 @@ export const STAT_KEYS = Object.keys(STATS) as [StatKey, ...StatKey[]]
 export function statDef(key: StatKey): StatDef {
   return STATS[key]
 }
+
+export const STAT_GROUPS = [...new Set(Object.values(STATS).map((def) => def.group))] as StatGroup[]
+
+export function statsOfGroup(group: StatGroup): StatKey[] {
+  return STAT_KEYS.filter((key) => STATS[key].group === group)
+}

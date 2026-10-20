@@ -2,12 +2,13 @@ import { useMemo } from "react"
 import { getRouteApi } from "@tanstack/react-router"
 import { LATEST_AGE } from "@/core/ages"
 import type { BuildingType } from "@/core/building"
-import type { StatKey } from "@/core/stats"
+import { statsOfGroup, type StatKey } from "@/core/stats"
 import { useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
-import { BuildingsTable, statsOfGroup } from "./buildings-table"
+import { BuildingsTable } from "./buildings-table"
 import { toRows } from "./data"
 import { formatNumber } from "./format"
+import { StatIconsContext } from "./stat-icons-context"
 import { ScorePanel, WikiFilters } from "./wiki-filters"
 
 const route = getRouteApi("/wiki")
@@ -58,47 +59,49 @@ export function WikiPage() {
     on ? [...new Set([...list, key])] : list.filter((k) => k !== key)
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="text-2xl font-semibold">{t.nav.wiki}</h1>
-        <p className="text-xs text-muted-foreground">
-          {formatNumber(rows.length, locale)} {t.wiki.buildings}
-          {index.gameVersion && ` · ${t.wiki.gameVersion} ${index.gameVersion}`} · {t.wiki.updated}{" "}
-          {new Date(index.scrapedAt).toLocaleDateString(locale)}
-        </p>
-      </div>
+    <StatIconsContext value={index.icons ?? {}}>
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h1 className="text-2xl font-semibold">{t.nav.wiki}</h1>
+          <p className="text-xs text-muted-foreground">
+            {formatNumber(rows.length, locale)} {t.wiki.buildings}
+            {index.gameVersion && ` · ${t.wiki.gameVersion} ${index.gameVersion}`} ·{" "}
+            {t.wiki.updated} {new Date(index.scrapedAt).toLocaleDateString(locale)}
+          </p>
+        </div>
 
-      <WikiFilters
-        types={types}
-        type={type}
-        onTypeChange={(value) =>
-          navigate({ search: (s) => ({ ...s, type: value, event: undefined }) })
-        }
-        ages={index.ages.map((a) => a.id)}
-        age={age}
-        onAgeChange={(value) => navigate({ search: (s) => ({ ...s, age: value }) })}
-        events={events}
-        event={search.event}
-        onEventChange={(value) => navigate({ search: (s) => ({ ...s, event: value }) })}
-        visibleStats={visibleStats}
-        onToggleStat={(key, on) => setVisibleStats((list) => toggle(list, key, on))}
-        onReset={() => {
-          setVisibleStats(DEFAULT_VISIBLE)
-          setScoreKeys(DEFAULT_SCORE)
-        }}
-      />
-
-      {type === "special" && (
-        <ScorePanel
-          scoreKeys={scoreKeys}
-          onToggle={(key, on) => {
-            setScoreKeys((list) => toggle(list, key, on))
-            if (on) setVisibleStats((list) => toggle(list, key, true))
+        <WikiFilters
+          types={types}
+          type={type}
+          onTypeChange={(value) =>
+            navigate({ search: (s) => ({ ...s, type: value, event: undefined }) })
+          }
+          ages={index.ages.map((a) => a.id)}
+          age={age}
+          onAgeChange={(value) => navigate({ search: (s) => ({ ...s, age: value }) })}
+          events={events}
+          event={search.event}
+          onEventChange={(value) => navigate({ search: (s) => ({ ...s, event: value }) })}
+          visibleStats={visibleStats}
+          onToggleStat={(key, on) => setVisibleStats((list) => toggle(list, key, on))}
+          onReset={() => {
+            setVisibleStats(DEFAULT_VISIBLE)
+            setScoreKeys(DEFAULT_SCORE)
           }}
         />
-      )}
 
-      <BuildingsTable rows={rows} visibleStats={visibleStats} showScore={showScore} />
-    </div>
+        {type === "special" && (
+          <ScorePanel
+            scoreKeys={scoreKeys}
+            onToggle={(key, on) => {
+              setScoreKeys((list) => toggle(list, key, on))
+              if (on) setVisibleStats((list) => toggle(list, key, true))
+            }}
+          />
+        )}
+
+        <BuildingsTable rows={rows} visibleStats={visibleStats} showScore={showScore} />
+      </div>
+    </StatIconsContext>
   )
 }

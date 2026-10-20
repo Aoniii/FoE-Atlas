@@ -32,6 +32,15 @@ const BUILDING_IMAGE =
   /https:\/\/[^\s|}]+\/assets\/city\/buildings\/([A-Za-z0-9_]+?)(?:-[0-9a-f]+)?\.png/
 const ICON_TEMPLATE = /\{\{sized-external-image\|[^|}]*\|([^}]+)\}\}/g
 
+// Every icon of a page: icon key -> URL (used to give each stat its icon)
+export function collectIconUrls(wikitext: string, into: Map<string, string>) {
+  for (const match of wikitext.matchAll(ICON_TEMPLATE)) {
+    const url = match[1].trim()
+    const key = iconKey(url)
+    if (!into.has(key)) into.set(key, url)
+  }
+}
+
 export function buildingIdFromUrl(url: string): string | undefined {
   return url.match(BUILDING_IMAGE)?.[1]
 }

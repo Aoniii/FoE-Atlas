@@ -57,6 +57,24 @@ export const ICON_STATS: Record<string, StatKey[]> = {
   ...armyIcons(),
 }
 
+// Icon shown next to each stat on the site: its own single-stat icon, or one of these
+const EXTRA_STAT_ICONS: Partial<Record<StatKey, string>> = {
+  guild_goods: "icon_great_building_bonus_guild_goods",
+}
+
+export function statIcons(urls: Map<string, string>): Partial<Record<StatKey, string>> {
+  const icons: Partial<Record<StatKey, string>> = {}
+  for (const [stat, icon] of Object.entries(EXTRA_STAT_ICONS)) {
+    const url = urls.get(icon)
+    if (url) icons[stat as StatKey] = url
+  }
+  for (const [icon, stats] of Object.entries(ICON_STATS)) {
+    const url = urls.get(icon)
+    if (url && stats.length === 1 && !icons[stats[0]]) icons[stats[0]] = url
+  }
+  return icons
+}
+
 // Specific unit icons ("armyuniticons_90x90_rogue") all count as units
 export function iconStats(icon: string): StatKey[] | undefined {
   return ICON_STATS[icon] ?? (icon.startsWith("armyuniticons_") ? ["units"] : undefined)
