@@ -33,3 +33,12 @@ export function eventLabel(building: AgeBuilding, locale: Locale): string | unde
   const name = eventName(building.event, locale)
   return building.eventYear ? `${name} ${building.eventYear}` : name
 }
+
+// "1 234 PF", "198 % Armée offensive · Cl. att", and boosts as "+10 % PF" (not "10 % +% PF")
+export function statText(t: Messages, key: StatKey, value: number, locale: Locale, digits = 0) {
+  const label = longStatLabel(t, key)
+  if (label.includes("+% ")) {
+    return `+${formatNumber(value, locale, digits)} % ${label.replace("+% ", "")}`
+  }
+  return `${formatStat(key, value, locale, digits)} ${label}`
+}

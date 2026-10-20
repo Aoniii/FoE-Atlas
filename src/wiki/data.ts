@@ -1,5 +1,5 @@
 import type { AgeId } from "@/core/ages"
-import type { AgeBuilding, StatBlock } from "@/core/building"
+import type { AgeBuilding, BuildingPage, StatBlock } from "@/core/building"
 import { aggregateStats, score, tileCount, type References } from "@/core/efficiency"
 import type { StatKey } from "@/core/stats"
 
@@ -19,14 +19,21 @@ export type WikiRow = {
   score: number
 }
 
+export class DataNotFoundError extends Error {}
+
 async function fetchJson<T>(path: string): Promise<T> {
   const response = await fetch(`${import.meta.env.BASE_URL}data/${path}`)
+  // The dev server answers missing files with index.html: not JSON means not found
+  const isJson = response.headers.get("content-type")?.includes("json")
+  if (response.status === 404 || (response.ok && !isJson)) throw new DataNotFoundError(path)
   if (!response.ok) throw new Error(`Cannot load ${path} (HTTP ${response.status})`)
   return response.json() as Promise<T>
 }
 
 export const fetchIndex = () => fetchJson<DataIndex>("index.json")
 export const fetchAgeBuildings = (age: AgeId) => fetchJson<AgeBuilding[]>(`${age}.json`)
+export const fetchBuilding = (id: string) =>
+  fetchJson<BuildingPage>(`buildings/${encodeURIComponent(id)}.json`)
 
 export function toRows(
   buildings: AgeBuilding[],

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WikiRouteImport } from './routes/wiki'
+import { Route as BuildingsIdRouteImport } from './routes/buildings.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,40 @@ const WikiRoute = WikiRouteImport.update({
   path: '/wiki',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BuildingsIdRoute = BuildingsIdRouteImport.update({
+  id: '/buildings/$id',
+  path: '/buildings/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/wiki': typeof WikiRoute
+  '/buildings/$id': typeof BuildingsIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/wiki': typeof WikiRoute
+  '/buildings/$id': typeof BuildingsIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/wiki': typeof WikiRoute
+  '/buildings/$id': typeof BuildingsIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/wiki'
+  fullPaths: '/' | '/wiki' | '/buildings/$id'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/wiki'
-  id: '__root__' | '/' | '/wiki'
+  to: '/' | '/wiki' | '/buildings/$id'
+  id: '__root__' | '/' | '/wiki' | '/buildings/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   WikiRoute: typeof WikiRoute
+  BuildingsIdRoute: typeof BuildingsIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +75,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WikiRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/buildings/$id': {
+      id: '/buildings/$id'
+      path: '/buildings/$id'
+      fullPath: '/buildings/$id'
+      preLoaderRoute: typeof BuildingsIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   WikiRoute: WikiRoute,
+  BuildingsIdRoute: BuildingsIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -13,6 +13,7 @@ import {
   type Header,
   type SortingState,
 } from "@tanstack/react-table"
+import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react"
 import { STATS, STAT_KEYS, type StatKey } from "@/core/stats"
 import { Badge } from "@/components/ui/badge"
@@ -106,14 +107,18 @@ function Sub({ children }: { children: React.ReactNode }) {
   return <span className="block text-xs text-muted-foreground">{children}</span>
 }
 
+const wikiRoute = getRouteApi("/wiki")
+
+// Hovering shows the card, clicking opens the building page at the same age
 function NameCell({ row }: { row: WikiRow }) {
   const { locale } = useI18n()
+  const { age } = wikiRoute.useSearch()
   const { building } = row
   return (
     <HoverCard>
       <HoverCardTrigger
-        render={<span />}
-        className="cursor-default font-medium underline decoration-dotted underline-offset-4"
+        render={<Link to="/buildings/$id" params={{ id: building.id }} search={{ age }} />}
+        className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
       >
         {localized(building.name, locale)}
       </HoverCardTrigger>

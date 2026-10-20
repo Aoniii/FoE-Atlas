@@ -1,8 +1,8 @@
-import type { AgeBuilding, Output, Reward } from "@/core/building"
+import type { AgeBuilding, AgeData, Output, Reward } from "@/core/building"
 import { roadShare, tileCount } from "@/core/efficiency"
 import type { StatKey } from "@/core/stats"
 import { localized, useI18n } from "@/lib/i18n"
-import { eventLabel, formatNumber, formatStat, longStatLabel } from "./format"
+import { eventLabel, formatNumber, statText } from "./format"
 import { StatIcon } from "./stat-icon"
 
 // Everything a building gives at the selected age, shown when hovering its name
@@ -10,10 +10,6 @@ export function BuildingCard({ building }: { building: AgeBuilding }) {
   const { t, locale } = useI18n()
   const name = localized(building.name, locale)
   const otherName = locale === "en" ? building.name.fr : building.name.en
-  const passive = Object.entries(building.age.passive).filter(([, value]) => value) as [
-    StatKey,
-    number,
-  ][]
   const share = roadShare(building.size, building.road)
 
   return (
@@ -37,24 +33,7 @@ export function BuildingCard({ building }: { building: AgeBuilding }) {
         </div>
       </div>
 
-      {passive.length > 0 && (
-        <Section title={t.wiki.passive}>
-          {passive.map(([key, value]) => (
-            <li key={key} className="flex items-center gap-1.5">
-              <StatIcon stat={key} />
-              {formatStat(key, value, locale)} {longStatLabel(t, key)}
-            </li>
-          ))}
-        </Section>
-      )}
-
-      {building.age.production.length > 0 && (
-        <Section title={t.wiki.production}>
-          {building.age.production.map((output, index) => (
-            <OutputLine key={index} output={output} />
-          ))}
-        </Section>
-      )}
+      <AgeDetails age={building.age} />
 
       {building.sourceUrl && (
         <a
@@ -67,6 +46,34 @@ export function BuildingCard({ building }: { building: AgeBuilding }) {
         </a>
       )}
     </div>
+  )
+}
+
+// Bonuses and 24h production of one age (hover card and building page)
+export function AgeDetails({ age }: { age: AgeData }) {
+  const { t, locale } = useI18n()
+  const passive = Object.entries(age.passive).filter(([, value]) => value) as [StatKey, number][]
+  return (
+    <>
+      {passive.length > 0 && (
+        <Section title={t.wiki.passive}>
+          {passive.map(([key, value]) => (
+            <li key={key} className="flex items-center gap-1.5">
+              <StatIcon stat={key} />
+              {statText(t, key, value, locale)}
+            </li>
+          ))}
+        </Section>
+      )}
+
+      {age.production.length > 0 && (
+        <Section title={t.wiki.production}>
+          {age.production.map((output, index) => (
+            <OutputLine key={index} output={output} />
+          ))}
+        </Section>
+      )}
+    </>
   )
 }
 
@@ -116,7 +123,7 @@ function RewardLabel({ reward }: { reward: Reward }) {
     return (
       <span className="inline-flex items-center gap-1.5">
         <StatIcon stat={reward.stat} />
-        {formatStat(reward.stat, reward.amount, locale, 2)} {longStatLabel(t, reward.stat)}
+        {statText(t, reward.stat, reward.amount, locale, 2)}
       </span>
     )
   }

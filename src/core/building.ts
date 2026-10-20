@@ -102,3 +102,7 @@ export type Size = z.infer<typeof SizeSchema>
 export type Building = z.infer<typeof BuildingSchema>
 // A building as shipped to the site: one age only (see scripts/build-data.ts)
 export type AgeBuilding = Omit<Building, "ages"> & { age: AgeData }
+// A building as shipped to its own page: every age, plus the other levels of its chain
+export type BuildingPage = Building & {
+  chainLevels: { id: string; level: number; name: Building["name"] }[]
+}
