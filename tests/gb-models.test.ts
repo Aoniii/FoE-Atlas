@@ -43,3 +43,20 @@ describe("Galata Tower models", () => {
     }
   })
 })
+
+describe("Rain Forest Project model", () => {
+  const aid = MANUAL_GB_MODELS.rain_forest_project["Aid Blueprints"]
+
+  it("follows the wiki at level 80 and the readings within 1 point", () => {
+    expect(aid.value(80)).toBe(463)
+    for (const [level, reading] of Object.entries(aid.readings!)) {
+      expect(Math.abs(aid.value(Number(level)) - reading)).toBeLessThanOrEqual(1)
+    }
+  })
+
+  it("never decreases up to level 400", () => {
+    for (let level = 81; level < 400; level++) {
+      expect(aid.value(level + 1)).toBeGreaterThanOrEqual(aid.value(level))
+    }
+  })
+})

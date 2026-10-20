@@ -30,6 +30,14 @@ export const MANUAL_GB_MODELS: Record<string, Record<string, ManualModel>> = {
       readings: { 129: 23.68, 150: 25.46, 171: 26.93 },
     },
   },
+  rain_forest_project: {
+    // Aid blueprints chance: power law fitted on wiki levels 60-80 and the readings
+    // (26 of 27 exact after rounding, the last one 1 point off)
+    "Aid Blueprints": {
+      value: (level) => Math.round(11.9561 * level ** 0.822 + 25.037),
+      readings: { 101: 556, 102: 560, 111: 599, 112: 603, 143: 732, 144: 736 },
+    },
+  },
   galata_tower: {
     // 6 since level 71 on the wiki, still 6 in game at level 175
     "Plunder Repel (#)": { value: () => 6 },
