@@ -1,9 +1,8 @@
-# Builds the site and publishes it on GitHub Pages at every push on main
+# Publishes a release on GitHub Pages, only when started by hand:
+# Actions > Deploy > Run workflow > "Use workflow from" > Tags > v1.0.0-alpha.N
 name: Deploy
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +10,7 @@ permissions:
   pages: write
   id-token: write
 
-# One deployment at a time; a newer push replaces a pending one
+# One deployment at a time; a newer run replaces a pending one
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -20,7 +19,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Only release tags are deployed, never a branch picked by mistake
+      - name: Check the selected ref is a release tag
+        if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
+        run: |
+          echo "::error::Select a release tag (v1.0.0-alpha.N) in 'Use workflow from', not ${{ github.ref_name }}"
+          exit 1
+
       - uses: actions/checkout@v4
+
+      # The tag must match the version shown on the site
+      - name: Check the tag matches package.json
+        run: |
+          version="v$(node -p "require('./package.json').version")"
+          if [ "$version" != "${{ github.ref_name }}" ]; then
+            echo "::error::Tag ${{ github.ref_name }} does not match package.json version $version"
+            exit 1
+          fi
 
       # pnpm version comes from "packageManager" in package.json
       - uses: pnpm/action-setup@v4
