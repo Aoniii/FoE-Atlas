@@ -20,6 +20,10 @@ export const CHANGELOG: Release[] = [
         fr: "Score juste après le nom du bâtiment, dans une pastille colorée de violet (0) à bleu (10 et plus), au texte toujours lisible",
         en: "Score right after the building name, in a pill colored from violet (0) to blue (10 and more), with always readable text",
       },
+      {
+        fr: "Score de chaque niveau d'une chaîne sur les fiches, calculé avec tes cases du wiki",
+        en: "Score of each chain level on building pages, computed with your wiki checkboxes",
+      },
     ],
   },
   {

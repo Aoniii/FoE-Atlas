@@ -11,7 +11,7 @@ const capitalize = (text: string) => text.charAt(0).toUpperCase() + text.slice(1
 // level. French ones come last, and translations vary ("Whisperwood" / "bois murmurant"):
 // keep the same number of words, from the end ("… paradisiaque supérieur").
 export function chainStepLabels(
-  levels: BuildingPage["chainLevels"],
+  levels: Pick<BuildingPage["chainLevels"][number], "id" | "level" | "name">[],
 ): Map<string, { fr: string; en: string }> {
   const labels = new Map<string, { fr: string; en: string }>()
   const first = levels[0]

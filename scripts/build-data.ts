@@ -9,6 +9,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs"
 import { AGE_IDS, type AgeId } from "../src/core/ages"
 import { BuildingSchema, type AgeBuilding, type BuildingPage } from "../src/core/building"
+import { aggregateStats } from "../src/core/efficiency"
 import { fitColumn, valueAt } from "../src/core/gb-extrapolate"
 import {
   GB_MAX_LEVEL,
@@ -84,7 +85,17 @@ const levelsByChain = new Map<string, BuildingPage["chainLevels"]>()
 for (const building of buildings) {
   if (!building.chain) continue
   const levels = levelsByChain.get(building.chain.id) ?? []
-  levels.push({ id: building.id, level: building.chain.level, name: building.name })
+  const stats = Object.fromEntries(
+    Object.entries(building.ages).map(([age, data]) => [age, aggregateStats(data!)]),
+  )
+  levels.push({
+    id: building.id,
+    level: building.chain.level,
+    name: building.name,
+    size: building.size,
+    road: building.road,
+    stats,
+  })
   levelsByChain.set(building.chain.id, levels)
 }
 const pages = new Set<string>()

@@ -20,7 +20,8 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 import { localized, useI18n, type Locale, type Messages } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { BuildingCard } from "./building-card"
-import { eventLabel, formatNumber, formatStat, fullStatLabel, scoreColor } from "./format"
+import { eventLabel, formatNumber, formatStat, fullStatLabel } from "./format"
+import { ScorePill } from "./score-pill"
 import { StatIcon } from "./stat-icon"
 import type { WikiRow } from "./data"
 
@@ -48,17 +49,7 @@ function buildColumns(t: Messages, locale: Locale) {
       header: t.wiki.score,
       sortDescFirst: true,
       enableHiding: false,
-      cell: ({ row }) => (
-        <span
-          className="inline-block min-w-14 rounded-full px-2.5 py-0.5 text-center text-xs font-semibold"
-          style={{
-            backgroundColor: scoreColor(row.original.score).background,
-            color: scoreColor(row.original.score).foreground,
-          }}
-        >
-          {formatNumber(row.original.score, locale, 2)}
-        </span>
-      ),
+      cell: ({ row }) => <ScorePill score={row.original.score} className="min-w-14" />,
     }),
     helper.accessor((row) => row.tiles, {
       id: "tiles",

@@ -2,11 +2,12 @@ import { useMemo } from "react"
 import { getRouteApi } from "@tanstack/react-router"
 import { LATEST_AGE } from "@/core/ages"
 import type { BuildingType } from "@/core/building"
-import { statsOfGroup, type StatKey } from "@/core/stats"
+import type { StatKey } from "@/core/stats"
 import { getPreferredAge, setPreferredAge } from "@/lib/age-preference"
 import { useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
 import { BuildingsTable } from "./buildings-table"
+import { DEFAULT_SCORE, useScoreKeys } from "./score-settings"
 import { GreatBuildingGrid } from "./great-building-grid"
 import { toRows } from "./data"
 import { eventName, formatNumber } from "./format"
@@ -23,17 +24,6 @@ const DEFAULT_VISIBLE: StatKey[] = [
   "def_army_att_classic",
   "def_army_def_classic",
 ]
-// FP, goods of the 3 ages, guild goods and every army boost (both armies, all contexts)
-const DEFAULT_SCORE: StatKey[] = [
-  "fp",
-  "goods_prev",
-  "goods",
-  "goods_next",
-  "guild_goods",
-  ...statsOfGroup("attacking_army"),
-  ...statsOfGroup("defending_army"),
-]
-
 export function WikiPage() {
   const { t, locale } = useI18n()
   const search = route.useSearch()
@@ -43,7 +33,7 @@ export function WikiPage() {
   const type: BuildingType = search.type ?? "special"
   const age = search.age ?? getPreferredAge() ?? LATEST_AGE
   const [visibleStats, setVisibleStats] = usePersistentState("wiki.columns.v2", DEFAULT_VISIBLE)
-  const [scoreKeys, setScoreKeys] = usePersistentState("wiki.score.v3", DEFAULT_SCORE)
+  const [scoreKeys, setScoreKeys] = useScoreKeys()
 
   const types = useMemo(
     () => index.types ?? [...new Set(buildings.map((b) => b.type))].sort(),

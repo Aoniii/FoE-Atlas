@@ -1,5 +1,5 @@
 import { z } from "zod"
-import { AGE_IDS } from "./ages"
+import { AGE_IDS, type AgeId } from "./ages"
 import { STAT_KEYS } from "./stats"
 
 export const AgeIdSchema = z.enum(AGE_IDS)
@@ -104,5 +104,13 @@ export type Building = z.infer<typeof BuildingSchema>
 export type AgeBuilding = Omit<Building, "ages"> & { age: AgeData }
 // A building as shipped to its own page: every age, plus the other levels of its chain
 export type BuildingPage = Building & {
-  chainLevels: { id: string; level: number; name: Building["name"] }[]
+  chainLevels: {
+    id: string
+    level: number
+    name: Building["name"]
+    size: Size
+    road: Road
+    // Flattened stats per age, to score every level of the chain
+    stats: Partial<Record<AgeId, StatBlock>>
+  }[]
 }

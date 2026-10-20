@@ -1,7 +1,7 @@
 import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import { AGES, type AgeId } from "@/core/ages"
-import { aggregateStats, roadShare, tileCount } from "@/core/efficiency"
+import { aggregateStats, roadShare, score, tileCount } from "@/core/efficiency"
 import { STAT_KEYS } from "@/core/stats"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -16,6 +16,8 @@ import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { AgeDetails } from "./building-card"
 import { chainStepLabels } from "./chain-labels"
+import { ScorePill } from "./score-pill"
+import { useScoreKeys } from "./score-settings"
 import { eventLabel, formatNumber, formatStat, fullStatLabel } from "./format"
 import { StatIcon } from "./stat-icon"
 import { StatIconsContext } from "./stat-icons-context"
@@ -39,6 +41,7 @@ export function BuildingPage() {
         ? preferred
         : ages[ages.length - 1].id
   const stepLabels = chainStepLabels(building.chainLevels)
+  const [scoreKeys] = useScoreKeys()
   const tiles = tileCount(building.size, building.road)
   const share = roadShare(building.size, building.road)
   const name = localized(building.name, locale)
@@ -113,11 +116,18 @@ export function BuildingPage() {
                   params={{ id: level.id }}
                   search={{ age }}
                   className={cn(
-                    "rounded-md border px-2.5 py-1 text-sm hover:bg-muted",
+                    "inline-flex items-center gap-2 rounded-md border px-2.5 py-1 text-sm hover:bg-muted",
                     level.id === building.id && "border-primary bg-muted font-medium",
                   )}
                 >
                   {localized(stepLabels.get(level.id) ?? level.name, locale)}
+                  {/* Score of this level at the selected age, with the wiki's score settings */}
+                  {scoreKeys.length > 0 && level.stats[age] && (
+                    <ScorePill
+                      className="px-1.5 py-0 text-[0.7rem]"
+                      score={score(level.stats[age], tileCount(level.size, level.road), scoreKeys)}
+                    />
+                  )}
                 </Link>
               ))}
             </div>
