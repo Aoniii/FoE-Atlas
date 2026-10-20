@@ -21,8 +21,8 @@ export const CHANGELOG: Release[] = [
         en: "Great Buildings show up in the search",
       },
       {
-        fr: "Temple des reliques : chance de relique et taux rare calculés au-delà du niveau 80, à partir de relevés en jeu",
-        en: "Temple of Relics: relic chance and rare share computed beyond level 80, from in-game readings",
+        fr: "Temple des reliques et Tour de Galata : bonus calculés au-delà du niveau 80, à partir de relevés en jeu",
+        en: "Temple of Relics and Galata Tower: bonuses computed beyond level 80, from in-game readings",
       },
     ],
   },

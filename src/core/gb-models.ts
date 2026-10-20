@@ -10,6 +10,13 @@ export type ManualModel = {
 
 const round2 = (value: number) => Math.round(value * 100) / 100
 
+// Galata Tower plunder repel chance: cubic fitted on wiki levels 50-80 and the readings
+// (within 0.04 point), held at its peak (level ~227) so it never decreases
+const galataPercent = (level: number) => {
+  const l = Math.min(level, 227)
+  return round2(21.5149 + 0.47809 * l - 0.001727 * l ** 2 + 0.00000198 * l ** 3)
+}
+
 export const MANUAL_GB_MODELS: Record<string, Record<string, ManualModel>> = {
   temple_of_relics: {
     // Chance to find a relic: fits wiki levels 60-80 and the readings exactly
@@ -21,6 +28,15 @@ export const MANUAL_GB_MODELS: Record<string, Record<string, ManualModel>> = {
     "Relic Hunt (Rare Totem %)": {
       value: (level) => round2(36.45 - 33.225 * Math.exp(-level / 135.88)),
       readings: { 129: 23.68, 150: 25.46, 171: 26.93 },
+    },
+  },
+  galata_tower: {
+    // 6 since level 71 on the wiki, still 6 in game at level 175
+    "Plunder Repel (#)": { value: () => 6 },
+    // Reading at level 123 (58.13) left out: higher than level 124, likely a typo
+    "Plunder Repel (%)": {
+      value: galataPercent,
+      readings: { 124: 57.99, 152: 61.26, 153: 61.35, 174: 62.87, 175: 62.93 },
     },
   },
 }

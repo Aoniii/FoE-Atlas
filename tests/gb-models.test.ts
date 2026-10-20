@@ -22,3 +22,24 @@ describe("Temple of Relics models", () => {
     }
   })
 })
+
+describe("Galata Tower models", () => {
+  const count = MANUAL_GB_MODELS.galata_tower["Plunder Repel (#)"]
+  const percent = MANUAL_GB_MODELS.galata_tower["Plunder Repel (%)"]
+
+  it("keeps 6 plunder repels", () => {
+    expect(count.value(150)).toBe(6)
+  })
+
+  it("stays within 0.05 point of the readings", () => {
+    for (const [level, reading] of Object.entries(percent.readings!)) {
+      expect(Math.abs(percent.value(Number(level)) - reading)).toBeLessThan(0.05)
+    }
+  })
+
+  it("never decreases up to level 400", () => {
+    for (let level = 81; level < 400; level++) {
+      expect(percent.value(level + 1)).toBeGreaterThanOrEqual(percent.value(level))
+    }
+  })
+})
