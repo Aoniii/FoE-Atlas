@@ -11,6 +11,7 @@ import { AGE_IDS, type AgeId } from "../src/core/ages"
 import { BuildingSchema, type AgeBuilding, type BuildingPage } from "../src/core/building"
 import { aggregateStats } from "../src/core/efficiency"
 import { fitColumn, valueAt } from "../src/core/gb-extrapolate"
+import { MANUAL_GB_MODELS, manualValue } from "../src/core/gb-models"
 import {
   GB_MAX_LEVEL,
   GreatBuildingSchema,
@@ -130,9 +131,12 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
     if (numbers.some((n) => n === undefined)) return undefined
     const values = [0, ...numbers.map((n) => Number(n!.replace(/,/g, "")))]
     const decimals = Math.max(...numbers.map((n) => n!.split(".")[1]?.length ?? 0))
+    const percent = raw.some((v) => v.endsWith("%"))
+    const manual = MANUAL_GB_MODELS[gb.id]?.[column.label.en]
+    if (manual) return { kind: "manual" as const, manual, decimals, percent }
     const model = fitColumn(values, decimals)
     if (!model) unmodeled.push(`${gb.id}: ${column.label.en}`)
-    return model && { model, values, decimals, percent: raw.some((v) => v.endsWith("%")) }
+    return model && { kind: "fitted" as const, model, values, decimals, percent }
   })
   const extra = []
   for (let level = last + 1; level <= GB_MAX_LEVEL; level++) {
@@ -142,7 +146,10 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
       computed: true,
       values: columns.map((column) => {
         if (!column) return ""
-        const value = valueAt(column.model, column.values, level)
+        const value =
+          column.kind === "manual"
+            ? manualValue(column.manual, level)
+            : valueAt(column.model, column.values, level)
         const text = value.toLocaleString("en-US", { maximumFractionDigits: column.decimals })
         return column.percent ? `${text}%` : text
       }),

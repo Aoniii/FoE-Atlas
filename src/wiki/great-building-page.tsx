@@ -2,6 +2,7 @@ import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import { AGES } from "@/core/ages"
 import { roadShare, tileCount } from "@/core/efficiency"
+import { MANUAL_GB_MODELS } from "@/core/gb-models"
 import { GB_MAX_LEVEL } from "@/core/great-building"
 import { levelCost } from "@/core/rush"
 import { Badge } from "@/components/ui/badge"
@@ -146,6 +147,9 @@ export function GreatBuildingPage() {
         <p className="text-xs text-muted-foreground">
           {t.greatBuilding.available.replace("{count}", String(knownLevel))}
         </p>
+        {MANUAL_GB_MODELS[gb.id] && (
+          <p className="text-xs text-muted-foreground">{t.greatBuilding.manualNote}</p>
+        )}
         <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           <Stat label={t.greatBuilding.cost} value={formatNumber(cost, locale)} />
           <Stat label={t.greatBuilding.totalCost} value={formatNumber(total, locale)} />
