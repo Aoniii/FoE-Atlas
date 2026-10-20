@@ -13,6 +13,35 @@ import {
 
 const ALL_SCORABLE = STAT_KEYS.filter((key) => isScorable(key))
 
+// References of the reference spreadsheet: the formula must reproduce its scores
+// whatever our own tuned references are
+const SHEET_REFERENCES = {
+  fp: 10,
+  goods_prev: 12,
+  goods: 10,
+  goods_next: 10,
+  special_goods: 50,
+  guild_goods: 15,
+  atk_army_att_classic: 12,
+  atk_army_def_classic: 12,
+  atk_army_att_gbg: 15,
+  atk_army_def_gbg: 15,
+  atk_army_att_ge: 100,
+  atk_army_def_ge: 100,
+  atk_army_att_qi: 5,
+  atk_army_def_qi: 8,
+  def_army_att_classic: 12,
+  def_army_def_classic: 12,
+  def_army_att_gbg: 15,
+  def_army_def_gbg: 15,
+  def_army_att_ge: 100,
+  def_army_def_ge: 100,
+  def_army_att_qi: 50,
+  def_army_def_qi: 80,
+  units: 15,
+  fsp: 0.05,
+}
+
 describe("roadShare", () => {
   it.each([
     [{ w: 1, h: 1 }, "road", 0.5],
@@ -64,7 +93,7 @@ describe("score matches the reference spreadsheet", () => {
     ],
     ["Finish Special Production reference", 39, { fsp: 30 }, 15.38461538],
   ])("%s", (_name, tiles, stats, expected) => {
-    expect(score(stats, tiles, ALL_SCORABLE)).toBeCloseTo(expected, 6)
+    expect(score(stats, tiles, ALL_SCORABLE, SHEET_REFERENCES)).toBeCloseTo(expected, 6)
   })
 })
 

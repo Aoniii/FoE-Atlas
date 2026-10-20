@@ -53,14 +53,16 @@ export const STATS = {
   ...armyStats("attacking"),
   ...armyStats("defending"),
 
-  qi_supplies: { group: "quantum_incursions", unit: "flat" },
-  qi_supplies_boost: { group: "quantum_incursions", unit: "percent" },
-  qi_coins_boost: { group: "quantum_incursions", unit: "percent" },
-  qi_coins: { group: "quantum_incursions", unit: "flat" },
-  qi_goods: { group: "quantum_incursions", unit: "flat" },
-  qi_units: { group: "quantum_incursions", unit: "flat" },
-  qi_actions: { group: "quantum_incursions", unit: "flat" },
-  qi_actions_capacity: { group: "quantum_incursions", unit: "flat" },
+  // Quantum Incursions: actions are what really matters, resources, coins, goods and
+  // units much less (rounded median per tile x4, actions /2). Not in the default score.
+  qi_supplies: { group: "quantum_incursions", unit: "flat", reference: 10000 },
+  qi_supplies_boost: { group: "quantum_incursions", unit: "percent", reference: 2 },
+  qi_coins_boost: { group: "quantum_incursions", unit: "percent", reference: 2 },
+  qi_coins: { group: "quantum_incursions", unit: "flat", reference: 10000 },
+  qi_goods: { group: "quantum_incursions", unit: "flat", reference: 5 },
+  qi_units: { group: "quantum_incursions", unit: "flat", reference: 3.2 },
+  qi_actions: { group: "quantum_incursions", unit: "flat", reference: 3.75 },
+  qi_actions_capacity: { group: "quantum_incursions", unit: "flat", reference: 400 },
 
   units: { group: "other", unit: "flat", reference: 15 },
   fsp: { group: "other", unit: "flat", reference: 0.05 },
