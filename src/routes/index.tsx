@@ -3,6 +3,7 @@ import { Link, createFileRoute } from "@tanstack/react-router"
 import { ArrowRight, Check, Construction, Copy, MessageCircle } from "lucide-react"
 import { buttonVariants } from "@/components/ui/button"
 import { useI18n } from "@/lib/i18n"
+import { fetchIndex } from "@/wiki/data"
 
 const GITHUB_URL = "https://github.com/Aoniii"
 // AGPL-3.0: the source code must be offered to the site's users
@@ -10,11 +11,14 @@ const SOURCE_URL = "https://github.com/Aoniii/FoE-Atlas"
 const DISCORD_USERNAME = "aoniii"
 
 export const Route = createFileRoute("/")({
+  // Game version and data date, shown at the bottom (null if data is missing)
+  loader: () => fetchIndex().catch(() => null),
   component: HomePage,
 })
 
 function HomePage() {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
+  const index = Route.useLoaderData()
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-8 py-10">
       <section className="flex flex-col items-start gap-4">
@@ -52,14 +56,22 @@ function HomePage() {
         </div>
       </section>
 
-      <a
-        href={SOURCE_URL}
-        target="_blank"
-        rel="noreferrer"
-        className="w-fit text-xs text-muted-foreground underline-offset-4 hover:underline"
-      >
-        {t.home.source}
-      </a>
+      <div className="flex flex-wrap items-baseline justify-between gap-2 text-xs text-muted-foreground">
+        <a
+          href={SOURCE_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="underline-offset-4 hover:underline"
+        >
+          {t.home.source}
+        </a>
+        {index && (
+          <span>
+            {index.gameVersion && `${t.wiki.gameVersion} ${index.gameVersion} · `}
+            {t.wiki.updated} {new Date(index.scrapedAt).toLocaleDateString(locale)}
+          </span>
+        )}
+      </div>
     </div>
   )
 }

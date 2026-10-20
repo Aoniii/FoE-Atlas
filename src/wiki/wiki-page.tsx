@@ -76,8 +76,6 @@ export function WikiPage() {
           <p className="text-xs text-muted-foreground">
             {formatNumber(isGreatBuildings ? greatBuildings.length : rows.length, locale)}{" "}
             {t.wiki.buildings}
-            {index.gameVersion && ` · ${t.wiki.gameVersion} ${index.gameVersion}`} ·{" "}
-            {t.wiki.updated} {new Date(index.scrapedAt).toLocaleDateString(locale)}
           </p>
         </div>
 
