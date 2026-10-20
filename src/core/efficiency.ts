@@ -1,4 +1,4 @@
-import type { Road, Size, StatBlock } from "./building"
+import type { AgeData, Reward, Road, Size, StatBlock } from "./building"
 import { STATS, type StatDef, type StatKey } from "./stats"
 
 // Share of road tiles a building is charged for: half its short side for a
@@ -47,4 +47,22 @@ export function score(
     if (reference) total += amount / tiles / reference
   }
   return total
+}
+
+function addRewards(stats: StatBlock, rewards: Reward[], factor: number) {
+  for (const reward of rewards) {
+    if (reward.type !== "stat") continue
+    stats[reward.stat] = (stats[reward.stat] ?? 0) + reward.amount * factor
+  }
+}
+
+// Flattens an age's details into one value per stat. Random rewards count
+// for their expected value (chance x amount); items are display-only.
+export function aggregateStats(age: AgeData): StatBlock {
+  const stats: StatBlock = { ...age.passive }
+  for (const output of age.production) {
+    if (output.kind === "guaranteed") addRewards(stats, output.rewards, 1)
+    else for (const option of output.options) addRewards(stats, option.rewards, option.chance / 100)
+  }
+  return stats
 }

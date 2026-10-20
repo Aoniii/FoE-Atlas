@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest"
 import {
   BuildingSchema,
   DEFAULT_REFERENCES,
+  aggregateStats,
   STAT_KEYS,
   isScorable,
   roadShare,
@@ -98,10 +99,38 @@ describe("BuildingSchema", () => {
     chain: { id: "terrace_farm", level: 1 },
     size: { w: 5, h: 6 },
     road: "road",
+    image: "https://foeen.innogamescdn.com/assets/city/buildings/P_SS_MultiAge_Expedition16.png",
     reliability: "official",
-    stats: {
-      BronzeAge: { fp: 5, goods: 10, supplies: 260, medals: 9, population: -140 },
-      IronAge: { fp: 5, goods: 10, supplies: 610, medals: 11, population: -270 },
+    ages: {
+      BronzeAge: {
+        passive: { population: -140 },
+        production: [
+          {
+            kind: "guaranteed",
+            rewards: [
+              { type: "stat", stat: "fp", amount: 5 },
+              { type: "stat", stat: "goods", amount: 10 },
+            ],
+          },
+          {
+            kind: "random",
+            options: [
+              {
+                chance: 20,
+                rewards: [
+                  {
+                    type: "item",
+                    id: "renovation_kit",
+                    name: { fr: "Kit de rénovation", en: "Renovation Kit" },
+                    amount: 1,
+                  },
+                ],
+              },
+              { chance: 80, rewards: [{ type: "stat", stat: "medals", amount: 9 }] },
+            ],
+          },
+        ],
+      },
     },
   }
 
@@ -110,12 +139,47 @@ describe("BuildingSchema", () => {
   })
 
   it("rejects an unknown stat", () => {
-    const invalid = { ...terraceFarm, stats: { BronzeAge: { forge_points: 5 } } }
+    const invalid = {
+      ...terraceFarm,
+      ages: { BronzeAge: { passive: { forge_points: 5 }, production: [] } },
+    }
     expect(BuildingSchema.safeParse(invalid).success).toBe(false)
   })
 
   it("rejects an unknown age", () => {
-    const invalid = { ...terraceFarm, stats: { StoneAge: { fp: 5 } } }
+    const invalid = { ...terraceFarm, ages: { StoneAge: { passive: {}, production: [] } } }
     expect(BuildingSchema.safeParse(invalid).success).toBe(false)
+  })
+
+  it("rejects random chances above 100%", () => {
+    const reward = { type: "stat", stat: "fp", amount: 1 }
+    const invalid = {
+      ...terraceFarm,
+      ages: {
+        BronzeAge: {
+          passive: {},
+          production: [
+            {
+              kind: "random",
+              options: [
+                { chance: 60, rewards: [reward] },
+                { chance: 60, rewards: [reward] },
+              ],
+            },
+          ],
+        },
+      },
+    }
+    expect(BuildingSchema.safeParse(invalid).success).toBe(false)
+  })
+
+  it("aggregates guaranteed and expected random rewards", () => {
+    const building = BuildingSchema.parse(terraceFarm)
+    expect(aggregateStats(building.ages.BronzeAge!)).toEqual({
+      population: -140,
+      fp: 5,
+      goods: 10,
+      medals: 9 * 0.8,
+    })
   })
 })

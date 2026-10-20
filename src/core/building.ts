@@ -7,6 +7,46 @@ export const StatKeySchema = z.enum(STAT_KEYS)
 
 export const StatBlockSchema = z.partialRecord(StatKeySchema, z.number())
 
+export const LocalizedSchema = z.object({ fr: z.string().min(1), en: z.string().min(1) })
+
+// A single thing a building gives: a known stat, or an item (kit, fragments, unit...)
+export const RewardSchema = z.discriminatedUnion("type", [
+  z.object({ type: z.literal("stat"), stat: StatKeySchema, amount: z.number() }),
+  z.object({
+    type: z.literal("item"),
+    id: z.string().min(1),
+    name: LocalizedSchema,
+    amount: z.number().positive(),
+    icon: z.url().optional(),
+  }),
+])
+
+export const RandomOptionSchema = z.object({
+  chance: z.number().gt(0).max(100), // percent
+  rewards: z.array(RewardSchema).min(1),
+})
+
+// One line of the 24h production: always given, or one random pick among options
+export const OutputSchema = z.discriminatedUnion("kind", [
+  z.object({ kind: z.literal("guaranteed"), rewards: z.array(RewardSchema).min(1) }),
+  z.object({
+    kind: z.literal("random"),
+    options: z
+      .array(RandomOptionSchema)
+      .min(1)
+      .refine((options) => options.reduce((sum, o) => sum + o.chance, 0) <= 100.0001, {
+        message: "Random chances add up to more than 100%",
+      }),
+  }),
+])
+
+export const AgeDataSchema = z.object({
+  // Values that are not produced: boosts (%), population, happiness...
+  passive: StatBlockSchema,
+  // Everything collected every 24h
+  production: z.array(OutputSchema),
+})
+
 export const BuildingTypeSchema = z.enum([
   "special",
   "great_building",
@@ -29,8 +69,9 @@ export const SizeSchema = z.object({
 
 export const BuildingSchema = z.object({
   id: z.string().min(1),
-  name: z.object({ fr: z.string().min(1), en: z.string().min(1) }),
+  name: LocalizedSchema,
   type: BuildingTypeSchema,
+  image: z.url().optional(),
   event: z.string().optional(),
   // Upgrade chain (e.g. Terrace Farm Lv. 1 -> Lv. 2): every level is its own building
   chain: z.object({ id: z.string().min(1), level: z.number().int().positive() }).optional(),
@@ -39,10 +80,13 @@ export const BuildingSchema = z.object({
   limitedDays: z.number().positive().optional(),
   reliability: ReliabilitySchema,
   sourceUrl: z.url().optional(),
-  stats: z.partialRecord(AgeIdSchema, StatBlockSchema),
+  ages: z.partialRecord(AgeIdSchema, AgeDataSchema),
 })
 
 export type StatBlock = z.infer<typeof StatBlockSchema>
+export type Reward = z.infer<typeof RewardSchema>
+export type Output = z.infer<typeof OutputSchema>
+export type AgeData = z.infer<typeof AgeDataSchema>
 export type BuildingType = z.infer<typeof BuildingTypeSchema>
 export type Road = z.infer<typeof RoadSchema>
 export type Size = z.infer<typeof SizeSchema>
