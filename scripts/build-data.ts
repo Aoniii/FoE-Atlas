@@ -11,7 +11,7 @@ import { AGE_IDS, type AgeId } from "../src/core/ages"
 import { BuildingSchema, type AgeBuilding, type BuildingPage } from "../src/core/building"
 import { aggregateStats } from "../src/core/efficiency"
 import { fitColumn, valueAt } from "../src/core/gb-extrapolate"
-import { MANUAL_GB_MODELS, manualValue } from "../src/core/gb-models"
+import { MANUAL_GB_MODELS } from "../src/core/gb-models"
 import {
   GB_MAX_LEVEL,
   GreatBuildingSchema,
@@ -118,8 +118,16 @@ if (existsSync("data/gb-rewards.json")) {
   writeFileSync(`${OUTPUT}/gb-rewards.json`, JSON.stringify(rewards))
 }
 
-// Extends a Great Building to GB_MAX_LEVEL: exact costs, bonuses of every column a
-// progression reproduces exactly (see gb-extrapolate.ts), empty otherwise
+// Bonuses read beyond the wiki on foe-assistant.com (scripts/gb-readings.ts)
+const gbReadings: Record<string, Record<string, Record<string, number>>> = existsSync(
+  "data/gb-readings.json",
+)
+  ? JSON.parse(readFileSync("data/gb-readings.json", "utf8")).readings
+  : {}
+
+// Extends a Great Building to GB_MAX_LEVEL: exact costs; bonuses from, in order, the
+// in-game readings, a progression reproducing every known level exactly (see
+// gb-extrapolate.ts), empty otherwise
 const unmodeled: string[] = []
 function extendLevels(gb: GreatBuilding): GreatBuilding {
   const rows = gb.levels.rows
@@ -132,11 +140,26 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
     const values = [0, ...numbers.map((n) => Number(n!.replace(/,/g, "")))]
     const decimals = Math.max(...numbers.map((n) => n!.split(".")[1]?.length ?? 0))
     const percent = raw.some((v) => v.endsWith("%"))
+    const read = gbReadings[gb.id]?.[column.label.en] ?? {}
+    const readLevels = Object.keys(read).map(Number)
     const manual = MANUAL_GB_MODELS[gb.id]?.[column.label.en]
-    if (manual) return { kind: "manual" as const, manual, decimals, percent }
-    const model = fitColumn(values, decimals)
-    if (!model) unmodeled.push(`${gb.id}: ${column.label.en}`)
-    return model && { kind: "fitted" as const, model, values, decimals, percent }
+    if (manual) return { kind: "manual" as const, manual, read, decimals, percent }
+    // Fitted on the wiki and the readings that follow it without a gap, else on the wiki
+    // alone if it agrees with every reading
+    const extended = [...values]
+    while (read[extended.length] !== undefined) extended.push(read[extended.length])
+    let model = fitColumn(extended, decimals)
+    if (model) values.splice(0, values.length, ...extended)
+    else {
+      model = fitColumn(values, decimals)
+      if (model && readLevels.some((l) => Math.abs(valueAt(model!, values, l) - read[l]) > 1e-6))
+        model = undefined
+    }
+    if (!model) {
+      const upTo = readLevels.length ? ` (read up to ${Math.max(...readLevels)})` : ""
+      unmodeled.push(`${gb.id}: ${column.label.en}${upTo}`)
+    }
+    return { kind: "fitted" as const, model, read, values, decimals, percent }
   })
   const extra = []
   for (let level = last + 1; level <= GB_MAX_LEVEL; level++) {
@@ -148,14 +171,22 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
         if (!column) return ""
         const value =
           column.kind === "manual"
-            ? manualValue(column.manual, level)
-            : valueAt(column.model, column.values, level)
+            ? (column.manual.readings?.[level] ?? column.read[level] ?? column.manual.value(level))
+            : (column.read[level] ?? (column.model && valueAt(column.model, column.values, level)))
+        if (value === undefined) return ""
         const text = value.toLocaleString("en-US", { maximumFractionDigits: column.decimals })
         return column.percent ? `${text}%` : text
       }),
     })
   }
-  return { ...gb, levels: { ...gb.levels, rows: [...rows, ...extra] } }
+  const readLevels = gb.levels.columns.flatMap((column) =>
+    Object.keys(gbReadings[gb.id]?.[column.label.en] ?? {}).map(Number),
+  )
+  return {
+    ...gb,
+    readingsUpTo: readLevels.length ? Math.max(...readLevels) : undefined,
+    levels: { ...gb.levels, rows: [...rows, ...extra] },
+  }
 }
 
 // Great Buildings: a light grid file and one file per building
@@ -193,7 +224,7 @@ for (const gb of greatBuildings) {
 }
 for (const file of readdirSync(GB_OUTPUT)) if (!gbFiles.has(file)) rmSync(`${GB_OUTPUT}/${file}`)
 if (unmodeled.length) {
-  console.log(`Great Building bonuses known up to the wiki level only (${unmodeled.length}):`)
+  console.log(`Great Building bonuses with no formula beyond the known levels (${unmodeled.length}):`)
   for (const column of unmodeled) console.log(`  ${column}`)
 }
 

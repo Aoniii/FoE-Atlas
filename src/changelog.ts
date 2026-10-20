@@ -24,6 +24,10 @@ export const CHANGELOG: Release[] = [
         fr: "Temple des reliques, Tour de Galata et Forêt tropicale : bonus calculés au-delà du niveau 80, à partir de relevés en jeu",
         en: "Temple of Relics, Galata Tower and Rain Forest Project: bonuses computed beyond level 80, from in-game readings",
       },
+      {
+        fr: "Monuments : bonus au-delà du niveau 80 (chances, nombres, boosts) repris des relevés de FOE Assistant, jusqu'au niveau 110 à 200 selon le GM",
+        en: "Great Buildings: bonuses beyond level 80 (chances, counts, boosts) from FOE Assistant's readings, up to level 110 to 200 depending on the building",
+      },
     ],
   },
   {

@@ -1,7 +1,8 @@
 // Hand-made progressions for Great Building bonuses no simple formula reproduces
 // (see gb-extrapolate.ts), fitted on the wiki levels and in-game readings.
 // Keyed by Great Building id, then by the column's English label.
-// `readings` are values seen in game: they win over the formula at their level.
+// `readings` are values seen in game: they win over the formula and over
+// data/gb-readings.json at their level.
 
 export type ManualModel = {
   value: (level: number) => number
@@ -11,7 +12,7 @@ export type ManualModel = {
 const round2 = (value: number) => Math.round(value * 100) / 100
 
 // Galata Tower plunder repel chance: cubic fitted on wiki levels 50-80 and the readings
-// (within 0.04 point), held at its peak (level ~227) so it never decreases
+// (within 0.14 point of the wiki and every reading), held at its peak (level ~227) so it never decreases
 const galataPercent = (level: number) => {
   const l = Math.min(level, 227)
   return round2(21.5149 + 0.47809 * l - 0.001727 * l ** 2 + 0.00000198 * l ** 3)
@@ -41,10 +42,11 @@ export const MANUAL_GB_MODELS: Record<string, Record<string, ManualModel>> = {
   galata_tower: {
     // 6 since level 71 on the wiki, still 6 in game at level 175
     "Plunder Repel (#)": { value: () => 6 },
-    // Reading at level 123 (58.13) left out: higher than level 124, likely a typo
+    // Levels 81-136 come from foe-assistant.com (data/gb-readings.json); it shows the
+    // readings 123 and 124 were swapped (57.99 then 58.13)
     "Plunder Repel (%)": {
       value: galataPercent,
-      readings: { 124: 57.99, 152: 61.26, 153: 61.35, 174: 62.87, 175: 62.93 },
+      readings: { 152: 61.26, 153: 61.35, 174: 62.87, 175: 62.93 },
     },
   },
 }

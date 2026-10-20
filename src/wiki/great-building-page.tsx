@@ -147,6 +147,11 @@ export function GreatBuildingPage() {
         <p className="text-xs text-muted-foreground">
           {t.greatBuilding.available.replace("{count}", String(knownLevel))}
         </p>
+        {gb.readingsUpTo && (
+          <p className="text-xs text-muted-foreground">
+            {t.greatBuilding.readingsNote.replace("{level}", String(gb.readingsUpTo))}
+          </p>
+        )}
         {MANUAL_GB_MODELS[gb.id] && (
           <p className="text-xs text-muted-foreground">{t.greatBuilding.manualNote}</p>
         )}

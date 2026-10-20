@@ -34,6 +34,8 @@ export const GreatBuildingSchema = z.object({
     ),
   }),
   sourceUrl: z.url().optional(),
+  // Highest level with bonuses read on foe-assistant.com (set by build-data)
+  readingsUpTo: z.number().optional(),
 })
 
 export type GreatBuilding = z.infer<typeof GreatBuildingSchema>
