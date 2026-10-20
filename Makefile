@@ -1,7 +1,7 @@
 PID_FILE := .dev.pid
 LOG_FILE := .dev.log
 
-.PHONY: dev stop format check
+.PHONY: dev stop format check test
 
 # Start the Vite dev server in the background (own process group, so stop kills it all)
 dev:
@@ -28,8 +28,13 @@ stop:
 format:
 	pnpm format
 
-# Verify formatting, lint and types without changing anything
+# Verify formatting, lint, types and tests without changing anything
 check:
 	pnpm format:check
 	pnpm lint
 	pnpm exec tsc -b
+	pnpm test
+
+# Run unit tests
+test:
+	pnpm test
