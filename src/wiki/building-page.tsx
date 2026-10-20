@@ -16,7 +16,7 @@ import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { AgeDetails } from "./building-card"
 import { chainStepLabels } from "./chain-labels"
-import { eventLabel, formatNumber, formatStat, longStatLabel } from "./format"
+import { eventLabel, formatNumber, formatStat, fullStatLabel } from "./format"
 import { StatIcon } from "./stat-icon"
 import { StatIconsContext } from "./stat-icons-context"
 
@@ -159,7 +159,7 @@ export function BuildingPage() {
                   {statKeys.map((key) => (
                     <th
                       key={key}
-                      title={longStatLabel(t, key)}
+                      title={fullStatLabel(t, key)}
                       className="border-b px-3 py-2 text-right font-medium whitespace-nowrap text-muted-foreground"
                     >
                       <span className="inline-flex items-center gap-1">

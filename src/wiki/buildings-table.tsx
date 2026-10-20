@@ -21,7 +21,7 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 import { localized, useI18n, type Locale, type Messages } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { BuildingCard } from "./building-card"
-import { eventLabel, formatNumber, formatStat, longStatLabel } from "./format"
+import { eventLabel, formatNumber, formatStat, fullStatLabel } from "./format"
 import { StatIcon } from "./stat-icon"
 import type { WikiRow } from "./data"
 
@@ -139,7 +139,7 @@ function SortableHeader({ header }: { header: Header<typeof features, WikiRow, u
     <button
       type="button"
       // Without group headers, the full label tells "Cl. att" of both armies apart
-      title={stat && longStatLabel(t, stat)}
+      title={stat && fullStatLabel(t, stat)}
       onClick={header.column.getToggleSortingHandler()}
       className={cn(
         "inline-flex items-center gap-1 whitespace-nowrap hover:text-foreground",

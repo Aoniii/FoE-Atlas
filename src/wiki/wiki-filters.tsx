@@ -21,7 +21,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { localized, useI18n } from "@/lib/i18n"
+import { fullStatLabel, scoreHint } from "./format"
 import { StatIcon } from "./stat-icon"
 
 const ALL_EVENTS = "__all__"
@@ -165,31 +167,44 @@ type ScorePanelProps = {
 
 // Checkboxes of the stats counted in the score, grouped like the table
 export function ScorePanel({ scoreKeys, onToggle }: ScorePanelProps) {
-  const { t } = useI18n()
+  const { t, locale } = useI18n()
   return (
-    <fieldset className="rounded-lg border p-3">
-      <legend className="px-1 text-xs text-muted-foreground">{t.wiki.scoreLabel}</legend>
-      <div className="grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-6">
-        {STAT_GROUPS.map((group) => {
-          const keys = statsOfGroup(group).filter((key) => isScorable(key))
-          if (!keys.length) return null
-          return (
-            <div key={group} className="flex flex-col gap-1.5">
-              <p className="text-xs font-medium text-muted-foreground">{t.statGroups[group]}</p>
-              {keys.map((key) => (
-                <label key={key} className="flex cursor-pointer items-center gap-2 text-sm">
-                  <Checkbox
-                    checked={scoreKeys.includes(key)}
-                    onCheckedChange={(checked) => onToggle(key, checked)}
-                  />
-                  <StatIcon stat={key} />
-                  {t.stats[key]}
-                </label>
-              ))}
-            </div>
-          )
-        })}
-      </div>
-    </fieldset>
+    <TooltipProvider delay={300}>
+      <fieldset className="rounded-lg border p-3">
+        <legend className="px-1 text-xs text-muted-foreground">{t.wiki.scoreLabel}</legend>
+        <div className="grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-6">
+          {STAT_GROUPS.map((group) => {
+            const keys = statsOfGroup(group).filter((key) => isScorable(key))
+            if (!keys.length) return null
+            return (
+              <div key={group} className="flex flex-col gap-1.5">
+                <p className="text-xs font-medium text-muted-foreground">{t.statGroups[group]}</p>
+                {keys.map((key) => (
+                  <Tooltip key={key}>
+                    <TooltipTrigger
+                      render={<label />}
+                      className="flex w-fit cursor-pointer items-center gap-2 text-sm"
+                    >
+                      <Checkbox
+                        checked={scoreKeys.includes(key)}
+                        onCheckedChange={(checked) => onToggle(key, checked)}
+                      />
+                      <StatIcon stat={key} />
+                      {t.stats[key]}
+                    </TooltipTrigger>
+                    <TooltipContent side="right" className="flex-col items-start gap-0.5">
+                      <span className="font-medium">{fullStatLabel(t, key)}</span>
+                      {scoreHint(t, key, locale).map((line) => (
+                        <span key={line}>{line}</span>
+                      ))}
+                    </TooltipContent>
+                  </Tooltip>
+                ))}
+              </div>
+            )
+          })}
+        </div>
+      </fieldset>
+    </TooltipProvider>
   )
 }
