@@ -1,0 +1,190 @@
+import { Columns3 } from "lucide-react"
+import { AGES, type AgeId } from "@/core/ages"
+import type { BuildingType } from "@/core/building"
+import { isScorable } from "@/core/efficiency"
+import type { StatKey } from "@/core/stats"
+import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+import { localized, useI18n } from "@/lib/i18n"
+import { STAT_GROUPS, statsOfGroup } from "./buildings-table"
+
+const ALL_EVENTS = "__all__"
+
+function Field({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <label className="flex flex-col gap-1 text-xs text-muted-foreground">
+      {label}
+      {children}
+    </label>
+  )
+}
+
+type FiltersProps = {
+  types: BuildingType[]
+  type: BuildingType
+  onTypeChange: (type: BuildingType) => void
+  ages: AgeId[]
+  age: AgeId
+  onAgeChange: (age: AgeId) => void
+  events: string[]
+  event: string | undefined
+  onEventChange: (event: string | undefined) => void
+  visibleStats: StatKey[]
+  onToggleStat: (key: StatKey, visible: boolean) => void
+}
+
+export function WikiFilters(props: FiltersProps) {
+  const { t, locale } = useI18n()
+  const typeItems = props.types.map((type) => ({ value: type, label: t.types[type] }))
+  const ageItems = AGES.filter((age) => props.ages.includes(age.id)).map((age) => ({
+    value: age.id,
+    label: localized(age.name, locale),
+  }))
+  const eventItems = [
+    { value: ALL_EVENTS, label: t.wiki.allEvents },
+    ...props.events.map((event) => ({ value: event, label: event })),
+  ]
+
+  return (
+    <div className="flex flex-wrap items-end gap-3">
+      <Field label={t.wiki.type}>
+        <Select
+          items={typeItems}
+          value={props.type}
+          onValueChange={(value) => value && props.onTypeChange(value as BuildingType)}
+        >
+          <SelectTrigger className="min-w-44">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {typeItems.map((item) => (
+              <SelectItem key={item.value} value={item.value}>
+                {item.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </Field>
+
+      <Field label={t.wiki.age}>
+        <Select
+          items={ageItems}
+          value={props.age}
+          onValueChange={(value) => value && props.onAgeChange(value as AgeId)}
+        >
+          <SelectTrigger className="min-w-56">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            {ageItems.map((item) => (
+              <SelectItem key={item.value} value={item.value}>
+                {item.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </Field>
+
+      {props.type === "special" && (
+        <Field label={t.wiki.event}>
+          <Select
+            items={eventItems}
+            value={props.event ?? ALL_EVENTS}
+            onValueChange={(value) =>
+              props.onEventChange(!value || value === ALL_EVENTS ? undefined : (value as string))
+            }
+          >
+            <SelectTrigger className="min-w-44">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {eventItems.map((item) => (
+                <SelectItem key={item.value} value={item.value}>
+                  {item.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </Field>
+      )}
+
+      <Field label={t.wiki.columns}>
+        <DropdownMenu>
+          <DropdownMenuTrigger render={<Button variant="outline" />}>
+            <Columns3 />
+            {props.visibleStats.length}
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="start" className="max-h-96 w-60">
+            {STAT_GROUPS.map((group, index) => (
+              <DropdownMenuGroup key={group}>
+                {index > 0 && <DropdownMenuSeparator />}
+                <DropdownMenuLabel>{t.statGroups[group]}</DropdownMenuLabel>
+                {statsOfGroup(group).map((key) => (
+                  <DropdownMenuCheckboxItem
+                    key={key}
+                    checked={props.visibleStats.includes(key)}
+                    onCheckedChange={(checked) => props.onToggleStat(key, checked)}
+                    closeOnClick={false}
+                  >
+                    {t.stats[key]}
+                  </DropdownMenuCheckboxItem>
+                ))}
+              </DropdownMenuGroup>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </Field>
+    </div>
+  )
+}
+
+type ScorePanelProps = {
+  scoreKeys: StatKey[]
+  onToggle: (key: StatKey, selected: boolean) => void
+}
+
+// Checkboxes of the stats counted in the score, grouped like the table
+export function ScorePanel({ scoreKeys, onToggle }: ScorePanelProps) {
+  const { t } = useI18n()
+  return (
+    <fieldset className="rounded-lg border p-3">
+      <legend className="px-1 text-xs text-muted-foreground">{t.wiki.scoreLabel}</legend>
+      <div className="grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3 lg:grid-cols-6">
+        {STAT_GROUPS.map((group) => {
+          const keys = statsOfGroup(group).filter((key) => isScorable(key))
+          if (!keys.length) return null
+          return (
+            <div key={group} className="flex flex-col gap-1.5">
+              <p className="text-xs font-medium text-muted-foreground">{t.statGroups[group]}</p>
+              {keys.map((key) => (
+                <label key={key} className="flex cursor-pointer items-center gap-2 text-sm">
+                  <Checkbox
+                    checked={scoreKeys.includes(key)}
+                    onCheckedChange={(checked) => onToggle(key, checked)}
+                  />
+                  {t.stats[key]}
+                </label>
+              ))}
+            </div>
+          )
+        })}
+      </div>
+    </fieldset>
+  )
+}

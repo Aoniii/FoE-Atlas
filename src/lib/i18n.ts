@@ -67,3 +67,8 @@ export function useI18n() {
   if (!ctx) throw new Error("useI18n must be used inside <LocaleProvider>")
   return { ...ctx, t: messages[ctx.locale] }
 }
+
+// Picks the current language from a { fr, en } value, French by default
+export function localized(value: { fr: string; en: string }, locale: Locale): string {
+  return locale === "en" ? value.en : value.fr
+}

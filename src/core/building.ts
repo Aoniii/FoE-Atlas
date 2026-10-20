@@ -98,3 +98,5 @@ export type BuildingType = z.infer<typeof BuildingTypeSchema>
 export type Road = z.infer<typeof RoadSchema>
 export type Size = z.infer<typeof SizeSchema>
 export type Building = z.infer<typeof BuildingSchema>
+// A building as shipped to the site: one age only (see scripts/build-data.ts)
+export type AgeBuilding = Omit<Building, "ages"> & { age: AgeData }
