@@ -25,6 +25,9 @@ export function SiteHeader() {
           <Link to="/wiki" className={navLinkClass}>
             {t.nav.wiki}
           </Link>
+          <Link to="/changelog" className={navLinkClass}>
+            {t.nav.changelog}
+          </Link>
         </nav>
         <div className="ml-auto flex items-center gap-2">
           <SearchCommand />
