@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Slider } from "@/components/ui/slider"
 import { localized, useI18n } from "@/lib/i18n"
+import { cn } from "@/lib/utils"
 import { formatNumber } from "./format"
 import { RushCalculator } from "./rush-calculator"
 
@@ -115,7 +116,14 @@ export function GreatBuildingPage() {
             <h2 className="font-medium">
               {t.greatBuilding.atLevel.replace("{level}", String(level))}
             </h2>
-            {row?.computed && <Badge variant="outline">{t.greatBuilding.computed}</Badge>}
+            {/* Always rendered, hidden on wiki levels: showing it never shifts the layout */}
+            <Badge
+              variant="outline"
+              aria-hidden={!row?.computed}
+              className={cn(!row?.computed && "invisible")}
+            >
+              {t.greatBuilding.computed}
+            </Badge>
           </div>
           <Input
             type="number"
