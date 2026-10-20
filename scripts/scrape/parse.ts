@@ -210,6 +210,10 @@ function parseCell(cell: string, issues: Issue[], context: string): CellOutputs 
     if (!entries.length && units) {
       entries.push({ amount: Number(units[1]), icon: "military", iconUrl: "", label: units[2] })
     }
+    // "Guild Treasury: 7,200 {{goods}}": goods paid to the guild, not to the player
+    if (/guild treasury/i.test(plain)) {
+      for (const entry of entries) if (entry.icon.includes("good")) entry.icon = "guild_treasury"
+    }
     if (!entries.length) {
       issues.push({ kind: "unparsed_text", detail: `${context}: ${plain}` })
       continue

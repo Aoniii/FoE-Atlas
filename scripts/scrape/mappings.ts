@@ -34,6 +34,7 @@ export const ICON_STATS: Record<string, StatKey[]> = {
   random_good_of_next_age: ["goods_next"],
   random_special_good_up_to_age: ["special_goods"],
   each_special_goods_up_to_age: ["special_goods"],
+  guild_treasury: ["guild_goods"],
   goods_production: ["goods_boost"],
   guild_goods_production: ["guild_goods_boost"],
   guild_raids_supplies_production: ["qi_supplies_boost"],

@@ -115,7 +115,10 @@ describe("scraper parser, age-independent properties", () => {
         {
           kind: "guaranteed",
           motivated: true,
-          rewards: [{ type: "stat", stat: "goods_prev", amount: 360 }],
+          rewards: [
+            { type: "stat", stat: "goods_prev", amount: 360 },
+            { type: "stat", stat: "guild_goods", amount: 7200 },
+          ],
         },
       ])
     }
