@@ -73,7 +73,7 @@ export function WikiFilters(props: FiltersProps) {
           <SelectTrigger className="min-w-44">
             <SelectValue />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent alignItemWithTrigger={false} className="w-auto min-w-(--anchor-width)">
             {typeItems.map((item) => (
               <SelectItem key={item.value} value={item.value}>
                 {item.label}
@@ -92,7 +92,7 @@ export function WikiFilters(props: FiltersProps) {
           <SelectTrigger className="min-w-56">
             <SelectValue />
           </SelectTrigger>
-          <SelectContent>
+          <SelectContent alignItemWithTrigger={false} className="w-auto min-w-(--anchor-width)">
             {ageItems.map((item) => (
               <SelectItem key={item.value} value={item.value}>
                 {item.label}
@@ -114,7 +114,7 @@ export function WikiFilters(props: FiltersProps) {
             <SelectTrigger className="min-w-44">
               <SelectValue />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent alignItemWithTrigger={false} className="w-auto min-w-(--anchor-width)">
               {eventItems.map((item) => (
                 <SelectItem key={item.value} value={item.value}>
                   {item.label}

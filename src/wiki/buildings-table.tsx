@@ -14,13 +14,13 @@ import {
   type SortingState,
 } from "@tanstack/react-table"
 import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react"
-import { STATS, STAT_GROUPS, statsOfGroup, type StatKey } from "@/core/stats"
+import { STATS, STAT_KEYS, type StatKey } from "@/core/stats"
 import { Badge } from "@/components/ui/badge"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { localized, useI18n, type Locale, type Messages } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { BuildingCard } from "./building-card"
-import { formatNumber, formatStat } from "./format"
+import { formatNumber, formatStat, longStatLabel } from "./format"
 import { StatIcon } from "./stat-icon"
 import type { WikiRow } from "./data"
 
@@ -59,32 +59,26 @@ function buildColumns(t: Messages, locale: Locale) {
         )
       },
     }),
-    ...STAT_GROUPS.map((group) =>
-      helper.group({
-        id: group,
-        header: t.statGroups[group],
-        columns: statsOfGroup(group).map((key): ColumnDef<typeof features, WikiRow, any> =>
-          // Sorted on the value per tile: the point of the whole table
-          helper.accessor((row) => (row.stats[key] ? row.stats[key] / row.tiles : undefined), {
-            id: key,
-            header: t.stats[key],
-            sortDescFirst: true,
-            sortUndefined: "last",
-            cell: ({ row }) => {
-              const value = row.original.stats[key]
-              if (!value) return <span className="text-muted-foreground">–</span>
-              return (
-                <>
-                  {formatStat(key, value, locale, 1)}
-                  <Sub>
-                    {formatStat(key, value / row.original.tiles, locale, 2)}
-                    {t.wiki.perTile}
-                  </Sub>
-                </>
-              )
-            },
-          }),
-        ),
+    ...STAT_KEYS.map((key): ColumnDef<typeof features, WikiRow, any> =>
+      // Sorted on the value per tile: the point of the whole table
+      helper.accessor((row) => (row.stats[key] ? row.stats[key] / row.tiles : undefined), {
+        id: key,
+        header: t.stats[key],
+        sortDescFirst: true,
+        sortUndefined: "last",
+        cell: ({ row }) => {
+          const value = row.original.stats[key]
+          if (!value) return <span className="text-muted-foreground">–</span>
+          return (
+            <>
+              {formatStat(key, value, locale, 1)}
+              <Sub>
+                {formatStat(key, value / row.original.tiles, locale, 2)}
+                {t.wiki.perTile}
+              </Sub>
+            </>
+          )
+        },
       }),
     ),
     helper.accessor((row) => row.score, {
@@ -132,18 +126,22 @@ function NameCell({ row }: { row: WikiRow }) {
 }
 
 function SortableHeader({ header }: { header: Header<typeof features, WikiRow, unknown> }) {
+  const { t } = useI18n()
   const sorted = header.column.getIsSorted()
   const Icon = sorted === "asc" ? ArrowUp : sorted === "desc" ? ArrowDown : ArrowUpDown
+  const stat = header.column.id in STATS ? (header.column.id as StatKey) : undefined
   return (
     <button
       type="button"
+      // Without group headers, the full label tells "Cl. att" of both armies apart
+      title={stat && longStatLabel(t, stat)}
       onClick={header.column.getToggleSortingHandler()}
       className={cn(
         "inline-flex items-center gap-1 whitespace-nowrap hover:text-foreground",
         sorted && "text-foreground",
       )}
     >
-      {header.column.id in STATS && <StatIcon stat={header.column.id as StatKey} />}
+      {stat && <StatIcon stat={stat} />}
       {header.column.columnDef.header as string}
       <Icon className={cn("size-3.5", !sorted && "opacity-40")} />
     </button>
@@ -234,27 +232,17 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
         <thead className="bg-muted/40">
           {table.getHeaderGroups().map((group) => (
             <tr key={group.id}>
-              {group.headers.map((header) => {
-                const isGroup = header.subHeaders.length > 0
-                return (
-                  <th
-                    key={header.id}
-                    colSpan={header.colSpan}
-                    className={cn(
-                      "border-b px-3 py-2 font-medium text-muted-foreground",
-                      header.column.id === "name" ? "text-left" : "text-right",
-                      isGroup && "border-l text-center text-xs",
-                      header.index === 0 && header.depth > 1 && "border-l",
-                    )}
-                  >
-                    {header.isPlaceholder ? null : isGroup ? (
-                      <table.FlexRender header={header} />
-                    ) : (
-                      <SortableHeader header={header} />
-                    )}
-                  </th>
-                )
-              })}
+              {group.headers.map((header) => (
+                <th
+                  key={header.id}
+                  className={cn(
+                    "border-b px-3 py-2 font-medium text-muted-foreground",
+                    header.column.id === "name" ? "text-left" : "text-right",
+                  )}
+                >
+                  <SortableHeader header={header} />
+                </th>
+              ))}
             </tr>
           ))}
         </thead>

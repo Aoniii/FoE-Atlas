@@ -93,10 +93,7 @@ export function WikiPage() {
         {type === "special" && (
           <ScorePanel
             scoreKeys={scoreKeys}
-            onToggle={(key, on) => {
-              setScoreKeys((list) => toggle(list, key, on))
-              if (on) setVisibleStats((list) => toggle(list, key, true))
-            }}
+            onToggle={(key, on) => setScoreKeys((list) => toggle(list, key, on))}
           />
         )}
 
