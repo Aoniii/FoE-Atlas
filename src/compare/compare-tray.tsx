@@ -4,12 +4,15 @@ import { Button, buttonVariants } from "@/components/ui/button"
 import { localized, useI18n } from "@/lib/i18n"
 import { clearCompare, removeCompare, useCompareSelection } from "./selection"
 
-// Floating bar at the bottom of every page while something is selected
+// Pages offering the Compare button: the wiki and the building pages
+const TRAY_PAGES = /\/(wiki\/?$|buildings\/|great-buildings\/)/
+
+// Floating bar at the bottom of those pages while something is selected
 export function CompareTray() {
   const { t, locale } = useI18n()
   const items = useCompareSelection()
   const pathname = useRouterState({ select: (state) => state.location.pathname })
-  if (!items.length || pathname.endsWith("/compare")) return null
+  if (!items.length || !TRAY_PAGES.test(pathname)) return null
 
   return (
     <div className="fixed inset-x-0 bottom-4 z-40 flex justify-center px-4">
