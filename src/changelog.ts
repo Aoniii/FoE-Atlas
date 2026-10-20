@@ -24,6 +24,10 @@ export const CHANGELOG: Release[] = [
         fr: "Score de chaque niveau d'une chaîne sur les fiches, calculé avec tes cases du wiki",
         en: "Score of each chain level on building pages, computed with your wiki checkboxes",
       },
+      {
+        fr: "Version du jeu et date des données affichées sur l'accueil, filtre « Source » renommé « Filtre »",
+        en: "Game version and data date shown on the home page, “Source” filter renamed “Filter”",
+      },
     ],
   },
   {
