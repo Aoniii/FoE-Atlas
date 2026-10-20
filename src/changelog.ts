@@ -5,6 +5,16 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.5",
+    date: "2026-10-20",
+    changes: [
+      {
+        fr: "Tableau des bâtiments à hauteur d'écran : en-têtes toujours visibles, la page défile d'abord puis les lignes, sans barre de défilement",
+        en: "Screen-height buildings table: headers always visible, the page scrolls first then the rows, without a scrollbar",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.4",
     date: "2026-10-20",
     changes: [
