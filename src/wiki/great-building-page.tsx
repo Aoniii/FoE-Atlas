@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Slider } from "@/components/ui/slider"
 import { localized, useI18n } from "@/lib/i18n"
 import { formatNumber } from "./format"
+import { RushCalculator } from "./rush-calculator"
 
 const route = getRouteApi("/great-buildings/$id")
 
@@ -22,7 +23,7 @@ function formatValue(value: string | undefined, locale: string): string {
 // One page for every Great Building: /great-buildings/<id>?level=<n>
 export function GreatBuildingPage() {
   const { t, locale } = useI18n()
-  const gb = route.useLoaderData()
+  const { greatBuilding: gb, rewards } = route.useLoaderData()
   const search = route.useSearch()
   const navigate = route.useNavigate()
 
@@ -146,6 +147,7 @@ export function GreatBuildingPage() {
           </dl>
         )}
       </section>
+      {rewards && <RushCalculator gb={gb} tables={rewards} />}
     </div>
   )
 }

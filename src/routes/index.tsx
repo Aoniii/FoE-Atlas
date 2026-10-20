@@ -5,6 +5,8 @@ import { buttonVariants } from "@/components/ui/button"
 import { useI18n } from "@/lib/i18n"
 
 const GITHUB_URL = "https://github.com/Aoniii"
+// AGPL-3.0: the source code must be offered to the site's users
+const SOURCE_URL = "https://github.com/Aoniii/FoE-Atlas"
 const DISCORD_USERNAME = "aoniii"
 
 export const Route = createFileRoute("/")({
@@ -49,6 +51,15 @@ function HomePage() {
           <DiscordContact />
         </div>
       </section>
+
+      <a
+        href={SOURCE_URL}
+        target="_blank"
+        rel="noreferrer"
+        className="w-fit text-xs text-muted-foreground underline-offset-4 hover:underline"
+      >
+        {t.home.source}
+      </a>
     </div>
   )
 }

@@ -26,7 +26,7 @@ const icons = existsSync("data/icons.json")
 // Files are replaced in place, never the whole folder: the Vite dev server
 // stops serving a public folder that is deleted and recreated
 mkdirSync(OUTPUT, { recursive: true })
-const written = new Set(["index.json", "search.json", "great-buildings.json"])
+const written = new Set(["index.json", "search.json", "great-buildings.json", "gb-rewards.json"])
 
 const ages: { id: AgeId; buildings: number }[] = []
 for (const ageId of AGE_IDS) {
@@ -91,6 +91,12 @@ for (const building of buildings) {
 }
 for (const file of readdirSync(BUILDINGS_OUTPUT)) {
   if (!pages.has(file)) rmSync(`${BUILDINGS_OUTPUT}/${file}`)
+}
+
+// Patron rewards for the rush calculator (FoE Helper, AGPL-3.0)
+if (existsSync("data/gb-rewards.json")) {
+  const { rewards } = JSON.parse(readFileSync("data/gb-rewards.json", "utf8"))
+  writeFileSync(`${OUTPUT}/gb-rewards.json`, JSON.stringify(rewards))
 }
 
 // Great Buildings: a light grid file and one file per building

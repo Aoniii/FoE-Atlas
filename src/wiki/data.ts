@@ -1,6 +1,7 @@
 import type { AgeId } from "@/core/ages"
 import type { AgeBuilding, BuildingPage, BuildingType, StatBlock } from "@/core/building"
 import type { GreatBuilding, GreatBuildingCard } from "@/core/great-building"
+import type { RewardTables } from "@/core/rush"
 import { aggregateStats, score, tileCount, type References } from "@/core/efficiency"
 import type { StatKey } from "@/core/stats"
 
@@ -38,6 +39,7 @@ export const fetchAgeBuildings = (age: AgeId) => fetchJson<AgeBuilding[]>(`${age
 export const fetchGreatBuildings = () => fetchJson<GreatBuildingCard[]>("great-buildings.json")
 export const fetchGreatBuilding = (id: string) =>
   fetchJson<GreatBuilding>(`great-buildings/${encodeURIComponent(id)}.json`)
+export const fetchGbRewards = () => fetchJson<RewardTables>("gb-rewards.json")
 export const fetchBuilding = (id: string) =>
   fetchJson<BuildingPage>(`buildings/${encodeURIComponent(id)}.json`)
 
