@@ -1,7 +1,7 @@
 PID_FILE := .dev.pid
 LOG_FILE := .dev.log
 
-.PHONY: dev stop
+.PHONY: dev stop format check
 
 # Start the Vite dev server in the background (own process group, so stop kills it all)
 dev:
@@ -23,3 +23,13 @@ stop:
 		echo "No dev server running"; \
 	fi
 	@rm -f $(PID_FILE)
+
+# Format every file with Prettier
+format:
+	pnpm format
+
+# Verify formatting, lint and types without changing anything
+check:
+	pnpm format:check
+	pnpm lint
+	pnpm exec tsc -b
