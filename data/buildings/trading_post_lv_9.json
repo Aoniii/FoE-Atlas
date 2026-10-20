@@ -1,0 +1,2507 @@
+{
+  "id": "trading_post_lv_9",
+  "name": {
+    "fr": "Comptoir - Niv. 9",
+    "en": "Trading Post - Lv. 9"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_SUM23A9-bd509420c.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "trading_post",
+    "level": 9
+  },
+  "size": {
+    "w": 4,
+    "h": 5
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Trading_Post_-_Lv._9",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 25,
+        "def_army_att_classic": 26,
+        "population": 158,
+        "happiness": 828
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 700
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 21
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 25,
+        "def_army_att_classic": 26,
+        "population": 339,
+        "happiness": 1489
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 21
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 25,
+        "def_army_att_classic": 26,
+        "population": 520,
+        "happiness": 1790
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2700
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 21
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 25,
+        "def_army_att_classic": 26,
+        "population": 730,
+        "happiness": 2150
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3800
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 21
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "atk_army_def_classic": 26,
+        "def_army_att_classic": 27,
+        "population": 958,
+        "happiness": 2538
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5000
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 21
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "atk_army_def_classic": 26,
+        "def_army_att_classic": 27,
+        "population": 1209,
+        "happiness": 3069
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 7700
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 22
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "atk_army_def_classic": 26,
+        "def_army_att_classic": 27,
+        "population": 1478,
+        "happiness": 3578
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 9600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 22
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "atk_army_def_classic": 26,
+        "def_army_att_classic": 27,
+        "population": 1764,
+        "happiness": 4064
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 11600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 22
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "atk_army_def_classic": 27,
+        "def_army_att_classic": 28,
+        "population": 2067,
+        "happiness": 4527
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 14400
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 22
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "atk_army_def_classic": 27,
+        "def_army_att_classic": 28,
+        "population": 2383,
+        "happiness": 4953
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 18100
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 22
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "atk_army_def_classic": 27,
+        "def_army_att_classic": 28,
+        "population": 2716,
+        "happiness": 5696
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 23600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 23
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "atk_army_def_classic": 27,
+        "def_army_att_classic": 28,
+        "population": 3060,
+        "happiness": 6680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 27300
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 23
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 18,
+        "atk_army_def_classic": 28,
+        "def_army_att_classic": 29,
+        "population": 3422,
+        "happiness": 7762
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 31300
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 13
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 23
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 18,
+        "atk_army_def_classic": 28,
+        "def_army_att_classic": 29,
+        "population": 3796,
+        "happiness": 8846
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 35600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 13
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 23
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 18,
+        "atk_army_def_classic": 28,
+        "def_army_att_classic": 29,
+        "population": 4181,
+        "happiness": 10011
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 40200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 13
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 23
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 18,
+        "atk_army_def_classic": 28,
+        "def_army_att_classic": 29,
+        "population": 4579,
+        "happiness": 11539
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 45000
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 13
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 24
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 19,
+        "atk_army_def_classic": 29,
+        "def_army_att_classic": 30,
+        "population": 7247,
+        "happiness": 18387
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 75100
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 14
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 24
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 19,
+        "atk_army_def_classic": 29,
+        "def_army_att_classic": 30,
+        "population": 7872,
+        "happiness": 19982
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 83200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 14
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 24
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 19,
+        "atk_army_def_classic": 29,
+        "def_army_att_classic": 30,
+        "population": 8509,
+        "happiness": 21589
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 91700
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 14
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 24
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 19,
+        "atk_army_def_classic": 29,
+        "def_army_att_classic": 30,
+        "population": 9163,
+        "happiness": 23253
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 100700
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 14
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 24
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_def_classic": 30,
+        "def_army_att_classic": 31,
+        "population": 9868,
+        "happiness": 25046
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 110584
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 15
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_def_classic": 30,
+        "def_army_att_classic": 31,
+        "population": 10573,
+        "happiness": 26839
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 120468
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 15
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_def_classic": 30,
+        "def_army_att_classic": 31,
+        "population": 11278,
+        "happiness": 28632
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 130352
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 15
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "item",
+              "id": "boost_coins_large",
+              "name": {
+                "fr": "Coin Boost",
+                "en": "Coin Boost"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_buccaneers_bay_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Buccaneers Bay Upgrade Kit",
+                "en": "Fragment of Buccaneers Bay Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_attack_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Attack for Attacking Army Boost",
+                    "en": "Fragment of 300 Attack for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_300_defense_for_attacking_army_boost",
+                  "name": {
+                    "fr": "Fragment of 300 Defense for Attacking Army Boost",
+                    "en": "Fragment of 300 Defense for Attacking Army Boost"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragment_of_buccaneers_hideouts_selection_kit",
+                  "name": {
+                    "fr": "Fragment of Buccaneers Hideouts Selection Kit",
+                    "en": "Fragment of Buccaneers Hideouts Selection Kit"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

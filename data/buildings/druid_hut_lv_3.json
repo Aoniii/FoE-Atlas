@@ -1,0 +1,1426 @@
+{
+  "id": "druid_hut_lv_3",
+  "name": {
+    "fr": "Hutte du druide - Niv. 3",
+    "en": "Druid Hut - Lv. 3"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_PAT23A3-78fcebf5d.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "druid_hut",
+    "level": 3
+  },
+  "size": {
+    "w": 5,
+    "h": 4
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Druid_Hut_-_Lv._3",
+  "ages": {
+    "BronzeAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 150
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 210
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 270
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 410
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 510
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 620
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 980
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1270
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1470
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1690
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1920
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2160
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4050
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4490
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4950
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5430
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5957
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6484
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 7011
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

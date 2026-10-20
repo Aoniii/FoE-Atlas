@@ -1,0 +1,2940 @@
+{
+  "id": "momiji_shrine",
+  "name": {
+    "fr": "Sanctuaire Momiji",
+    "en": "Momiji Shrine"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_WILD25A10-5dd3d3e51.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 8,
+    "h": 3
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Momiji_Shrine",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "def_army_att_classic": 50,
+        "def_army_def_classic": 50,
+        "def_army_att_gbg": 46,
+        "def_army_def_gbg": 46,
+        "def_army_att_ge": 48,
+        "def_army_def_ge": 48,
+        "population": 650,
+        "happiness": 2700
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 3500
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "def_army_att_classic": 51,
+        "def_army_def_classic": 51,
+        "def_army_att_gbg": 47,
+        "def_army_def_gbg": 47,
+        "def_army_att_ge": 49,
+        "def_army_def_ge": 49,
+        "population": 1410,
+        "happiness": 4650
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 8400
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 52,
+        "def_army_def_classic": 52,
+        "def_army_att_gbg": 48,
+        "def_army_def_gbg": 48,
+        "def_army_att_ge": 50,
+        "def_army_def_ge": 50,
+        "population": 2160,
+        "happiness": 5150
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 14000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 53,
+        "def_army_def_classic": 53,
+        "def_army_att_gbg": 49,
+        "def_army_def_gbg": 49,
+        "def_army_att_ge": 51,
+        "def_army_def_ge": 51,
+        "population": 3030,
+        "happiness": 5740
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 19600
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 54,
+        "def_army_def_classic": 54,
+        "def_army_att_gbg": 50,
+        "def_army_def_gbg": 50,
+        "def_army_att_ge": 52,
+        "def_army_def_ge": 52,
+        "population": 3980,
+        "happiness": 6400
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 25900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "def_army_att_classic": 55,
+        "def_army_def_classic": 55,
+        "def_army_att_gbg": 51,
+        "def_army_def_gbg": 51,
+        "def_army_att_ge": 53,
+        "def_army_def_ge": 53,
+        "population": 5020,
+        "happiness": 7530
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 32900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "def_army_att_classic": 56,
+        "def_army_def_classic": 56,
+        "def_army_att_gbg": 52,
+        "def_army_def_gbg": 52,
+        "def_army_att_ge": 54,
+        "def_army_def_ge": 54,
+        "population": 6130,
+        "happiness": 8490
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 39900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "def_army_att_classic": 57,
+        "def_army_def_classic": 57,
+        "def_army_att_gbg": 53,
+        "def_army_def_gbg": 53,
+        "def_army_att_ge": 55,
+        "def_army_def_ge": 55,
+        "population": 7320,
+        "happiness": 9320
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 46900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "def_army_att_classic": 58,
+        "def_army_def_classic": 58,
+        "def_army_att_gbg": 54,
+        "def_army_def_gbg": 54,
+        "def_army_att_ge": 56,
+        "def_army_def_ge": 56,
+        "population": 8580,
+        "happiness": 9980
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 54590
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "def_army_att_classic": 59,
+        "def_army_def_classic": 59,
+        "def_army_att_gbg": 55,
+        "def_army_def_gbg": 55,
+        "def_army_att_ge": 57,
+        "def_army_def_ge": 57,
+        "population": 9890,
+        "happiness": 10390
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 62290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "def_army_att_classic": 60,
+        "def_army_def_classic": 60,
+        "def_army_att_gbg": 56,
+        "def_army_def_gbg": 56,
+        "def_army_att_ge": 58,
+        "def_army_def_ge": 58,
+        "population": 11270,
+        "happiness": 12080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 69990
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "def_army_att_classic": 61,
+        "def_army_def_classic": 61,
+        "def_army_att_gbg": 57,
+        "def_army_def_gbg": 57,
+        "def_army_att_ge": 59,
+        "def_army_def_ge": 59,
+        "population": 12700,
+        "happiness": 14660
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 78390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "def_army_att_classic": 62,
+        "def_army_def_classic": 62,
+        "def_army_att_gbg": 58,
+        "def_army_def_gbg": 58,
+        "def_army_att_ge": 60,
+        "def_army_def_ge": 60,
+        "population": 14210,
+        "happiness": 17570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 86090
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "def_army_att_classic": 63,
+        "def_army_def_classic": 63,
+        "def_army_att_gbg": 59,
+        "def_army_def_gbg": 59,
+        "def_army_att_ge": 61,
+        "def_army_def_ge": 61,
+        "population": 15760,
+        "happiness": 20450
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 94490
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "def_army_att_classic": 64,
+        "def_army_def_classic": 64,
+        "def_army_att_gbg": 60,
+        "def_army_def_gbg": 60,
+        "def_army_att_ge": 62,
+        "def_army_def_ge": 62,
+        "population": 17360,
+        "happiness": 23600
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 103590
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "def_army_att_classic": 65,
+        "def_army_def_classic": 65,
+        "def_army_att_gbg": 61,
+        "def_army_def_gbg": 61,
+        "def_army_att_ge": 63,
+        "def_army_def_ge": 63,
+        "population": 19010,
+        "happiness": 28200
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 111990
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "def_army_att_classic": 66,
+        "def_army_def_classic": 66,
+        "def_army_att_gbg": 62,
+        "def_army_def_gbg": 62,
+        "def_army_att_ge": 64,
+        "def_army_def_ge": 64,
+        "population": 30080,
+        "happiness": 45120
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 181280
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "def_army_att_classic": 67,
+        "def_army_def_classic": 67,
+        "def_army_att_gbg": 63,
+        "def_army_def_gbg": 63,
+        "def_army_att_ge": 65,
+        "def_army_def_ge": 65,
+        "population": 32680,
+        "happiness": 49030
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 194580
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "def_army_att_classic": 68,
+        "def_army_def_classic": 68,
+        "def_army_att_gbg": 64,
+        "def_army_def_gbg": 64,
+        "def_army_att_ge": 66,
+        "def_army_def_ge": 66,
+        "population": 35320,
+        "happiness": 52970
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 208580
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "def_army_att_classic": 69,
+        "def_army_def_classic": 69,
+        "def_army_att_gbg": 65,
+        "def_army_def_gbg": 65,
+        "def_army_att_ge": 67,
+        "def_army_def_ge": 67,
+        "population": 38040,
+        "happiness": 57070
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 221880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "def_army_att_classic": 70,
+        "def_army_def_classic": 70,
+        "def_army_att_gbg": 66,
+        "def_army_def_gbg": 66,
+        "def_army_att_ge": 68,
+        "def_army_def_ge": 68,
+        "population": 40800,
+        "happiness": 61200
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 235880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "def_army_att_classic": 71,
+        "def_army_def_classic": 71,
+        "def_army_att_gbg": 67,
+        "def_army_def_gbg": 67,
+        "def_army_att_ge": 69,
+        "def_army_def_ge": 69,
+        "population": 43560,
+        "happiness": 65330
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 249870
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "def_army_att_classic": 72,
+        "def_army_def_classic": 72,
+        "def_army_att_gbg": 68,
+        "def_army_def_gbg": 68,
+        "def_army_att_ge": 70,
+        "def_army_def_ge": 70,
+        "population": 46320,
+        "happiness": 69460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 263860
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_zen_harmony_selection_kit",
+              "name": {
+                "fr": "Fragments of Zen Harmony Selection Kit",
+                "en": "Fragments of Zen Harmony Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_momijidori_shrine_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Momijidori Shrine Golden Upgrade Kit",
+                "en": "Fragments of Momijidori Shrine Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 462
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 117
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

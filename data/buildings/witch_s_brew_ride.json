@@ -1,0 +1,2480 @@
+{
+  "id": "witch_s_brew_ride",
+  "name": {
+    "fr": "Le manège du breuvage de la sorcière",
+    "en": "Witch’s Brew Ride"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HAL24D1-003e5fca2.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 4,
+    "h": 5
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Witch%E2%80%99s_Brew_Ride",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 130,
+        "atk_army_def_classic": 130,
+        "atk_army_att_qi": 25,
+        "population": 150,
+        "happiness": -129
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 3640
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 131,
+        "atk_army_def_classic": 131,
+        "atk_army_att_qi": 25,
+        "population": 325,
+        "happiness": -264
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 8720
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 132,
+        "atk_army_def_classic": 132,
+        "atk_army_att_qi": 25,
+        "population": 500,
+        "happiness": -399
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 14540
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 133,
+        "atk_army_def_classic": 133,
+        "atk_army_att_qi": 25,
+        "population": 675,
+        "happiness": -534
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 20360
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 134,
+        "atk_army_def_classic": 134,
+        "atk_army_att_qi": 25,
+        "population": 850,
+        "happiness": -669
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 26900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 135,
+        "atk_army_def_classic": 135,
+        "atk_army_att_qi": 25,
+        "population": 1025,
+        "happiness": -804
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 34170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 136,
+        "atk_army_def_classic": 136,
+        "atk_army_att_qi": 25,
+        "population": 1200,
+        "happiness": -939
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 41440
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 137,
+        "atk_army_def_classic": 137,
+        "atk_army_att_qi": 25,
+        "population": 1375,
+        "happiness": -1074
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 48710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 138,
+        "atk_army_def_classic": 138,
+        "atk_army_att_qi": 25,
+        "population": 1550,
+        "happiness": -1209
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 56710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 139,
+        "atk_army_def_classic": 139,
+        "atk_army_att_qi": 25,
+        "population": 1725,
+        "happiness": -1344
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 64700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 140,
+        "atk_army_def_classic": 140,
+        "atk_army_att_qi": 25,
+        "population": 1900,
+        "happiness": -1479
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 72700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 141,
+        "atk_army_def_classic": 141,
+        "atk_army_att_qi": 25,
+        "population": 2075,
+        "happiness": -1614
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 81420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 142,
+        "atk_army_def_classic": 142,
+        "atk_army_att_qi": 25,
+        "population": 2250,
+        "happiness": -1749
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 89420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 143,
+        "atk_army_def_classic": 143,
+        "atk_army_att_qi": 25,
+        "population": 2425,
+        "happiness": -1884
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 98150
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 144,
+        "atk_army_def_classic": 144,
+        "atk_army_att_qi": 25,
+        "population": 2600,
+        "happiness": -2019
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 107600
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 145,
+        "atk_army_def_classic": 145,
+        "atk_army_att_qi": 25,
+        "population": 2775,
+        "happiness": -2154
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 116320
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 146,
+        "atk_army_def_classic": 146,
+        "atk_army_att_qi": 25,
+        "population": 2950,
+        "happiness": -2289
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 188290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 147,
+        "atk_army_def_classic": 147,
+        "atk_army_att_qi": 25,
+        "population": 3125,
+        "happiness": -2424
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 202110
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 148,
+        "atk_army_def_classic": 148,
+        "atk_army_att_qi": 25,
+        "population": 3300,
+        "happiness": -2559
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 216650
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 149,
+        "atk_army_def_classic": 149,
+        "atk_army_att_qi": 25,
+        "population": 3475,
+        "happiness": -2694
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 230460
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 150,
+        "atk_army_def_classic": 150,
+        "atk_army_att_qi": 25,
+        "population": 3650,
+        "happiness": -2829
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 245000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 150,
+        "atk_army_def_classic": 150,
+        "atk_army_att_qi": 25,
+        "population": 4000,
+        "happiness": -3095
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 259550
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 151,
+        "atk_army_def_classic": 151,
+        "atk_army_att_qi": 25,
+        "population": 4350,
+        "happiness": -3361
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 274100
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 120
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_thrill_coaster_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Thrill Coaster Selection Kit",
+                    "en": "Fragments of Eerie Thrill Coaster Selection Kit"
+                  },
+                  "amount": 30,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_terror_coaster_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Terror Coaster Silver Upgrade Kit",
+                    "en": "Fragments of Eerie Terror Coaster Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eerie_nightmare_coaster_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit",
+                    "en": "Fragments of Eerie Nightmare Coaster Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

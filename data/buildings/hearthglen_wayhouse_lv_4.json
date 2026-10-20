@@ -1,0 +1,782 @@
+{
+  "id": "hearthglen_wayhouse_lv_4",
+  "name": {
+    "fr": "Auberge de Hearthglen - Niv. 4",
+    "en": "Hearthglen Wayhouse - Lv. 4"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FELL26A1-fde1e9081.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "hearthglen_wayhouse",
+    "level": 4
+  },
+  "size": {
+    "w": 5,
+    "h": 5
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Hearthglen_Wayhouse_-_Lv._4",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 9,
+        "atk_army_def_classic": 9,
+        "atk_army_att_ge": 29,
+        "atk_army_def_ge": 29,
+        "population": 50,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 330
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 10,
+        "atk_army_def_classic": 10,
+        "atk_army_att_ge": 30,
+        "atk_army_def_ge": 30,
+        "population": 100,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 11,
+        "atk_army_def_classic": 11,
+        "atk_army_att_ge": 31,
+        "atk_army_def_ge": 31,
+        "population": 150,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 520
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 12,
+        "atk_army_def_classic": 12,
+        "atk_army_att_ge": 32,
+        "atk_army_def_ge": 32,
+        "population": 210,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 610
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 13,
+        "atk_army_def_classic": 13,
+        "atk_army_att_ge": 33,
+        "atk_army_def_ge": 33,
+        "population": 270,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 14,
+        "atk_army_def_classic": 14,
+        "atk_army_att_ge": 34,
+        "atk_army_def_ge": 34,
+        "population": 350,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 840
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 15,
+        "atk_army_att_ge": 35,
+        "atk_army_def_ge": 35,
+        "population": 420,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "atk_army_def_classic": 16,
+        "atk_army_att_ge": 36,
+        "atk_army_def_ge": 36,
+        "population": 500,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1640
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 7
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "atk_army_def_classic": 17,
+        "atk_army_att_ge": 37,
+        "atk_army_def_ge": 37,
+        "population": 590,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2340
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 7
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 18,
+        "atk_army_def_classic": 18,
+        "atk_army_att_ge": 38,
+        "atk_army_def_ge": 38,
+        "population": 680,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3280
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 8
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 19,
+        "atk_army_def_classic": 19,
+        "atk_army_att_ge": 39,
+        "atk_army_def_ge": 39,
+        "population": 780,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 4690
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 9
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_def_classic": 20,
+        "atk_army_att_ge": 40,
+        "atk_army_def_ge": 40,
+        "population": 870,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 6330
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 21,
+        "atk_army_def_classic": 21,
+        "atk_army_att_ge": 41,
+        "atk_army_def_ge": 41,
+        "population": 980,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 7730
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 22,
+        "atk_army_def_classic": 22,
+        "atk_army_att_ge": 42,
+        "atk_army_def_ge": 42,
+        "population": 1080,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 9380
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 23,
+        "atk_army_def_classic": 23,
+        "atk_army_att_ge": 43,
+        "atk_army_def_ge": 43,
+        "population": 1190,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 10780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 13
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 24,
+        "atk_army_def_classic": 24,
+        "atk_army_att_ge": 44,
+        "atk_army_def_ge": 44,
+        "population": 1310,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 13130
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 14
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 25,
+        "atk_army_def_classic": 25,
+        "atk_army_att_ge": 45,
+        "atk_army_def_ge": 45,
+        "population": 2070,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 15940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 16
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 26,
+        "atk_army_def_classic": 26,
+        "atk_army_att_ge": 46,
+        "atk_army_def_ge": 46,
+        "population": 2250,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 18750
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 18
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 27,
+        "atk_army_def_classic": 27,
+        "atk_army_att_ge": 47,
+        "atk_army_def_ge": 47,
+        "population": 2430,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 21560
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 20
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 28,
+        "atk_army_def_classic": 28,
+        "atk_army_att_ge": 48,
+        "atk_army_def_ge": 48,
+        "population": 2620,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 24380
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 23
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 29,
+        "atk_army_def_classic": 29,
+        "atk_army_att_ge": 49,
+        "atk_army_def_ge": 49,
+        "population": 2810,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 27190
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 26
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 30,
+        "atk_army_def_classic": 30,
+        "atk_army_att_ge": 50,
+        "atk_army_def_ge": 50,
+        "population": 3000,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 30000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 31,
+        "atk_army_def_classic": 31,
+        "atk_army_att_ge": 51,
+        "atk_army_def_ge": 51,
+        "population": 3200,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 32810
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 35
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

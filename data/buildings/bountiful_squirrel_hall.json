@@ -1,0 +1,2250 @@
+{
+  "id": "bountiful_squirrel_hall",
+  "name": {
+    "fr": "Hall de l'écureuil abondant",
+    "en": "Bountiful Squirrel Hall"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FALL24A10-d857f311b.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 6,
+    "h": 5
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Bountiful_Squirrel_Hall",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "def_army_def_classic": 80,
+        "def_army_att_classic": 100,
+        "population": 560,
+        "happiness": 3530
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "def_army_def_classic": 81,
+        "def_army_att_classic": 100,
+        "population": 1210,
+        "happiness": 6080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 8900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 65
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 82,
+        "def_army_att_classic": 101,
+        "population": 1850,
+        "happiness": 6730
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 14830
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 66
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 83,
+        "def_army_att_classic": 101,
+        "population": 2600,
+        "happiness": 7510
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 20760
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 66
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 84,
+        "def_army_att_classic": 102,
+        "population": 3410,
+        "happiness": 8370
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 27430
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 67
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "def_army_def_classic": 85,
+        "def_army_att_classic": 102,
+        "population": 4300,
+        "happiness": 9840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 41780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 67
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "def_army_def_classic": 86,
+        "def_army_att_classic": 103,
+        "population": 5260,
+        "happiness": 11100
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 52050
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 68
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "def_army_def_classic": 87,
+        "def_army_att_classic": 103,
+        "population": 6280,
+        "happiness": 12190
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 63170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 68
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "def_army_def_classic": 88,
+        "def_army_att_classic": 104,
+        "population": 7360,
+        "happiness": 13040
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 78600
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 69
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "def_army_def_classic": 89,
+        "def_army_att_classic": 104,
+        "population": 8480,
+        "happiness": 13590
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 98880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 69
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "def_army_def_classic": 90,
+        "def_army_att_classic": 105,
+        "population": 9670,
+        "happiness": 15790
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 128720
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "def_army_def_classic": 91,
+        "def_army_att_classic": 105,
+        "population": 10900,
+        "happiness": 19160
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 149040
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 70
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "def_army_def_classic": 92,
+        "def_army_att_classic": 106,
+        "population": 12190,
+        "happiness": 22960
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 170840
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 71
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "def_army_def_classic": 93,
+        "def_army_att_classic": 106,
+        "population": 13520,
+        "happiness": 26740
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 194120
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 71
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "def_army_def_classic": 94,
+        "def_army_att_classic": 107,
+        "population": 14890,
+        "happiness": 30860
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 218880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 72
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "def_army_def_classic": 95,
+        "def_army_att_classic": 107,
+        "population": 16300,
+        "happiness": 36860
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 245170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 72
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "def_army_def_classic": 96,
+        "def_army_att_classic": 108,
+        "population": 25810,
+        "happiness": 58980
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 409520
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 73
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "def_army_def_classic": 97,
+        "def_army_att_classic": 108,
+        "population": 28030,
+        "happiness": 64100
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 453600
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 73
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "def_army_def_classic": 98,
+        "def_army_att_classic": 109,
+        "population": 30300,
+        "happiness": 69250
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 500010
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 74
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "def_army_def_classic": 99,
+        "def_army_att_classic": 109,
+        "population": 32630,
+        "happiness": 74600
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 548800
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 74
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "def_army_def_classic": 100,
+        "def_army_att_classic": 110,
+        "population": 35000,
+        "happiness": 80000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 600000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "def_army_def_classic": 100,
+        "def_army_att_classic": 110,
+        "population": 37370,
+        "happiness": 85400
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 651200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "def_army_def_classic": 101,
+        "def_army_att_classic": 111,
+        "population": 39740,
+        "happiness": 90800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 702400
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 76
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_regal_squirrel_hall_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Regal Squirrel Hall Golden Upgrade Kit",
+                "en": "Fragments of Regal Squirrel Hall Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1928 @@
+{
+  "id": "sunhaven_palace",
+  "name": {
+    "fr": "Palais Sunhaven",
+    "en": "Sunhaven Palace"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FELL23A10-6201b7668.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 4,
+    "h": 4
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Sunhaven_Palace",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "def_army_def_classic": 21,
+        "atk_army_att_classic": 27,
+        "def_army_att_classic": 15,
+        "coins_boost": 30,
+        "happiness": 680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 9
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "def_army_def_classic": 22,
+        "atk_army_att_classic": 27,
+        "def_army_att_classic": 15,
+        "coins_boost": 30,
+        "happiness": 1180
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 9
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 22,
+        "atk_army_att_classic": 27,
+        "def_army_att_classic": 16,
+        "coins_boost": 30,
+        "happiness": 1310
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 9
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 23,
+        "atk_army_att_classic": 28,
+        "def_army_att_classic": 16,
+        "coins_boost": 30,
+        "happiness": 1460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 9
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 23,
+        "atk_army_att_classic": 28,
+        "def_army_att_classic": 17,
+        "coins_boost": 31,
+        "happiness": 1620
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 9
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "def_army_def_classic": 24,
+        "atk_army_att_classic": 28,
+        "def_army_att_classic": 17,
+        "coins_boost": 31,
+        "happiness": 1910
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "def_army_def_classic": 24,
+        "atk_army_att_classic": 29,
+        "def_army_att_classic": 18,
+        "coins_boost": 31,
+        "happiness": 2150
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "def_army_def_classic": 25,
+        "atk_army_att_classic": 29,
+        "def_army_att_classic": 18,
+        "coins_boost": 31,
+        "happiness": 2360
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "def_army_def_classic": 25,
+        "atk_army_att_classic": 29,
+        "def_army_att_classic": 19,
+        "coins_boost": 32,
+        "happiness": 2530
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "def_army_def_classic": 26,
+        "atk_army_att_classic": 30,
+        "def_army_att_classic": 20,
+        "coins_boost": 32,
+        "happiness": 2640
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "def_army_def_classic": 26,
+        "atk_army_att_classic": 30,
+        "def_army_att_classic": 21,
+        "coins_boost": 32,
+        "happiness": 3060
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "def_army_def_classic": 27,
+        "atk_army_att_classic": 31,
+        "def_army_att_classic": 22,
+        "coins_boost": 32,
+        "happiness": 3720
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "def_army_def_classic": 27,
+        "atk_army_att_classic": 31,
+        "def_army_att_classic": 23,
+        "coins_boost": 33,
+        "happiness": 4450
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "def_army_def_classic": 28,
+        "atk_army_att_classic": 32,
+        "def_army_att_classic": 24,
+        "coins_boost": 33,
+        "happiness": 5190
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "def_army_def_classic": 28,
+        "atk_army_att_classic": 32,
+        "def_army_att_classic": 25,
+        "coins_boost": 33,
+        "happiness": 5990
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 11
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "def_army_def_classic": 29,
+        "atk_army_att_classic": 33,
+        "def_army_att_classic": 26,
+        "coins_boost": 33,
+        "happiness": 7150
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "def_army_def_classic": 29,
+        "atk_army_att_classic": 33,
+        "def_army_att_classic": 27,
+        "coins_boost": 34,
+        "happiness": 11440
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "def_army_def_classic": 30,
+        "atk_army_att_classic": 34,
+        "def_army_att_classic": 28,
+        "coins_boost": 34,
+        "happiness": 12430
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "def_army_def_classic": 30,
+        "atk_army_att_classic": 34,
+        "def_army_att_classic": 29,
+        "coins_boost": 34,
+        "happiness": 13430
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "def_army_def_classic": 31,
+        "atk_army_att_classic": 35,
+        "def_army_att_classic": 30,
+        "coins_boost": 34,
+        "happiness": 14470
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "def_army_def_classic": 31,
+        "atk_army_att_classic": 35,
+        "def_army_att_classic": 31,
+        "coins_boost": 35,
+        "happiness": 15591
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 13
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "def_army_def_classic": 31,
+        "atk_army_att_classic": 35,
+        "def_army_att_classic": 32,
+        "coins_boost": 35,
+        "happiness": 16712
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 13
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "def_army_def_classic": 32,
+        "atk_army_att_classic": 36,
+        "def_army_att_classic": 33,
+        "coins_boost": 35,
+        "happiness": 17833
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 13
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_feast_and_fables_selection_kit",
+              "name": {
+                "fr": "Fragments of Feast and Fables Selection Kit",
+                "en": "Fragments of Feast and Fables Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

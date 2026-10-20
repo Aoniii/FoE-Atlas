@@ -1,0 +1,2043 @@
+{
+  "id": "silk_weaver_s_emporium",
+  "name": {
+    "fr": "Marchand de soie",
+    "en": "Silk Weaver's Emporium"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HERO24F1-1e92e992b.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 3,
+    "h": 3
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Silk_Weaver's_Emporium",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -320
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -690
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 160
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -1060
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 190
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -1490
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 220
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -1950
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 260
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -2460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 310
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -3010
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 430
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -3590
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 600
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -4210
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 860
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -4850
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1210
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -5530
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1720
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -6230
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2330
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -6960
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2840
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -7720
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3450
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -8510
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3970
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -9320
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 4830
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -14750
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 5860
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -16020
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 6900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -17310
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 7930
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -18650
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 8970
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -20000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 10000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -21350
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 11030
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 20,
+        "atk_army_att_gbg": 65,
+        "def_army_def_classic": 25,
+        "atk_army_def_gbg": 35,
+        "population": -22700
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 12060
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mortar_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mortar Garrison Selection Kit",
+                    "en": "Fragments of Mortar Garrison Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_silver_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Silver Garrison Selection Kit",
+                    "en": "Fragments of Silver Garrison Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_golden_garrison_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Golden Garrison Selection Kit",
+                    "en": "Fragments of Golden Garrison Selection Kit"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

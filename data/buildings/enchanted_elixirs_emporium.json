@@ -1,0 +1,1698 @@
+{
+  "id": "enchanted_elixirs_emporium",
+  "name": {
+    "fr": "Emporium des élixirs enchantés",
+    "en": "Enchanted Elixirs Emporium"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HAL24E1-309e5fa49.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 4,
+    "h": 4
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Enchanted_Elixirs_Emporium",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "def_army_att_classic": 80,
+        "def_army_def_classic": 60,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 450,
+        "happiness": -225
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "def_army_att_classic": 81,
+        "def_army_def_classic": 61,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 960,
+        "happiness": -480
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 194
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 82,
+        "def_army_def_classic": 62,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 1480,
+        "happiness": -740
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 328
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 83,
+        "def_army_def_classic": 63,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 2080,
+        "happiness": -1040
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 462
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 84,
+        "def_army_def_classic": 64,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 2730,
+        "happiness": -1365
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 596
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "def_army_att_classic": 85,
+        "def_army_def_classic": 65,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 3440,
+        "happiness": -1720
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 730
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "def_army_att_classic": 86,
+        "def_army_def_classic": 66,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 4210,
+        "happiness": -2105
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 864
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "def_army_att_classic": 87,
+        "def_army_def_classic": 67,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 5020,
+        "happiness": -2510
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 998
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "def_army_att_classic": 88,
+        "def_army_def_classic": 68,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 5890,
+        "happiness": -2945
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1132
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "def_army_att_classic": 89,
+        "def_army_def_classic": 69,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 6790,
+        "happiness": -3395
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1266
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "def_army_att_classic": 90,
+        "def_army_def_classic": 70,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 7740,
+        "happiness": -3870
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1400
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "def_army_att_classic": 91,
+        "def_army_def_classic": 71,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 8720,
+        "happiness": -4360
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1534
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "def_army_att_classic": 92,
+        "def_army_def_classic": 72,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 9750,
+        "happiness": -4875
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1668
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "def_army_att_classic": 93,
+        "def_army_def_classic": 73,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 10810,
+        "happiness": -5405
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1802
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "def_army_att_classic": 94,
+        "def_army_def_classic": 74,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 11910,
+        "happiness": -5955
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1936
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "def_army_att_classic": 95,
+        "def_army_def_classic": 75,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 13040,
+        "happiness": -6520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2070
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "def_army_att_classic": 96,
+        "def_army_def_classic": 76,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 20650,
+        "happiness": -10325
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2204
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "def_army_att_classic": 97,
+        "def_army_def_classic": 77,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 22430,
+        "happiness": -11215
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2338
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "def_army_att_classic": 98,
+        "def_army_def_classic": 78,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 24240,
+        "happiness": -12120
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2472
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "def_army_att_classic": 99,
+        "def_army_def_classic": 79,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 26100,
+        "happiness": -13050
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2606
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "def_army_att_classic": 100,
+        "def_army_def_classic": 80,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 28000,
+        "happiness": -14000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2740
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "def_army_att_classic": 100,
+        "def_army_def_classic": 80,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 29900,
+        "happiness": -14950
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "def_army_att_classic": 101,
+        "def_army_def_classic": 81,
+        "atk_army_def_gbg": 25,
+        "qi_actions": 50,
+        "population": 31800,
+        "happiness": -15900
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3260
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 100
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_single_event_building_instant",
+                  "name": {
+                    "fr": "Finish Special Production",
+                    "en": "Finish Special Production"
+                  },
+                  "amount": 1,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_single_event_building_instant-16486d91b.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

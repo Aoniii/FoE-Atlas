@@ -1,0 +1,962 @@
+{
+  "id": "lagoon_stronghold",
+  "name": {
+    "fr": "Forteresse du lagon",
+    "en": "Lagoon Stronghold"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_SUM25A18-07c82a6d9.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 5,
+    "h": 5
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Lagoon_Stronghold",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_def_ge": 265,
+        "def_army_def_gbg": 265,
+        "population": 950,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 3080
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_def_ge": 270,
+        "def_army_def_gbg": 270,
+        "population": 2040,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 7390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_def_ge": 275,
+        "def_army_def_gbg": 275,
+        "population": 3130,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 12320
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_def_ge": 280,
+        "def_army_def_gbg": 280,
+        "population": 4400,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 17250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_def_ge": 285,
+        "def_army_def_gbg": 285,
+        "population": 5770,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 22800
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_def_ge": 290,
+        "def_army_def_gbg": 290,
+        "population": 7290,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 28960
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_def_ge": 295,
+        "def_army_def_gbg": 295,
+        "population": 8900,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 35130
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_def_ge": 300,
+        "def_army_def_gbg": 300,
+        "population": 10630,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 41290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_def_ge": 305,
+        "def_army_def_gbg": 305,
+        "population": 12460,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 48070
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_def_ge": 310,
+        "def_army_def_gbg": 310,
+        "population": 14360,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 54850
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_def_ge": 315,
+        "def_army_def_gbg": 315,
+        "population": 16370,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 61620
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_def_ge": 320,
+        "def_army_def_gbg": 320,
+        "population": 18440,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 69020
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_def_ge": 325,
+        "def_army_def_gbg": 325,
+        "population": 20630,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 75800
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_def_ge": 330,
+        "def_army_def_gbg": 330,
+        "population": 22880,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 83190
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_def_ge": 335,
+        "def_army_def_gbg": 335,
+        "population": 25200,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 91200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_def_ge": 340,
+        "def_army_def_gbg": 340,
+        "population": 27590,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 98600
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_def_ge": 345,
+        "def_army_def_gbg": 345,
+        "population": 43680,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 159610
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_def_ge": 350,
+        "def_army_def_gbg": 350,
+        "population": 47450,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 171320
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_def_ge": 355,
+        "def_army_def_gbg": 355,
+        "population": 51280,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 183640
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_def_ge": 360,
+        "def_army_def_gbg": 360,
+        "population": 55220,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 195350
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_def_ge": 365,
+        "def_army_def_gbg": 365,
+        "population": 59240,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 207680
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_def_ge": 370,
+        "def_army_def_gbg": 370,
+        "population": 63250,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 220000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_def_ge": 375,
+        "def_army_def_gbg": 375,
+        "population": 67260,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 232320
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 170
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_pirate_s_paradise_selection_kit",
+              "name": {
+                "fr": "Fragments of Pirate's Paradise Selection Kit",
+                "en": "Fragments of Pirate's Paradise Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

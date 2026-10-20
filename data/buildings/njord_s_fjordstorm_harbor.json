@@ -1,0 +1,2307 @@
+{
+  "id": "njord_s_fjordstorm_harbor",
+  "name": {
+    "fr": "Port Fjordstorm de Njord",
+    "en": "Njord’s Fjordstorm Harbor"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HIS25A13-1cb98316a.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 7,
+    "h": 4
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Njord%E2%80%99s_Fjordstorm_Harbor",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "def_army_att_classic": 248,
+        "def_army_def_classic": 248,
+        "def_army_def_gbg": 248,
+        "def_army_def_ge": 248,
+        "happiness": 4550
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4500
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 209
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "def_army_att_classic": 250,
+        "def_army_def_classic": 250,
+        "def_army_def_gbg": 250,
+        "def_army_def_ge": 250,
+        "happiness": 7840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 10790
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 210
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 252,
+        "def_army_def_classic": 252,
+        "def_army_def_gbg": 252,
+        "def_army_def_ge": 252,
+        "happiness": 8660
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 17990
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 211
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 254,
+        "def_army_def_classic": 254,
+        "def_army_def_gbg": 254,
+        "def_army_def_ge": 254,
+        "happiness": 9670
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 25190
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 212
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 256,
+        "def_army_def_classic": 256,
+        "def_army_def_gbg": 256,
+        "def_army_def_ge": 256,
+        "happiness": 10780
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 33280
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 213
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "def_army_att_classic": 258,
+        "def_army_def_classic": 258,
+        "def_army_def_gbg": 258,
+        "def_army_def_ge": 258,
+        "happiness": 12680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 50690
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 214
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "def_army_att_classic": 260,
+        "def_army_def_classic": 260,
+        "def_army_def_gbg": 260,
+        "def_army_def_ge": 260,
+        "happiness": 14300
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 63150
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 215
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "def_army_att_classic": 262,
+        "def_army_def_classic": 262,
+        "def_army_def_gbg": 262,
+        "def_army_def_ge": 262,
+        "happiness": 15700
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 76640
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 216
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "def_army_att_classic": 264,
+        "def_army_def_classic": 264,
+        "def_army_def_gbg": 264,
+        "def_army_def_ge": 264,
+        "happiness": 16800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 95350
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 217
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "def_army_att_classic": 266,
+        "def_army_def_classic": 266,
+        "def_army_def_gbg": 266,
+        "def_army_def_ge": 266,
+        "happiness": 17500
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 119950
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 218
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "def_army_att_classic": 268,
+        "def_army_def_classic": 268,
+        "def_army_def_gbg": 268,
+        "def_army_def_ge": 268,
+        "happiness": 20330
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 156160
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 219
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "def_army_att_classic": 270,
+        "def_army_def_classic": 270,
+        "def_army_def_gbg": 270,
+        "def_army_def_ge": 270,
+        "happiness": 24680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 180800
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 220
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "def_army_att_classic": 272,
+        "def_army_def_classic": 272,
+        "def_army_def_gbg": 272,
+        "def_army_def_ge": 272,
+        "happiness": 29570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 207250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 221
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "def_army_att_classic": 274,
+        "def_army_def_classic": 274,
+        "def_army_def_gbg": 274,
+        "def_army_def_ge": 274,
+        "happiness": 34440
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 235490
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 222
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "def_army_att_classic": 276,
+        "def_army_def_classic": 276,
+        "def_army_def_gbg": 276,
+        "def_army_def_ge": 276,
+        "happiness": 39740
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 265540
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 223
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "def_army_att_classic": 278,
+        "def_army_def_classic": 278,
+        "def_army_def_gbg": 278,
+        "def_army_def_ge": 278,
+        "happiness": 47480
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 297420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 224
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "def_army_att_classic": 280,
+        "def_army_def_classic": 280,
+        "def_army_def_gbg": 280,
+        "def_army_def_ge": 280,
+        "happiness": 75970
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 496800
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 225
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "def_army_att_classic": 282,
+        "def_army_def_classic": 282,
+        "def_army_def_gbg": 282,
+        "def_army_def_ge": 282,
+        "happiness": 82550
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 550280
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 226
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "def_army_att_classic": 284,
+        "def_army_def_classic": 284,
+        "def_army_def_gbg": 284,
+        "def_army_def_ge": 284,
+        "happiness": 89190
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 606590
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 227
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "def_army_att_classic": 286,
+        "def_army_def_classic": 286,
+        "def_army_def_gbg": 286,
+        "def_army_def_ge": 286,
+        "happiness": 96080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 665780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 228
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "def_army_att_classic": 288,
+        "def_army_def_classic": 288,
+        "def_army_def_gbg": 288,
+        "def_army_def_ge": 288,
+        "happiness": 103040
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 727890
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 229
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "def_army_att_classic": 290,
+        "def_army_def_classic": 290,
+        "def_army_def_gbg": 290,
+        "def_army_def_ge": 290,
+        "happiness": 110000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 790000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 250
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 230
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_fires_of_skuddeholm_selection_kit",
+              "name": {
+                "fr": "Fragments of Fires of Skuddeholm Selection Kit",
+                "en": "Fragments of Fires of Skuddeholm Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 125
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

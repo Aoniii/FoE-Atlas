@@ -1,0 +1,1702 @@
+{
+  "id": "pirate_s_hideout_lv_4",
+  "name": {
+    "fr": "Repaire de pirates - Niv. 4",
+    "en": "Pirate's Hideout - Lv. 4"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/R_SS_MultiAge_SummerBonus21d-15be9369e.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "pirate_s_hideout",
+    "level": 4
+  },
+  "size": {
+    "w": 5,
+    "h": 6
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Pirate's_Hideout_-_Lv._4",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "population": 227,
+        "happiness": 1010
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1600
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 50,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 750,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "population": 487,
+        "happiness": 1750
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3800
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 200,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 3000,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "population": 748,
+        "happiness": 1930
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6300
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 450,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 7500,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "population": 1050,
+        "happiness": 2160
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 8800
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 800,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 13500,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "population": 1378,
+        "happiness": 2400
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 11700
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 1250,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 21750,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "population": 1739,
+        "happiness": 2830
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 17800
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 1800,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 31500,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "population": 2125,
+        "happiness": 3190
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 22100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 2450,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 43500,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "population": 2537,
+        "happiness": 3500
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 26800
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 3200,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 57750,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "population": 2974,
+        "happiness": 3740
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 33400
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 4050,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 74250,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "population": 3427,
+        "happiness": 3900
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 42000
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 5000,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 92250,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "population": 3906,
+        "happiness": 4530
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 54700
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 6050,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 112500,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "population": 4402,
+        "happiness": 5500
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 63300
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 7200,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 135000,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "population": 4922,
+        "happiness": 6590
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 72600
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 8450,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 159750,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "population": 5460,
+        "happiness": 7680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 82500
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 9800,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 186750,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "population": 6014,
+        "happiness": 8860
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 93000
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 11250,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 215250,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "population": 6586,
+        "happiness": 10580
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 104200
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 12800,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 246750,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "population": 10424,
+        "happiness": 16940
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 174000
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 14450,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 279750,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "population": 11323,
+        "happiness": 18410
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 192700
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 16200,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 315000,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "population": 12239,
+        "happiness": 19880
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 212400
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 18050,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 353250,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "population": 13180,
+        "happiness": 21420
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 233200
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 20000,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 393000,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "population": 14137,
+        "happiness": 22970
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 254900
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 22050,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 435000,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "population": 15120,
+        "happiness": 24570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 277700
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 24200,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 479250,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "population": 16103,
+        "happiness": 26170
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 300500
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 5,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 15
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_medals",
+                  "name": {
+                    "fr": "Medals",
+                    "en": "Medals"
+                  },
+                  "amount": 26450,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_medals.png"
+                }
+              ]
+            },
+            {
+              "chance": 45,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "large_supplies",
+                  "name": {
+                    "fr": "Supplies",
+                    "en": "Supplies"
+                  },
+                  "amount": 525750,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/large_supplies.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1629 @@
+{
+  "id": "berserkers_wrath",
+  "name": {
+    "fr": "Colère Berserker",
+    "en": "Berserkers Wrath"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HIS25F4-a415cc93a.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 3,
+    "h": 3
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Berserkers_Wrath",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "population": 230,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "population": 480,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "population": 740,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "population": 1040,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "population": 1370,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "population": 1730,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "population": 2110,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "population": 2520,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "population": 2950,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "population": 3410,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "population": 3880,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "population": 4370,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "population": 4890,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "population": 5430,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "population": 5980,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "population": 6540,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "population": 10360,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "population": 11250,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "population": 12160,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "population": 13100,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "population": 14050,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "population": 15000,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "population": 15950,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 25
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

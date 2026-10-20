@@ -1,0 +1,1997 @@
+{
+  "id": "breezemill_estate",
+  "name": {
+    "fr": "Domaine de Breezemill",
+    "en": "Breezemill Estate"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FALL25A11-ff935cdc8.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 6,
+    "h": 5
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Breezemill_Estate",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_ge": 403,
+        "def_army_def_gbg": 498,
+        "happiness": 4130
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 820
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_ge": 410,
+        "def_army_def_gbg": 505,
+        "happiness": 7120
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1050
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 417,
+        "def_army_def_gbg": 512,
+        "happiness": 7880
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 424,
+        "def_army_def_gbg": 519,
+        "happiness": 8790
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1520
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 431,
+        "def_army_def_gbg": 526,
+        "happiness": 9800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1760
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_ge": 438,
+        "def_army_def_gbg": 533,
+        "happiness": 11520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2110
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_ge": 445,
+        "def_army_def_gbg": 540,
+        "happiness": 13000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2930
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_ge": 452,
+        "def_army_def_gbg": 547,
+        "happiness": 14270
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 4100
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_ge": 459,
+        "def_army_def_gbg": 554,
+        "happiness": 15270
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 5860
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_ge": 466,
+        "def_army_def_gbg": 561,
+        "happiness": 15910
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 8200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_ge": 473,
+        "def_army_def_gbg": 568,
+        "happiness": 18490
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 11720
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_ge": 480,
+        "def_army_def_gbg": 575,
+        "happiness": 22440
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 15820
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_ge": 487,
+        "def_army_def_gbg": 582,
+        "happiness": 26890
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 19340
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_ge": 494,
+        "def_army_def_gbg": 589,
+        "happiness": 31310
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 23440
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_ge": 501,
+        "def_army_def_gbg": 596,
+        "happiness": 36130
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 26950
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_ge": 508,
+        "def_army_def_gbg": 603,
+        "happiness": 43160
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 32810
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_ge": 515,
+        "def_army_def_gbg": 610,
+        "happiness": 69060
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 39840
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_ge": 522,
+        "def_army_def_gbg": 617,
+        "happiness": 75050
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 46880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_ge": 529,
+        "def_army_def_gbg": 624,
+        "happiness": 81080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 53910
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_ge": 536,
+        "def_army_def_gbg": 631,
+        "happiness": 87340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 60940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_ge": 543,
+        "def_army_def_gbg": 638,
+        "happiness": 93670
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 67970
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_ge": 550,
+        "def_army_def_gbg": 645,
+        "happiness": 100000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 75000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_ge": 557,
+        "def_army_def_gbg": 652,
+        "happiness": 106330
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 82030
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 270
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 15,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 650
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

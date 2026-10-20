@@ -1,0 +1,1541 @@
+{
+  "id": "sailmaker_s_workshop_lv_1",
+  "name": {
+    "fr": "Établi du fabricant de voile - Niv. 1",
+    "en": "Sailmaker’s Workshop - Lv. 1"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_SUM24F1-94f154bc8.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "sailmaker_s_workshop",
+    "level": 1
+  },
+  "size": {
+    "w": 2,
+    "h": 2
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Sailmaker%E2%80%99s_Workshop_-_Lv._1",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_ge": 2,
+        "def_army_att_ge": 11,
+        "happiness": 440
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 450
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_ge": 3,
+        "def_army_att_ge": 12,
+        "happiness": 760
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 1070
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 4,
+        "def_army_att_ge": 13,
+        "happiness": 840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 1780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 5,
+        "def_army_att_ge": 14,
+        "happiness": 940
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 2490
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 6,
+        "def_army_att_ge": 15,
+        "happiness": 1050
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 3290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_ge": 7,
+        "def_army_att_ge": 16,
+        "happiness": 1230
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 4180
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_ge": 8,
+        "def_army_att_ge": 17,
+        "happiness": 1390
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 5070
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_ge": 9,
+        "def_army_att_ge": 18,
+        "happiness": 1520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 5960
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_ge": 10,
+        "def_army_att_ge": 19,
+        "happiness": 1630
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 6940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_ge": 11,
+        "def_army_att_ge": 20,
+        "happiness": 1700
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 7920
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_ge": 12,
+        "def_army_att_ge": 21,
+        "happiness": 1970
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 8900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_ge": 13,
+        "def_army_att_ge": 22,
+        "happiness": 2400
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 9970
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_ge": 14,
+        "def_army_att_ge": 23,
+        "happiness": 2870
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 10950
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_ge": 15,
+        "def_army_att_ge": 24,
+        "happiness": 3340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 12020
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_ge": 16,
+        "def_army_att_ge": 25,
+        "happiness": 3860
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 13180
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_ge": 17,
+        "def_army_att_ge": 26,
+        "happiness": 4610
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 14240
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_ge": 18,
+        "def_army_att_ge": 27,
+        "happiness": 7370
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 23060
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_ge": 19,
+        "def_army_att_ge": 28,
+        "happiness": 8010
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 24750
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_ge": 20,
+        "def_army_att_ge": 29,
+        "happiness": 8660
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 26530
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_ge": 21,
+        "def_army_att_ge": 30,
+        "happiness": 9320
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 28220
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_ge": 22,
+        "def_army_att_ge": 31,
+        "happiness": 10000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 30000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_ge": 23,
+        "def_army_att_ge": 32,
+        "happiness": 10680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 31780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_ge": 24,
+        "def_army_att_ge": 33,
+        "happiness": 11360
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 33560
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 60,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_dragon_s_breath_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Dragon’s Breath Selection Kit",
+                    "en": "Fragments of Dragon’s Breath Selection Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

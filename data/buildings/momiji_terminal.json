@@ -1,0 +1,2802 @@
+{
+  "id": "momiji_terminal",
+  "name": {
+    "fr": "Terminal Momiji",
+    "en": "Momiji Terminal"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FALL26A10-6984d377c.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 4,
+    "h": 6
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Momiji_Terminal",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "def_army_att_classic": 198,
+        "def_army_def_classic": 198,
+        "atk_army_att_gbg": 227,
+        "atk_army_def_gbg": 227,
+        "def_army_att_gbg": 227,
+        "def_army_def_gbg": 227
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "def_army_att_classic": 200,
+        "def_army_def_classic": 200,
+        "atk_army_att_gbg": 230,
+        "atk_army_def_gbg": 230,
+        "def_army_att_gbg": 230,
+        "def_army_def_gbg": 230
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 202,
+        "def_army_def_classic": 202,
+        "atk_army_att_gbg": 233,
+        "atk_army_def_gbg": 233,
+        "def_army_att_gbg": 233,
+        "def_army_def_gbg": 233
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 204,
+        "def_army_def_classic": 204,
+        "atk_army_att_gbg": 236,
+        "atk_army_def_gbg": 236,
+        "def_army_att_gbg": 236,
+        "def_army_def_gbg": 236
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 206,
+        "def_army_def_classic": 206,
+        "atk_army_att_gbg": 239,
+        "atk_army_def_gbg": 239,
+        "def_army_att_gbg": 239,
+        "def_army_def_gbg": 239
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "def_army_att_classic": 208,
+        "def_army_def_classic": 208,
+        "atk_army_att_gbg": 242,
+        "atk_army_def_gbg": 242,
+        "def_army_att_gbg": 242,
+        "def_army_def_gbg": 242
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "def_army_att_classic": 210,
+        "def_army_def_classic": 210,
+        "atk_army_att_gbg": 245,
+        "atk_army_def_gbg": 245,
+        "def_army_att_gbg": 245,
+        "def_army_def_gbg": 245
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "def_army_att_classic": 212,
+        "def_army_def_classic": 212,
+        "atk_army_att_gbg": 248,
+        "atk_army_def_gbg": 248,
+        "def_army_att_gbg": 248,
+        "def_army_def_gbg": 248
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "def_army_att_classic": 214,
+        "def_army_def_classic": 214,
+        "atk_army_att_gbg": 251,
+        "atk_army_def_gbg": 251,
+        "def_army_att_gbg": 251,
+        "def_army_def_gbg": 251
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "def_army_att_classic": 216,
+        "def_army_def_classic": 216,
+        "atk_army_att_gbg": 254,
+        "atk_army_def_gbg": 254,
+        "def_army_att_gbg": 254,
+        "def_army_def_gbg": 254
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "def_army_att_classic": 218,
+        "def_army_def_classic": 218,
+        "atk_army_att_gbg": 257,
+        "atk_army_def_gbg": 257,
+        "def_army_att_gbg": 257,
+        "def_army_def_gbg": 257
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "def_army_att_classic": 220,
+        "def_army_def_classic": 220,
+        "atk_army_att_gbg": 260,
+        "atk_army_def_gbg": 260,
+        "def_army_att_gbg": 260,
+        "def_army_def_gbg": 260
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "def_army_att_classic": 222,
+        "def_army_def_classic": 222,
+        "atk_army_att_gbg": 263,
+        "atk_army_def_gbg": 263,
+        "def_army_att_gbg": 263,
+        "def_army_def_gbg": 263
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "def_army_att_classic": 224,
+        "def_army_def_classic": 224,
+        "atk_army_att_gbg": 266,
+        "atk_army_def_gbg": 266,
+        "def_army_att_gbg": 266,
+        "def_army_def_gbg": 266
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "def_army_att_classic": 226,
+        "def_army_def_classic": 226,
+        "atk_army_att_gbg": 269,
+        "atk_army_def_gbg": 269,
+        "def_army_att_gbg": 269,
+        "def_army_def_gbg": 269
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "def_army_att_classic": 228,
+        "def_army_def_classic": 228,
+        "atk_army_att_gbg": 272,
+        "atk_army_def_gbg": 272,
+        "def_army_att_gbg": 272,
+        "def_army_def_gbg": 272
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "def_army_att_classic": 230,
+        "def_army_def_classic": 230,
+        "atk_army_att_gbg": 275,
+        "atk_army_def_gbg": 275,
+        "def_army_att_gbg": 275,
+        "def_army_def_gbg": 275
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "def_army_att_classic": 232,
+        "def_army_def_classic": 232,
+        "atk_army_att_gbg": 278,
+        "atk_army_def_gbg": 278,
+        "def_army_att_gbg": 278,
+        "def_army_def_gbg": 278
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "def_army_att_classic": 234,
+        "def_army_def_classic": 234,
+        "atk_army_att_gbg": 281,
+        "atk_army_def_gbg": 281,
+        "def_army_att_gbg": 281,
+        "def_army_def_gbg": 281
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "def_army_att_classic": 236,
+        "def_army_def_classic": 236,
+        "atk_army_att_gbg": 284,
+        "atk_army_def_gbg": 284,
+        "def_army_att_gbg": 284,
+        "def_army_def_gbg": 284
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "def_army_att_classic": 238,
+        "def_army_def_classic": 238,
+        "atk_army_att_gbg": 287,
+        "atk_army_def_gbg": 287,
+        "def_army_att_gbg": 287,
+        "def_army_def_gbg": 287
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "def_army_att_classic": 240,
+        "def_army_def_classic": 240,
+        "atk_army_att_gbg": 290,
+        "atk_army_def_gbg": 290,
+        "def_army_att_gbg": 290,
+        "def_army_def_gbg": 290
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "def_army_att_classic": 242,
+        "def_army_def_classic": 242,
+        "atk_army_att_gbg": 293,
+        "atk_army_def_gbg": 293,
+        "def_army_att_gbg": 293,
+        "def_army_def_gbg": 293
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 360
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_koyo_retreat_selection_kit",
+              "name": {
+                "fr": "Fragments of Koyo Retreat Selection Kit",
+                "en": "Fragments of Koyo Retreat Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 29
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 35,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "units",
+                  "amount": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

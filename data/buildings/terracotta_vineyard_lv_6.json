@@ -1,0 +1,805 @@
+{
+  "id": "terracotta_vineyard_lv_6",
+  "name": {
+    "fr": "Pressoir en terre cuite - Niv. 6",
+    "en": "Terracotta Vineyard - Lv. 6"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/R_SS_MultiAge_SportBonus21f-f71b0af5c.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "terracotta_vineyard",
+    "level": 6
+  },
+  "size": {
+    "w": 5,
+    "h": 3
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Terracotta_Vineyard_-_Lv._6",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 177,
+        "happiness": 690
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 12
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 381,
+        "happiness": 1190
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2600
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 16
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 584,
+        "happiness": 1310
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4300
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 19
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 820,
+        "happiness": 1470
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6000
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 23
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 1076,
+        "happiness": 1630
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 7900
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 26
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 1358,
+        "happiness": 1920
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 12000
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 31
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 1660,
+        "happiness": 2170
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 15000
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 43
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 1982,
+        "happiness": 2380
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 18200
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 60
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 2323,
+        "happiness": 2550
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 22700
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 86
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 2678,
+        "happiness": 2650
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 28500
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 120
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 3052,
+        "happiness": 3080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 37100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 172
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 3439,
+        "happiness": 3740
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 43000
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 232
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 3846,
+        "happiness": 4480
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 49300
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 283
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 4266,
+        "happiness": 5220
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 56000
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 343
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 4699,
+        "happiness": 6020
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 63100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 395
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 5145,
+        "happiness": 7200
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 70700
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 480
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 8144,
+        "happiness": 11520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 118100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 583
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 8846,
+        "happiness": 12520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 130800
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 686
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 9562,
+        "happiness": 13520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 144100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 789
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 10297,
+        "happiness": 14570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 158200
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 892
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 11045,
+        "happiness": 15620
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 173000
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 995
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 11813,
+        "happiness": 16710
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 188400
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1098
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "supplies_boost": 19,
+        "population": 12581,
+        "happiness": 17800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 203800
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1201
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1882 @@
+{
+  "id": "nightshade_conservatory",
+  "name": {
+    "fr": "Serre aux plantes carnivores",
+    "en": "Nightshade Conservatory"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HAL25D1-c93317028.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 5,
+    "h": 4
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Nightshade_Conservatory",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 110,
+        "atk_army_def_classic": 110,
+        "def_army_att_classic": 110,
+        "def_army_def_classic": 110,
+        "atk_army_att_gbg": 125,
+        "atk_army_def_gbg": 125,
+        "def_army_att_gbg": 125,
+        "def_army_def_gbg": 125,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20,
+        "guild_goods_boost": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_boo_loon_grand_gala_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Boo’loon Grand Gala Golden Selection Kit",
+                "en": "Fragments of Boo’loon Grand Gala Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 250
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

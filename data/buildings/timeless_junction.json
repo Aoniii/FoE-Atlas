@@ -1,0 +1,893 @@
+{
+  "id": "timeless_junction",
+  "name": {
+    "fr": "Jonction intemporelle",
+    "en": "Timeless Junction"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HistoricalAlliesStarter24A-21b5464bd.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 2,
+    "h": 2
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Timeless_Junction",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "happiness": 440
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "happiness": 760
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "happiness": 840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "happiness": 940
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "happiness": 1050
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "happiness": 1230
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "happiness": 1390
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "happiness": 1520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "happiness": 1630
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "happiness": 1700
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "happiness": 1970
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "happiness": 2400
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "happiness": 2870
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "happiness": 3340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "happiness": 3860
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "happiness": 4610
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "happiness": 7370
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "happiness": 8010
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "happiness": 8660
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "happiness": 9320
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "happiness": 10000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "happiness": 10680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "happiness": 11360
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 10
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 10
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

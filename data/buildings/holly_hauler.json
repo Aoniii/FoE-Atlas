@@ -1,0 +1,1652 @@
+{
+  "id": "holly_hauler",
+  "name": {
+    "fr": "Camion de cadeaux",
+    "en": "Holly Hauler"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_WIN24B1-0f031e322.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 4,
+    "h": 2
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Holly_Hauler",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_def_classic": 22,
+        "def_army_def_classic": 30,
+        "population": -260
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_def_classic": 23,
+        "def_army_def_classic": 31,
+        "population": -550
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_def_classic": 24,
+        "def_army_def_classic": 32,
+        "population": -850
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_def_classic": 25,
+        "def_army_def_classic": 33,
+        "population": -1190
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_def_classic": 26,
+        "def_army_def_classic": 34,
+        "population": -1560
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_def_classic": 27,
+        "def_army_def_classic": 35,
+        "population": -1970
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_def_classic": 28,
+        "def_army_def_classic": 36,
+        "population": -2410
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_def_classic": 29,
+        "def_army_def_classic": 37,
+        "population": -2870
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_def_classic": 30,
+        "def_army_def_classic": 38,
+        "population": -3370
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_def_classic": 31,
+        "def_army_def_classic": 39,
+        "population": -3880
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_def_classic": 32,
+        "def_army_def_classic": 40,
+        "population": -4420
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_def_classic": 33,
+        "def_army_def_classic": 41,
+        "population": -4980
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_def_classic": 34,
+        "def_army_def_classic": 42,
+        "population": -5570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_def_classic": 35,
+        "def_army_def_classic": 43,
+        "population": -6180
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_def_classic": 36,
+        "def_army_def_classic": 44,
+        "population": -6810
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_def_classic": 37,
+        "def_army_def_classic": 45,
+        "population": -7450
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_def_classic": 38,
+        "def_army_def_classic": 46,
+        "population": -11800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_def_classic": 39,
+        "def_army_def_classic": 47,
+        "population": -12820
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_def_classic": 40,
+        "def_army_def_classic": 48,
+        "population": -13850
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_def_classic": 41,
+        "def_army_def_classic": 49,
+        "population": -14920
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_def_classic": 42,
+        "def_army_def_classic": 50,
+        "population": -16000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_def_classic": 43,
+        "def_army_def_classic": 51,
+        "population": -17080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_def_classic": 44,
+        "def_army_def_classic": 52,
+        "population": -18160
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 32
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_store_building",
+                  "name": {
+                    "fr": "Fragments of Store Building",
+                    "en": "Fragments of Store Building"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_6h_mass_supply_rush",
+                  "name": {
+                    "fr": "Fragments of 6h Mass Supply Rush",
+                    "en": "Fragments of 6h Mass Supply Rush"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1859 @@
+{
+  "id": "maizespire_labyrinth",
+  "name": {
+    "fr": "Labyrinthe de Maizespire",
+    "en": "Maizespire Labyrinth"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FALL25G1-d6000b2f1.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 5,
+    "h": 5
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Maizespire_Labyrinth",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_gbg": 175,
+        "atk_army_def_gbg": 175,
+        "def_army_att_gbg": 175,
+        "def_army_def_gbg": 175,
+        "atk_army_att_ge": 175,
+        "atk_army_def_ge": 175,
+        "def_army_att_ge": 175,
+        "def_army_def_ge": 175,
+        "atk_army_att_qi": 20,
+        "atk_army_def_qi": 20,
+        "def_army_att_qi": 20,
+        "def_army_def_qi": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_selection_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Selection Kit",
+                "en": "Fragments of Breezemill Estate Golden Selection Kit"
+              },
+              "amount": 20,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 375
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

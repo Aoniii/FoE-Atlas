@@ -1,0 +1,3216 @@
+{
+  "id": "regal_squirrel_hall",
+  "name": {
+    "fr": "Hall de l'écureuil royal",
+    "en": "Regal Squirrel Hall"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FALL24A11-b6c183255.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 6,
+    "h": 5
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Regal_Squirrel_Hall",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "def_army_def_classic": 100,
+        "def_army_att_classic": 120,
+        "fp_boost": 1,
+        "population": 640,
+        "happiness": 3970
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4330
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "def_army_def_classic": 101,
+        "def_army_att_classic": 120,
+        "fp_boost": 1,
+        "population": 1380,
+        "happiness": 6840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 10380
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 102,
+        "def_army_att_classic": 121,
+        "fp_boost": 1,
+        "population": 2120,
+        "happiness": 7570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 17300
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 91
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 103,
+        "def_army_att_classic": 121,
+        "fp_boost": 1,
+        "population": 2970,
+        "happiness": 8440
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 24220
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 91
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "def_army_def_classic": 104,
+        "def_army_att_classic": 122,
+        "fp_boost": 1,
+        "population": 3900,
+        "happiness": 9420
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 32010
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 92
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "def_army_def_classic": 105,
+        "def_army_att_classic": 122,
+        "fp_boost": 1,
+        "population": 4920,
+        "happiness": 11070
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 48750
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 92
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "def_army_def_classic": 106,
+        "def_army_att_classic": 123,
+        "fp_boost": 1,
+        "population": 6010,
+        "happiness": 12490
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 60730
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 93
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "def_army_def_classic": 107,
+        "def_army_att_classic": 123,
+        "fp_boost": 1,
+        "population": 7180,
+        "happiness": 13710
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 73700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 93
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "def_army_def_classic": 108,
+        "def_army_att_classic": 124,
+        "fp_boost": 1,
+        "population": 8410,
+        "happiness": 14670
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 91700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 94
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "def_army_def_classic": 109,
+        "def_army_att_classic": 124,
+        "fp_boost": 1,
+        "population": 9700,
+        "happiness": 15280
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 115350
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 94
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "def_army_def_classic": 110,
+        "def_army_att_classic": 125,
+        "fp_boost": 1,
+        "population": 11050,
+        "happiness": 17760
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 150170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 95
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "def_army_def_classic": 111,
+        "def_army_att_classic": 125,
+        "fp_boost": 1,
+        "population": 12450,
+        "happiness": 21560
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 173880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 95
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "def_army_def_classic": 112,
+        "def_army_att_classic": 126,
+        "fp_boost": 1,
+        "population": 13930,
+        "happiness": 25830
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 199310
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 96
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "def_army_def_classic": 113,
+        "def_army_att_classic": 126,
+        "fp_boost": 1,
+        "population": 15450,
+        "happiness": 30080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 226470
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 96
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "def_army_def_classic": 114,
+        "def_army_att_classic": 127,
+        "fp_boost": 1,
+        "population": 17020,
+        "happiness": 34710
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 255360
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 97
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "def_army_def_classic": 115,
+        "def_army_att_classic": 127,
+        "fp_boost": 1,
+        "population": 18630,
+        "happiness": 41470
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 286030
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 97
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "def_army_def_classic": 116,
+        "def_army_att_classic": 128,
+        "fp_boost": 1,
+        "population": 29490,
+        "happiness": 66350
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 477770
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 98
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "def_army_def_classic": 117,
+        "def_army_att_classic": 128,
+        "fp_boost": 1,
+        "population": 32040,
+        "happiness": 72110
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 529200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 98
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "def_army_def_classic": 118,
+        "def_army_att_classic": 129,
+        "fp_boost": 1,
+        "population": 34630,
+        "happiness": 77900
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 583350
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 99
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "def_army_def_classic": 119,
+        "def_army_att_classic": 129,
+        "fp_boost": 1,
+        "population": 37290,
+        "happiness": 83920
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 640270
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 99
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "def_army_def_classic": 120,
+        "def_army_att_classic": 130,
+        "fp_boost": 1,
+        "population": 40000,
+        "happiness": 90000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 700000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "def_army_def_classic": 120,
+        "def_army_att_classic": 130,
+        "fp_boost": 1,
+        "population": 42710,
+        "happiness": 96080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 759730
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 100
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "def_army_def_classic": 121,
+        "def_army_att_classic": 131,
+        "fp_boost": 1,
+        "population": 45420,
+        "happiness": 102160
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 819460
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 101
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+                }
+              ]
+            },
+            {
+              "chance": 40,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mass_self_aid_kit",
+                  "name": {
+                    "fr": "Fragments of Mass Self-Aid Kit",
+                    "en": "Fragments of Mass Self-Aid Kit"
+                  },
+                  "amount": 25,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_renovation_kit",
+                  "name": {
+                    "fr": "Fragments of Renovation Kit",
+                    "en": "Fragments of Renovation Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_one_up_kit",
+                  "name": {
+                    "fr": "Fragments of One Up Kit",
+                    "en": "Fragments of One Up Kit"
+                  },
+                  "amount": 15,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1679 @@
+{
+  "id": "celtic_glassworks_lv_1",
+  "name": {
+    "fr": "Verrerie celtique - Niv. 1",
+    "en": "Celtic Glassworks - Lv. 1"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_PAT24C1-9fcd031ce.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "celtic_glassworks",
+    "level": 1
+  },
+  "size": {
+    "w": 2,
+    "h": 2
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Celtic_Glassworks_-_Lv._1",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 220
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 380
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 420
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 470
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 525
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 615
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 45
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 695
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 65
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 760
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 815
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 130
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 6,
+        "def_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "happiness": 850
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 180
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 985
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 260
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 1200
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 350
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 1435
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 425
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 1670
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 515
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 1930
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 595
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 2305
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 725
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 3685
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 4005
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1035
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 4330
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1190
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 7,
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "happiness": 4660
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1345
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 8,
+        "def_army_att_classic": 11,
+        "def_army_def_classic": 16,
+        "happiness": 5000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1500
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 8,
+        "def_army_att_classic": 11,
+        "def_army_def_classic": 16,
+        "happiness": 5340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1655
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 8,
+        "def_army_att_classic": 11,
+        "def_army_def_classic": 16,
+        "happiness": 5680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1810
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 5
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_goods_production",
+                  "name": {
+                    "fr": "Fragments of Finish Goods Production",
+                    "en": "Fragments of Finish Goods Production"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

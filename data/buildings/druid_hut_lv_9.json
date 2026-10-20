@@ -1,0 +1,2645 @@
+{
+  "id": "druid_hut_lv_9",
+  "name": {
+    "fr": "Hutte du druide - Niv. 9",
+    "en": "Druid Hut - Lv. 9"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_PAT23A9-2c836c067.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "druid_hut",
+    "level": 9
+  },
+  "size": {
+    "w": 5,
+    "h": 4
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Druid_Hut_-_Lv._9",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 9,
+        "atk_army_def_classic": 14
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 50
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 10,
+        "atk_army_def_classic": 14
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 120
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 10,
+        "atk_army_def_classic": 14
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 11,
+        "atk_army_def_classic": 14
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 280
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 11,
+        "atk_army_def_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 370
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 11,
+        "atk_army_def_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 560
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 12,
+        "atk_army_def_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 700
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 12,
+        "atk_army_def_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 850
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 12,
+        "atk_army_def_classic": 16
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1060
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 13,
+        "atk_army_def_classic": 16
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1330
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 13,
+        "atk_army_def_classic": 16
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1740
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 14,
+        "atk_army_def_classic": 17
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2010
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 14,
+        "atk_army_def_classic": 17
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2300
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 14,
+        "atk_army_def_classic": 17
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2620
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2950
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3310
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5520
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "atk_army_def_classic": 19
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6120
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "atk_army_def_classic": 19
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6740
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "atk_army_def_classic": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 7400
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "atk_army_def_classic": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 8125
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "atk_army_def_classic": 20
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 8850
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 18,
+        "atk_army_def_classic": 21
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 9575
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 3
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_archdruid_hut_upgrade_kit",
+              "name": {
+                "fr": "Fragment of Archdruid Hut Upgrade Kit",
+                "en": "Fragment of Archdruid Hut Upgrade Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

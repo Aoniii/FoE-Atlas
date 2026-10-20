@@ -1,0 +1,1997 @@
+{
+  "id": "jester_s_stage",
+  "name": {
+    "fr": "Scène du bouffon",
+    "en": "Jester's Stage"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FELL23B1-69ca96007.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 2,
+    "h": 3
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Jester's_Stage",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 17,
+        "happiness": 520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 17,
+        "happiness": 900
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 17,
+        "happiness": 1000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 10,
+        "def_army_def_classic": 17,
+        "happiness": 1110
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "def_army_att_classic": 11,
+        "def_army_def_classic": 18,
+        "happiness": 1240
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "def_army_att_classic": 11,
+        "def_army_def_classic": 18,
+        "happiness": 1460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "def_army_att_classic": 11,
+        "def_army_def_classic": 18,
+        "happiness": 1640
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "def_army_att_classic": 11,
+        "def_army_def_classic": 18,
+        "happiness": 1800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "def_army_att_classic": 12,
+        "def_army_def_classic": 19,
+        "happiness": 1930
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "def_army_att_classic": 12,
+        "def_army_def_classic": 19,
+        "happiness": 2010
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "def_army_att_classic": 12,
+        "def_army_def_classic": 19,
+        "happiness": 2340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "def_army_att_classic": 12,
+        "def_army_def_classic": 19,
+        "happiness": 2840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "def_army_att_classic": 13,
+        "def_army_def_classic": 20,
+        "happiness": 3400
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "def_army_att_classic": 13,
+        "def_army_def_classic": 20,
+        "happiness": 3960
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "def_army_att_classic": 13,
+        "def_army_def_classic": 20,
+        "happiness": 4570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "def_army_att_classic": 14,
+        "def_army_def_classic": 21,
+        "happiness": 5460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "def_army_att_classic": 14,
+        "def_army_def_classic": 21,
+        "happiness": 8730
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "def_army_att_classic": 14,
+        "def_army_def_classic": 21,
+        "happiness": 9490
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "def_army_att_classic": 15,
+        "def_army_def_classic": 22,
+        "happiness": 10250
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "def_army_att_classic": 15,
+        "def_army_def_classic": 22,
+        "happiness": 11040
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "def_army_att_classic": 15,
+        "def_army_def_classic": 22,
+        "happiness": 11891
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "def_army_att_classic": 15,
+        "def_army_def_classic": 22,
+        "happiness": 12742
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "def_army_att_classic": 16,
+        "def_army_def_classic": 23,
+        "happiness": 13593
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 35
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "blueprint_box",
+                  "name": {
+                    "fr": "Blueprints",
+                    "en": "Blueprints"
+                  },
+                  "amount": 6,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint_box-661261412.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

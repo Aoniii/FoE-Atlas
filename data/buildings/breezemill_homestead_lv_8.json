@@ -1,0 +1,943 @@
+{
+  "id": "breezemill_homestead_lv_8",
+  "name": {
+    "fr": "Ferme de Breezemill - Niv. 8",
+    "en": "Breezemill Homestead - Lv. 8"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FALL25A8-2cb59c47a.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "breezemill_homestead",
+    "level": 8
+  },
+  "size": {
+    "w": 6,
+    "h": 5
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Breezemill_Homestead_-_Lv._8",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_ge": 195,
+        "def_army_def_gbg": 350,
+        "happiness": 2890
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 110
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 16
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_ge": 200,
+        "def_army_def_gbg": 355,
+        "happiness": 4990
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 140
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 20
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 205,
+        "def_army_def_gbg": 360,
+        "happiness": 5510
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 24
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 210,
+        "def_army_def_gbg": 365,
+        "happiness": 6150
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 28
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 215,
+        "def_army_def_gbg": 370,
+        "happiness": 6860
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 230
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 32
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_ge": 220,
+        "def_army_def_gbg": 375,
+        "happiness": 8070
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 280
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 36
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_ge": 225,
+        "def_army_def_gbg": 380,
+        "happiness": 9100
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 40
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_ge": 230,
+        "def_army_def_gbg": 385,
+        "happiness": 9990
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 550
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 44
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_ge": 235,
+        "def_army_def_gbg": 390,
+        "happiness": 10690
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_ge": 240,
+        "def_army_def_gbg": 395,
+        "happiness": 11140
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1090
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 52
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_ge": 245,
+        "def_army_def_gbg": 400,
+        "happiness": 12940
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1560
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 56
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_ge": 250,
+        "def_army_def_gbg": 405,
+        "happiness": 15710
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2110
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 60
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_ge": 255,
+        "def_army_def_gbg": 410,
+        "happiness": 18820
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2580
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 64
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_ge": 260,
+        "def_army_def_gbg": 415,
+        "happiness": 21910
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3130
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 68
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_ge": 265,
+        "def_army_def_gbg": 420,
+        "happiness": 25290
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3590
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 72
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_ge": 270,
+        "def_army_def_gbg": 425,
+        "happiness": 30210
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 4380
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 76
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_ge": 275,
+        "def_army_def_gbg": 430,
+        "happiness": 48340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 5310
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 80
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_ge": 280,
+        "def_army_def_gbg": 435,
+        "happiness": 52530
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 6250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 84
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_ge": 285,
+        "def_army_def_gbg": 440,
+        "happiness": 56760
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 7190
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 88
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_ge": 290,
+        "def_army_def_gbg": 445,
+        "happiness": 61140
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 8130
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 92
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_ge": 295,
+        "def_army_def_gbg": 450,
+        "happiness": 65570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 9060
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 96
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_ge": 300,
+        "def_army_def_gbg": 455,
+        "happiness": 70000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 10000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 100
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_ge": 305,
+        "def_army_def_gbg": 460,
+        "happiness": 74430
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 10940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 104
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

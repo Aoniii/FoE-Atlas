@@ -1,0 +1,1767 @@
+{
+  "id": "eco_nexus",
+  "name": {
+    "fr": "Nexus éco",
+    "en": "Eco Nexus"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_CARE24A10-4ec3ba9ec.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 6,
+    "h": 6
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Eco_Nexus",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -810,
+        "happiness": 4130
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 490
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 85
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 115
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -1740,
+        "happiness": 7120
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 630
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 88
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 120
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -2670,
+        "happiness": 7880
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 770
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 91
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -3760,
+        "happiness": 8790
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 910
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 94
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 130
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -4930,
+        "happiness": 9800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1050
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 97
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 135
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -6220,
+        "happiness": 11520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1270
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 100
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -7600,
+        "happiness": 13000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1760
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 103
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 145
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -9080,
+        "happiness": 14270
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2460
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 106
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -10640,
+        "happiness": 15270
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3520
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 109
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 155
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -12260,
+        "happiness": 15910
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 4920
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 112
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 160
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -13970,
+        "happiness": 18490
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 7030
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 115
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 165
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -15750,
+        "happiness": 22440
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 9490
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 118
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 170
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -17610,
+        "happiness": 26890
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 11600
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 121
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 175
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -19530,
+        "happiness": 31310
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 14060
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 124
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 180
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -21520,
+        "happiness": 36130
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 16170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 127
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 185
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -23560,
+        "happiness": 43160
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 19690
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 130
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 190
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -37290,
+        "happiness": 69060
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 23910
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 133
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 195
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -40510,
+        "happiness": 75050
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 28130
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 136
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 200
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -43780,
+        "happiness": 81080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 32340
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 139
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 205
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "fp_boost": 3,
+        "population": -47150,
+        "happiness": 87340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 36560
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 142
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 210
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "fp_boost": 4,
+        "population": -50570,
+        "happiness": 93670
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 40780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 145
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 215
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "fp_boost": 4,
+        "population": -54000,
+        "happiness": 100000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 45000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 148
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 220
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "fp_boost": 4,
+        "population": -57430,
+        "happiness": 106330
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 49220
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 151
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 225
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_special_production",
+                  "name": {
+                    "fr": "Fragments of Finish Special Production",
+                    "en": "Fragments of Finish Special Production"
+                  },
+                  "amount": 28,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

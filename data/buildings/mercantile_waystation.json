@@ -1,0 +1,1077 @@
+{
+  "id": "mercantile_waystation",
+  "name": {
+    "fr": "Relais marchand",
+    "en": "Mercantile Waystation"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FELL25A10-2f2955687.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 6,
+    "h": 4
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Mercantile_Waystation",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_def_gbg": 255,
+        "def_army_att_gbg": 252,
+        "population": 1050,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 3820
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3990
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_def_gbg": 256,
+        "def_army_att_gbg": 253,
+        "population": 2260,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 9180
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 9560
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_def_gbg": 256,
+        "def_army_att_gbg": 253,
+        "population": 3470,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 15290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 15940
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_def_gbg": 256,
+        "def_army_att_gbg": 253,
+        "population": 4870,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 21410
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 22320
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_def_gbg": 256,
+        "def_army_att_gbg": 253,
+        "population": 6390,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 28290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 29490
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_def_gbg": 256,
+        "def_army_att_gbg": 253,
+        "population": 8060,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 35940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 44910
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_def_gbg": 257,
+        "def_army_att_gbg": 253,
+        "population": 9860,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 43590
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 55950
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_def_gbg": 257,
+        "def_army_att_gbg": 253,
+        "population": 11760,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 51240
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 67910
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_def_gbg": 257,
+        "def_army_att_gbg": 253,
+        "population": 13790,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 59650
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 84490
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_def_gbg": 257,
+        "def_army_att_gbg": 253,
+        "population": 15890,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 68060
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 106290
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_def_gbg": 257,
+        "def_army_att_gbg": 253,
+        "population": 18110,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 76470
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 138370
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_def_gbg": 258,
+        "def_army_att_gbg": 254,
+        "population": 20410,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 85650
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 160200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_def_gbg": 258,
+        "def_army_att_gbg": 254,
+        "population": 22830,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 94060
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 183640
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_def_gbg": 258,
+        "def_army_att_gbg": 254,
+        "population": 25320,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 103240
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 208660
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_def_gbg": 258,
+        "def_army_att_gbg": 254,
+        "population": 27890,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 113180
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 235290
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_def_gbg": 258,
+        "def_army_att_gbg": 254,
+        "population": 30540,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 122350
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 263540
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_def_gbg": 259,
+        "def_army_att_gbg": 254,
+        "population": 48340,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 198060
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 440200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_def_gbg": 259,
+        "def_army_att_gbg": 254,
+        "population": 52510,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 212590
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 487590
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_def_gbg": 259,
+        "def_army_att_gbg": 254,
+        "population": 56760,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 227880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 537480
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_def_gbg": 259,
+        "def_army_att_gbg": 254,
+        "population": 61120,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 242410
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 589930
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_def_gbg": 259,
+        "def_army_att_gbg": 254,
+        "population": 65560,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 257710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 644960
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_def_gbg": 260,
+        "def_army_att_gbg": 255,
+        "population": 70000,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 273000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 700000
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_def_gbg": 260,
+        "def_army_att_gbg": 255,
+        "population": 74440,
+        "happiness": 0
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 288290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 755040
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 195
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_froggy_frontiers_selection_kit",
+              "name": {
+                "fr": "Fragments of Froggy Frontiers Selection Kit",
+                "en": "Fragments of Froggy Frontiers Selection Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

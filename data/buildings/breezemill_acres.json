@@ -1,0 +1,2227 @@
+{
+  "id": "breezemill_acres",
+  "name": {
+    "fr": "Terres de Breezemill",
+    "en": "Breezemill Acres"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FALL25A10-0bd00268b.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 6,
+    "h": 5
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Breezemill_Acres",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_ge": 353,
+        "def_army_def_gbg": 408,
+        "happiness": 3720
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 550
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_ge": 360,
+        "def_army_def_gbg": 415,
+        "happiness": 6410
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 367,
+        "def_army_def_gbg": 422,
+        "happiness": 7090
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 860
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 374,
+        "def_army_def_gbg": 429,
+        "happiness": 7910
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1020
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_ge": 381,
+        "def_army_def_gbg": 436,
+        "happiness": 8820
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_ge": 388,
+        "def_army_def_gbg": 443,
+        "happiness": 10370
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1410
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_ge": 395,
+        "def_army_def_gbg": 450,
+        "happiness": 11700
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1950
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_ge": 402,
+        "def_army_def_gbg": 457,
+        "happiness": 12840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2730
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_ge": 409,
+        "def_army_def_gbg": 464,
+        "happiness": 13740
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3910
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_ge": 416,
+        "def_army_def_gbg": 471,
+        "happiness": 14320
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 5470
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_ge": 423,
+        "def_army_def_gbg": 478,
+        "happiness": 16640
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 7810
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_ge": 430,
+        "def_army_def_gbg": 485,
+        "happiness": 20200
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 10550
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_ge": 437,
+        "def_army_def_gbg": 492,
+        "happiness": 24200
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 12890
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_ge": 444,
+        "def_army_def_gbg": 499,
+        "happiness": 28180
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 15630
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_ge": 451,
+        "def_army_def_gbg": 506,
+        "happiness": 32520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 17970
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_ge": 458,
+        "def_army_def_gbg": 513,
+        "happiness": 38840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 21880
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_ge": 465,
+        "def_army_def_gbg": 520,
+        "happiness": 62150
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 26560
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_ge": 472,
+        "def_army_def_gbg": 527,
+        "happiness": 67540
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 31250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_ge": 479,
+        "def_army_def_gbg": 534,
+        "happiness": 72970
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 35940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_ge": 486,
+        "def_army_def_gbg": 541,
+        "happiness": 78610
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 40630
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_ge": 493,
+        "def_army_def_gbg": 548,
+        "happiness": 84300
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 45310
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_ge": 500,
+        "def_army_def_gbg": 555,
+        "happiness": 90000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 50000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_ge": 507,
+        "def_army_def_gbg": 562,
+        "happiness": 95700
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 54690
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 235
+            },
+            {
+              "type": "item",
+              "id": "blueprint",
+              "name": {
+                "fr": "Blueprints",
+                "en": "Blueprints"
+              },
+              "amount": 10,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/blueprint-841edadfd.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_tranquil_bloom_selection_kit",
+              "name": {
+                "fr": "Fragments of Tranquil Bloom Selection Kit",
+                "en": "Fragments of Tranquil Bloom Selection Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_breezemill_estate_golden_upgrade_kit",
+              "name": {
+                "fr": "Fragments of Breezemill Estate Golden Upgrade Kit",
+                "en": "Fragments of Breezemill Estate Golden Upgrade Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 600
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_next",
+                  "amount": 700
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

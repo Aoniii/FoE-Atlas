@@ -1,0 +1,1399 @@
+{
+  "id": "trailside_smithy",
+  "name": {
+    "fr": "Forge du sentier",
+    "en": "Trailside Smithy"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_FELL23D1-ab58bf384.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 1,
+    "h": 1
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Trailside_Smithy",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 900
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 1000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 1110
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 1240
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 1460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 1640
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 1800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 1930
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 2010
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 2340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 2840
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3,
+        "happiness": 3400
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 4,
+        "atk_army_def_classic": 4,
+        "happiness": 3960
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 4,
+        "atk_army_def_classic": 4,
+        "happiness": 4570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 4,
+        "atk_army_def_classic": 4,
+        "happiness": 5460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 4,
+        "atk_army_def_classic": 4,
+        "happiness": 8730
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 4,
+        "atk_army_def_classic": 4,
+        "happiness": 9490
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 4,
+        "atk_army_def_classic": 4,
+        "happiness": 10250
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 5,
+        "atk_army_def_classic": 5,
+        "happiness": 11040
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 5,
+        "atk_army_def_classic": 5,
+        "happiness": 11891
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 5,
+        "atk_army_def_classic": 5,
+        "happiness": 12742
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 5,
+        "atk_army_def_classic": 5,
+        "happiness": 13593
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 4
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_summerhold_manor_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Summerhold Manor Selection Kit",
+                    "en": "Fragments of Summerhold Manor Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sunhaven_palace_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sunhaven Palace Golden Upgrade Kit",
+                    "en": "Fragments of Sunhaven Palace Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

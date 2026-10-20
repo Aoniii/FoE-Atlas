@@ -1,0 +1,1882 @@
+{
+  "id": "spectral_steeds_phantom_carriage",
+  "name": {
+    "fr": "Calèche fantôme des destriers spectraux",
+    "en": "Spectral Steeds' Phantom Carriage"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HAL23G1-e10b72067.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 1,
+    "h": 3
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Spectral_Steeds'_Phantom_Carriage",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "atk_army_def_classic": 18,
+        "def_army_att_classic": 15
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 12
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 18
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 80,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_laboratory_of_monstrosities_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Laboratory of Monstrosities Selection Kit",
+                    "en": "Fragments of Laboratory of Monstrosities Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_sinister_laboratory_of_monstrosities_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit",
+                    "en": "Fragments of Sinister Laboratory of Monstrosities Silver Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_thundering_laboratory_of_monstrosities_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit",
+                    "en": "Fragments of Thundering Laboratory of Monstrosities Golden Upgrade Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

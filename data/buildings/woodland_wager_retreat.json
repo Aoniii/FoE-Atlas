@@ -1,0 +1,2250 @@
+{
+  "id": "woodland_wager_retreat",
+  "name": {
+    "fr": "Retraite boisée du parieur",
+    "en": "Woodland Wager Retreat"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HERO24G1-166c3cb96.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 2,
+    "h": 2
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Woodland_Wager_Retreat",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 90
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 210
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 280
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 340
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 470
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 660
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 950
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1330
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2560
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3130
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3790
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 4360
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 5310
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 6450
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 7590
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 8720
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 9860
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 11000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 12140
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_att_qi": 25,
+        "atk_army_def_classic": 20,
+        "def_army_def_classic": 60
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 13280
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_finish_special_production",
+              "name": {
+                "fr": "Fragments of Finish Special Production",
+                "en": "Fragments of Finish Special Production"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_ascendant_grove_sanctuary_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Ascendant Grove Sanctuary Selection Kit",
+                    "en": "Fragments of Ascendant Grove Sanctuary Selection Kit"
+                  },
+                  "amount": 20,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_surging_grove_sanctuary_silver_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit",
+                    "en": "Fragments of Surging Grove Sanctuary Silver Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 20,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_apex_grove_sanctuary_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit",
+                    "en": "Fragments of Apex Grove Sanctuary Golden Upgrade Kit"
+                  },
+                  "amount": 5,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1629 @@
+{
+  "id": "wishing_well",
+  "name": {
+    "fr": "Puits aux souhaits",
+    "en": "Wishing Well"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/L_SS_AllAge_EasterBonus1-fa5802182.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 3,
+    "h": 3
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Wishing_Well",
+  "ages": {
+    "BronzeAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 450
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 3
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 1080
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 1080
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 5
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 1800
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 1800
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 10
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 2520
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 2500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 19
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 3330
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 3330
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 31
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 5060
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 5130
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 49
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 6320
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 6220
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 65
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 7670
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 7760
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 90
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 9540
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 9560
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 120
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 12000
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 11000
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 160
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 15620
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 12500
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 205
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 18090
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 14000
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 240
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 21100
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 16300
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 280
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 24500
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 18700
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 330
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 28200
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 20900
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 370
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 32200
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 23300
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 430
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 40250
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 30000
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 500
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 46800
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 34400
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 570
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 54030
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 39240
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 640
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 61940
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 44520
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 710
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 70650
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 49430
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 780
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 80200
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 55490
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 1,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "diamonds",
+                  "amount": 50
+                }
+              ]
+            },
+            {
+              "chance": 9,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "medals",
+                  "amount": 850
+                }
+              ]
+            },
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 2
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "coins",
+                  "amount": 89750
+                }
+              ]
+            },
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "supplies",
+                  "amount": 61550
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

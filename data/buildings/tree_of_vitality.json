@@ -1,0 +1,916 @@
+{
+  "id": "tree_of_vitality",
+  "name": {
+    "fr": "Arbre de la vitalité",
+    "en": "Tree of Vitality"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_PAT23D1-8e86a5091.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 1,
+    "h": 1
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Tree_of_Vitality",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 80
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 130
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 190
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 380
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 470
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 570
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 1,
+        "atk_army_def_classic": 1
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 890
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1160
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1340
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1540
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1750
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1970
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2200
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3680
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4080
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4500
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 2,
+        "atk_army_def_classic": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4930
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5402
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5874
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 3,
+        "atk_army_def_classic": 3
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6346
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragment_of_one_up_kit",
+              "name": {
+                "fr": "Fragment of One Up Kit",
+                "en": "Fragment of One Up Kit"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

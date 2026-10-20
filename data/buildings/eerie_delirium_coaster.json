@@ -1,0 +1,1951 @@
+{
+  "id": "eerie_delirium_coaster",
+  "name": {
+    "fr": "Montagnes russes étranges en folie",
+    "en": "Eerie Delirium Coaster"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HAL24A11-62f3296bd.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 7,
+    "h": 4
+  },
+  "road": "none",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Eerie_Delirium_Coaster",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 359,
+        "atk_army_def_gbg": 359,
+        "population": 450,
+        "happiness": -1560
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 4060
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 360,
+        "atk_army_def_gbg": 360,
+        "population": 960,
+        "happiness": -2700
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 9730
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 361,
+        "atk_army_def_gbg": 361,
+        "population": 1470,
+        "happiness": -2980
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 16220
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 362,
+        "atk_army_def_gbg": 362,
+        "population": 2070,
+        "happiness": -3330
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 22710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 363,
+        "atk_army_def_gbg": 363,
+        "population": 2720,
+        "happiness": -3710
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 30010
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 364,
+        "atk_army_def_gbg": 364,
+        "population": 3430,
+        "happiness": -4360
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 38120
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 365,
+        "atk_army_def_gbg": 365,
+        "population": 4190,
+        "happiness": -4920
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 46230
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 366,
+        "atk_army_def_gbg": 366,
+        "population": 5000,
+        "happiness": -5400
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 54340
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 367,
+        "atk_army_def_gbg": 367,
+        "population": 5860,
+        "happiness": -5780
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 63260
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 368,
+        "atk_army_def_gbg": 368,
+        "population": 6760,
+        "happiness": -6020
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 72180
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 369,
+        "atk_army_def_gbg": 369,
+        "population": 7700,
+        "happiness": -7000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 81110
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 370,
+        "atk_army_def_gbg": 370,
+        "population": 8680,
+        "happiness": -8500
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 90840
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 371,
+        "atk_army_def_gbg": 371,
+        "population": 9700,
+        "happiness": -10180
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 99760
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 372,
+        "atk_army_def_gbg": 372,
+        "population": 10760,
+        "happiness": -11850
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 109490
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 373,
+        "atk_army_def_gbg": 373,
+        "population": 11860,
+        "happiness": -13680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 120040
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 374,
+        "atk_army_def_gbg": 374,
+        "population": 12980,
+        "happiness": -16340
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 129770
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 375,
+        "atk_army_def_gbg": 375,
+        "population": 20550,
+        "happiness": -26140
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 210070
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 376,
+        "atk_army_def_gbg": 376,
+        "population": 22320,
+        "happiness": -28410
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 225480
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 377,
+        "atk_army_def_gbg": 377,
+        "population": 24120,
+        "happiness": -30690
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 241700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 378,
+        "atk_army_def_gbg": 378,
+        "population": 25980,
+        "happiness": -33070
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 257110
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 379,
+        "atk_army_def_gbg": 379,
+        "population": 27870,
+        "happiness": -35460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 273330
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 380,
+        "atk_army_def_gbg": 380,
+        "population": 29800,
+        "happiness": -37930
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 289550
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 280,
+        "atk_army_def_classic": 280,
+        "atk_army_att_gbg": 381,
+        "atk_army_def_gbg": 381,
+        "population": 31790,
+        "happiness": -40460
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 306580
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 10
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_renovation_kit",
+              "name": {
+                "fr": "Fragments of Renovation Kit",
+                "en": "Fragments of Renovation Kit"
+              },
+              "amount": 2,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 5,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 400
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 300
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

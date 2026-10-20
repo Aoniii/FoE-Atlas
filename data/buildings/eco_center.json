@@ -1,0 +1,1767 @@
+{
+  "id": "eco_center",
+  "name": {
+    "fr": "Centre éco",
+    "en": "Eco Center"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_CARE24A8-debcf7427.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 6,
+    "h": 6
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Eco_Center",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -280,
+        "happiness": 3610
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 65
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 95
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -600,
+        "happiness": 6230
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 540
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 68
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 100
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -930,
+        "happiness": 6890
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 670
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 71
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 105
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -1300,
+        "happiness": 7680
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 790
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 74
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -1710,
+        "happiness": 8570
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 910
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 77
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 115
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -2160,
+        "happiness": 10080
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1090
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 80
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 120
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -2640,
+        "happiness": 11360
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1510
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 83
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -3150,
+        "happiness": 12480
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2120
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 86
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 130
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -3690,
+        "happiness": 13350
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 3030
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 89
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 135
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -4250,
+        "happiness": 13910
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 4240
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 92
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 140
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -4850,
+        "happiness": 16160
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 6050
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 95
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 145
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -5460,
+        "happiness": 19620
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 8170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 98
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 150
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -6110,
+        "happiness": 23510
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 9990
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 101
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 155
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -6780,
+        "happiness": 27370
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 12100
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 104
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 160
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -7470,
+        "happiness": 31590
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 13920
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 107
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 165
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "fp_boost": 1,
+        "population": -8180,
+        "happiness": 37740
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 16940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 110
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 170
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "fp_boost": 2,
+        "population": -12940,
+        "happiness": 60380
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 20580
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 113
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 175
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "fp_boost": 2,
+        "population": -14060,
+        "happiness": 65620
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 24210
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 116
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 180
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "fp_boost": 2,
+        "population": -15190,
+        "happiness": 70890
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 27840
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 119
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 185
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "fp_boost": 2,
+        "population": -16360,
+        "happiness": 76370
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 31470
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 122
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 190
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "fp_boost": 2,
+        "population": -17550,
+        "happiness": 81900
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 35100
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 125
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 195
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "fp_boost": 2,
+        "population": -18740,
+        "happiness": 87430
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 38730
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 128
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 200
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "fp_boost": 2,
+        "population": -19930,
+        "happiness": 92960
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 42360
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 131
+            },
+            {
+              "type": "stat",
+              "stat": "goods_next",
+              "amount": 205
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_earth_s_guardians_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Earth's Guardians Selection Kit",
+                    "en": "Fragments of Earth's Guardians Selection Kit"
+                  },
+                  "amount": 4,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_eco_sanctum_golden_upgrade_kit",
+                  "name": {
+                    "fr": "Fragments of Eco Sanctum Golden Upgrade Kit",
+                    "en": "Fragments of Eco Sanctum Golden Upgrade Kit"
+                  },
+                  "amount": 10,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

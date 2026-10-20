@@ -1,0 +1,2346 @@
+{
+  "id": "druid_hut_lv_7",
+  "name": {
+    "fr": "Hutte du druide - Niv. 7",
+    "en": "Druid Hut - Lv. 7"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_PAT23A7-2aec159e6.png",
+  "event": "Events and Questlines",
+  "chain": {
+    "id": "druid_hut",
+    "level": 7
+  },
+  "size": {
+    "w": 5,
+    "h": 4
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Druid_Hut_-_Lv._7",
+  "ages": {
+    "BronzeAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 100
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 160
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 220
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 300
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 450
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 560
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 680
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 850
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1070
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1390
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1610
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1840
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2090
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2360
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2650
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4420
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4890
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5390
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5920
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6503
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 7086
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 7669
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 70,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_patience",
+                  "name": {
+                    "fr": "Fragments of Tree of Patience",
+                    "en": "Fragments of Tree of Patience"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 30,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_tree_of_vitality",
+                  "name": {
+                    "fr": "Fragments of Tree of Vitality",
+                    "en": "Fragments of Tree of Vitality"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "boost_coins_large",
+                  "name": {
+                    "fr": "Coin Boost",
+                    "en": "Coin Boost"
+                  },
+                  "amount": 100,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/boost_coins_large-469eb65e9.png"
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "rush_mass_coins_medium",
+                  "name": {
+                    "fr": "h Mass Coin Rush",
+                    "en": "h Mass Coin Rush"
+                  },
+                  "amount": 8,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/rush_mass_coins_medium-0a2bf16ed.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

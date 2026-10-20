@@ -1,0 +1,1721 @@
+{
+  "id": "eerie_nightmare_coaster",
+  "name": {
+    "fr": "Montagnes russes cauchemardesques",
+    "en": "Eerie Nightmare Coaster"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_HAL24A10-f23d675f9.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 7,
+    "h": 4
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Eerie_Nightmare_Coaster",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 80,
+        "atk_army_def_classic": 80,
+        "population": 428,
+        "happiness": -514
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 3640
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 81,
+        "atk_army_def_classic": 81,
+        "population": 925,
+        "happiness": -1110
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 8720
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 82,
+        "atk_army_def_classic": 82,
+        "population": 1421,
+        "happiness": -1705
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 14540
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 83,
+        "atk_army_def_classic": 83,
+        "population": 2001,
+        "happiness": -2401
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 20360
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 84,
+        "atk_army_def_classic": 84,
+        "population": 2622,
+        "happiness": -3146
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 26900
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 85,
+        "atk_army_def_classic": 85,
+        "population": 3312,
+        "happiness": -3974
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 34170
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 86,
+        "atk_army_def_classic": 86,
+        "population": 4043,
+        "happiness": -4852
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 41440
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 87,
+        "atk_army_def_classic": 87,
+        "population": 4830,
+        "happiness": -5796
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 48710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 88,
+        "atk_army_def_classic": 88,
+        "population": 5658,
+        "happiness": -6790
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 56710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 89,
+        "atk_army_def_classic": 89,
+        "population": 6527,
+        "happiness": -7832
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 64700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 90,
+        "atk_army_def_classic": 90,
+        "population": 7438,
+        "happiness": -8926
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 72700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 91,
+        "atk_army_def_classic": 91,
+        "population": 8377,
+        "happiness": -10052
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 81420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 92,
+        "atk_army_def_classic": 92,
+        "population": 9370,
+        "happiness": -11244
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 89420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 93,
+        "atk_army_def_classic": 93,
+        "population": 10391,
+        "happiness": -12469
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 98150
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 94,
+        "atk_army_def_classic": 94,
+        "population": 11454,
+        "happiness": -13745
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 107600
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 95,
+        "atk_army_def_classic": 95,
+        "population": 12530,
+        "happiness": -15036
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 116320
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 96,
+        "atk_army_def_classic": 96,
+        "population": 19844,
+        "happiness": -23813
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 188290
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 97,
+        "atk_army_def_classic": 97,
+        "population": 21556,
+        "happiness": -25867
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 202110
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 98,
+        "atk_army_def_classic": 98,
+        "population": 23294,
+        "happiness": -27953
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 216650
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 99,
+        "atk_army_def_classic": 99,
+        "population": 25088,
+        "happiness": -30106
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 230460
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 100,
+        "atk_army_def_classic": 100,
+        "population": 26910,
+        "happiness": -32292
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 245000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 101,
+        "atk_army_def_classic": 101,
+        "population": 28732,
+        "happiness": -34478
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 259550
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_gbg": 30,
+        "atk_army_def_gbg": 30,
+        "atk_army_att_classic": 102,
+        "atk_army_def_classic": 102,
+        "population": 30554,
+        "happiness": -36664
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 274100
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 75
+            },
+            {
+              "type": "stat",
+              "stat": "units",
+              "amount": 8
+            },
+            {
+              "type": "item",
+              "id": "fragment_fragments_of_mass_self_aid_kit",
+              "name": {
+                "fr": "Fragments of Mass Self-Aid Kit",
+                "en": "Fragments of Mass Self-Aid Kit"
+              },
+              "amount": 3,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods",
+                  "amount": 200
+                }
+              ]
+            },
+            {
+              "chance": 50,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "goods_prev",
+                  "amount": 250
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

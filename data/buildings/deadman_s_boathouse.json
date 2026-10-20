@@ -1,0 +1,939 @@
+{
+  "id": "deadman_s_boathouse",
+  "name": {
+    "fr": "Hangar à bateaux du mort",
+    "en": "Deadman's Boathouse"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_SummerBonus22Deadman-562b5978e.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 4,
+    "h": 4
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Deadman's_Boathouse",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 8,
+        "def_army_def_classic": 13,
+        "population": 162,
+        "happiness": 882
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 28
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 8,
+        "def_army_def_classic": 14,
+        "population": 348,
+        "happiness": 1588
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2700
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 35
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 9,
+        "def_army_def_classic": 14,
+        "population": 534,
+        "happiness": 1904
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4500
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 43
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 9,
+        "def_army_def_classic": 15,
+        "population": 750,
+        "happiness": 2280
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6300
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 51
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 10,
+        "def_army_def_classic": 15,
+        "population": 984,
+        "happiness": 2694
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 8300
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 59
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 10,
+        "def_army_def_classic": 16,
+        "population": 1242,
+        "happiness": 3252
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 12600
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 70
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 11,
+        "def_army_def_classic": 16,
+        "population": 1518,
+        "happiness": 3788
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 15700
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 98
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 11,
+        "def_army_def_classic": 17,
+        "population": 1812,
+        "happiness": 4302
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 19100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 136
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 12,
+        "def_army_def_classic": 17,
+        "population": 2124,
+        "happiness": 4784
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 23700
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 195
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 12,
+        "def_army_def_classic": 18,
+        "population": 2448,
+        "happiness": 5218
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 29900
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 272
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 13,
+        "def_army_def_classic": 18,
+        "population": 2790,
+        "happiness": 6010
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 38900
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 389
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 13,
+        "def_army_def_classic": 19,
+        "population": 3144,
+        "happiness": 7054
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 45000
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 525
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 14,
+        "def_army_def_classic": 19,
+        "population": 3516,
+        "happiness": 8206
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 51600
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 642
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 14,
+        "def_army_def_classic": 20,
+        "population": 3900,
+        "happiness": 9360
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 58600
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 778
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "def_army_def_classic": 20,
+        "population": 4296,
+        "happiness": 10596
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 66100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 894
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 15,
+        "def_army_def_classic": 21,
+        "population": 4704,
+        "happiness": 12234
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 74100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1088
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "def_army_def_classic": 21,
+        "population": 7446,
+        "happiness": 19486
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 123700
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1322
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 16,
+        "def_army_def_classic": 22,
+        "population": 8088,
+        "happiness": 21178
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 137000
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1555
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "def_army_def_classic": 22,
+        "population": 8742,
+        "happiness": 22882
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 151100
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 1788
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 17,
+        "def_army_def_classic": 23,
+        "population": 9414,
+        "happiness": 24644
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 165800
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2021
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 18,
+        "def_army_def_classic": 24,
+        "population": 10138,
+        "happiness": 26543
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 181931
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2285
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 18,
+        "def_army_def_classic": 25,
+        "population": 10862,
+        "happiness": 28442
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 198062
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2549
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 19,
+        "def_army_def_classic": 26,
+        "population": 11586,
+        "happiness": 30341
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 214193
+            },
+            {
+              "type": "stat",
+              "stat": "medals",
+              "amount": 2813
+            },
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 18
+            },
+            {
+              "type": "item",
+              "id": "dead_man_stash",
+              "name": {
+                "fr": "Deadman's Bounty",
+                "en": "Deadman's Bounty"
+              },
+              "amount": 1,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/dead_man_stash-1fcb474f0.png"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

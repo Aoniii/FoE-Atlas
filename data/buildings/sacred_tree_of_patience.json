@@ -1,0 +1,1445 @@
+{
+  "id": "sacred_tree_of_patience",
+  "name": {
+    "fr": "Arbre sacré de la patience",
+    "en": "Sacred Tree of Patience"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_PAT23C2-c68bb6011.png",
+  "event": "Events and Questlines",
+  "size": {
+    "w": 1,
+    "h": 1
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Sacred_Tree_of_Patience",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_def_classic": 1,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 1,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 60
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_def_classic": 1,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 1,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 160
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_def_classic": 1,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 1,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 260
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_def_classic": 1,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 1,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 380
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_def_classic": 1,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 1,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 500
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_def_classic": 1,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 1,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 760
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_def_classic": 2,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 2,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_def_classic": 2,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 2,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1140
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_def_classic": 2,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 2,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_def_classic": 2,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 2,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1780
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_def_classic": 2,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 2,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2320
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_def_classic": 2,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 2,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 2680
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_def_classic": 2,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 2,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3080
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_def_classic": 3,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 3,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3500
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_def_classic": 3,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 3,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3940
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_def_classic": 3,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 3,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4400
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_def_classic": 3,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 3,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 7360
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_def_classic": 3,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 3,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 8160
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_def_classic": 3,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 3,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 9000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_def_classic": 3,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 3,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 9860
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_def_classic": 4,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 4,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 10804
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_def_classic": 4,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 4,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 11748
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_def_classic": 4,
+        "atk_army_def_gbg": 1,
+        "def_army_def_classic": 4,
+        "def_army_def_ge": 2
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 12692
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "goods",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 25,
+              "rewards": [
+                {
+                  "type": "stat",
+                  "stat": "fp",
+                  "amount": 8
+                }
+              ]
+            },
+            {
+              "chance": 75,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "motivate_one",
+                  "name": {
+                    "fr": "x Self Aid Kits",
+                    "en": "x Self Aid Kits"
+                  },
+                  "amount": 2,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/motivate_one-cc1679c90.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
