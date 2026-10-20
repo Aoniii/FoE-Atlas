@@ -11,19 +11,16 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { getPreferredAge, setPreferredAge } from "@/lib/age-preference"
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { AgeDetails } from "./building-card"
+import { chainStepLabels } from "./chain-labels"
 import { eventLabel, formatNumber, formatStat, longStatLabel } from "./format"
 import { StatIcon } from "./stat-icon"
 import { StatIconsContext } from "./stat-icons-context"
 
 const route = getRouteApi("/buildings/$id")
-
-// "… - Niv. 3" -> "3"; kit upgrades keep their name ("Moulin à eau de Whisperwood sylvestre")
-function chainStepLabel(name: string, level: number): string {
-  return /(Niv\.|Lv\.)\s*\d+\s*$/.test(name) ? String(level) : name
-}
 
 // One page for every building: /buildings/<id>?age=<AgeId>
 export function BuildingPage() {
@@ -33,7 +30,15 @@ export function BuildingPage() {
   const navigate = route.useNavigate()
 
   const ages = AGES.filter((age) => building.ages[age.id])
-  const age: AgeId = search.age && building.ages[search.age] ? search.age : ages[ages.length - 1].id
+  // URL first, then the age chosen last time, then the latest one the building exists in
+  const preferred = getPreferredAge()
+  const age: AgeId =
+    search.age && building.ages[search.age]
+      ? search.age
+      : preferred && building.ages[preferred]
+        ? preferred
+        : ages[ages.length - 1].id
+  const stepLabels = chainStepLabels(building.chainLevels)
   const tiles = tileCount(building.size, building.road)
   const share = roadShare(building.size, building.road)
   const name = localized(building.name, locale)
@@ -44,8 +49,10 @@ export function BuildingPage() {
   const perAge = ages.map((a) => ({ id: a.id, stats: aggregateStats(building.ages[a.id]!) }))
   const statKeys = STAT_KEYS.filter((key) => perAge.some((row) => row.stats[key]))
   const ageItems = ages.map((a) => ({ value: a.id, label: localized(a.name, locale) }))
-  const setAge = (value: AgeId) =>
+  const setAge = (value: AgeId) => {
+    setPreferredAge(value)
     navigate({ search: (s) => ({ ...s, age: value }), replace: true, resetScroll: false })
+  }
 
   return (
     <StatIconsContext value={icons}>
@@ -110,7 +117,7 @@ export function BuildingPage() {
                     level.id === building.id && "border-primary bg-muted font-medium",
                   )}
                 >
-                  {chainStepLabel(localized(level.name, locale), level.level)}
+                  {localized(stepLabels.get(level.id) ?? level.name, locale)}
                 </Link>
               ))}
             </div>

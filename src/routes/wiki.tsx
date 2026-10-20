@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router"
 import { z } from "zod"
 import { LATEST_AGE } from "@/core/ages"
 import { AgeIdSchema, BuildingTypeSchema } from "@/core/building"
+import { getPreferredAge } from "@/lib/age-preference"
 import { useI18n } from "@/lib/i18n"
 import { fetchAgeBuildings, fetchIndex } from "@/wiki/data"
 import { WikiPage } from "@/wiki/wiki-page"
@@ -15,7 +16,7 @@ const searchSchema = z.object({
 
 export const Route = createFileRoute("/wiki")({
   validateSearch: searchSchema,
-  loaderDeps: ({ search }) => ({ age: search.age ?? LATEST_AGE }),
+  loaderDeps: ({ search }) => ({ age: search.age ?? getPreferredAge() ?? LATEST_AGE }),
   loader: async ({ deps }) => {
     const [index, buildings] = await Promise.all([fetchIndex(), fetchAgeBuildings(deps.age)])
     return { index, buildings }

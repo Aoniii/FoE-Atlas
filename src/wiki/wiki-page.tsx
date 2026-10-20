@@ -3,6 +3,7 @@ import { getRouteApi } from "@tanstack/react-router"
 import { LATEST_AGE } from "@/core/ages"
 import type { BuildingType } from "@/core/building"
 import { statsOfGroup, type StatKey } from "@/core/stats"
+import { getPreferredAge, setPreferredAge } from "@/lib/age-preference"
 import { useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
 import { BuildingsTable } from "./buildings-table"
@@ -39,7 +40,7 @@ export function WikiPage() {
   const { index, buildings } = route.useLoaderData()
 
   const type: BuildingType = search.type ?? "special"
-  const age = search.age ?? LATEST_AGE
+  const age = search.age ?? getPreferredAge() ?? LATEST_AGE
   const [visibleStats, setVisibleStats] = usePersistentState("wiki.columns.v2", DEFAULT_VISIBLE)
   const [scoreKeys, setScoreKeys] = usePersistentState("wiki.score.v3", DEFAULT_SCORE)
 
@@ -82,7 +83,10 @@ export function WikiPage() {
           }
           ages={index.ages.map((a) => a.id)}
           age={age}
-          onAgeChange={(value) => navigate({ search: (s) => ({ ...s, age: value }) })}
+          onAgeChange={(value) => {
+            setPreferredAge(value)
+            navigate({ search: (s) => ({ ...s, age: value }) })
+          }}
           events={events}
           event={search.event}
           onEventChange={(value) => navigate({ search: (s) => ({ ...s, event: value }) })}
