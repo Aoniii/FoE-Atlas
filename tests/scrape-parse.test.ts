@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs"
 import { describe, expect, it } from "vitest"
+import { buildChains, slug } from "../scripts/scrape/chains"
 import { eventFromAsset } from "../scripts/scrape/events"
 import { iconKey, isBuildingPage, parseBuildingPage } from "../scripts/scrape/parse"
 
@@ -149,5 +150,44 @@ describe("event from asset id", () => {
 
   it("ignores ids that are not special buildings", () => {
     expect(eventFromAsset("R_BronzeAge_Hut1")).toBeUndefined()
+  })
+})
+
+describe("upgrade chains", () => {
+  const node = (title: string, upgradesTo: string[] = []) => ({
+    id: slug(title),
+    title,
+    upgradesTo,
+  })
+
+  it("follows kit upgrades after the numbered levels", () => {
+    const chains = buildChains([
+      node("Whisperwood Watermill - Lv. 1", ["Whisperwood Watermill - Lv. 2"]),
+      node("Whisperwood Watermill - Lv. 2", ["Sylvan Whisperwood Watermill"]),
+      node("Sylvan Whisperwood Watermill", ["Arcadian Whisperwood Watermill"]),
+      node("Arcadian Whisperwood Watermill"),
+      node("Unrelated Building"),
+    ])
+    expect(chains.get("arcadian_whisperwood_watermill")).toEqual({
+      id: "whisperwood_watermill",
+      level: 4,
+    })
+    expect(chains.get("whisperwood_watermill_lv_1")?.level).toBe(1)
+    expect(chains.has("unrelated_building")).toBe(false)
+  })
+
+  it("links numbered titles when the wiki misses a link", () => {
+    const chains = buildChains([node("Terrace Farm"), node("Terrace Farm - Lv. 2")])
+    expect(chains.get("terrace_farm_lv_2")).toEqual({ id: "terrace_farm", level: 2 })
+  })
+
+  it("gives variants of the same step the same level", () => {
+    const chains = buildChains([
+      node("Resort - Lv. 1", ["Resort with Garden", "Resort for Couples"]),
+      node("Resort with Garden"),
+      node("Resort for Couples"),
+    ])
+    expect(chains.get("resort_with_garden")?.level).toBe(2)
+    expect(chains.get("resort_for_couples")?.level).toBe(2)
   })
 })

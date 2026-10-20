@@ -20,6 +20,11 @@ import { StatIconsContext } from "./stat-icons-context"
 
 const route = getRouteApi("/buildings/$id")
 
+// "… - Niv. 3" -> "3"; kit upgrades keep their name ("Moulin à eau de Whisperwood sylvestre")
+function chainStepLabel(name: string, level: number): string {
+  return /(Niv\.|Lv\.)\s*\d+\s*$/.test(name) ? String(level) : name
+}
+
 // One page for every building: /buildings/<id>?age=<AgeId>
 export function BuildingPage() {
   const { t, locale } = useI18n()
@@ -96,6 +101,7 @@ export function BuildingPage() {
               {building.chainLevels.map((level) => (
                 <Link
                   key={level.id}
+                  title={localized(level.name, locale)}
                   to="/buildings/$id"
                   params={{ id: level.id }}
                   search={{ age }}
@@ -104,7 +110,7 @@ export function BuildingPage() {
                     level.id === building.id && "border-primary bg-muted font-medium",
                   )}
                 >
-                  {level.level}
+                  {chainStepLabel(localized(level.name, locale), level.level)}
                 </Link>
               ))}
             </div>

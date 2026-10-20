@@ -19,6 +19,8 @@ export type Issue = { kind: IssueKind; detail: string }
 export type ParsedBuilding = {
   // Image asset id: shared by every level of a building
   assetId: string
+  // Titles of the buildings this one upgrades to with a kit
+  upgradesTo: string[]
   image: string
   size: Size
   road: Road
@@ -412,6 +414,9 @@ export function parseBuildingPage(wikitext: string): {
   return {
     building: {
       assetId: image[1],
+      upgradesTo: [...wikitext.matchAll(/upgrades? this building to \[\[([^\]|]+)/g)].map((m) =>
+        m[1].trim(),
+      ),
       image: image[0],
       size: { w: Number(sizeMatch[1]), h: Number(sizeMatch[2]) },
       road,

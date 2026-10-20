@@ -12,6 +12,7 @@ import { createInterface } from "node:readline/promises"
 import { parseArgs, parseEnv } from "node:util"
 import { z } from "zod"
 import { BuildingSchema, LocalizedSchema, type Building } from "../../src/core/building"
+import { buildChains, slug } from "./chains"
 import { eventFromAsset } from "./events"
 import { statIcons, typeFromId } from "./mappings"
 import {
@@ -91,21 +92,9 @@ function countBuildings(cache: Record<string, { content: string }>): number {
   return Object.values(cache).filter((page) => isBuildingPage(page.content)).length
 }
 
-// "Terrace Farm - Lv. 2" -> "terrace_farm_lv_2"
-function slug(text: string): string {
-  return text
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "_")
-    .replace(/^_|_$/g, "")
-}
-
-// "Terrace Farm - Lv. 2" -> { id: "terrace_farm", level: 2 }
-function chainOf(title: string, titles: Set<string>): Building["chain"] {
-  const match = title.match(/^(.*) - Lv\. (\d+)$/)
-  if (!match && !titles.has(`${title} - Lv. 2`)) return undefined
-  return { id: slug(match ? match[1] : title), level: match ? Number(match[2]) : 1 }
+// Level written in the title ("Terrace Farm - Lv. 2" -> 2), to match French titles
+function titleLevel(title: string): number {
+  return Number(title.match(/ - Lv\. (\d+)$/)?.[1] ?? 1)
 }
 
 // Test pages of the wiki ("Dummy Generic Hippodrome", "Placeholder 8", "... Test - Ver. 1.04")
@@ -175,7 +164,6 @@ async function main() {
   // Parse English pages: they define the building list
   const issues: (Issue & { page: string })[] = []
   const parsed = new Map<string, { title: string; building: ParsedBuilding }>()
-  const titles = new Set(Object.keys(enCache))
   for (const [title, page] of Object.entries(enCache).sort(([a], [b]) => a.localeCompare(b))) {
     if (limit && parsed.size >= limit) break
     if (isPlaceholder(title) || !isBuildingPage(page.content)) continue
@@ -188,11 +176,7 @@ async function main() {
   // same image, level and stats -> keep only the most recently edited page
   const kept = new Map<string, string>()
   for (const [id, { title, building }] of parsed) {
-    const key = [
-      building.assetId,
-      chainOf(title, titles)?.level ?? 1,
-      JSON.stringify(building.ages),
-    ].join("|")
+    const key = [building.assetId, titleLevel(title), JSON.stringify(building.ages)].join("|")
     const other = kept.get(key)
     if (!other) {
       kept.set(key, id)
@@ -215,7 +199,15 @@ async function main() {
     [...parsed].map(([id, { title, building }]) => ({
       id,
       assetId: building.assetId,
-      level: chainOf(title, titles)?.level ?? 1,
+      level: titleLevel(title),
+    })),
+  )
+
+  const chains = buildChains(
+    [...parsed].map(([id, { title, building }]) => ({
+      id,
+      title,
+      upgradesTo: building.upgradesTo,
     })),
   )
 
@@ -238,7 +230,7 @@ async function main() {
       image: building.image,
       event: override.event ?? event?.event,
       eventYear: event?.year,
-      chain: chainOf(title, titles),
+      chain: chains.get(id),
       size: building.size,
       road: building.road,
       reliability: "official",
