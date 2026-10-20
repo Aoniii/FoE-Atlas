@@ -12,6 +12,10 @@ export const CHANGELOG: Release[] = [
         fr: "Page Changelog : la liste des changements de chaque version",
         en: "Changelog page: the list of changes of each release",
       },
+      {
+        fr: "Bouton « Tout décocher » pour le score de rentabilité",
+        en: "“Uncheck all” button for the efficiency score",
+      },
     ],
   },
   {

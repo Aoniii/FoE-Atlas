@@ -1,4 +1,4 @@
-import { Columns3, RotateCcw } from "lucide-react"
+import { Columns3, RotateCcw, SquareX } from "lucide-react"
 import { AGES, type AgeId } from "@/core/ages"
 import type { BuildingType } from "@/core/building"
 import { isScorable } from "@/core/efficiency"
@@ -50,6 +50,8 @@ type FiltersProps = {
   visibleStats: StatKey[]
   onToggleStat: (key: StatKey, visible: boolean) => void
   onReset: () => void
+  scoreCount: number
+  onUncheckAll: () => void
 }
 
 export function WikiFilters(props: FiltersProps) {
@@ -162,6 +164,13 @@ export function WikiFilters(props: FiltersProps) {
             <RotateCcw />
             {t.wiki.reset}
           </Button>
+
+          {props.type === "special" && (
+            <Button variant="ghost" onClick={props.onUncheckAll} disabled={props.scoreCount === 0}>
+              <SquareX />
+              {t.wiki.uncheckAll}
+            </Button>
+          )}
         </>
       )}
     </div>

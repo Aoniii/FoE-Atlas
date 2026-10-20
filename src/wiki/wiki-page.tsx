@@ -98,6 +98,8 @@ export function WikiPage() {
           onEventChange={(value) => navigate({ search: (s) => ({ ...s, event: value }) })}
           visibleStats={visibleStats}
           onToggleStat={(key, on) => setVisibleStats((list) => toggle(list, key, on))}
+          scoreCount={scoreKeys.length}
+          onUncheckAll={() => setScoreKeys([])}
           onReset={() => {
             setVisibleStats(DEFAULT_VISIBLE)
             setScoreKeys(DEFAULT_SCORE)
