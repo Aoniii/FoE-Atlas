@@ -19,7 +19,7 @@ import { formatNumber } from "@/wiki/format"
 import { ScorePill } from "@/wiki/score-pill"
 import { DEFAULT_SCORE, useScoreKeys } from "@/wiki/score-settings"
 import { StatIconsContext } from "@/wiki/stat-icons-context"
-import { ScorePanel } from "@/wiki/wiki-filters"
+import { ScoreActions, ScorePanel } from "@/wiki/wiki-filters"
 import type { StatKey } from "@/core/stats"
 
 const route = getRouteApi("/city")
@@ -76,19 +76,11 @@ export function CityPage() {
                   )
                 }
               />
-              <div className="flex gap-2">
-                <Button variant="ghost" size="sm" onClick={() => setScoreKeys(DEFAULT_SCORE)}>
-                  {t.wiki.reset}
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setScoreKeys([])}
-                  disabled={scoreKeys.length === 0}
-                >
-                  {t.wiki.uncheckAll}
-                </Button>
-              </div>
+              <ScoreActions
+                scoreCount={scoreKeys.length}
+                onReset={() => setScoreKeys(DEFAULT_SCORE)}
+                onUncheckAll={() => setScoreKeys([])}
+              />
             </div>
             <div className="flex flex-wrap items-center gap-3">
               <Select

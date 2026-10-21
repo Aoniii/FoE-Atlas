@@ -50,8 +50,6 @@ type FiltersProps = {
   visibleStats: StatKey[]
   onToggleStat: (key: StatKey, visible: boolean) => void
   onReset: () => void
-  scoreCount: number
-  onUncheckAll: () => void
 }
 
 export function WikiFilters(props: FiltersProps) {
@@ -160,19 +158,40 @@ export function WikiFilters(props: FiltersProps) {
             </DropdownMenu>
           </Field>
 
-          <Button variant="ghost" onClick={props.onReset}>
-            <RotateCcw />
-            {t.wiki.reset}
-          </Button>
-
-          {props.type === "special" && (
-            <Button variant="ghost" onClick={props.onUncheckAll} disabled={props.scoreCount === 0}>
-              <SquareX />
-              {t.wiki.uncheckAll}
+          {/* With a score, both buttons sit under its panel (ScoreActions) */}
+          {props.type !== "special" && (
+            <Button variant="ghost" onClick={props.onReset}>
+              <RotateCcw />
+              {t.wiki.reset}
             </Button>
           )}
         </>
       )}
+    </div>
+  )
+}
+
+// Under the score panel, on the wiki and on the City tab
+export function ScoreActions({
+  onReset,
+  onUncheckAll,
+  scoreCount,
+}: {
+  onReset: () => void
+  onUncheckAll: () => void
+  scoreCount: number
+}) {
+  const { t } = useI18n()
+  return (
+    <div className="flex gap-2">
+      <Button variant="ghost" size="sm" onClick={onReset}>
+        <RotateCcw />
+        {t.wiki.reset}
+      </Button>
+      <Button variant="ghost" size="sm" onClick={onUncheckAll} disabled={scoreCount === 0}>
+        <SquareX />
+        {t.wiki.uncheckAll}
+      </Button>
     </div>
   )
 }

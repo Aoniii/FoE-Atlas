@@ -12,7 +12,7 @@ import { GreatBuildingGrid } from "./great-building-grid"
 import { toRows } from "./data"
 import { eventName, formatNumber } from "./format"
 import { StatIconsContext } from "./stat-icons-context"
-import { ScorePanel, WikiFilters } from "./wiki-filters"
+import { ScoreActions, ScorePanel, WikiFilters } from "./wiki-filters"
 
 const route = getRouteApi("/wiki")
 
@@ -86,8 +86,6 @@ export function WikiPage() {
           onEventChange={(value) => navigate({ search: (s) => ({ ...s, event: value }) })}
           visibleStats={visibleStats}
           onToggleStat={(key, on) => setVisibleStats((list) => toggle(list, key, on))}
-          scoreCount={scoreKeys.length}
-          onUncheckAll={() => setScoreKeys([])}
           onReset={() => {
             setVisibleStats(DEFAULT_VISIBLE)
             setScoreKeys(DEFAULT_SCORE)
@@ -97,10 +95,20 @@ export function WikiPage() {
         {isGreatBuildings && <GreatBuildingGrid cards={greatBuildings} />}
 
         {type === "special" && (
-          <ScorePanel
-            scoreKeys={scoreKeys}
-            onToggle={(key, on) => setScoreKeys((list) => toggle(list, key, on))}
-          />
+          <div className="flex flex-col gap-2">
+            <ScorePanel
+              scoreKeys={scoreKeys}
+              onToggle={(key, on) => setScoreKeys((list) => toggle(list, key, on))}
+            />
+            <ScoreActions
+              scoreCount={scoreKeys.length}
+              onUncheckAll={() => setScoreKeys([])}
+              onReset={() => {
+                setVisibleStats(DEFAULT_VISIBLE)
+                setScoreKeys(DEFAULT_SCORE)
+              }}
+            />
+          </div>
         )}
 
         {!isGreatBuildings && (
