@@ -44,10 +44,10 @@ export const GreatBuildingSchema = z.object({
 export type GreatBuilding = z.infer<typeof GreatBuildingSchema>
 
 // Highest level offered by the level picker and the rush calculator
-export const GB_MAX_LEVEL = 400
+export const GB_MAX_LEVEL = 500
 
 // Light entry of the Great Buildings grid
 export type GreatBuildingCard = Pick<GreatBuilding, "id" | "name" | "image" | "age"> & {
-  // Has silver or gold leagues on the beta server (prestige rework)
+  // Has the gold tier on the beta server (prestige rework)
   beta?: boolean
 }

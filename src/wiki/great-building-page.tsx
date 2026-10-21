@@ -2,7 +2,15 @@ import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import { AGES } from "@/core/ages"
 import { roadShare, tileCount } from "@/core/efficiency"
-import { betaLabel, type BetaGreatBuilding, type BetaTier, type BetaValue } from "@/core/gb-beta"
+import {
+  betaCostAt,
+  betaLabel,
+  betaValueAt,
+  GOLD_FIRST_LEVEL,
+  type BetaGreatBuilding,
+  type BetaTier,
+  type BetaValue,
+} from "@/core/gb-beta"
 import { MANUAL_GB_MODELS } from "@/core/gb-models"
 import { GB_MAX_LEVEL } from "@/core/great-building"
 import { levelCost } from "@/core/rush"
@@ -178,17 +186,22 @@ export function GreatBuildingPage() {
 
 const TIER_STYLES: Record<BetaTier, string> = {
   copper: "bg-orange-700/80 text-white",
-  silver: "bg-slate-400 text-slate-950",
   gold: "bg-yellow-400 text-yellow-950",
 }
 
 // Same level on the beta server (prestige rework), in orange below the live values
 function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) {
   const { t, locale } = useI18n()
-  const rows = beta.rows.filter((r) => r.level <= level)
-  const row = rows.at(-1)
-  const total = rows.reduce((sum, r) => sum + r.cost, 0)
-  const format = (value: BetaValue | null | undefined, percent: boolean) => {
+  const cost = betaCostAt(beta, level)
+  // Unknown as soon as one level cost is
+  let total: number | undefined = 0
+  for (let l = 1; l <= level && total !== undefined; l++) {
+    const c = betaCostAt(beta, l)
+    total = c === undefined ? undefined : total + c
+  }
+  const fp = (value: number | undefined) =>
+    value === undefined ? "–" : `≈ ${formatNumber(value, locale)}`
+  const format = (value: BetaValue | null, percent: boolean) => {
     if (!value) return "–"
     const text = `${formatNumber(value.value, locale, 2)}${percent ? " %" : ""}`
     return value.count === undefined ? text : `${formatNumber(value.count, locale)} × ${text}`
@@ -205,12 +218,16 @@ function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) 
         </p>
       </div>
       <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-        <BetaStat label={t.greatBuilding.cost} value={formatNumber(row?.cost ?? 0, locale)} />
-        <BetaStat label={t.greatBuilding.totalCost} value={formatNumber(total, locale)} />
+        <BetaStat
+          label={t.greatBuilding.cost}
+          value={fp(cost)}
+          hint={cost === undefined ? t.greatBuilding.betaCostUnknown : undefined}
+        />
+        <BetaStat label={t.greatBuilding.totalCost} value={fp(total)} />
         {beta.columns.map((column, index) => {
-          const value = row?.values[index]
-          // Locked tier: level where it unlocks
-          const unlock = value ? undefined : beta.rows.find((r) => r.values[index])?.level
+          const value = betaValueAt(column, level)
+          // Locked Gold tier: level where it unlocks
+          const unlock = value ? undefined : GOLD_FIRST_LEVEL
           return (
             <BetaStat
               key={index}

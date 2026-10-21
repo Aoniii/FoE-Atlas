@@ -57,6 +57,7 @@ scraper:
 gb-readings:
 	pnpm gb-readings
 
-# Great Buildings of the beta server (prestige rework) from foebeta.com into data/ (after the scraper)
+# Great Buildings of the beta server (prestige rework) from a capture cleaned by
+# `pnpm har-extract <file.har> beta` into data/ (after the scraper)
 gb-beta:
 	pnpm gb-beta

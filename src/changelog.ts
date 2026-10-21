@@ -5,6 +5,24 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.7",
+    date: "2026-10-21",
+    changes: [
+      {
+        fr: "Bêta : effets des monuments repris des données du jeu (refonte du 8 octobre : plus de rang argent, rang or du niveau 101 au 500 pour 21 GM), au lieu de foebeta.com qui n'était plus à jour",
+        en: "Beta: Great Building effects from the game's own data (October 8 redesign: no more silver tier, gold tier from level 101 to 500 for 21 buildings), instead of the outdated foebeta.com",
+      },
+      {
+        fr: "Bêta : valeurs exactes aux paliers, très proches entre deux ; coûts approchés",
+        en: "Beta: exact values on milestone levels, very close in between; approximate costs",
+      },
+      {
+        fr: "Monuments : niveaux jusqu'à 500",
+        en: "Great Buildings: levels up to 500",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.6",
     date: "2026-10-21",
     changes: [
