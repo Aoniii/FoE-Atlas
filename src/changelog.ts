@@ -5,6 +5,16 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.8",
+    date: "2026-10-21",
+    changes: [
+      {
+        fr: "Onglet Ville : importe ta ville depuis FoE Helper (fichier ou copier-coller) et vois tes bâtiments notés du moins rentable au plus rentable, à ton ère ; plusieurs serveurs possibles, ta ville reste dans ton navigateur",
+        en: "City tab: import your city from FoE Helper (file or copy-paste) and see your buildings rated from least to most profitable, at your age; several servers possible, your city stays in your browser",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.7",
     date: "2026-10-21",
     changes: [

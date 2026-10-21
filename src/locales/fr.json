@@ -5,7 +5,8 @@
   },
   "nav": {
     "wiki": "Wiki",
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "city": "Ville"
   },
   "search": {
     "placeholder": "Rechercher…",
@@ -202,7 +203,10 @@
     "betaWarning": "Attention : les données de la bêta sont très volatiles et changent très souvent, elles peuvent ne plus correspondre à ce que tu vois en jeu.",
     "betaBadge": "Bêta",
     "betaBadgeTitle": "Ce monument a le rang or sur la bêta (refonte du prestige)",
-    "tiers": { "copper": "Cuivre", "gold": "Or" }
+    "tiers": {
+      "copper": "Cuivre",
+      "gold": "Or"
+    }
   },
   "rush": {
     "title": "Rush",
@@ -241,5 +245,25 @@
     "unavailable": "Non disponible à cet âge",
     "stat": "Stat",
     "limit": "Jusqu'à {max} éléments : le plus ancien est retiré au-delà."
+  },
+  "city": {
+    "title": "Ma ville",
+    "importTitle": "Importer ta ville depuis FoE Helper",
+    "step1": "Dans Forge of Empires, ouvre FoE Helper puis la carte de la ville (Plan de la ville).",
+    "step2": "Clique sur « Télécharger » pour obtenir un fichier .json, ou sur « Copier ».",
+    "step3": "Choisis le fichier ici, ou colle le contenu copié. Recommence quand ta ville change.",
+    "chooseFile": "Choisir le fichier",
+    "paste": "Coller",
+    "invalid": "Ce n'est pas un export de ville de FoE Helper.",
+    "clipboard": "Impossible de lire le presse-papiers : utilise plutôt le fichier.",
+    "privacy": "Ta ville reste dans ton navigateur : rien n'est envoyé sur un serveur.",
+    "player": "Joueur",
+    "remove": "Supprimer",
+    "updated": "Importée le",
+    "loading": "Chargement des bâtiments…",
+    "summary": "{count} bâtiments reconnus, chacun noté à son ère (celle du bâtiment s'il en garde une, sinon la tienne), du moins rentable au plus rentable.",
+    "scoreSettings": "Le score suit les réglages du wiki.",
+    "count": "Nombre",
+    "unknown": "{count} bâtiments non notés (hôtel de ville, Grands Monuments, bâtiments inconnus du wiki…)"
   }
 }

@@ -25,6 +25,9 @@ export function SiteHeader() {
           <Link to="/wiki" className={navLinkClass}>
             {t.nav.wiki}
           </Link>
+          <Link to="/city" className={navLinkClass}>
+            {t.nav.city}
+          </Link>
           <Link to="/changelog" className={navLinkClass}>
             {t.nav.changelog}
           </Link>

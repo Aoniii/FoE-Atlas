@@ -42,7 +42,13 @@ const icons = existsSync("data/icons.json")
 // Files are replaced in place, never the whole folder: the Vite dev server
 // stops serving a public folder that is deleted and recreated
 mkdirSync(OUTPUT, { recursive: true })
-const written = new Set(["index.json", "search.json", "great-buildings.json", "gb-rewards.json"])
+const written = new Set([
+  "index.json",
+  "search.json",
+  "great-buildings.json",
+  "gb-rewards.json",
+  "assets.json",
+])
 
 const ages: { id: AgeId; buildings: number }[] = []
 for (const ageId of AGE_IDS) {
@@ -85,6 +91,16 @@ const search: SearchEntry[] = buildings.map(({ id, name, image, event, eventYear
   eventYear,
 }))
 writeFileSync(`${OUTPUT}/search.json`, JSON.stringify(search))
+
+// Game asset id -> building id, to recognize the buildings of a player's city (City tab).
+// Our images are named after the asset with "SS_" after its first letter:
+// .../W_SS_MultiAge_HERO24H1-<hash>.png is the game's W_MultiAge_HERO24H1
+const assets: Record<string, string> = {}
+for (const { id, image } of buildings) {
+  const file = image?.match(/\/([A-Z])_SS_([^/]+?)-[0-9a-f]+\.\w+$/)
+  if (file) assets[`${file[1]}_${file[2]}`] = id
+}
+writeFileSync(`${OUTPUT}/assets.json`, JSON.stringify(assets))
 
 // One file per building for its own page, with the other levels of its chain
 const BUILDINGS_OUTPUT = `${OUTPUT}/buildings`

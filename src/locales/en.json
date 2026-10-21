@@ -5,7 +5,8 @@
   },
   "nav": {
     "wiki": "Wiki",
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "city": "City"
   },
   "search": {
     "placeholder": "Search…",
@@ -202,7 +203,10 @@
     "betaWarning": "Warning: beta data is very volatile and changes very often, it may no longer match what you see in game.",
     "betaBadge": "Beta",
     "betaBadgeTitle": "This Great Building has the gold tier on the beta (prestige rework)",
-    "tiers": { "copper": "Copper", "gold": "Gold" }
+    "tiers": {
+      "copper": "Copper",
+      "gold": "Gold"
+    }
   },
   "rush": {
     "title": "Rush",
@@ -241,5 +245,25 @@
     "unavailable": "Not available at this age",
     "stat": "Stat",
     "limit": "Up to {max} items: the oldest one is removed beyond."
+  },
+  "city": {
+    "title": "My city",
+    "importTitle": "Import your city from FoE Helper",
+    "step1": "In Forge of Empires, open FoE Helper, then the city map.",
+    "step2": "Click \"Download\" to get a .json file, or \"Copy\".",
+    "step3": "Choose the file here, or paste what you copied. Do it again when your city changes.",
+    "chooseFile": "Choose the file",
+    "paste": "Paste",
+    "invalid": "This is not a FoE Helper city export.",
+    "clipboard": "Can't read the clipboard: use the file instead.",
+    "privacy": "Your city stays in your browser: nothing is sent to a server.",
+    "player": "Player",
+    "remove": "Remove",
+    "updated": "Imported",
+    "loading": "Loading buildings…",
+    "summary": "{count} buildings recognized, each rated at its own age (the building's when it keeps one, yours otherwise), from least to most profitable.",
+    "scoreSettings": "The score follows the wiki settings.",
+    "count": "Count",
+    "unknown": "{count} buildings not rated (town hall, Great Buildings, buildings unknown to the wiki…)"
   }
 }

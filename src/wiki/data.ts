@@ -39,6 +39,8 @@ export const fetchAgeBuildings = (age: AgeId) => fetchJson<AgeBuilding[]>(`${age
 export const fetchGreatBuildings = () => fetchJson<GreatBuildingCard[]>("great-buildings.json")
 export const fetchGreatBuilding = (id: string) =>
   fetchJson<GreatBuilding>(`great-buildings/${encodeURIComponent(id)}.json`)
+// Game asset id -> building id (see scripts/build-data.ts)
+export const fetchAssets = () => fetchJson<Record<string, string>>("assets.json")
 export const fetchGbRewards = () => fetchJson<RewardTables>("gb-rewards.json")
 export const fetchBuilding = (id: string) =>
   fetchJson<BuildingPage>(`buildings/${encodeURIComponent(id)}.json`)
