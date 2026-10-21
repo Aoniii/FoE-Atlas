@@ -249,7 +249,8 @@ const cards: GreatBuildingCard[] = greatBuildings.map(({ id, name, image, age })
   name,
   image,
   age,
-  ...(gbBeta[id] && { beta: true }),
+  // Only with silver or gold leagues: copper-only ones work as today
+  ...(gbBeta[id]?.columns.some((column) => column.tier !== "copper") && { beta: true }),
 }))
 writeFileSync(`${OUTPUT}/great-buildings.json`, JSON.stringify(cards))
 // Great Buildings are searchable too

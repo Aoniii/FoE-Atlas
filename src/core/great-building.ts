@@ -48,6 +48,6 @@ export const GB_MAX_LEVEL = 400
 
 // Light entry of the Great Buildings grid
 export type GreatBuildingCard = Pick<GreatBuilding, "id" | "name" | "image" | "age"> & {
-  // Has effects on the beta server (prestige rework)
+  // Has silver or gold leagues on the beta server (prestige rework)
   beta?: boolean
 }
