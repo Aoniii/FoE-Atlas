@@ -21,6 +21,10 @@ export const CHANGELOG: Release[] = [
         en: "Great Buildings: levels up to 500",
       },
       {
+        fr: "Monuments : les nouveaux effets or de la bêta dans la liste des bonus, en orange, avec leur icône et leur définition",
+        en: "Great Buildings: the beta's new gold effects in the bonus list, in orange, with their icon and definition",
+      },
+      {
         fr: "Monuments : « ≈ » devant chaque valeur calculée et non vérifiée en jeu (au-delà du niveau 80 et sur la bêta)",
         en: 'Great Buildings: "≈" before every value computed and not checked in game (past level 80 and on the beta)',
       },

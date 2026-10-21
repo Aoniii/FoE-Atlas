@@ -3,6 +3,7 @@
 // strings are dropped (but the metadata file name, ?id=), and every JSON field whose name looks
 // like a secret (token, session, password...) is replaced by "[removed]". Posted JSON (the game
 // requests, which say which building was opened) is kept the same way in <file>.request.json.
+// The addresses of the game's icon sheets (public images) are listed in icon-sheets.json.
 //   pnpm har-extract <capture.har> [name]
 // Output: scripts/.cache/har/<name>/ (git-ignored), one file per JSON response and an index.
 // The .har itself holds the player's session: keep it out of the repository and delete it after.
@@ -60,8 +61,15 @@ function main() {
   mkdirSync(output, { recursive: true })
 
   const index: { file: string; method: string; url: string; status: number; bytes: number }[] = []
+  const sheets: string[] = []
   har.log.entries.forEach((entry, i) => {
     const { content } = entry.response
+    // Icon sheets of the game: only their public address (images in a capture can be cut)
+    const { origin, pathname } = new URL(entry.request.url)
+    if (/\/icons\/[^/]+\.png$/.test(pathname)) {
+      sheets.push(`${origin}${pathname}`)
+      return
+    }
     if (!content.text) return
     const text =
       content.encoding === "base64"
@@ -90,6 +98,7 @@ function main() {
     })
   })
   writeFileSync(`${output}/index.json`, JSON.stringify(index, null, 2) + "\n")
+  writeFileSync(`${output}/icon-sheets.json`, JSON.stringify([...new Set(sheets)], null, 2) + "\n")
   console.log(`${index.length} JSON responses in ${output} (largest first):`)
   for (const item of [...index].sort((a, b) => b.bytes - a.bytes).slice(0, 15)) {
     console.log(`  ${(item.bytes / 1024).toFixed(0).padStart(6)} KB  ${item.method} ${item.url}`)

@@ -19,6 +19,8 @@ export const BetaColumnSchema = z.object({
   context: z.string(),
   tier: BetaTierSchema,
   percent: z.boolean(),
+  // File in public/beta-icons/, from the game's icon sheet
+  icon: z.string().optional(),
   // Exact values at the milestone levels, in level order
   milestones: z.array(
     z.object({ level: z.number().int().positive() }).extend(BetaValueSchema.shape),
@@ -223,4 +225,125 @@ export function betaLabel(column: Pick<BetaColumn, "bonus" | "context">, locale:
     BETA_CONTEXTS[column.context]?.[lang],
   ].filter(Boolean)
   return details.length ? `${name} (${details.join(", ")})` : name
+}
+
+// Where an army bonus applies, inside a sentence
+const PLACES: Record<string, Localized> = {
+  all: { fr: "", en: "" },
+  battleground: { fr: " dans les champs de bataille de guilde", en: " in Guild Battlegrounds" },
+  guild_expedition: { fr: " dans l'expédition de guilde", en: " in the Guild Expedition" },
+  guild_raids: { fr: " dans les incursions quantiques", en: " in Quantum Incursions" },
+}
+const multiplies = (what: Localized): Localized => ({
+  fr: `Multiplie tes bonus existants ${what.fr}{place} et ajoute le résultat à ton total.`,
+  en: `Multiplies your existing ${what.en} bonuses{place} and adds the result to your total.`,
+})
+
+// What each Gold effect does, from the official announcement (October 2026); {place} is
+// where it applies
+const DESCRIPTIONS: Record<string, Localized> = {
+  advanced_tactics: {
+    fr: "Les unités d'attaque et de défense voient leurs valeurs d'attaque et de défense augmentées d'un pourcentage{place}.",
+    en: "Attacking and defending units have their Attack and Defense values boosted by a percentage{place}.",
+  },
+  age_reserves: {
+    fr: "Produit des ressources toutes les 24 heures, choisies au hasard parmi les types de ressources produits dans ta ville.",
+    en: "Produces Goods every 24 hours, randomly chosen from any type of Goods building placed in your City.",
+  },
+  all_units_critical_hit_chance: {
+    fr: "Donne une chance d'infliger 150 % de dégâts aux unités ennemies de toute ère autre que celle de ton unité. Ne s'applique pas aux voyous.",
+    en: "Grants a chance to deal 150% damage against enemy units from any Age except your unit's Age. Doesn't apply to Rogues.",
+  },
+  allies_quest_boost: {
+    fr: "Quand tu reçois les récompenses des quêtes de la taverne héroïque, tu obtiens un pourcentage en plus.",
+    en: "When you get rewards from Heroic Tavern quests, you receive an additional percentage on top.",
+  },
+  attack_boost: multiplies({
+    fr: "d'attaque de l'armée d'attaque",
+    en: "Attack for Attacking Army",
+  }),
+  attacker_defense_boost: multiplies({
+    fr: "de défense de l'armée d'attaque",
+    en: "Defense for Attacking Army",
+  }),
+  defender_attack_boost: multiplies({
+    fr: "d'attaque de l'armée de défense",
+    en: "Attack for Defending Army",
+  }),
+  defense_boost: multiplies({
+    fr: "de défense de l'armée de défense",
+    en: "Defense for Defending Army",
+  }),
+  military_boost: multiplies({
+    fr: "d'attaque et de défense de l'armée d'attaque",
+    en: "Attack and Defense for Attacking Army",
+  }),
+  fierce_resistance: multiplies({
+    fr: "d'attaque et de défense de l'armée de défense",
+    en: "Attack and Defense for Defending Army",
+  }),
+  clan_goods_extended: {
+    fr: "Produit un peu de chaque ressource de l'ère précédente, actuelle et suivante pour la trésorerie de ta guilde. Ne se collecte qu'en étant membre d'une guilde.",
+    en: "Produces some of each Good from the previous, current, and next Era for your Guild's Treasury. Can only be collected while you're in a Guild.",
+  },
+  contribution_boost_gold: {
+    fr: "Augmente tes récompenses de contribution quand tu contribues aux niveaux or des Grands Monuments or des autres joueurs.",
+    en: "Increases your contribution rewards when you contribute to Gold levels of other players' Gold Great Buildings.",
+  },
+  goods_production_boost: {
+    fr: "Augmente d'un pourcentage les ressources produites par tes bâtiments.",
+    en: "Increases the Goods produced by your buildings by a percentage.",
+  },
+  guild_raids_double_collection: {
+    fr: "Pour tes premières collectes dans ta colonie des incursions quantiques, une chance que la collecte soit doublée. Hors hôtel de ville.",
+    en: "For your first few collections in your Quantum Incursions settlement, there's a chance the collection is doubled. Excludes the Town Hall.",
+  },
+  helping_hands_boosted: {
+    fr: "Ajoute une chance d'obtenir une meilleure récompense quand tu aides d'autres joueurs.",
+    en: "Adds a chance of getting a better reward when you aid other players.",
+  },
+  military_ally_boost: {
+    fr: "Renforce les alliés historiques militaires, comme s'ils gagnaient des niveaux. Peut faire dépasser le niveau 100.",
+    en: "Enhances Military Historical Allies, the same as gaining extra levels. It can raise an ally's effective level past 100.",
+  },
+  science_ally_boost: {
+    fr: "Renforce les alliés historiques scientifiques, comme s'ils gagnaient des niveaux. Peut faire dépasser le niveau 100.",
+    en: "Enhances Science Historical Allies, the same as gaining extra levels. It can raise an ally's effective level past 100.",
+  },
+  missile_launch_wave_2: {
+    fr: "Pour tes premiers combats, une chance de tuer la moitié des unités ennemies au début de la deuxième vague.",
+    en: "For your first few battles, there's a chance to kill half the enemy units at the start of the second wave.",
+  },
+  second_strike: {
+    fr: "Pour tes premiers combats, une chance de tuer une unité ennemie au début de la deuxième vague.",
+    en: "For your first few battles, there's a chance to kill one enemy unit at the start of the second wave.",
+  },
+  special_goods_production_boost: {
+    fr: "Augmente d'un pourcentage les ressources spéciales produites par tes bâtiments.",
+    en: "Increases the Special Goods produced by your buildings by a percentage.",
+  },
+  spoils_of_war_enhanced: {
+    fr: "Ajoute une chance d'obtenir une meilleure récompense quand tu gagnes des combats dans ta ville principale.",
+    en: "Adds a chance of getting a better reward when you win fights in your main settlement.",
+  },
+}
+
+export function betaDescription(
+  column: Pick<BetaColumn, "bonus" | "context">,
+  locale: string,
+): string | undefined {
+  const lang = locale === "fr" ? "fr" : "en"
+  const text = DESCRIPTIONS[column.bonus]?.[lang]
+  return text?.replace("{place}", PLACES[column.context]?.[lang] ?? "")
+}
+
+// New effects of the Gold tier, once each
+export function betaGoldEffects(gb: BetaGreatBuilding): BetaColumn[] {
+  const seen = new Set<string>()
+  return gb.columns.filter((column) => {
+    const key = `${column.bonus}/${column.context}`
+    if (column.tier !== "gold" || seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
 }

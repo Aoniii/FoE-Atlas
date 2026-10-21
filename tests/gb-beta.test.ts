@@ -1,6 +1,9 @@
+import { readFileSync } from "node:fs"
 import { describe, expect, it } from "vitest"
 import {
   betaCostAt,
+  betaDescription,
+  betaGoldEffects,
   betaLabel,
   betaValueAt,
   type BetaColumn,
@@ -97,5 +100,21 @@ describe("beta labels", () => {
 
   it("keep unknown names as sent by the game", () => {
     expect(betaLabel({ bonus: "new_bonus", context: "all" }, "fr")).toBe("new bonus")
+  })
+})
+
+describe("beta Gold effects", () => {
+  const data = JSON.parse(readFileSync("data/gb-beta.json", "utf8")) as {
+    buildings: Record<string, BetaGreatBuilding>
+  }
+
+  it("all have a description and an icon, in both languages", () => {
+    for (const [id, gb] of Object.entries(data.buildings)) {
+      for (const column of betaGoldEffects(gb)) {
+        expect(betaDescription(column, "fr"), `${id} ${column.bonus}`).toBeTruthy()
+        expect(betaDescription(column, "en"), `${id} ${column.bonus}`).not.toContain("{place}")
+        expect(column.icon, `${id} ${column.bonus}`).toBeTruthy()
+      }
+    }
   })
 })

@@ -16,6 +16,7 @@ of the License, or (at your option) any later version. See [LICENSE](LICENSE).
 - **Great Buildings of the beta server** (`data/gb-beta.json`, prestige rework) come from the
   game's own data, read in a network capture of the beta (`pnpm har-extract`, then
   `pnpm gb-beta`). Values between milestone levels and level costs are measured approximations.
+  Their icons (`public/beta-icons/`) are cut from the game's icon sheet by `pnpm gb-beta`.
 - **Buildings, Great Buildings, images and icons** come from the official Forge of Empires wiki
   and game CDN. Forge of Empires is a trademark of InnoGames GmbH; FoE Atlas is an unofficial
   fan project.

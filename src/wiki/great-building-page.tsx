@@ -4,6 +4,8 @@ import { AGES } from "@/core/ages"
 import { roadShare, tileCount } from "@/core/efficiency"
 import {
   betaCostAt,
+  betaDescription,
+  betaGoldEffects,
   betaLabel,
   betaValueAt,
   GOLD_FIRST_LEVEL,
@@ -48,6 +50,7 @@ export function GreatBuildingPage() {
   const name = localized(gb.name, locale)
   const otherName = locale === "en" ? gb.name.fr : gb.name.en
   const share = roadShare(gb.size, gb.road)
+  const betaEffects = gb.beta ? betaGoldEffects(gb.beta) : []
   // Past the wiki, every value is computed, not checked in game
   const approx = (text: string) => (row?.computed && text !== "–" ? `≈ ${text}` : text)
   const setLevel = (value: number) =>
@@ -102,7 +105,7 @@ export function GreatBuildingPage() {
         </div>
       </header>
 
-      {gb.boosts.length > 0 && (
+      {(gb.boosts.length > 0 || betaEffects.length > 0) && (
         <section className="flex flex-col gap-2">
           <h2 className="font-medium">{t.greatBuilding.boosts}</h2>
           <ul className="flex flex-col gap-2">
@@ -112,6 +115,24 @@ export function GreatBuildingPage() {
                 <div>
                   <p className="font-medium">{localized(boost.name, locale)}</p>
                   <p className="text-muted-foreground">{localized(boost.text, locale)}</p>
+                </div>
+              </li>
+            ))}
+            {/* New Gold effects of the beta, in orange like the beta block */}
+            {betaEffects.map((column) => (
+              <li
+                key={`${column.bonus}/${column.context}`}
+                className="flex items-start gap-2 text-sm"
+              >
+                <BetaIcon icon={column.icon} className="size-6" />
+                <div>
+                  <p className="font-medium text-orange-600 dark:text-orange-400">
+                    {betaLabel(column, locale)}
+                    <span className="ml-1.5 text-xs font-normal">
+                      ({t.greatBuilding.betaGoldEffect})
+                    </span>
+                  </p>
+                  <p className="text-muted-foreground">{betaDescription(column, locale)}</p>
                 </div>
               </li>
             ))}
@@ -220,6 +241,7 @@ function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) 
             <BetaStat
               key={index}
               label={betaLabel(column, locale)}
+              icon={column.icon}
               tier={column.tier}
               value={format(value, column.percent)}
               hint={
@@ -235,14 +257,28 @@ function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) 
   )
 }
 
+// Bonus icon cut from the game's sheet (public/beta-icons)
+function BetaIcon({ icon, className }: { icon?: string; className?: string }) {
+  if (!icon) return null
+  return (
+    <img
+      src={`${import.meta.env.BASE_URL}beta-icons/${icon}`}
+      alt=""
+      className={cn("object-contain", className)}
+    />
+  )
+}
+
 function BetaStat({
   label,
   value,
+  icon,
   tier,
   hint,
 }: {
   label: string
   value: string
+  icon?: string
   tier?: BetaTier
   hint?: string
 }) {
@@ -255,6 +291,7 @@ function BetaStat({
             {t.greatBuilding.tiers[tier]}
           </span>
         )}
+        <BetaIcon icon={icon} className="size-4" />
         {label}
       </dt>
       <dd className="text-lg font-semibold">{value}</dd>

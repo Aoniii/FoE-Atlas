@@ -4,7 +4,8 @@
 //   pnpm har-extract ~/Downloads/beta.har beta   (then delete the .har)
 //   pnpm gb-beta [beta]
 
-import { readFileSync, readdirSync, writeFileSync } from "node:fs"
+import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs"
+import { PNG } from "pngjs"
 import {
   BetaGreatBuildingSchema,
   COPPER_MAX_LEVEL,
@@ -39,6 +40,103 @@ type GameGreatBuilding = {
   bonuses: { tier: { value: "copper" | "gold" }; bonuses: GameBonus[] }[]
 }
 
+const ICONS = "public/beta-icons"
+// Icon names in the game's sheet: icon_great_building_bonus_<name>
+const ICON_NAMES: Record<string, string> = {
+  aid_boost: "aid_blueprints",
+  clan_goods: "guild_goods",
+  clan_goods_extended: "guild_goods_adjacent_era",
+  double_collection: "double_collect",
+  happiness: "happy",
+  money: "coins",
+  money_boost: "coins",
+  previous_era_goods: "previous_era_good_production",
+  quest_boost: "scroll",
+  random_goods: "goods",
+  strategy_points: "forgepoints",
+  supplies_boost: "supplies",
+  totem_drop: "relic_hunt",
+}
+const CONTEXT_ICONS: Record<string, string> = {
+  battleground: "_gbg",
+  guild_expedition: "_gex",
+  guild_raids: "_gr",
+}
+// Army bonuses: which army, which value
+const ARMY_ICONS: Record<string, string> = {
+  military_boost: "attacking_all",
+  fierce_resistance: "defending_all",
+  advanced_tactics: "attacking_defending_all",
+  attack_boost: "attacking_attack",
+  attacker_defense_boost: "attacking_defense",
+  defender_attack_boost: "defending_attack",
+  defense_boost: "defending_defense",
+}
+const MULTIPLIED = new Set([
+  "attack_boost",
+  "attacker_defense_boost",
+  "defender_attack_boost",
+  "defense_boost",
+])
+
+function iconName(bonus: string, context: string): string {
+  const army = ARMY_ICONS[bonus]
+  if (!army) return ICON_NAMES[bonus] ?? bonus
+  const multiplier = MULTIPLIED.has(bonus) || context !== "all" ? "_multiplier" : ""
+  // Alcatraz's GBG attack and defense for both armies is the only plain one with a context
+  const plain = bonus === "advanced_tactics" && context !== "all"
+  return `${army}${CONTEXT_ICONS[context] ?? ""}${plain ? "" : multiplier}`
+}
+
+// [name, x, y, width, height, offset x, offset y, source width, source height, rotated]
+type Frame = [string, number, number, number, number, ...unknown[]]
+
+// Cuts the icons out of the game's sheet (downloaded from the game's public image server)
+// into public/beta-icons/<name>.png
+async function writeIcons(capture: string, names: Set<string>): Promise<Set<string>> {
+  const sheetJson = readdirSync(capture).find((f) =>
+    /assets_shared_icons_icons_0-.*\.json$/.test(f),
+  )
+  const sheetUrl = (
+    JSON.parse(readFileSync(`${capture}/icon-sheets.json`, "utf8")) as string[]
+  ).find((url) => /\/shared\/icons\/icons_0-[^/]+\.png$/.test(url))
+  if (!sheetJson || !sheetUrl) throw new Error(`No icon sheet in ${capture}: run pnpm har-extract`)
+  const frames = new Map(
+    (JSON.parse(readFileSync(`${capture}/${sheetJson}`, "utf8")).frames as Frame[]).map((f) => [
+      f[0],
+      f,
+    ]),
+  )
+  const response = await fetch(sheetUrl)
+  if (!response.ok) throw new Error(`${sheetUrl}: HTTP ${response.status}`)
+  const sheet = PNG.sync.read(Buffer.from(await response.arrayBuffer()))
+  rmSync(ICONS, { recursive: true, force: true })
+  mkdirSync(ICONS, { recursive: true })
+  const written = new Set<string>()
+  for (const name of names) {
+    const frame = frames.get(`icon_great_building_bonus_${name}`)
+    if (!frame) {
+      console.log(`No icon for ${name}`)
+      continue
+    }
+    const [, x, y, width, height] = frame
+    const rotated = frame[9] === true
+    // A rotated frame is stored a quarter turn clockwise: read it back counterclockwise
+    const icon = new PNG({ width, height })
+    for (let row = 0; row < height; row++) {
+      for (let col = 0; col < width; col++) {
+        const [sx, sy] = rotated ? [x + (height - 1 - row), y + col] : [x + col, y + row]
+        const from = (sy * sheet.width + sx) * 4
+        const to = (row * width + col) * 4
+        sheet.data.copy(icon.data, to, from, from + 4)
+      }
+    }
+    writeFileSync(`${ICONS}/${name}.png`, PNG.sync.write(icon))
+    written.add(name)
+  }
+  return written
+}
+
 const normalize = (name: string) =>
   name
     .normalize("NFD")
@@ -63,7 +161,7 @@ function column(tier: "copper" | "gold", bonus: GameBonus): BetaColumn {
   }
 }
 
-function main() {
+async function main() {
   const capture = `scripts/.cache/har/${process.argv[2] ?? "beta"}`
   const ours = new Map(
     readdirSync("data/great-buildings")
@@ -93,6 +191,13 @@ function main() {
       })
     }
   }
+  const columns = Object.values(buildings).flatMap((gb) => gb.columns)
+  const icons = await writeIcons(capture, new Set(columns.map((c) => iconName(c.bonus, c.context))))
+  for (const c of columns) {
+    const name = iconName(c.bonus, c.context)
+    if (icons.has(name)) c.icon = `${name}.png`
+  }
+  console.log(`${icons.size} icons in ${ICONS}`)
   const gold = Object.values(buildings).filter((gb) => gb.maxLevel > COPPER_MAX_LEVEL).length
   const count = Object.keys(buildings).length
   if (!count)
@@ -105,4 +210,7 @@ function main() {
   )
 }
 
-main()
+main().catch((error) => {
+  console.error(error)
+  process.exit(1)
+})
