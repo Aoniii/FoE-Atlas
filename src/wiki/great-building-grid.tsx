@@ -34,6 +34,14 @@ export function GreatBuildingGrid({ cards }: { cards: GreatBuildingCard[] }) {
               className="absolute top-2 right-2"
               item={{ kind: "great_building", id: card.id, name: card.name, image: card.image }}
             />
+            {card.beta && (
+              <span
+                title={t.greatBuilding.betaBadgeTitle}
+                className="absolute top-2 left-2 rounded-full border border-orange-500/40 bg-orange-500/15 px-2 py-0.5 text-[0.7rem] font-medium text-orange-600 dark:text-orange-400"
+              >
+                {t.greatBuilding.betaBadge}
+              </span>
+            )}
             <span className="font-medium">{localized(card.name, locale)}</span>
             <img src={card.image} alt="" loading="lazy" className="h-40 w-full object-contain" />
             <span className="text-sm text-muted-foreground">

@@ -249,6 +249,7 @@ const cards: GreatBuildingCard[] = greatBuildings.map(({ id, name, image, age })
   name,
   image,
   age,
+  ...(gbBeta[id] && { beta: true }),
 }))
 writeFileSync(`${OUTPUT}/great-buildings.json`, JSON.stringify(cards))
 // Great Buildings are searchable too
