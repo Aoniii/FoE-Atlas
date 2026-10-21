@@ -20,6 +20,10 @@ export const CHANGELOG: Release[] = [
         fr: "Monuments : niveaux jusqu'à 500",
         en: "Great Buildings: levels up to 500",
       },
+      {
+        fr: "Monuments : « ≈ » devant chaque valeur calculée et non vérifiée en jeu (au-delà du niveau 80 et sur la bêta)",
+        en: 'Great Buildings: "≈" before every value computed and not checked in game (past level 80 and on the beta)',
+      },
     ],
   },
   {

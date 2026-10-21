@@ -84,7 +84,8 @@ export function betaValueAt(column: BetaColumn, level: number): BetaValue | null
 
 // Level cost, approximate (within ~3% up to level 260 for Gold buildings, ~15% for
 // copper-only ones past 101): scaled on the level 1 cost up to 101, then a shared part per
-// tier grows by the level. undefined past level 260 on Gold buildings: no reading there yet.
+// tier grows by the level. Past 260 (no reading there), Gold costs grow 1.65% a level: the
+// total to level 500 then matches the official ~755.8M FP.
 const COST_SHAPE: [level: number, times: number][] = [
   [10, 10],
   [11, 10.47],
@@ -98,9 +99,10 @@ const COST_SHAPE: [level: number, times: number][] = [
   [101, 108.66],
 ]
 const COST_STEP = { copper: 1134, gold: 1443 }
-export const BETA_COST_KNOWN_UP_TO = 260
+const COST_READ_UP_TO = 260
+const COST_GROWTH = 1.0165
 
-export function betaCostAt(gb: BetaGreatBuilding, level: number): number | undefined {
+export function betaCostAt(gb: BetaGreatBuilding, level: number): number {
   const gold = gb.maxLevel > COPPER_MAX_LEVEL
   if (level <= 10) return gb.firstLevelCost * level
   if (level <= 101) {
@@ -108,10 +110,12 @@ export function betaCostAt(gb: BetaGreatBuilding, level: number): number | undef
     const [[l0, t0], [l1, t1]] = [COST_SHAPE[next - 1], COST_SHAPE[next]]
     return Math.round(gb.firstLevelCost * (t0 + ((t1 - t0) * (level - l0)) / (l1 - l0)))
   }
-  if (gold && level > BETA_COST_KNOWN_UP_TO) return undefined
-  return Math.round(
-    gb.firstLevelCost * 108.66 + COST_STEP[gold ? "gold" : "copper"] * (level - 101),
-  )
+  const linear = (l: number) =>
+    gb.firstLevelCost * 108.66 + COST_STEP[gold ? "gold" : "copper"] * (l - 101)
+  if (gold && level > COST_READ_UP_TO) {
+    return Math.round(linear(COST_READ_UP_TO) * COST_GROWTH ** (level - COST_READ_UP_TO))
+  }
+  return Math.round(linear(level))
 }
 
 type Localized = { fr: string; en: string }

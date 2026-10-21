@@ -48,6 +48,8 @@ export function GreatBuildingPage() {
   const name = localized(gb.name, locale)
   const otherName = locale === "en" ? gb.name.fr : gb.name.en
   const share = roadShare(gb.size, gb.road)
+  // Past the wiki, every value is computed, not checked in game
+  const approx = (text: string) => (row?.computed && text !== "–" ? `≈ ${text}` : text)
   const setLevel = (value: number) =>
     navigate({ search: { level: value }, replace: true, resetScroll: false })
 
@@ -124,14 +126,8 @@ export function GreatBuildingPage() {
             <h2 className="font-medium">
               {t.greatBuilding.atLevel.replace("{level}", String(level))}
             </h2>
-            {/* Always rendered, hidden on wiki levels: showing it never shifts the layout */}
-            <Badge
-              variant="outline"
-              aria-hidden={!row?.computed}
-              className={cn(!row?.computed && "invisible")}
-            >
-              {t.greatBuilding.computed}
-            </Badge>
+            {/* Legend of the ≈ prefix: every level past the wiki and every beta value */}
+            <Badge variant="outline">{t.greatBuilding.computed}</Badge>
           </div>
           <Input
             type="number"
@@ -166,14 +162,14 @@ export function GreatBuildingPage() {
           <p className="text-xs text-muted-foreground">{t.greatBuilding.manualNote}</p>
         )}
         <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-          <Stat label={t.greatBuilding.cost} value={formatNumber(cost, locale)} />
-          <Stat label={t.greatBuilding.totalCost} value={formatNumber(total, locale)} />
+          <Stat label={t.greatBuilding.cost} value={approx(formatNumber(cost, locale))} />
+          <Stat label={t.greatBuilding.totalCost} value={approx(formatNumber(total, locale))} />
           {gb.levels.columns.map((column, index) => (
             <Stat
               key={index}
               icon={column.icon}
               label={localized(column.label, locale)}
-              value={formatValue(row?.values[index], locale)}
+              value={approx(formatValue(row?.values[index], locale))}
             />
           ))}
         </dl>
@@ -192,19 +188,15 @@ const TIER_STYLES: Record<BetaTier, string> = {
 // Same level on the beta server (prestige rework), in orange below the live values
 function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) {
   const { t, locale } = useI18n()
+  // Every beta value is computed from the game's milestones
   const cost = betaCostAt(beta, level)
-  // Unknown as soon as one level cost is
-  let total: number | undefined = 0
-  for (let l = 1; l <= level && total !== undefined; l++) {
-    const c = betaCostAt(beta, l)
-    total = c === undefined ? undefined : total + c
-  }
-  const fp = (value: number | undefined) =>
-    value === undefined ? "–" : `≈ ${formatNumber(value, locale)}`
+  let total = 0
+  for (let l = 1; l <= level; l++) total += betaCostAt(beta, l)
+  const fp = (value: number) => `≈ ${formatNumber(value, locale)}`
   const format = (value: BetaValue | null, percent: boolean) => {
     if (!value) return "–"
     const text = `${formatNumber(value.value, locale, 2)}${percent ? " %" : ""}`
-    return value.count === undefined ? text : `${formatNumber(value.count, locale)} × ${text}`
+    return `≈ ${value.count === undefined ? text : `${formatNumber(value.count, locale)} × ${text}`}`
   }
   return (
     <div className="flex flex-col gap-3 border-t pt-4">
@@ -218,11 +210,7 @@ function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) 
         </p>
       </div>
       <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-        <BetaStat
-          label={t.greatBuilding.cost}
-          value={fp(cost)}
-          hint={cost === undefined ? t.greatBuilding.betaCostUnknown : undefined}
-        />
+        <BetaStat label={t.greatBuilding.cost} value={fp(cost)} />
         <BetaStat label={t.greatBuilding.totalCost} value={fp(total)} />
         {beta.columns.map((column, index) => {
           const value = betaValueAt(column, level)

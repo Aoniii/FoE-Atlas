@@ -80,8 +80,10 @@ describe("beta level costs", () => {
     expect(Math.abs(betaCostAt(gb(84, 500), 253)! / 228440 - 1)).toBeLessThan(0.03)
   })
 
-  it("are unknown past the last reading on Gold buildings", () => {
-    expect(betaCostAt(gb(84, 500), 300)).toBeUndefined()
+  it("add up to the official total at level 500 on Gold buildings", () => {
+    let total = 0
+    for (let level = 1; level <= 500; level++) total += betaCostAt(gb(84, 500), level)
+    expect(Math.abs(total / 755_881_000 - 1)).toBeLessThan(0.01)
   })
 })
 
