@@ -16,6 +16,10 @@ export const CHANGELOG: Release[] = [
         fr: "Monuments : niveau maximum de la bêta, 200 pour un GM n'ayant que des bonus cuivre",
         en: "Great Buildings: beta max level, 200 for a building with copper bonuses only",
       },
+      {
+        fr: "Grille des monuments : pastille « Bêta » sur ceux qui ont des ligues argent ou or sur la bêta",
+        en: 'Great Buildings grid: "Beta" badge on those with silver or gold leagues on the beta',
+      },
     ],
   },
   {
