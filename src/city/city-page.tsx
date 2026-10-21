@@ -17,9 +17,15 @@ import { usePersistentState } from "@/lib/use-persistent-state"
 import { fetchAgeBuildings } from "@/wiki/data"
 import { formatNumber } from "@/wiki/format"
 import { ScorePill } from "@/wiki/score-pill"
-import { useScoreKeys } from "@/wiki/score-settings"
+import { DEFAULT_SCORE, useScoreKeys } from "@/wiki/score-settings"
+import { StatIconsContext } from "@/wiki/stat-icons-context"
+import { ScorePanel } from "@/wiki/wiki-filters"
+import type { StatKey } from "@/core/stats"
 
 const route = getRouteApi("/city")
+
+// World of a pasted export (no file name to read it from)
+const UNKNOWN_WORLD = "foe-helper"
 
 const cityKey = (city: City) => `${city.world}/${city.playerId}`
 
@@ -28,59 +34,101 @@ export function CityPage() {
   const { t, locale } = useI18n()
   const [cities, setCities] = usePersistentState<Record<string, City>>("city.cities", {})
   const [selected, setSelected] = usePersistentState("city.selected", "")
+  const [scoreKeys, setScoreKeys] = useScoreKeys()
+  const { index } = route.useLoaderData()
   const list = Object.values(cities).sort((a, b) =>
     (b.updatedAt ?? "").localeCompare(a.updatedAt ?? ""),
   )
   const city = cities[selected] ?? list[0]
 
+  // Numbered in import order; a city imported again keeps its number
   const add = (imported: City) => {
-    setCities((current) => ({ ...current, [cityKey(imported)]: imported }))
+    setCities((current) => {
+      const numbers = Object.values(current).map((c) => c.number ?? 0)
+      const number = current[cityKey(imported)]?.number ?? Math.max(0, ...numbers) + 1
+      return { ...current, [cityKey(imported)]: { ...imported, number } }
+    })
     setSelected(cityKey(imported))
   }
   const remove = (key: string) =>
     setCities((current) => Object.fromEntries(Object.entries(current).filter(([k]) => k !== key)))
   const items = list.map((c) => ({
     value: cityKey(c),
-    label: `${c.playerName ?? `${t.city.player} ${c.playerId || "?"}`} · ${worldLabel(c.world)}`,
+    label: [`${t.city.city} #${c.number ?? 1}`, c.world !== UNKNOWN_WORLD && worldLabel(c.world)]
+      .filter(Boolean)
+      .join(" · "),
   }))
 
   return (
-    <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-semibold">{t.city.title}</h1>
-      <ImportCity onImport={add} />
-      {city && (
-        <>
-          <div className="flex flex-wrap items-center gap-3">
-            <Select items={items} value={cityKey(city)} onValueChange={(v) => v && setSelected(v)}>
-              <SelectTrigger className="min-w-64">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent alignItemWithTrigger={false} className="w-auto min-w-(--anchor-width)">
-                {items.map((item) => (
-                  <SelectItem key={item.value} value={item.value}>
-                    {item.label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-            {city.updatedAt && (
-              <span className="text-xs text-muted-foreground">
-                {t.city.updated}{" "}
-                {new Date(city.updatedAt).toLocaleString(locale, {
-                  dateStyle: "medium",
-                  timeStyle: "short",
-                })}
-              </span>
-            )}
-            <Button variant="ghost" size="sm" onClick={() => remove(cityKey(city))}>
-              <Trash2 />
-              {t.city.remove}
-            </Button>
-          </div>
-          <CityRating city={city} />
-        </>
-      )}
-    </div>
+    <StatIconsContext value={index.icons ?? {}}>
+      <div className="flex flex-col gap-6">
+        <h1 className="text-2xl font-semibold">{t.city.title}</h1>
+        <ImportCity onImport={add} />
+        {city && (
+          <>
+            {/* Same settings as the wiki's score, shared with it */}
+            <div className="flex flex-col gap-2">
+              <ScorePanel
+                scoreKeys={scoreKeys}
+                onToggle={(key, on) =>
+                  setScoreKeys((keys) =>
+                    on ? [...new Set([...keys, key])] : keys.filter((k) => k !== key),
+                  )
+                }
+              />
+              <div className="flex gap-2">
+                <Button variant="ghost" size="sm" onClick={() => setScoreKeys(DEFAULT_SCORE)}>
+                  {t.wiki.reset}
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setScoreKeys([])}
+                  disabled={scoreKeys.length === 0}
+                >
+                  {t.wiki.uncheckAll}
+                </Button>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <Select
+                items={items}
+                value={cityKey(city)}
+                onValueChange={(v) => v && setSelected(v)}
+              >
+                <SelectTrigger className="min-w-64">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent
+                  alignItemWithTrigger={false}
+                  className="w-auto min-w-(--anchor-width)"
+                >
+                  {items.map((item) => (
+                    <SelectItem key={item.value} value={item.value}>
+                      {item.label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              {city.updatedAt && (
+                <span className="text-xs text-muted-foreground">
+                  {t.city.updated}{" "}
+                  {new Date(city.updatedAt).toLocaleString(locale, {
+                    dateStyle: "medium",
+                    timeStyle: "short",
+                  })}
+                </span>
+              )}
+              <Button variant="ghost" size="sm" onClick={() => remove(cityKey(city))}>
+                <Trash2 />
+                {t.city.remove}
+              </Button>
+            </div>
+            <CityRating city={city} scoreKeys={scoreKeys} />
+          </>
+        )}
+      </div>
+    </StatIconsContext>
   )
 }
 
@@ -144,10 +192,9 @@ function ImportCity({ onImport }: { onImport: (city: City) => void }) {
 }
 
 // Buildings of the city at the player's age, least profitable first
-function CityRating({ city }: { city: City }) {
+function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
   const { t, locale } = useI18n()
   const { assets } = route.useLoaderData()
-  const [scoreKeys] = useScoreKeys()
   const [buildings, setBuildings] = useState<Partial<Record<AgeId, AgeBuilding[]>>>({})
   const [ascending, setAscending] = useState(true)
   // Every age a building of the city is rated at (each building at its own age)

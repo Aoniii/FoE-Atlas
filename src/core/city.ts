@@ -29,6 +29,8 @@ export type City = {
   // Player's age, game id ("SpaceAgeTitan")
   era?: string
   updatedAt?: string
+  // Order of import on the City tab: "City #2"
+  number?: number
   entities: CityEntity[]
 }
 
