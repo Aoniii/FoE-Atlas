@@ -1,5 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react"
-import { useVirtualizer } from "@tanstack/react-virtual"
+import { useMemo, useState } from "react"
 import {
   columnVisibilityFeature,
   createColumnHelper,
@@ -94,14 +93,6 @@ function buildColumns(t: Messages, locale: Locale) {
   ])
 }
 
-// Column widths in px (the name column wraps, numbers never do)
-function columnWidth(id: string): number {
-  if (id === "name") return 280
-  if (id === "score") return 88
-  if (id === "tiles") return 96
-  return 120
-}
-
 function Sub({ children }: { children: React.ReactNode }) {
   return <span className="block text-xs text-muted-foreground">{children}</span>
 }
@@ -194,69 +185,22 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
 
   const sortedRows = table.getRowModel().rows
 
-  // The table has its own scroll area (screen height minus the site header): the page
-  // scrolls until the table reaches the top, then the rows scroll under a sticky header.
-  // Only the rows in view are rendered (~30 instead of 1300+); empty rows above and
-  // below keep the scroll height.
-  const scrollRef = useRef<HTMLDivElement>(null)
-  // oxlint-disable-next-line react/incompatible-library -- TanStack Virtual, no React Compiler here
-  const virtualizer = useVirtualizer({
-    count: sortedRows.length,
-    getScrollElement: () => scrollRef.current,
-    estimateSize: () => 56,
-    overscan: 10,
-    getItemKey: (index) => sortedRows[index].id,
-  })
-  // Scrolling down moves the page first: the table only scrolls once the page is at
-  // its bottom (the table then fills the screen). Non-passive to cancel the wheel.
-  useEffect(() => {
-    const box = scrollRef.current
-    if (!box) return
-    const onWheel = (event: WheelEvent) => {
-      if (event.deltaY <= 0 || Math.abs(event.deltaX) > Math.abs(event.deltaY)) return
-      const page = document.documentElement
-      const pageAtBottom = window.scrollY + window.innerHeight >= page.scrollHeight - 1
-      if (pageAtBottom) return
-      event.preventDefault()
-      window.scrollBy({ top: event.deltaY })
-    }
-    box.addEventListener("wheel", onWheel, { passive: false })
-    return () => box.removeEventListener("wheel", onWheel)
-  }, [sortedRows.length])
-  const items = virtualizer.getVirtualItems()
-  const paddingTop = items.length ? items[0].start : 0
-  const paddingBottom = items.length ? virtualizer.getTotalSize() - items[items.length - 1].end : 0
-  const leafColumns = table.getVisibleLeafColumns()
-  const columnCount = leafColumns.length
-  const tableWidth = leafColumns.reduce((sum, column) => sum + columnWidth(column.id), 0)
-
   if (!sortedRows.length) {
     return <p className="py-10 text-center text-muted-foreground">{t.wiki.empty}</p>
   }
 
+  // Every row is rendered, columns sized by their content; the page scrolls
   return (
-    <div
-      ref={scrollRef}
-      className="no-scrollbar max-h-[calc(100svh-5.5rem)] overflow-auto rounded-lg border"
-    >
-      {/* Fixed widths: with virtualized rows, content-based widths would change on scroll */}
-      <table
-        className="w-full table-fixed border-collapse text-sm"
-        style={{ minWidth: tableWidth }}
-      >
-        <colgroup>
-          {leafColumns.map((column) => (
-            <col key={column.id} style={{ width: columnWidth(column.id) }} />
-          ))}
-        </colgroup>
-        <thead className="sticky top-0 z-10 bg-background">
+    <div className="overflow-x-auto rounded-lg border">
+      <table className="w-full border-collapse text-sm">
+        <thead className="bg-muted/40">
           {table.getHeaderGroups().map((group) => (
             <tr key={group.id}>
               {group.headers.map((header) => (
                 <th
                   key={header.id}
                   className={cn(
-                    "border-b bg-muted/40 px-3 py-2 font-medium text-muted-foreground",
+                    "border-b px-3 py-2 font-medium text-muted-foreground",
                     header.column.id === "name" || header.column.id === "score"
                       ? "text-left"
                       : "text-right",
@@ -269,43 +213,29 @@ export function BuildingsTable({ rows, visibleStats, showScore }: Props) {
           ))}
         </thead>
         <tbody>
-          {paddingTop > 0 && (
-            <tr aria-hidden>
-              <td colSpan={columnCount} style={{ height: paddingTop }} />
+          {sortedRows.map((row) => (
+            // Off-screen rows skip layout and paint until scrolled to
+            <tr
+              key={row.id}
+              className="border-b [contain-intrinsic-size:auto_56px] [content-visibility:auto] last:border-0 hover:bg-muted/30"
+            >
+              {row.getVisibleCells().map((cell) => (
+                <td
+                  key={cell.id}
+                  className={cn(
+                    "px-3 py-2 align-top whitespace-nowrap",
+                    cell.column.id === "name"
+                      ? "min-w-56 text-left whitespace-normal"
+                      : cell.column.id === "score"
+                        ? "text-left"
+                        : "text-right",
+                  )}
+                >
+                  <table.FlexRender cell={cell} />
+                </td>
+              ))}
             </tr>
-          )}
-          {items.map((item) => {
-            const row = sortedRows[item.index]
-            return (
-              <tr
-                key={row.id}
-                data-index={item.index}
-                ref={virtualizer.measureElement}
-                className="border-b last:border-0 hover:bg-muted/30"
-              >
-                {row.getVisibleCells().map((cell) => (
-                  <td
-                    key={cell.id}
-                    className={cn(
-                      "px-3 py-2 align-top whitespace-nowrap",
-                      cell.column.id === "name"
-                        ? "text-left whitespace-normal"
-                        : cell.column.id === "score"
-                          ? "text-left"
-                          : "truncate text-right",
-                    )}
-                  >
-                    <table.FlexRender cell={cell} />
-                  </td>
-                ))}
-              </tr>
-            )
-          })}
-          {paddingBottom > 0 && (
-            <tr aria-hidden>
-              <td colSpan={columnCount} style={{ height: paddingBottom }} />
-            </tr>
-          )}
+          ))}
         </tbody>
       </table>
     </div>
