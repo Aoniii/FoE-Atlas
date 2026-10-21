@@ -4,8 +4,8 @@ import { Button, buttonVariants } from "@/components/ui/button"
 import { localized, useI18n } from "@/lib/i18n"
 import { clearCompare, removeCompare, useCompareSelection } from "./selection"
 
-// Pages offering the Compare button: the wiki and the building pages
-const TRAY_PAGES = /\/(wiki\/?$|buildings\/|great-buildings\/)/
+// Pages offering the Compare button: the wiki, the City tab and the building pages
+const TRAY_PAGES = /\/(wiki\/?$|city\/?$|buildings\/|great-buildings\/)/
 
 // Floating bar at the bottom of those pages while something is selected
 export function CompareTray() {

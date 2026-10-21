@@ -12,6 +12,10 @@ export const CHANGELOG: Release[] = [
         fr: "Onglet Ville : importe ta ville depuis FoE Helper (fichier ou copier-coller) et vois tes bâtiments notés du moins rentable au plus rentable, à ton ère ; plusieurs serveurs possibles, ta ville reste dans ton navigateur",
         en: "City tab: import your city from FoE Helper (file or copy-paste) and see your buildings rated from least to most profitable, at your age; several servers possible, your city stays in your browser",
       },
+      {
+        fr: "Onglet Ville : bouton de comparaison sur chaque bâtiment, comme dans le wiki",
+        en: "City tab: compare button on each building, like in the wiki",
+      },
     ],
   },
   {

@@ -5,6 +5,7 @@ import { AGES, LATEST_AGE, type AgeId } from "@/core/ages"
 import type { AgeBuilding } from "@/core/building"
 import { entityAge, parseFoeHelperExport, rateCity, worldLabel, type City } from "@/core/city"
 import { Button } from "@/components/ui/button"
+import { CompareButton } from "@/compare/compare-button"
 import {
   Select,
   SelectContent,
@@ -254,14 +255,26 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                 className="border-b last:border-0 hover:bg-muted/30"
               >
                 <td className="px-3 py-2">
-                  <Link
-                    to="/buildings/$id"
-                    params={{ id: row.building.id }}
-                    search={{ age: row.age, from: "city" }}
-                    className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
-                  >
-                    {localized(row.building.name, locale)}
-                  </Link>
+                  <div className="flex items-start justify-between gap-1">
+                    <Link
+                      to="/buildings/$id"
+                      params={{ id: row.building.id }}
+                      search={{ age: row.age, from: "city" }}
+                      className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
+                    >
+                      {localized(row.building.name, locale)}
+                    </Link>
+                    <CompareButton
+                      iconOnly
+                      className="shrink-0"
+                      item={{
+                        kind: "building",
+                        id: row.building.id,
+                        name: row.building.name,
+                        image: row.building.image,
+                      }}
+                    />
+                  </div>
                 </td>
                 <td className="px-3 py-2 whitespace-nowrap text-muted-foreground">
                   {ageName(row.age)}
