@@ -2,6 +2,7 @@ import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import { AGES } from "@/core/ages"
 import { roadShare, tileCount } from "@/core/efficiency"
+import { betaLabel, type BetaGreatBuilding, type BetaTier, type BetaValue } from "@/core/gb-beta"
 import { MANUAL_GB_MODELS } from "@/core/gb-models"
 import { GB_MAX_LEVEL } from "@/core/great-building"
 import { levelCost } from "@/core/rush"
@@ -26,7 +27,8 @@ export function GreatBuildingPage() {
   const rows = gb.levels.rows
   // Bonuses come from the wiki (80 levels), costs from the game formula (any level)
   const knownLevel = rows.filter((r) => !r.computed).at(-1)?.level ?? 1
-  const maxLevel = GB_MAX_LEVEL
+  // The beta caps every Great Building (200 with copper bonuses only)
+  const maxLevel = gb.beta?.maxLevel ?? GB_MAX_LEVEL
   const level = Math.min(Math.max(search.level ?? 1, 1), maxLevel)
   const row = rows.find((r) => r.level === level)
   const firstTenCosts = rows.filter((r) => r.level <= 10).map((r) => r.cost ?? 0)
@@ -167,8 +169,88 @@ export function GreatBuildingPage() {
             />
           ))}
         </dl>
+        {gb.beta && <BetaStats beta={gb.beta} level={level} />}
       </section>
       {rewards && <RushCalculator gb={gb} tables={rewards} />}
+    </div>
+  )
+}
+
+const TIER_STYLES: Record<BetaTier, string> = {
+  copper: "bg-orange-700/80 text-white",
+  silver: "bg-slate-400 text-slate-950",
+  gold: "bg-yellow-400 text-yellow-950",
+}
+
+// Same level on the beta server (prestige rework), in orange below the live values
+function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) {
+  const { t, locale } = useI18n()
+  const rows = beta.rows.filter((r) => r.level <= level)
+  const row = rows.at(-1)
+  const total = rows.reduce((sum, r) => sum + r.cost, 0)
+  const format = (value: BetaValue | null | undefined, percent: boolean) => {
+    if (!value) return "–"
+    const text = `${formatNumber(value.value, locale, 2)}${percent ? " %" : ""}`
+    return value.count === undefined ? text : `${formatNumber(value.count, locale)} × ${text}`
+  }
+  return (
+    <div className="flex flex-col gap-3 border-t pt-4">
+      <div className="flex flex-col gap-1">
+        <h3 className="font-medium text-orange-600 dark:text-orange-400">{t.greatBuilding.beta}</h3>
+        <p className="text-xs text-muted-foreground">
+          {t.greatBuilding.betaNote.replace("{level}", String(beta.maxLevel))}
+        </p>
+      </div>
+      <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+        <BetaStat label={t.greatBuilding.cost} value={formatNumber(row?.cost ?? 0, locale)} />
+        <BetaStat label={t.greatBuilding.totalCost} value={formatNumber(total, locale)} />
+        {beta.columns.map((column, index) => {
+          const value = row?.values[index]
+          // Locked tier: level where it unlocks
+          const unlock = value ? undefined : beta.rows.find((r) => r.values[index])?.level
+          return (
+            <BetaStat
+              key={index}
+              label={betaLabel(column, locale)}
+              tier={column.tier}
+              value={format(value, column.percent)}
+              hint={
+                unlock === undefined
+                  ? undefined
+                  : t.greatBuilding.betaUnlock.replace("{level}", String(unlock))
+              }
+            />
+          )
+        })}
+      </dl>
+    </div>
+  )
+}
+
+function BetaStat({
+  label,
+  value,
+  tier,
+  hint,
+}: {
+  label: string
+  value: string
+  tier?: BetaTier
+  hint?: string
+}) {
+  const { t } = useI18n()
+  return (
+    <div className="rounded-md border border-orange-500/40 bg-orange-500/10 p-3">
+      <dt className="flex items-center gap-1.5 text-xs text-muted-foreground">
+        {tier && (
+          <span className={cn("rounded px-1 text-[0.65rem] font-medium", TIER_STYLES[tier])}>
+            {t.greatBuilding.tiers[tier]}
+          </span>
+        )}
+        {label}
+      </dt>
+      <dd className="text-lg font-semibold">{value}</dd>
+      {hint && <p className="text-xs text-muted-foreground">{hint}</p>}
     </div>
   )
 }

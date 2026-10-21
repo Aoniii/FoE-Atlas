@@ -17,6 +17,7 @@ import {
   valueAt,
   type ApproxModel,
 } from "../src/core/gb-extrapolate"
+import type { BetaGreatBuilding } from "../src/core/gb-beta"
 import { GB_CAPS, MANUAL_GB_MODELS } from "../src/core/gb-models"
 import {
   GB_MAX_LEVEL,
@@ -131,6 +132,11 @@ const gbReadings: Record<string, Record<string, Record<string, number>>> = exist
   ? JSON.parse(readFileSync("data/gb-readings.json", "utf8")).readings
   : {}
 
+// Great Buildings of the beta server (scripts/gb-beta.ts)
+const gbBeta: Record<string, BetaGreatBuilding> = existsSync("data/gb-beta.json")
+  ? JSON.parse(readFileSync("data/gb-beta.json", "utf8")).buildings
+  : {}
+
 // Extends a Great Building to GB_MAX_LEVEL: exact costs; bonuses from, in order, the
 // in-game readings, a progression reproducing every known level exactly (see
 // gb-extrapolate.ts), empty otherwise
@@ -222,6 +228,7 @@ function extendLevels(gb: GreatBuilding): GreatBuilding {
   return {
     ...gb,
     readingsUpTo: readLevels.length ? Math.max(...readLevels) : undefined,
+    beta: gbBeta[gb.id],
     levels: { ...gb.levels, rows: [...rows, ...extra] },
   }
 }

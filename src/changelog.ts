@@ -5,6 +5,20 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.6",
+    date: "2026-10-21",
+    changes: [
+      {
+        fr: "Monuments : les effets de la bêta (refonte du prestige) sous ceux du jeu, avec leurs rangs cuivre, argent et or, d'après foebeta.com",
+        en: "Great Buildings: beta effects (prestige rework) below the live ones, with their copper, silver and gold tiers, from foebeta.com",
+      },
+      {
+        fr: "Monuments : niveau maximum de la bêta, 200 pour un GM n'ayant que des bonus cuivre",
+        en: "Great Buildings: beta max level, 200 for a building with copper bonuses only",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.5",
     date: "2026-10-20",
     changes: [

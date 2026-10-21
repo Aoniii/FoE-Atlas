@@ -1,7 +1,7 @@
 PID_FILE := .dev.pid
 LOG_FILE := .dev.log
 
-.PHONY: dev stop format check test scraper gb-readings
+.PHONY: dev stop format check test scraper gb-readings gb-beta
 
 # Start the Vite dev server in the background (own process group, so stop kills it all)
 dev:
@@ -56,3 +56,7 @@ scraper:
 # Great Building bonuses beyond level 80 from foe-assistant.com into data/ (after the scraper)
 gb-readings:
 	pnpm gb-readings
+
+# Great Buildings of the beta server (prestige rework) from foebeta.com into data/ (after the scraper)
+gb-beta:
+	pnpm gb-beta

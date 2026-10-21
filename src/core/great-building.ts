@@ -1,5 +1,6 @@
 import { z } from "zod"
 import { AgeIdSchema, LocalizedSchema, RoadSchema, SizeSchema } from "./building"
+import { BetaGreatBuildingSchema } from "./gb-beta"
 
 // Great Buildings: one page per building, stats per level (not per age)
 export const GreatBuildingSchema = z.object({
@@ -36,6 +37,8 @@ export const GreatBuildingSchema = z.object({
   sourceUrl: z.url().optional(),
   // Highest level with bonuses read on foe-assistant.com (set by build-data)
   readingsUpTo: z.number().optional(),
+  // Same building on the beta server (set by build-data from data/gb-beta.json)
+  beta: BetaGreatBuildingSchema.optional(),
 })
 
 export type GreatBuilding = z.infer<typeof GreatBuildingSchema>

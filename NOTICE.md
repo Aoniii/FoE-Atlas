@@ -13,6 +13,8 @@ of the License, or (at your option) any later version. See [LICENSE](LICENSE).
   GNU AGPL v3. Refresh them with `pnpm gb-rewards`.
 - **Great Building bonuses beyond level 80** (`data/gb-readings.json`) come from
   [FOE Assistant](https://foe-assistant.com). Refresh them with `pnpm gb-readings`.
+- **Great Buildings of the beta server** (`data/gb-beta.json`, prestige rework) come from
+  [foebeta.com](https://foebeta.com/featured/great-buildings/). Refresh them with `pnpm gb-beta`.
 - **Buildings, Great Buildings, images and icons** come from the official Forge of Empires wiki
   and game CDN. Forge of Empires is a trademark of InnoGames GmbH; FoE Atlas is an unofficial
   fan project.
