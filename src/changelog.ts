@@ -17,8 +17,16 @@ export const CHANGELOG: Release[] = [
         en: "City tab: compare button on each building, like in the wiki",
       },
       {
-        fr: "Onglet Ville : les Grands Monuments aussi, notés à leur niveau (PF, ressources, ressources de guilde, armée, pièces, marchandises…)",
-        en: "City tab: Great Buildings too, rated at their level (FP, goods, guild goods, army, coins, supplies…)",
+        fr: "Onglet Ville : les Grands Monuments aussi, marqués GM et classés sous 0, avec une option pour les cacher",
+        en: "City tab: Great Buildings too, tagged GB and ranked below 0, with an option to hide them",
+      },
+      {
+        fr: "Wiki : la page défile normalement (plus de zone de défilement dans le tableau), colonnes à la largeur de leur contenu",
+        en: "Wiki: the page scrolls normally (no more scroll area inside the table), columns as wide as their content",
+      },
+      {
+        fr: "Wiki et Ville : boutons Réinitialiser et Tout décocher sous le réglage du score",
+        en: "Wiki and City: Reset and Uncheck all buttons under the score settings",
       },
     ],
   },
