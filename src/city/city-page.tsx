@@ -3,8 +3,18 @@ import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowDown, ArrowUp, ClipboardPaste, FileUp, Trash2 } from "lucide-react"
 import { AGES, LATEST_AGE, type AgeId } from "@/core/ages"
 import type { AgeBuilding } from "@/core/building"
-import { entityAge, parseFoeHelperExport, rateCity, worldLabel, type City } from "@/core/city"
+import {
+  entityAge,
+  greatBuildingId,
+  parseFoeHelperExport,
+  rateCity,
+  worldLabel,
+  type City,
+  type CityRow,
+} from "@/core/city"
+import type { GreatBuilding } from "@/core/great-building"
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import { CompareButton } from "@/compare/compare-button"
 import {
   Select,
@@ -15,7 +25,7 @@ import {
 } from "@/components/ui/select"
 import { localized, useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
-import { fetchAgeBuildings } from "@/wiki/data"
+import { fetchAgeBuildings, fetchGreatBuilding } from "@/wiki/data"
 import { formatNumber } from "@/wiki/format"
 import { ScorePill } from "@/wiki/score-pill"
 import { DEFAULT_SCORE, useScoreKeys } from "@/wiki/score-settings"
@@ -27,6 +37,8 @@ const route = getRouteApi("/city")
 
 // World of a pasted export (no file name to read it from)
 const UNKNOWN_WORLD = "foe-helper"
+
+const nameClass = "font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
 
 const cityKey = (city: City) => `${city.world}/${city.playerId}`
 
@@ -190,14 +202,24 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
   const { assets } = route.useLoaderData()
   const [buildings, setBuildings] = useState<Partial<Record<AgeId, AgeBuilding[]>>>({})
   const [ascending, setAscending] = useState(true)
+  const [hideGreatBuildings, setHideGreatBuildings] = usePersistentState("city.hideGb", false)
   // Every age a building of the city is rated at (each building at its own age)
   const ages = useMemo(
     () => [...new Set(city.entities.map((entity) => entityAge(city, entity, LATEST_AGE)))],
     [city],
   )
-  // Ages already asked for: each loads once
-  const requested = useRef(new Set<AgeId>())
-  const missing = ages.filter((age) => !buildings[age])
+  // Great Buildings of the city
+  const gbIds = useMemo(
+    () => [...new Set(city.entities.flatMap((entity) => greatBuildingId(entity, assets) ?? []))],
+    [city, assets],
+  )
+  const [greatBuildings, setGreatBuildings] = useState<Record<string, GreatBuilding | null>>({})
+  // Files already asked for: each loads once
+  const requested = useRef(new Set<string>())
+  const missing = [
+    ...ages.filter((age) => !buildings[age]),
+    ...gbIds.filter((id) => greatBuildings[id] === undefined),
+  ]
 
   useEffect(() => {
     for (const age of ages) {
@@ -208,14 +230,29 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
         // Age without buildings in the wiki: nothing to rate there
         .catch(() => setBuildings((loaded) => ({ ...loaded, [age]: [] })))
     }
-  }, [ages])
+    for (const id of gbIds) {
+      if (requested.current.has(`gb:${id}`)) continue
+      requested.current.add(`gb:${id}`)
+      fetchGreatBuilding(id)
+        .then((gb) => setGreatBuildings((loaded) => ({ ...loaded, [id]: gb })))
+        .catch(() => setGreatBuildings((loaded) => ({ ...loaded, [id]: null })))
+    }
+  }, [ages, gbIds])
 
-  const rated = useMemo(
-    () => rateCity(city, assets, buildings, LATEST_AGE, scoreKeys),
-    [city, assets, buildings, scoreKeys],
-  )
+  const rated = useMemo(() => {
+    const loaded = Object.fromEntries(
+      Object.entries(greatBuildings).filter(
+        (entry): entry is [string, GreatBuilding] => !!entry[1],
+      ),
+    )
+    return rateCity(city, assets, buildings, loaded, LATEST_AGE, scoreKeys)
+  }, [city, assets, buildings, greatBuildings, scoreKeys])
   if (missing.length) return <p className="text-muted-foreground">{t.city.loading}</p>
-  const rows = [...rated.rows].sort((a, b) => (ascending ? a.score - b.score : b.score - a.score))
+  // Great Buildings are tagged instead of scored, and sorted as below 0
+  const sortScore = (row: CityRow) => (row.kind === "great_building" ? -1 : row.score)
+  const rows = rated.rows
+    .filter((row) => !hideGreatBuildings || row.kind !== "great_building")
+    .sort((a, b) => (ascending ? 1 : -1) * (sortScore(a) - sortScore(b)))
   const counted = rated.rows.reduce((sum, row) => sum + row.count, 0)
   const ageName = (age: AgeId) => localized(AGES.find((a) => a.id === age)!.name, locale)
 
@@ -224,6 +261,13 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
       <p className="text-sm text-muted-foreground">
         {t.city.summary.replace("{count}", formatNumber(counted, locale))} {t.city.scoreSettings}
       </p>
+      <label className="flex w-fit items-center gap-2 text-sm">
+        <Checkbox
+          checked={hideGreatBuildings}
+          onCheckedChange={(checked) => setHideGreatBuildings(checked === true)}
+        />
+        {t.city.hideGreatBuildings}
+      </label>
       <div className="overflow-x-auto rounded-lg border">
         <table className="w-full border-collapse text-sm">
           <thead className="bg-muted/40 text-muted-foreground">
@@ -251,38 +295,52 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
           <tbody>
             {rows.map((row) => (
               <tr
-                key={`${row.building.id}@${row.age}`}
+                key={`${row.kind}:${row.id}@${row.level ?? row.age}`}
                 className="border-b last:border-0 hover:bg-muted/30"
               >
                 <td className="px-3 py-2">
                   <div className="flex items-start justify-between gap-1">
-                    <Link
-                      to="/buildings/$id"
-                      params={{ id: row.building.id }}
-                      search={{ age: row.age, from: "city" }}
-                      className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
-                    >
-                      {localized(row.building.name, locale)}
-                    </Link>
+                    {row.kind === "great_building" ? (
+                      <Link
+                        to="/great-buildings/$id"
+                        params={{ id: row.id }}
+                        search={{ level: row.level, from: "city" }}
+                        className={nameClass}
+                      >
+                        {localized(row.name, locale)}
+                      </Link>
+                    ) : (
+                      <Link
+                        to="/buildings/$id"
+                        params={{ id: row.id }}
+                        search={{ age: row.age, from: "city" }}
+                        className={nameClass}
+                      >
+                        {localized(row.name, locale)}
+                      </Link>
+                    )}
                     <CompareButton
                       iconOnly
                       className="shrink-0"
-                      item={{
-                        kind: "building",
-                        id: row.building.id,
-                        name: row.building.name,
-                        image: row.building.image,
-                      }}
+                      item={{ kind: row.kind, id: row.id, name: row.name, image: row.image }}
                     />
                   </div>
                 </td>
                 <td className="px-3 py-2 whitespace-nowrap text-muted-foreground">
-                  {ageName(row.age)}
+                  {row.kind === "great_building"
+                    ? `${t.city.gbLevel} ${row.level}`
+                    : ageName(row.age)}
                 </td>
                 <td className="px-3 py-2 text-right">×{row.count}</td>
                 <td className="px-3 py-2 text-right">{formatNumber(row.tiles, locale, 1)}</td>
                 <td className="px-3 py-2">
-                  <ScorePill score={row.score} className="min-w-14" />
+                  {row.kind === "great_building" ? (
+                    <span className="inline-flex min-w-14 justify-center rounded-full bg-white px-2 py-0.5 text-xs font-semibold text-black ring-1 ring-black/15">
+                      {t.city.gbTag}
+                    </span>
+                  ) : (
+                    <ScorePill score={row.score} className="min-w-14" />
+                  )}
                 </td>
               </tr>
             ))}

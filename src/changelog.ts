@@ -16,6 +16,10 @@ export const CHANGELOG: Release[] = [
         fr: "Onglet Ville : bouton de comparaison sur chaque bâtiment, comme dans le wiki",
         en: "City tab: compare button on each building, like in the wiki",
       },
+      {
+        fr: "Onglet Ville : les Grands Monuments aussi, notés à leur niveau (PF, ressources, ressources de guilde, armée, pièces, marchandises…)",
+        en: "City tab: Great Buildings too, rated at their level (FP, goods, guild goods, army, coins, supplies…)",
+      },
     ],
   },
   {

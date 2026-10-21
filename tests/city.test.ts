@@ -1,7 +1,9 @@
 import { describe, expect, it } from "vitest"
 import type { AgeBuilding } from "@/core/building"
+import type { GreatBuilding } from "@/core/great-building"
 import {
   FoeHelperFormatError,
+  greatBuildingStats,
   parseFoeHelperExport,
   rateCity,
   worldLabel,
@@ -27,7 +29,7 @@ const city = (ids: string[]): City => ({
 })
 
 describe("city rating", () => {
-  const assets = { W_A: "a", W_B: "b" }
+  const assets = { buildings: { W_A: "a", W_B: "b" }, greatBuildings: {} }
   const buildings = [building("a", 10), building("b", 40)]
 
   it("counts each known building and rates it", () => {
@@ -35,10 +37,11 @@ describe("city rating", () => {
       city(["W_A", "W_A", "W_B"]),
       assets,
       { BronzeAge: buildings },
+      {},
       "BronzeAge",
       ["fp"],
     )
-    expect(rows.map((row) => [row.building.id, row.count])).toEqual([
+    expect(rows.map((row) => [row.id, row.count])).toEqual([
       ["a", 2],
       ["b", 1],
     ])
@@ -53,6 +56,7 @@ describe("city rating", () => {
       },
       assets,
       { BronzeAge: buildings },
+      {},
       "BronzeAge",
       ["fp"],
     )
@@ -143,8 +147,9 @@ describe("FoE Helper export", () => {
           { id: "W_A", x: 1, y: 0, connected: true },
         ],
       },
-      { W_A: "a" },
+      { buildings: { W_A: "a" }, greatBuildings: {} },
       { IronAge: [iron], SpaceAgeTitan: [titan] },
+      {},
       "SpaceAgeTitan",
       ["fp"],
     )
@@ -156,5 +161,47 @@ describe("FoE Helper export", () => {
 
   it("refuses other JSON", () => {
     expect(() => parseFoeHelperExport({ hello: 1 })).toThrow(FoeHelperFormatError)
+  })
+})
+
+describe("Great Buildings in the city", () => {
+  const arc = {
+    id: "the_arc",
+    name: { fr: "L'Arche", en: "The Arc" },
+    image: "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_FutureEra_Landmark1-abc.png",
+    size: { w: 7, h: 5 },
+    road: "road",
+    levels: {
+      columns: [
+        { label: { fr: "Ressources de la guilde", en: "Guild Goods" } },
+        { label: { fr: "Bonus de contribution", en: "Contribution Boost" } },
+      ],
+      rows: [
+        { level: 1, values: ["10", "20%"] },
+        { level: 80, values: ["120", "90%"] },
+      ],
+    },
+  } as unknown as GreatBuilding
+
+  it("count their production bonuses in the score, at their level", () => {
+    expect(greatBuildingStats(arc, 80)).toEqual({ guild_goods: 120 })
+  })
+
+  it("are rated at their level, by the game id of their picture", () => {
+    const { rows } = rateCity(
+      {
+        world: "fr12",
+        playerId: 1,
+        entities: [{ id: "X_FutureEra_Landmark1", x: 0, y: 0, connected: true, level: 80 }],
+      },
+      { buildings: {}, greatBuildings: { X_FutureEra_Landmark1: "the_arc" } },
+      {},
+      { the_arc: arc },
+      "SpaceAgeTitan",
+      ["guild_goods"],
+    )
+    expect(rows).toHaveLength(1)
+    expect(rows[0]).toMatchObject({ kind: "great_building", id: "the_arc", level: 80, count: 1 })
+    expect(rows[0].score).toBeGreaterThan(0)
   })
 })

@@ -7,6 +7,8 @@ import { GreatBuildingPage } from "@/wiki/great-building-page"
 export const Route = createFileRoute("/great-buildings/$id")({
   validateSearch: z.object({
     level: z.coerce.number().int().positive().optional().catch(undefined),
+    // Page the Great Building was opened from, for the back link
+    from: z.enum(["city"]).optional().catch(undefined),
   }),
   loader: async ({ params }) => {
     try {

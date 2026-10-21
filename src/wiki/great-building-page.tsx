@@ -27,6 +27,9 @@ import { RushCalculator } from "./rush-calculator"
 
 const route = getRouteApi("/great-buildings/$id")
 
+const backClass =
+  "inline-flex w-fit items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+
 // One page for every Great Building: /great-buildings/<id>?level=<n>
 export function GreatBuildingPage() {
   const { t, locale } = useI18n()
@@ -54,18 +57,21 @@ export function GreatBuildingPage() {
   // Past the wiki, every value is computed, not checked in game
   const approx = (text: string) => (row?.computed && text !== "–" ? `≈ ${text}` : text)
   const setLevel = (value: number) =>
-    navigate({ search: { level: value }, replace: true, resetScroll: false })
+    navigate({ search: { level: value, from: search.from }, replace: true, resetScroll: false })
 
   return (
     <div className="flex flex-col gap-6">
-      <Link
-        to="/wiki"
-        search={{ type: "great_building" }}
-        className="inline-flex w-fit items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
-      >
-        <ArrowLeft className="size-4" />
-        {t.building.back}
-      </Link>
+      {search.from === "city" ? (
+        <Link to="/city" className={backClass}>
+          <ArrowLeft className="size-4" />
+          {t.building.backToCity}
+        </Link>
+      ) : (
+        <Link to="/wiki" search={{ type: "great_building" }} className={backClass}>
+          <ArrowLeft className="size-4" />
+          {t.building.back}
+        </Link>
+      )}
 
       <header className="flex flex-col gap-4 sm:flex-row sm:items-start">
         <img src={gb.image} alt="" className="size-48 shrink-0 object-contain" />

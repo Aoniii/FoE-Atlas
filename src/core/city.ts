@@ -1,9 +1,10 @@
 // A player's main city, read from a FoE Helper export, and how profitable each of its
-// buildings is, at the building's own age.
+// buildings is: at the building's own age, Great Buildings at their level.
 
 import { AGES, type AgeId } from "./ages"
 import type { AgeBuilding, StatBlock } from "./building"
 import { aggregateStats, score, tileCount, type References } from "./efficiency"
+import type { GreatBuilding } from "./great-building"
 import type { StatKey } from "./stats"
 
 export type CityEntity = {
@@ -18,6 +19,8 @@ export type CityEntity = {
   // The building's own age when it has one (event buildings keep the age they were built or
   // upgraded in); undefined: it follows the player's age
   era?: string
+  // Great Building level
+  level?: number
 }
 
 export type City = {
@@ -34,9 +37,21 @@ export type City = {
   entities: CityEntity[]
 }
 
+export type CityAssets = {
+  buildings: Record<string, string>
+  greatBuildings: Record<string, string>
+}
+
+// One line of the rated city: a building at an age, or a Great Building at a level
 export type CityRow = {
-  building: AgeBuilding
+  kind: "building" | "great_building"
+  id: string
+  name: { fr: string; en: string }
+  image?: string
+  // Age of a building, of the player for a Great Building
   age: AgeId
+  // Great Building level
+  level?: number
   count: number
   tiles: number
   stats: StatBlock
@@ -45,7 +60,7 @@ export type CityRow = {
 
 export type RatedCity = {
   rows: CityRow[]
-  // Buildings FoE Atlas does not know (main building, Great Buildings, culture...): by name
+  // Buildings FoE Atlas does not know (main building, culture...): by name
   unknown: { name: string; count: number }[]
 }
 
@@ -57,13 +72,57 @@ export function entityAge(city: City, entity: CityEntity, fallback: AgeId): AgeI
   return isAge(city.era) ? city.era : fallback
 }
 
-// Buildings of the city found in the wiki, at their own age, one row per building and age
-// with its count; the others listed apart. `buildingsByAge`: the wiki's buildings of each age
-// the city needs (see entityAge).
+// Great Building of a city entity, if it is one
+export function greatBuildingId(entity: CityEntity, assets: CityAssets): string | undefined {
+  return assets.greatBuildings[entity.assetId ?? entity.id] ?? assets.greatBuildings[entity.id]
+}
+
+const number = (value: string | undefined) => {
+  const match = value?.match(/^([\d,]+(?:\.\d+)?)\s*%?$/)
+  return match ? Number(match[1].replace(/,/g, "")) : 0
+}
+const ARMY = {
+  attackers: ["atk_army_att_classic", "atk_army_def_classic"],
+  defenders: ["def_army_att_classic", "def_army_def_classic"],
+} as const
+// Great Building bonuses counted in the score, by the wiki's column name; the others
+// (contribution boost, first strike, plunder repel...) are not stats of the score
+const GB_STATS: Record<string, readonly StatKey[]> = {
+  Research: ["fp"],
+  "Guild Goods": ["guild_goods"],
+  "Good production": ["goods"],
+  "Previous Era Goods Production": ["goods_prev"],
+  "Coin production": ["coins"],
+  "Supply production": ["supplies"],
+  "Medal production": ["medals"],
+  Happiness: ["happiness"],
+  Population: ["population"],
+  "Attackers - Attack & Defense": ARMY.attackers,
+  "Defenders - Attack & Defense": ARMY.defenders,
+  "Attackers & Defenders - Attack & Defense": [...ARMY.attackers, ...ARMY.defenders],
+}
+
+// Stats of a Great Building at a level (its level table, extended past the wiki)
+export function greatBuildingStats(gb: GreatBuilding, level: number): StatBlock {
+  const row = gb.levels.rows.find((r) => r.level === level) ?? gb.levels.rows.at(-1)
+  const stats: StatBlock = {}
+  gb.levels.columns.forEach((column, index) => {
+    for (const key of GB_STATS[column.label.en] ?? []) {
+      stats[key] = (stats[key] ?? 0) + number(row?.values[index])
+    }
+  })
+  return stats
+}
+
+// Buildings of the city found in the wiki, at their own age, and Great Buildings at their
+// level: one row per building and age (or Great Building and level) with its count; the
+// others listed apart. `buildingsByAge`: the wiki's buildings of each age the city needs
+// (see entityAge); `greatBuildings`: those of the city (see greatBuildingId).
 export function rateCity(
   city: City,
-  assets: Record<string, string>,
+  assets: CityAssets,
   buildingsByAge: Partial<Record<AgeId, AgeBuilding[]>>,
+  greatBuildings: Record<string, GreatBuilding>,
   fallback: AgeId,
   scoreKeys: StatKey[],
   references?: References,
@@ -74,29 +133,52 @@ export function rateCity(
       lookup.set(age, new Map((buildingsByAge[age] ?? []).map((b) => [b.id, b])))
     return lookup.get(age)!.get(id)
   }
-  const counts = new Map<string, { building: AgeBuilding; age: AgeId; count: number }>()
+  const rows = new Map<string, CityRow>()
+  const add = (key: string, row: Omit<CityRow, "count" | "score">) => {
+    const count = (rows.get(key)?.count ?? 0) + 1
+    rows.set(key, { ...row, count, score: score(row.stats, row.tiles, scoreKeys, references) })
+  }
   const unknown = new Map<string, number>()
   for (const entity of city.entities) {
-    const id = assets[entity.assetId ?? entity.id] ?? assets[entity.id]
     const age = entityAge(city, entity, fallback)
+    const gb = greatBuildings[greatBuildingId(entity, assets) ?? ""]
+    if (gb && entity.level) {
+      const { id, name, image, size, road } = gb
+      const stats = greatBuildingStats(gb, entity.level)
+      const tiles = tileCount(size, road)
+      add(`gb:${id}@${entity.level}`, {
+        kind: "great_building",
+        id,
+        name,
+        image,
+        age,
+        level: entity.level,
+        tiles,
+        stats,
+      })
+      continue
+    }
+    const id = assets.buildings[entity.assetId ?? entity.id] ?? assets.buildings[entity.id]
     const building = id ? find(age, id) : undefined
     if (building) {
-      const key = `${building.id}@${age}`
-      const row = counts.get(key) ?? { building, age, count: 0 }
-      counts.set(key, { ...row, count: row.count + 1 })
+      const { name, image, size, road } = building
+      const stats = aggregateStats(building.age)
+      add(`${building.id}@${age}`, {
+        kind: "building",
+        id: building.id,
+        name,
+        image,
+        age,
+        tiles: tileCount(size, road),
+        stats,
+      })
     } else {
       const name = entity.name ?? entity.id
       unknown.set(name, (unknown.get(name) ?? 0) + 1)
     }
   }
-  const rows = [...counts.values()].map(({ building, age, count }) => {
-    const tiles = tileCount(building.size, building.road)
-    const stats = aggregateStats(building.age)
-    const rated = score(stats, tiles, scoreKeys, references)
-    return { building, age, count, tiles, stats, score: rated }
-  })
   return {
-    rows,
+    rows: [...rows.values()],
     unknown: [...unknown]
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count),
@@ -119,7 +201,8 @@ type FoeHelperEntity = {
   x?: number
   y?: number
   connected?: number
-  // Multi-age buildings: their age, game era id minus 1 (1 = Bronze Age)
+  // Multi-age buildings: their age, game era id minus 1 (1 = Bronze Age); Great
+  // Buildings: their level
   level?: number
 }
 
@@ -164,6 +247,7 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
           y: entity.y ?? 0,
           connected: entity.connected === 1,
           ...(ownAge(entity) && { era: ownAge(entity) }),
+          ...(entity.type === "greatbuilding" && entity.level && { level: entity.level }),
         }
       }),
   }

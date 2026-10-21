@@ -92,16 +92,6 @@ const search: SearchEntry[] = buildings.map(({ id, name, image, event, eventYear
 }))
 writeFileSync(`${OUTPUT}/search.json`, JSON.stringify(search))
 
-// Game asset id -> building id, to recognize the buildings of a player's city (City tab).
-// Our images are named after the asset with "SS_" after its first letter:
-// .../W_SS_MultiAge_HERO24H1-<hash>.png is the game's W_MultiAge_HERO24H1
-const assets: Record<string, string> = {}
-for (const { id, image } of buildings) {
-  const file = image?.match(/\/([A-Z])_SS_([^/]+?)-[0-9a-f]+\.\w+$/)
-  if (file) assets[`${file[1]}_${file[2]}`] = id
-}
-writeFileSync(`${OUTPUT}/assets.json`, JSON.stringify(assets))
-
 // One file per building for its own page, with the other levels of its chain
 const BUILDINGS_OUTPUT = `${OUTPUT}/buildings`
 mkdirSync(BUILDINGS_OUTPUT, { recursive: true })
@@ -269,6 +259,27 @@ const cards: GreatBuildingCard[] = greatBuildings.map(({ id, name, image, age })
   ...(gbBeta[id]?.columns.some((column) => column.tier === "gold") && { beta: true }),
 }))
 writeFileSync(`${OUTPUT}/great-buildings.json`, JSON.stringify(cards))
+// Game asset id -> building or Great Building id, to recognize the buildings of a player's
+// city (City tab). Our images are named after the asset with "SS_" after its first letter:
+// .../W_SS_MultiAge_HERO24H1-<hash>.png is the game's W_MultiAge_HERO24H1
+const assetOf = (image: string | undefined) => {
+  const file = image?.match(/\/([A-Z])_SS_([^/]+?)-[0-9a-f]+\.\w+$/)
+  return file ? `${file[1]}_${file[2]}` : undefined
+}
+const assets = {
+  buildings: {} as Record<string, string>,
+  greatBuildings: {} as Record<string, string>,
+}
+for (const { id, image } of buildings) {
+  const asset = assetOf(image)
+  if (asset) assets.buildings[asset] = id
+}
+for (const { id, image } of greatBuildings) {
+  const asset = assetOf(image)
+  if (asset) assets.greatBuildings[asset] = id
+}
+writeFileSync(`${OUTPUT}/assets.json`, JSON.stringify(assets))
+
 // Great Buildings are searchable too
 const gbSearch: SearchEntry[] = greatBuildings.map(({ id, name, image, age }) => ({
   id,
