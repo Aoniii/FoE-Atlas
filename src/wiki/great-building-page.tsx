@@ -200,6 +200,9 @@ function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) 
         <p className="text-xs text-muted-foreground">
           {t.greatBuilding.betaNote.replace("{level}", String(beta.maxLevel))}
         </p>
+        <p className="text-xs font-medium text-orange-600 dark:text-orange-400">
+          {t.greatBuilding.betaWarning}
+        </p>
       </div>
       <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         <BetaStat label={t.greatBuilding.cost} value={formatNumber(row?.cost ?? 0, locale)} />
