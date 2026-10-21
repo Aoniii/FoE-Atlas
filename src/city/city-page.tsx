@@ -265,7 +265,7 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                   <Link
                     to="/buildings/$id"
                     params={{ id: row.building.id }}
-                    search={{ age: row.age }}
+                    search={{ age: row.age, from: "city" }}
                     className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
                   >
                     {localized(row.building.name, locale)}

@@ -6,7 +6,11 @@ import { BuildingPage } from "@/wiki/building-page"
 import { DataNotFoundError, fetchBuilding, fetchIndex } from "@/wiki/data"
 
 export const Route = createFileRoute("/buildings/$id")({
-  validateSearch: z.object({ age: AgeIdSchema.optional().catch(undefined) }),
+  validateSearch: z.object({
+    age: AgeIdSchema.optional().catch(undefined),
+    // Page the building was opened from, for the back link
+    from: z.enum(["city"]).optional().catch(undefined),
+  }),
   loader: async ({ params }) => {
     try {
       const [building, index] = await Promise.all([fetchBuilding(params.id), fetchIndex()])

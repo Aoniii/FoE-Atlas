@@ -25,6 +25,9 @@ import { StatIconsContext } from "./stat-icons-context"
 
 const route = getRouteApi("/buildings/$id")
 
+const backClass =
+  "inline-flex w-fit items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+
 // One page for every building: /buildings/<id>?age=<AgeId>
 export function BuildingPage() {
   const { t, locale } = useI18n()
@@ -61,14 +64,17 @@ export function BuildingPage() {
   return (
     <StatIconsContext value={icons}>
       <div className="flex flex-col gap-6">
-        <Link
-          to="/wiki"
-          search={{ age }}
-          className="inline-flex w-fit items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
-        >
-          <ArrowLeft className="size-4" />
-          {t.building.back}
-        </Link>
+        {search.from === "city" ? (
+          <Link to="/city" className={backClass}>
+            <ArrowLeft className="size-4" />
+            {t.building.backToCity}
+          </Link>
+        ) : (
+          <Link to="/wiki" search={{ age }} className={backClass}>
+            <ArrowLeft className="size-4" />
+            {t.building.back}
+          </Link>
+        )}
 
         <header className="flex flex-col gap-4 sm:flex-row sm:items-start">
           {building.image && (
@@ -125,7 +131,7 @@ export function BuildingPage() {
                   title={localized(level.name, locale)}
                   to="/buildings/$id"
                   params={{ id: level.id }}
-                  search={{ age }}
+                  search={{ age, from: search.from }}
                   className={cn(
                     "inline-flex items-center gap-2 rounded-md border px-2.5 py-1 text-sm hover:bg-muted",
                     level.id === building.id && "border-primary bg-muted font-medium",
