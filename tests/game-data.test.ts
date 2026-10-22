@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { chooseProduction } from "../scripts/production-choice"
+import { chooseProduction } from "@/core/production-choice"
 
 const stat = (stat: "fp" | "goods" | "supplies" | "coins", amount: number) =>
   ({ type: "stat", stat, amount }) as const

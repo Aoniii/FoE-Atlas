@@ -163,14 +163,18 @@ function LinkedBuildings({
         <ul className="mt-1 flex flex-col gap-0.5 text-xs text-muted-foreground">
           {linked.map((link) => (
             <li key={`${link.id}@${link.age}`}>
-              <Link
-                to="/buildings/$id"
-                params={{ id: link.id }}
-                search={{ age: link.age, from: "city" }}
-                className="hover:text-foreground hover:underline"
-              >
-                {localized(link.name, locale)}
-              </Link>{" "}
+              {link.local ? (
+                localized(link.name, locale)
+              ) : (
+                <Link
+                  to="/buildings/$id"
+                  params={{ id: link.id }}
+                  search={{ age: link.age, from: "city" }}
+                  className="hover:text-foreground hover:underline"
+                >
+                  {localized(link.name, locale)}
+                </Link>
+              )}{" "}
               ×{link.count}
             </li>
           ))}
@@ -360,14 +364,20 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                       </Link>
                     ) : (
                       <div>
-                        <Link
-                          to="/buildings/$id"
-                          params={{ id: row.id }}
-                          search={{ age: row.age, from: "city" }}
-                          className={nameClass}
-                        >
-                          {localized(row.name, locale)}
-                        </Link>
+                        {row.local ? (
+                          <span className="font-medium" title={t.city.localOnly}>
+                            {localized(row.name, locale)}
+                          </span>
+                        ) : (
+                          <Link
+                            to="/buildings/$id"
+                            params={{ id: row.id }}
+                            search={{ age: row.age, from: "city" }}
+                            className={nameClass}
+                          >
+                            {localized(row.name, locale)}
+                          </Link>
+                        )}
                         {/* Chain links and set neighbours counted in this line */}
                         {row.linked && <LinkedBuildings count={row.links!} linked={row.linked} />}
                         {row.setNeighbours && (
@@ -377,11 +387,13 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                         )}
                       </div>
                     )}
-                    <CompareButton
-                      iconOnly
-                      className="shrink-0"
-                      item={{ kind: row.kind, id: row.id, name: row.name, image: row.image }}
-                    />
+                    {!row.local && (
+                      <CompareButton
+                        iconOnly
+                        className="shrink-0"
+                        item={{ kind: row.kind, id: row.id, name: row.name, image: row.image }}
+                      />
+                    )}
                   </div>
                 </td>
                 <td className="px-3 py-2 whitespace-nowrap text-muted-foreground">

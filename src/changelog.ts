@@ -28,6 +28,10 @@ export const CHANGELOG: Release[] = [
         fr: "Bâtiments à production au choix (Hôtel d'insectes…) : rendement par jour sur 3 collectes de 8 h, moitié PF moitié ressources ; les bâtiments hors de la carte (ports arctique et océanique, taverne, navires…) ne comptent plus dans la ville",
         en: "Buildings with a choice of productions (Insect Hotel…): daily yield over 3 collections 8 hours apart, half FP half goods; buildings outside the map (Arctic and Oceanic harbours, tavern, ships…) no longer count in the city",
       },
+      {
+        fr: "Ville : les bâtiments que le wiki ne connaît pas sont notés avec leur définition du jeu, tirée de ton export FoE Helper ; toutes les villes sont couvertes",
+        en: "City: buildings the wiki does not know are rated with their game definition, from your FoE Helper export; every city is covered",
+      },
     ],
   },
   {

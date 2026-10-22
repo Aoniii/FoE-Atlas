@@ -62,7 +62,8 @@ gb-readings:
 gb-beta:
 	pnpm gb-beta
 
-# Every building of the game from a FoE Helper city export (City map > Download) in
-# scripts/.cache/city/, into data/game-buildings.json (ARGS="path/to/export.json")
+# Every building of the game from FoE Helper city exports (City map > Download), into
+# data/game-buildings.json: every export in scripts/.cache/city/ is merged, the newest one
+# winning (each export only holds part of the game's buildings). ARGS="a.json b.json" to choose.
 game-data:
 	pnpm game-data $(ARGS)

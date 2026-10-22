@@ -293,3 +293,51 @@ describe("linked buildings", () => {
     })
   })
 })
+
+describe("buildings the wiki does not know", () => {
+  // A FoE Helper export with the game's definition of its building (new format)
+  const exported = {
+    CityMapData: {
+      "1": { cityentity_id: "H_IronAge_Townhall", type: "main_building", x: 0, y: 0 },
+      "2": { cityentity_id: "W_MultiAge_NEW99A1", type: "generic_building", x: 4, y: 0, level: 2 },
+    },
+    CityEntities: {
+      W_MultiAge_NEW99A1: {
+        id: "W_MultiAge_NEW99A1",
+        asset_id: "W_MultiAge_NEW99A1",
+        name: "Nouveau bâtiment",
+        type: "residential",
+        components: {
+          AllAge: { placement: { size: { x: 2, y: 2 } } },
+          IronAge: {
+            production: {
+              options: [
+                {
+                  time: 86400,
+                  products: [
+                    { type: "resources", playerResources: { resources: { strategy_points: 8 } } },
+                  ],
+                },
+              ],
+            },
+          },
+        },
+      },
+    },
+  }
+
+  it("are rated with their definition from the city's export", () => {
+    const city = parseFoeHelperExport(exported, "fr1_citymap_261022-1029_1.json")
+    const { rows } = rateCity(city, { buildings: {}, greatBuildings: {} }, {}, {}, "IronAge", [
+      "fp",
+    ])
+    expect(rows).toHaveLength(1)
+    expect(rows[0]).toMatchObject({
+      id: "W_MultiAge_NEW99A1",
+      local: true,
+      age: "IronAge",
+      tiles: 4,
+    })
+    expect(rows[0].stats.fp).toBe(8)
+  })
+})

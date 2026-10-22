@@ -1,10 +1,11 @@
 // A player's main city, read from a FoE Helper export, and how profitable each of its
 // buildings is: at the building's own age, Great Buildings at their level.
 
-import { AGES, type AgeId } from "./ages"
+import { AGES, LATEST_AGE, type AgeId } from "./ages"
 import type { AgeBuilding, StatBlock } from "./building"
 import { aggregateStats, score, tileCount, type BoostBases, type References } from "./efficiency"
-import type { LinkRegion } from "./game-building"
+import type { GameBuilding, LinkRegion } from "./game-building"
+import { isCityBuilding, toGameBuilding, type Definition } from "./game-definitions"
 import type { GreatBuilding } from "./great-building"
 import type { StatKey } from "./stats"
 
@@ -35,6 +36,8 @@ export type City = {
   updatedAt?: string
   // Order of import on the City tab: "City #2"
   number?: number
+  // The game's definitions of the city's buildings, from the export (see parseFoeHelperExport)
+  definitions?: Record<string, GameBuilding>
   entities: CityEntity[]
 }
 
@@ -53,9 +56,17 @@ export type CityRow = {
   age: AgeId
   // Great Building level
   level?: number
+  // Known only from the city's export: no page on the site
+  local?: boolean
   // Chain links counted in this start building (and which ones), adjacent buildings of its set
   links?: number
-  linked?: { id: string; name: { fr: string; en: string }; age: AgeId; count: number }[]
+  linked?: {
+    id: string
+    name: { fr: string; en: string }
+    age: AgeId
+    count: number
+    local?: boolean
+  }[]
   setNeighbours?: number
   count: number
   tiles: number
@@ -141,6 +152,28 @@ function addStats(into: StatBlock, from: StatBlock) {
   }
 }
 
+// Known only from the city's export (see fromDefinition): no page on the site
+const isLocal = (building: AgeBuilding) => !building.image && building.id === building.gameId
+
+// A building the wiki does not know, from the game's definition in the city's export
+function fromDefinition(city: City, gameId: string, age: AgeId): AgeBuilding | undefined {
+  const definition = city.definitions?.[gameId]
+  const data = definition?.ages[age]
+  if (!definition || !data) return undefined
+  const { name, type, size, road, links } = definition
+  return {
+    id: gameId,
+    name: { fr: name, en: name },
+    type,
+    size,
+    road,
+    reliability: "official",
+    gameId,
+    ...(links && { links }),
+    age: data,
+  }
+}
+
 // A building of the city found in the wiki, at its age
 type Placed = { entity: CityEntity; age: AgeId; building: AgeBuilding }
 
@@ -176,7 +209,13 @@ function groupLinks(chain: Placed[]): NonNullable<CityRow["linked"]> {
   const groups = new Map<string, NonNullable<CityRow["linked"]>[number]>()
   for (const { building, age } of chain) {
     const key = `${building.id}@${age}`
-    const group = groups.get(key) ?? { id: building.id, name: building.name, age, count: 0 }
+    const group = groups.get(key) ?? {
+      id: building.id,
+      name: building.name,
+      age,
+      count: 0,
+      ...(isLocal(building) && { local: true }),
+    }
     groups.set(key, { ...group, count: group.count + 1 })
   }
   return [...groups.values()]
@@ -254,7 +293,7 @@ export function rateCity(
       continue
     }
     const id = assets.buildings[entity.assetId ?? entity.id] ?? assets.buildings[entity.id]
-    const building = id ? find(age, id) : undefined
+    const building = (id ? find(age, id) : undefined) ?? fromDefinition(city, entity.id, age)
     if (building) placed.push({ entity, age, building })
     else {
       const name = entity.name ?? entity.id
@@ -290,6 +329,8 @@ export function rateCity(
     const { name, image } = building
     add(`${building.id}@${age}+${chain.length}/${neighbours}`, {
       kind: "building",
+      // Only from the export: no page on the site
+      ...(isLocal(building) && { local: true }),
       id: building.id,
       name,
       image,
@@ -371,7 +412,7 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
   const file = fileName?.match(/^([a-z]+\d+)_citymap_[\d-]+_(\d+)\.json$/i)
   // The export has no player age: the town hall's id carries it ("H_SpaceAgeTitan_Townhall")
   const townHall = raw.find((entity) => entity.type === "main_building")?.cityentity_id
-  return {
+  const city: City = {
     world: file?.[1].toLowerCase() ?? "foe-helper",
     playerId: Number(file?.[2] ?? 0),
     era: townHall?.match(/^H_([A-Za-z]+)_/)?.[1],
@@ -395,6 +436,19 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
         }
       }),
   }
+  // The game's own definition of every building of the city, at the ages it is rated at:
+  // rates the buildings the wiki does not know, with their chain and set links
+  const ages = new Map<string, Set<AgeId>>()
+  for (const entity of city.entities) {
+    const age = entityAge(city, entity, LATEST_AGE)
+    ages.set(entity.id, (ages.get(entity.id) ?? new Set()).add(age))
+  }
+  const own: Record<string, GameBuilding> = {}
+  for (const [id, used] of ages) {
+    const definition = definitions[id] as Definition | undefined
+    if (definition && isCityBuilding(definition)) own[id] = toGameBuilding(definition, [...used])
+  }
+  return { ...city, definitions: own }
 }
 
 // Daily production of the city the percent boosts apply to: FP, goods of the three ages and

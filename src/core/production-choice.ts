@@ -1,5 +1,5 @@
-import type { Output, Reward } from "../src/core/building"
-import type { StatKey } from "../src/core/stats"
+import type { Output, Reward } from "./building"
+import type { StatKey } from "./stats"
 
 // Buildings with a choice of productions (Insect Hotel: supplies, coins, medals, FP or goods):
 // each option's yield over a day of 3 collections, 8 hours apart (an option of 8h or less runs
