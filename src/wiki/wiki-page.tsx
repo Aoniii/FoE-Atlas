@@ -1,13 +1,14 @@
 import { useMemo } from "react"
 import { getRouteApi } from "@tanstack/react-router"
 import { LATEST_AGE } from "@/core/ages"
+import { DEFAULT_BOOST_BASES } from "@/core/efficiency"
 import type { BuildingType } from "@/core/building"
 import type { StatKey } from "@/core/stats"
 import { getPreferredAge, setPreferredAge } from "@/lib/age-preference"
 import { useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
 import { BuildingsTable } from "./buildings-table"
-import { DEFAULT_SCORE, useScoreKeys } from "./score-settings"
+import { DEFAULT_SCORE, setBoostBases, useBoostBases, useScoreKeys } from "./score-settings"
 import { GreatBuildingGrid } from "./great-building-grid"
 import { toRows } from "./data"
 import { eventName, formatNumber } from "./format"
@@ -34,6 +35,7 @@ export function WikiPage() {
   const age = search.age ?? getPreferredAge() ?? LATEST_AGE
   const [visibleStats, setVisibleStats] = usePersistentState("wiki.columns.v2", DEFAULT_VISIBLE)
   const [scoreKeys, setScoreKeys] = useScoreKeys()
+  const bases = useBoostBases()
 
   const types = useMemo(
     () => index.types ?? [...new Set(buildings.map((b) => b.type))].sort(),
@@ -52,8 +54,8 @@ export function WikiPage() {
   const showScore = type === "special" && scoreKeys.length > 0
   const rows = useMemo(() => {
     const shown = search.event ? ofType.filter((b) => b.event === search.event) : ofType
-    return toRows(shown, type === "special" ? scoreKeys : [])
-  }, [ofType, search.event, scoreKeys, type])
+    return toRows(shown, type === "special" ? scoreKeys : [], bases)
+  }, [ofType, search.event, scoreKeys, type, bases])
 
   const toggle = (list: StatKey[], key: StatKey, on: boolean) =>
     on ? [...new Set([...list, key])] : list.filter((k) => k !== key)
@@ -106,6 +108,7 @@ export function WikiPage() {
               onReset={() => {
                 setVisibleStats(DEFAULT_VISIBLE)
                 setScoreKeys(DEFAULT_SCORE)
+                setBoostBases(DEFAULT_BOOST_BASES)
               }}
             />
           </div>

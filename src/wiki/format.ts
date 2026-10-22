@@ -1,5 +1,5 @@
 import type { AgeBuilding } from "@/core/building"
-import { DEFAULT_REFERENCES } from "@/core/efficiency"
+import { DEFAULT_BOOST_BASES, DEFAULT_REFERENCES, type BoostBases } from "@/core/efficiency"
 import { EVENTS } from "@/core/events"
 import { STATS, type StatDef, type StatKey } from "@/core/stats"
 import { localized, type Locale, type Messages } from "@/lib/i18n"
@@ -50,16 +50,22 @@ export function fullStatLabel(t: Messages, key: StatKey): string {
 }
 
 // Lines explaining what a stat is worth in the score:
-// "1 point = 12 % par case", and for boosts "+1 % compte comme 200 PF" first
-export function scoreHint(t: Messages, key: StatKey, locale: Locale): string[] {
+// "1 point = 12 % par case", and for boosts "+1 % compte comme 20 PF" first
+export function scoreHint(
+  t: Messages,
+  key: StatKey,
+  locale: Locale,
+  bases: BoostBases = DEFAULT_BOOST_BASES,
+): string[] {
   const def: StatDef = STATS[key]
   const fill = (template: string, value: string) => template.replace("{value}", value)
-  if (def.boosts && def.equivalent) {
+  if (def.boosts) {
     const base = def.boosts as StatKey
+    const equivalent = bases[def.boosts] / 100
     const reference = DEFAULT_REFERENCES[base]
-    const lines = [fill(t.wiki.tooltipBoost, statText(t, base, def.equivalent, locale))]
-    if (reference) {
-      const perPoint = `${formatNumber(reference / def.equivalent, locale, 3)} %`
+    const lines = [fill(t.wiki.tooltipBoost, statText(t, base, equivalent, locale))]
+    if (reference && equivalent > 0) {
+      const perPoint = `${formatNumber(reference / equivalent, locale, 3)} %`
       lines.push(fill(t.wiki.tooltipPoint, perPoint))
     }
     return lines

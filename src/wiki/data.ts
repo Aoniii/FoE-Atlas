@@ -2,7 +2,13 @@ import type { AgeId } from "@/core/ages"
 import type { AgeBuilding, BuildingPage, BuildingType, StatBlock } from "@/core/building"
 import type { GreatBuilding, GreatBuildingCard } from "@/core/great-building"
 import type { RewardTables } from "@/core/rush"
-import { aggregateStats, score, tileCount, type References } from "@/core/efficiency"
+import {
+  aggregateStats,
+  score,
+  tileCount,
+  type BoostBases,
+  type References,
+} from "@/core/efficiency"
 import type { StatKey } from "@/core/stats"
 
 export type DataIndex = {
@@ -51,11 +57,12 @@ export const fetchBuilding = (id: string) =>
 export function toRows(
   buildings: AgeBuilding[],
   scoreKeys: StatKey[],
+  bases?: BoostBases,
   references?: References,
 ): WikiRow[] {
   return buildings.map((building) => {
     const tiles = tileCount(building.size, building.road)
     const stats = aggregateStats(building.age)
-    return { building, tiles, stats, score: score(stats, tiles, scoreKeys, references) }
+    return { building, tiles, stats, score: score(stats, tiles, scoreKeys, references, bases) }
   })
 }

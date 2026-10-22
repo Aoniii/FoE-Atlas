@@ -21,7 +21,7 @@ import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { formatNumber, formatStat, formatValue, fullStatLabel, longStatLabel } from "@/wiki/format"
 import { ScorePill } from "@/wiki/score-pill"
-import { useScoreKeys } from "@/wiki/score-settings"
+import { useBoostBases, useScoreKeys } from "@/wiki/score-settings"
 import { StatIcon } from "@/wiki/stat-icon"
 import { StatIconsContext } from "@/wiki/stat-icons-context"
 import { removeCompare, type CompareKind } from "./selection"
@@ -89,6 +89,7 @@ function BuildingsCompare({
   const search = route.useSearch()
   const navigate = route.useNavigate()
   const [scoreKeys] = useScoreKeys()
+  const bases = useBoostBases()
   const [perTile, setPerTile] = useState(false)
 
   const ages = AGES.filter((age) => items.some((b) => b.ages[age.id]))
@@ -101,7 +102,7 @@ function BuildingsCompare({
     const data = building.ages[age]
     const stats = data ? aggregateStats(data) : undefined
     const tiles = tileCount(building.size, building.road)
-    const total = stats ? score(stats, tiles, scoreKeys) : 0
+    const total = stats ? score(stats, tiles, scoreKeys, undefined, bases) : 0
     // What each stat group brings to the score
     const parts = STAT_GROUPS.map((group) => ({
       group,
@@ -110,6 +111,8 @@ function BuildingsCompare({
             stats,
             tiles,
             scoreKeys.filter((key) => STATS[key].group === group),
+            undefined,
+            bases,
           )
         : 0,
     }))

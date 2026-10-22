@@ -28,12 +28,17 @@ export function isScorable(key: StatKey, references: References = DEFAULT_REFERE
   return references[base] !== undefined
 }
 
+// Daily production a percent boost applies to: +1% FP is worth 1% of `fp`
+export type BoostBases = { fp: number; goods: number; guild_goods: number }
+export const DEFAULT_BOOST_BASES: BoostBases = { fp: 2000, goods: 1500, guild_goods: 500 }
+
 // Score = sum over selected stats of (value per tile / reference per tile)
 export function score(
   stats: StatBlock,
   tiles: number,
   selected: Iterable<StatKey>,
   references: References = DEFAULT_REFERENCES,
+  bases: BoostBases = DEFAULT_BOOST_BASES,
 ): number {
   let total = 0
   for (const key of selected) {
@@ -42,7 +47,7 @@ export function score(
     const def: StatDef = STATS[key]
     // A percent boost is first converted to units of the stat it boosts
     const base = (def.boosts ?? key) as StatKey
-    const amount = def.boosts ? value * (def.equivalent ?? 0) : value
+    const amount = def.boosts ? (value * bases[def.boosts]) / 100 : value
     const reference = references[base]
     if (reference) total += amount / tiles / reference
   }

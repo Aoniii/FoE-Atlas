@@ -4,6 +4,7 @@ import { ArrowDown, ArrowUp, ClipboardPaste, FileUp, Trash2 } from "lucide-react
 import { AGES, LATEST_AGE, type AgeId } from "@/core/ages"
 import type { AgeBuilding } from "@/core/building"
 import {
+  cityProduction,
   entityAge,
   greatBuildingId,
   parseFoeHelperExport,
@@ -28,7 +29,7 @@ import { usePersistentState } from "@/lib/use-persistent-state"
 import { fetchAgeBuildings, fetchGreatBuilding } from "@/wiki/data"
 import { formatNumber } from "@/wiki/format"
 import { ScorePill } from "@/wiki/score-pill"
-import { DEFAULT_SCORE, useScoreKeys } from "@/wiki/score-settings"
+import { DEFAULT_SCORE, setBoostBases, useBoostBases, useScoreKeys } from "@/wiki/score-settings"
 import { StatIconsContext } from "@/wiki/stat-icons-context"
 import { ScoreActions, ScorePanel } from "@/wiki/wiki-filters"
 import type { StatKey } from "@/core/stats"
@@ -199,6 +200,7 @@ function ImportCity({ onImport }: { onImport: (city: City) => void }) {
 // Buildings of the city at the player's age, least profitable first
 function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
   const { t, locale } = useI18n()
+  const bases = useBoostBases()
   const { assets } = route.useLoaderData()
   const [buildings, setBuildings] = useState<Partial<Record<AgeId, AgeBuilding[]>>>({})
   const [ascending, setAscending] = useState(true)
@@ -245,9 +247,14 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
         (entry): entry is [string, GreatBuilding] => !!entry[1],
       ),
     )
-    return rateCity(city, assets, buildings, loaded, LATEST_AGE, scoreKeys)
-  }, [city, assets, buildings, greatBuildings, scoreKeys])
-  if (missing.length) return <p className="text-muted-foreground">{t.city.loading}</p>
+    return rateCity(city, assets, buildings, loaded, LATEST_AGE, scoreKeys, bases)
+  }, [city, assets, buildings, greatBuildings, scoreKeys, bases])
+  // Percent boosts are worth a share of this city's own production
+  const ready = missing.length === 0
+  useEffect(() => {
+    if (ready) setBoostBases(cityProduction(rated.rows))
+  }, [ready, rated])
+  if (!ready) return <p className="text-muted-foreground">{t.city.loading}</p>
   // Great Buildings are tagged instead of scored, and sorted as below 0
   const sortScore = (row: CityRow) => (row.kind === "great_building" ? -1 : row.score)
   const rows = rated.rows

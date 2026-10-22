@@ -3,7 +3,7 @@
 
 import { AGES, type AgeId } from "./ages"
 import type { AgeBuilding, StatBlock } from "./building"
-import { aggregateStats, score, tileCount, type References } from "./efficiency"
+import { aggregateStats, score, tileCount, type BoostBases, type References } from "./efficiency"
 import type { GreatBuilding } from "./great-building"
 import type { StatKey } from "./stats"
 
@@ -125,6 +125,7 @@ export function rateCity(
   greatBuildings: Record<string, GreatBuilding>,
   fallback: AgeId,
   scoreKeys: StatKey[],
+  bases?: BoostBases,
   references?: References,
 ): RatedCity {
   const lookup = new Map<AgeId, Map<string, AgeBuilding>>()
@@ -136,7 +137,11 @@ export function rateCity(
   const rows = new Map<string, CityRow>()
   const add = (key: string, row: Omit<CityRow, "count" | "score">) => {
     const count = (rows.get(key)?.count ?? 0) + 1
-    rows.set(key, { ...row, count, score: score(row.stats, row.tiles, scoreKeys, references) })
+    rows.set(key, {
+      ...row,
+      count,
+      score: score(row.stats, row.tiles, scoreKeys, references, bases),
+    })
   }
   const unknown = new Map<string, number>()
   for (const entity of city.entities) {
@@ -250,5 +255,22 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
           ...(entity.type === "greatbuilding" && entity.level && { level: entity.level }),
         }
       }),
+  }
+}
+
+// Daily production of the city the percent boosts apply to: FP, goods of the three ages and
+// guild goods of every rated building and Great Building
+export function cityProduction(rows: CityRow[]): BoostBases {
+  const sum = (keys: StatKey[]) =>
+    Math.round(
+      rows.reduce(
+        (total, row) => total + row.count * keys.reduce((s, key) => s + (row.stats[key] ?? 0), 0),
+        0,
+      ),
+    )
+  return {
+    fp: sum(["fp"]),
+    goods: sum(["goods_prev", "goods", "goods_next"]),
+    guild_goods: sum(["guild_goods"]),
   }
 }

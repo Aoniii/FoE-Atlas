@@ -5,6 +5,20 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.9",
+    date: "2026-10-22",
+    changes: [
+      {
+        fr: "Score : les bonus en % (PF, ressources, guilde) valent un pourcentage de ta production par jour, à régler sous chaque case (2 000 PF, 1 500 ressources et 500 de guilde par défaut) ; l'onglet Ville la calcule depuis ta ville. Ils comptaient bien trop jusqu'ici (1 % de PF valait 200 PF)",
+        en: "Score: percent boosts (FP, goods, guild goods) are worth a share of your daily production, set under each box (2,000 FP, 1,500 goods and 500 guild goods by default); the City tab computes it from your city. They counted far too much so far (1% FP was worth 200 FP)",
+      },
+      {
+        fr: "Monuments : pastilles Or et Cuivre sur la grille selon leur rang sur la bêta, et pastille Or devant les nouveaux effets or",
+        en: "Great Buildings: Gold and Copper chips on the grid by their beta tier, and a Gold chip before the new gold effects",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.8",
     date: "2026-10-21",
     changes: [

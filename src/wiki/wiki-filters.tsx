@@ -2,9 +2,12 @@ import { Columns3, RotateCcw, SquareX } from "lucide-react"
 import { AGES, type AgeId } from "@/core/ages"
 import type { BuildingType } from "@/core/building"
 import { isScorable } from "@/core/efficiency"
-import { STAT_GROUPS, statsOfGroup, type StatKey } from "@/core/stats"
+import { STATS, STAT_GROUPS, statsOfGroup, type StatDef, type StatKey } from "@/core/stats"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
+import { Input } from "@/components/ui/input"
+import type { BoostBases } from "@/core/efficiency"
+import { setBoostBases, useBoostBases } from "./score-settings"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -171,6 +174,34 @@ export function WikiFilters(props: FiltersProps) {
   )
 }
 
+const boostOf = (key: StatKey) => (STATS[key] as StatDef).boosts
+
+// Daily production a percent boost applies to (+1% = 1% of it), shared by the whole site;
+// the City tab fills it from the imported city
+function BoostBaseInput({ boosts, value }: { boosts: keyof BoostBases; value: number }) {
+  const { t } = useI18n()
+  return (
+    <label
+      title={t.wiki.boostBaseHint}
+      className="ml-6 flex items-center gap-1 text-xs whitespace-nowrap text-muted-foreground"
+    >
+      <Input
+        type="number"
+        min={0}
+        step={100}
+        value={value}
+        onChange={(event) => {
+          const next = Number(event.target.value)
+          if (Number.isFinite(next) && next >= 0) setBoostBases({ [boosts]: next })
+        }}
+        className="h-7 w-20 px-1.5 text-xs"
+        aria-label={t.wiki.boostBaseHint}
+      />
+      {t.wiki.perDay}
+    </label>
+  )
+}
+
 // Under the score panel, on the wiki and on the City tab
 export function ScoreActions({
   onReset,
@@ -204,6 +235,7 @@ type ScorePanelProps = {
 // Checkboxes of the stats counted in the score, grouped like the table
 export function ScorePanel({ scoreKeys, onToggle }: ScorePanelProps) {
   const { t, locale } = useI18n()
+  const bases = useBoostBases()
   return (
     <TooltipProvider delay={300}>
       <fieldset className="rounded-lg border p-3">
@@ -216,25 +248,31 @@ export function ScorePanel({ scoreKeys, onToggle }: ScorePanelProps) {
               <div key={group} className="flex flex-col gap-1.5">
                 <p className="text-xs font-medium text-muted-foreground">{t.statGroups[group]}</p>
                 {keys.map((key) => (
-                  <Tooltip key={key}>
-                    <TooltipTrigger
-                      render={<label />}
-                      className="flex w-fit cursor-pointer items-center gap-2 text-sm"
-                    >
-                      <Checkbox
-                        checked={scoreKeys.includes(key)}
-                        onCheckedChange={(checked) => onToggle(key, checked)}
-                      />
-                      <StatIcon stat={key} />
-                      {t.stats[key]}
-                    </TooltipTrigger>
-                    <TooltipContent side="right" className="flex-col items-start gap-0.5">
-                      <span className="font-medium">{fullStatLabel(t, key)}</span>
-                      {scoreHint(t, key, locale).map((line) => (
-                        <span key={line}>{line}</span>
-                      ))}
-                    </TooltipContent>
-                  </Tooltip>
+                  <div key={key} className="flex flex-col gap-1">
+                    <Tooltip>
+                      <TooltipTrigger
+                        render={<label />}
+                        className="flex w-fit cursor-pointer items-center gap-2 text-sm"
+                      >
+                        <Checkbox
+                          checked={scoreKeys.includes(key)}
+                          onCheckedChange={(checked) => onToggle(key, checked)}
+                        />
+                        <StatIcon stat={key} />
+                        {t.stats[key]}
+                      </TooltipTrigger>
+                      <TooltipContent side="right" className="flex-col items-start gap-0.5">
+                        <span className="font-medium">{fullStatLabel(t, key)}</span>
+                        {scoreHint(t, key, locale, bases).map((line) => (
+                          <span key={line}>{line}</span>
+                        ))}
+                      </TooltipContent>
+                    </Tooltip>
+                    {/* Percent boosts: the daily production they apply to */}
+                    {boostOf(key) && (
+                      <BoostBaseInput boosts={boostOf(key)!} value={bases[boostOf(key)!]} />
+                    )}
+                  </div>
                 ))}
               </div>
             )

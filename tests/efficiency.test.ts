@@ -15,6 +15,9 @@ const ALL_SCORABLE = STAT_KEYS.filter((key) => isScorable(key))
 
 // References of the reference spreadsheet: the formula must reproduce its scores
 // whatever our own tuned references are
+// The spreadsheet's boost values: +1% FP = 200 FP, goods 300, guild goods 450
+const SHEET_BASES = { fp: 20000, goods: 30000, guild_goods: 45000 }
+
 const SHEET_REFERENCES = {
   fp: 10,
   goods_prev: 12,
@@ -93,17 +96,25 @@ describe("score matches the reference spreadsheet", () => {
     ],
     ["Finish Special Production reference", 39, { fsp: 30 }, 15.38461538],
   ])("%s", (_name, tiles, stats, expected) => {
-    expect(score(stats, tiles, ALL_SCORABLE, SHEET_REFERENCES)).toBeCloseTo(expected, 6)
+    expect(score(stats, tiles, ALL_SCORABLE, SHEET_REFERENCES, SHEET_BASES)).toBeCloseTo(
+      expected,
+      6,
+    )
   })
 })
 
 describe("score", () => {
-  it("converts percent boosts into the boosted stat", () => {
-    // 3% FP boost = 600 FP, 1% goods boost = 300 goods
+  it("converts percent boosts into a share of the player's production", () => {
+    // 3% of 2,000 FP = 60 FP, 1% of 1,500 goods = 15 goods
     const stats = { fp: 100, fp_boost: 3, goods: 250, goods_boost: 1 }
     expect(score(stats, 30, ["fp", "fp_boost", "goods", "goods_boost"])).toBeCloseTo(
-      (100 / 30 + 600 / 30) / 10 + (250 / 30 + 300 / 30) / 10,
+      (100 / 30 + 60 / 30) / 10 + (250 / 30 + 15 / 30) / 10,
     )
+  })
+
+  it("follows the production bases given", () => {
+    const bases = { fp: 10000, goods: 0, guild_goods: 0 }
+    expect(score({ fp_boost: 1 }, 10, ["fp_boost"], undefined, bases)).toBeCloseTo(1)
   })
 
   it("only counts selected stats", () => {

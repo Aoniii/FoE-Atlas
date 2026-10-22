@@ -18,7 +18,7 @@ import { CompareButton } from "@/compare/compare-button"
 import { AgeDetails } from "./building-card"
 import { chainStepLabels } from "./chain-labels"
 import { ScorePill } from "./score-pill"
-import { useScoreKeys } from "./score-settings"
+import { useBoostBases, useScoreKeys } from "./score-settings"
 import { eventLabel, formatNumber, formatStat, fullStatLabel } from "./format"
 import { StatIcon } from "./stat-icon"
 import { StatIconsContext } from "./stat-icons-context"
@@ -46,6 +46,7 @@ export function BuildingPage() {
         : ages[ages.length - 1].id
   const stepLabels = chainStepLabels(building.chainLevels)
   const [scoreKeys] = useScoreKeys()
+  const bases = useBoostBases()
   const tiles = tileCount(building.size, building.road)
   const share = roadShare(building.size, building.road)
   const name = localized(building.name, locale)
@@ -142,7 +143,13 @@ export function BuildingPage() {
                   {scoreKeys.length > 0 && level.stats[age] && (
                     <ScorePill
                       className="px-1.5 py-0 text-[0.7rem]"
-                      score={score(level.stats[age], tileCount(level.size, level.road), scoreKeys)}
+                      score={score(
+                        level.stats[age],
+                        tileCount(level.size, level.road),
+                        scoreKeys,
+                        undefined,
+                        bases,
+                      )}
                     />
                   )}
                 </Link>
