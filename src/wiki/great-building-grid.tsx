@@ -3,6 +3,7 @@ import { AGES } from "@/core/ages"
 import type { GreatBuildingCard } from "@/core/great-building"
 import { CompareButton } from "@/compare/compare-button"
 import { localized, useI18n, type Locale } from "@/lib/i18n"
+import { cn } from "@/lib/utils"
 
 const ageIndex = (card: GreatBuildingCard) =>
   card.age ? AGES.findIndex((age) => age.id === card.age) : -1
@@ -34,12 +35,17 @@ export function GreatBuildingGrid({ cards }: { cards: GreatBuildingCard[] }) {
               className="absolute top-2 right-2"
               item={{ kind: "great_building", id: card.id, name: card.name, image: card.image }}
             />
-            {card.beta && (
+            {card.betaTier && (
               <span
-                title={t.greatBuilding.betaBadgeTitle}
-                className="absolute top-2 left-2 rounded bg-yellow-400 px-1.5 py-0.5 text-[0.7rem] font-medium text-yellow-950"
+                title={t.greatBuilding.betaBadgeTitle[card.betaTier]}
+                className={cn(
+                  "absolute top-2 left-2 rounded px-1.5 py-0.5 text-[0.7rem] font-medium",
+                  card.betaTier === "gold"
+                    ? "bg-yellow-400 text-yellow-950"
+                    : "bg-orange-700/80 text-white",
+                )}
               >
-                {t.greatBuilding.tiers.gold}
+                {t.greatBuilding.tiers[card.betaTier]}
               </span>
             )}
             <span className="font-medium">{localized(card.name, locale)}</span>

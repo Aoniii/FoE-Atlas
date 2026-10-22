@@ -1,6 +1,6 @@
 import { z } from "zod"
 import { AgeIdSchema, LocalizedSchema, RoadSchema, SizeSchema } from "./building"
-import { BetaGreatBuildingSchema } from "./gb-beta"
+import { BetaGreatBuildingSchema, type BetaTier } from "./gb-beta"
 
 // Great Buildings: one page per building, stats per level (not per age)
 export const GreatBuildingSchema = z.object({
@@ -48,6 +48,6 @@ export const GB_MAX_LEVEL = 500
 
 // Light entry of the Great Buildings grid
 export type GreatBuildingCard = Pick<GreatBuilding, "id" | "name" | "image" | "age"> & {
-  // Has the gold tier on the beta server (prestige rework)
-  beta?: boolean
+  // Highest tier on the beta server (prestige rework)
+  betaTier?: BetaTier
 }

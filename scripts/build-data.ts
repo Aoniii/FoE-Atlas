@@ -255,8 +255,10 @@ const cards: GreatBuildingCard[] = greatBuildings.map(({ id, name, image, age })
   name,
   image,
   age,
-  // Only with the gold tier: copper-only ones work as today
-  ...(gbBeta[id]?.columns.some((column) => column.tier === "gold") && { beta: true }),
+  // Highest tier on the beta server
+  ...(gbBeta[id] && {
+    betaTier: gbBeta[id].columns.some((column) => column.tier === "gold") ? "gold" : "copper",
+  }),
 }))
 writeFileSync(`${OUTPUT}/great-buildings.json`, JSON.stringify(cards))
 // Game asset id -> building or Great Building id, to recognize the buildings of a player's
