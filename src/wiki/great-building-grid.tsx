@@ -37,9 +37,9 @@ export function GreatBuildingGrid({ cards }: { cards: GreatBuildingCard[] }) {
             {card.beta && (
               <span
                 title={t.greatBuilding.betaBadgeTitle}
-                className="absolute top-2 left-2 rounded-full border border-orange-500/40 bg-orange-500/15 px-2 py-0.5 text-[0.7rem] font-medium text-orange-600 dark:text-orange-400"
+                className="absolute top-2 left-2 rounded bg-yellow-400 px-1.5 py-0.5 text-[0.7rem] font-medium text-yellow-950"
               >
-                {t.greatBuilding.betaBadge}
+                {t.greatBuilding.tiers.gold}
               </span>
             )}
             <span className="font-medium">{localized(card.name, locale)}</span>

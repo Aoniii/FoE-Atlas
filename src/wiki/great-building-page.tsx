@@ -132,11 +132,9 @@ export function GreatBuildingPage() {
               >
                 <BetaIcon icon={column.icon} className="size-6" />
                 <div>
-                  <p className="font-medium text-orange-600 dark:text-orange-400">
+                  <p className="flex flex-wrap items-center gap-1.5 font-medium text-orange-600 dark:text-orange-400">
+                    <TierChip tier="gold" />
                     {betaLabel(column, locale)}
-                    <span className="ml-1.5 text-xs font-normal">
-                      ({t.greatBuilding.betaGoldEffect})
-                    </span>
                   </p>
                   <p className="text-muted-foreground">{betaDescription(column, locale)}</p>
                 </div>
@@ -210,6 +208,16 @@ export function GreatBuildingPage() {
 const TIER_STYLES: Record<BetaTier, string> = {
   copper: "bg-orange-700/80 text-white",
   gold: "bg-yellow-400 text-yellow-950",
+}
+
+// Copper / Gold tier of a beta bonus
+function TierChip({ tier }: { tier: BetaTier }) {
+  const { t } = useI18n()
+  return (
+    <span className={cn("rounded px-1 text-[0.65rem] font-medium", TIER_STYLES[tier])}>
+      {t.greatBuilding.tiers[tier]}
+    </span>
+  )
 }
 
 // Same level on the beta server (prestige rework), in orange below the live values
@@ -288,15 +296,10 @@ function BetaStat({
   tier?: BetaTier
   hint?: string
 }) {
-  const { t } = useI18n()
   return (
     <div className="rounded-md border border-orange-500/40 bg-orange-500/10 p-3">
       <dt className="flex items-center gap-1.5 text-xs text-muted-foreground">
-        {tier && (
-          <span className={cn("rounded px-1 text-[0.65rem] font-medium", TIER_STYLES[tier])}>
-            {t.greatBuilding.tiers[tier]}
-          </span>
-        )}
+        {tier && <TierChip tier={tier} />}
         <BetaIcon icon={icon} className="size-4" />
         {label}
       </dt>
