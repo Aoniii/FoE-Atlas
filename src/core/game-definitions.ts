@@ -33,6 +33,7 @@ type LookupReward = {
   name?: string
 }
 type EraComponents = {
+  chain?: { config?: { bonuses?: { productions?: Product[]; boosts?: Boost[] }[] } }
   production?: { options: { time?: number; products: Product[] }[] }
   boosts?: { boosts: Boost[] }
   happiness?: { provided?: number }
@@ -437,13 +438,20 @@ function links(def: Definition, ages: AgeId[]): GameLinks | undefined {
       role: isLink ? "link" : "start",
       next: region(chain.linkPositions),
     }
-    if (bonus) {
-      const passive: StatBlock = {}
-      for (const boost of bonus.boosts ?? []) addBoost(passive, boost)
-      const production = (bonus.productions ?? []).flatMap(
-        (p) => productOutput(def, "AllAge", p) ?? [],
+    if (isLink) {
+      // What a link adds can depend on the age: the chain of that age, else the common one
+      result.chain.bonus = Object.fromEntries(
+        ages.flatMap((age) => {
+          const ageBonus = def.components?.[age]?.chain?.config?.bonuses?.[0] ?? bonus
+          if (!ageBonus) return []
+          const passive: StatBlock = {}
+          for (const boost of ageBonus.boosts ?? []) addBoost(passive, boost)
+          const production = (ageBonus.productions ?? []).flatMap(
+            (p) => productOutput(def, age, p) ?? [],
+          )
+          return [[age, { passive, production }]]
+        }),
       )
-      result.chain.bonus = Object.fromEntries(ages.map((age) => [age, { passive, production }]))
     }
   }
   for (const ability of def.abilities ?? []) {

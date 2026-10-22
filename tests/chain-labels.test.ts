@@ -38,4 +38,12 @@ describe("chain step labels", () => {
       en: "Ascended Elysian",
     })
   })
+
+  it("shows the full name of a renamed step", () => {
+    const renamed = chainStepLabels([
+      step("lv9", 9, "Réserve de pandas - Niv. 9", "Panda Reserve - Lv. 9"),
+      step("shrine", 10, "Sanctuaire du panda", "Panda Shrine"),
+    ])
+    expect(renamed.get("shrine")).toEqual({ fr: "Sanctuaire du panda", en: "Panda Shrine" })
+  })
 })

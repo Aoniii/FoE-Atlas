@@ -23,8 +23,11 @@ export function chainStepLabels(
       labels.set(level.id, { fr: String(level.level), en: String(level.level) })
       continue
     }
+    const own = new Set(words(level.name.en.toLowerCase()))
     const added = words(level.name.en).filter((word) => !baseWords.has(word.toLowerCase()))
-    if (!added.length || added.length >= words(level.name.en).length) {
+    // A renamed step ("Panda Reserve" -> "Panda Shrine") is not a kit adding words: full name
+    const renamed = [...baseWords].some((word) => !own.has(word))
+    if (renamed || !added.length || added.length >= words(level.name.en).length) {
       labels.set(level.id, level.name)
       continue
     }
