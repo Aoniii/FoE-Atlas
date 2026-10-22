@@ -9,6 +9,7 @@ import { AGE_IDS, type AgeId } from "../src/core/ages"
 import type { AgeData, BuildingType, Output, Reward, Road, StatBlock } from "../src/core/building"
 import type { GameBuilding, GameLinks } from "../src/core/game-building"
 import type { StatKey } from "../src/core/stats"
+import { chooseProduction } from "./production-choice"
 import { ICON_PACKS, ICON_STATS } from "./scrape/mappings"
 
 // ---- Raw definitions (FoE Helper strips the "__class__" keys) ----
@@ -85,6 +86,7 @@ type Definition = {
     produced_money?: number
     provided_happiness?: number
     provided_population?: number
+    production_values?: { type: string; value: number }[]
   }[]
   available_products?:
     { name?: string; production_time?: number; product?: { resources: Resources } }[] | null
@@ -107,6 +109,9 @@ type Definition = {
 // Not buildings (roads, obstacles, off-grid features, settlements...) or rated apart
 const SKIPPED_TYPES = new Set([
   "street",
+  // Harbours outside the player's map (Arctic, Oceanic)
+  "hub_main",
+  "hub_part",
   "impediment",
   "off_grid",
   "outpost_ship",
@@ -291,6 +296,15 @@ function genericAge(def: Definition, era: string): AgeData {
     ?.population
   if (population) passive.population = population
   const production = components[era]?.production ?? components.AllAge?.production
+  if (production && production.options.length > 1) {
+    const choices = production.options.map((option) => ({
+      time: option.time ?? 86400,
+      rewards: option.products.flatMap((p) =>
+        p.type === "random" ? [] : productRewards(def, era, p),
+      ),
+    }))
+    return { passive, production: chooseProduction(choices) }
+  }
   const option = production && dailyOption(production.options)
   const outputs = (option?.products ?? []).flatMap((p) => productOutput(def, era, p) ?? [])
   return { passive, production: outputs }
@@ -347,19 +361,22 @@ function legacyAge(def: Definition, era: string): AgeData {
       if (options.length) production.push({ kind: "random", options })
     }
   }
-  // Regular buildings: their 24h product (supplies, coins, goods of their age)
-  if (!def.is_special && def.available_products?.length) {
-    const option = dailyOption(def.available_products)
-    const perDay = 86400 / (option?.production_time || 86400)
-    const rewards = Object.entries(option?.product?.resources ?? {}).flatMap(
-      ([key, amount]): Reward[] => {
-        const stat = resourceStat(key) ?? (def.type === "goods" ? "goods" : undefined)
-        // Coins of houses are collected every few hours all day long
-        const total = key === "money" ? amount * perDay : amount
-        return stat && amount ? [{ type: "stat", stat, amount: Math.round(total) }] : []
-      },
-    )
-    if (rewards.length) production.push({ kind: "guaranteed", rewards })
+  // Products to choose from (regular buildings, old special production buildings): amounts
+  // are in the product, or per age in the level's production values, option by option
+  const values = level?.production_values
+  if (def.available_products?.length && (!def.is_special || values)) {
+    const choices = def.available_products
+      .filter((option) => option.name !== "Daily Bonus")
+      .map((option, index) => {
+        const value = values?.[index]
+        const resources = value ? { [value.type]: value.value } : (option.product?.resources ?? {})
+        const rewards = Object.entries(resources).flatMap(([key, amount]): Reward[] => {
+          const stat = resourceStat(key) ?? (def.type === "goods" ? "goods" : undefined)
+          return stat && amount ? [{ type: "stat", stat, amount }] : []
+        })
+        return { time: option.production_time || 86400, rewards }
+      })
+    production.push(...chooseProduction(choices))
   }
   return { passive, production }
 }

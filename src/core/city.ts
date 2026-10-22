@@ -328,10 +328,29 @@ function ownAge(entity: FoeHelperEntity): AgeId | undefined {
 }
 type FoeHelperDefinition = { asset_id?: string; name?: string }
 
+// Expansions of the player's map; a missing x or y is 0
+type UnlockedArea = { x?: number; y?: number; width?: number; length?: number }
+
+const onMap = (entity: FoeHelperEntity, areas: UnlockedArea[]) => {
+  const x = entity.x ?? 0
+  const y = entity.y ?? 0
+  return areas.some(
+    (area) =>
+      x >= (area.x ?? 0) &&
+      x < (area.x ?? 0) + (area.width ?? 0) &&
+      y >= (area.y ?? 0) &&
+      y < (area.y ?? 0) + (area.length ?? 0),
+  )
+}
+
 export class FoeHelperFormatError extends Error {}
 
 export function parseFoeHelperExport(json: unknown, fileName?: string): City {
-  const data = json as { CityMapData?: unknown; CityEntities?: Record<string, FoeHelperDefinition> }
+  const data = json as {
+    CityMapData?: unknown
+    CityEntities?: Record<string, FoeHelperDefinition>
+    UnlockedAreas?: UnlockedArea[]
+  }
   if (!data?.CityMapData || typeof data.CityMapData !== "object") {
     throw new FoeHelperFormatError("Not a FoE Helper city map export")
   }
@@ -347,6 +366,8 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
     updatedAt: new Date().toISOString(),
     entities: raw
       .filter((entity) => entity.cityentity_id && entity.type !== "street")
+      // Outside the player's map: harbours, guild buildings, taverns, ships...
+      .filter((entity) => !data.UnlockedAreas?.length || onMap(entity, data.UnlockedAreas))
       .map((entity) => {
         const definition = definitions[entity.cityentity_id!] ?? {}
         return {

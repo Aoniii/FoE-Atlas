@@ -159,6 +159,17 @@ describe("FoE Helper export", () => {
     ])
   })
 
+  it("leaves out what is outside the player's map", () => {
+    const city = parseFoeHelperExport({
+      CityMapData: {
+        "1": { cityentity_id: "W_MultiAge_PAT24B3", type: "generic_building", x: 2, y: 2 },
+        "2": { cityentity_id: "U_ArcticFuture_HubPart0", type: "hub_part", x: 29, y: 74 },
+      },
+      UnlockedAreas: [{ width: 4, length: 4 }],
+    })
+    expect(city.entities.map((entity) => entity.id)).toEqual(["W_MultiAge_PAT24B3"])
+  })
+
   it("refuses other JSON", () => {
     expect(() => parseFoeHelperExport({ hello: 1 })).toThrow(FoeHelperFormatError)
   })

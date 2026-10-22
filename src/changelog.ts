@@ -24,6 +24,10 @@ export const CHANGELOG: Release[] = [
         fr: "Ville : tous tes bâtiments notés ; une chaîne compte avec ses maillons attachés (Sanctuaire du panda +4), un bâtiment d'ensemble avec les bonus de ses voisins ; il ne reste que l'hôtel de ville non noté",
         en: "City: all your buildings rated; a chain counts with its attached links (Panda Sanctuary +4), a set building with its neighbours' bonuses; only the town hall stays unrated",
       },
+      {
+        fr: "Bâtiments à production au choix (Hôtel d'insectes…) : rendement par jour sur 3 collectes de 8 h, moitié PF moitié ressources ; les bâtiments hors de la carte (ports arctique et océanique, taverne, navires…) ne comptent plus dans la ville",
+        en: "Buildings with a choice of productions (Insect Hotel…): daily yield over 3 collections 8 hours apart, half FP half goods; buildings outside the map (Arctic and Oceanic harbours, tavern, ships…) no longer count in the city",
+      },
     ],
   },
   {
