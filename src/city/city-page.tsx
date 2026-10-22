@@ -138,6 +138,48 @@ export function CityPage() {
   )
 }
 
+// "+4" after a chain start: a click shows the attached links, each opening its page
+function LinkedBuildings({
+  count,
+  linked,
+}: {
+  count: number
+  linked: NonNullable<CityRow["linked"]>
+}) {
+  const { t, locale } = useI18n()
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen((value) => !value)}
+        aria-expanded={open}
+        title={t.city.showLinks}
+        className="ml-1.5 rounded px-1 text-muted-foreground underline decoration-dotted underline-offset-4 hover:bg-muted hover:text-foreground"
+      >
+        +{count}
+      </button>
+      {open && (
+        <ul className="mt-1 flex flex-col gap-0.5 text-xs text-muted-foreground">
+          {linked.map((link) => (
+            <li key={`${link.id}@${link.age}`}>
+              <Link
+                to="/buildings/$id"
+                params={{ id: link.id }}
+                search={{ age: link.age, from: "city" }}
+                className="hover:text-foreground hover:underline"
+              >
+                {localized(link.name, locale)}
+              </Link>{" "}
+              ×{link.count}
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
+  )
+}
+
 // FoE Helper: City map > Download (a .json file) or Copy (the same JSON, to paste here)
 function ImportCity({ onImport }: { onImport: (city: City) => void }) {
   const { t } = useI18n()
@@ -327,9 +369,7 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                           {localized(row.name, locale)}
                         </Link>
                         {/* Chain links and set neighbours counted in this line */}
-                        {row.links && (
-                          <span className="ml-1.5 text-muted-foreground">+{row.links}</span>
-                        )}
+                        {row.linked && <LinkedBuildings count={row.links!} linked={row.linked} />}
                         {row.setNeighbours && (
                           <span className="block text-xs text-muted-foreground">
                             {t.city.setNeighbours.replace("{count}", String(row.setNeighbours))}

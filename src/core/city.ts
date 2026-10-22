@@ -53,8 +53,9 @@ export type CityRow = {
   age: AgeId
   // Great Building level
   level?: number
-  // Chain links counted in this start building, adjacent buildings of its set
+  // Chain links counted in this start building (and which ones), adjacent buildings of its set
   links?: number
+  linked?: { id: string; name: { fr: string; en: string }; age: AgeId; count: number }[]
   setNeighbours?: number
   count: number
   tiles: number
@@ -168,6 +169,17 @@ function chainLinks(start: Placed, links: Placed[], used: Set<Placed>): Placed[]
     chain.push(next)
     current = next
   }
+}
+
+// Attached links by building and age: "Lotus Flower Lake ×4"
+function groupLinks(chain: Placed[]): NonNullable<CityRow["linked"]> {
+  const groups = new Map<string, NonNullable<CityRow["linked"]>[number]>()
+  for (const { building, age } of chain) {
+    const key = `${building.id}@${age}`
+    const group = groups.get(key) ?? { id: building.id, name: building.name, age, count: 0 }
+    groups.set(key, { ...group, count: group.count + 1 })
+  }
+  return [...groups.values()]
 }
 
 // Distinct buildings of the same set touching this one along a side
@@ -284,7 +296,7 @@ export function rateCity(
       age,
       tiles,
       stats,
-      ...(chain.length && { links: chain.length }),
+      ...(chain.length && { links: chain.length, linked: groupLinks(chain) }),
       ...(neighbours && { setNeighbours: neighbours }),
     })
   }
