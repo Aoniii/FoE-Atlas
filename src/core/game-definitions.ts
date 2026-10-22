@@ -429,10 +429,12 @@ function links(def: Definition, ages: AgeId[]): GameLinks | undefined {
   // Chains, new format
   const chain = def.components?.AllAge?.chain
   if (chain) {
+    // Links carry a list of bonuses, even empty (a bridge adding nothing by itself)
+    const isLink = Array.isArray(chain.config?.bonuses)
     const bonus = chain.config?.bonuses?.[0]
     result.chain = {
       id: chain.chainId,
-      role: bonus ? "link" : "start",
+      role: isLink ? "link" : "start",
       next: region(chain.linkPositions),
     }
     if (bonus) {
@@ -447,13 +449,13 @@ function links(def: Definition, ages: AgeId[]): GameLinks | undefined {
   for (const ability of def.abilities ?? []) {
     // Chains, old format
     if (ability.chainId && !result.chain) {
-      const isLink = Array.isArray(ability.bonuses) && ability.bonuses.length > 0
+      const isLink = Array.isArray(ability.bonuses)
       result.chain = {
         id: ability.chainId,
         role: isLink ? "link" : "start",
         next: region(ability.linkPositions),
       }
-      if (isLink)
+      if (ability.bonuses?.length)
         result.chain.bonus = Object.fromEntries(
           ages.map((age) => [age, bonusAge(ability.bonuses![0], age)]),
         )

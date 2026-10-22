@@ -135,4 +135,13 @@ export type BuildingPage = Building & {
     // Flattened stats per age, to score every level of the chain
     stats: Partial<Record<AgeId, StatBlock>>
   }[]
+  // Buildings it links with: start and links of its chain (what a link adds, per age), or the
+  // other buildings of its set
+  linkedBuildings: {
+    id: string
+    name: Building["name"]
+    image?: string
+    role: "start" | "link" | "set"
+    bonus?: Partial<Record<AgeId, StatBlock>>
+  }[]
 }

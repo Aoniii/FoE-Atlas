@@ -8,7 +8,13 @@
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs"
 import { AGE_IDS, type AgeId } from "../src/core/ages"
-import { BuildingSchema, type AgeBuilding, type BuildingPage } from "../src/core/building"
+import {
+  BuildingSchema,
+  type AgeBuilding,
+  type AgeData,
+  type Building,
+  type BuildingPage,
+} from "../src/core/building"
 import { aggregateStats } from "../src/core/efficiency"
 import {
   approxValueAt,
@@ -27,7 +33,7 @@ import {
 } from "../src/core/great-building"
 import type { GameBuilding } from "../src/core/game-building"
 import { levelCost } from "../src/core/rush"
-import { assetOfImage, mergeGameBuildings } from "./merge-game"
+import { assetOfImage, fillLevelChains, mergeGameBuildings } from "./merge-game"
 import type { SearchEntry } from "../src/core/search"
 
 const SOURCE = "data/buildings"
@@ -44,8 +50,8 @@ const gameBuildings: GameBuilding[] = existsSync("data/game-buildings.json")
 const wikiPages = existsSync("data/wiki-pages.json")
   ? JSON.parse(readFileSync("data/wiki-pages.json", "utf8"))
   : {}
-const buildings = mergeGameBuildings(wikiBuildings, gameBuildings, wikiPages).map((b) =>
-  BuildingSchema.parse(b),
+const buildings = fillLevelChains(mergeGameBuildings(wikiBuildings, gameBuildings, wikiPages)).map(
+  (b) => BuildingSchema.parse(b),
 )
 const meta = JSON.parse(readFileSync("data/meta.json", "utf8"))
 const icons = existsSync("data/icons.json")
@@ -125,12 +131,65 @@ for (const building of buildings) {
   })
   levelsByChain.set(building.chain.id, levels)
 }
+// Buildings that link with each one: the other buildings of its chain (start and links, with
+// what a link adds) or of its set
+const byLink = new Map<string, Building[]>()
+for (const building of buildings) {
+  for (const key of [
+    building.links?.chain && `chain:${building.links.chain.id}`,
+    building.links?.set && `set:${building.links.set.id}`,
+  ]) {
+    if (key) byLink.set(key, [...(byLink.get(key) ?? []), building])
+  }
+}
+const statsByAge = (ages: Partial<Record<string, AgeData>> | undefined) =>
+  ages &&
+  Object.fromEntries(Object.entries(ages).map(([age, data]) => [age, aggregateStats(data!)]))
+function linkedBuildings(building: Building): BuildingPage["linkedBuildings"] {
+  const chain = building.links?.chain
+  const set = building.links?.set
+  // A start shows its links, a link the starts (their highest level only), a set the others
+  const chainPartners = (chain ? (byLink.get(`chain:${chain.id}`) ?? []) : []).filter(
+    (b) => b.links!.chain!.role !== chain!.role || chain!.role === "link",
+  )
+  const setPartners = set ? (byLink.get(`set:${set.id}`) ?? []) : []
+  const highest = (b: Building) =>
+    b.links!.chain!.role !== "start" ||
+    !b.chain ||
+    !chainPartners.some((o) => o.chain?.id === b.chain!.id && o.chain.level > b.chain!.level)
+  const partners = [
+    ...chainPartners.filter((b) =>
+      b.links!.chain!.role === "start"
+        ? chain!.role === "link" && highest(b)
+        : chain!.role === "start",
+    ),
+    ...setPartners.filter(
+      // One level of each upgradable building: the highest
+      (b) =>
+        !b.chain ||
+        !setPartners.some((o) => o.chain?.id === b.chain!.id && o.chain.level > b.chain!.level),
+    ),
+  ].filter((b, index, all) => b.id !== building.id && all.findIndex((o) => o.id === b.id) === index)
+  return partners.map((b) => ({
+    id: b.id,
+    name: b.name,
+    ...(b.image && { image: b.image }),
+    role: b.links?.chain?.id === chain?.id && chain ? b.links!.chain!.role : "set",
+    ...(b.links?.chain?.bonus &&
+      b.links.chain.id === chain?.id && { bonus: statsByAge(b.links.chain.bonus) }),
+  }))
+}
+
 const pages = new Set<string>()
 for (const building of buildings) {
   const chainLevels = building.chain
     ? (levelsByChain.get(building.chain.id) ?? []).sort((a, b) => a.level - b.level)
     : []
-  const page: BuildingPage = { ...building, chainLevels }
+  const page: BuildingPage = {
+    ...building,
+    chainLevels,
+    linkedBuildings: linkedBuildings(building),
+  }
   writeFileSync(`${BUILDINGS_OUTPUT}/${building.id}.json`, JSON.stringify(page))
   pages.add(`${building.id}.json`)
 }

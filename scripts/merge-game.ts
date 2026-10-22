@@ -96,3 +96,25 @@ export function mergeGameBuildings(
   }
   return [...result, ...wiki.filter((b) => !merged.has(b.id))]
 }
+
+// Upgrade levels the wiki did not link ("Place des vainqueurs - Niv. 1", "- Niv. 2"): buildings
+// sharing a French name but for an explicit level, one building per level
+const LEVEL = /\s*-?\s*(?:Niv|Lv)\.\s*(\d+)\s*$/i
+
+export function fillLevelChains(buildings: Building[]): Building[] {
+  const groups = new Map<string, Building[]>()
+  for (const building of buildings) {
+    if (building.chain || !LEVEL.test(building.name.fr)) continue
+    const base = building.name.fr.replace(LEVEL, "").trim().toLowerCase()
+    groups.set(base, [...(groups.get(base) ?? []), building])
+  }
+  const chains = new Map<string, NonNullable<Building["chain"]>>()
+  for (const group of groups.values()) {
+    const levels = group.map((b) => Number(b.name.fr.match(LEVEL)![1]))
+    if (group.length < 2 || new Set(levels).size !== levels.length) continue
+    const id =
+      slug(group[0].name.en.replace(LEVEL, "")) || slug(group[0].name.fr.replace(LEVEL, ""))
+    group.forEach((building, index) => chains.set(building.id, { id, level: levels[index] }))
+  }
+  return buildings.map((b) => (chains.has(b.id) ? { ...b, chain: chains.get(b.id) } : b))
+}

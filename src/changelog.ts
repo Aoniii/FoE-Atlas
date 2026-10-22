@@ -32,6 +32,10 @@ export const CHANGELOG: Release[] = [
         fr: "Ville : les bâtiments que le wiki ne connaît pas sont notés avec leur définition du jeu, tirée de ton export FoE Helper ; toutes les villes sont couvertes",
         en: "City: buildings the wiki does not know are rated with their game definition, from your FoE Helper export; every city is covered",
       },
+      {
+        fr: "Fiche d'un bâtiment : section « Bâtiments à lier » (maillons d'une chaîne, bâtiments du même ensemble, avec ce que chacun apporte) ; niveaux que le wiki ne reliait pas (Place des vainqueurs niv. 1 et 2…)",
+        en: 'Building page: "Buildings to link" section (chain links, buildings of the same set, with what each adds); levels the wiki did not link (Winners\' Plaza Lv. 1 and 2…)',
+      },
     ],
   },
   {

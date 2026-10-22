@@ -3,6 +3,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react"
 import { AGES, type AgeId } from "@/core/ages"
 import { aggregateStats, roadShare, score, tileCount } from "@/core/efficiency"
 import { STAT_KEYS } from "@/core/stats"
+import type { BuildingPage as BuildingPageData, StatBlock } from "@/core/building"
 import { Badge } from "@/components/ui/badge"
 import {
   Select,
@@ -122,6 +123,8 @@ export function BuildingPage() {
           </div>
         </header>
 
+        <LinkedBuildings building={building} age={age} from={search.from} />
+
         {building.chainLevels.length > 1 && (
           <section className="flex flex-col gap-2">
             <h2 className="text-sm font-medium text-muted-foreground">{t.building.levels}</h2>
@@ -234,5 +237,93 @@ export function BuildingPage() {
         </section>
       </div>
     </StatIconsContext>
+  )
+}
+
+// Stats in one line: "+6 PF · +20 % Cl. att"
+function StatLine({ stats }: { stats: StatBlock }) {
+  const { t, locale } = useI18n()
+  const keys = STAT_KEYS.filter((key) => stats[key])
+  if (!keys.length) return <span className="text-muted-foreground">–</span>
+  return (
+    <span className="inline-flex flex-wrap items-center gap-x-2 gap-y-0.5">
+      {keys.map((key) => (
+        <span key={key} className="inline-flex items-center gap-1" title={fullStatLabel(t, key)}>
+          {/* "+10 % prov.", not "+10 % +% prov." */}
+          <StatIcon stat={key} />+{formatStat(key, stats[key]!, locale, 1)}{" "}
+          {t.stats[key].replace(/^\+%\s*/, "")}
+        </span>
+      ))}
+    </span>
+  )
+}
+
+// Buildings to link with this one: its chain (start and links) or its set, with what each
+// adds at the selected age; for a link or a set building, what it gets itself
+function LinkedBuildings({
+  building,
+  age,
+  from,
+}: {
+  building: BuildingPageData
+  age: AgeId
+  from?: "city"
+}) {
+  const { t, locale } = useI18n()
+  const chain = building.links?.chain
+  const ownBonus = chain?.bonus?.[age]
+  const setBonuses = building.links?.set?.bonuses?.[age]
+  if (!building.linkedBuildings.length && !ownBonus && !setBonuses?.length) return null
+  return (
+    <section className="flex flex-col gap-2">
+      <h2 className="text-sm font-medium text-muted-foreground">{t.building.linked}</h2>
+      <p className="text-xs text-muted-foreground">
+        {chain ? t.building.linkedHint[chain.role] : t.building.linkedHint.set}
+      </p>
+      {ownBonus && (
+        <p className="text-sm">
+          {t.building.linkBonus} <StatLine stats={aggregateStats(ownBonus)} />
+        </p>
+      )}
+      {setBonuses && setBonuses.length > 0 && (
+        <ul className="flex flex-col gap-0.5 text-sm">
+          {setBonuses.map((bonus, index) => (
+            <li key={index}>
+              {t.building.setBonus.replace("{count}", String(index + 1))}{" "}
+              <StatLine stats={aggregateStats(bonus)} />
+            </li>
+          ))}
+        </ul>
+      )}
+      {building.linkedBuildings.length > 0 && (
+        <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {building.linkedBuildings.map((linked) => (
+            <li key={linked.id} className="flex items-center gap-3 rounded-md border p-2">
+              {linked.image && (
+                <img src={linked.image} alt="" className="size-10 shrink-0 object-contain" />
+              )}
+              <div className="flex min-w-0 flex-col gap-0.5 text-sm">
+                <Link
+                  to="/buildings/$id"
+                  params={{ id: linked.id }}
+                  search={{ age, from }}
+                  className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
+                >
+                  {localized(linked.name, locale)}
+                </Link>
+                <span className="text-xs text-muted-foreground">
+                  {t.building.linkRoles[linked.role]}
+                </span>
+                {linked.bonus?.[age] && (
+                  <span className="text-xs">
+                    <StatLine stats={linked.bonus[age]!} />
+                  </span>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   )
 }
