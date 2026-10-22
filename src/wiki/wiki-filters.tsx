@@ -52,7 +52,6 @@ type FiltersProps = {
   onEventChange: (event: string | undefined) => void
   visibleStats: StatKey[]
   onToggleStat: (key: StatKey, visible: boolean) => void
-  onReset: () => void
 }
 
 export function WikiFilters(props: FiltersProps) {
@@ -160,14 +159,6 @@ export function WikiFilters(props: FiltersProps) {
               </DropdownMenuContent>
             </DropdownMenu>
           </Field>
-
-          {/* With a score, both buttons sit under its panel (ScoreActions) */}
-          {props.type !== "special" && (
-            <Button variant="ghost" onClick={props.onReset}>
-              <RotateCcw />
-              {t.wiki.reset}
-            </Button>
-          )}
         </>
       )}
     </div>

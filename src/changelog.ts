@@ -16,6 +16,14 @@ export const CHANGELOG: Release[] = [
         fr: "Monuments : pastilles Or et Cuivre sur la grille selon leur rang sur la bêta, et pastille Or devant les nouveaux effets or",
         en: "Great Buildings: Gold and Copper chips on the grid by their beta tier, and a Gold chip before the new gold effects",
       },
+      {
+        fr: "Wiki : tous les bâtiments du jeu (maisons, productions, marchandises, militaires, culture, décorations et tous les événements), avec les valeurs du jeu lui-même, et un score pour chaque type",
+        en: "Wiki: every building of the game (houses, production, goods, military, culture, decorations and every event), with the game's own values, and a score for every type",
+      },
+      {
+        fr: "Ville : tous tes bâtiments notés ; une chaîne compte avec ses maillons attachés (Sanctuaire du panda +4), un bâtiment d'ensemble avec les bonus de ses voisins ; il ne reste que l'hôtel de ville non noté",
+        en: "City: all your buildings rated; a chain counts with its attached links (Panda Sanctuary +4), a set building with its neighbours' bonuses; only the town hall stays unrated",
+      },
     ],
   },
   {

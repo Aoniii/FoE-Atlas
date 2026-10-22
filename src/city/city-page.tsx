@@ -317,14 +317,25 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                         {localized(row.name, locale)}
                       </Link>
                     ) : (
-                      <Link
-                        to="/buildings/$id"
-                        params={{ id: row.id }}
-                        search={{ age: row.age, from: "city" }}
-                        className={nameClass}
-                      >
-                        {localized(row.name, locale)}
-                      </Link>
+                      <div>
+                        <Link
+                          to="/buildings/$id"
+                          params={{ id: row.id }}
+                          search={{ age: row.age, from: "city" }}
+                          className={nameClass}
+                        >
+                          {localized(row.name, locale)}
+                        </Link>
+                        {/* Chain links and set neighbours counted in this line */}
+                        {row.links && (
+                          <span className="ml-1.5 text-muted-foreground">+{row.links}</span>
+                        )}
+                        {row.setNeighbours && (
+                          <span className="block text-xs text-muted-foreground">
+                            {t.city.setNeighbours.replace("{count}", String(row.setNeighbours))}
+                          </span>
+                        )}
+                      </div>
                     )}
                     <CompareButton
                       iconOnly

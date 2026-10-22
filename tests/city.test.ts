@@ -205,3 +205,80 @@ describe("Great Buildings in the city", () => {
     expect(rows[0].score).toBeGreaterThan(0)
   })
 })
+
+describe("linked buildings", () => {
+  const linked = (id: string, w: number, h: number, fp: number, links: object) =>
+    ({ ...building(id, fp), size: { w, h }, links }) as unknown as AgeBuilding
+  // Panda Sanctuary (5x4, links attach 5 tiles right) and Lotus Lakes (2x4, +6 FP each)
+  const panda = linked("panda", 5, 4, 17, {
+    chain: { id: "panda_reserve", role: "start", next: { x1: 5, y1: 0, x2: 6, y2: 3 } },
+  })
+  const lotus = linked("lotus", 2, 4, 0, {
+    chain: {
+      id: "panda_reserve",
+      role: "link",
+      next: { x1: 2, y1: 0, x2: 3, y2: 3 },
+      bonus: { BronzeAge: { passive: { fp: 6 }, production: [] } },
+    },
+  })
+  const assets = { buildings: { P: "panda", L: "lotus" }, greatBuildings: {} }
+  const at = (id: string, x: number, y: number) => ({ id, x, y, connected: true })
+
+  it("count attached links in their start building", () => {
+    const { rows } = rateCity(
+      { world: "fr1", playerId: 1, entities: [at("P", 16, 4), at("L", 21, 4), at("L", 23, 4)] },
+      assets,
+      { BronzeAge: [panda, lotus] },
+      {},
+      "BronzeAge",
+      ["fp"],
+    )
+    expect(rows).toHaveLength(1)
+    expect(rows[0]).toMatchObject({ id: "panda", links: 2, tiles: 20 + 8 + 8 })
+    expect(rows[0].stats.fp).toBe(17 + 6 + 6)
+  })
+
+  it("rate links that are not attached on their own", () => {
+    const { rows } = rateCity(
+      { world: "fr1", playerId: 1, entities: [at("P", 16, 4), at("L", 40, 40)] },
+      assets,
+      { BronzeAge: [panda, lotus] },
+      {},
+      "BronzeAge",
+      ["fp"],
+    )
+    expect(rows.map((row) => [row.id, row.links ?? 0])).toEqual([
+      ["panda", 0],
+      ["lotus", 0],
+    ])
+  })
+
+  it("give set buildings one bonus per adjacent building of their set", () => {
+    const piece = (id: string) =>
+      linked(id, 2, 2, 0, {
+        set: {
+          id: "garden",
+          bonuses: {
+            BronzeAge: [
+              { passive: { fp: 1 }, production: [] },
+              { passive: { fp: 10 }, production: [] },
+            ],
+          },
+        },
+      })
+    const { rows } = rateCity(
+      { world: "fr1", playerId: 1, entities: [at("A", 0, 0), at("B", 2, 0), at("C", 0, 2)] },
+      { buildings: { A: "a", B: "b", C: "c" }, greatBuildings: {} },
+      { BronzeAge: [piece("a"), piece("b"), piece("c")] },
+      {},
+      "BronzeAge",
+      ["fp"],
+    )
+    // A touches B (right) and C (below): both bonuses; B and C only touch A
+    expect(Object.fromEntries(rows.map((row) => [row.id, row.stats.fp]))).toEqual({
+      a: 11,
+      b: 1,
+      c: 1,
+    })
+  })
+})

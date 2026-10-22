@@ -51,11 +51,12 @@ export function WikiPage() {
       .map(([id, count]) => ({ value: id, label: `${eventName(id, locale)} (${count})` }))
       .sort((a, b) => a.label.localeCompare(b.label, locale))
   }, [ofType, locale])
-  const showScore = type === "special" && scoreKeys.length > 0
+  // Every type is scored but Great Buildings (their own grid)
+  const showScore = !isGreatBuildings && scoreKeys.length > 0
   const rows = useMemo(() => {
     const shown = search.event ? ofType.filter((b) => b.event === search.event) : ofType
-    return toRows(shown, type === "special" ? scoreKeys : [], bases)
-  }, [ofType, search.event, scoreKeys, type, bases])
+    return toRows(shown, scoreKeys, bases)
+  }, [ofType, search.event, scoreKeys, bases])
 
   const toggle = (list: StatKey[], key: StatKey, on: boolean) =>
     on ? [...new Set([...list, key])] : list.filter((k) => k !== key)
@@ -88,15 +89,11 @@ export function WikiPage() {
           onEventChange={(value) => navigate({ search: (s) => ({ ...s, event: value }) })}
           visibleStats={visibleStats}
           onToggleStat={(key, on) => setVisibleStats((list) => toggle(list, key, on))}
-          onReset={() => {
-            setVisibleStats(DEFAULT_VISIBLE)
-            setScoreKeys(DEFAULT_SCORE)
-          }}
         />
 
         {isGreatBuildings && <GreatBuildingGrid cards={greatBuildings} />}
 
-        {type === "special" && (
+        {!isGreatBuildings && (
           <div className="flex flex-col gap-2">
             <ScorePanel
               scoreKeys={scoreKeys}

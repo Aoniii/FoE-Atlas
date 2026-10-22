@@ -31,6 +31,7 @@ import {
   type Issue,
   type ParsedBuilding,
 } from "./parse"
+import { writeWikiPages } from "./pages"
 import { WikiClient, loadCache, syncPages } from "./wiki"
 
 // Overridable to test against a local fake wiki
@@ -355,6 +356,9 @@ async function main() {
       2,
     ) + "\n",
   )
+
+  // Titles and pictures of every building page, for the buildings known only from the game
+  writeWikiPages(CACHE_DIR)
 
   // Report: everything the parser did not understand, grouped and counted
   const grouped: Record<string, Record<string, { count: number; pages: string[] }>> = {}

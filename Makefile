@@ -1,7 +1,7 @@
 PID_FILE := .dev.pid
 LOG_FILE := .dev.log
 
-.PHONY: dev stop format check test scraper gb-readings gb-beta
+.PHONY: dev stop format check test scraper gb-readings gb-beta game-data
 
 # Start the Vite dev server in the background (own process group, so stop kills it all)
 dev:
@@ -61,3 +61,8 @@ gb-readings:
 # `pnpm har-extract <file.har> beta` into data/ (after the scraper)
 gb-beta:
 	pnpm gb-beta
+
+# Every building of the game from a FoE Helper city export (City map > Download) in
+# scripts/.cache/city/, into data/game-buildings.json (ARGS="path/to/export.json")
+game-data:
+	pnpm game-data $(ARGS)

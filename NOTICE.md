@@ -8,6 +8,12 @@ of the License, or (at your option) any later version. See [LICENSE](LICENSE).
 
 ## Third-party data
 
+- **Every building of the game** (`data/game-buildings.json`: values per age, size, road,
+  chains and sets) comes from the game's own building definitions, read in a FoE Helper city
+  export (`pnpm game-data`). The reading of those definitions is adapted from
+  [FoE Helper](https://github.com/mainIine/foe-helfer-extension) (`city-buildings.js`), licensed
+  under the GNU AGPL v3. English and French names and pictures come from the official wiki
+  (`data/wiki-pages.json`, `pnpm wiki-pages`).
 - **Great Building patron rewards** (`data/gb-rewards.json`) and the rush calculation rules come
   from [FoE Helper](https://github.com/mainIine/foe-helfer-extension), licensed under the
   GNU AGPL v3. Refresh them with `pnpm gb-rewards`.

@@ -25,15 +25,28 @@ import {
   type GreatBuilding,
   type GreatBuildingCard,
 } from "../src/core/great-building"
+import type { GameBuilding } from "../src/core/game-building"
 import { levelCost } from "../src/core/rush"
+import { assetOfImage, mergeGameBuildings } from "./merge-game"
 import type { SearchEntry } from "../src/core/search"
 
 const SOURCE = "data/buildings"
 const OUTPUT = "public/data"
 
-const buildings = readdirSync(SOURCE)
+const wikiBuildings = readdirSync(SOURCE)
   .filter((file) => file.endsWith(".json"))
   .map((file) => BuildingSchema.parse(JSON.parse(readFileSync(`${SOURCE}/${file}`, "utf8"))))
+// Every building of the game, with the game's values (scripts/game-data.ts)
+const gameBuildings: GameBuilding[] = existsSync("data/game-buildings.json")
+  ? JSON.parse(readFileSync("data/game-buildings.json", "utf8")).buildings
+  : []
+// English and French titles and pictures of the wiki pages (scripts/scrape/pages.ts)
+const wikiPages = existsSync("data/wiki-pages.json")
+  ? JSON.parse(readFileSync("data/wiki-pages.json", "utf8"))
+  : {}
+const buildings = mergeGameBuildings(wikiBuildings, gameBuildings, wikiPages).map((b) =>
+  BuildingSchema.parse(b),
+)
 const meta = JSON.parse(readFileSync("data/meta.json", "utf8"))
 const icons = existsSync("data/icons.json")
   ? JSON.parse(readFileSync("data/icons.json", "utf8"))
@@ -264,20 +277,17 @@ writeFileSync(`${OUTPUT}/great-buildings.json`, JSON.stringify(cards))
 // Game asset id -> building or Great Building id, to recognize the buildings of a player's
 // city (City tab). Our images are named after the asset with "SS_" after its first letter:
 // .../W_SS_MultiAge_HERO24H1-<hash>.png is the game's W_MultiAge_HERO24H1
-const assetOf = (image: string | undefined) => {
-  const file = image?.match(/\/([A-Z])_SS_([^/]+?)-[0-9a-f]+\.\w+$/)
-  return file ? `${file[1]}_${file[2]}` : undefined
-}
 const assets = {
   buildings: {} as Record<string, string>,
   greatBuildings: {} as Record<string, string>,
 }
-for (const { id, image } of buildings) {
-  const asset = assetOf(image)
+for (const { id, image, gameId } of buildings) {
+  const asset = assetOfImage(image)
   if (asset) assets.buildings[asset] = id
+  if (gameId) assets.buildings[gameId] = id
 }
 for (const { id, image } of greatBuildings) {
-  const asset = assetOf(image)
+  const asset = assetOfImage(image)
   if (asset) assets.greatBuildings[asset] = id
 }
 writeFileSync(`${OUTPUT}/assets.json`, JSON.stringify(assets))

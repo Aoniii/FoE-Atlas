@@ -4,6 +4,7 @@
 import { AGES, type AgeId } from "./ages"
 import type { AgeBuilding, StatBlock } from "./building"
 import { aggregateStats, score, tileCount, type BoostBases, type References } from "./efficiency"
+import type { LinkRegion } from "./game-building"
 import type { GreatBuilding } from "./great-building"
 import type { StatKey } from "./stats"
 
@@ -52,11 +53,25 @@ export type CityRow = {
   age: AgeId
   // Great Building level
   level?: number
+  // Chain links counted in this start building, adjacent buildings of its set
+  links?: number
+  setNeighbours?: number
   count: number
   tiles: number
   stats: StatBlock
   score: number
 }
+
+// City entities that are not buildings (off-grid features, ships, friends tavern...)
+const NOT_BUILDINGS = new Set([
+  "street",
+  "off_grid",
+  "outpost_ship",
+  "friends_tavern",
+  "impediment",
+  // Harbour main buildings: produce nothing the score counts
+  "hub_main",
+])
 
 export type RatedCity = {
   rows: CityRow[]
@@ -118,6 +133,67 @@ export function greatBuildingStats(gb: GreatBuilding, level: number): StatBlock 
 // level: one row per building and age (or Great Building and level) with its count; the
 // others listed apart. `buildingsByAge`: the wiki's buildings of each age the city needs
 // (see entityAge); `greatBuildings`: those of the city (see greatBuildingId).
+// Adds a block of stats into another one
+function addStats(into: StatBlock, from: StatBlock) {
+  for (const [key, value] of Object.entries(from) as [StatKey, number][]) {
+    into[key] = (into[key] ?? 0) + value
+  }
+}
+
+// A building of the city found in the wiki, at its age
+type Placed = { entity: CityEntity; age: AgeId; building: AgeBuilding }
+
+const inRegion = (from: Placed, to: Placed, region: LinkRegion) => {
+  const dx = to.entity.x - from.entity.x
+  const dy = to.entity.y - from.entity.y
+  return dx >= region.x1 && dx <= region.x2 && dy >= region.y1 && dy <= region.y2
+}
+
+// Links attached to a chain start, one after the other from where each one points to
+function chainLinks(start: Placed, links: Placed[], used: Set<Placed>): Placed[] {
+  const chain: Placed[] = []
+  let current = start
+  for (;;) {
+    const region = current.building.links?.chain?.next
+    const next =
+      region &&
+      links.find(
+        (link) =>
+          !used.has(link) &&
+          link.building.links?.chain?.id === start.building.links?.chain?.id &&
+          inRegion(current, link, region),
+      )
+    if (!next) return chain
+    used.add(next)
+    chain.push(next)
+    current = next
+  }
+}
+
+// Distinct buildings of the same set touching this one along a side
+function setNeighbours(placed: Placed, all: Placed[]): number {
+  const id = placed.building.links?.set?.id
+  const { x, y } = placed.entity
+  const { w, h } = placed.building.size
+  return all.filter((other) => {
+    if (other === placed || other.building.links?.set?.id !== id) return false
+    const ox = other.entity.x
+    const oy = other.entity.y
+    const { w: ow, h: oh } = other.building.size
+    const overlapX = ox < x + w && ox + ow > x
+    const overlapY = oy < y + h && oy + oh > y
+    const sideX = ox + ow === x || ox === x + w
+    const sideY = oy + oh === y || oy === y + h
+    return (sideX && overlapY) || (sideY && overlapX)
+  }).length
+}
+
+// Buildings of the city found in the wiki, at their own age, and Great Buildings at their
+// level: one row per building and age (or Great Building and level) with its count; the
+// others listed apart. A chain counts as its start building with every attached link
+// (their values, their link bonus and their tiles); a set building adds one bonus per
+// adjacent building of its set. `buildingsByAge`: the wiki's buildings of each age the city
+// needs (see entityAge); `greatBuildings`: those of the city (see greatBuildingId).
 export function rateCity(
   city: City,
   assets: CityAssets,
@@ -144,7 +220,9 @@ export function rateCity(
     })
   }
   const unknown = new Map<string, number>()
+  const placed: Placed[] = []
   for (const entity of city.entities) {
+    if (entity.type && NOT_BUILDINGS.has(entity.type)) continue
     const age = entityAge(city, entity, fallback)
     const gb = greatBuildings[greatBuildingId(entity, assets) ?? ""]
     if (gb && entity.level) {
@@ -165,22 +243,50 @@ export function rateCity(
     }
     const id = assets.buildings[entity.assetId ?? entity.id] ?? assets.buildings[entity.id]
     const building = id ? find(age, id) : undefined
-    if (building) {
-      const { name, image, size, road } = building
-      const stats = aggregateStats(building.age)
-      add(`${building.id}@${age}`, {
-        kind: "building",
-        id: building.id,
-        name,
-        image,
-        age,
-        tiles: tileCount(size, road),
-        stats,
-      })
-    } else {
+    if (building) placed.push({ entity, age, building })
+    else {
       const name = entity.name ?? entity.id
       unknown.set(name, (unknown.get(name) ?? 0) + 1)
     }
+  }
+
+  // Chains first: links attached to a start are counted in it
+  const links = placed.filter((p) => p.building.links?.chain?.role === "link")
+  const used = new Set<Placed>()
+  const attached = new Map<Placed, Placed[]>()
+  for (const start of placed.filter((p) => p.building.links?.chain?.role === "start")) {
+    attached.set(start, chainLinks(start, links, used))
+  }
+
+  for (const item of placed) {
+    if (used.has(item)) continue
+    const { building, age } = item
+    const stats = aggregateStats(building.age)
+    let tiles = tileCount(building.size, building.road)
+    const chain = attached.get(item) ?? []
+    for (const link of chain) {
+      addStats(stats, aggregateStats(link.building.age))
+      const bonus = link.building.links?.chain?.bonus?.[link.age]
+      if (bonus) addStats(stats, aggregateStats(bonus))
+      tiles += tileCount(link.building.size, link.building.road)
+    }
+    const set = building.links?.set
+    const neighbours = set?.bonuses ? setNeighbours(item, placed) : 0
+    for (const bonus of (set?.bonuses?.[age] ?? []).slice(0, neighbours)) {
+      addStats(stats, aggregateStats(bonus))
+    }
+    const { name, image } = building
+    add(`${building.id}@${age}+${chain.length}/${neighbours}`, {
+      kind: "building",
+      id: building.id,
+      name,
+      image,
+      age,
+      tiles,
+      stats,
+      ...(chain.length && { links: chain.length }),
+      ...(neighbours && { setNeighbours: neighbours }),
+    })
   }
   return {
     rows: [...rows.values()],

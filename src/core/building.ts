@@ -1,5 +1,6 @@
 import { z } from "zod"
 import { AGE_IDS, type AgeId } from "./ages"
+import { LinkRegionSchema } from "./game-building"
 import { STAT_KEYS } from "./stats"
 
 export const AgeIdSchema = z.enum(AGE_IDS)
@@ -90,6 +91,27 @@ export const BuildingSchema = z.object({
   reliability: ReliabilitySchema,
   sourceUrl: z.url().optional(),
   ages: z.partialRecord(AgeIdSchema, AgeDataSchema),
+  // From the game's own definitions (see scripts/game-data.ts): its id, and its chain or
+  // set links. Absent: the building is only known from the wiki.
+  gameId: z.string().optional(),
+  links: z
+    .object({
+      chain: z
+        .object({
+          id: z.string(),
+          role: z.enum(["start", "link"]),
+          next: LinkRegionSchema.optional(),
+          bonus: z.partialRecord(AgeIdSchema, AgeDataSchema).optional(),
+        })
+        .optional(),
+      set: z
+        .object({
+          id: z.string(),
+          bonuses: z.partialRecord(AgeIdSchema, z.array(AgeDataSchema)).optional(),
+        })
+        .optional(),
+    })
+    .optional(),
 })
 
 export type StatBlock = z.infer<typeof StatBlockSchema>
