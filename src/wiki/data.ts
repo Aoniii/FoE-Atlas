@@ -1,5 +1,6 @@
 import type { AgeId } from "@/core/ages"
 import type { AgeBuilding, BuildingPage, BuildingType, StatBlock } from "@/core/building"
+import type { ItemCard, ItemPage } from "@/core/game-item"
 import type { GreatBuilding, GreatBuildingCard } from "@/core/great-building"
 import type { RewardTables } from "@/core/rush"
 import {
@@ -50,6 +51,8 @@ export const fetchAssets = () =>
   fetchJson<{ buildings: Record<string, string>; greatBuildings: Record<string, string> }>(
     "assets.json",
   )
+export const fetchItems = () => fetchJson<ItemCard[]>("items.json")
+export const fetchItem = (id: string) => fetchJson<ItemPage>(`items/${encodeURIComponent(id)}.json`)
 export const fetchGbRewards = () => fetchJson<RewardTables>("gb-rewards.json")
 export const fetchBuilding = (id: string) =>
   fetchJson<BuildingPage>(`buildings/${encodeURIComponent(id)}.json`)

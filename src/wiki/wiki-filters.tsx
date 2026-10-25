@@ -29,6 +29,8 @@ import { localized, useI18n } from "@/lib/i18n"
 import { fullStatLabel, scoreHint } from "./format"
 import { StatIcon } from "./stat-icon"
 
+// Types with their own grid: no age, columns or score
+const OWN_GRID: BuildingType[] = ["great_building", "item"]
 const ALL_EVENTS = "__all__"
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
@@ -84,7 +86,7 @@ export function WikiFilters(props: FiltersProps) {
         </Select>
       </Field>
 
-      {props.type !== "great_building" && (
+      {!OWN_GRID.includes(props.type) && (
         <>
           <Field label={t.wiki.age}>
             <Select
@@ -130,7 +132,7 @@ export function WikiFilters(props: FiltersProps) {
         </Field>
       )}
 
-      {props.type !== "great_building" && (
+      {!OWN_GRID.includes(props.type) && (
         <>
           <Field label={t.wiki.columns}>
             <DropdownMenu>

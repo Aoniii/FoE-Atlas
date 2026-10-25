@@ -4,7 +4,7 @@ import { LATEST_AGE } from "@/core/ages"
 import { AgeIdSchema, BuildingTypeSchema } from "@/core/building"
 import { getPreferredAge } from "@/lib/age-preference"
 import { useI18n } from "@/lib/i18n"
-import { fetchAgeBuildings, fetchGreatBuildings, fetchIndex } from "@/wiki/data"
+import { fetchAgeBuildings, fetchGreatBuildings, fetchIndex, fetchItems } from "@/wiki/data"
 import { WikiPage } from "@/wiki/wiki-page"
 
 // Filters live in the URL (shareable, survive a reload); invalid values are dropped
@@ -20,14 +20,18 @@ export const Route = createFileRoute("/wiki")({
     age: search.age ?? getPreferredAge() ?? LATEST_AGE,
     type: search.type ?? "special",
   }),
-  // Great Buildings have their own light list; other types load the selected age
+  // Great Buildings and items have their own light list; other types load the selected age
   loader: async ({ deps }) => {
     if (deps.type === "great_building") {
       const [index, greatBuildings] = await Promise.all([fetchIndex(), fetchGreatBuildings()])
-      return { index, buildings: [], greatBuildings }
+      return { index, buildings: [], greatBuildings, items: [] }
+    }
+    if (deps.type === "item") {
+      const [index, items] = await Promise.all([fetchIndex(), fetchItems()])
+      return { index, buildings: [], greatBuildings: [], items }
     }
     const [index, buildings] = await Promise.all([fetchIndex(), fetchAgeBuildings(deps.age)])
-    return { index, buildings, greatBuildings: [] }
+    return { index, buildings, greatBuildings: [], items: [] }
   },
   pendingComponent: Pending,
   errorComponent: LoadError,

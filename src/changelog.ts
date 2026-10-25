@@ -5,6 +5,28 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.10",
+    date: "2026-10-25",
+    changes: [
+      {
+        fr: "Wiki : nouveau type « Objets », les kits d'amélioration et de sélection du jeu (944), avec leur fiche : ce que chacun place ou améliore. Noms en anglais pour l'instant",
+        en: 'Wiki: new "Items" type, the game\'s upgrade and selection kits (944), each with its page: what it places or upgrades',
+      },
+      {
+        fr: "Fiche d'un bâtiment : les objets qui le placent, qui donnent ce niveau ou qui l'améliorent au suivant ; niveaux reliés selon les parcours d'amélioration du jeu, branches comprises (Navire royal, pirate ou marchand)",
+        en: "Building page: the items that place it, give this level or upgrade it to the next; levels linked by the game's upgrade paths, branches included (Royal, Pirate or Trader Ship)",
+      },
+      {
+        fr: "Recherche : les objets aussi",
+        en: "Search: items too",
+      },
+      {
+        fr: "Ville : bouton « Mettre à jour » pour remplacer la ville choisie par un nouvel export (fichier ou collage), en gardant son numéro",
+        en: 'City: "Update" button to replace the selected city with a new export (file or paste), keeping its number',
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.9",
     date: "2026-10-22",
     changes: [

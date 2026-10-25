@@ -3,7 +3,7 @@ import type { Building } from "./building"
 
 // Special buildings, and Great Buildings (kind + their age instead of an event)
 export type SearchEntry = Pick<Building, "id" | "name" | "image" | "event" | "eventYear"> & {
-  kind?: "great_building"
+  kind?: "great_building" | "item"
   age?: AgeId
 }
 

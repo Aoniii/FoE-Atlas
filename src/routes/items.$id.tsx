@@ -1,0 +1,28 @@
+import { createFileRoute, notFound } from "@tanstack/react-router"
+import { useI18n } from "@/lib/i18n"
+import { DataNotFoundError, fetchItem } from "@/wiki/data"
+import { ItemPage } from "@/wiki/item-page"
+
+export const Route = createFileRoute("/items/$id")({
+  loader: async ({ params }) => {
+    try {
+      return { item: await fetchItem(params.id) }
+    } catch (error) {
+      if (error instanceof DataNotFoundError) throw notFound()
+      throw error
+    }
+  },
+  pendingComponent: Pending,
+  notFoundComponent: NotFound,
+  component: ItemPage,
+})
+
+function Pending() {
+  const { t } = useI18n()
+  return <p className="py-10 text-center text-muted-foreground">{t.item.loading}</p>
+}
+
+function NotFound() {
+  const { t } = useI18n()
+  return <p className="py-10 text-center text-muted-foreground">{t.item.notFound}</p>
+}

@@ -33,7 +33,8 @@ import {
 } from "../src/core/great-building"
 import type { GameBuilding } from "../src/core/game-building"
 import { levelCost } from "../src/core/rush"
-import { assetOfImage, fillLevelChains, mergeGameBuildings } from "./merge-game"
+import type { GameItems, ItemBuilding, ItemCard, ItemPage } from "../src/core/game-item"
+import { applyUpgradePaths, assetOfImage, fillLevelChains, mergeGameBuildings } from "./merge-game"
 import type { SearchEntry } from "../src/core/search"
 
 const SOURCE = "data/buildings"
@@ -50,9 +51,14 @@ const gameBuildings: GameBuilding[] = existsSync("data/game-buildings.json")
 const wikiPages = existsSync("data/wiki-pages.json")
   ? JSON.parse(readFileSync("data/wiki-pages.json", "utf8"))
   : {}
-const buildings = fillLevelChains(mergeGameBuildings(wikiBuildings, gameBuildings, wikiPages)).map(
-  (b) => BuildingSchema.parse(b),
-)
+// Upgrade and selection kits, and the game's upgrade paths (scripts/game-items.ts)
+const gameItems: GameItems = existsSync("data/game-items.json")
+  ? JSON.parse(readFileSync("data/game-items.json", "utf8"))
+  : { sources: [], items: [], paths: [] }
+// Levels from the game's upgrade paths, then from the names for the buildings outside them
+const buildings = fillLevelChains(
+  applyUpgradePaths(mergeGameBuildings(wikiBuildings, gameBuildings, wikiPages), gameItems.paths),
+).map((b) => BuildingSchema.parse(b))
 const meta = JSON.parse(readFileSync("data/meta.json", "utf8"))
 const icons = existsSync("data/icons.json")
   ? JSON.parse(readFileSync("data/icons.json", "utf8"))
@@ -92,11 +98,15 @@ writeFileSync(
     types: [
       ...new Set(buildings.map((b) => b.type)),
       ...(existsSync("data/great-buildings") ? ["great_building"] : []),
+      ...(gameItems.items.length ? ["item"] : []),
     ],
   }),
 )
 for (const file of readdirSync(OUTPUT)) {
-  if (!["buildings", "great-buildings"].includes(file) && !written.has(file)) {
+  if (
+    !["buildings", "great-buildings", "items", "items.json"].includes(file) &&
+    !written.has(file)
+  ) {
     rmSync(`${OUTPUT}/${file}`)
   }
 }
@@ -180,6 +190,73 @@ function linkedBuildings(building: Building): BuildingPage["linkedBuildings"] {
   }))
 }
 
+// Inventory items: a light list for the wiki grid and the search, one file per item with the
+// buildings it places or upgrades, and on each building page the items that give it
+const ITEMS_OUTPUT = `${OUTPUT}/items`
+mkdirSync(ITEMS_OUTPUT, { recursive: true })
+const byGameId = new Map(buildings.flatMap((b) => (b.gameId ? [[b.gameId, b] as const] : [])))
+const itemBuilding = (gameId: string): ItemBuilding => {
+  const b = byGameId.get(gameId)
+  return b ? { id: b.id, name: b.name, image: b.image } : { name: { fr: gameId, en: gameId } }
+}
+const itemCards = new Map<string, ItemCard>()
+for (const item of gameItems.items) {
+  const gives = item.upgrades?.[0]?.to ?? item.options?.find((o) => o.building)?.building?.gameId
+  const image = item.icon ?? (gives ? byGameId.get(gives)?.image : undefined)
+  itemCards.set(item.id, {
+    id: item.id,
+    kind: item.kind,
+    name: item.name,
+    ...(item.rarity && { rarity: item.rarity }),
+    ...(image && { image }),
+  })
+}
+const itemsOf = new Map<string, NonNullable<BuildingPage["items"]>>()
+const giveItem = (
+  gameId: string,
+  card: ItemCard,
+  role: NonNullable<BuildingPage["items"]>[number]["role"],
+) => {
+  const id = byGameId.get(gameId)?.id
+  if (!id) return
+  const list = itemsOf.get(id) ?? []
+  if (!list.some((i) => i.id === card.id && i.role === role)) list.push({ ...card, role })
+  itemsOf.set(id, list)
+}
+const itemFiles = new Set<string>()
+for (const item of gameItems.items) {
+  const card = itemCards.get(item.id)!
+  const page: ItemPage = {
+    ...card,
+    description: item.description,
+    ...(item.upgrades && {
+      upgrades: item.upgrades.map(({ from, to }) => {
+        giveItem(to, card, "reaches")
+        giveItem(from, card, "upgrades")
+        return { from: itemBuilding(from), to: itemBuilding(to) }
+      }),
+    }),
+    ...(item.options && {
+      options: item.options.map((option) => {
+        if (option.building) giveItem(option.building.gameId, card, "places")
+        const linked = option.item ? itemCards.get(option.item) : undefined
+        return {
+          name: option.name,
+          ...(option.building && {
+            building: { ...itemBuilding(option.building.gameId), level: option.building.level },
+          }),
+          ...(linked && { item: linked }),
+        }
+      }),
+    }),
+  }
+  writeFileSync(`${ITEMS_OUTPUT}/${item.id}.json`, JSON.stringify(page))
+  itemFiles.add(`${item.id}.json`)
+}
+for (const file of readdirSync(ITEMS_OUTPUT))
+  if (!itemFiles.has(file)) rmSync(`${ITEMS_OUTPUT}/${file}`)
+writeFileSync(`${OUTPUT}/items.json`, JSON.stringify([...itemCards.values()]))
+
 const pages = new Set<string>()
 for (const building of buildings) {
   const chainLevels = building.chain
@@ -189,6 +266,7 @@ for (const building of buildings) {
     ...building,
     chainLevels,
     linkedBuildings: linkedBuildings(building),
+    items: itemsOf.get(building.id) ?? [],
   }
   writeFileSync(`${BUILDINGS_OUTPUT}/${building.id}.json`, JSON.stringify(page))
   pages.add(`${building.id}.json`)
@@ -359,7 +437,14 @@ const gbSearch: SearchEntry[] = greatBuildings.map(({ id, name, image, age }) =>
   age,
   kind: "great_building",
 }))
-writeFileSync(`${OUTPUT}/search.json`, JSON.stringify([...search, ...gbSearch]))
+// And the inventory items
+const itemSearch: SearchEntry[] = [...itemCards.values()].map(({ id, name, image }) => ({
+  id,
+  name,
+  image,
+  kind: "item",
+}))
+writeFileSync(`${OUTPUT}/search.json`, JSON.stringify([...search, ...gbSearch, ...itemSearch]))
 
 const gbFiles = new Set<string>()
 for (const gb of greatBuildings) {

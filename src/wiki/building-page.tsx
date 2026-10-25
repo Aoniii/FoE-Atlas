@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils"
 import { CompareButton } from "@/compare/compare-button"
 import { AgeDetails } from "./building-card"
 import { chainStepLabels } from "./chain-labels"
+import { ItemRef } from "./item-page"
 import { ScorePill } from "./score-pill"
 import { useBoostBases, useScoreKeys } from "./score-settings"
 import { eventLabel, formatNumber, formatStat, fullStatLabel } from "./format"
@@ -124,6 +125,7 @@ export function BuildingPage() {
         </header>
 
         <LinkedBuildings building={building} age={age} from={search.from} />
+        <BuildingItems building={building} />
 
         {building.chainLevels.length > 1 && (
           <section className="flex flex-col gap-2">
@@ -324,6 +326,28 @@ function LinkedBuildings({
           ))}
         </ul>
       )}
+    </section>
+  )
+}
+
+// Inventory items of this building: selection kits placing it, upgrade kits turning the
+// level below into it or it into the next level
+function BuildingItems({ building }: { building: BuildingPageData }) {
+  const { t } = useI18n()
+  if (!building.items?.length) return null
+  return (
+    <section className="flex flex-col gap-2">
+      <h2 className="text-sm font-medium text-muted-foreground">{t.building.items}</h2>
+      <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        {building.items.map((item) => (
+          <li
+            key={`${item.id}-${item.role}`}
+            className="flex items-center rounded-md border p-2 text-sm"
+          >
+            <ItemRef item={item} note={t.building.itemRoles[item.role]} />
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }

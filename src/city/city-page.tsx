@@ -64,6 +64,20 @@ export function CityPage() {
     })
     setSelected(cityKey(imported))
   }
+  // Replaces a city with a newer export: same number; a paste (no file name, so no server or
+  // player) stays that city
+  const update = (key: string, imported: City) => {
+    setCities((current) => {
+      const old = current[key]
+      const next =
+        imported.world === UNKNOWN_WORLD && old
+          ? { ...imported, world: old.world, playerId: old.playerId }
+          : imported
+      const rest = Object.fromEntries(Object.entries(current).filter(([k]) => k !== key))
+      return { ...rest, [cityKey(next)]: { ...next, number: old?.number ?? next.number } }
+    })
+    setSelected(imported.world === UNKNOWN_WORLD && cities[key] ? key : cityKey(imported))
+  }
   const remove = (key: string) =>
     setCities((current) => Object.fromEntries(Object.entries(current).filter(([k]) => k !== key)))
   const items = list.map((c) => ({
@@ -125,6 +139,11 @@ export function CityPage() {
                   })}
                 </span>
               )}
+              <CitySource
+                compact
+                label={t.city.update}
+                onImport={(imported) => update(cityKey(city), imported)}
+              />
               <Button variant="ghost" size="sm" onClick={() => remove(cityKey(city))}>
                 <Trash2 />
                 {t.city.remove}
@@ -187,8 +206,35 @@ function LinkedBuildings({
 // FoE Helper: City map > Download (a .json file) or Copy (the same JSON, to paste here)
 function ImportCity({ onImport }: { onImport: (city: City) => void }) {
   const { t } = useI18n()
+  return (
+    <section className="flex flex-col gap-3 rounded-lg border p-5">
+      <h2 className="font-semibold">{t.city.importTitle}</h2>
+      <ol className="flex list-decimal flex-col gap-1 pl-5 text-sm text-muted-foreground">
+        <li>{t.city.step1}</li>
+        <li>{t.city.step2}</li>
+        <li>{t.city.step3}</li>
+      </ol>
+      <CitySource onImport={onImport} />
+      <p className="text-xs text-muted-foreground">{t.city.privacy}</p>
+    </section>
+  )
+}
+
+// File and paste buttons reading a FoE Helper export: full size to import a city, compact
+// (one label, both choices) to update the selected one
+function CitySource({
+  onImport,
+  compact,
+  label,
+}: {
+  onImport: (city: City) => void
+  compact?: boolean
+  label?: string
+}) {
+  const { t } = useI18n()
   const input = useRef<HTMLInputElement>(null)
   const [error, setError] = useState<string>()
+  const size = compact ? "sm" : "default"
 
   const read = (text: string, fileName?: string) => {
     try {
@@ -200,46 +246,43 @@ function ImportCity({ onImport }: { onImport: (city: City) => void }) {
   }
 
   return (
-    <section className="flex flex-col gap-3 rounded-lg border p-5">
-      <h2 className="font-semibold">{t.city.importTitle}</h2>
-      <ol className="flex list-decimal flex-col gap-1 pl-5 text-sm text-muted-foreground">
-        <li>{t.city.step1}</li>
-        <li>{t.city.step2}</li>
-        <li>{t.city.step3}</li>
-      </ol>
-      <div className="flex flex-wrap gap-2">
-        <Button onClick={() => input.current?.click()}>
-          <FileUp />
-          {t.city.chooseFile}
-        </Button>
-        <Button
-          variant="outline"
-          onClick={async () => {
-            try {
-              read(await navigator.clipboard.readText())
-            } catch {
-              setError(t.city.clipboard)
-            }
-          }}
-        >
-          <ClipboardPaste />
-          {t.city.paste}
-        </Button>
-        <input
-          ref={input}
-          type="file"
-          accept=".json,application/json"
-          className="hidden"
-          onChange={async (event) => {
-            const file = event.target.files?.[0]
-            if (file) read(await file.text(), file.name)
-            event.target.value = ""
-          }}
-        />
-      </div>
-      {error && <p className="text-sm text-destructive">{error}</p>}
-      <p className="text-xs text-muted-foreground">{t.city.privacy}</p>
-    </section>
+    <div className="flex flex-wrap items-center gap-2">
+      {label && <span className="text-sm text-muted-foreground">{label}</span>}
+      <Button
+        size={size}
+        variant={compact ? "outline" : "default"}
+        onClick={() => input.current?.click()}
+      >
+        <FileUp />
+        {t.city.chooseFile}
+      </Button>
+      <Button
+        size={size}
+        variant="outline"
+        onClick={async () => {
+          try {
+            read(await navigator.clipboard.readText())
+          } catch {
+            setError(t.city.clipboard)
+          }
+        }}
+      >
+        <ClipboardPaste />
+        {t.city.paste}
+      </Button>
+      <input
+        ref={input}
+        type="file"
+        accept=".json,application/json"
+        className="hidden"
+        onChange={async (event) => {
+          const file = event.target.files?.[0]
+          if (file) read(await file.text(), file.name)
+          event.target.value = ""
+        }}
+      />
+      {error && <p className="w-full text-sm text-destructive">{error}</p>}
+    </div>
   )
 }
 

@@ -66,6 +66,8 @@ export function SearchCommand() {
     setQuery("")
     if (entry.kind === "great_building") {
       navigate({ to: "/great-buildings/$id", params: { id: entry.id } })
+    } else if (entry.kind === "item") {
+      navigate({ to: "/items/$id", params: { id: entry.id } })
     } else {
       navigate({ to: "/buildings/$id", params: { id: entry.id } })
     }
@@ -119,8 +121,10 @@ export function SearchCommand() {
                         {locale === "en" ? entry.name.fr : entry.name.en}
                         {entry.kind === "great_building"
                           ? ` · ${t.types.great_building}${entry.age ? ` · ${ageName(entry.age, locale)}` : ""}`
-                          : entry.event &&
-                            ` · ${eventName(entry.event, locale)}${entry.eventYear ? ` ${entry.eventYear}` : ""}`}
+                          : entry.kind === "item"
+                            ? ` · ${t.types.item}`
+                            : entry.event &&
+                              ` · ${eventName(entry.event, locale)}${entry.eventYear ? ` ${entry.eventYear}` : ""}`}
                       </span>
                     </div>
                   </CommandItem>

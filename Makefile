@@ -1,7 +1,7 @@
 PID_FILE := .dev.pid
 LOG_FILE := .dev.log
 
-.PHONY: dev stop format check test scraper gb-readings gb-beta game-data
+.PHONY: dev stop format check test scraper gb-readings gb-beta game-data game-items
 
 # Start the Vite dev server in the background (own process group, so stop kills it all)
 dev:
@@ -67,3 +67,8 @@ gb-beta:
 # winning (each export only holds part of the game's buildings). ARGS="a.json b.json" to choose.
 game-data:
 	pnpm game-data $(ARGS)
+
+# Inventory items that place or upgrade buildings (upgrade and selection kits, upgrade paths)
+# from the captures cleaned by `pnpm har-extract`, into data/game-items.json
+game-items:
+	pnpm game-items $(ARGS)

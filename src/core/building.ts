@@ -1,6 +1,7 @@
 import { z } from "zod"
 import { AGE_IDS, type AgeId } from "./ages"
 import { LinkRegionSchema } from "./game-building"
+import type { ItemCard } from "./game-item"
 import { STAT_KEYS } from "./stats"
 
 export const AgeIdSchema = z.enum(AGE_IDS)
@@ -57,6 +58,8 @@ export const AgeDataSchema = z.object({
 export const BuildingTypeSchema = z.enum([
   "special",
   "great_building",
+  // Inventory items (upgrade and selection kits): their own grid, not buildings
+  "item",
   "production",
   "residential",
   "goods",
@@ -144,4 +147,7 @@ export type BuildingPage = Building & {
     role: "start" | "link" | "set"
     bonus?: Partial<Record<AgeId, StatBlock>>
   }[]
+  // Inventory items that place it (selection kits), upgrade the level below into it, or
+  // upgrade it into the next level
+  items?: (ItemCard & { role: "places" | "reaches" | "upgrades" })[]
 }

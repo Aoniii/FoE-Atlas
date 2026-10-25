@@ -10,6 +10,7 @@ import { usePersistentState } from "@/lib/use-persistent-state"
 import { BuildingsTable } from "./buildings-table"
 import { DEFAULT_SCORE, setBoostBases, useBoostBases, useScoreKeys } from "./score-settings"
 import { GreatBuildingGrid } from "./great-building-grid"
+import { ItemGrid } from "./item-grid"
 import { toRows } from "./data"
 import { eventName, formatNumber } from "./format"
 import { StatIconsContext } from "./stat-icons-context"
@@ -29,7 +30,7 @@ export function WikiPage() {
   const { t, locale } = useI18n()
   const search = route.useSearch()
   const navigate = route.useNavigate()
-  const { index, buildings, greatBuildings } = route.useLoaderData()
+  const { index, buildings, greatBuildings, items } = route.useLoaderData()
 
   const type: BuildingType = search.type ?? "special"
   const age = search.age ?? getPreferredAge() ?? LATEST_AGE
@@ -42,6 +43,9 @@ export function WikiPage() {
     [index.types, buildings],
   )
   const isGreatBuildings = type === "great_building"
+  const isItems = type === "item"
+  // Great Buildings and items have their own grid, without the stat table
+  const hasTable = !isGreatBuildings && !isItems
   const ofType = useMemo(() => buildings.filter((b) => b.type === type), [buildings, type])
   // Event families present, with their number of buildings, sorted by name
   const events = useMemo(() => {
@@ -52,7 +56,7 @@ export function WikiPage() {
       .sort((a, b) => a.label.localeCompare(b.label, locale))
   }, [ofType, locale])
   // Every type is scored but Great Buildings (their own grid)
-  const showScore = !isGreatBuildings && scoreKeys.length > 0
+  const showScore = hasTable && scoreKeys.length > 0
   const rows = useMemo(() => {
     const shown = search.event ? ofType.filter((b) => b.event === search.event) : ofType
     return toRows(shown, scoreKeys, bases)
@@ -67,8 +71,11 @@ export function WikiPage() {
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h1 className="text-2xl font-semibold">{t.nav.wiki}</h1>
           <p className="text-xs text-muted-foreground">
-            {formatNumber(isGreatBuildings ? greatBuildings.length : rows.length, locale)}{" "}
-            {t.wiki.buildings}
+            {formatNumber(
+              isGreatBuildings ? greatBuildings.length : isItems ? items.length : rows.length,
+              locale,
+            )}{" "}
+            {isItems ? t.item.count : t.wiki.buildings}
           </p>
         </div>
 
@@ -92,8 +99,9 @@ export function WikiPage() {
         />
 
         {isGreatBuildings && <GreatBuildingGrid cards={greatBuildings} />}
+        {isItems && <ItemGrid cards={items} />}
 
-        {!isGreatBuildings && (
+        {hasTable && (
           <div className="flex flex-col gap-2">
             <ScorePanel
               scoreKeys={scoreKeys}
@@ -111,7 +119,7 @@ export function WikiPage() {
           </div>
         )}
 
-        {!isGreatBuildings && (
+        {hasTable && (
           <BuildingsTable rows={rows} visibleStats={visibleStats} showScore={showScore} />
         )}
       </div>

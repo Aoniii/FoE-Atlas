@@ -16,6 +16,7 @@ import { Route as CompareRouteImport } from './routes/compare'
 import { Route as WikiRouteImport } from './routes/wiki'
 import { Route as BuildingsIdRouteImport } from './routes/buildings.$id'
 import { Route as GreatBuildingsIdRouteImport } from './routes/great-buildings.$id'
+import { Route as ItemsIdRouteImport } from './routes/items.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -52,6 +53,11 @@ const GreatBuildingsIdRoute = GreatBuildingsIdRouteImport.update({
   path: '/great-buildings/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ItemsIdRoute = ItemsIdRouteImport.update({
+  id: '/items/$id',
+  path: '/items/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -61,6 +67,7 @@ export interface FileRoutesByFullPath {
   '/wiki': typeof WikiRoute
   '/buildings/$id': typeof BuildingsIdRoute
   '/great-buildings/$id': typeof GreatBuildingsIdRoute
+  '/items/$id': typeof ItemsIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -70,6 +77,7 @@ export interface FileRoutesByTo {
   '/wiki': typeof WikiRoute
   '/buildings/$id': typeof BuildingsIdRoute
   '/great-buildings/$id': typeof GreatBuildingsIdRoute
+  '/items/$id': typeof ItemsIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -80,6 +88,7 @@ export interface FileRoutesById {
   '/wiki': typeof WikiRoute
   '/buildings/$id': typeof BuildingsIdRoute
   '/great-buildings/$id': typeof GreatBuildingsIdRoute
+  '/items/$id': typeof ItemsIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -91,6 +100,7 @@ export interface FileRouteTypes {
     | '/wiki'
     | '/buildings/$id'
     | '/great-buildings/$id'
+    | '/items/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -100,6 +110,7 @@ export interface FileRouteTypes {
     | '/wiki'
     | '/buildings/$id'
     | '/great-buildings/$id'
+    | '/items/$id'
   id:
     | '__root__'
     | '/'
@@ -109,6 +120,7 @@ export interface FileRouteTypes {
     | '/wiki'
     | '/buildings/$id'
     | '/great-buildings/$id'
+    | '/items/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -119,6 +131,7 @@ export interface RootRouteChildren {
   WikiRoute: typeof WikiRoute
   BuildingsIdRoute: typeof BuildingsIdRoute
   GreatBuildingsIdRoute: typeof GreatBuildingsIdRoute
+  ItemsIdRoute: typeof ItemsIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -172,6 +185,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GreatBuildingsIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/items/$id': {
+      id: '/items/$id'
+      path: '/items/$id'
+      fullPath: '/items/$id'
+      preLoaderRoute: typeof ItemsIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -183,6 +203,7 @@ const rootRouteChildren: RootRouteChildren = {
   WikiRoute: WikiRoute,
   BuildingsIdRoute: BuildingsIdRoute,
   GreatBuildingsIdRoute: GreatBuildingsIdRoute,
+  ItemsIdRoute: ItemsIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

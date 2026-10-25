@@ -5,6 +5,7 @@
 
 import type { Building } from "../src/core/building"
 import type { GameBuilding } from "../src/core/game-building"
+import type { UpgradePath } from "../src/core/game-item"
 import { eventFromAsset } from "./scrape/events"
 import type { WikiPages } from "./scrape/pages"
 
@@ -115,6 +116,31 @@ export function fillLevelChains(buildings: Building[]): Building[] {
     const id =
       slug(group[0].name.en.replace(LEVEL, "")) || slug(group[0].name.fr.replace(LEVEL, ""))
     group.forEach((building, index) => chains.set(building.id, { id, level: levels[index] }))
+  }
+  return buildings.map((b) => (chains.has(b.id) ? { ...b, chain: chains.get(b.id) } : b))
+}
+
+// Upgrade levels from the game's upgrade paths (data/game-items.json): every building of a
+// path gets its level, under the chain id the wiki gave most of them, or the base's game id
+// when other buildings keep the wiki's chain (wiki pages the game does not know)
+export function applyUpgradePaths(buildings: Building[], paths: UpgradePath[]): Building[] {
+  const byGameId = new Map(buildings.flatMap((b) => (b.gameId ? [[b.gameId, b] as const] : [])))
+  const chains = new Map<string, NonNullable<Building["chain"]>>()
+  for (const path of paths) {
+    const members = Object.entries(path.levels).flatMap(([gameId, level]) => {
+      const building = byGameId.get(gameId)
+      return building ? [{ building, level }] : []
+    })
+    if (members.length < 2) continue
+    const wikiIds = members.flatMap(({ building }) => building.chain?.id ?? [])
+    const wikiId = wikiIds.sort(
+      (a, b) => wikiIds.filter((x) => x === b).length - wikiIds.filter((x) => x === a).length,
+    )[0]
+    const shared = buildings.some(
+      (b) => b.chain?.id === wikiId && !(b.gameId && b.gameId in path.levels),
+    )
+    const id = wikiId && !shared ? wikiId : slug(path.base)
+    for (const { building, level } of members) chains.set(building.id, { id, level })
   }
   return buildings.map((b) => (chains.has(b.id) ? { ...b, chain: chains.get(b.id) } : b))
 }
