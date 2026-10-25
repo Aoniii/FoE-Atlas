@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from "react"
 import { Hammer, Square } from "lucide-react"
-import type { City } from "@/core/city"
+import type { City, RatedCity } from "@/core/city"
 import {
   REBUILD_SECONDS,
   rebuildInput,
   rebuiltCity,
   tileCounts,
   type RebuildResult,
+  type RebuildShare,
 } from "@/core/rebuild"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -23,6 +24,11 @@ import { useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
 import type { RebuildMessage, RebuildRequest } from "./rebuild.worker"
 
+// A result's worth: every building placed, then the biggest free block (roads and free tiles
+// cut off weigh the same), then the fewest roads
+const score = (r: RebuildResult) =>
+  r.unplaced.length * 1000000 + (r.roadTiles + r.isolatedTiles) * 100 + r.roadTiles
+
 const fill = (text: string, values: Record<string, number | string>) =>
   Object.entries(values).reduce((s, [k, v]) => s.replace(`{${k}}`, String(v)), text)
 
@@ -31,12 +37,14 @@ const fill = (text: string, values: Record<string, number | string>) =>
 export function CityRebuild({
   city,
   groups,
+  traits,
   result,
   onResult,
   onShowRebuilt,
 }: {
   city: City
   groups: number[][]
+  traits: RatedCity["traits"]
   result?: RebuildResult
   onResult: (result: RebuildResult) => void
   onShowRebuilt: () => void
@@ -47,30 +55,58 @@ export function CityRebuild({
   const seconds = Math.min(30, Math.max(1, minutes || 1)) * 60
   const [progress, setProgress] = useState<number>()
   const [finished, setFinished] = useState<RebuildResult>()
-  const worker = useRef<Worker>(undefined)
-  useEffect(() => () => worker.current?.terminate(), [])
-  const input = rebuildInput(city, groups)
+  const workers = useRef<Worker[]>([])
+  const stopAll = () => {
+    for (const w of workers.current) w.terminate()
+    workers.current = []
+  }
+  useEffect(() => stopAll, [])
+  const input = rebuildInput(city, groups, traits)
 
+  // One search per core but one (the page stays smooth), at most 8: islands sharing their
+  // best plans, the best result kept
   const start = () => {
     if (!input) return
-    worker.current?.terminate()
-    const next = new Worker(new URL("./rebuild.worker.ts", import.meta.url), { type: "module" })
-    worker.current = next
+    stopAll()
+    const islands = Math.max(1, Math.min(8, (navigator.hardwareConcurrency || 2) - 1))
+    const done = new Array<number>(islands).fill(0)
+    const results: RebuildResult[] = []
+    // The best plan of each phase so far, given to every island
+    const shared: RebuildShare[] = []
     setProgress(0)
-    next.onmessage = (event: MessageEvent<RebuildMessage>) => {
-      if ("done" in event.data) {
-        setProgress(event.data.done)
-        return
+    for (let island = 0; island < islands; island++) {
+      const worker = new Worker(new URL("./rebuild.worker.ts", import.meta.url), {
+        type: "module",
+      })
+      workers.current.push(worker)
+      worker.onmessage = (event: MessageEvent<RebuildMessage>) => {
+        const data = event.data
+        if ("done" in data) {
+          done[island] = data.done
+          setProgress(Math.min(...done))
+        } else if ("share" in data) {
+          const known = shared[data.share.phase]
+          if (known && known.cost <= data.share.cost) return
+          shared[data.share.phase] = data.share
+          for (const other of workers.current) {
+            if (other !== worker) other.postMessage({ adopt: data.share } satisfies RebuildRequest)
+          }
+        } else {
+          results.push(data.result)
+          worker.terminate()
+          if (results.length < islands) return
+          const best = results.reduce((a, b) => (score(b) < score(a) ? b : a))
+          workers.current = []
+          onResult(best)
+          setFinished(best)
+          setProgress(undefined)
+        }
       }
-      onResult(event.data.result)
-      setFinished(event.data.result)
-      setProgress(undefined)
-      next.terminate()
+      worker.postMessage({ input, seconds, island, islands } satisfies RebuildRequest)
     }
-    next.postMessage({ input, seconds } satisfies RebuildRequest)
   }
   const stop = () => {
-    worker.current?.terminate()
+    stopAll()
     setProgress(undefined)
   }
   // Minutes left, from the share done (the search runs for a set time)
@@ -181,6 +217,7 @@ function RebuildFigures({ city, result }: { city: City; result: RebuildResult })
           ? fill(t.city.rebuildFreeRect, { w: result.freeRect.w, h: result.freeRect.h })
           : t.city.rebuildNoFreeRect}
       </li>
+      <li>{fill(t.city.rebuildIsolated, { count: result.isolatedTiles })}</li>
       {unplaced.length > 0 && (
         <li className="text-destructive">
           {fill(t.city.rebuildUnplaced, { names: unplaced.join(", ") })}

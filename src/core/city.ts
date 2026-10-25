@@ -111,6 +111,9 @@ export type RatedCity = {
   // Buildings that only count together where they stand, by index in city.entities: a chain
   // start with its attached links, set buildings touching each other
   groups: number[][]
+  // By index in city.entities: the family of each building (its upgrade chain, all levels
+  // together, else the building itself) and its rank in it (level, then age)
+  traits: ({ family: string; rank: number } | undefined)[]
   // Buildings FoE Atlas does not know (main building, culture...): by name
   unknown: { name: string; count: number }[]
 }
@@ -397,6 +400,14 @@ export function rateCity(
   city.entities.forEach((_, i) => members.set(root(i), [...(members.get(root(i)) ?? []), i]))
   const groups = [...members.values()].filter((group) => group.length > 1)
 
+  const traits: RatedCity["traits"] = city.entities.map(() => undefined)
+  for (const { entity, age, building } of placed) {
+    traits[index.get(entity)!] = {
+      family: building.chain?.id ?? building.id,
+      rank: (building.chain?.level ?? 0) * 100 + AGES.findIndex((a) => a.id === age),
+    }
+  }
+
   const map = city.entities.flatMap((entity): MapBuilding[] => {
     const size = entity.w && entity.h ? { w: entity.w, h: entity.h } : sizeOf.get(entity)
     if (!size) return []
@@ -409,6 +420,7 @@ export function rateCity(
     rows: [...rows.values()],
     map,
     groups,
+    traits,
     unknown: [...unknown]
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count),

@@ -404,6 +404,7 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
           <CityRebuild
             city={city}
             groups={rated.groups}
+            traits={rated.traits}
             result={rebuilt}
             onResult={setRebuilt}
             onShowRebuilt={() => setShowRebuilt(true)}
