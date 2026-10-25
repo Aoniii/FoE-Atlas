@@ -382,6 +382,10 @@ export function rateCity(
   }
 }
 
+// One key per line of the rated city, the same after the score settings change
+export const rowKey = (row: CityRow) =>
+  `${row.kind}:${row.id}@${row.level ?? row.age}+${row.links ?? 0}/${row.setNeighbours ?? 0}`
+
 // "fr12" -> "FR 12", "zz1" -> "Beta"
 export function worldLabel(world: string): string {
   if (/^zz\d*$/.test(world)) return "Beta"

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import { Link, getRouteApi } from "@tanstack/react-router"
-import { ArrowDown, ArrowUp, ClipboardPaste, FileUp, Trash2 } from "lucide-react"
+import { ArrowDown, ArrowUp, ClipboardPaste, FileUp, MapPin, Trash2 } from "lucide-react"
 import { AGES, LATEST_AGE, type AgeId } from "@/core/ages"
 import type { AgeBuilding } from "@/core/building"
 import {
@@ -9,6 +9,7 @@ import {
   greatBuildingId,
   parseFoeHelperExport,
   rateCity,
+  rowKey,
   worldLabel,
   type City,
   type CityRow,
@@ -26,6 +27,7 @@ import {
 } from "@/components/ui/select"
 import { localized, useI18n } from "@/lib/i18n"
 import { usePersistentState } from "@/lib/use-persistent-state"
+import { cn } from "@/lib/utils"
 import { fetchAgeBuildings, fetchGreatBuilding } from "@/wiki/data"
 import { formatNumber } from "@/wiki/format"
 import { ScorePill } from "@/wiki/score-pill"
@@ -296,6 +298,17 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
   const [ascending, setAscending] = useState(true)
   const [hideGreatBuildings, setHideGreatBuildings] = usePersistentState("city.hideGb", false)
   const [showMap, setShowMap] = usePersistentState("city.showMap", true)
+  // Line of the table shown on the map (its buildings blink there)
+  const [onMap, setOnMap] = useState<CityRow>()
+  const showOnMap = (row: CityRow) => {
+    const same = onMap && rowKey(onMap) === rowKey(row)
+    setOnMap(same ? undefined : row)
+    if (same) return
+    setShowMap(true)
+    requestAnimationFrame(() =>
+      document.getElementById("city-map")?.scrollIntoView({ behavior: "smooth" }),
+    )
+  }
   // Every age a building of the city is rated at (each building at its own age)
   const ages = useMemo(
     () => [...new Set(city.entities.map((entity) => entityAge(city, entity, LATEST_AGE)))],
@@ -363,7 +376,14 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
         <Checkbox checked={showMap} onCheckedChange={(checked) => setShowMap(checked === true)} />
         {t.city.showMap}
       </label>
-      {showMap && <CityMap city={city} buildings={rated.map} />}
+      {showMap && (
+        <CityMap
+          city={city}
+          buildings={rated.map}
+          selected={onMap}
+          onClearSelected={() => setOnMap(undefined)}
+        />
+      )}
       <label className="flex w-fit items-center gap-2 text-sm">
         <Checkbox
           checked={hideGreatBuildings}
@@ -398,8 +418,11 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
           <tbody>
             {rows.map((row) => (
               <tr
-                key={`${row.kind}:${row.id}@${row.level ?? row.age}`}
-                className="border-b last:border-0 hover:bg-muted/30"
+                key={rowKey(row)}
+                className={cn(
+                  "border-b last:border-0 hover:bg-muted/30",
+                  onMap && rowKey(onMap) === rowKey(row) && "bg-primary/10",
+                )}
               >
                 <td className="px-3 py-2">
                   <div className="flex items-start justify-between gap-1">
@@ -437,6 +460,16 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                         )}
                       </div>
                     )}
+                    <Button
+                      variant={onMap && rowKey(onMap) === rowKey(row) ? "secondary" : "ghost"}
+                      size="icon-sm"
+                      className="ml-auto shrink-0"
+                      title={t.city.showOnMap}
+                      aria-label={t.city.showOnMap}
+                      onClick={() => showOnMap(row)}
+                    >
+                      <MapPin />
+                    </Button>
                     {!row.local && (
                       <CompareButton
                         iconOnly

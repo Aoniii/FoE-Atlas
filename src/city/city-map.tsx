@@ -1,6 +1,10 @@
 import { useMemo, useState } from "react"
 import { useNavigate } from "@tanstack/react-router"
-import type { City, CityRow, MapBuilding } from "@/core/city"
+import { Search, X } from "lucide-react"
+import { rowKey, type City, type CityRow, type MapBuilding } from "@/core/city"
+import { normalize } from "@/core/search"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 import { localized, useI18n } from "@/lib/i18n"
 import { formatNumber, scoreColor } from "@/wiki/format"
 
@@ -19,11 +23,40 @@ const fillOf = (row?: CityRow) =>
 // The city as the game shows it, one flat tile per square: each building in the color of its
 // score (a chain link in its start's), Great Buildings white, the others grey, free land black
 // and roads brown. Hovering a building lights up every building of its line in the table; a
-// click opens its page.
-export function CityMap({ city, buildings }: { city: City; buildings: MapBuilding[] }) {
+// click opens its page. The buildings found by the search, or of the line picked in the table
+// (`selected`), blink, the others fade.
+export function CityMap({
+  city,
+  buildings,
+  selected,
+  onClearSelected,
+}: {
+  city: City
+  buildings: MapBuilding[]
+  selected?: CityRow
+  onClearSelected: () => void
+}) {
   const { t, locale } = useI18n()
   const navigate = useNavigate()
   const [hovered, setHovered] = useState<MapBuilding>()
+  const [query, setQuery] = useState("")
+
+  // Buildings to show: the search (French or English name, every word) and the picked line
+  const found = useMemo(() => {
+    const words = normalize(query).split(" ").filter(Boolean)
+    const matches = (building: MapBuilding) => {
+      const names = building.row ? `${building.row.name.fr} ${building.row.name.en}` : building.name
+      const text = normalize(names)
+      return words.every((word) => text.includes(word))
+    }
+    const picked = selected && rowKey(selected)
+    return new Set(
+      buildings.filter(
+        (b) => (b.row && rowKey(b.row) === picked) || (words.length > 0 && matches(b)),
+      ),
+    )
+  }, [buildings, query, selected])
+  const searching = found.size > 0 || query.trim() !== ""
 
   // The unlocked expansions, else every building (cities imported before the map)
   const bounds = useMemo(() => {
@@ -61,7 +94,29 @@ export function CityMap({ city, buildings }: { city: City; buildings: MapBuildin
   }
 
   return (
-    <div className="flex flex-col gap-2">
+    <div id="city-map" className="flex scroll-mt-20 flex-col gap-2">
+      <div className="flex flex-wrap items-center gap-2">
+        <div className="relative w-full max-w-xs">
+          <Search className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground" />
+          <Input
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder={t.city.mapSearch}
+            className="pl-8"
+          />
+        </div>
+        {selected && (
+          <Button variant="outline" size="sm" onClick={onClearSelected}>
+            <X />
+            {localized(selected.name, locale)}
+          </Button>
+        )}
+        {searching && (
+          <span className="text-sm text-muted-foreground">
+            {t.city.mapFound.replace("{count}", String(found.size))}
+          </span>
+        )}
+      </div>
       <p className="min-h-5 text-sm">
         {hovered ? (
           <>
@@ -137,27 +192,41 @@ export function CityMap({ city, buildings }: { city: City; buildings: MapBuildin
                 fill={ROAD}
               />
             ))}
-            {buildings.map((building, i) => {
-              const lit = row && building.row === row
-              return (
-                <rect
-                  key={`b${i}`}
-                  x={building.x}
-                  y={building.y}
-                  width={building.w}
-                  height={building.h}
-                  fill={fillOf(building.row)}
-                  fillOpacity={row && !lit ? 0.4 : 1}
-                  stroke={lit ? "#ffffff" : "#000000"}
-                  strokeWidth={lit ? 2 : 1}
-                  vectorEffect="non-scaling-stroke"
-                  style={{ cursor: building.row && !building.row.local ? "pointer" : undefined }}
-                  onMouseEnter={() => setHovered(building)}
-                  onMouseLeave={() => setHovered(undefined)}
-                  onClick={() => open(building)}
-                />
-              )
-            })}
+            {/* Found buildings last: their outline above their neighbours */}
+            {[...buildings]
+              .sort((a, b) => Number(found.has(a)) - Number(found.has(b)))
+              .map((building) => {
+                const isFound = found.has(building)
+                const lit = (row && building.row === row) || isFound
+                const faded = row ? building.row !== row : searching && !isFound
+                return (
+                  <rect
+                    key={`b${building.x},${building.y}`}
+                    x={building.x}
+                    y={building.y}
+                    width={building.w}
+                    height={building.h}
+                    fill={fillOf(building.row)}
+                    fillOpacity={faded ? 0.3 : 1}
+                    stroke={lit ? "#ffffff" : "#000000"}
+                    strokeWidth={lit ? 2.5 : 1}
+                    vectorEffect="non-scaling-stroke"
+                    style={{ cursor: building.row && !building.row.local ? "pointer" : undefined }}
+                    onMouseEnter={() => setHovered(building)}
+                    onMouseLeave={() => setHovered(undefined)}
+                    onClick={() => open(building)}
+                  >
+                    {isFound && (
+                      <animate
+                        attributeName="stroke-opacity"
+                        values="1;0.15;1"
+                        dur="1.2s"
+                        repeatCount="indefinite"
+                      />
+                    )}
+                  </rect>
+                )
+              })}
           </g>
         </svg>
       </div>

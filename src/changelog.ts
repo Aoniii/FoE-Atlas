@@ -16,6 +16,10 @@ export const CHANGELOG: Release[] = [
         fr: "Ville : carte dans la vue du jeu (en losange), case par case, chaque bâtiment à sa place dans la couleur de son score (Grands Monuments en blanc, maillons d'une chaîne dans la couleur de leur départ) ; le survol montre le score et éclaire tous les bâtiments de la même ligne, un clic ouvre la fiche. Terrain libre en noir et routes en marron après une mise à jour de la ville",
         en: "City: map in the game's view (diamond-shaped), tile by tile, each building in place in its score's color (Great Buildings white, chain links in their start's color); hovering shows the score and lights every building of the same line, a click opens its page. Free land in black and roads in brown after updating the city",
       },
+      {
+        fr: "Carte de la ville : barre de recherche pour trouver un bâtiment, et bouton « Voir sur la carte » sur chaque ligne du tableau ; les bâtiments trouvés clignotent, les autres s'estompent",
+        en: 'City map: a search bar to find a building, and a "Show on the map" button on each line of the table; the buildings found blink, the others fade',
+      },
     ],
   },
   {
