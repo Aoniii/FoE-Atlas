@@ -26,7 +26,8 @@ describe("scraper parser", () => {
       assetId: "P_SS_MultiAge_Expedition16",
       image:
         "https://foeen.innogamescdn.com/assets/city/buildings/P_SS_MultiAge_Expedition16-cf9a5a730.png",
-      size: { w: 5, h: 6 },
+      // "5x6" on the wiki: the game's width comes second
+      size: { w: 6, h: 5 },
       road: "road",
     })
   })

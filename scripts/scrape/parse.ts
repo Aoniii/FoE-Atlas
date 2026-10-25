@@ -418,7 +418,8 @@ export function parseBuildingPage(wikitext: string): {
         m[1].trim(),
       ),
       image: image[0],
-      size: { w: Number(sizeMatch[1]), h: Number(sizeMatch[2]) },
+      // The wiki writes the game's length first: "5x6" is 6 tiles wide (x) and 5 long (y)
+      size: { w: Number(sizeMatch[2]), h: Number(sizeMatch[1]) },
       road,
       ages,
     },

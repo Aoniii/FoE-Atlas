@@ -128,7 +128,8 @@ export function parseGreatBuildingPage(wikitext: string): ParsedGreatBuilding | 
     assetId: image[1],
     image: image[0],
     age: ageFromLabel(strip(property(wikitext, "Age") ?? "")),
-    size: { w: Number(size[1]), h: Number(size[2]) },
+    // The wiki writes the game's length first: "3x2" is 2 tiles wide (x) and 3 long (y)
+    size: { w: Number(size[2]), h: Number(size[1]) },
     road: lanes === "2" ? "two_lane" : lanes === "1" ? "road" : "none",
     ...parseGreatBuildingTexts(wikitext),
     levels: parseLevels(wikitext),

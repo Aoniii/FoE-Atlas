@@ -9,6 +9,10 @@ export const CHANGELOG: Release[] = [
     date: "2026-10-25",
     changes: [
       {
+        fr: "Tailles : celles du wiki étaient lues à l'envers (« 3x2 » donne la longueur d'abord) ; les Grands Monuments et les bâtiments connus du seul wiki ont maintenant le bon sens, comme dans le jeu",
+        en: 'Sizes: the wiki\'s were read the wrong way round ("3x2" gives the length first); Great Buildings and buildings known only from the wiki now face the right way, as in the game',
+      },
+      {
         fr: "Ville : carte dans la vue du jeu (en losange), case par case, chaque bâtiment à sa place dans la couleur de son score (Grands Monuments en blanc, maillons d'une chaîne dans la couleur de leur départ) ; le survol montre le score et éclaire tous les bâtiments de la même ligne, un clic ouvre la fiche. Terrain libre en noir et routes en marron après une mise à jour de la ville",
         en: "City: map in the game's view (diamond-shaped), tile by tile, each building in place in its score's color (Great Buildings white, chain links in their start's color); hovering shows the score and lights every building of the same line, a click opens its page. Free land in black and roads in brown after updating the city",
       },
