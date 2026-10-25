@@ -308,7 +308,7 @@
     "mapFound": "{count} trouvé(s)",
     "showOnMap": "Voir sur la carte",
     "rebuildTitle": "Reconstruire la ville",
-    "rebuildText": "Calcule un nouveau plan sur toute ta surface débloquée, avec le moins de routes possible et sans trou inutile. L'hôtel de ville reste en place, chaque bâtiment garde son sens, les chaînes et les ensembles restent collés, et les routes doubles partent de l'hôtel de ville en blocs 2x2. Plus le calcul dure, meilleur est le plan, avec des gains qui s'amenuisent : {minutes} min donnent déjà un bon résultat. La page reste utilisable pendant ce temps.",
+    "rebuildText": "Part de ta ville telle qu'elle est et la réorganise sur toute ta surface débloquée : le moins de routes possible, et les cases libérées regroupées en un bloc d'au moins 4×4 pour un nouveau bâtiment, le plus grand possible. L'hôtel de ville reste en place, chaque bâtiment garde son sens, les bâtiments identiques se rangent côte à côte, les chaînes et les ensembles restent collés, et les routes doubles partent de l'hôtel de ville en blocs 2x2. Plus le calcul dure, meilleur est le plan, avec des gains qui s'amenuisent : {minutes} min donnent déjà un bon résultat. La page reste utilisable pendant ce temps.",
     "rebuildNeedsUpdate": "Mets à jour ta ville (bouton « Mettre à jour ») avec un nouvel export FoE Helper pour pouvoir la reconstruire.",
     "rebuildRun": "Reconstruire",
     "rebuildAgain": "Relancer",
@@ -323,8 +323,11 @@
     "rebuildDoneText": "Le nouveau plan est prêt. Vérifie-le sur la carte avant de déplacer quoi que ce soit en jeu.",
     "rebuildClose": "Fermer",
     "rebuildShow": "Voir la ville reconstruite",
-    "rebuildNotBetter": "Le plan trouvé n'utilise pas moins de routes que ta ville actuelle : elle est déjà très bien rangée, garde-la telle quelle.",
-    "rebuildDuration": "Durée du calcul (min) :"
+    "rebuildNotBetter": "Le plan trouvé ne fait pas mieux que ta ville actuelle (pas moins de routes, ni de bloc libre en plus) : elle est déjà très bien rangée. Tu peux relancer avec plus de temps.",
+    "rebuildDuration": "Durée du calcul (min) :",
+    "mapFreeRect": "Bloc libre {w}×{h}",
+    "rebuildFreeRect": "Bloc libre pour un nouveau bâtiment : {w}×{h} (en pointillés sur la carte)",
+    "rebuildNoFreeRect": "Pas de bloc libre d'au moins 4×4"
   },
   "item": {
     "back": "Retour aux objets",

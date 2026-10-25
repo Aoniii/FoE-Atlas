@@ -131,9 +131,7 @@ export function CityRebuild({
             <DialogHeader>
               <DialogTitle>{t.city.rebuildDoneTitle}</DialogTitle>
               <DialogDescription>
-                {tileCounts(rebuiltCity(city, finished)).roads < tileCounts(city).roads
-                  ? t.city.rebuildDoneText
-                  : t.city.rebuildNotBetter}
+                {improves(city, finished) ? t.city.rebuildDoneText : t.city.rebuildNotBetter}
               </DialogDescription>
             </DialogHeader>
             <RebuildFigures city={city} result={finished} />
@@ -155,6 +153,13 @@ export function CityRebuild({
   )
 }
 
+// Fewer roads, or as many with a free block for a new building
+function improves(city: City, result: RebuildResult) {
+  const before = tileCounts(city).roads
+  const after = tileCounts(rebuiltCity(city, result)).roads
+  return !result.unplaced.length && (after < before || (after === before && !!result.freeRect))
+}
+
 // Roads and free tiles before and after, buildings left out
 function RebuildFigures({ city, result }: { city: City; result: RebuildResult }) {
   const { t } = useI18n()
@@ -171,6 +176,11 @@ function RebuildFigures({ city, result }: { city: City; result: RebuildResult })
         })}
       </li>
       <li>{fill(t.city.rebuildFree, { before: before.free, after: after.free })}</li>
+      <li>
+        {result.freeRect
+          ? fill(t.city.rebuildFreeRect, { w: result.freeRect.w, h: result.freeRect.h })
+          : t.city.rebuildNoFreeRect}
+      </li>
       {unplaced.length > 0 && (
         <li className="text-destructive">
           {fill(t.city.rebuildUnplaced, { names: unplaced.join(", ") })}

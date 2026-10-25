@@ -1,12 +1,15 @@
 import { useMemo, useState } from "react"
 import { useNavigate } from "@tanstack/react-router"
 import { Search, X } from "lucide-react"
-import { rowKey, type City, type CityRow, type MapBuilding } from "@/core/city"
+import { rowKey, type City, type CityRow, type MapBuilding, type MapRect } from "@/core/city"
 import { normalize } from "@/core/search"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { localized, useI18n } from "@/lib/i18n"
 import { formatNumber, scoreColor } from "@/wiki/format"
+
+const fill = (text: string, values: Record<string, number | string>) =>
+  Object.entries(values).reduce((s, [k, v]) => s.replace(`{${k}}`, String(v)), text)
 
 // Colors of the buildings without a score, of the free land and of the roads
 const GREAT_BUILDING = "#ffffff"
@@ -31,11 +34,14 @@ export function CityMap({
   buildings,
   selected,
   onClearSelected,
+  freeRect,
 }: {
   city: City
   buildings: MapBuilding[]
   selected?: CityRow
   onClearSelected: () => void
+  // Free land kept for a new building (rebuilt city), outlined
+  freeRect?: MapRect
 }) {
   const { t, locale } = useI18n()
   const navigate = useNavigate()
@@ -157,6 +163,12 @@ export function CityMap({
           <span className="inline-block size-2.5 rounded-sm" style={{ background: ROAD }} />
           {t.city.mapRoads}
         </span>
+        {freeRect && (
+          <span className="flex items-center gap-1.5">
+            <span className="inline-block size-2.5 rounded-sm border border-dashed border-white" />
+            {fill(t.city.mapFreeRect, { w: freeRect.w, h: freeRect.h })}
+          </span>
+        )}
       </div>
       {!city.streets && (
         <p className="rounded-md border border-amber-500/50 bg-amber-500/10 px-3 py-2 text-sm">
@@ -228,6 +240,21 @@ export function CityMap({
                   </rect>
                 )
               })}
+            {freeRect && (
+              <rect
+                x={freeRect.x}
+                y={freeRect.y}
+                width={freeRect.w}
+                height={freeRect.h}
+                fill="#ffffff"
+                fillOpacity={0.12}
+                stroke="#ffffff"
+                strokeWidth={2}
+                strokeDasharray="6 4"
+                vectorEffect="non-scaling-stroke"
+                pointerEvents="none"
+              />
+            )}
           </g>
         </svg>
       </div>

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { rebuildCity, type RebuildInput, type RebuildResult } from "@/core/rebuild"
+import { FREE_SIDE, rebuildCity, type RebuildInput, type RebuildResult } from "@/core/rebuild"
 
 const piece = (entity: number, w: number, h: number, road: 0 | 1 | 2) => ({
   members: [{ entity, dx: 0, dy: 0, w, h, road }],
@@ -72,6 +72,16 @@ function check(input: RebuildInput, result: RebuildResult) {
       ).toBe(true)
     }
   }
+  // The free block: on the land, nothing on it, both sides big enough
+  const rect = result.freeRect
+  if (rect) {
+    expect(Math.min(rect.w, rect.h)).toBeGreaterThanOrEqual(FREE_SIDE)
+    for (let x = rect.x; x < rect.x + rect.w; x++) {
+      for (let y = rect.y; y < rect.y + rect.h; y++) {
+        expect(land.has(key(x, y)) && !taken.has(key(x, y)), `free at ${key(x, y)}`).toBe(true)
+      }
+    }
+  }
 }
 
 describe("city rebuild", () => {
@@ -96,6 +106,19 @@ describe("city rebuild", () => {
     check(input, result)
     // A road per building at most, well under the land
     expect(result.roadTiles).toBeLessThan(25)
+  })
+
+  it("keeps the free land together for a new building", () => {
+    const input: RebuildInput = {
+      areas,
+      townHall,
+      pieces: [piece(1, 3, 3, 1), piece(2, 3, 3, 1), piece(3, 1, 2, 0), piece(4, 1, 1, 0)],
+    }
+    const result = rebuildCity(input, { seconds: 0.3 })
+    check(input, result)
+    expect(result.freeRect).toBeDefined()
+    // Most of the free land in the block
+    expect(result.freeRect!.w * result.freeRect!.h).toBeGreaterThan(result.freeTiles / 2)
   })
 
   it("joins two-lane buildings through 2x2 blocks of two-lane roads", () => {

@@ -308,7 +308,7 @@
     "mapFound": "{count} found",
     "showOnMap": "Show on the map",
     "rebuildTitle": "Rebuild the city",
-    "rebuildText": "Works out a new plan on all your unlocked land, with as few roads as possible and no useless hole. The town hall stays in place, each building keeps its direction, chains and sets stay together, and two-lane roads start from the town hall in 2x2 blocks. The longer it runs, the better the plan, with smaller and smaller gains: {minutes} min already give a good result. The page stays usable meanwhile.",
+    "rebuildText": "Starts from your city as it is and rearranges it on all your unlocked land: as few roads as possible, and the tiles freed gathered in a block of at least 4×4 for a new building, as big as possible. The town hall stays in place, each building keeps its direction, identical buildings line up side by side, chains and sets stay together, and two-lane roads start from the town hall in 2x2 blocks. The longer it runs, the better the plan, with smaller and smaller gains: {minutes} min already give a good result. The page stays usable meanwhile.",
     "rebuildNeedsUpdate": "Update your city (\"Update\" button) with a new FoE Helper export to rebuild it.",
     "rebuildRun": "Rebuild",
     "rebuildAgain": "Run again",
@@ -323,8 +323,11 @@
     "rebuildDoneText": "The new plan is ready. Check it on the map before moving anything in the game.",
     "rebuildClose": "Close",
     "rebuildShow": "Show the rebuilt city",
-    "rebuildNotBetter": "The plan found does not use fewer roads than your current city: it is already well laid out, keep it as it is.",
-    "rebuildDuration": "Time to run (min):"
+    "rebuildNotBetter": "The plan found does no better than your current city (no fewer roads, no free block): it is already well laid out. You can run it again for longer.",
+    "rebuildDuration": "Time to run (min):",
+    "mapFreeRect": "Free block {w}×{h}",
+    "rebuildFreeRect": "Free block for a new building: {w}×{h} (dashed on the map)",
+    "rebuildNoFreeRect": "No free block of at least 4×4"
   },
   "item": {
     "back": "Back to items",

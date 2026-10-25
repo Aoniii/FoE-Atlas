@@ -13,8 +13,8 @@ export const CHANGELOG: Release[] = [
         en: "Home: new layout, with what the wiki and the City tab do and a link to each; contact through GitHub",
       },
       {
-        fr: "Ville : bouton « Reconstruire la ville », qui calcule pendant quelques minutes un nouveau plan sur toute ta surface avec le moins de routes possible (hôtel de ville en place, bâtiments dans leur sens, chaînes et ensembles collés, routes doubles en blocs 2x2 depuis l'hôtel de ville), avec une barre de progression et un bilan à la fin ; le plan s'affiche sur la carte, à comparer avec ta ville actuelle",
-        en: 'City: a "Rebuild the city" button working out for a few minutes a new plan on all your land with as few roads as possible (town hall in place, buildings in their direction, chains and sets together, two-lane roads in 2x2 blocks from the town hall), with a progress bar and a summary at the end; the plan shows on the map, to compare with your current city',
+        fr: "Ville : bouton « Reconstruire la ville », qui réorganise ta ville pendant quelques minutes (recuit simulé sur la place des bâtiments, routes retracées au plus court à chaque essai) avec le moins de routes possible (hôtel de ville en place, bâtiments dans leur sens, chaînes et ensembles collés, routes doubles en blocs 2x2 depuis l'hôtel de ville, bâtiments identiques côte à côte, cases libres regroupées en un bloc d'au moins 4x4 pour un nouveau bâtiment), avec une durée réglable, une barre de progression et un bilan à la fin ; le plan s'affiche sur la carte, à comparer avec ta ville actuelle",
+        en: 'City: a "Rebuild the city" button rearranging your city for a few minutes (simulated annealing over where the buildings stand, roads routed again by shortest paths at each try) with as few roads as possible (town hall in place, buildings in their direction, chains and sets together, two-lane roads in 2x2 blocks from the town hall, identical buildings side by side, free tiles gathered in a block of at least 4x4 for a new building), with a time to set, a progress bar and a summary at the end; the plan shows on the map, to compare with your current city',
       },
     ],
   },

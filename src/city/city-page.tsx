@@ -13,6 +13,7 @@ import {
   worldLabel,
   type City,
   type CityRow,
+  type MapRect,
 } from "@/core/city"
 import type { GreatBuilding } from "@/core/great-building"
 import { Button } from "@/components/ui/button"
@@ -412,6 +413,7 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
               city={city}
               plan={rebuiltPlan.city}
               unplaced={rebuilt.unplaced.map((i) => city.entities[i].name ?? city.entities[i].id)}
+              freeRect={rebuilt.freeRect}
               showRebuilt={showRebuilt}
               onShowRebuilt={setShowRebuilt}
             />
@@ -421,6 +423,7 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
             buildings={showRebuilt && rebuiltPlan ? rebuiltPlan.rated.map : rated.map}
             selected={onMap}
             onClearSelected={() => setOnMap(undefined)}
+            freeRect={showRebuilt ? rebuilt?.freeRect : undefined}
           />
         </>
       )}
@@ -569,12 +572,14 @@ function RebuildSummary({
   city,
   plan,
   unplaced,
+  freeRect,
   showRebuilt,
   onShowRebuilt,
 }: {
   city: City
   plan: City
   unplaced: string[]
+  freeRect?: MapRect
   showRebuilt: boolean
   onShowRebuilt: (value: boolean) => void
 }) {
@@ -608,6 +613,11 @@ function RebuildSummary({
         })}
       </span>
       <span>{fill(t.city.rebuildFree, { before: before.free, after: after.free })}</span>
+      <span>
+        {freeRect
+          ? fill(t.city.rebuildFreeRect, { w: freeRect.w, h: freeRect.h })
+          : t.city.rebuildNoFreeRect}
+      </span>
       {unplaced.length > 0 && (
         <span className="text-destructive">
           {fill(t.city.rebuildUnplaced, { names: unplaced.join(", ") })}
