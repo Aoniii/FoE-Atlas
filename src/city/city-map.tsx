@@ -8,7 +8,7 @@ import { formatNumber, scoreColor } from "@/wiki/format"
 const GREAT_BUILDING = "#ffffff"
 const UNRATED = "#8a8a8a"
 const LAND = "#000000"
-const ROAD = "#8b5a2b"
+const ROAD = "#b0743a"
 
 // The game's view: x goes down to the right, y down to the left, a tile twice as wide as high
 const ISOMETRIC = "matrix(1 0.5 -1 0.5 0 0)"
@@ -101,8 +101,12 @@ export function CityMap({ city, buildings }: { city: City; buildings: MapBuildin
           <span className="inline-block size-2.5 rounded-sm" style={{ background: ROAD }} />
           {t.city.mapRoads}
         </span>
-        {!city.areas && <span>{t.city.mapUpdate}</span>}
       </div>
+      {!city.streets && (
+        <p className="rounded-md border border-amber-500/50 bg-amber-500/10 px-3 py-2 text-sm">
+          {t.city.mapUpdate}
+        </p>
+      )}
       <div className="overflow-hidden rounded-lg border bg-zinc-500 p-2">
         <svg
           viewBox={viewBox}
@@ -149,6 +153,7 @@ export function CityMap({ city, buildings }: { city: City; buildings: MapBuildin
                   vectorEffect="non-scaling-stroke"
                   style={{ cursor: building.row && !building.row.local ? "pointer" : undefined }}
                   onMouseEnter={() => setHovered(building)}
+                  onMouseLeave={() => setHovered(undefined)}
                   onClick={() => open(building)}
                 />
               )
