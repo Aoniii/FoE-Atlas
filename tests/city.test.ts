@@ -170,6 +170,34 @@ describe("FoE Helper export", () => {
     expect(city.entities.map((entity) => entity.id)).toEqual(["W_MultiAge_PAT24B3"])
   })
 
+  it("keeps sizes, expansions and roads for the map", () => {
+    const city = parseFoeHelperExport({
+      CityMapData: {
+        "1": { cityentity_id: "W_MultiAge_PAT24B3", type: "generic_building", x: 2, y: 2 },
+        "2": { cityentity_id: "R_BronzeAge_Barracks", type: "military", x: 6, y: 0 },
+        "3": { cityentity_id: "S_StoneAge_Street", type: "street", x: 1, y: 0 },
+      },
+      UnlockedAreas: [
+        { width: 4, length: 4 },
+        { x: 4, width: 4, length: 4 },
+      ],
+      CityEntities: {
+        W_MultiAge_PAT24B3: { components: { AllAge: { placement: { size: { x: 2, y: 3 } } } } },
+        R_BronzeAge_Barracks: { width: 2, length: 2 },
+        S_StoneAge_Street: { width: 1, length: 1 },
+      },
+    })
+    expect(city.entities.map(({ x, y, w, h }) => ({ x, y, w, h }))).toEqual([
+      { x: 2, y: 2, w: 2, h: 3 },
+      { x: 6, y: 0, w: 2, h: 2 },
+    ])
+    expect(city.areas).toEqual([
+      { x: 0, y: 0, w: 4, h: 4 },
+      { x: 4, y: 0, w: 4, h: 4 },
+    ])
+    expect(city.streets).toEqual([{ x: 1, y: 0, w: 1, h: 1 }])
+  })
+
   it("refuses other JSON", () => {
     expect(() => parseFoeHelperExport({ hello: 1 })).toThrow(FoeHelperFormatError)
   })

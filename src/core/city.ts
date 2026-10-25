@@ -17,6 +17,9 @@ export type CityEntity = {
   type?: string
   x: number
   y: number
+  // Tiles taken, from the export's definition (missing in cities imported before)
+  w?: number
+  h?: number
   connected: boolean
   // The building's own age when it has one (event buildings keep the age they were built or
   // upgraded in); undefined: it follows the player's age
@@ -39,7 +42,17 @@ export type City = {
   // The game's definitions of the city's buildings, from the export (see parseFoeHelperExport)
   definitions?: Record<string, GameBuilding>
   entities: CityEntity[]
+  // For the map: the unlocked expansions and the roads (missing in cities imported before)
+  areas?: MapRect[]
+  streets?: MapRect[]
 }
+
+// A rectangle of the city map, in tiles: x to the right, y down
+export type MapRect = { x: number; y: number; w: number; h: number }
+
+// A building on the city map, with the table row it is counted in (a chain link: its start's);
+// name: the game's, for the buildings without a row (town hall...)
+export type MapBuilding = MapRect & { name: string; row?: CityRow }
 
 export type CityAssets = {
   buildings: Record<string, string>
@@ -87,6 +100,8 @@ const NOT_BUILDINGS = new Set([
 
 export type RatedCity = {
   rows: CityRow[]
+  // Every building of the city where it stands
+  map: MapBuilding[]
   // Buildings FoE Atlas does not know (main building, culture...): by name
   unknown: { name: string; count: number }[]
 }
@@ -262,6 +277,9 @@ export function rateCity(
     return lookup.get(age)!.get(id)
   }
   const rows = new Map<string, CityRow>()
+  // Row key of each entity, for the map
+  const rowOf = new Map<CityEntity, string>()
+  const sizeOf = new Map<CityEntity, { w: number; h: number }>()
   const add = (key: string, row: Omit<CityRow, "count" | "score">) => {
     const count = (rows.get(key)?.count ?? 0) + 1
     rows.set(key, {
@@ -280,6 +298,8 @@ export function rateCity(
       const { id, name, image, size, road } = gb
       const stats = greatBuildingStats(gb, entity.level)
       const tiles = tileCount(size, road)
+      rowOf.set(entity, `gb:${id}@${entity.level}`)
+      sizeOf.set(entity, size)
       add(`gb:${id}@${entity.level}`, {
         kind: "great_building",
         id,
@@ -294,8 +314,10 @@ export function rateCity(
     }
     const id = assets.buildings[entity.assetId ?? entity.id] ?? assets.buildings[entity.id]
     const building = (id ? find(age, id) : undefined) ?? fromDefinition(city, entity.id, age)
-    if (building) placed.push({ entity, age, building })
-    else {
+    if (building) {
+      placed.push({ entity, age, building })
+      sizeOf.set(entity, building.size)
+    } else {
       const name = entity.name ?? entity.id
       unknown.set(name, (unknown.get(name) ?? 0) + 1)
     }
@@ -327,7 +349,9 @@ export function rateCity(
       addStats(stats, aggregateStats(bonus))
     }
     const { name, image } = building
-    add(`${building.id}@${age}+${chain.length}/${neighbours}`, {
+    const key = `${building.id}@${age}+${chain.length}/${neighbours}`
+    for (const p of [item, ...chain]) rowOf.set(p.entity, key)
+    add(key, {
       kind: "building",
       // Only from the export: no page on the site
       ...(isLocal(building) && { local: true }),
@@ -341,8 +365,17 @@ export function rateCity(
       ...(neighbours && { setNeighbours: neighbours }),
     })
   }
+  const map = city.entities.flatMap((entity): MapBuilding[] => {
+    const size = entity.w && entity.h ? { w: entity.w, h: entity.h } : sizeOf.get(entity)
+    if (!size) return []
+    const key = rowOf.get(entity)
+    const row = key ? rows.get(key) : undefined
+    const name = entity.name ?? entity.id
+    return [{ x: entity.x, y: entity.y, ...size, name, ...(row && { row }) }]
+  })
   return {
     rows: [...rows.values()],
+    map,
     unknown: [...unknown]
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count),
@@ -379,7 +412,21 @@ function ownAge(entity: FoeHelperEntity): AgeId | undefined {
   const age = id.split("_")[1]
   return isAge(age) ? age : undefined
 }
-type FoeHelperDefinition = { asset_id?: string; name?: string }
+type FoeHelperDefinition = {
+  asset_id?: string
+  name?: string
+  width?: number
+  length?: number
+  components?: { AllAge?: { placement?: { size?: { x: number; y: number } } } }
+}
+
+// Tiles a definition takes: newer buildings in their components, older ones in width/length
+function definitionSize(def: FoeHelperDefinition): { w: number; h: number } | undefined {
+  const placed = def.components?.AllAge?.placement?.size
+  const w = placed?.x ?? def.width
+  const h = placed?.y ?? def.length
+  return w && h ? { w, h } : undefined
+}
 
 // Expansions of the player's map; a missing x or y is 0
 type UnlockedArea = { x?: number; y?: number; width?: number; length?: number }
@@ -412,15 +459,18 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
   const file = fileName?.match(/^([a-z]+\d+)_citymap_[\d-]+_(\d+)\.json$/i)
   // The export has no player age: the town hall's id carries it ("H_SpaceAgeTitan_Townhall")
   const townHall = raw.find((entity) => entity.type === "main_building")?.cityentity_id
+  const onCityMap = raw
+    .filter((entity) => entity.cityentity_id)
+    // Outside the player's map: harbours, guild buildings, taverns, ships...
+    .filter((entity) => !data.UnlockedAreas?.length || onMap(entity, data.UnlockedAreas))
+  const rect = (x = 0, y = 0, size = { w: 1, h: 1 }): MapRect => ({ x, y, ...size })
   const city: City = {
     world: file?.[1].toLowerCase() ?? "foe-helper",
     playerId: Number(file?.[2] ?? 0),
     era: townHall?.match(/^H_([A-Za-z]+)_/)?.[1],
     updatedAt: new Date().toISOString(),
-    entities: raw
-      .filter((entity) => entity.cityentity_id && entity.type !== "street")
-      // Outside the player's map: harbours, guild buildings, taverns, ships...
-      .filter((entity) => !data.UnlockedAreas?.length || onMap(entity, data.UnlockedAreas))
+    entities: onCityMap
+      .filter((entity) => entity.type !== "street")
       .map((entity) => {
         const definition = definitions[entity.cityentity_id!] ?? {}
         return {
@@ -430,11 +480,20 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
           type: entity.type,
           x: entity.x ?? 0,
           y: entity.y ?? 0,
+          ...definitionSize(definition),
           connected: entity.connected === 1,
           ...(ownAge(entity) && { era: ownAge(entity) }),
           ...(entity.type === "greatbuilding" && entity.level && { level: entity.level }),
         }
       }),
+    areas: (data.UnlockedAreas ?? []).map((area) =>
+      rect(area.x, area.y, { w: area.width ?? 0, h: area.length ?? 0 }),
+    ),
+    streets: onCityMap
+      .filter((entity) => entity.type === "street")
+      .map((entity) =>
+        rect(entity.x, entity.y, definitionSize(definitions[entity.cityentity_id!] ?? {})),
+      ),
   }
   // The game's own definition of every building of the city, at the ages it is rated at:
   // rates the buildings the wiki does not know, with their chain and set links

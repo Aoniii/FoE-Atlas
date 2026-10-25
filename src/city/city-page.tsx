@@ -33,6 +33,7 @@ import { DEFAULT_SCORE, setBoostBases, useBoostBases, useScoreKeys } from "@/wik
 import { StatIconsContext } from "@/wiki/stat-icons-context"
 import { ScoreActions, ScorePanel } from "@/wiki/wiki-filters"
 import type { StatKey } from "@/core/stats"
+import { CityMap } from "./city-map"
 
 const route = getRouteApi("/city")
 
@@ -294,6 +295,7 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
   const [buildings, setBuildings] = useState<Partial<Record<AgeId, AgeBuilding[]>>>({})
   const [ascending, setAscending] = useState(true)
   const [hideGreatBuildings, setHideGreatBuildings] = usePersistentState("city.hideGb", false)
+  const [showMap, setShowMap] = usePersistentState("city.showMap", true)
   // Every age a building of the city is rated at (each building at its own age)
   const ages = useMemo(
     () => [...new Set(city.entities.map((entity) => entityAge(city, entity, LATEST_AGE)))],
@@ -357,6 +359,11 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
       <p className="text-sm text-muted-foreground">
         {t.city.summary.replace("{count}", formatNumber(counted, locale))} {t.city.scoreSettings}
       </p>
+      <label className="flex w-fit items-center gap-2 text-sm">
+        <Checkbox checked={showMap} onCheckedChange={(checked) => setShowMap(checked === true)} />
+        {t.city.showMap}
+      </label>
+      {showMap && <CityMap city={city} buildings={rated.map} />}
       <label className="flex w-fit items-center gap-2 text-sm">
         <Checkbox
           checked={hideGreatBuildings}
