@@ -34,8 +34,10 @@ import { ScorePill } from "@/wiki/score-pill"
 import { DEFAULT_SCORE, setBoostBases, useBoostBases, useScoreKeys } from "@/wiki/score-settings"
 import { StatIconsContext } from "@/wiki/stat-icons-context"
 import { ScoreActions, ScorePanel } from "@/wiki/wiki-filters"
+import { rebuiltCity, tileCounts, type RebuildResult } from "@/core/rebuild"
 import type { StatKey } from "@/core/stats"
 import { CityMap } from "./city-map"
+import { CityRebuild } from "./city-rebuild"
 
 const route = getRouteApi("/city")
 
@@ -152,7 +154,11 @@ export function CityPage() {
                 {t.city.remove}
               </Button>
             </div>
-            <CityRating city={city} scoreKeys={scoreKeys} />
+            <CityRating
+              key={`${cityKey(city)}@${city.updatedAt}`}
+              city={city}
+              scoreKeys={scoreKeys}
+            />
           </>
         )}
       </div>
@@ -298,6 +304,9 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
   const [ascending, setAscending] = useState(true)
   const [hideGreatBuildings, setHideGreatBuildings] = usePersistentState("city.hideGb", false)
   const [showMap, setShowMap] = usePersistentState("city.showMap", true)
+  // Rebuilt plan of the city, and which one the map shows
+  const [rebuilt, setRebuilt] = useState<RebuildResult>()
+  const [showRebuilt, setShowRebuilt] = useState(false)
   // Line of the table shown on the map (its buildings blink there)
   const [onMap, setOnMap] = useState<CityRow>()
   const showOnMap = (row: CityRow) => {
@@ -353,6 +362,19 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
     )
     return rateCity(city, assets, buildings, loaded, LATEST_AGE, scoreKeys, bases)
   }, [city, assets, buildings, greatBuildings, scoreKeys, bases])
+  const rebuiltPlan = useMemo(() => {
+    if (!rebuilt) return undefined
+    const moved = rebuiltCity(city, rebuilt)
+    const loaded = Object.fromEntries(
+      Object.entries(greatBuildings).filter(
+        (entry): entry is [string, GreatBuilding] => !!entry[1],
+      ),
+    )
+    return {
+      city: moved,
+      rated: rateCity(moved, assets, buildings, loaded, LATEST_AGE, scoreKeys, bases),
+    }
+  }, [rebuilt, city, assets, buildings, greatBuildings, scoreKeys, bases])
   // Percent boosts are worth a share of this city's own production
   const ready = missing.length === 0
   useEffect(() => {
@@ -377,12 +399,30 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
         {t.city.showMap}
       </label>
       {showMap && (
-        <CityMap
-          city={city}
-          buildings={rated.map}
-          selected={onMap}
-          onClearSelected={() => setOnMap(undefined)}
-        />
+        <>
+          <CityRebuild
+            city={city}
+            groups={rated.groups}
+            result={rebuilt}
+            onResult={setRebuilt}
+            onShowRebuilt={() => setShowRebuilt(true)}
+          />
+          {rebuilt && rebuiltPlan && (
+            <RebuildSummary
+              city={city}
+              plan={rebuiltPlan.city}
+              unplaced={rebuilt.unplaced.map((i) => city.entities[i].name ?? city.entities[i].id)}
+              showRebuilt={showRebuilt}
+              onShowRebuilt={setShowRebuilt}
+            />
+          )}
+          <CityMap
+            city={showRebuilt && rebuiltPlan ? rebuiltPlan.city : city}
+            buildings={showRebuilt && rebuiltPlan ? rebuiltPlan.rated.map : rated.map}
+            selected={onMap}
+            onClearSelected={() => setOnMap(undefined)}
+          />
+        </>
       )}
       <label className="flex w-fit items-center gap-2 text-sm">
         <Checkbox
@@ -521,5 +561,58 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
         </details>
       )}
     </section>
+  )
+}
+
+// Current and rebuilt city side by side: roads and free tiles, buildings left out
+function RebuildSummary({
+  city,
+  plan,
+  unplaced,
+  showRebuilt,
+  onShowRebuilt,
+}: {
+  city: City
+  plan: City
+  unplaced: string[]
+  showRebuilt: boolean
+  onShowRebuilt: (value: boolean) => void
+}) {
+  const { t } = useI18n()
+  const before = tileCounts(city)
+  const after = tileCounts(plan)
+  const fill = (text: string, values: Record<string, number | string>) =>
+    Object.entries(values).reduce((s, [k, v]) => s.replace(`{${k}}`, String(v)), text)
+  return (
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+      <div className="flex overflow-hidden rounded-md border">
+        {[false, true].map((value) => (
+          <button
+            key={String(value)}
+            type="button"
+            onClick={() => onShowRebuilt(value)}
+            className={cn(
+              "px-3 py-1 transition-colors",
+              showRebuilt === value ? "bg-primary text-primary-foreground" : "hover:bg-muted/50",
+            )}
+          >
+            {value ? t.city.viewRebuilt : t.city.viewCurrent}
+          </button>
+        ))}
+      </div>
+      <span>
+        {fill(t.city.rebuildRoads, {
+          before: before.roads,
+          after: after.roads,
+          diff: after.roads - before.roads,
+        })}
+      </span>
+      <span>{fill(t.city.rebuildFree, { before: before.free, after: after.free })}</span>
+      {unplaced.length > 0 && (
+        <span className="text-destructive">
+          {fill(t.city.rebuildUnplaced, { names: unplaced.join(", ") })}
+        </span>
+      )}
+    </div>
   )
 }

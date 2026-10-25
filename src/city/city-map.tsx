@@ -13,6 +13,7 @@ const GREAT_BUILDING = "#ffffff"
 const UNRATED = "#8a8a8a"
 const LAND = "#000000"
 const ROAD = "#b0743a"
+const ROAD2 = "#7a4a1f"
 
 // The game's view: x goes down to the right, y down to the left, a tile twice as wide as high
 const ISOMETRIC = "matrix(1 0.5 -1 0.5 0 0)"
@@ -189,7 +190,7 @@ export function CityMap({
                 y={street.y}
                 width={street.w}
                 height={street.h}
-                fill={ROAD}
+                fill={street.level === 2 ? ROAD2 : ROAD}
               />
             ))}
             {/* Found buildings last: their outline above their neighbours */}

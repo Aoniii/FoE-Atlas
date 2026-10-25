@@ -17,9 +17,11 @@ export type CityEntity = {
   type?: string
   x: number
   y: number
-  // Tiles taken, from the export's definition (missing in cities imported before)
+  // Tiles taken, and the road it needs (0 none, 1 road, 2 two-lane road), from the export's
+  // definition (missing in cities imported before)
   w?: number
   h?: number
+  road?: RoadLevel
   connected: boolean
   // The building's own age when it has one (event buildings keep the age they were built or
   // upgraded in); undefined: it follows the player's age
@@ -44,11 +46,15 @@ export type City = {
   entities: CityEntity[]
   // For the map: the unlocked expansions and the roads (missing in cities imported before)
   areas?: MapRect[]
-  streets?: MapRect[]
+  // level: 2 for two-lane roads (missing: a road)
+  streets?: (MapRect & { level?: RoadLevel })[]
 }
 
 // A rectangle of the city map, in tiles: x to the right, y down
 export type MapRect = { x: number; y: number; w: number; h: number }
+
+// Road a building needs, or a road gives: 0 none, 1 road, 2 two-lane road
+export type RoadLevel = 0 | 1 | 2
 
 // A building on the city map, with the table row it is counted in (a chain link: its start's);
 // name: the game's, for the buildings without a row (town hall...)
@@ -102,6 +108,9 @@ export type RatedCity = {
   rows: CityRow[]
   // Every building of the city where it stands
   map: MapBuilding[]
+  // Buildings that only count together where they stand, by index in city.entities: a chain
+  // start with its attached links, set buildings touching each other
+  groups: number[][]
   // Buildings FoE Atlas does not know (main building, culture...): by name
   unknown: { name: string; count: number }[]
 }
@@ -239,19 +248,23 @@ function groupLinks(chain: Placed[]): NonNullable<CityRow["linked"]> {
 // Distinct buildings of the same set touching this one along a side
 function setNeighbours(placed: Placed, all: Placed[]): number {
   const id = placed.building.links?.set?.id
-  const { x, y } = placed.entity
-  const { w, h } = placed.building.size
-  return all.filter((other) => {
-    if (other === placed || other.building.links?.set?.id !== id) return false
-    const ox = other.entity.x
-    const oy = other.entity.y
-    const { w: ow, h: oh } = other.building.size
-    const overlapX = ox < x + w && ox + ow > x
-    const overlapY = oy < y + h && oy + oh > y
-    const sideX = ox + ow === x || ox === x + w
-    const sideY = oy + oh === y || oy === y + h
-    return (sideX && overlapY) || (sideY && overlapX)
-  }).length
+  return all.filter(
+    (other) => other !== placed && other.building.links?.set?.id === id && touch(placed, other),
+  ).length
+}
+
+// Two buildings sharing a side (not only a corner)
+function touch(a: Placed, b: Placed): boolean {
+  const { x, y } = a.entity
+  const { w, h } = a.building.size
+  const ox = b.entity.x
+  const oy = b.entity.y
+  const { w: ow, h: oh } = b.building.size
+  const overlapX = ox < x + w && ox + ow > x
+  const overlapY = oy < y + h && oy + oh > y
+  const sideX = ox + ow === x || ox === x + w
+  const sideY = oy + oh === y || oy === y + h
+  return (sideX && overlapY) || (sideY && overlapX)
 }
 
 // Buildings of the city found in the wiki, at their own age, and Great Buildings at their
@@ -365,6 +378,25 @@ export function rateCity(
       ...(neighbours && { setNeighbours: neighbours }),
     })
   }
+  // Groups: chain starts with their links, set buildings touching (union-find)
+  const index = new Map(city.entities.map((entity, i) => [entity, i]))
+  const parent = city.entities.map((_, i) => i)
+  const root = (i: number): number => (parent[i] === i ? i : (parent[i] = root(parent[i])))
+  const join = (a: CityEntity, b: CityEntity) => {
+    parent[root(index.get(a)!)] = root(index.get(b)!)
+  }
+  for (const [start, chain] of attached) for (const link of chain) join(start.entity, link.entity)
+  for (const a of placed) {
+    const set = a.building.links?.set?.id
+    if (!set) continue
+    for (const b of placed) {
+      if (a !== b && b.building.links?.set?.id === set && touch(a, b)) join(a.entity, b.entity)
+    }
+  }
+  const members = new Map<number, number[]>()
+  city.entities.forEach((_, i) => members.set(root(i), [...(members.get(root(i)) ?? []), i]))
+  const groups = [...members.values()].filter((group) => group.length > 1)
+
   const map = city.entities.flatMap((entity): MapBuilding[] => {
     const size = entity.w && entity.h ? { w: entity.w, h: entity.h } : sizeOf.get(entity)
     if (!size) return []
@@ -376,6 +408,7 @@ export function rateCity(
   return {
     rows: [...rows.values()],
     map,
+    groups,
     unknown: [...unknown]
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => b.count - a.count),
@@ -421,7 +454,22 @@ type FoeHelperDefinition = {
   name?: string
   width?: number
   length?: number
-  components?: { AllAge?: { placement?: { size?: { x: number; y: number } } } }
+  components?: {
+    AllAge?: {
+      placement?: { size?: { x: number; y: number } }
+      streetConnectionRequirement?: { requiredLevel?: number }
+    }
+  }
+  requirements?: { street_connection_level?: number }
+}
+
+// Road a definition needs (a street: the road it is)
+function definitionRoad(def: FoeHelperDefinition): RoadLevel {
+  const level =
+    def.requirements?.street_connection_level ??
+    def.components?.AllAge?.streetConnectionRequirement?.requiredLevel ??
+    0
+  return level >= 2 ? 2 : level >= 1 ? 1 : 0
 }
 
 // Tiles a definition takes: newer buildings in their components, older ones in width/length
@@ -485,6 +533,7 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
           x: entity.x ?? 0,
           y: entity.y ?? 0,
           ...definitionSize(definition),
+          ...(definitionSize(definition) && { road: definitionRoad(definition) }),
           connected: entity.connected === 1,
           ...(ownAge(entity) && { era: ownAge(entity) }),
           ...(entity.type === "greatbuilding" && entity.level && { level: entity.level }),
@@ -495,9 +544,14 @@ export function parseFoeHelperExport(json: unknown, fileName?: string): City {
     ),
     streets: onCityMap
       .filter((entity) => entity.type === "street")
-      .map((entity) =>
-        rect(entity.x, entity.y, definitionSize(definitions[entity.cityentity_id!] ?? {})),
-      ),
+      .map((entity) => {
+        const definition = definitions[entity.cityentity_id!] ?? {}
+        const level = definitionRoad(definition)
+        return {
+          ...rect(entity.x, entity.y, definitionSize(definition)),
+          ...(level === 2 && { level }),
+        }
+      }),
   }
   // The game's own definition of every building of the city, at the ages it is rated at:
   // rates the buildings the wiki does not know, with their chain and set links

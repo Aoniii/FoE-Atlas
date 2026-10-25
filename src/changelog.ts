@@ -12,6 +12,10 @@ export const CHANGELOG: Release[] = [
         fr: "Accueil : nouvelle mise en page, avec ce que font le wiki et l'onglet Ville et un lien vers chacun ; contact par GitHub",
         en: "Home: new layout, with what the wiki and the City tab do and a link to each; contact through GitHub",
       },
+      {
+        fr: "Ville : bouton « Reconstruire la ville », qui calcule pendant quelques minutes un nouveau plan sur toute ta surface avec le moins de routes possible (hôtel de ville en place, bâtiments dans leur sens, chaînes et ensembles collés, routes doubles en blocs 2x2 depuis l'hôtel de ville), avec une barre de progression et un bilan à la fin ; le plan s'affiche sur la carte, à comparer avec ta ville actuelle",
+        en: 'City: a "Rebuild the city" button working out for a few minutes a new plan on all your land with as few roads as possible (town hall in place, buildings in their direction, chains and sets together, two-lane roads in 2x2 blocks from the town hall), with a progress bar and a summary at the end; the plan shows on the map, to compare with your current city',
+      },
     ],
   },
   {
