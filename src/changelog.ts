@@ -6,15 +6,23 @@ export type Release = { version: string; date: string; changes: Localized[] }
 export const CHANGELOG: Release[] = [
   {
     version: "1.0.0-alpha.12",
-    date: "2026-10-25",
+    date: "2026-10-26",
     changes: [
       {
         fr: "Accueil : nouvelle mise en page, avec ce que font le wiki et l'onglet Ville et un lien vers chacun ; contact par GitHub",
         en: "Home: new layout, with what the wiki and the City tab do and a link to each; contact through GitHub",
       },
       {
-        fr: "Ville : bouton « Reconstruire la ville », qui réorganise ta ville en quelques minutes (départ de ta ville ou de rangées le long des rues, recuit simulé avec routes retracées au plus court et zones reconstruites, rangement MaxRects des bâtiments sans route) : moins de routes et toutes les cases libres en un seul bloc ; le calcul utilise tous les cœurs du processeur, des recherches qui s'échangent leurs meilleurs plans (hôtel de ville en place, bâtiments dans leur sens, chaînes et ensembles collés, routes doubles en blocs 2x2 depuis l'hôtel de ville, bâtiments identiques côte à côte, familles regroupées et rangées par niveau et âge), avec une durée réglable, une barre de progression et un bilan à la fin ; le plan s'affiche sur la carte, à comparer avec ta ville actuelle",
-        en: 'City: a "Rebuild the city" button rearranging your city in a few minutes (from your city or rows along streets, simulated annealing with roads routed again by shortest paths and zones rebuilt, MaxRects packing of the buildings without a road): fewer roads and every free tile in one block; it uses every core of the processor, searches sharing their best plans (town hall in place, buildings in their direction, chains and sets together, two-lane roads in 2x2 blocks from the town hall, identical buildings side by side, families together in level and age order), with a time to set, a progress bar and a summary at the end; the plan shows on the map, to compare with your current city',
+        fr: "Ville : bouton « Reconstruire la ville », qui réorganise ta ville avec moins de routes et toutes les cases libres en un seul bloc ; le plan s'affiche sur la carte, à comparer avec ta ville actuelle, avec un bilan à la fin (routes, cases libres, bloc libre)",
+        en: 'City: a "Rebuild the city" button rearranging your city with fewer roads and every free tile in one block; the plan shows on the map, to compare with your current city, with a summary at the end (roads, free tiles, free block)',
+      },
+      {
+        fr: "Reconstruction : l'hôtel de ville reste en place, les bâtiments gardent leur sens, chaînes et ensembles restent collés, les routes doubles partent de l'hôtel de ville en blocs 2x2, et les bâtiments d'une même famille se regroupent, rangés par niveau puis par âge",
+        en: "Rebuild: the town hall stays in place, buildings keep their direction, chains and sets stay together, two-lane roads start from the town hall in 2x2 blocks, and buildings of a family gather, in level then age order",
+      },
+      {
+        fr: "Reconstruction : recuit simulé parti de ta ville ou de rangées le long des rues, routes retracées au plus court à chaque essai, zones refaites en rangées le long d'une rue, rangement MaxRects des bâtiments sans route ; le calcul utilise tous les cœurs du processeur (des recherches qui s'échangent leurs meilleurs plans), avec une durée réglable (5 min par défaut) et une barre de progression",
+        en: "Rebuild: simulated annealing from your city or rows along streets, roads routed again by shortest paths at each try, zones redone in rows along a street, MaxRects packing of the buildings without a road; it uses every core of the processor (searches sharing their best plans), with a time to set (5 min by default) and a progress bar",
       },
     ],
   },
