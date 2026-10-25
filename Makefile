@@ -1,7 +1,7 @@
 PID_FILE := .dev.pid
 LOG_FILE := .dev.log
 
-.PHONY: dev stop format check test scraper gb-readings gb-beta game-data game-items
+.PHONY: dev stop format check test scraper gb-readings gb-beta game-data game-entities game-items
 
 # Start the Vite dev server in the background (own process group, so stop kills it all)
 dev:
@@ -62,11 +62,16 @@ gb-readings:
 gb-beta:
 	pnpm gb-beta
 
-# Every building of the game from FoE Helper city exports (City map > Download), into
-# data/game-buildings.json: every export in scripts/.cache/city/ is merged, the newest one
-# winning (each export only holds part of the game's buildings). ARGS="a.json b.json" to choose.
+# Every building of the game into data/game-buildings.json: the definitions of
+# `make game-entities`, then FoE Helper city exports (City map > Download) in
+# scripts/.cache/city/ for any missing, the newest winning. ARGS="a.json b.json" to choose.
 game-data:
 	pnpm game-data $(ARGS)
+
+# Every building definition of the game, from the index of a capture cleaned by
+# `pnpm har-extract <file.har> fr` (downloads the ones missing, kept in scripts/.cache/entities)
+game-entities:
+	pnpm game-entities $(ARGS)
 
 # Inventory items that place or upgrade buildings (upgrade and selection kits, upgrade paths)
 # from the captures cleaned by `pnpm har-extract`, into data/game-items.json

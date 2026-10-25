@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest"
 import type { Building } from "@/core/building"
 import { pathLevels } from "@/core/game-item"
+import { fromStaticData } from "../scripts/game-data"
 import { applyUpgradePaths } from "../scripts/merge-game"
 
 const building = (id: string, gameId?: string, chain?: Building["chain"]): Building => ({
@@ -54,5 +55,27 @@ describe("upgrade paths", () => {
       [path],
     )
     expect(result.map((b) => b.chain?.id)).toEqual(["w_mill1", "w_mill1", "mill"])
+  })
+})
+
+describe("static server definitions", () => {
+  it("drops the class and enum keys and takes the type from the tags", () => {
+    const def = fromStaticData({
+      id: "W_MultiAge_WIN24E1",
+      name: "Maison",
+      __class__: "CityEntity",
+      components: {
+        AllAge: {
+          placement: {
+            allowedPlacements: [
+              { gridId: "main", sector: { __enum__: "Sector", value: "Regular" } },
+            ],
+          },
+          tags: { tags: [{ tag: "buildingType", buildingType: "residential" }] },
+        },
+      },
+    })
+    expect(def.type).toBe("residential")
+    expect(JSON.stringify(def)).not.toMatch(/__class__|__enum__/)
   })
 })

@@ -43,6 +43,32 @@ export function fileName(url: string, index: number): string {
   return `${String(index).padStart(4, "0")}_${name.endsWith(".json") ? name : `${name}.json`}`
 }
 
+// Entries of a capture, read one by one from the raw bytes: a capture with the game's pictures
+// is larger than the longest string Node can hold (512 MB), the whole file cannot be parsed
+export function* harEntries(bytes: Buffer): Generator<HarEntry> {
+  const key = bytes.indexOf('"entries"')
+  if (key < 0) return
+  let i = bytes.indexOf("[", key) + 1
+  let depth = 0
+  let start = -1
+  let inString = false
+  for (; i < bytes.length; i++) {
+    const c = bytes[i]
+    if (inString) {
+      if (c === 0x5c)
+        i++ // backslash: skip the escaped character
+      else if (c === 0x22) inString = false
+      continue
+    }
+    if (c === 0x22) inString = true
+    else if (c === 0x7b) {
+      if (depth++ === 0) start = i
+    } else if (c === 0x7d) {
+      if (--depth === 0) yield JSON.parse(bytes.toString("utf8", start, i + 1)) as HarEntry
+    } else if (c === 0x5d && depth === 0) return
+  }
+}
+
 function parseJson(text: string | undefined): unknown {
   if (!text) return undefined
   try {
@@ -55,28 +81,30 @@ function parseJson(text: string | undefined): unknown {
 function main() {
   const [file, name = basename(process.argv[2] ?? "", ".har")] = process.argv.slice(2)
   if (!file) throw new Error("Usage: pnpm har-extract <capture.har> [name]")
-  const har = JSON.parse(readFileSync(file, "utf8")) as { log: { entries: HarEntry[] } }
+  const entries = harEntries(readFileSync(file))
   const output = `scripts/.cache/har/${name}`
   rmSync(output, { recursive: true, force: true })
   mkdirSync(output, { recursive: true })
 
   const index: { file: string; method: string; url: string; status: number; bytes: number }[] = []
   const sheets: string[] = []
-  har.log.entries.forEach((entry, i) => {
+  let i = -1
+  for (const entry of entries) {
+    i++
     const { content } = entry.response
     // Icon sheets of the game: only their public address (images in a capture can be cut)
     const { origin, pathname } = new URL(entry.request.url)
     if (/\/icons\/[^/]+\.png$/.test(pathname)) {
       sheets.push(`${origin}${pathname}`)
-      return
+      continue
     }
-    if (!content.text) return
+    if (!content.text) continue
     const text =
       content.encoding === "base64"
         ? Buffer.from(content.text, "base64").toString("utf8")
         : content.text
     const json = parseJson(text)
-    if (json === undefined) return
+    if (json === undefined) continue
     const out = fileName(entry.request.url, i)
     const body = JSON.stringify(redact(json))
     writeFileSync(`${output}/${out}`, body)
@@ -96,7 +124,7 @@ function main() {
       status: entry.response.status,
       bytes: body.length,
     })
-  })
+  }
   writeFileSync(`${output}/index.json`, JSON.stringify(index, null, 2) + "\n")
   writeFileSync(`${output}/icon-sheets.json`, JSON.stringify([...new Set(sheets)], null, 2) + "\n")
   console.log(`${index.length} JSON responses in ${output} (largest first):`)

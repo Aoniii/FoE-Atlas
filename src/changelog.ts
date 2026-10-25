@@ -9,7 +9,7 @@ export const CHANGELOG: Release[] = [
     date: "2026-10-25",
     changes: [
       {
-        fr: "Wiki : nouveau type « Objets », les kits d'amélioration et de sélection du jeu (944), avec leur fiche : ce que chacun place ou améliore. Noms en anglais pour l'instant",
+        fr: "Wiki : nouveau type « Objets », les kits d'amélioration et de sélection du jeu (944), avec leur fiche : ce que chacun place ou améliore",
         en: 'Wiki: new "Items" type, the game\'s upgrade and selection kits (944), each with its page: what it places or upgrades',
       },
       {
