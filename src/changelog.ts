@@ -5,6 +5,16 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.12",
+    date: "2026-10-25",
+    changes: [
+      {
+        fr: "Accueil : nouvelle mise en page, avec ce que font le wiki et l'onglet Ville et un lien vers chacun ; contact par GitHub",
+        en: "Home: new layout, with what the wiki and the City tab do and a link to each; contact through GitHub",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.11",
     date: "2026-10-25",
     changes: [

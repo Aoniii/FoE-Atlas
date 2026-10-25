@@ -1,14 +1,14 @@
-import { useState } from "react"
+import type { ReactNode } from "react"
 import { Link, createFileRoute } from "@tanstack/react-router"
-import { ArrowRight, Check, Construction, Copy, MessageCircle } from "lucide-react"
+import { ArrowRight, BookOpen, Construction, Map as MapIcon } from "lucide-react"
 import { buttonVariants } from "@/components/ui/button"
 import { useI18n } from "@/lib/i18n"
+import { cn } from "@/lib/utils"
 import { fetchIndex } from "@/wiki/data"
 
 const GITHUB_URL = "https://github.com/Aoniii"
 // AGPL-3.0: the source code must be offered to the site's users
 const SOURCE_URL = "https://github.com/Aoniii/FoE-Atlas"
-const DISCORD_USERNAME = "aoniii"
 
 export const Route = createFileRoute("/")({
   // Game version and data date, shown at the bottom (null if data is missing)
@@ -16,47 +16,73 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 })
 
+// Home: the site and its version, what the wiki and the City tab do, the development notice;
+// the licence and the data's version at the bottom of the screen
 function HomePage() {
   const { t, locale } = useI18n()
   const index = Route.useLoaderData()
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-8 py-10">
-      <section className="flex flex-col items-start gap-4">
-        <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="size-14" />
-        <h1 className="flex items-baseline gap-3 text-4xl font-semibold tracking-tight">
-          FoE Atlas
-          <span className="font-mono text-sm font-normal text-muted-foreground">
-            v{__APP_VERSION__}
-          </span>
-        </h1>
-        <p className="text-lg text-muted-foreground">{t.home.tagline}</p>
-        <Link to="/wiki" className={buttonVariants({ size: "lg" })}>
-          {t.home.openWiki}
-          <ArrowRight />
-        </Link>
-      </section>
+    <div className="flex min-h-[calc(100svh-6.5rem-1px)] flex-col gap-10">
+      {/* Centered in the height of the screen on a computer, the footer at its corners */}
+      <div className="mx-auto grid w-full max-w-5xl gap-6 md:my-auto md:grid-cols-2 md:[grid-template-areas:'wiki_brand'_'wiki_city'_'dev_city']">
+        <section className="flex flex-col justify-center gap-3 md:[grid-area:brand]">
+          <div className="flex items-center gap-4">
+            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="size-14" />
+            <h1 className="flex flex-wrap items-baseline gap-x-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+              FoE Atlas
+              <span className="font-mono text-sm font-normal text-muted-foreground">
+                v{__APP_VERSION__}
+              </span>
+            </h1>
+          </div>
+          <p className="text-lg text-muted-foreground">{t.home.tagline}</p>
+        </section>
 
-      <section className="flex flex-col gap-3 rounded-lg border border-amber-500/40 bg-amber-500/10 p-5">
-        <h2 className="flex items-center gap-2 font-semibold">
-          <Construction className="size-5 text-amber-500" />
-          {t.home.devTitle}
-        </h2>
-        <p className="text-sm text-muted-foreground">{t.home.devText}</p>
-        <div className="flex flex-wrap gap-2">
+        <FeatureCard
+          className="md:[grid-area:wiki]"
+          icon={<BookOpen className="size-6 text-primary" />}
+          title={t.home.wikiTitle}
+          text={t.home.wikiText}
+          action={
+            <Link to="/wiki" className={buttonVariants({ size: "lg" })}>
+              {t.home.openWiki}
+              <ArrowRight />
+            </Link>
+          }
+        />
+
+        <FeatureCard
+          className="md:[grid-area:city]"
+          icon={<MapIcon className="size-6 text-primary" />}
+          title={t.home.cityTitle}
+          text={t.home.cityText}
+          action={
+            <Link to="/city" className={buttonVariants({ size: "lg" })}>
+              {t.home.openCity}
+              <ArrowRight />
+            </Link>
+          }
+        />
+
+        <section className="flex flex-col gap-3 rounded-lg border border-amber-500/40 bg-amber-500/10 p-5 md:[grid-area:dev]">
+          <h2 className="flex items-center gap-2 font-semibold">
+            <Construction className="size-5 text-amber-500" />
+            {t.home.devTitle}
+          </h2>
+          <p className="text-sm text-muted-foreground">{t.home.devText}</p>
           <a
             href={GITHUB_URL}
             target="_blank"
             rel="noreferrer"
-            className={buttonVariants({ variant: "outline" })}
+            className={cn(buttonVariants({ variant: "outline" }), "w-fit")}
           >
             <GitHubIcon />
             {t.home.github}
           </a>
-          <DiscordContact />
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <div className="flex flex-wrap items-baseline justify-between gap-2 text-xs text-muted-foreground">
+      <footer className="mt-auto flex flex-wrap items-baseline justify-between gap-2 text-xs text-muted-foreground md:mt-0">
         <a
           href={SOURCE_URL}
           target="_blank"
@@ -71,40 +97,34 @@ function HomePage() {
             {t.wiki.updated} {new Date(index.scrapedAt).toLocaleDateString(locale)}
           </span>
         )}
-      </div>
+      </footer>
     </div>
   )
 }
 
-// Discord has no public profile link: show the username with a copy button
-function DiscordContact() {
-  const { t } = useI18n()
-  const [copied, setCopied] = useState(false)
-
-  async function copy() {
-    try {
-      await navigator.clipboard.writeText(DISCORD_USERNAME)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    } catch {
-      // Clipboard unavailable (insecure context): the username stays readable
-    }
-  }
-
+// A part of the site: what it does and the way in
+function FeatureCard({
+  icon,
+  title,
+  text,
+  action,
+  className,
+}: {
+  icon: ReactNode
+  title: string
+  text: string
+  action: ReactNode
+  className?: string
+}) {
   return (
-    <button
-      type="button"
-      onClick={copy}
-      title={t.home.copy}
-      className={buttonVariants({ variant: "outline" })}
-    >
-      <MessageCircle />
-      {t.home.discord} <span className="font-mono">{DISCORD_USERNAME}</span>
-      {copied ? <Check className="text-green-500" /> : <Copy className="opacity-60" />}
-      <span className="sr-only" aria-live="polite">
-        {copied ? t.home.copied : ""}
-      </span>
-    </button>
+    <section className={cn("flex flex-col gap-4 rounded-lg border p-6", className)}>
+      <h2 className="flex items-center gap-3 text-xl font-semibold">
+        {icon}
+        {title}
+      </h2>
+      <p className="flex-1 text-muted-foreground">{text}</p>
+      <div>{action}</div>
+    </section>
   )
 }
 
