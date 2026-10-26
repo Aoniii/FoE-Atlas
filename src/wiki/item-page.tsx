@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import type { ItemBuilding, ItemCard } from "@/core/game-item"
 import { Badge } from "@/components/ui/badge"
 import { localized, useI18n } from "@/lib/i18n"
+import { BackToEvent } from "@/events/back-to-event"
 import { ItemRarity } from "./item-grid"
 
 const route = getRouteApi("/items/$id")
@@ -15,15 +16,20 @@ const linkClass = "font-medium underline decoration-dotted underline-offset-4 ho
 export function ItemPage() {
   const { t, locale } = useI18n()
   const { item } = route.useLoaderData()
+  const { event } = route.useSearch()
   const name = localized(item.name, locale)
   const otherName = locale === "en" ? item.name.fr : item.name.en
 
   return (
     <div className="flex flex-col gap-6">
-      <Link to="/wiki" search={{ type: "item" }} className={backClass}>
-        <ArrowLeft className="size-4" />
-        {t.item.back}
-      </Link>
+      {event ? (
+        <BackToEvent event={event} />
+      ) : (
+        <Link to="/wiki" search={{ type: "item" }} className={backClass}>
+          <ArrowLeft className="size-4" />
+          {t.item.back}
+        </Link>
+      )}
 
       <header className="flex flex-col gap-4 sm:flex-row sm:items-start">
         {item.image && <img src={item.image} alt="" className="size-32 shrink-0 object-contain" />}
@@ -83,6 +89,7 @@ export function ItemPage() {
 
 function BuildingRef({ building, level }: { building: ItemBuilding; level?: number }) {
   const { t, locale } = useI18n()
+  const { event } = route.useSearch()
   return (
     <span className="flex min-w-0 items-center gap-3">
       {building.image && (
@@ -90,7 +97,12 @@ function BuildingRef({ building, level }: { building: ItemBuilding; level?: numb
       )}
       <span className="flex min-w-0 flex-col gap-0.5">
         {building.id ? (
-          <Link to="/buildings/$id" params={{ id: building.id }} className={linkClass}>
+          <Link
+            to="/buildings/$id"
+            params={{ id: building.id }}
+            search={{ event }}
+            className={linkClass}
+          >
             {localized(building.name, locale)}
           </Link>
         ) : (
@@ -106,13 +118,13 @@ function BuildingRef({ building, level }: { building: ItemBuilding; level?: numb
   )
 }
 
-export function ItemRef({ item, note }: { item: ItemCard; note?: string }) {
+export function ItemRef({ item, note, event }: { item: ItemCard; note?: string; event?: string }) {
   const { locale } = useI18n()
   return (
     <span className="flex min-w-0 items-center gap-3">
       {item.image && <img src={item.image} alt="" className="size-10 shrink-0 object-contain" />}
       <span className="flex min-w-0 flex-col gap-0.5">
-        <Link to="/items/$id" params={{ id: item.id }} className={linkClass}>
+        <Link to="/items/$id" params={{ id: item.id }} search={{ event }} className={linkClass}>
           {localized(item.name, locale)}
         </Link>
         {note && <span className="text-xs text-muted-foreground">{note}</span>}

@@ -1,9 +1,14 @@
 import { createFileRoute, notFound } from "@tanstack/react-router"
+import { z } from "zod"
 import { useI18n } from "@/lib/i18n"
 import { EventPage } from "@/events/event-page"
 import { DataNotFoundError, fetchEvent } from "@/wiki/data"
 
 export const Route = createFileRoute("/events/$id")({
+  // Open tab, kept in the URL so the way back from a prize lands on it
+  validateSearch: z.object({
+    tab: z.enum(["main", "daily", "rival", "prizes"]).optional().catch(undefined),
+  }),
   loader: async ({ params }) => {
     try {
       return { event: await fetchEvent(params.id) }

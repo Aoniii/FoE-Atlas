@@ -1,9 +1,14 @@
 import { createFileRoute, notFound } from "@tanstack/react-router"
+import { z } from "zod"
 import { useI18n } from "@/lib/i18n"
 import { DataNotFoundError, fetchItem } from "@/wiki/data"
 import { ItemPage } from "@/wiki/item-page"
 
 export const Route = createFileRoute("/items/$id")({
+  validateSearch: z.object({
+    // Event the page was opened from (its prizes), for the back link
+    event: z.string().optional().catch(undefined),
+  }),
   loader: async ({ params }) => {
     try {
       return { item: await fetchItem(params.id) }

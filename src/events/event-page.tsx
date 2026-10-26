@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import type { EventPage, EventPageRivalStep, EventPrize } from "@/core/event"
@@ -25,7 +24,11 @@ export function EventPage() {
     ...(event.quests.rival.length ? (["rival"] as const) : []),
     "prizes",
   ]
-  const [tab, setTab] = useState<Tab>("main")
+  const search = route.useSearch()
+  const navigate = route.useNavigate()
+  const tab: Tab = search.tab && tabs.includes(search.tab) ? search.tab : "main"
+  const setTab = (value: Tab) =>
+    navigate({ search: { tab: value }, replace: true, resetScroll: false })
   const site = new URL(event.source).hostname
 
   return (
@@ -85,7 +88,9 @@ export function EventPage() {
       {tab === "main" && <QuestTable quests={event.quests.main} />}
       {tab === "daily" && <QuestTable quests={event.quests.daily} start={event.live?.start} />}
       {tab === "rival" && <QuestTable quests={event.quests.rival} />}
-      {tab === "prizes" && <PrizeTable lanes={event.prizes.lanes} steps={event.prizes.steps} />}
+      {tab === "prizes" && (
+        <PrizeTable event={event.id} lanes={event.prizes.lanes} steps={event.prizes.steps} />
+      )}
     </div>
   )
 }
@@ -138,9 +143,11 @@ function QuestTable({ quests, start }: { quests: EventPageRivalStep[]; start?: s
 }
 
 function PrizeTable({
+  event,
   lanes,
   steps,
 }: {
+  event: string
   lanes: EventPage["prizes"]["lanes"]
   steps: EventPage["prizes"]["steps"]
 }) {
@@ -165,7 +172,7 @@ function PrizeTable({
               <td className={cn(cellClass, "font-mono text-muted-foreground")}>{step.at}</td>
               {step.prizes.map((prize, k) => (
                 <td key={k} className={cellClass}>
-                  <Prize prize={prize} />
+                  <Prize prize={prize} event={event} />
                 </td>
               ))}
             </tr>
@@ -178,7 +185,7 @@ function PrizeTable({
 
 // A prize: its building or item (picture, name in the site's language, link to its page),
 // else the source's text. Fragments keep their count ("50 ×")
-function Prize({ prize }: { prize: EventPrize }) {
+function Prize({ prize, event }: { prize: EventPrize; event: string }) {
   const { locale } = useI18n()
   const { link } = prize
   if (!link) return <span>{localized(prize.text, locale)}</span>
@@ -196,16 +203,31 @@ function Prize({ prize }: { prize: EventPrize }) {
   )
   if (link.kind === "ally")
     return (
-      <Link to="/allies/$id" params={{ id: link.id }} className="hover:text-primary">
+      <Link
+        to="/allies/$id"
+        params={{ id: link.id }}
+        search={{ event }}
+        className="hover:text-primary"
+      >
         {content}
       </Link>
     )
   return link.kind === "building" ? (
-    <Link to="/buildings/$id" params={{ id: link.id }} className="hover:text-primary">
+    <Link
+      to="/buildings/$id"
+      params={{ id: link.id }}
+      search={{ event }}
+      className="hover:text-primary"
+    >
       {content}
     </Link>
   ) : (
-    <Link to="/items/$id" params={{ id: link.id }} className="hover:text-primary">
+    <Link
+      to="/items/$id"
+      params={{ id: link.id }}
+      search={{ event }}
+      className="hover:text-primary"
+    >
       {content}
     </Link>
   )

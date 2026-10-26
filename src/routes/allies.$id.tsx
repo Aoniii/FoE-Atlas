@@ -9,6 +9,8 @@ export const Route = createFileRoute("/allies/$id")({
   validateSearch: z.object({
     rarity: z.enum(ALLY_RARITIES).optional().catch(undefined),
     level: z.coerce.number().int().positive().optional().catch(undefined),
+    // Event the page was opened from (its prizes), for the back link
+    event: z.string().optional().catch(undefined),
   }),
   loader: async ({ params }) => {
     try {

@@ -9,6 +9,7 @@ import {
   type AllyProduction,
   type AllyRarity,
 } from "@/core/ally"
+import { BackToEvent } from "@/events/back-to-event"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Slider } from "@/components/ui/slider"
@@ -94,17 +95,21 @@ export function AllyPage() {
   const total = ally.levelCosts.slice(0, level).reduce((sum, c) => sum + c, 0)
   const setSearch = (next: { rarity?: AllyRarity; level?: number }) =>
     navigate({
-      search: { rarity, level, ...next },
+      search: { rarity, level, event: search.event, ...next },
       replace: true,
       resetScroll: false,
     })
 
   return (
     <div className="flex flex-col gap-6">
-      <Link to="/wiki" search={{ type: "ally" }} className={backClass}>
-        <ArrowLeft className="size-4" />
-        {t.ally.back}
-      </Link>
+      {search.event ? (
+        <BackToEvent event={search.event} />
+      ) : (
+        <Link to="/wiki" search={{ type: "ally" }} className={backClass}>
+          <ArrowLeft className="size-4" />
+          {t.ally.back}
+        </Link>
+      )}
 
       <header className="flex flex-col gap-4 sm:flex-row sm:items-start">
         {ally.image && <img src={ally.image} alt="" className="size-48 shrink-0 object-contain" />}

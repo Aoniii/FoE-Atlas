@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils"
 import { CompareButton } from "@/compare/compare-button"
 import { AgeDetails } from "./building-card"
 import { chainStepLabels } from "./chain-labels"
+import { BackToEvent } from "@/events/back-to-event"
 import { ItemRef } from "./item-page"
 import { ScorePill } from "./score-pill"
 import { useBoostBases, useScoreKeys } from "./score-settings"
@@ -67,7 +68,9 @@ export function BuildingPage() {
   return (
     <StatIconsContext value={icons}>
       <div className="flex flex-col gap-6">
-        {search.from === "city" ? (
+        {search.event ? (
+          <BackToEvent event={search.event} />
+        ) : search.from === "city" ? (
           <Link to="/city" className={backClass}>
             <ArrowLeft className="size-4" />
             {t.building.backToCity}
@@ -124,8 +127,8 @@ export function BuildingPage() {
           </div>
         </header>
 
-        <LinkedBuildings building={building} age={age} from={search.from} />
-        <BuildingItems building={building} />
+        <LinkedBuildings building={building} age={age} from={search.from} event={search.event} />
+        <BuildingItems building={building} event={search.event} />
 
         {building.chainLevels.length > 1 && (
           <section className="flex flex-col gap-2">
@@ -137,7 +140,7 @@ export function BuildingPage() {
                   title={localized(level.name, locale)}
                   to="/buildings/$id"
                   params={{ id: level.id }}
-                  search={{ age, from: search.from }}
+                  search={{ age, from: search.from, event: search.event }}
                   className={cn(
                     "inline-flex items-center gap-2 rounded-md border px-2.5 py-1 text-sm hover:bg-muted",
                     level.id === building.id && "border-primary bg-muted font-medium",
@@ -266,10 +269,12 @@ function LinkedBuildings({
   building,
   age,
   from,
+  event,
 }: {
   building: BuildingPageData
   age: AgeId
   from?: "city"
+  event?: string
 }) {
   const { t, locale } = useI18n()
   const chain = building.links?.chain
@@ -308,7 +313,7 @@ function LinkedBuildings({
                 <Link
                   to="/buildings/$id"
                   params={{ id: linked.id }}
-                  search={{ age, from }}
+                  search={{ age, from, event }}
                   className="font-medium underline decoration-dotted underline-offset-4 hover:text-primary"
                 >
                   {localized(linked.name, locale)}
@@ -332,7 +337,7 @@ function LinkedBuildings({
 
 // Inventory items of this building: selection kits placing it, upgrade kits turning the
 // level below into it or it into the next level
-function BuildingItems({ building }: { building: BuildingPageData }) {
+function BuildingItems({ building, event }: { building: BuildingPageData; event?: string }) {
   const { t } = useI18n()
   if (!building.items?.length) return null
   return (
@@ -344,7 +349,7 @@ function BuildingItems({ building }: { building: BuildingPageData }) {
             key={`${item.id}-${item.role}`}
             className="flex items-center rounded-md border p-2 text-sm"
           >
-            <ItemRef item={item} note={t.building.itemRoles[item.role]} />
+            <ItemRef item={item} note={t.building.itemRoles[item.role]} event={event} />
           </li>
         ))}
       </ul>
