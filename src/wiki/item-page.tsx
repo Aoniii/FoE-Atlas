@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import type { ItemBuilding, ItemCard } from "@/core/game-item"
 import { Badge } from "@/components/ui/badge"
 import { localized, useI18n } from "@/lib/i18n"
-import { BackToEvent } from "@/events/back-to-event"
+import { BackToEvent, type EventOrigin } from "@/events/back-to-event"
 import { ItemRarity } from "./item-grid"
 
 const route = getRouteApi("/items/$id")
@@ -89,7 +89,7 @@ export function ItemPage() {
 
 function BuildingRef({ building, level }: { building: ItemBuilding; level?: number }) {
   const { t, locale } = useI18n()
-  const { event } = route.useSearch()
+  const { event, eventTab } = route.useSearch()
   return (
     <span className="flex min-w-0 items-center gap-3">
       {building.image && (
@@ -100,7 +100,7 @@ function BuildingRef({ building, level }: { building: ItemBuilding; level?: numb
           <Link
             to="/buildings/$id"
             params={{ id: building.id }}
-            search={{ event }}
+            search={{ event, eventTab }}
             className={linkClass}
           >
             {localized(building.name, locale)}
@@ -118,13 +118,21 @@ function BuildingRef({ building, level }: { building: ItemBuilding; level?: numb
   )
 }
 
-export function ItemRef({ item, note, event }: { item: ItemCard; note?: string; event?: string }) {
+export function ItemRef({
+  item,
+  note,
+  origin,
+}: {
+  item: ItemCard
+  note?: string
+  origin?: EventOrigin
+}) {
   const { locale } = useI18n()
   return (
     <span className="flex min-w-0 items-center gap-3">
       {item.image && <img src={item.image} alt="" className="size-10 shrink-0 object-contain" />}
       <span className="flex min-w-0 flex-col gap-0.5">
-        <Link to="/items/$id" params={{ id: item.id }} search={{ event }} className={linkClass}>
+        <Link to="/items/$id" params={{ id: item.id }} search={origin} className={linkClass}>
           {localized(item.name, locale)}
         </Link>
         {note && <span className="text-xs text-muted-foreground">{note}</span>}

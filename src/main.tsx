@@ -6,7 +6,12 @@ import { LocaleProvider } from "@/components/locale-provider"
 import "./index.css"
 
 // Same base path as Vite (/FoE-Atlas/ once deployed on GitHub Pages)
-const router = createRouter({ routeTree, basepath: import.meta.env.BASE_URL })
+// The browser's back button brings each page back where it was scrolled
+const router = createRouter({
+  routeTree,
+  basepath: import.meta.env.BASE_URL,
+  scrollRestoration: true,
+})
 
 declare module "@tanstack/react-router" {
   interface Register {

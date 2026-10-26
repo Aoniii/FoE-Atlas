@@ -4,6 +4,7 @@ import type { EventGuide, EventPage, EventPageRivalStep, EventPrize } from "@/co
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { formatNumber } from "@/wiki/format"
+import { rememberEventScroll, useRestoredEventScroll } from "./back-to-event"
 import { eventDate, eventTime, eventTitle, questDay } from "./format"
 
 const route = getRouteApi("/events/$id")
@@ -30,6 +31,8 @@ export function EventPage() {
   const search = route.useSearch()
   const navigate = route.useNavigate()
   const tab: Tab = search.tab && tabs.includes(search.tab) ? search.tab : tabs[0]
+  // Back from a prize or an offer: where the page was left
+  useRestoredEventScroll(event.id, tab)
   const setTab = (value: Tab) =>
     navigate({ search: { tab: value }, replace: true, resetScroll: false })
   const site = new URL(event.source).hostname
@@ -251,6 +254,7 @@ function Prize({ prize, event, tab }: { prize: EventPrize; event: string; tab?: 
   if (!link) return <span>{localized(prize.text, locale)}</span>
   const fragments = prize.text.en.match(/^(\d+) Fragments of /i)?.[1]
   const name = localized(link.name, locale)
+  const remember = () => rememberEventScroll(event, tab ?? "prizes")
   const content = (
     <span className="flex items-center gap-2">
       {link.image && (
@@ -267,6 +271,7 @@ function Prize({ prize, event, tab }: { prize: EventPrize; event: string; tab?: 
         to="/allies/$id"
         params={{ id: link.id }}
         search={{ event, eventTab: tab }}
+        onClick={remember}
         className="hover:text-primary"
       >
         {content}
@@ -277,6 +282,7 @@ function Prize({ prize, event, tab }: { prize: EventPrize; event: string; tab?: 
       to="/buildings/$id"
       params={{ id: link.id }}
       search={{ event, eventTab: tab }}
+      onClick={remember}
       className="hover:text-primary"
     >
       {content}
@@ -286,6 +292,7 @@ function Prize({ prize, event, tab }: { prize: EventPrize; event: string; tab?: 
       to="/items/$id"
       params={{ id: link.id }}
       search={{ event, eventTab: tab }}
+      onClick={remember}
       className="hover:text-primary"
     >
       {content}
