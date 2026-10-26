@@ -6,6 +6,7 @@ import {
   betaCostAt,
   betaDescription,
   betaGoldEffects,
+  betaInLiveOrder,
   betaLabel,
   betaValueAt,
   GOLD_FIRST_LEVEL,
@@ -189,20 +190,58 @@ export function GreatBuildingPage() {
         <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           <Stat label={t.greatBuilding.cost} value={approx(formatNumber(cost, locale))} />
           <Stat label={t.greatBuilding.totalCost} value={approx(formatNumber(total, locale))} />
-          {gb.levels.columns.map((column, index) => (
-            <Stat
-              key={index}
-              icon={column.icon}
-              label={localized(column.label, locale)}
-              value={approx(formatValue(row?.values[index], locale))}
-            />
-          ))}
+          {pairedColumns(gb.levels.columns).map(({ icon, label, count, value }) => {
+            const shown = formatValue(row?.values[value], locale)
+            const times = count === undefined ? undefined : formatValue(row?.values[count], locale)
+            return (
+              <Stat
+                key={value}
+                icon={icon}
+                label={localized(label, locale)}
+                value={approx(
+                  times && times !== "–" && shown !== "–" ? `${times} × ${shown}` : shown,
+                )}
+              />
+            )
+          })}
         </dl>
-        {gb.beta && <BetaStats beta={gb.beta} level={level} />}
+        {gb.beta && (
+          <BetaStats
+            beta={gb.beta}
+            level={level}
+            liveIcons={gb.levels.columns.map((column) => column.icon ?? "")}
+          />
+        )}
       </section>
       {rewards && <RushCalculator gb={gb} tables={rewards} />}
     </div>
   )
+}
+
+type LiveColumn = { icon?: string; label: { fr: string; en: string } }
+
+// Live columns as shown: a count and its percent ("Supply Boost (#)" and "(%)") in one, "40 ×
+// 60 %", as the beta shows them
+function pairedColumns(columns: LiveColumn[]) {
+  const base = (column: LiveColumn, mark: string) =>
+    column.label.en.endsWith(` (${mark})`) ? column.label.en.slice(0, -mark.length - 3) : undefined
+  const paired = new Set<number>()
+  const shown: { icon?: string; label: LiveColumn["label"]; count?: number; value: number }[] = []
+  columns.forEach((column, index) => {
+    if (paired.has(index)) return
+    const name = base(column, "#")
+    const percent = name ? columns.findIndex((c) => base(c, "%") === name) : -1
+    if (percent < 0) return shown.push({ icon: column.icon, label: column.label, value: index })
+    paired.add(percent)
+    const strip = (text: string) => text.replace(/\s*\(#\)$/, "")
+    shown.push({
+      icon: column.icon,
+      label: { fr: strip(column.label.fr), en: strip(column.label.en) },
+      count: index,
+      value: percent,
+    })
+  })
+  return shown
 }
 
 const TIER_STYLES: Record<BetaTier, string> = {
@@ -221,7 +260,15 @@ function TierChip({ tier }: { tier: BetaTier }) {
 }
 
 // Same level on the beta server (prestige rework), in orange below the live values
-function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) {
+function BetaStats({
+  beta,
+  level,
+  liveIcons,
+}: {
+  beta: BetaGreatBuilding
+  level: number
+  liveIcons: string[]
+}) {
   const { t, locale } = useI18n()
   // Every beta value is computed from the game's milestones
   const cost = betaCostAt(beta, level)
@@ -247,7 +294,7 @@ function BetaStats({ beta, level }: { beta: BetaGreatBuilding; level: number }) 
       <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         <BetaStat label={t.greatBuilding.cost} value={fp(cost)} />
         <BetaStat label={t.greatBuilding.totalCost} value={fp(total)} />
-        {beta.columns.map((column, index) => {
+        {betaInLiveOrder(beta.columns, liveIcons).map((column, index) => {
           const value = betaValueAt(column, level)
           // Locked Gold tier: level where it unlocks
           const unlock = value ? undefined : GOLD_FIRST_LEVEL

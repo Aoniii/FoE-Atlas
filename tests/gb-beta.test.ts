@@ -4,6 +4,7 @@ import {
   betaCostAt,
   betaDescription,
   betaGoldEffects,
+  betaInLiveOrder,
   betaLabel,
   betaValueAt,
   type BetaColumn,
@@ -116,5 +117,31 @@ describe("beta Gold effects", () => {
         expect(column.icon, `${id} ${column.bonus}`).toBeTruthy()
       }
     }
+  })
+})
+
+describe("beta bonuses in the live order", () => {
+  const beta = (bonus: string, tier: "copper" | "gold" = "copper") => ({
+    bonus,
+    context: "all",
+    tier,
+    percent: false,
+    values: [],
+  })
+  it("follows the live columns, Gold bonuses last", () => {
+    const live = [
+      "https://foeen.innogamescdn.com/assets/shared/icons/icon_great_building_bonus_guild_goods-e1fb74f07.png",
+      "https://foeen.innogamescdn.com/assets/shared/icons/att_def_boost_defender-6e0afd1e0.png",
+    ]
+    const columns = [
+      beta("clan_goods_extended", "gold"),
+      beta("fierce_resistance"),
+      beta("clan_goods"),
+    ] as unknown as BetaColumn[]
+    expect(betaInLiveOrder(columns, live).map((c) => c.bonus)).toEqual([
+      "clan_goods",
+      "fierce_resistance",
+      "clan_goods_extended",
+    ])
   })
 })

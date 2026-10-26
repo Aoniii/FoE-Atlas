@@ -347,3 +347,60 @@ export function betaGoldEffects(gb: BetaGreatBuilding): BetaColumn[] {
     return true
   })
 }
+
+// Live bonus of each beta bonus, by the live column's icon (".../icon_great_building_bonus_goods-<hash>.png"
+// -> "goods", "att_def_boost_defender"), to show the beta's copper bonuses in the live order
+const LIVE_ICONS: Record<string, string> = {
+  advanced_tactics: "att_def_boost_attacker_defender",
+  aid_boost: "aid_blueprints",
+  aid_goods: "aid_goods",
+  algorithmic_core: "algorithmic_core",
+  clan_goods: "guild_goods",
+  contribution_boost: "contribution_boost",
+  critical_hit_chance: "critical_hit_chance",
+  diplomatic_gifts: "diplomatic_gifts",
+  double_collection: "double_collect",
+  fierce_resistance: "att_def_boost_defender",
+  first_strike: "first_strike",
+  happiness: "happy",
+  helping_hands: "helping_hands",
+  medals: "medals",
+  military_boost: "att_def_boost_attacker",
+  missile_launch: "missile_launch",
+  money: "coins",
+  money_boost: "coins",
+  mysterious_shards: "mysterious_shards",
+  penal_unit: "penal_unit",
+  plunder_and_pillage: "plunder_and_pillage",
+  plunder_goods: "plunder_goods",
+  plunder_repel: "plunder_repel",
+  population: "population",
+  previous_era_goods: "previous_era_good_production",
+  quest_boost: "scroll",
+  random_goods: "goods",
+  special_goods: "special_goods",
+  spoils_of_war: "spoils_of_war",
+  strategy_points: "forgepoints",
+  supplies: "supplies",
+  supplies_boost: "supplies",
+  totem_drop: "relic_hunt",
+}
+
+// Beta columns in the live columns' order (copper bonuses first, as the live ones), Gold
+// bonuses after in their own order
+export function betaInLiveOrder(columns: BetaColumn[], liveIcons: string[]): BetaColumn[] {
+  const keys = liveIcons.map((icon) =>
+    (icon.split("/").pop() ?? "")
+      .replace(/(-[0-9a-f]+)?\.\w+$/, "")
+      .replace(/^icon_great_building_bonus_/, ""),
+  )
+  const rank = (column: BetaColumn) => {
+    const live = LIVE_ICONS[column.bonus]
+    const index = live ? keys.indexOf(live) : -1
+    return column.tier === "gold" ? 2000 : index < 0 ? 1000 : index
+  }
+  return columns
+    .map((column, index) => ({ column, index }))
+    .sort((a, b) => rank(a.column) - rank(b.column) || a.index - b.index)
+    .map(({ column }) => column)
+}

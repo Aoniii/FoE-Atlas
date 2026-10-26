@@ -17,6 +17,10 @@ export const CHANGELOG: Release[] = [
         en: "Data: game version 1.346, new buildings from the wiki and Great Building bonuses updated",
       },
       {
+        fr: "Grands Monuments : les bonus de la bêta suivent le même ordre que ceux du jeu actuel, et les bonus en deux parties (nombre et pourcentage, comme Amélioration marchandises) tiennent dans une seule case « 40 × 60 % »",
+        en: 'Great Buildings: beta bonuses follow the same order as the live ones, and two-part bonuses (count and percent, like Supply Boost) fit in a single box, "40 × 60 %"',
+      },
+      {
         fr: "Bâtiments en double retirés : le wiki a parfois deux pages pour un nouveau bâtiment, l'une encore nommée par son code (WIN26E, FELL26A…) ; elles ne font plus qu'un, avec le vrai nom dans chaque langue",
         en: "Duplicate buildings removed: the wiki sometimes has two pages for a new building, one still named by its code (WIN26E, FELL26A…); they are now one, with the real name in each language",
       },
