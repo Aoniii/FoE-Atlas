@@ -17,6 +17,10 @@ export const CHANGELOG: Release[] = [
         en: "Data: game version 1.346, new buildings from the wiki and Great Building bonuses updated",
       },
       {
+        fr: "Bâtiments en double retirés : le wiki a parfois deux pages pour un nouveau bâtiment, l'une encore nommée par son code (WIN26E, FELL26A…) ; elles ne font plus qu'un, avec le vrai nom dans chaque langue",
+        en: "Duplicate buildings removed: the wiki sometimes has two pages for a new building, one still named by its code (WIN26E, FELL26A…); they are now one, with the real name in each language",
+      },
+      {
         fr: "Reconstruction : routes tracées deux fois plus vite et les plus droites possible (chaque virage compte), donc plus d'essais et des plans mieux rangés",
         en: "Rebuild: roads laid twice as fast and as straight as possible (every bend counts), so more tries and tidier plans",
       },

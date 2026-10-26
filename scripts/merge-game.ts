@@ -12,9 +12,9 @@ import type { WikiPages } from "./scrape/pages"
 // "W_MultiAge_HERO24H1" -> picture name "W_SS_MultiAge_HERO24H1", as in the wiki's image URLs
 export const pictureOf = (assetId: string) => assetId.replace(/^([A-Z])_/, "$1_SS_")
 
-// Game asset id from a wiki image URL: .../W_SS_MultiAge_HERO24H1-<hash>.png
+// Game asset id from a wiki image URL: .../W_SS_MultiAge_HERO24H1-<hash>.png (or no hash)
 export function assetOfImage(image: string | undefined): string | undefined {
-  const file = image?.match(/\/([A-Z])_SS_([^/]+?)-[0-9a-f]+\.\w+$/)
+  const file = image?.match(/\/([A-Z])_SS_([^/]+?)(?:-[0-9a-f]+)?\.\w+$/)
   return file ? `${file[1]}_${file[2]}` : undefined
 }
 
@@ -40,10 +40,64 @@ function fromWikiPages(g: GameBuilding, pages: WikiPages) {
   const pick = (titles: string[]) =>
     titles
       .filter((title) => level(title) === wanted)
-      .sort((a, b) => Number(a.includes("(")) - Number(b.includes("(")) || a.length - b.length)[0]
+      .sort(
+        (a, b) =>
+          Number(isCodeName(a)) - Number(isCodeName(b)) ||
+          Number(a.includes("(")) - Number(b.includes("(")) ||
+          a.length - b.length,
+      )[0]
   const fr = page.fr.find((title) => sameName(title, g.name)) ?? pick(page.fr)
   const en = pick(page.en)
   return en ? { en, fr: fr ?? g.name, image: page.image } : undefined
+}
+
+// A name the wiki gives before the real one: the game's code ("WIN26E", "Ascended WIN26B",
+// "FELL26A Gold")
+export const isCodeName = (name: string) => /\b[A-Z]{3,}\d{2}[A-Z]\d*[a-z]?\b/.test(name)
+
+// The wiki can have two pages of one building while its names come in, each with the real
+// name in one language and the code in the other ("Homeward Bus Stop Diner" / "WIN26E" and
+// "WIN26E" / "Restaurant de l'arrêt de bus du retour"), or a page with only the code: one
+// building, each language's real name, the page with the real English name kept
+export function joinCodePages(wiki: Building[]): Building[] {
+  const byAsset = new Map<string, Building[]>()
+  for (const building of wiki) {
+    const asset = assetOfImage(building.image)
+    if (asset) byAsset.set(asset, [...(byAsset.get(asset) ?? []), building])
+  }
+  // Level written in either name, when one says it
+  const levelOf = (b: Building) =>
+    [b.name.en, b.name.fr].map((n) => n.match(/(?:Lv|Niv)\.\s*(\d+)\s*$/i)?.[1]).find(Boolean)
+  const real = (name: string) => (isCodeName(name) ? undefined : name)
+  // Never two different real names in one language, nor two levels
+  const twins = (a: Building, b: Building) =>
+    (["en", "fr"] as const).every(
+      (l) => !real(a.name[l]) || !real(b.name[l]) || a.name[l] === b.name[l],
+    ) &&
+    (!levelOf(a) || !levelOf(b) || levelOf(a) === levelOf(b))
+  const joined = new Map<string, Building>()
+  const dropped = new Set<string>()
+  for (const group of byAsset.values()) {
+    for (const page of group) {
+      if (dropped.has(page.id) || joined.has(page.id)) continue
+      if (!isCodeName(page.name.en) && !isCodeName(page.name.fr)) continue
+      const found = group.filter(
+        (b) => b !== page && !dropped.has(b.id) && !joined.has(b.id) && twins(page, b),
+      )
+      if (found.length !== 1) continue
+      const [kept, other] = real(page.name.en) ? [page, found[0]] : [found[0], page]
+      joined.set(kept.id, {
+        ...other,
+        ...kept,
+        name: {
+          en: real(kept.name.en) ?? other.name.en,
+          fr: real(kept.name.fr) ?? other.name.fr,
+        },
+      })
+      dropped.add(other.id)
+    }
+  }
+  return wiki.flatMap((b) => (dropped.has(b.id) ? [] : [joined.get(b.id) ?? b]))
 }
 
 const pageUrl = (title: string) =>
@@ -54,6 +108,7 @@ export function mergeGameBuildings(
   game: GameBuilding[],
   pages: WikiPages = {},
 ): Building[] {
+  wiki = joinCodePages(wiki)
   const byAsset = new Map<string, Building[]>()
   for (const building of wiki) {
     const asset = assetOfImage(building.image)
@@ -77,7 +132,9 @@ export function mergeGameBuildings(
     }
     if (match) {
       merged.add(match.id)
-      result.push({ ...match, ...fromGame })
+      // The game's name (the export's language, French) until the wiki has the real one
+      const name = isCodeName(match.name.fr) ? { ...match.name, fr: g.name } : match.name
+      result.push({ ...match, name, ...fromGame })
       continue
     }
     const named = fromWikiPages(g, pages)
