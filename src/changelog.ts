@@ -9,6 +9,10 @@ export const CHANGELOG: Release[] = [
     date: "2026-10-26",
     changes: [
       {
+        fr: "Nouvelle section Événements : l'événement d'Halloween 2026 vu sur la bêta, avec ses quêtes principales et journalières traduites en français et les récompenses de chaque palier, d'après foebeta.com",
+        en: "New Events section: the Halloween 2026 event seen on the beta, with its main and daily quests and the prizes of each step, from foebeta.com",
+      },
+      {
         fr: "Données : version du jeu 1.346, nouveaux bâtiments du wiki et bonus des Grands Monuments à jour",
         en: "Data: game version 1.346, new buildings from the wiki and Great Building bonuses updated",
       },

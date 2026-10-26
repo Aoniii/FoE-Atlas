@@ -33,6 +33,8 @@ import {
 } from "../src/core/great-building"
 import type { GameBuilding } from "../src/core/game-building"
 import { levelCost } from "../src/core/rush"
+import type { EventCard, EventPage, EventPrize, EventQuest, GameEvent } from "../src/core/event"
+import { eventTranslator } from "./event-texts"
 import type { GameItems, ItemBuilding, ItemCard, ItemPage } from "../src/core/game-item"
 import { applyUpgradePaths, assetOfImage, fillLevelChains, mergeGameBuildings } from "./merge-game"
 import type { SearchEntry } from "../src/core/search"
@@ -104,7 +106,9 @@ writeFileSync(
 )
 for (const file of readdirSync(OUTPUT)) {
   if (
-    !["buildings", "great-buildings", "items", "items.json"].includes(file) &&
+    !["buildings", "great-buildings", "items", "items.json", "events", "events.json"].includes(
+      file,
+    ) &&
     !written.has(file)
   ) {
     rmSync(`${OUTPUT}/${file}`)
@@ -463,6 +467,83 @@ if (unmodeled.length) {
     `Great Building bonuses with no formula beyond the known levels (${unmodeled.length}):`,
   )
   for (const column of unmodeled) console.log(`  ${column}`)
+}
+
+// Events (scripts/events.ts): a light list for their grid, one file per event with each
+// prize linked to its building or item page when the site has it (same English name:
+// "Lost Castle – Lv. 1", "50 Fragments of Mystery Castle Silver Selection Kit (x50)")
+const EVENTS = "data/events"
+const EVENTS_OUTPUT = `${OUTPUT}/events`
+mkdirSync(EVENTS_OUTPUT, { recursive: true })
+const nameKey = (name: string) =>
+  name
+    .toLowerCase()
+    .replace(/[–—]/g, "-")
+    .replace(/^\d+ fragments of /, "")
+    .replace(/\s*\(x\d+\)$/, "")
+    .replace(/\s+/g, " ")
+    .trim()
+const prizeLinks = new Map<string, NonNullable<EventPrize["link"]>>()
+for (const card of itemCards.values()) {
+  prizeLinks.set(nameKey(card.name.en), {
+    kind: "item",
+    id: card.id,
+    name: card.name,
+    image: card.image,
+  })
+}
+for (const b of buildings) {
+  prizeLinks.set(nameKey(b.name.en), { kind: "building", id: b.id, name: b.name, image: b.image })
+}
+const { translate, missing: untranslated } = eventTranslator(
+  JSON.parse(readFileSync("data/event-texts.json", "utf8")).fr,
+)
+const translateQuest = (q: EventQuest) => ({
+  n: q.n,
+  text: translate(q.text),
+  reward: translate(q.reward),
+})
+const eventCards: EventCard[] = []
+const eventFiles = new Set<string>()
+for (const file of existsSync(EVENTS) ? readdirSync(EVENTS) : []) {
+  const event: GameEvent = JSON.parse(readFileSync(`${EVENTS}/${file}`, "utf8"))
+  const page: EventPage = {
+    ...event,
+    quests: {
+      main: event.quests.main.map(translateQuest),
+      daily: event.quests.daily.map(translateQuest),
+      rival: event.quests.rival.map((step) =>
+        "milestone" in step ? { milestone: translate(step.milestone) } : translateQuest(step),
+      ),
+    },
+    prizes: {
+      lanes: event.prizes.lanes.map(translate),
+      steps: event.prizes.steps.map(({ at, prizes }) => ({
+        at,
+        // A linked prize shows its building or item's own names
+        prizes: prizes.map((text) => {
+          const link = prizeLinks.get(nameKey(text))
+          return link ? { text: { en: text, fr: text }, link } : { text: translate(text) }
+        }),
+      })),
+    },
+  }
+  // Pictured by its first building prize
+  const image = page.prizes.steps
+    .flatMap((step) => step.prizes)
+    .find((p) => p.link?.kind === "building" && p.link.image)?.link?.image
+  const { id, name, family, year, beta } = event
+  eventCards.push({ id, name, family, year, beta, ...(image && { image }) })
+  writeFileSync(`${EVENTS_OUTPUT}/${event.id}.json`, JSON.stringify(page))
+  eventFiles.add(`${event.id}.json`)
+}
+for (const file of readdirSync(EVENTS_OUTPUT))
+  if (!eventFiles.has(file)) rmSync(`${EVENTS_OUTPUT}/${file}`)
+eventCards.sort((a, b) => (b.beta?.start ?? "").localeCompare(a.beta?.start ?? ""))
+writeFileSync(`${OUTPUT}/events.json`, JSON.stringify(eventCards))
+if (untranslated.size) {
+  console.log(`Event texts with no French yet (data/event-texts.json, ${untranslated.size}):`)
+  for (const key of untranslated) console.log(`  ${key}`)
 }
 
 console.log(`${buildings.length} buildings bundled into ${ages.length} ages (${OUTPUT})`)
