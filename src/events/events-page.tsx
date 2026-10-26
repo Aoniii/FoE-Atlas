@@ -1,6 +1,6 @@
 import { Link, getRouteApi } from "@tanstack/react-router"
 import { useI18n } from "@/lib/i18n"
-import { eventDate, eventTitle } from "./format"
+import { eventDate, eventTime, eventTitle } from "./format"
 
 const route = getRouteApi("/events/")
 
@@ -26,6 +26,11 @@ export function EventsPage() {
               <img src={event.image} alt="" loading="lazy" className="h-40 w-full object-contain" />
             ) : (
               <span className="h-40" />
+            )}
+            {event.live && (
+              <span className="text-sm font-medium">
+                {t.events.live.replace("{start}", eventTime(event.live.start, locale))}
+              </span>
             )}
             {event.beta && (
               <span className="text-sm text-muted-foreground">

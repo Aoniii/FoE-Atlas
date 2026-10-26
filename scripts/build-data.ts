@@ -503,12 +503,18 @@ const translateQuest = (q: EventQuest) => ({
   text: translate(q.text),
   reward: translate(q.reward),
 })
+// Start on the live servers, when known (the article only covers the beta)
+const eventLive: Record<string, string> = existsSync("data/event-live.json")
+  ? JSON.parse(readFileSync("data/event-live.json", "utf8"))
+  : {}
 const eventCards: EventCard[] = []
 const eventFiles = new Set<string>()
 for (const file of existsSync(EVENTS) ? readdirSync(EVENTS) : []) {
   const event: GameEvent = JSON.parse(readFileSync(`${EVENTS}/${file}`, "utf8"))
+  const live = eventLive[event.id] ? { start: eventLive[event.id] } : undefined
   const page: EventPage = {
     ...event,
+    ...(live && { live }),
     quests: {
       main: event.quests.main.map(translateQuest),
       daily: event.quests.daily.map(translateQuest),
@@ -533,7 +539,7 @@ for (const file of existsSync(EVENTS) ? readdirSync(EVENTS) : []) {
     .flatMap((step) => step.prizes)
     .find((p) => p.link?.kind === "building" && p.link.image)?.link?.image
   const { id, name, family, year, beta } = event
-  eventCards.push({ id, name, family, year, beta, ...(image && { image }) })
+  eventCards.push({ id, name, family, year, beta, ...(live && { live }), ...(image && { image }) })
   writeFileSync(`${EVENTS_OUTPUT}/${event.id}.json`, JSON.stringify(page))
   eventFiles.add(`${event.id}.json`)
 }

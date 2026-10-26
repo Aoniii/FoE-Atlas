@@ -33,8 +33,13 @@ export type EventPrize = {
   link?: { kind: "building" | "item"; id: string; name: LocalizedName; image?: string }
 }
 
+// When it starts on the live servers (ISO date and time, data/event-live.json): a daily
+// quest a day from then
+export type EventLive = { start: string }
+
 // Event grid (public/data/events.json)
 export type EventCard = Pick<GameEvent, "id" | "name" | "family" | "year" | "beta"> & {
+  live?: EventLive
   image?: string
 }
 
@@ -44,6 +49,7 @@ export type EventPageRivalStep = EventPageQuest | { milestone: LocalizedName }
 
 // One event (public/data/events/<id>.json): texts translated, prizes linked to the site's pages
 export type EventPage = Omit<GameEvent, "quests" | "prizes"> & {
+  live?: EventLive
   quests: { main: EventPageQuest[]; daily: EventPageQuest[]; rival: EventPageRivalStep[] }
   prizes: { lanes: LocalizedName[]; steps: { at: string; prizes: EventPrize[] }[] }
 }

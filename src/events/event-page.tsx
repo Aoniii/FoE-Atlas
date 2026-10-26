@@ -4,7 +4,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react"
 import type { EventPage, EventPageRivalStep, EventPrize } from "@/core/event"
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
-import { eventDate, eventTitle } from "./format"
+import { eventDate, eventTime, eventTitle, questDay } from "./format"
 
 const route = getRouteApi("/events/$id")
 
@@ -36,6 +36,11 @@ export function EventPage() {
       </Link>
       <header className="flex flex-col gap-2">
         <h1 className="text-2xl font-semibold">{eventTitle(event, locale)}</h1>
+        {event.live && (
+          <p className="font-medium">
+            {t.events.live.replace("{start}", eventTime(event.live.start, locale))}
+          </p>
+        )}
         {event.beta && (
           <p className="text-muted-foreground">
             {t.events.beta
@@ -78,7 +83,7 @@ export function EventPage() {
       </div>
 
       {tab === "main" && <QuestTable quests={event.quests.main} />}
-      {tab === "daily" && <QuestTable quests={event.quests.daily} />}
+      {tab === "daily" && <QuestTable quests={event.quests.daily} start={event.live?.start} />}
       {tab === "rival" && <QuestTable quests={event.quests.rival} />}
       {tab === "prizes" && <PrizeTable lanes={event.prizes.lanes} steps={event.prizes.steps} />}
     </div>
@@ -87,7 +92,8 @@ export function EventPage() {
 
 const questCount = (steps: EventPageRivalStep[]) => steps.filter((s) => "n" in s).length
 
-function QuestTable({ quests }: { quests: EventPageRivalStep[] }) {
+// A quest per row; daily quests with their day on the live servers, when known
+function QuestTable({ quests, start }: { quests: EventPageRivalStep[]; start?: string }) {
   const { t, locale } = useI18n()
   if (!quests.length) return <p className="text-muted-foreground">{t.events.none}</p>
   return (
@@ -96,6 +102,7 @@ function QuestTable({ quests }: { quests: EventPageRivalStep[] }) {
         <thead className="bg-muted/40 text-muted-foreground">
           <tr>
             <th className={cn(headClass, "w-12")}>#</th>
+            {start && <th className={cn(headClass, "w-28")}>{t.events.day}</th>}
             <th className={headClass}>{t.events.quest}</th>
             <th className={cn(headClass, "w-48")}>{t.events.reward}</th>
           </tr>
@@ -105,12 +112,18 @@ function QuestTable({ quests }: { quests: EventPageRivalStep[] }) {
             "n" in quest ? (
               <tr key={k} className="last:[&>td]:border-0">
                 <td className={cn(cellClass, "font-mono text-muted-foreground")}>{quest.n}</td>
+                {start && (
+                  <td className={cn(cellClass, "whitespace-nowrap")}>
+                    {questDay(start, Number.parseInt(quest.n), locale)}
+                  </td>
+                )}
                 <td className={cellClass}>{localized(quest.text, locale)}</td>
                 <td className={cellClass}>{localized(quest.reward, locale)}</td>
               </tr>
             ) : (
               <tr key={k} className="bg-primary/5 last:[&>td]:border-0">
                 <td className={cellClass} />
+                {start && <td className={cellClass} />}
                 <td className={cn(cellClass, "font-medium")}>{t.events.milestone}</td>
                 <td className={cn(cellClass, "font-medium")}>
                   {localized(quest.milestone, locale)}
