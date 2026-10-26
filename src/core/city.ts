@@ -88,6 +88,9 @@ export type CityRow = {
   }[]
   setNeighbours?: number
   count: number
+  // The entities of each building counted (index in city.entities; a chain start with its
+  // links)
+  instances?: number[][]
   tiles: number
   stats: StatBlock
   score: number
@@ -296,11 +299,13 @@ export function rateCity(
   // Row key of each entity, for the map
   const rowOf = new Map<CityEntity, string>()
   const sizeOf = new Map<CityEntity, { w: number; h: number }>()
-  const add = (key: string, row: Omit<CityRow, "count" | "score">) => {
+  const index = new Map(city.entities.map((entity, i) => [entity, i]))
+  const add = (key: string, row: Omit<CityRow, "count" | "score">, members: CityEntity[]) => {
     const count = (rows.get(key)?.count ?? 0) + 1
     rows.set(key, {
       ...row,
       count,
+      instances: [...(rows.get(key)?.instances ?? []), members.map((e) => index.get(e)!)],
       score: score(row.stats, row.tiles, scoreKeys, references, bases),
     })
   }
@@ -316,16 +321,20 @@ export function rateCity(
       const tiles = tileCount(size, road)
       rowOf.set(entity, `gb:${id}@${entity.level}`)
       sizeOf.set(entity, size)
-      add(`gb:${id}@${entity.level}`, {
-        kind: "great_building",
-        id,
-        name,
-        image,
-        age,
-        level: entity.level,
-        tiles,
-        stats,
-      })
+      add(
+        `gb:${id}@${entity.level}`,
+        {
+          kind: "great_building",
+          id,
+          name,
+          image,
+          age,
+          level: entity.level,
+          tiles,
+          stats,
+        },
+        [entity],
+      )
       continue
     }
     const id = assets.buildings[entity.assetId ?? entity.id] ?? assets.buildings[entity.id]
@@ -367,22 +376,25 @@ export function rateCity(
     const { name, image } = building
     const key = `${building.id}@${age}+${chain.length}/${neighbours}`
     for (const p of [item, ...chain]) rowOf.set(p.entity, key)
-    add(key, {
-      kind: "building",
-      // Only from the export: no page on the site
-      ...(isLocal(building) && { local: true }),
-      id: building.id,
-      name,
-      image,
-      age,
-      tiles,
-      stats,
-      ...(chain.length && { links: chain.length, linked: groupLinks(chain) }),
-      ...(neighbours && { setNeighbours: neighbours }),
-    })
+    add(
+      key,
+      {
+        kind: "building",
+        // Only from the export: no page on the site
+        ...(isLocal(building) && { local: true }),
+        id: building.id,
+        name,
+        image,
+        age,
+        tiles,
+        stats,
+        ...(chain.length && { links: chain.length, linked: groupLinks(chain) }),
+        ...(neighbours && { setNeighbours: neighbours }),
+      },
+      [item, ...chain].map((p) => p.entity),
+    )
   }
   // Groups: chain starts with their links, set buildings touching (union-find)
-  const index = new Map(city.entities.map((entity, i) => [entity, i]))
   const parent = city.entities.map((_, i) => i)
   const root = (i: number): number => (parent[i] === i ? i : (parent[i] = root(parent[i])))
   const join = (a: CityEntity, b: CityEntity) => {

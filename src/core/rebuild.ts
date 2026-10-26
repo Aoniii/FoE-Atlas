@@ -37,6 +37,10 @@ export type RebuildInput = {
   areas: MapRect[]
   townHall: MapRect
   pieces: RebuildPiece[]
+  // The town hall may move too
+  moveTownHall?: boolean
+  // The free block wanted (width x height), else the biggest one
+  freeBlock?: { w: number; h: number }
 }
 
 export type RebuildResult = {
@@ -52,6 +56,8 @@ export type RebuildResult = {
   freeRect?: MapRect
   // Free tiles cut off from the main free land
   isolatedTiles: number
+  // Where the town hall goes, when it may move
+  townHall?: { x: number; y: number }
 }
 
 export type RebuildOptions = {
@@ -106,6 +112,67 @@ const NEIGHBOURS = [
   [0, 1],
   [0, -1],
 ]
+
+// A plan missing the free block wanted, against a road tile at 100
+const MISSED_BLOCK = 5000
+// Share of the tries moving the town hall (when it may move), and its mark on the tiles
+const HALL_MOVES = 0.04
+// Spacing of the town hall's spots tried for the starting plans, when it may move
+const HALL_STRIDE = 8
+const HALL_MARK = -2
+// A bend in a road, against a road tile at 100: the streets come straight
+const TURN = 30
+// Cost of a road tile walked, and an unreachable tile (see Plan.route)
+const STEP = 8
+const FAR = 1 << 30
+
+// Smallest cost first (binary heap over parallel arrays)
+class Heap {
+  private costs: number[] = []
+  private items: number[] = []
+  get size() {
+    return this.items.length
+  }
+  peekCost() {
+    return this.costs[0]
+  }
+  push(cost: number, item: number) {
+    const { costs, items } = this
+    let k = items.length
+    costs.push(cost)
+    items.push(item)
+    while (k > 0) {
+      const parent = (k - 1) >> 1
+      if (costs[parent] <= cost) break
+      costs[k] = costs[parent]
+      items[k] = items[parent]
+      k = parent
+    }
+    costs[k] = cost
+    items[k] = item
+  }
+  pop(): number {
+    const { costs, items } = this
+    const top = items[0]
+    const lastCost = costs.pop()!
+    const lastItem = items.pop()!
+    if (items.length) {
+      let k = 0
+      for (;;) {
+        const left = 2 * k + 1
+        if (left >= items.length) break
+        const child = left + 1 < items.length && costs[left + 1] < costs[left] ? left + 1 : left
+        if (costs[child] >= lastCost) break
+        costs[k] = costs[child]
+        items[k] = items[child]
+        k = child
+      }
+      costs[k] = lastCost
+      items[k] = lastItem
+    }
+    return top
+  }
+}
 
 // A piece once its shape is known, in tiles from its top-left: the cells it covers, the
 // cells around it, the members needing a road
@@ -162,9 +229,12 @@ const byArea = (a: Shape, b: Shape) => b.area - a.area || a.kind.localeCompare(b
 type Frame = {
   width: number
   height: number
-  // Land and town hall
+  // Land, and the town hall where it stands (not on the land when it may move)
   base: Int32Array
   hall: MapRect
+  movable: boolean
+  // The free block wanted, if any
+  block?: { w: number; h: number }
   shapes: Shape[]
   pieces: RebuildPiece[]
   x0: number
@@ -184,7 +254,8 @@ function frameOf(input: RebuildInput): Frame {
     }
   }
   const hall = { ...input.townHall, x: input.townHall.x - x0, y: input.townHall.y - y0 }
-  for (let x = hall.x; x < hall.x + hall.w; x++) {
+  const movable = !!input.moveTownHall
+  for (let x = hall.x; x < hall.x + hall.w && !movable; x++) {
     for (let y = hall.y; y < hall.y + hall.h; y++) {
       if (x >= 0 && y >= 0 && x < width && y < height) base[y * width + x] = HALL
     }
@@ -193,7 +264,18 @@ function frameOf(input: RebuildInput): Frame {
     members: p.members.map((m) => ({ ...m })),
     ...(p.at && { at: { x: p.at.x - x0, y: p.at.y - y0 } }),
   }))
-  return { width, height, base, hall, shapes: pieces.map(shapeOf), pieces, x0, y0 }
+  return {
+    width,
+    height,
+    base,
+    hall,
+    movable,
+    ...(input.freeBlock && { block: input.freeBlock }),
+    shapes: pieces.map(shapeOf),
+    pieces,
+    x0,
+    y0,
+  }
 }
 
 // A plan being built: the cells, the pieces placed, the roads
@@ -212,9 +294,17 @@ class Plan {
   // the first two-lane road, kept by the others so that they join
   private lineUp?: [number, number]
 
-  constructor(frame: Frame) {
+  readonly hall: MapRect
+
+  constructor(frame: Frame, hall: MapRect = frame.hall) {
     this.frame = frame
+    this.hall = hall
     this.cells = frame.base.slice()
+    if (frame.movable) {
+      for (let x = hall.x; x < hall.x + hall.w; x++) {
+        for (let y = hall.y; y < hall.y + hall.h; y++) this.cells[y * frame.width + x] = HALL
+      }
+    }
   }
 
   at(x: number, y: number): number {
@@ -271,7 +361,8 @@ class Plan {
   }
 
   private hallSides(): number[] {
-    const { width, height, hall } = this.frame
+    const { width, height } = this.frame
+    const { hall } = this
     const out: number[] = []
     const add = (x: number, y: number) => {
       if (x >= 0 && y >= 0 && x < width && y < height) out.push(y * width + x)
@@ -331,7 +422,8 @@ class Plan {
   // Lays the roads of the pieces placed: two-lane chains of 2x2 blocks first, then the
   // member nearest the network joined to it by a shortest path, again and again
   route() {
-    const { width, height, hall } = this.frame
+    const { width, height } = this.frame
+    const { hall } = this
     type Need = { sides: number[]; level: RoadLevel; distance: number }
     const needs: Need[] = []
     for (const { shape, x, y } of this.placed) {
@@ -343,58 +435,70 @@ class Plan {
     const twoLanes = needs.filter((n) => n.level === 2).sort((a, b) => a.distance - b.distance)
     for (const need of twoLanes) if (!this.routeTwoLanes(need.sides)) this.unreachable++
 
-    // One lane: a search from the whole network (and the town hall's sides) at once
+    // One lane: each tile's cost to reach the network (a tile walked costs STEP, a turn one
+    // more: among the shortest routes, the straightest), kept up to date as routes are laid
+    // (only the costs a new route lowers change); the member nearest the network is joined,
+    // again and again
     const pending = needs.filter((n) => n.level === 1)
-    const prev = new Int32Array(width * height)
-    const target = new Uint8Array(width * height)
-    const UNSEEN = -3
-    for (;;) {
-      this.conn1 = this.joined(1)
-      for (let k = pending.length - 1; k >= 0; k--) {
-        if (pending[k].sides.some((i) => this.conn1[i])) pending.splice(k, 1)
-      }
-      if (!pending.length) return
-      target.fill(0)
-      for (const need of pending) {
-        for (const i of need.sides) if (this.cells[i] === FREE) target[i] = 1
-      }
-      prev.fill(UNSEEN)
-      const queue: number[] = []
-      for (let i = 0; i < this.conn1.length; i++) {
-        if (!this.conn1[i]) continue
-        prev[i] = -1
-        queue.push(i)
-      }
-      for (const i of this.hallSides()) {
-        if (this.cells[i] !== FREE || prev[i] !== UNSEEN) continue
-        prev[i] = -1
-        queue.push(i)
-      }
-      let found = -1
-      for (let k = 0; k < queue.length; k++) {
-        const i = queue[k]
-        if (this.cells[i] === FREE && target[i]) {
-          found = i
-          break
-        }
+    const size = width * height
+    const cost = new Int32Array(size).fill(FAR)
+    const prev = new Int32Array(size).fill(-1)
+    const heading = new Int8Array(size).fill(-1)
+    const heap = new Heap()
+    const settle = (i: number, c: number, from: number, d: number) => {
+      if (c >= cost[i]) return
+      cost[i] = c
+      prev[i] = from
+      heading[i] = d
+      heap.push(c, i)
+    }
+    const network = this.joined(1)
+    for (let i = 0; i < size; i++) if (network[i]) settle(i, 0, -1, -1)
+    for (const i of this.hallSides()) if (this.cells[i] === FREE) settle(i, STEP, -1, -1)
+    const spread = () => {
+      while (heap.size) {
+        const c = heap.peekCost()
+        const i = heap.pop()
+        if (c !== cost[i]) continue
         const x = i % width
         const y = (i - x) / width
-        for (const [dx, dy] of NEIGHBOURS) {
-          const nx = x + dx
-          const ny = y + dy
+        for (let d = 0; d < 4; d++) {
+          const nx = x + NEIGHBOURS[d][0]
+          const ny = y + NEIGHBOURS[d][1]
           if (nx < 0 || ny < 0 || nx >= width || ny >= height) continue
           const n = ny * width + nx
-          if (prev[n] !== UNSEEN || this.cells[n] !== FREE) continue
-          prev[n] = i
-          queue.push(n)
+          if (this.cells[n] !== FREE) continue
+          settle(n, c + STEP + (heading[i] >= 0 && heading[i] !== d ? 1 : 0), i, d)
         }
       }
-      if (found < 0) {
-        this.unreachable += pending.length
-        return
-      }
-      for (let i = found; i >= 0 && this.cells[i] === FREE; i = prev[i]) this.cells[i] = ROAD
     }
+    spread()
+    while (pending.length) {
+      for (let k = pending.length - 1; k >= 0; k--) {
+        if (pending[k].sides.some((t) => isRoad(this.cells[t]) && cost[t] === 0)) {
+          pending.splice(k, 1)
+        }
+      }
+      let nearest = -1
+      for (const need of pending) {
+        for (const t of need.sides) {
+          if (this.cells[t] === FREE && (nearest < 0 || cost[t] < cost[nearest])) nearest = t
+        }
+      }
+      if (!pending.length) break
+      if (nearest < 0 || cost[nearest] >= FAR) {
+        this.unreachable += pending.length
+        break
+      }
+      for (let t = nearest; t >= 0 && this.cells[t] === FREE; t = prev[t]) {
+        this.cells[t] = ROAD
+        cost[t] = 0
+        heading[t] = -1
+        heap.push(0, t)
+      }
+      spread()
+    }
+    this.conn1 = this.joined(1)
   }
 
   // Joins a two-lane member to the town hall by a chain of 2x2 blocks, lined up the way
@@ -475,7 +579,8 @@ class Plan {
   // Removes every road no building needs, farthest from the town hall first; a two-lane
   // block no building needs as such becomes four one-lane road tiles first
   prune() {
-    const { width, hall } = this.frame
+    const { width } = this.frame
+    const { hall } = this
     this.refresh()
     const tryChange = (changes: [number, number][]) => {
       const before = changes.map(([i]) => this.cells[i])
@@ -523,7 +628,8 @@ class Plan {
   // buildings, away from the roads (their sides are for the buildings needing one), then
   // farthest from `anchor` (the free land gathers there; default: nearest the town hall)
   placeFree(shape: Shape, anchor?: { x: number; y: number }): boolean {
-    const { width, height, hall } = this.frame
+    const { width, height } = this.frame
+    const { hall } = this
     let best = -Infinity
     let bx = 0
     let by = 0
@@ -608,9 +714,41 @@ class Plan {
     return left
   }
 
+  // The free block: the free rectangle holding the block wanted (else the biggest one), and
+  // whether the block wanted fits
+  block(): { rect?: MapRect; fits: boolean } {
+    const wanted = this.frame.block
+    const rects = this.freeRects(wanted ? Math.min(wanted.w, wanted.h) : FREE_SIDE)
+    if (!wanted) return { rect: rects[0], fits: true }
+    const holding = rects.find((r) => r.w >= wanted.w && r.h >= wanted.h)
+    return holding ? { rect: holding, fits: true } : { rect: rects[0], fits: false }
+  }
+
   count(state: number) {
     let n = 0
     for (const v of this.cells) if (v === state) n++
+    return n
+  }
+
+  // Road tiles where the road turns (two road neighbours at a right angle): the fewer, the
+  // straighter the streets
+  turns() {
+    const { width } = this.frame
+    let n = 0
+    for (let i = 0; i < this.cells.length; i++) {
+      if (!isRoad(this.cells[i])) continue
+      const x = i % width
+      const left = x > 0 && isRoad(this.cells[i - 1])
+      const right = x < width - 1 && isRoad(this.cells[i + 1])
+      const up = i >= width && isRoad(this.cells[i - width])
+      const down = i + width < this.cells.length && isRoad(this.cells[i + width])
+      if (
+        Number(left) + Number(right) + Number(up) + Number(down) === 2 &&
+        (left || right) &&
+        (up || down)
+      )
+        n++
+    }
     return n
   }
 
@@ -837,6 +975,8 @@ export type RebuildSearch = {
   best: () => RebuildShare
   adopt: (plan: RebuildShare) => void
   finish: () => RebuildResult
+  // Tries made so far
+  tries: () => number
 }
 
 export function rebuildCity(input: RebuildInput, options: RebuildOptions = {}): RebuildResult {
@@ -884,10 +1024,23 @@ export function createSearch(
     }
   }
 
-  // State: where each piece needing a road stands, and the tiles they take
-  const px = new Int32Array(shapes.length)
-  const py = new Int32Array(shapes.length)
+  // State: where each piece needing a road stands (and the town hall, last), and the tiles
+  // they take
+  const H = shapes.length
+  const px = new Int32Array(shapes.length + 1)
+  const py = new Int32Array(shapes.length + 1)
+  px[H] = hall.x
+  py[H] = hall.y
   const occupied = new Int32Array(width * height)
+  const townAt = (): MapRect => ({ ...hall, x: px[H], y: py[H] })
+  // The town hall's tiles, when it may move (else it is not on the land)
+  const markHall = (value: number) => {
+    if (!frame.movable) return
+    for (let x = px[H]; x < px[H] + hall.w; x++) {
+      for (let y = py[H]; y < py[H] + hall.h; y++) occupied[y * width + x] = value
+    }
+  }
+  markHall(HALL_MARK)
   const fitsAt = (shape: Shape, x: number, y: number) =>
     shape.cells.every(([dx, dy]) => {
       const cx = x + dx
@@ -933,7 +1086,7 @@ export function createSearch(
   }
   // The free land gathers at the middle of the biggest free rectangle of the city as it is
   const home = (() => {
-    const plan = new Plan(frame)
+    const plan = new Plan(frame, townAt())
     for (const shape of placedServed) plan.put(shape, px[shape.piece], py[shape.piece])
     plan.route()
     const r = plan.freeRects()[0]
@@ -953,7 +1106,7 @@ export function createSearch(
   // and the holes: roads and holes weigh the same, a road filling a hole gains nothing),
   // then the fewest roads. Families are gathered at the end (see arrangeFamilies)
   const evaluate = (full: boolean) => {
-    const plan = new Plan(frame)
+    const plan = new Plan(frame, townAt())
     for (const shape of placedServed) plan.put(shape, px[shape.piece], py[shape.piece])
     plan.route()
     if (full) {
@@ -961,7 +1114,13 @@ export function createSearch(
       packLoose(plan, home)
       const left = plan.unplaced.reduce((sum, s) => sum + s.area, 0)
       const roads = plan.roadCount()
-      return (plan.unreachable * 50 + left) * 100000 + (roads + plan.isolated()) * 100 + roads
+      return (
+        (plan.unreachable * 50 + left) * 100000 +
+        (plan.block().fits ? 0 : MISSED_BLOCK) +
+        (roads + plan.isolated()) * 100 +
+        roads +
+        plan.turns() * TURN
+      )
     }
     let short = plan.unreachable * 50
     if (plan.count(FREE) < looseArea) short += looseArea - plan.count(FREE)
@@ -975,7 +1134,7 @@ export function createSearch(
     }
     const holes = Math.max(0, lonely - singles)
     const roads = plan.roadCount()
-    return short * 100000 + (roads + holes) * 100 + roads
+    return short * 100000 + (roads + holes) * 100 + roads + plan.turns() * TURN
   }
 
   // Rows along streets, the way players lay out a city: streets every 2 x depth + 1 tiles,
@@ -1009,14 +1168,17 @@ export function createSearch(
   }
   const lineUp = (horizontal: boolean, depth: number, offset: number, side: 0 | 1) => {
     occupied.fill(0)
+    markHall(HALL_MARK)
+    // Around the town hall where it stands now
+    const town = townAt()
     // The trunk joining the streets to the town hall, kept clear while the rows are laid
     const trunk = horizontal
       ? side
-        ? hall.x + hall.w
-        : hall.x - 1
+        ? town.x + town.w
+        : town.x - 1
       : side
-        ? hall.y + hall.h
-        : hall.y - 1
+        ? town.y + town.h
+        : town.y - 1
     const trunkTiles: number[] = []
     for (let k = 0; k < (horizontal ? height : width); k++) {
       const x = horizontal ? trunk : k
@@ -1028,7 +1190,7 @@ export function createSearch(
     for (const i of trunkTiles) occupied[i] = -1
     const span = horizontal ? height : width
     const length = horizontal ? width : height
-    const middle = horizontal ? hall.y + hall.h / 2 : hall.x + hall.w / 2
+    const middle = horizontal ? town.y + town.h / 2 : town.x + town.w / 2
     const lines: number[] = []
     for (let c = offset; c < span; c += 2 * depth + 1) lines.push(c)
     lines.sort((a, b) => Math.abs(a - middle) - Math.abs(b - middle))
@@ -1083,24 +1245,51 @@ export function createSearch(
   // Starting plans: the city as it is and the rows along streets, best first; each island
   // starts from its own one
   const starts = [{ cost: evaluate(false), px: px.slice(), py: py.slice() }]
-  for (const horizontal of [true, false]) {
-    for (let depth = 3; depth <= 7; depth++) {
-      for (let offset = 0; offset < 2 * depth + 1; offset++) {
-        for (const side of [0, 1] as const) {
-          if (!lineUp(horizontal, depth, offset, side)) continue
-          starts.push({ cost: evaluate(false), px: px.slice(), py: py.slice() })
+  // When the town hall may move: rows around it set at spots all over the land too
+  const halls = [{ x: hall.x, y: hall.y }]
+  if (frame.movable) {
+    for (let y = 0; y + hall.h <= height; y += HALL_STRIDE) {
+      for (let x = 0; x + hall.w <= width; x += HALL_STRIDE) {
+        let fits = true
+        for (let cx = x; fits && cx < x + hall.w; cx++) {
+          for (let cy = y; fits && cy < y + hall.h; cy++)
+            fits = frame.base[cy * width + cx] === FREE
+        }
+        if (fits) halls.push({ x, y })
+      }
+    }
+  }
+  for (const [k, spot] of halls.entries()) {
+    px[H] = spot.x
+    py[H] = spot.y
+    for (const horizontal of [true, false]) {
+      for (let depth = k ? 4 : 3; depth <= (k ? 6 : 7); depth++) {
+        // Every offset at the town hall where it stands, a few elsewhere
+        for (let offset = 0; offset < 2 * depth + 1; offset += k ? 4 : 1) {
+          for (const side of [0, 1] as const) {
+            if (!lineUp(horizontal, depth, offset, side)) continue
+            starts.push({ cost: evaluate(false), px: px.slice(), py: py.slice() })
+          }
         }
       }
     }
   }
   starts.sort((a, b) => a.cost - b.cost)
-  // Only starts where every building finds its road and its room
+  // Only starts where every building finds its road and its room; when the town hall may
+  // move, each island takes the best start of another spot of the town hall
   const sound = starts.filter((p) => p.cost < 100000)
-  let best = sound.length ? sound[island % sound.length] : starts[0]
+  const bySpot = new Map<string, (typeof starts)[number]>()
+  for (const p of sound) {
+    const key = `${p.px[H]},${p.py[H]}`
+    if (!bySpot.has(key)) bySpot.set(key, p)
+  }
+  const choices = frame.movable ? [...bySpot.values()] : sound
+  let best = choices.length ? choices[island % choices.length] : starts[0]
   const load = (plan: { px: Int32Array; py: Int32Array }) => {
     occupied.fill(0)
     px.set(plan.px)
     py.set(plan.py)
+    markHall(HALL_MARK)
     for (const s of placedServed) mark(s, px[s.piece], py[s.piece], s.piece + 1)
   }
   load(best)
@@ -1155,12 +1344,46 @@ export function createSearch(
       py[s.piece] = y
       mark(s, x, y, s.piece + 1)
     }
+    const hallWas = { x: px[H], y: py[H] }
     const undo = () => {
       for (const m of moved) mark(m.shape, px[m.shape.piece], py[m.shape.piece], 0)
       for (const m of moved) drop(m.shape, m.x, m.y)
+      if (px[H] !== hallWas.x || py[H] !== hallWas.y) {
+        markHall(0)
+        px[H] = hallWas.x
+        py[H] = hallWas.y
+        markHall(HALL_MARK)
+      }
     }
     const move = rand()
-    if (move < STREET_SHARE) {
+    if (frame.movable && rand() < HALL_MOVES) {
+      // The town hall moved, near where it stands or anywhere near the land's middle
+      let x: number
+      let y: number
+      if (rand() < 0.6) {
+        x = hallWas.x + Math.floor(rand() * 13) - 6
+        y = hallWas.y + Math.floor(rand() * 13) - 6
+      } else {
+        const cell = scan[Math.floor(rand() * scan.length)]
+        x = cell % width
+        y = (cell - x) / width
+      }
+      markHall(0)
+      let fits = x >= 0 && y >= 0 && x + hall.w <= width && y + hall.h <= height
+      for (let cx = x; fits && cx < x + hall.w; cx++) {
+        for (let cy = y; fits && cy < y + hall.h; cy++) {
+          const i = cy * width + cx
+          fits = frame.base[i] === FREE && occupied[i] === 0
+        }
+      }
+      if (!fits || (x === hallWas.x && y === hallWas.y)) {
+        markHall(HALL_MARK)
+        return
+      }
+      px[H] = x
+      py[H] = y
+      markHall(HALL_MARK)
+    } else if (move < STREET_SHARE) {
       // A street laid across the zone around this piece, the zone's pieces put back in rows
       // on both sides of it (family after family, in rank order), as a player lines a street
       const horizontal = rand() < 0.5
@@ -1337,7 +1560,8 @@ export function createSearch(
     // The best plan: its roads, the roads no building needs removed
     px.set(best.px)
     py.set(best.py)
-    const roadPlan = new Plan(frame)
+    const town = townAt()
+    const roadPlan = new Plan(frame, town)
     for (const shape of placedServed) roadPlan.put(shape, px[shape.piece], py[shape.piece])
     roadPlan.route()
     // A building no road reaches is left out, never shown without its road
@@ -1369,7 +1593,7 @@ export function createSearch(
       }
     }
     const fill = (anchor: { x: number; y: number }) => {
-      const plan = new Plan(frame)
+      const plan = new Plan(frame, town)
       plan.cells.set(roadPlan.cells)
       plan.placed = [...roadPlan.placed]
       packLoose(plan, anchor)
@@ -1381,7 +1605,7 @@ export function createSearch(
     // then the small ones from the most shut-in tiles; pieces left over go on the edge of the
     // land set aside
     const pave = (anchor: { x: number; y: number }) => {
-      const plan = new Plan(frame)
+      const plan = new Plan(frame, town)
       plan.cells.set(roadPlan.cells)
       plan.placed = [...roadPlan.placed]
       const spare = plan.count(FREE) - loose.reduce((sum, s) => sum + s.area, 0)
@@ -1425,9 +1649,15 @@ export function createSearch(
     }
     // Judged on the buildings left out, the free tiles cut off, then the size of the free
     // block
+    // (the block wanted first, when there is one)
     const judge = (plan: Plan) => {
-      const rect = plan.freeRects()[0]
-      return plan.unplaced.length * 1000000 + plan.isolated() * 1000 - (rect ? rect.w * rect.h : 0)
+      const { rect, fits } = plan.block()
+      return (
+        plan.unplaced.length * 1000000 +
+        (fits ? 0 : 500000) +
+        plan.isolated() * 1000 -
+        (rect ? rect.w * rect.h : 0)
+      )
     }
     let final = fill(home)
     let finalScore = judge(final)
@@ -1436,7 +1666,7 @@ export function createSearch(
     // MaxRects around a free block set aside (sizes the city can spare, at the corners of the
     // free rectangles), or with none
     const packed = (reserve?: MapRect) => {
-      const plan = new Plan(frame)
+      const plan = new Plan(frame, town)
       plan.cells.set(roadPlan.cells)
       plan.placed = [...roadPlan.placed]
       if (reserve) {
@@ -1455,6 +1685,22 @@ export function createSearch(
     const spare = roadPlan.count(FREE) - loose.reduce((sum, s) => sum + s.area, 0)
     const reserves: (MapRect | undefined)[] = [undefined]
     const seenReserve = new Set<string>()
+    // The block wanted, at the corners of the free rectangles holding it, first
+    const wanted = frame.block
+    for (const r of wanted ? roadPlan.freeRects(Math.min(wanted.w, wanted.h)) : []) {
+      if (r.w < wanted!.w || r.h < wanted!.h) continue
+      const { w, h } = wanted!
+      for (const [x, y] of [
+        [r.x, r.y],
+        [r.x + r.w - w, r.y],
+        [r.x, r.y + r.h - h],
+        [r.x + r.w - w, r.y + r.h - h],
+      ]) {
+        if (seenReserve.has(`${x},${y},${w},${h}`)) continue
+        seenReserve.add(`${x},${y},${w},${h}`)
+        reserves.splice(1, 0, { x, y, w, h })
+      }
+    }
     for (const r of roadPlan.freeRects().slice(0, 8)) {
       for (let w = Math.min(r.w, spare); w >= FREE_SIDE; w--) {
         const h = Math.min(r.h, Math.floor(spare / w))
@@ -1509,7 +1755,7 @@ export function createSearch(
       const y = (i - x) / width
       roads.push({ ...back(x, y), w: 1, h: 1, level: value === ROAD2 ? 2 : 1 })
     })
-    const rect = final.freeRects()[0]
+    const { rect } = final.block()
     return {
       positions,
       roads,
@@ -1518,6 +1764,7 @@ export function createSearch(
       freeTiles,
       isolatedTiles: final.isolated(),
       ...(rect && { freeRect: { ...back(rect.x, rect.y), w: rect.w, h: rect.h } }),
+      ...(frame.movable && { townHall: back(town.x, town.y) }),
     }
   }
 
@@ -1528,17 +1775,19 @@ export function createSearch(
       if (!incoming || plan.cost < incoming.cost) incoming = plan
     },
     finish,
+    tries: () => step,
   }
 }
 
 // The problem for a city: its unlocked land, its town hall, its buildings as pieces where
 // they stand (a group of `groups` keeps its members where they stand to each other), each
-// with its family and rank (`traits`, see rateCity).
+// with its family and rank (`traits`, see rateCity), but those `removed` (to be deleted).
 // Undefined when the city was imported before sizes and roads were kept, or has no town hall
 export function rebuildInput(
   city: City,
   groups: number[][],
   traits: ({ family: string; rank: number } | undefined)[] = [],
+  removed: Set<number> = new Set(),
 ): RebuildInput | undefined {
   const hall = city.entities.find((e) => e.type === "main_building")
   if (!city.areas?.length || !hall?.w || !hall.h) return undefined
@@ -1548,7 +1797,9 @@ export function rebuildInput(
   const single = city.entities.flatMap((_, i) => (inGroup.has(i) ? [] : [[i]]))
   const pieces: RebuildPiece[] = []
   for (const group of [...groups, ...single]) {
-    const entities = group.map((i) => ({ i, e: city.entities[i] }))
+    // The buildings the player will delete are left out
+    const entities = group.filter((i) => !removed.has(i)).map((i) => ({ i, e: city.entities[i] }))
+    if (!entities.length) continue
     if (entities.some(({ e }) => e === hall || !e.w || !e.h || e.road === undefined)) continue
     const x = Math.min(...entities.map(({ e }) => e.x))
     const y = Math.min(...entities.map(({ e }) => e.y))
@@ -1575,7 +1826,7 @@ export function rebuiltCity(city: City, result: RebuildResult): City {
   return {
     ...city,
     entities: city.entities.flatMap((entity, i) => {
-      if (entity.type === "main_building") return [entity]
+      if (entity.type === "main_building") return [{ ...entity, ...result.townHall }]
       const position = result.positions[i]
       return position ? [{ ...entity, ...position }] : []
     }),

@@ -5,6 +5,24 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.13",
+    date: "2026-10-26",
+    changes: [
+      {
+        fr: "Reconstruction : routes tracées deux fois plus vite et les plus droites possible (chaque virage compte), donc plus d'essais et des plans mieux rangés",
+        en: "Rebuild: roads laid twice as fast and as straight as possible (every bend counts), so more tries and tidier plans",
+      },
+      {
+        fr: "Reconstruction : bloc libre sur mesure (par exemple 6×6 pour un bâtiment prévu), sinon le plus grand possible ; l'hôtel de ville peut être déplacé aussi (activé par défaut, à décocher pour le garder en place)",
+        en: "Rebuild: a free block of a chosen size (6×6 for a planned building, say), else the biggest one; the town hall may move too (on by default, untick to keep it in place)",
+      },
+      {
+        fr: "Ville : bouton sur chaque ligne du tableau pour marquer les bâtiments que tu vas supprimer (pas assez rentables) ; la reconstruction les laisse de côté",
+        en: "City: a button on each line of the table to mark the buildings you will delete (not worth it); the rebuild leaves them out",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.12",
     date: "2026-10-26",
     changes: [

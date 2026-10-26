@@ -10,6 +10,7 @@ import {
   type RebuildShare,
 } from "@/core/rebuild"
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import {
   Dialog,
@@ -38,6 +39,8 @@ export function CityRebuild({
   city,
   groups,
   traits,
+  removed,
+  removedCount,
   result,
   onResult,
   onShowRebuilt,
@@ -45,6 +48,9 @@ export function CityRebuild({
   city: City
   groups: number[][]
   traits: RatedCity["traits"]
+  // Buildings the player will delete (entity indices), and how many
+  removed: Set<number>
+  removedCount: number
   result?: RebuildResult
   onResult: (result: RebuildResult) => void
   onShowRebuilt: () => void
@@ -61,7 +67,12 @@ export function CityRebuild({
     workers.current = []
   }
   useEffect(() => stopAll, [])
-  const input = rebuildInput(city, groups, traits)
+  // Options: the town hall may move, the free block wanted (0: the biggest)
+  const [moveTownHall, setMoveTownHall] = usePersistentState("city.rebuildMoveHall.v2", true)
+  const [block, setBlock] = usePersistentState("city.rebuildBlock", { w: 0, h: 0 })
+  const wanted = block.w > 0 && block.h > 0 ? block : undefined
+  const base = rebuildInput(city, groups, traits, removed)
+  const input = base && { ...base, moveTownHall, ...(wanted && { freeBlock: wanted }) }
 
   // One search per core but one (the page stays smooth), at most 8: islands sharing their
   // best plans, the best result kept
@@ -124,22 +135,60 @@ export function CityRebuild({
       {!input ? (
         <p className="text-sm">{t.city.rebuildNeedsUpdate}</p>
       ) : progress === undefined ? (
-        <div className="flex flex-wrap items-center gap-2">
-          <label className="flex items-center gap-2 text-sm text-muted-foreground">
-            {t.city.rebuildDuration}
-            <Input
-              type="number"
-              min={1}
-              max={30}
-              value={minutes}
-              onChange={(event) => setMinutes(Number(event.target.value))}
-              className="h-8 w-20"
-            />
-          </label>
-          <Button size="sm" onClick={start}>
-            <Hammer />
-            {result ? t.city.rebuildAgain : t.city.rebuildRun}
-          </Button>
+        <div className="flex flex-col gap-3">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+            <label className="flex items-center gap-2">
+              <Checkbox
+                checked={moveTownHall}
+                onCheckedChange={(checked) => setMoveTownHall(checked === true)}
+              />
+              {t.city.rebuildMoveHall}
+            </label>
+            <label className="flex items-center gap-2 text-muted-foreground">
+              {t.city.rebuildBlock}
+              <Input
+                type="number"
+                min={0}
+                max={30}
+                value={block.w || ""}
+                placeholder="—"
+                onChange={(event) => setBlock({ ...block, w: Number(event.target.value) })}
+                className="h-8 w-16"
+              />
+              ×
+              <Input
+                type="number"
+                min={0}
+                max={30}
+                value={block.h || ""}
+                placeholder="—"
+                onChange={(event) => setBlock({ ...block, h: Number(event.target.value) })}
+                className="h-8 w-16"
+              />
+            </label>
+            {removedCount > 0 && (
+              <span className="text-muted-foreground">
+                {fill(t.city.rebuildRemoved, { count: removedCount })}
+              </span>
+            )}
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <label className="flex items-center gap-2 text-sm text-muted-foreground">
+              {t.city.rebuildDuration}
+              <Input
+                type="number"
+                min={1}
+                max={30}
+                value={minutes}
+                onChange={(event) => setMinutes(Number(event.target.value))}
+                className="h-8 w-20"
+              />
+            </label>
+            <Button size="sm" onClick={start}>
+              <Hammer />
+              {result ? t.city.rebuildAgain : t.city.rebuildRun}
+            </Button>
+          </div>
         </div>
       ) : (
         <div className="flex flex-col gap-2">
@@ -170,7 +219,12 @@ export function CityRebuild({
                 {improves(city, finished) ? t.city.rebuildDoneText : t.city.rebuildNotBetter}
               </DialogDescription>
             </DialogHeader>
-            <RebuildFigures city={city} result={finished} />
+            <RebuildFigures
+              city={city}
+              result={finished}
+              wanted={wanted}
+              removedCount={removedCount}
+            />
             <DialogFooter>
               <DialogClose render={<Button variant="outline" />}>{t.city.rebuildClose}</DialogClose>
               <Button
@@ -197,7 +251,17 @@ function improves(city: City, result: RebuildResult) {
 }
 
 // Roads and free tiles before and after, buildings left out
-function RebuildFigures({ city, result }: { city: City; result: RebuildResult }) {
+function RebuildFigures({
+  city,
+  result,
+  wanted,
+  removedCount,
+}: {
+  city: City
+  result: RebuildResult
+  wanted?: { w: number; h: number }
+  removedCount: number
+}) {
   const { t } = useI18n()
   const before = tileCounts(city)
   const after = tileCounts(rebuiltCity(city, result))
@@ -218,6 +282,12 @@ function RebuildFigures({ city, result }: { city: City; result: RebuildResult })
           : t.city.rebuildNoFreeRect}
       </li>
       <li>{fill(t.city.rebuildIsolated, { count: result.isolatedTiles })}</li>
+      {wanted &&
+        !(result.freeRect && result.freeRect.w >= wanted.w && result.freeRect.h >= wanted.h) && (
+          <li className="text-destructive">{fill(t.city.rebuildBlockMissed, wanted)}</li>
+        )}
+      {removedCount > 0 && <li>{fill(t.city.rebuildRemoved, { count: removedCount })}</li>}
+      {result.townHall && <li>{t.city.rebuildHallMoved}</li>}
       {unplaced.length > 0 && (
         <li className="text-destructive">
           {fill(t.city.rebuildUnplaced, { names: unplaced.join(", ") })}

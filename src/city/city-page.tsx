@@ -310,6 +310,18 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
   const [showRebuilt, setShowRebuilt] = useState(false)
   // Line of the table shown on the map (its buildings blink there)
   const [onMap, setOnMap] = useState<CityRow>()
+  // Buildings of each line the player will delete (left out of the rebuild), by line
+  const [removals, setRemovals] = usePersistentState<Record<string, number>>(
+    `city.removals.${city.world}/${city.playerId}`,
+    {},
+  )
+  // One more to delete on each click, back to none past the line's count
+  const removeOne = (row: CityRow) =>
+    setRemovals((current) => {
+      const next = ((current[rowKey(row)] ?? 0) + 1) % (row.count + 1)
+      const { [rowKey(row)]: _, ...rest } = current
+      return next ? { ...rest, [rowKey(row)]: next } : rest
+    })
   const showOnMap = (row: CityRow) => {
     const same = onMap && rowKey(onMap) === rowKey(row)
     setOnMap(same ? undefined : row)
@@ -363,6 +375,19 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
     )
     return rateCity(city, assets, buildings, loaded, LATEST_AGE, scoreKeys, bases)
   }, [city, assets, buildings, greatBuildings, scoreKeys, bases])
+  const removed = useMemo(
+    () =>
+      new Set(
+        rated.rows.flatMap((row) =>
+          (row.instances ?? []).slice(0, removals[rowKey(row)] ?? 0).flat(),
+        ),
+      ),
+    [rated.rows, removals],
+  )
+  const removedCount = rated.rows.reduce(
+    (sum, row) => sum + Math.min(row.count, removals[rowKey(row)] ?? 0),
+    0,
+  )
   const rebuiltPlan = useMemo(() => {
     if (!rebuilt) return undefined
     const moved = rebuiltCity(city, rebuilt)
@@ -405,6 +430,8 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
             city={city}
             groups={rated.groups}
             traits={rated.traits}
+            removed={removed}
+            removedCount={removedCount}
             result={rebuilt}
             onResult={setRebuilt}
             onShowRebuilt={() => setShowRebuilt(true)}
@@ -466,6 +493,7 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                 className={cn(
                   "border-b last:border-0 hover:bg-muted/30",
                   onMap && rowKey(onMap) === rowKey(row) && "bg-primary/10",
+                  removals[rowKey(row)] && "opacity-60",
                 )}
               >
                 <td className="px-3 py-2">
@@ -513,6 +541,17 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
                       onClick={() => showOnMap(row)}
                     >
                       <MapPin />
+                    </Button>
+                    <Button
+                      variant={removals[rowKey(row)] ? "secondary" : "ghost"}
+                      size={removals[rowKey(row)] ? "sm" : "icon-sm"}
+                      className="shrink-0"
+                      title={t.city.removeHint}
+                      aria-label={t.city.removeHint}
+                      onClick={() => removeOne(row)}
+                    >
+                      <Trash2 />
+                      {removals[rowKey(row)] ? `−${removals[rowKey(row)]}` : null}
                     </Button>
                     {!row.local && (
                       <CompareButton
