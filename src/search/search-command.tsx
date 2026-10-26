@@ -68,6 +68,8 @@ export function SearchCommand() {
       navigate({ to: "/great-buildings/$id", params: { id: entry.id } })
     } else if (entry.kind === "item") {
       navigate({ to: "/items/$id", params: { id: entry.id } })
+    } else if (entry.kind === "ally") {
+      navigate({ to: "/allies/$id", params: { id: entry.id } })
     } else {
       navigate({ to: "/buildings/$id", params: { id: entry.id } })
     }
@@ -121,8 +123,8 @@ export function SearchCommand() {
                         {locale === "en" ? entry.name.fr : entry.name.en}
                         {entry.kind === "great_building"
                           ? ` · ${t.types.great_building}${entry.age ? ` · ${ageName(entry.age, locale)}` : ""}`
-                          : entry.kind === "item"
-                            ? ` · ${t.types.item}`
+                          : entry.kind === "item" || entry.kind === "ally"
+                            ? ` · ${t.types[entry.kind]}`
                             : entry.event &&
                               ` · ${eventName(entry.event, locale)}${entry.eventYear ? ` ${entry.eventYear}` : ""}`}
                       </span>

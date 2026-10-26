@@ -30,7 +30,7 @@ import { fullStatLabel, scoreHint } from "./format"
 import { StatIcon } from "./stat-icon"
 
 // Types with their own grid: no age, columns or score
-const OWN_GRID: BuildingType[] = ["great_building", "item"]
+const OWN_GRID: BuildingType[] = ["great_building", "item", "ally"]
 const ALL_EVENTS = "__all__"
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {

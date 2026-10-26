@@ -62,7 +62,8 @@
     "military": "Military",
     "cultural": "Cultural",
     "decoration": "Decoration",
-    "item": "Items"
+    "item": "Items",
+    "ally": "Allies"
   },
   "road": {
     "none": "No road",
@@ -377,5 +378,70 @@
     "count": "{count} quests",
     "live": "On the live servers from {start}",
     "day": "Date"
+  },
+  "ally": {
+    "back": "Back to allies",
+    "loading": "Loading the ally…",
+    "notFound": "This ally does not exist.",
+    "count": "allies",
+    "filter": "Filter by name…",
+    "allTypes": "All",
+    "types": {
+      "military": "Military",
+      "science": "Science"
+    },
+    "rarities": {
+      "common": "Common",
+      "uncommon": "Uncommon",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary"
+    },
+    "perRarity": "By rarity",
+    "rarity": "Rarity",
+    "level": "Level",
+    "atLevel": "{rarity}, level {level}",
+    "note": "Each rarity adds its bonuses to the earlier ones, and every value grows with the level. From the game's data (French servers) and the official wiki.",
+    "levelCost": "Level cost (Heroic Scrolls)",
+    "totalCost": "Total cost (Heroic Scrolls)",
+    "unlockedAt": "Unlocked at {rarity}",
+    "production": "Production: {what}",
+    "ability": "{chance} % chance to grant {name} to {charges} {units}{place}",
+    "evolution": "Evolution: {valor} Valor Tokens and {scrolls} Heroic Scrolls",
+    "disband": "Disband: {valor} Valor Tokens",
+    "nothing": "Nothing more",
+    "boosts": {
+      "att_boost_attacker": "Attack for attacking army",
+      "def_boost_attacker": "Defense for attacking army",
+      "att_boost_defender": "Attack for defending army",
+      "def_boost_defender": "Defense for defending army",
+      "att_def_boost_attacker": "Attack and defense for attacking army",
+      "att_def_boost_defender": "Attack and defense for defending army",
+      "att_def_boost_attacker_defender": "Attack and defense for both armies"
+    },
+    "places": {
+      "all": "Everywhere",
+      "battleground": "Guild Battlegrounds",
+      "guild_expedition": "Guild Expedition"
+    },
+    "inPlace": {
+      "battleground": " in Guild Battlegrounds",
+      "guild_expedition": " in Guild Expedition"
+    },
+    "units": {
+      "light_melee": "light units",
+      "heavy_melee": "heavy units",
+      "short_ranged": "ranged units",
+      "long_ranged": "artillery units",
+      "fast": "fast units"
+    },
+    "productions": {
+      "fp": "Forge Points",
+      "goods": "Goods of the age",
+      "goods_prev": "Goods of the previous age",
+      "goods_next": "Goods of the next age",
+      "unit": "{units} of the age",
+      "unitNext": "{units} of the next age"
+    }
   }
 }

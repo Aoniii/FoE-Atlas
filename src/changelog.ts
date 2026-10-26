@@ -17,6 +17,10 @@ export const CHANGELOG: Release[] = [
         en: "Data: game version 1.346, new buildings from the wiki and Great Building bonuses updated",
       },
       {
+        fr: "Nouveau dans le wiki : les alliés historiques (41), avec une grille comme les Grands Monuments et une page par allié : ce que chaque rareté apporte, puis toutes les valeurs au niveau et à la rareté choisis (bonus, production, bonus limités, coût en parchemins héroïques)",
+        en: "New in the wiki: historical allies (41), with a grid like the Great Buildings and a page per ally: what each rarity adds, then every value at the chosen level and rarity (boosts, production, limited bonuses, Heroic Scroll cost)",
+      },
+      {
         fr: "Grands Monuments : les bonus de la bêta suivent le même ordre que ceux du jeu actuel, et les bonus en deux parties (nombre et pourcentage, comme Amélioration marchandises) tiennent dans une seule case « 40 × 60 % »",
         en: 'Great Buildings: beta bonuses follow the same order as the live ones, and two-part bonuses (count and percent, like Supply Boost) fit in a single box, "40 × 60 %"',
       },

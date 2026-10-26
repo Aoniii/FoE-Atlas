@@ -24,6 +24,10 @@ of the License, or (at your option) any later version. See [LICENSE](LICENSE).
   game's own data, read in a network capture of the beta (`pnpm har-extract`, then
   `pnpm gb-beta`). Values between milestone levels and level costs are measured approximations.
   Their icons (`public/beta-icons/`) are cut from the game's icon sheet by `pnpm gb-beta`.
+- **Historical allies** (`data/allies.json`: boosts, production and limited bonuses by
+  rarity and level) come from the game's own definitions, read in a network capture of the
+  live servers (`pnpm har-extract`, then `pnpm allies`), and from the official Forge of
+  Empires wiki (English names and texts, pictures, Valor Tokens).
 - **Events** (`data/events/`: quests, rival quests, prize lanes, as seen on the beta server)
   come from [foebeta.com](https://foebeta.com/events/). Refresh them with `pnpm events`.
 - **Buildings, Great Buildings, images and icons** come from the official Forge of Empires wiki

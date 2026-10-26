@@ -14,6 +14,7 @@ import { Route as ChangelogRouteImport } from './routes/changelog'
 import { Route as CityRouteImport } from './routes/city'
 import { Route as CompareRouteImport } from './routes/compare'
 import { Route as WikiRouteImport } from './routes/wiki'
+import { Route as AlliesIdRouteImport } from './routes/allies.$id'
 import { Route as BuildingsIdRouteImport } from './routes/buildings.$id'
 import { Route as EventsIndexRouteImport } from './routes/events.index'
 import { Route as EventsIdRouteImport } from './routes/events.$id'
@@ -43,6 +44,11 @@ const CompareRoute = CompareRouteImport.update({
 const WikiRoute = WikiRouteImport.update({
   id: '/wiki',
   path: '/wiki',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AlliesIdRoute = AlliesIdRouteImport.update({
+  id: '/allies/$id',
+  path: '/allies/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BuildingsIdRoute = BuildingsIdRouteImport.update({
@@ -77,6 +83,7 @@ export interface FileRoutesByFullPath {
   '/city': typeof CityRoute
   '/compare': typeof CompareRoute
   '/wiki': typeof WikiRoute
+  '/allies/$id': typeof AlliesIdRoute
   '/buildings/$id': typeof BuildingsIdRoute
   '/events/$id': typeof EventsIdRoute
   '/great-buildings/$id': typeof GreatBuildingsIdRoute
@@ -89,6 +96,7 @@ export interface FileRoutesByTo {
   '/city': typeof CityRoute
   '/compare': typeof CompareRoute
   '/wiki': typeof WikiRoute
+  '/allies/$id': typeof AlliesIdRoute
   '/buildings/$id': typeof BuildingsIdRoute
   '/events/$id': typeof EventsIdRoute
   '/great-buildings/$id': typeof GreatBuildingsIdRoute
@@ -102,6 +110,7 @@ export interface FileRoutesById {
   '/city': typeof CityRoute
   '/compare': typeof CompareRoute
   '/wiki': typeof WikiRoute
+  '/allies/$id': typeof AlliesIdRoute
   '/buildings/$id': typeof BuildingsIdRoute
   '/events/$id': typeof EventsIdRoute
   '/great-buildings/$id': typeof GreatBuildingsIdRoute
@@ -116,6 +125,7 @@ export interface FileRouteTypes {
     | '/city'
     | '/compare'
     | '/wiki'
+    | '/allies/$id'
     | '/buildings/$id'
     | '/events/$id'
     | '/great-buildings/$id'
@@ -128,6 +138,7 @@ export interface FileRouteTypes {
     | '/city'
     | '/compare'
     | '/wiki'
+    | '/allies/$id'
     | '/buildings/$id'
     | '/events/$id'
     | '/great-buildings/$id'
@@ -140,6 +151,7 @@ export interface FileRouteTypes {
     | '/city'
     | '/compare'
     | '/wiki'
+    | '/allies/$id'
     | '/buildings/$id'
     | '/events/$id'
     | '/great-buildings/$id'
@@ -153,6 +165,7 @@ export interface RootRouteChildren {
   CityRoute: typeof CityRoute
   CompareRoute: typeof CompareRoute
   WikiRoute: typeof WikiRoute
+  AlliesIdRoute: typeof AlliesIdRoute
   BuildingsIdRoute: typeof BuildingsIdRoute
   EventsIdRoute: typeof EventsIdRoute
   GreatBuildingsIdRoute: typeof GreatBuildingsIdRoute
@@ -195,6 +208,13 @@ declare module '@tanstack/react-router' {
       path: '/wiki'
       fullPath: '/wiki'
       preLoaderRoute: typeof WikiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/allies/$id': {
+      id: '/allies/$id'
+      path: '/allies/$id'
+      fullPath: '/allies/$id'
+      preLoaderRoute: typeof AlliesIdRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/buildings/$id': {
@@ -241,6 +261,7 @@ const rootRouteChildren: RootRouteChildren = {
   CityRoute: CityRoute,
   CompareRoute: CompareRoute,
   WikiRoute: WikiRoute,
+  AlliesIdRoute: AlliesIdRoute,
   BuildingsIdRoute: BuildingsIdRoute,
   EventsIdRoute: EventsIdRoute,
   GreatBuildingsIdRoute: GreatBuildingsIdRoute,

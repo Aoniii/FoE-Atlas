@@ -60,6 +60,8 @@ export const BuildingTypeSchema = z.enum([
   "great_building",
   // Inventory items (upgrade and selection kits): their own grid, not buildings
   "item",
+  // Historical allies: their own grid too
+  "ally",
   "production",
   "residential",
   "goods",

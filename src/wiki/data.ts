@@ -1,3 +1,4 @@
+import type { Ally, AllyCard } from "@/core/ally"
 import type { AgeId } from "@/core/ages"
 import type { AgeBuilding, BuildingPage, BuildingType, StatBlock } from "@/core/building"
 import type { EventCard, EventPage } from "@/core/event"
@@ -52,6 +53,8 @@ export const fetchAssets = () =>
   fetchJson<{ buildings: Record<string, string>; greatBuildings: Record<string, string> }>(
     "assets.json",
   )
+export const fetchAllies = () => fetchJson<AllyCard[]>("allies.json")
+export const fetchAlly = (id: string) => fetchJson<Ally>(`allies/${encodeURIComponent(id)}.json`)
 export const fetchItems = () => fetchJson<ItemCard[]>("items.json")
 export const fetchEvents = () => fetchJson<EventCard[]>("events.json")
 export const fetchEvent = (id: string) =>

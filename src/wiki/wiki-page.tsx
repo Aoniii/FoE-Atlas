@@ -10,6 +10,7 @@ import { usePersistentState } from "@/lib/use-persistent-state"
 import { BuildingsTable } from "./buildings-table"
 import { DEFAULT_SCORE, setBoostBases, useBoostBases, useScoreKeys } from "./score-settings"
 import { GreatBuildingGrid } from "./great-building-grid"
+import { AllyGrid } from "./ally-grid"
 import { ItemGrid } from "./item-grid"
 import { toRows } from "./data"
 import { eventName, formatNumber } from "./format"
@@ -30,7 +31,7 @@ export function WikiPage() {
   const { t, locale } = useI18n()
   const search = route.useSearch()
   const navigate = route.useNavigate()
-  const { index, buildings, greatBuildings, items } = route.useLoaderData()
+  const { index, buildings, greatBuildings, items, allies } = route.useLoaderData()
 
   const type: BuildingType = search.type ?? "special"
   const age = search.age ?? getPreferredAge() ?? LATEST_AGE
@@ -44,8 +45,9 @@ export function WikiPage() {
   )
   const isGreatBuildings = type === "great_building"
   const isItems = type === "item"
-  // Great Buildings and items have their own grid, without the stat table
-  const hasTable = !isGreatBuildings && !isItems
+  const isAllies = type === "ally"
+  // Great Buildings, items and allies have their own grid, without the stat table
+  const hasTable = !isGreatBuildings && !isItems && !isAllies
   const ofType = useMemo(() => buildings.filter((b) => b.type === type), [buildings, type])
   // Event families present, with their number of buildings, sorted by name
   const events = useMemo(() => {
@@ -72,10 +74,16 @@ export function WikiPage() {
           <h1 className="text-2xl font-semibold">{t.nav.wiki}</h1>
           <p className="text-xs text-muted-foreground">
             {formatNumber(
-              isGreatBuildings ? greatBuildings.length : isItems ? items.length : rows.length,
+              isGreatBuildings
+                ? greatBuildings.length
+                : isItems
+                  ? items.length
+                  : isAllies
+                    ? allies.length
+                    : rows.length,
               locale,
             )}{" "}
-            {isItems ? t.item.count : t.wiki.buildings}
+            {isItems ? t.item.count : isAllies ? t.ally.count : t.wiki.buildings}
           </p>
         </div>
 
@@ -100,6 +108,7 @@ export function WikiPage() {
 
         {isGreatBuildings && <GreatBuildingGrid cards={greatBuildings} />}
         {isItems && <ItemGrid cards={items} />}
+        {isAllies && <AllyGrid cards={allies} />}
 
         {hasTable && (
           <div className="flex flex-col gap-2">

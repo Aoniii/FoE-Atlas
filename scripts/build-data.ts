@@ -33,6 +33,7 @@ import {
 } from "../src/core/great-building"
 import type { GameBuilding } from "../src/core/game-building"
 import { levelCost } from "../src/core/rush"
+import type { Ally, AllyCard } from "../src/core/ally"
 import type { EventCard, EventPage, EventPrize, EventQuest, GameEvent } from "../src/core/event"
 import { eventTranslator } from "./event-texts"
 import type { GameItems, ItemBuilding, ItemCard, ItemPage } from "../src/core/game-item"
@@ -54,6 +55,10 @@ const wikiPages = existsSync("data/wiki-pages.json")
   ? JSON.parse(readFileSync("data/wiki-pages.json", "utf8"))
   : {}
 // Upgrade and selection kits, and the game's upgrade paths (scripts/game-items.ts)
+// Historical allies (scripts/allies.ts)
+const allies: Ally[] = existsSync("data/allies.json")
+  ? JSON.parse(readFileSync("data/allies.json", "utf8"))
+  : []
 const gameItems: GameItems = existsSync("data/game-items.json")
   ? JSON.parse(readFileSync("data/game-items.json", "utf8"))
   : { sources: [], items: [], paths: [] }
@@ -101,14 +106,22 @@ writeFileSync(
       ...new Set(buildings.map((b) => b.type)),
       ...(existsSync("data/great-buildings") ? ["great_building"] : []),
       ...(gameItems.items.length ? ["item"] : []),
+      ...(allies.length ? ["ally"] : []),
     ],
   }),
 )
 for (const file of readdirSync(OUTPUT)) {
   if (
-    !["buildings", "great-buildings", "items", "items.json", "events", "events.json"].includes(
-      file,
-    ) &&
+    ![
+      "buildings",
+      "great-buildings",
+      "items",
+      "items.json",
+      "events",
+      "events.json",
+      "allies",
+      "allies.json",
+    ].includes(file) &&
     !written.has(file)
   ) {
     rmSync(`${OUTPUT}/${file}`)
@@ -448,7 +461,25 @@ const itemSearch: SearchEntry[] = [...itemCards.values()].map(({ id, name, image
   image,
   kind: "item",
 }))
-writeFileSync(`${OUTPUT}/search.json`, JSON.stringify([...search, ...gbSearch, ...itemSearch]))
+// And the historical allies
+const allySearch: SearchEntry[] = allies.map(({ id, name, image }) => ({
+  id,
+  name,
+  image,
+  kind: "ally",
+}))
+writeFileSync(
+  `${OUTPUT}/search.json`,
+  JSON.stringify([...search, ...gbSearch, ...itemSearch, ...allySearch]),
+)
+
+// Ally grid, one file per ally
+const ALLIES_OUTPUT = `${OUTPUT}/allies`
+mkdirSync(ALLIES_OUTPUT, { recursive: true })
+for (const file of readdirSync(ALLIES_OUTPUT)) rmSync(`${ALLIES_OUTPUT}/${file}`)
+for (const ally of allies) writeFileSync(`${ALLIES_OUTPUT}/${ally.id}.json`, JSON.stringify(ally))
+const allyCards: AllyCard[] = allies.map(({ id, name, type, image }) => ({ id, name, type, image }))
+writeFileSync(`${OUTPUT}/allies.json`, JSON.stringify(allyCards))
 
 const gbFiles = new Set<string>()
 for (const gb of greatBuildings) {
@@ -494,6 +525,14 @@ for (const card of itemCards.values()) {
 }
 for (const b of buildings) {
   prizeLinks.set(nameKey(b.name.en), { kind: "building", id: b.id, name: b.name, image: b.image })
+}
+for (const ally of allies) {
+  prizeLinks.set(nameKey(ally.name.en), {
+    kind: "ally",
+    id: ally.id,
+    name: ally.name,
+    image: ally.image,
+  })
 }
 const { translate, missing: untranslated } = eventTranslator(
   JSON.parse(readFileSync("data/event-texts.json", "utf8")).fr,

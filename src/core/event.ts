@@ -30,7 +30,7 @@ export type GameEvent = {
 // building or item it is, when known
 export type EventPrize = {
   text: LocalizedName
-  link?: { kind: "building" | "item"; id: string; name: LocalizedName; image?: string }
+  link?: { kind: "building" | "item" | "ally"; id: string; name: LocalizedName; image?: string }
 }
 
 // When it starts on the live servers (ISO date and time, data/event-live.json): a daily

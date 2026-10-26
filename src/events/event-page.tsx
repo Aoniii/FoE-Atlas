@@ -194,6 +194,12 @@ function Prize({ prize }: { prize: EventPrize }) {
       </span>
     </span>
   )
+  if (link.kind === "ally")
+    return (
+      <Link to="/allies/$id" params={{ id: link.id }} className="hover:text-primary">
+        {content}
+      </Link>
+    )
   return link.kind === "building" ? (
     <Link to="/buildings/$id" params={{ id: link.id }} className="hover:text-primary">
       {content}
