@@ -1,8 +1,9 @@
 import { Link, getRouteApi } from "@tanstack/react-router"
 import { ArrowLeft, ExternalLink } from "lucide-react"
-import type { EventPage, EventPageRivalStep, EventPrize } from "@/core/event"
+import type { EventGuide, EventPage, EventPageRivalStep, EventPrize } from "@/core/event"
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
+import { formatNumber } from "@/wiki/format"
 import { eventDate, eventTime, eventTitle, questDay } from "./format"
 
 const route = getRouteApi("/events/$id")
@@ -12,21 +13,23 @@ const backClass =
 const cellClass = "border-b px-3 py-2 align-top"
 const headClass = "border-b px-3 py-2 text-left font-medium"
 
-type Tab = "main" | "daily" | "rival" | "prizes"
+type Tab = "guide" | "main" | "daily" | "rival" | "prizes" | "shops"
 
 // One event: its quests, its rival quests (when it has some) and its prize lane
 export function EventPage() {
   const { t, locale } = useI18n()
   const { event } = route.useLoaderData()
   const tabs: Tab[] = [
+    ...(event.guide ? (["guide"] as const) : []),
     "main",
     "daily",
     ...(event.quests.rival.length ? (["rival"] as const) : []),
     "prizes",
+    ...(event.shops.length ? (["shops"] as const) : []),
   ]
   const search = route.useSearch()
   const navigate = route.useNavigate()
-  const tab: Tab = search.tab && tabs.includes(search.tab) ? search.tab : "main"
+  const tab: Tab = search.tab && tabs.includes(search.tab) ? search.tab : tabs[0]
   const setTab = (value: Tab) =>
     navigate({ search: { tab: value }, replace: true, resetScroll: false })
   const site = new URL(event.source).hostname
@@ -76,7 +79,7 @@ export function EventPage() {
             )}
           >
             {t.events[value]}
-            {value !== "prizes" && (
+            {(value === "main" || value === "daily" || value === "rival") && (
               <span className="ml-1.5 text-xs text-muted-foreground">
                 {questCount(value === "rival" ? event.quests.rival : event.quests[value])}
               </span>
@@ -88,6 +91,8 @@ export function EventPage() {
       {tab === "main" && <QuestTable quests={event.quests.main} />}
       {tab === "daily" && <QuestTable quests={event.quests.daily} start={event.live?.start} />}
       {tab === "rival" && <QuestTable quests={event.quests.rival} />}
+      {tab === "guide" && event.guide && <Guide guide={event.guide} />}
+      {tab === "shops" && <Shops event={event.id} shops={event.shops} />}
       {tab === "prizes" && (
         <PrizeTable event={event.id} lanes={event.prizes.lanes} steps={event.prizes.steps} />
       )}
@@ -183,9 +188,64 @@ function PrizeTable({
   )
 }
 
+// How the event works, section by section
+function Guide({ guide }: { guide: EventGuide }) {
+  const { locale } = useI18n()
+  return (
+    <div className="flex max-w-3xl flex-col gap-5">
+      {guide.map((section) => (
+        <section key={section.title.en} className="flex flex-col gap-2">
+          <h2 className="font-medium">{localized(section.title, locale)}</h2>
+          {section.paragraphs.map((paragraph, k) => (
+            <p key={k} className="text-sm leading-relaxed text-muted-foreground">
+              {localized(paragraph, locale)}
+            </p>
+          ))}
+        </section>
+      ))}
+    </div>
+  )
+}
+
+// Event shops: each offer and its price in the shop's currency
+function Shops({ event, shops }: { event: string; shops: EventPage["shops"] }) {
+  const { t, locale } = useI18n()
+  return (
+    <div className="grid gap-6 lg:grid-cols-2">
+      {shops.map((shop) => (
+        <section key={shop.name.en} className="flex flex-col gap-2">
+          <h2 className="font-medium">{localized(shop.name, locale)}</h2>
+          <div className="overflow-x-auto rounded-lg border">
+            <table className="w-full border-collapse text-sm">
+              <thead className="bg-muted/40 text-muted-foreground">
+                <tr>
+                  <th className={headClass}>{t.events.offer}</th>
+                  <th className={cn(headClass, "w-40 text-right")}>{t.events.price}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {shop.offers.map((offer, k) => (
+                  <tr key={k} className="last:[&>td]:border-0">
+                    <td className={cellClass}>
+                      <Prize prize={offer.item} event={event} tab="shops" />
+                    </td>
+                    <td className={cn(cellClass, "text-right whitespace-nowrap")}>
+                      {formatNumber(offer.price, locale)} {localized(offer.currency, locale)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      ))}
+    </div>
+  )
+}
+
 // A prize: its building or item (picture, name in the site's language, link to its page),
 // else the source's text. Fragments keep their count ("50 ×")
-function Prize({ prize, event }: { prize: EventPrize; event: string }) {
+function Prize({ prize, event, tab }: { prize: EventPrize; event: string; tab?: "shops" }) {
   const { locale } = useI18n()
   const { link } = prize
   if (!link) return <span>{localized(prize.text, locale)}</span>
@@ -206,7 +266,7 @@ function Prize({ prize, event }: { prize: EventPrize; event: string }) {
       <Link
         to="/allies/$id"
         params={{ id: link.id }}
-        search={{ event }}
+        search={{ event, eventTab: tab }}
         className="hover:text-primary"
       >
         {content}
@@ -216,7 +276,7 @@ function Prize({ prize, event }: { prize: EventPrize; event: string }) {
     <Link
       to="/buildings/$id"
       params={{ id: link.id }}
-      search={{ event }}
+      search={{ event, eventTab: tab }}
       className="hover:text-primary"
     >
       {content}
@@ -225,7 +285,7 @@ function Prize({ prize, event }: { prize: EventPrize; event: string }) {
     <Link
       to="/items/$id"
       params={{ id: link.id }}
-      search={{ event }}
+      search={{ event, eventTab: tab }}
       className="hover:text-primary"
     >
       {content}

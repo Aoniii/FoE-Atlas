@@ -12,6 +12,7 @@ export const Route = createFileRoute("/buildings/$id")({
     from: z.enum(["city"]).optional().catch(undefined),
     // Event the page was opened from (its prizes), for the back link
     event: z.string().optional().catch(undefined),
+    eventTab: z.enum(["prizes", "shops"]).optional().catch(undefined),
   }),
   loader: async ({ params }) => {
     try {

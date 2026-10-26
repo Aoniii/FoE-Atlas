@@ -34,7 +34,14 @@ import {
 import type { GameBuilding } from "../src/core/game-building"
 import { levelCost } from "../src/core/rush"
 import type { Ally, AllyCard } from "../src/core/ally"
-import type { EventCard, EventPage, EventPrize, EventQuest, GameEvent } from "../src/core/event"
+import type {
+  EventCard,
+  EventGuide,
+  EventPage,
+  EventPrize,
+  EventQuest,
+  GameEvent,
+} from "../src/core/event"
 import { eventTranslator } from "./event-texts"
 import type { GameItems, ItemBuilding, ItemCard, ItemPage } from "../src/core/game-item"
 import { applyUpgradePaths, assetOfImage, fillLevelChains, mergeGameBuildings } from "./merge-game"
@@ -510,6 +517,7 @@ const nameKey = (name: string) =>
   name
     .toLowerCase()
     .replace(/[–—]/g, "-")
+    .replace(/[’‘]/g, "'")
     .replace(/^\d+ fragments of /, "")
     .replace(/\s*\(x\d+\)$/, "")
     .replace(/\s+/g, " ")
@@ -534,9 +542,8 @@ for (const ally of allies) {
     image: ally.image,
   })
 }
-const { translate, missing: untranslated } = eventTranslator(
-  JSON.parse(readFileSync("data/event-texts.json", "utf8")).fr,
-)
+const eventTexts = JSON.parse(readFileSync("data/event-texts.json", "utf8"))
+const { translate, missing: untranslated } = eventTranslator(eventTexts.fr, eventTexts.en)
 const translateQuest = (q: EventQuest) => ({
   n: q.n,
   text: translate(q.text),
@@ -546,6 +553,15 @@ const translateQuest = (q: EventQuest) => ({
 const eventLive: Record<string, string> = existsSync("data/event-live.json")
   ? JSON.parse(readFileSync("data/event-live.json", "utf8"))
   : {}
+// How each event works, written by hand
+const eventGuides: Record<string, EventGuide> = existsSync("data/event-guides.json")
+  ? JSON.parse(readFileSync("data/event-guides.json", "utf8"))
+  : {}
+// A prize or an offer: its building or item when the site has it, else its text in French
+const eventPrize = (text: string): EventPrize => {
+  const link = prizeLinks.get(nameKey(text))
+  return link ? { text: { en: text, fr: text }, link } : { text: translate(text) }
+}
 const eventCards: EventCard[] = []
 const eventFiles = new Set<string>()
 for (const file of existsSync(EVENTS) ? readdirSync(EVENTS) : []) {
@@ -566,12 +582,18 @@ for (const file of existsSync(EVENTS) ? readdirSync(EVENTS) : []) {
       steps: event.prizes.steps.map(({ at, prizes }) => ({
         at,
         // A linked prize shows its building or item's own names
-        prizes: prizes.map((text) => {
-          const link = prizeLinks.get(nameKey(text))
-          return link ? { text: { en: text, fr: text }, link } : { text: translate(text) }
-        }),
+        prizes: prizes.map(eventPrize),
       })),
     },
+    shops: (event.shops ?? []).map((shop) => ({
+      name: translate(shop.name),
+      offers: shop.offers.map((offer) => ({
+        item: eventPrize(offer.item),
+        price: offer.price,
+        currency: translate(offer.currency),
+      })),
+    })),
+    ...(eventGuides[event.id] && { guide: eventGuides[event.id] }),
   }
   // Pictured by its first building prize
   const image = page.prizes.steps

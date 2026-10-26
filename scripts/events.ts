@@ -45,13 +45,34 @@ function cellText(html: string): string {
     .trim()
 }
 
-// Rows of every table of the article, cells as text
-function tables(html: string): string[][][] {
-  return [...html.matchAll(/<table[\s\S]*?<\/table>/g)].map(([table]) =>
-    [...table.matchAll(/<tr[\s\S]*?<\/tr>/g)].map(([row]) =>
+// Rows of every table of the article, cells as text, with the section (h2) it is under
+function tables(html: string): { section: string; rows: string[][] }[] {
+  let section = ""
+  const found: { section: string; rows: string[][] }[] = []
+  for (const [part, heading] of html.matchAll(
+    /<h2[^>]*>([\s\S]*?)<\/h2>|<table[\s\S]*?<\/table>/g,
+  )) {
+    if (heading !== undefined) {
+      section = cellText(heading)
+      continue
+    }
+    const rows = [...part.matchAll(/<tr[\s\S]*?<\/tr>/g)].map(([row]) =>
       [...row.matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)].map(([, cell]) => cellText(cell)),
-    ),
-  )
+    )
+    found.push({ section, rows })
+  }
+  return found
+}
+
+// "6 icon quest halloween event token common 883867b29" -> 6 and the currency's icon name
+function price(cell: string) {
+  const amount = Number(cell.match(/^[\d,]+/)?.[0].replace(/,/g, ""))
+  const currency = cell
+    .replace(/^[\d,]+\s*/, "")
+    .replace(/^icon quest /, "")
+    .replace(/\s+[0-9a-f]{9}$/, "")
+    .trim()
+  return { amount, currency }
 }
 
 const MONTHS =
@@ -101,7 +122,7 @@ export function parseEvent(html: string, url: string): GameEvent | undefined {
     quests: { main: [], daily: [], rival: [] },
     prizes: { lanes: [], steps: [] },
   }
-  for (const rows of tables(article)) {
+  for (const { section, rows } of tables(article)) {
     const head = (rows[0] ?? []).join(" ")
     if (/Rush Quest/i.test(head)) event.quests.main.push(...questRows(rows))
     else if (/Daily Quest/i.test(head)) event.quests.daily.push(...questRows(rows))
@@ -111,6 +132,13 @@ export function parseEvent(html: string, url: string): GameEvent | undefined {
         else if (/milestone/i.test(text ?? ""))
           event.quests.rival.push({ milestone: reward ?? "" } satisfies RivalStep)
       }
+    } else if (/^Offer\b/i.test(rows[0]?.[0] ?? "")) {
+      // A shop: its offers and their price, under its title ("Clown's Counter")
+      const offers = rows.slice(1).flatMap(([item, cell]) => {
+        const { amount, currency } = price(cell ?? "")
+        return item && amount ? [{ item, price: amount, currency }] : []
+      })
+      if (offers.length) (event.shops ??= []).push({ name: section, offers })
     } else if (/Prize Lane/i.test(head) && !event.prizes.steps.length) {
       // A title row ("Grand Prize Lane"), then "#" and the lanes, then a row per step
       const header = rows.findIndex((row) => row[0] === "#")

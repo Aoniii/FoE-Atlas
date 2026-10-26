@@ -69,7 +69,7 @@ export function BuildingPage() {
     <StatIconsContext value={icons}>
       <div className="flex flex-col gap-6">
         {search.event ? (
-          <BackToEvent event={search.event} />
+          <BackToEvent event={search.event} tab={search.eventTab} />
         ) : search.from === "city" ? (
           <Link to="/city" className={backClass}>
             <ArrowLeft className="size-4" />

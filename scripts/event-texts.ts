@@ -18,8 +18,13 @@ function template(text: string): { key: string; numbers: string[] } {
   return { key, numbers }
 }
 
-export function eventTranslator(dictionary: Record<string, string>) {
+// English entries replace texts that are not English words (a currency's icon name)
+export function eventTranslator(
+  dictionary: Record<string, string>,
+  english: Record<string, string> = {},
+) {
   const fr = new Map(Object.entries(dictionary).map(([k, v]) => [k.toLowerCase(), v]))
+  const en = new Map(Object.entries(english).map(([k, v]) => [k.toLowerCase(), v]))
   // Texts with no entry yet, as templates (to add to the dictionary)
   const missing = new Set<string>()
   const part = (text: string) => {
@@ -34,7 +39,8 @@ export function eventTranslator(dictionary: Record<string, string>) {
   // A text as a whole (a reward, a prize), else cut at its AND / OR (a quest)
   const translate = (text: string): LocalizedName => {
     if (!text) return { en: text, fr: text }
-    if (fr.has(template(text).key)) return { en: text, fr: part(text) }
+    const key = template(text).key
+    if (fr.has(key)) return { en: en.get(key) ?? text, fr: part(text) }
     const pieces = text.split(/ (AND|OR) /)
     return {
       en: text,

@@ -95,7 +95,7 @@ export function AllyPage() {
   const total = ally.levelCosts.slice(0, level).reduce((sum, c) => sum + c, 0)
   const setSearch = (next: { rarity?: AllyRarity; level?: number }) =>
     navigate({
-      search: { rarity, level, event: search.event, ...next },
+      search: { rarity, level, event: search.event, eventTab: search.eventTab, ...next },
       replace: true,
       resetScroll: false,
     })
@@ -103,7 +103,7 @@ export function AllyPage() {
   return (
     <div className="flex flex-col gap-6">
       {search.event ? (
-        <BackToEvent event={search.event} />
+        <BackToEvent event={search.event} tab={search.eventTab} />
       ) : (
         <Link to="/wiki" search={{ type: "ally" }} className={backClass}>
           <ArrowLeft className="size-4" />

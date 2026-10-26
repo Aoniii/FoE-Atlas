@@ -24,6 +24,14 @@ export type GameEvent = {
   quests: { main: EventQuest[]; daily: EventQuest[]; rival: RivalStep[] }
   // Prize lane: its columns (free lane, passes...) and, at each step, a prize per column
   prizes: { lanes: string[]; steps: { at: string; prizes: string[] }[] }
+  // Event shops: what each sells and for how much of its currency (its icon's name,
+  // "halloween event token common")
+  shops?: EventShop[]
+}
+
+export type EventShop = {
+  name: string
+  offers: { item: string; price: number; currency: string }[]
 }
 
 // A prize as the site shows it: its text (in French too, scripts/event-texts.ts), and the
@@ -37,6 +45,9 @@ export type EventPrize = {
 // quest a day from then
 export type EventLive = { start: string }
 
+// A guide: sections of paragraphs, in French and English
+export type EventGuide = { title: LocalizedName; paragraphs: LocalizedName[] }[]
+
 // Event grid (public/data/events.json)
 export type EventCard = Pick<GameEvent, "id" | "name" | "family" | "year" | "beta"> & {
   live?: EventLive
@@ -48,8 +59,14 @@ export type EventPageQuest = { n: string; text: LocalizedName; reward: Localized
 export type EventPageRivalStep = EventPageQuest | { milestone: LocalizedName }
 
 // One event (public/data/events/<id>.json): texts translated, prizes linked to the site's pages
-export type EventPage = Omit<GameEvent, "quests" | "prizes"> & {
+export type EventPage = Omit<GameEvent, "quests" | "prizes" | "shops"> & {
   live?: EventLive
+  shops: {
+    name: LocalizedName
+    offers: { item: EventPrize; price: number; currency: LocalizedName }[]
+  }[]
+  // How the event works, written by hand (data/event-guides.json)
+  guide?: EventGuide
   quests: { main: EventPageQuest[]; daily: EventPageQuest[]; rival: EventPageRivalStep[] }
   prizes: { lanes: LocalizedName[]; steps: { at: string; prizes: EventPrize[] }[] }
 }

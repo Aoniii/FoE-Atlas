@@ -16,14 +16,14 @@ const linkClass = "font-medium underline decoration-dotted underline-offset-4 ho
 export function ItemPage() {
   const { t, locale } = useI18n()
   const { item } = route.useLoaderData()
-  const { event } = route.useSearch()
+  const { event, eventTab } = route.useSearch()
   const name = localized(item.name, locale)
   const otherName = locale === "en" ? item.name.fr : item.name.en
 
   return (
     <div className="flex flex-col gap-6">
       {event ? (
-        <BackToEvent event={event} />
+        <BackToEvent event={event} tab={eventTab} />
       ) : (
         <Link to="/wiki" search={{ type: "item" }} className={backClass}>
           <ArrowLeft className="size-4" />
