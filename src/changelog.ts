@@ -9,6 +9,10 @@ export const CHANGELOG: Release[] = [
     date: "2026-10-26",
     changes: [
       {
+        fr: "Données : version du jeu 1.346, nouveaux bâtiments du wiki et bonus des Grands Monuments à jour",
+        en: "Data: game version 1.346, new buildings from the wiki and Great Building bonuses updated",
+      },
+      {
         fr: "Reconstruction : routes tracées deux fois plus vite et les plus droites possible (chaque virage compte), donc plus d'essais et des plans mieux rangés",
         en: "Rebuild: roads laid twice as fast and as straight as possible (every bend counts), so more tries and tidier plans",
       },

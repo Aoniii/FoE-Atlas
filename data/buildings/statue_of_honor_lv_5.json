@@ -1,0 +1,828 @@
+{
+  "id": "statue_of_honor_lv_5",
+  "name": {
+    "fr": "Statue d'honneur - Niv. 5",
+    "en": "Statue of Honor - Lv. 5"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/R_SS_MultiAge_Battlegrounds1e-5da1349b8.png",
+  "event": "battlegrounds",
+  "chain": {
+    "id": "statue_of_honor",
+    "level": 5
+  },
+  "size": {
+    "w": 4,
+    "h": 3
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Statue_of_Honor_-_Lv._5",
+  "ages": {
+    "BronzeAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 800
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 100,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1800
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 125,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 3000
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 150,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 175,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 5600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 200,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 8500
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 225,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 10500
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 250,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 12800
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 275,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 15900
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 300,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 20000
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 325,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 26000
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 350,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 30200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 375,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 34600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 400,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 39300
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 425,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 44300
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 450,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 49600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 475,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 82900
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 500,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 91800
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 525,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 101200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 550,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 111000
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 575,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 121400
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 600,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 132200
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 625,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {},
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 143600
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 6
+            },
+            {
+              "type": "item",
+              "id": "clan_power",
+              "name": {
+                "fr": ", 50",
+                "en": ", 50"
+              },
+              "amount": 650,
+              "icon": "https://foeen.innogamescdn.com/assets/shared/icons/clan_power-401bb7ea8.png"
+            },
+            {
+              "type": "stat",
+              "stat": "guild_goods",
+              "amount": 50
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

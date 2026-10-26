@@ -1,0 +1,1933 @@
+{
+  "id": "gilded_tidings_press_tower",
+  "name": {
+    "fr": "WIN26A Gold",
+    "en": "Gilded Tidings Press Tower"
+  },
+  "type": "special",
+  "image": "https://foeen.innogamescdn.com/assets/city/buildings/W_SS_MultiAge_WIN26A10-a41aeb30e.png",
+  "event": "winter",
+  "eventYear": 2026,
+  "chain": {
+    "id": "tidings_press_tower",
+    "level": 10
+  },
+  "size": {
+    "w": 4,
+    "h": 4
+  },
+  "road": "road",
+  "reliability": "official",
+  "sourceUrl": "https://en.wiki.forgeofempires.com/index.php?title=Gilded_Tidings_Press_Tower",
+  "ages": {
+    "BronzeAge": {
+      "passive": {
+        "atk_army_att_classic": 49,
+        "atk_army_def_classic": 49,
+        "def_army_att_classic": 49,
+        "def_army_def_classic": 49,
+        "atk_army_att_gbg": 49,
+        "atk_army_def_gbg": 49,
+        "def_army_att_gbg": 49,
+        "def_army_def_gbg": 49,
+        "population": 570,
+        "happiness": 2350
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 1700
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 8400
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 20
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 154
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IronAge": {
+      "passive": {
+        "atk_army_att_classic": 50,
+        "atk_army_def_classic": 50,
+        "def_army_att_classic": 50,
+        "def_army_def_classic": 50,
+        "atk_army_att_gbg": 50,
+        "atk_army_def_gbg": 50,
+        "def_army_att_gbg": 50,
+        "def_army_def_gbg": 50,
+        "population": 1220,
+        "happiness": 4050
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 4080
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 20170
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 22
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 160
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "EarlyMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 51,
+        "atk_army_def_classic": 51,
+        "def_army_att_classic": 51,
+        "def_army_def_classic": 51,
+        "atk_army_att_gbg": 51,
+        "atk_army_def_gbg": 51,
+        "def_army_att_gbg": 51,
+        "def_army_def_gbg": 51,
+        "population": 1880,
+        "happiness": 4480
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 6810
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 33610
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 25
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 166
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "HighMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 52,
+        "atk_army_def_classic": 52,
+        "def_army_att_classic": 52,
+        "def_army_def_classic": 52,
+        "atk_army_att_gbg": 52,
+        "atk_army_def_gbg": 52,
+        "def_army_att_gbg": 52,
+        "def_army_def_gbg": 52,
+        "population": 2640,
+        "happiness": 5000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 9530
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 47060
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 27
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 172
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "LateMiddleAge": {
+      "passive": {
+        "atk_army_att_classic": 53,
+        "atk_army_def_classic": 53,
+        "def_army_att_classic": 53,
+        "def_army_def_classic": 53,
+        "atk_army_att_gbg": 53,
+        "atk_army_def_gbg": 53,
+        "def_army_att_gbg": 53,
+        "def_army_def_gbg": 53,
+        "population": 3460,
+        "happiness": 5580
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 12590
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 62180
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 30
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 178
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ColonialAge": {
+      "passive": {
+        "atk_army_att_classic": 54,
+        "atk_army_def_classic": 54,
+        "def_army_att_classic": 54,
+        "def_army_def_classic": 54,
+        "atk_army_att_gbg": 54,
+        "atk_army_def_gbg": 54,
+        "def_army_att_gbg": 54,
+        "def_army_def_gbg": 54,
+        "population": 4370,
+        "happiness": 6560
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 19180
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 78990
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 33
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 184
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "IndustrialAge": {
+      "passive": {
+        "atk_army_att_classic": 55,
+        "atk_army_def_classic": 55,
+        "def_army_att_classic": 55,
+        "def_army_def_classic": 55,
+        "atk_army_att_gbg": 55,
+        "atk_army_def_gbg": 55,
+        "def_army_att_gbg": 55,
+        "def_army_def_gbg": 55,
+        "population": 5340,
+        "happiness": 7390
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 23890
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 95800
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 36
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 190
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ProgressiveEra": {
+      "passive": {
+        "atk_army_att_classic": 56,
+        "atk_army_def_classic": 56,
+        "def_army_att_classic": 56,
+        "def_army_def_classic": 56,
+        "atk_army_att_gbg": 56,
+        "atk_army_def_gbg": 56,
+        "def_army_att_gbg": 56,
+        "def_army_def_gbg": 56,
+        "population": 6380,
+        "happiness": 8120
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 29000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 112610
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 40
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 196
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ModernEra": {
+      "passive": {
+        "atk_army_att_classic": 57,
+        "atk_army_def_classic": 57,
+        "def_army_att_classic": 57,
+        "def_army_def_classic": 57,
+        "atk_army_att_gbg": 57,
+        "atk_army_def_gbg": 57,
+        "def_army_att_gbg": 57,
+        "def_army_def_gbg": 57,
+        "population": 7470,
+        "happiness": 8690
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 36080
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 131090
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 44
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 202
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PostModernEra": {
+      "passive": {
+        "atk_army_att_classic": 58,
+        "atk_army_def_classic": 58,
+        "def_army_att_classic": 58,
+        "def_army_def_classic": 58,
+        "atk_army_att_gbg": 58,
+        "atk_army_def_gbg": 58,
+        "def_army_att_gbg": 58,
+        "def_army_def_gbg": 58,
+        "population": 8610,
+        "happiness": 9050
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 45390
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 149580
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 48
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 208
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ContemporaryEra": {
+      "passive": {
+        "atk_army_att_classic": 59,
+        "atk_army_def_classic": 59,
+        "def_army_att_classic": 59,
+        "def_army_def_classic": 59,
+        "atk_army_att_gbg": 59,
+        "atk_army_def_gbg": 59,
+        "def_army_att_gbg": 59,
+        "def_army_def_gbg": 59,
+        "population": 9820,
+        "happiness": 10520
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 59080
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 168070
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 53
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 214
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "TomorrowEra": {
+      "passive": {
+        "atk_army_att_classic": 60,
+        "atk_army_def_classic": 60,
+        "def_army_att_classic": 60,
+        "def_army_def_classic": 60,
+        "atk_army_att_gbg": 60,
+        "atk_army_def_gbg": 60,
+        "def_army_att_gbg": 60,
+        "def_army_def_gbg": 60,
+        "population": 11060,
+        "happiness": 12770
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 68410
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 188240
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 58
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 220
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "FutureEra": {
+      "passive": {
+        "atk_army_att_classic": 61,
+        "atk_army_def_classic": 61,
+        "def_army_att_classic": 61,
+        "def_army_def_classic": 61,
+        "atk_army_att_gbg": 61,
+        "atk_army_def_gbg": 61,
+        "def_army_att_gbg": 61,
+        "def_army_def_gbg": 61,
+        "population": 12370,
+        "happiness": 15290
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 78420
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 206720
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 64
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 226
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ArcticFuture": {
+      "passive": {
+        "atk_army_att_classic": 62,
+        "atk_army_def_classic": 62,
+        "def_army_att_classic": 62,
+        "def_army_def_classic": 62,
+        "atk_army_att_gbg": 62,
+        "atk_army_def_gbg": 62,
+        "def_army_att_gbg": 62,
+        "def_army_def_gbg": 62,
+        "population": 13720,
+        "happiness": 17810
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 89100
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 226890
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 70
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 232
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "OceanicFuture": {
+      "passive": {
+        "atk_army_att_classic": 63,
+        "atk_army_def_classic": 63,
+        "def_army_att_classic": 63,
+        "def_army_def_classic": 63,
+        "atk_army_att_gbg": 63,
+        "atk_army_def_gbg": 63,
+        "def_army_att_gbg": 63,
+        "def_army_def_gbg": 63,
+        "population": 15120,
+        "happiness": 20550
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 100470
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 248740
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 78
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 238
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "VirtualFuture": {
+      "passive": {
+        "atk_army_att_classic": 64,
+        "atk_army_def_classic": 64,
+        "def_army_att_classic": 64,
+        "def_army_def_classic": 64,
+        "atk_army_att_gbg": 64,
+        "atk_army_def_gbg": 64,
+        "def_army_att_gbg": 64,
+        "def_army_def_gbg": 64,
+        "population": 16550,
+        "happiness": 24550
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 112540
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 268910
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 86
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 244
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeMars": {
+      "passive": {
+        "atk_army_att_classic": 65,
+        "atk_army_def_classic": 65,
+        "def_army_att_classic": 65,
+        "def_army_def_classic": 65,
+        "atk_army_att_gbg": 65,
+        "atk_army_def_gbg": 65,
+        "def_army_att_gbg": 65,
+        "def_army_def_gbg": 65,
+        "population": 26200,
+        "happiness": 39290
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 187970
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 435290
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 97
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 250
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeAsteroidBelt": {
+      "passive": {
+        "atk_army_att_classic": 66,
+        "atk_army_def_classic": 66,
+        "def_army_att_classic": 66,
+        "def_army_def_classic": 66,
+        "atk_army_att_gbg": 66,
+        "atk_army_def_gbg": 66,
+        "def_army_att_gbg": 66,
+        "def_army_def_gbg": 66,
+        "population": 28460,
+        "happiness": 42690
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 208210
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 467230
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 109
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 256
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeVenus": {
+      "passive": {
+        "atk_army_att_classic": 67,
+        "atk_army_def_classic": 67,
+        "def_army_att_classic": 67,
+        "def_army_def_classic": 67,
+        "atk_army_att_gbg": 67,
+        "atk_army_def_gbg": 67,
+        "def_army_att_gbg": 67,
+        "def_army_def_gbg": 67,
+        "population": 30760,
+        "happiness": 46120
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 229510
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 500840
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 123
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 262
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeJupiterMoon": {
+      "passive": {
+        "atk_army_att_classic": 68,
+        "atk_army_def_classic": 68,
+        "def_army_att_classic": 68,
+        "def_army_def_classic": 68,
+        "atk_army_att_gbg": 68,
+        "atk_army_def_gbg": 68,
+        "def_army_att_gbg": 68,
+        "def_army_def_gbg": 68,
+        "population": 33120,
+        "happiness": 49690
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 251910
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 532770
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 139
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 268
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeTitan": {
+      "passive": {
+        "atk_army_att_classic": 69,
+        "atk_army_def_classic": 69,
+        "def_army_att_classic": 69,
+        "def_army_def_classic": 69,
+        "atk_army_att_gbg": 69,
+        "atk_army_def_gbg": 69,
+        "def_army_att_gbg": 69,
+        "def_army_def_gbg": 69,
+        "population": 35530,
+        "happiness": 53290
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 275410
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 566390
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 158
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 274
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "SpaceAgeSpaceHub": {
+      "passive": {
+        "atk_army_att_classic": 70,
+        "atk_army_def_classic": 70,
+        "def_army_att_classic": 70,
+        "def_army_def_classic": 70,
+        "atk_army_att_gbg": 70,
+        "atk_army_def_gbg": 70,
+        "def_army_att_gbg": 70,
+        "def_army_def_gbg": 70,
+        "population": 38000,
+        "happiness": 57000
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 300000
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 600000
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 180
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 280
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "StellarAgeDiscovery": {
+      "passive": {
+        "atk_army_att_classic": 71,
+        "atk_army_def_classic": 71,
+        "def_army_att_classic": 71,
+        "def_army_def_classic": 71,
+        "atk_army_att_gbg": 71,
+        "atk_army_def_gbg": 71,
+        "def_army_att_gbg": 71,
+        "def_army_def_gbg": 71,
+        "population": 40530,
+        "happiness": 60800
+      },
+      "production": [
+        {
+          "kind": "guaranteed",
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "coins",
+              "amount": 325710
+            }
+          ]
+        },
+        {
+          "kind": "guaranteed",
+          "motivated": true,
+          "rewards": [
+            {
+              "type": "stat",
+              "stat": "supplies",
+              "amount": 635290
+            },
+            {
+              "type": "stat",
+              "stat": "fp",
+              "amount": 207
+            },
+            {
+              "type": "stat",
+              "stat": "goods_prev",
+              "amount": 286
+            }
+          ]
+        },
+        {
+          "kind": "random",
+          "motivated": true,
+          "options": [
+            {
+              "chance": 10,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_finish_all_supply_productions",
+                  "name": {
+                    "fr": "Fragments of Finish All Supply Productions",
+                    "en": "Fragments of Finish All Supply Productions"
+                  },
+                  "amount": 11,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            },
+            {
+              "chance": 90,
+              "rewards": [
+                {
+                  "type": "item",
+                  "id": "fragment_fragments_of_mint_mistletoe_selection_kit",
+                  "name": {
+                    "fr": "Fragments of Mint & Mistletoe Selection Kit",
+                    "en": "Fragments of Mint & Mistletoe Selection Kit"
+                  },
+                  "amount": 3,
+                  "icon": "https://foeen.innogamescdn.com/assets/shared/icons/icon_fragment-5b82798da.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

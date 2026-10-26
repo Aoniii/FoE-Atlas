@@ -1,8 +1,8 @@
 // Every building of the game, from the game's own definitions: values per age, size, road,
-// chain and set links (see src/core/game-definitions.ts). First every definition of the
-// game's static server (scripts/game-entities.ts, in scripts/.cache/entities/<capture>/),
-// then the ones inside FoE Helper city exports (City map > Download, CityEntities) for any
-// building missing there, the newest export winning. Writes data/game-buildings.json, merged
+// chain and set links (see src/core/game-definitions.ts). From the definitions of the
+// game's static server (scripts/game-entities.ts, in scripts/.cache/entities/<capture>/)
+// and the ones inside FoE Helper city exports (City map > Download, CityEntities): the
+// newest source wins. Writes data/game-buildings.json, merged
 // with the wiki's buildings by scripts/build-data.ts.
 //   pnpm game-data [export.json ...]   (default: every scripts/.cache/city/*_citymap_*.json)
 
@@ -47,43 +47,42 @@ function entityFolders(): string[] {
 }
 
 function main() {
-  const files = (process.argv.length > 2 ? process.argv.slice(2) : exportsInCache()).sort(
-    (a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs,
-  )
-  const buildings = new Map<string, GameBuilding>()
+  const exports = process.argv.length > 2 ? process.argv.slice(2) : exportsInCache()
   const folders = entityFolders()
-  for (const folder of folders) {
-    let added = 0
-    for (const file of readdirSync(folder)) {
-      const def = fromStaticData(JSON.parse(readFileSync(`${folder}/${file}`, "utf8")))
-      if (!isCityBuilding(def) || buildings.has(def.id)) continue
-      buildings.set(def.id, toGameBuilding(def))
-      added++
-    }
-    console.log(`${folder}: ${added} buildings`)
-  }
-  if (!folders.length && !files.length) {
+  if (!folders.length && !exports.length) {
     throw new Error(
       `No definition: pnpm game-entities, or FoE Helper exports in scripts/.cache/city`,
     )
   }
-  for (const file of files) {
-    const { CityEntities } = JSON.parse(readFileSync(file, "utf8")) as {
-      CityEntities: Record<string, Definition>
-    }
+  // The newest source first (a capture's folder, or an export): it wins for the buildings
+  // several sources hold
+  const sources = [
+    ...folders.map((path) => ({ path, folder: true })),
+    ...exports.map((path) => ({ path, folder: false })),
+  ].sort((a, b) => statSync(b.path).mtimeMs - statSync(a.path).mtimeMs)
+  const buildings = new Map<string, GameBuilding>()
+  for (const { path, folder } of sources) {
+    const definitions = folder
+      ? readdirSync(path).map((file) =>
+          fromStaticData(JSON.parse(readFileSync(`${path}/${file}`, "utf8"))),
+        )
+      : Object.values(
+          (JSON.parse(readFileSync(path, "utf8")) as { CityEntities: Record<string, Definition> })
+            .CityEntities,
+        )
     let added = 0
-    for (const def of Object.values(CityEntities)) {
+    for (const def of definitions) {
       if (!isCityBuilding(def) || buildings.has(def.id)) continue
       buildings.set(def.id, toGameBuilding(def))
       added++
     }
-    console.log(`${file}: ${added} new buildings`)
+    console.log(`${path}: ${added} new buildings`)
   }
   const list = [...buildings.values()].sort((a, b) => a.gameId.localeCompare(b.gameId))
   writeFileSync(
     "data/game-buildings.json",
     JSON.stringify({
-      sources: [...folders, ...files].map((f) => f.split("/").at(-1)),
+      sources: sources.map(({ path }) => path.split("/").at(-1)),
       buildings: list,
     }) + "\n",
   )
