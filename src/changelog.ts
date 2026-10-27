@@ -9,6 +9,10 @@ export const CHANGELOG: Release[] = [
     date: "2026-10-27",
     changes: [
       {
+        fr: "Ville : au survol d'un bâtiment sur la carte, un aperçu de ses stats (PF, ressources de l'âge précédent, actuel et suivant, ressources de guilde, unités, attaque et défense des deux armées en Classique, CBG, EG et IQ), et le total de toute la ville avec la même présentation",
+        en: "City: hovering a building on the map previews its stats (FP, previous, current and next age goods, guild goods, units, attack and defense of both armies in Classic, GBG, GE and QI), and the whole city's total laid out the same way",
+      },
+      {
         fr: "Événements : récompenses de ligue (de Loisir à Or, avec la part de joueurs de chaque ligue), et explication du fonctionnement vérifiée avec l'article officiel d'InnoGames (roue partagée, renouvellement automatique, tâches du jour doublées, boutique du clown qui se renouvelle)",
         en: "Events: league rewards (Hobby to Gold, with each league's share of players), and the guide checked against InnoGames' official article (shared wheel, automatic refresh, doubled daily tasks, the clown's shop refreshing)",
       },

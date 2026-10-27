@@ -39,6 +39,7 @@ import { rebuiltCity, tileCounts, type RebuildResult } from "@/core/rebuild"
 import type { StatKey } from "@/core/stats"
 import { CityMap } from "./city-map"
 import { CityRebuild } from "./city-rebuild"
+import { CityTotals } from "./city-stats-preview"
 
 const route = getRouteApi("/city")
 
@@ -420,6 +421,7 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
       <p className="text-sm text-muted-foreground">
         {t.city.summary.replace("{count}", formatNumber(counted, locale))} {t.city.scoreSettings}
       </p>
+      <CityTotals rows={rated.rows} />
       <label className="flex w-fit items-center gap-2 text-sm">
         <Checkbox checked={showMap} onCheckedChange={(checked) => setShowMap(checked === true)} />
         {t.city.showMap}

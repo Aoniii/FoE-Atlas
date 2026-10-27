@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { localized, useI18n } from "@/lib/i18n"
 import { formatNumber, scoreColor } from "@/wiki/format"
+import { CityStatsPreview } from "./city-stats-preview"
 
 const fill = (text: string, values: Record<string, number | string>) =>
   Object.entries(values).reduce((s, [k, v]) => s.replace(`{${k}}`, String(v)), text)
@@ -46,6 +47,8 @@ export function CityMap({
   const { t, locale } = useI18n()
   const navigate = useNavigate()
   const [hovered, setHovered] = useState<MapBuilding>()
+  // Cursor over the map (px in its frame) and the frame's size, to keep the preview inside
+  const [pointer, setPointer] = useState<{ x: number; y: number; w: number; h: number }>()
   const [query, setQuery] = useState("")
 
   // Buildings to show: the search (French or English name, every word) and the picked line
@@ -175,7 +178,19 @@ export function CityMap({
           {t.city.mapUpdate}
         </p>
       )}
-      <div className="overflow-hidden rounded-lg border bg-zinc-500 p-2">
+      <div
+        className="relative overflow-hidden rounded-lg border bg-zinc-500 p-2"
+        onMouseMove={(event) => {
+          const frame = event.currentTarget.getBoundingClientRect()
+          setPointer({
+            x: event.clientX - frame.left,
+            y: event.clientY - frame.top,
+            w: frame.width,
+            h: frame.height,
+          })
+        }}
+        onMouseLeave={() => setPointer(undefined)}
+      >
         <svg
           viewBox={viewBox}
           className="mx-auto block h-auto max-h-[70vh] w-full"
@@ -257,6 +272,21 @@ export function CityMap({
             )}
           </g>
         </svg>
+        {/* The hovered building's stats by the cursor, on the side with room */}
+        {hovered && pointer && (
+          <div
+            className="pointer-events-none absolute z-10"
+            style={{
+              left: pointer.x,
+              top: pointer.y,
+              transform: `translate(${pointer.x > pointer.w / 2 ? "calc(-100% - 12px)" : "12px"}, ${
+                pointer.y > pointer.h / 2 ? "calc(-100% - 12px)" : "12px"
+              })`,
+            }}
+          >
+            <CityStatsPreview row={hovered.row} name={hovered.name} />
+          </div>
+        )}
       </div>
     </div>
   )
