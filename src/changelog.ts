@@ -24,7 +24,7 @@ export const CHANGELOG: Release[] = [
     changes: [
       {
         fr: "Nouvelle section Événements : l'événement d'Halloween 2026 vu sur la bêta, avec sa date sur les serveurs officiels (30 octobre), ses quêtes principales et journalières traduites en français (le jour de chaque quête journalière), les récompenses de chaque palier, ses deux boutiques et une explication de son fonctionnement (roue, couteaux, tickets, tâches), d'après foebeta.com",
-        en: "New Events section: the Halloween 2026 event seen on the beta, with its start on the live servers (October 30), its main and daily quests (the day of each daily one) the prizes of each step, its two shops and how it works (wheel, knives, tickets, tasks), from foebeta.com",
+        en: "New Events section: the Halloween 2026 event seen on the beta, with its start on the live servers (October 30), its main and daily quests (the day of each daily one), the prizes of each step, its two shops and how it works (wheel, knives, tickets, tasks), from foebeta.com",
       },
       {
         fr: "Données : version du jeu 1.346, nouveaux bâtiments du wiki et bonus des Grands Monuments à jour",
