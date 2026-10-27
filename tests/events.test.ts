@@ -68,3 +68,29 @@ describe("event texts in French", () => {
     expect([...missing]).toEqual(["pay some coins"])
   })
 })
+
+describe("foebeta league tiers", () => {
+  const li = (count: number, name: string) =>
+    `<li><span>${count}x</span> <span>${name}</span><small>What it does</small></li>`
+  const html = `<article><h1>Halloween Event 2026</h1>
+<table><thead><tr><th>Hobby<br>Top 100% | Min. 0 pts</th><th>Silver<br>Top 5% | Min. 205 pts</th></tr></thead>
+<tr><td><ul>${li(1, "Lost Castle Upgrade Kit")}</ul></td>
+<td><ul><li><span>1x</span> <span>📦 Bronze League Reward</span>${li(1, "Lost Castle Upgrade Kit")}${li(1, "Thornhollow Woods")}</ul></td></tr></table>
+</article>`
+  const event = parseEvent(html, "https://foebeta.com/events/halloween-event-2026/")!
+
+  it("reads each tier's rank and rewards", () => {
+    expect(event.leagues).toEqual([
+      { name: "Hobby", top: 100, rewards: [{ count: 1, item: "Lost Castle Upgrade Kit" }] },
+      {
+        name: "Silver",
+        top: 5,
+        rewards: [
+          { count: 1, item: "Bronze League Reward" },
+          { count: 1, item: "Lost Castle Upgrade Kit" },
+          { count: 1, item: "Thornhollow Woods" },
+        ],
+      },
+    ])
+  })
+})

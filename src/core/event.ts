@@ -27,6 +27,14 @@ export type GameEvent = {
   // Event shops: what each sells and for how much of its currency (its icon's name,
   // "halloween event token common")
   shops?: EventShop[]
+  // League tiers: the share of players reaching each, and what it gives
+  leagues?: EventLeague[]
+}
+
+export type EventLeague = {
+  name: string
+  top: number
+  rewards: { count: number; item: string }[]
 }
 
 export type EventShop = {
@@ -59,7 +67,12 @@ export type EventPageQuest = { n: string; text: LocalizedName; reward: Localized
 export type EventPageRivalStep = EventPageQuest | { milestone: LocalizedName }
 
 // One event (public/data/events/<id>.json): texts translated, prizes linked to the site's pages
-export type EventPage = Omit<GameEvent, "quests" | "prizes" | "shops"> & {
+export type EventPage = Omit<GameEvent, "quests" | "prizes" | "shops" | "leagues"> & {
+  leagues: {
+    name: LocalizedName
+    top: number
+    rewards: { count: number; item: EventPrize }[]
+  }[]
   live?: EventLive
   shops: {
     name: LocalizedName

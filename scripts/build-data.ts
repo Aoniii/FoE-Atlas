@@ -593,6 +593,14 @@ for (const file of existsSync(EVENTS) ? readdirSync(EVENTS) : []) {
         currency: translate(offer.currency),
       })),
     })),
+    // Each tier lists the boxes of the tiers below and their content: the content is kept
+    leagues: (event.leagues ?? []).map((league) => ({
+      name: translate(league.name),
+      top: league.top,
+      rewards: league.rewards
+        .filter((reward) => !/League Reward$/i.test(reward.item))
+        .map((reward) => ({ count: reward.count, item: eventPrize(reward.item) })),
+    })),
     ...(eventGuides[event.id] && { guide: eventGuides[event.id] }),
   }
   // Pictured by its first building prize

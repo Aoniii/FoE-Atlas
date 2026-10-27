@@ -6,7 +6,7 @@
 //   articles listed on https://foebeta.com/events/)
 
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs"
-import type { EventQuest, GameEvent, RivalStep } from "../src/core/event"
+import type { EventLeague, EventQuest, GameEvent, RivalStep } from "../src/core/event"
 import { EVENTS } from "../src/core/events"
 
 const CACHE = "scripts/.cache/events"
@@ -91,6 +91,38 @@ const questRows = (rows: string[][]): EventQuest[] =>
     QUEST_NUMBER.test(n ?? "") && text ? [{ n, text, reward: reward ?? "" }] : [],
   )
 
+// League tiers: header cells "Gold Top 1% | Min. 274 pts" (points seen on the beta, not
+// kept), the cell below listing its rewards
+// ("1x" and the name, a description apart)
+function leagues(article: string): EventLeague[] {
+  const found: EventLeague[] = []
+  for (const [table] of article.matchAll(/<table[\s\S]*?<\/table>/g)) {
+    const heads = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map(([, cell]) =>
+      cellText(cell),
+    )
+    const tiers = heads.map((head) => head.match(/^(.+?) Top (\d+)% \| Min\. ([\d,]+) pts$/))
+    if (!tiers.length || tiers.some((tier) => !tier)) continue
+    const cells = [...table.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(([, cell]) => cell)
+    tiers.forEach((tier, index) => {
+      // Split at each item: the boxes of lower tiers leave theirs unclosed
+      const rewards = (cells[index] ?? "")
+        .split(/<li[^>]*>/)
+        .slice(1)
+        .flatMap((item) => {
+          const text = cellText(item.replace(/<small[\s\S]*?<\/small>/g, ""))
+          const reward = text.match(/^(\d+)x\s+(.+)$/)
+          return reward ? [{ count: Number(reward[1]), item: reward[2].replace(/^📦\s*/, "") }] : []
+        })
+      found.push({
+        name: tier![1],
+        top: Number(tier![2]),
+        rewards,
+      })
+    })
+  }
+  return found
+}
+
 export function parseEvent(html: string, url: string): GameEvent | undefined {
   const article = html.match(/<article[\s\S]*?<\/article>/)?.[0] ?? html
   const title = cellText(article.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? "")
@@ -149,6 +181,8 @@ export function parseEvent(html: string, url: string): GameEvent | undefined {
       }
     }
   }
+  const tiers = leagues(article)
+  if (tiers.length) event.leagues = tiers
   return event
 }
 

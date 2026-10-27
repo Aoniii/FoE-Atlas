@@ -5,6 +5,16 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.14",
+    date: "2026-10-27",
+    changes: [
+      {
+        fr: "Événements : récompenses de ligue (de Loisir à Or, avec la part de joueurs de chaque ligue), et explication du fonctionnement vérifiée avec l'article officiel d'InnoGames (roue partagée, renouvellement automatique, tâches du jour doublées, boutique du clown qui se renouvelle)",
+        en: "Events: league rewards (Hobby to Gold, with each league's share of players), and the guide checked against InnoGames' official article (shared wheel, automatic refresh, doubled daily tasks, the clown's shop refreshing)",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.13",
     date: "2026-10-26",
     changes: [

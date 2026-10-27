@@ -11,7 +11,7 @@ export const Route = createFileRoute("/allies/$id")({
     level: z.coerce.number().int().positive().optional().catch(undefined),
     // Event the page was opened from (its prizes), for the back link
     event: z.string().optional().catch(undefined),
-    eventTab: z.enum(["prizes", "shops"]).optional().catch(undefined),
+    eventTab: z.enum(["prizes", "shops", "leagues"]).optional().catch(undefined),
   }),
   loader: async ({ params }) => {
     try {

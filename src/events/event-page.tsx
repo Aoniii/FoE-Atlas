@@ -4,7 +4,7 @@ import type { EventGuide, EventPage, EventPageRivalStep, EventPrize } from "@/co
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { formatNumber } from "@/wiki/format"
-import { rememberEventScroll, useRestoredEventScroll } from "./back-to-event"
+import { rememberEventScroll, useRestoredEventScroll, type EventTab } from "./back-to-event"
 import { eventDate, eventTime, eventTitle, questDay } from "./format"
 
 const route = getRouteApi("/events/$id")
@@ -14,7 +14,7 @@ const backClass =
 const cellClass = "border-b px-3 py-2 align-top"
 const headClass = "border-b px-3 py-2 text-left font-medium"
 
-type Tab = "guide" | "main" | "daily" | "rival" | "prizes" | "shops"
+type Tab = "guide" | "main" | "daily" | "rival" | "prizes" | "shops" | "leagues"
 
 // One event: its quests, its rival quests (when it has some) and its prize lane
 export function EventPage() {
@@ -27,6 +27,7 @@ export function EventPage() {
     ...(event.quests.rival.length ? (["rival"] as const) : []),
     "prizes",
     ...(event.shops.length ? (["shops"] as const) : []),
+    ...(event.leagues.length ? (["leagues"] as const) : []),
   ]
   const search = route.useSearch()
   const navigate = route.useNavigate()
@@ -96,6 +97,7 @@ export function EventPage() {
       {tab === "rival" && <QuestTable quests={event.quests.rival} />}
       {tab === "guide" && event.guide && <Guide guide={event.guide} />}
       {tab === "shops" && <Shops event={event.id} shops={event.shops} />}
+      {tab === "leagues" && <Leagues event={event.id} leagues={event.leagues} />}
       {tab === "prizes" && (
         <PrizeTable event={event.id} lanes={event.prizes.lanes} steps={event.prizes.steps} />
       )}
@@ -246,9 +248,52 @@ function Shops({ event, shops }: { event: string; shops: EventPage["shops"] }) {
   )
 }
 
+// League tiers, lowest first: the share of players reaching each, then what it gives on top
+// of the tier below
+function Leagues({ event, leagues }: { event: string; leagues: EventPage["leagues"] }) {
+  const { t, locale } = useI18n()
+  const key = (reward: EventPage["leagues"][number]["rewards"][number]) =>
+    `${reward.count}×${reward.item.text.en}`
+  return (
+    <div className="flex flex-col gap-3">
+      <p className="text-sm text-muted-foreground">{t.events.leaguesNote}</p>
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {leagues.map((league, index) => {
+          const below = leagues[index - 1]
+          const known = new Set(below?.rewards.map(key))
+          const added = league.rewards.filter((reward) => !known.has(key(reward)))
+          return (
+            <section key={league.name.en} className="flex flex-col gap-2 rounded-lg border p-4">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h2 className="font-medium">{localized(league.name, locale)}</h2>
+                <span className="text-xs text-muted-foreground">
+                  {t.events.leagueRank.replace("{top}", formatNumber(league.top, locale))}
+                </span>
+              </div>
+              <ul className="flex flex-col gap-2 text-sm">
+                {added.map((reward, k) => (
+                  <li key={k} className="flex items-center gap-2">
+                    {reward.count > 1 && <span className="font-mono">{reward.count} ×</span>}
+                    <Prize prize={reward.item} event={event} tab="leagues" />
+                  </li>
+                ))}
+              </ul>
+              {below && (
+                <p className="text-xs text-muted-foreground">
+                  {t.events.leagueBelow.replace("{league}", localized(below.name, locale))}
+                </p>
+              )}
+            </section>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 // A prize: its building or item (picture, name in the site's language, link to its page),
 // else the source's text. Fragments keep their count ("50 ×")
-function Prize({ prize, event, tab }: { prize: EventPrize; event: string; tab?: "shops" }) {
+function Prize({ prize, event, tab }: { prize: EventPrize; event: string; tab?: EventTab }) {
   const { locale } = useI18n()
   const { link } = prize
   if (!link) return <span>{localized(prize.text, locale)}</span>

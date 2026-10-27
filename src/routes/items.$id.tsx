@@ -8,7 +8,7 @@ export const Route = createFileRoute("/items/$id")({
   validateSearch: z.object({
     // Event the page was opened from (its prizes), for the back link
     event: z.string().optional().catch(undefined),
-    eventTab: z.enum(["prizes", "shops"]).optional().catch(undefined),
+    eventTab: z.enum(["prizes", "shops", "leagues"]).optional().catch(undefined),
   }),
   loader: async ({ params }) => {
     try {

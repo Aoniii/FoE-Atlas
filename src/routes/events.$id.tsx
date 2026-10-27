@@ -7,7 +7,10 @@ import { DataNotFoundError, fetchEvent } from "@/wiki/data"
 export const Route = createFileRoute("/events/$id")({
   // Open tab, kept in the URL so the way back from a prize lands on it
   validateSearch: z.object({
-    tab: z.enum(["guide", "main", "daily", "rival", "prizes", "shops"]).optional().catch(undefined),
+    tab: z
+      .enum(["guide", "main", "daily", "rival", "prizes", "shops", "leagues"])
+      .optional()
+      .catch(undefined),
   }),
   loader: async ({ params }) => {
     try {

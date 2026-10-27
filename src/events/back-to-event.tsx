@@ -6,7 +6,7 @@ import { useI18n } from "@/lib/i18n"
 const backClass =
   "inline-flex w-fit items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
 
-export type EventTab = "prizes" | "shops"
+export type EventTab = "prizes" | "shops" | "leagues"
 
 // The event a page was opened from (a prize or a shop offer), carried from link to link
 export type EventOrigin = { event?: string; eventTab?: EventTab }
