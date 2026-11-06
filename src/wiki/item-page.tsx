@@ -3,7 +3,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import type { ItemBuilding, ItemCard } from "@/core/game-item"
 import { Badge } from "@/components/ui/badge"
 import { localized, useI18n } from "@/lib/i18n"
-import { BackToEvent, type EventOrigin } from "@/events/back-to-event"
+import { BackToEvent } from "@/events/back-to-event"
+import type { EventOrigin } from "@/events/event-origin"
 import { ItemRarity } from "./item-grid"
 
 const route = getRouteApi("/items/$id")

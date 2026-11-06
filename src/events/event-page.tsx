@@ -4,7 +4,7 @@ import type { EventGuide, EventPage, EventPageRivalStep, EventPrize } from "@/co
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import { formatNumber } from "@/wiki/format"
-import { rememberEventScroll, useRestoredEventScroll, type EventTab } from "./back-to-event"
+import { rememberEventScroll, useRestoredEventScroll, type EventTab } from "./event-origin"
 import { eventDate, eventTime, eventTitle, questDay } from "./format"
 
 const route = getRouteApi("/events/$id")
