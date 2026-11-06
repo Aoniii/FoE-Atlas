@@ -211,48 +211,46 @@
   },
   "greatBuilding": {
     "allAges": "Tous les âges",
-    "levels": "Niveaux",
     "level": "Niveau",
     "cost": "Coût (PF)",
     "totalCost": "Coût cumulé (PF)",
     "boosts": "Bonus",
     "atLevel": "Au niveau {level}",
-    "available": "Bonus du wiki officiel jusqu'au niveau {count}. Au-delà, ils sont calculés (≈) : avec la formule exacte de leur progression quand elle existe, sinon avec une courbe approchée calée sur les niveaux connus.",
+    "available": "Valeurs du jeu depuis la refonte du prestige : exactes aux paliers que le jeu envoie (niveaux 1, 101, 200, 301, 401, 500), à une unité près entre deux. Les bonus cuivre montent jusqu'au niveau 200, les bonus or du niveau 101 au 500. Niveau maximum de ce GM : {level}.",
     "loading": "Chargement du Grand Monument…",
     "notFound": "Ce Grand Monument n'existe pas.",
-    "computed": "≈ : valeur calculée, non vérifiée en jeu",
-    "manualNote": "Certains bonus de ce GM sont calculés avec une formule approchée (à ±0,1 près), calée sur des valeurs relevées en jeu : les niveaux relevés affichent la valeur exacte.",
-    "readingsNote": "Les bonus des niveaux 81 à {level} viennent de relevés de joueurs rassemblés par FOE Assistant (foe-assistant.com), quand ils sont connus.",
-    "beta": "Sur la bêta",
-    "betaNote": "Refonte du prestige, d'après les données du serveur bêta : les bonus cuivre montent jusqu'au niveau 200, les bonus or (21 GM) du niveau 101 au 500. Valeurs exactes aux niveaux 1, 101, 201, 301, 401 et 500, très proches entre deux (courbe mesurée en jeu) ; coûts approchés (≈). Niveau maximum de ce GM : {level}.",
-    "betaUnlock": "Débloqué au niveau {level}",
-    "betaWarning": "Attention : les données de la bêta sont très volatiles et changent très souvent, elles peuvent ne plus correspondre à ce que tu vois en jeu.",
-    "betaBadgeTitle": {
-      "gold": "Ce monument a le rang or sur la bêta (refonte du prestige)",
-      "copper": "Ce monument reste au rang cuivre sur la bêta (refonte du prestige), niveau maximum 200"
-    },
     "tiers": {
       "copper": "Cuivre",
       "gold": "Or"
-    }
+    },
+    "unlock": "Débloqué au niveau {level}",
+    "tierTitle": {
+      "gold": "Grand Monument or : niveaux 1 à 500, bonus or à partir du niveau 101",
+      "copper": "Grand Monument cuivre seul : niveau maximum 200"
+    },
+    "noData": "Pas encore de données de la refonte du prestige pour ce Grand Monument."
   },
   "rush": {
     "title": "Rush",
-    "intro": "Ce que te coûte la montée du GM quand tu ouvres les places P1 à P5 aux autres joueurs, avec leur bonus d'Arche.",
+    "intro": "Ce que te coûte la montée du GM quand tu ouvres les places aux autres joueurs, avec leur bonus d'Arche : 5 places sur les niveaux cuivre, 7 sur les niveaux or (à partir de 101) d'un GM or.",
     "from": "Niveau actuel",
     "to": "Niveau visé",
     "place": "P{n}",
     "open": "Ouverte",
-    "arc": "Bonus d'Arche (%)",
+    "arc": "Arche cuivre (%)",
     "levelsCost": "Coût des niveaux",
     "patrons": "Apporté par les places",
     "own": "À ta charge",
-    "estimated": "Certaines récompenses sont estimées (±5 PF) : FoE Helper n'a pas encore de relevé pour ces niveaux.",
-    "maxLevel": "Niveau maximum calculable : {level}",
+    "maxLevel": "Niveau maximum : {level}",
     "detail": "Détail par niveau",
     "level": "Niveau",
     "cost": "Coût",
-    "source": "Récompenses des places : FoE Helper"
+    "source": "Coûts et récompenses des places : règles de la refonte du prestige, d'après FoE Helper.",
+    "arcGold": "Arche or (%)",
+    "copy": "Copier le niveau",
+    "copyAll": "Copier tous les niveaux",
+    "copied": "Copié",
+    "colon": " : "
   },
   "changelog": {
     "title": "Changelog",

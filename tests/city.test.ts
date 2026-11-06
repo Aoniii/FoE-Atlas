@@ -210,14 +210,31 @@ describe("Great Buildings in the city", () => {
     image: "https://foeen.innogamescdn.com/assets/city/buildings/X_SS_FutureEra_Landmark1-abc.png",
     size: { w: 7, h: 5 },
     road: "road",
-    levels: {
+    prestige: {
+      gameId: "X_FutureEra_Landmark1",
+      maxLevel: 500,
+      firstTenCosts: [],
       columns: [
-        { label: { fr: "Ressources de la guilde", en: "Guild Goods" } },
-        { label: { fr: "Bonus de contribution", en: "Contribution Boost" } },
-      ],
-      rows: [
-        { level: 1, values: ["10", "20%"] },
-        { level: 80, values: ["120", "90%"] },
+        {
+          bonus: "clan_goods",
+          context: "all",
+          tier: "copper",
+          percent: false,
+          milestones: [
+            { level: 1, value: 10 },
+            { level: 80, value: 120 },
+          ],
+        },
+        {
+          bonus: "contribution_boost",
+          context: "all",
+          tier: "copper",
+          percent: true,
+          milestones: [
+            { level: 1, value: 20 },
+            { level: 80, value: 90 },
+          ],
+        },
       ],
     },
   } as unknown as GreatBuilding

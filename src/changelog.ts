@@ -5,6 +5,24 @@ export type Release = { version: string; date: string; changes: Localized[] }
 
 export const CHANGELOG: Release[] = [
   {
+    version: "1.0.0-alpha.15",
+    date: "2026-11-06",
+    changes: [
+      {
+        fr: "Grands Monuments : passage à la refonte du prestige, en place sur les serveurs depuis le 5 novembre. Chaque GM affiche les valeurs du jeu (bonus cuivre jusqu'au niveau 200, bonus or du niveau 101 au 500), ses coûts exacts en PF et ses bonus dans le même ordre partout ; la section bêta, l'ancien tableau du wiki et les relevés au-delà du niveau 80 disparaissent",
+        en: "Great Buildings: moved to the prestige rework, live since November 5. Each GB shows the game's values (copper bonuses up to level 200, Gold bonuses from level 101 to 500), its exact FP costs and its bonuses in the same order everywhere; the beta section, the wiki's old level table and the readings past level 80 are gone",
+      },
+      {
+        fr: "Rush : nouvelles récompenses des places (5 places sur les niveaux cuivre, 7 sur les niveaux or), avec un bonus d'Arche cuivre et un bonus d'Arche or, d'après les règles de FoE Helper ; bouton pour copier les récompenses d'un niveau ou de tous les niveaux",
+        en: "Rush: the new place rewards (5 places on copper levels, 7 on Gold levels), with a copper and a Gold Arc bonus, from FoE Helper's rules; buttons to copy the rewards of one level or every level",
+      },
+      {
+        fr: "Ville et comparaison : les Grands Monuments comptent avec leurs nouvelles valeurs",
+        en: "City and comparison: Great Buildings count with their new values",
+      },
+    ],
+  },
+  {
     version: "1.0.0-alpha.14",
     date: "2026-10-27",
     changes: [

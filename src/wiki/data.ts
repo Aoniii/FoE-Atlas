@@ -4,7 +4,6 @@ import type { AgeBuilding, BuildingPage, BuildingType, StatBlock } from "@/core/
 import type { EventCard, EventPage } from "@/core/event"
 import type { ItemCard, ItemPage } from "@/core/game-item"
 import type { GreatBuilding, GreatBuildingCard } from "@/core/great-building"
-import type { RewardTables } from "@/core/rush"
 import {
   aggregateStats,
   score,
@@ -60,7 +59,6 @@ export const fetchEvents = () => fetchJson<EventCard[]>("events.json")
 export const fetchEvent = (id: string) =>
   fetchJson<EventPage>(`events/${encodeURIComponent(id)}.json`)
 export const fetchItem = (id: string) => fetchJson<ItemPage>(`items/${encodeURIComponent(id)}.json`)
-export const fetchGbRewards = () => fetchJson<RewardTables>("gb-rewards.json")
 export const fetchBuilding = (id: string) =>
   fetchJson<BuildingPage>(`buildings/${encodeURIComponent(id)}.json`)
 

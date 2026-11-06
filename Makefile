@@ -1,7 +1,7 @@
 PID_FILE := .dev.pid
 LOG_FILE := .dev.log
 
-.PHONY: dev stop format check test scraper gb-readings gb-beta game-data game-entities game-items
+.PHONY: dev stop format check test scraper gb-prestige gb-rewards game-data game-entities game-items
 
 # Start the Vite dev server in the background (own process group, so stop kills it all)
 dev:
@@ -53,14 +53,14 @@ test:
 scraper:
 	GAME_VERSION=$(GAME_VERSION) pnpm scrape $(ARGS)
 
-# Great Building bonuses beyond level 80 from foe-assistant.com into data/ (after the scraper)
-gb-readings:
-	pnpm gb-readings
+# Great Buildings since the prestige rework (bonuses, first level costs) from a capture of
+# the live servers cleaned by `pnpm har-extract <file.har> live` into data/ (after the scraper)
+gb-prestige:
+	pnpm gb-prestige
 
-# Great Buildings of the beta server (prestige rework) from a capture cleaned by
-# `pnpm har-extract <file.har> beta` into data/ (after the scraper)
-gb-beta:
-	pnpm gb-beta
+# Great Building level costs past 10 from FoE Helper into data/gb-rewards.json
+gb-rewards:
+	pnpm gb-rewards
 
 # Every building of the game into data/game-buildings.json: the definitions of
 # `make game-entities`, then FoE Helper city exports (City map > Download) in

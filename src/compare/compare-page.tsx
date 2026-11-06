@@ -5,7 +5,12 @@ import { AGES, LATEST_AGE, type AgeId } from "@/core/ages"
 import type { BuildingPage } from "@/core/building"
 import { aggregateStats, score, tileCount } from "@/core/efficiency"
 import { GB_MAX_LEVEL, type GreatBuilding } from "@/core/great-building"
-import { levelCost } from "@/core/rush"
+import {
+  bonusLabel,
+  prestigeCostAt,
+  prestigeValueAt,
+  type PrestigeColumn,
+} from "@/core/gb-prestige"
 import { STAT_GROUPS, STAT_KEYS, STATS, type StatGroup } from "@/core/stats"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -19,7 +24,8 @@ import {
 import { getPreferredAge, setPreferredAge } from "@/lib/age-preference"
 import { localized, useI18n } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
-import { formatNumber, formatStat, formatValue, fullStatLabel, longStatLabel } from "@/wiki/format"
+import { formatNumber, formatStat, fullStatLabel, longStatLabel } from "@/wiki/format"
+import { TierChip } from "@/wiki/great-building-page"
 import { ScorePill } from "@/wiki/score-pill"
 import { useBoostBases, useScoreKeys } from "@/wiki/score-settings"
 import { StatIcon } from "@/wiki/stat-icon"
@@ -286,21 +292,29 @@ function GreatBuildingsCompare({
   const level = Math.min(search.level ?? 10, GB_MAX_LEVEL)
 
   const columns = items.map((gb) => {
-    const firstTen = gb.levels.rows.filter((r) => r.level <= 10).map((r) => r.cost ?? 0)
-    let total = 0
-    for (let l = 1; l <= level; l++) total += levelCost(firstTen, l)
-    const row = gb.levels.rows.find((r) => r.level === level)
-    return { gb, cost: levelCost(firstTen, level), total, row }
+    const prestige = gb.prestige
+    const reached = !!prestige && level <= prestige.maxLevel
+    let total: number | undefined = 0
+    for (let l = 1; l <= level && total !== undefined; l++) {
+      const c = reached ? prestigeCostAt(prestige!, l) : undefined
+      total = c === undefined ? undefined : total + c
+    }
+    return { gb, cost: reached ? prestigeCostAt(prestige!, level) : undefined, total }
   })
-  // Every bonus of every Great Building, by English label
+  // Every bonus of every Great Building: one row per game bonus, place and tier
+  const key = (c: PrestigeColumn) => `${c.tier}/${c.bonus}/${c.context}`
   const bonuses = [
     ...new Map(
-      items.flatMap((gb) => gb.levels.columns.map((c) => [c.label.en, c] as const)),
+      items.flatMap((gb) => (gb.prestige?.columns ?? []).map((c) => [key(c), c] as const)),
     ).values(),
-  ]
-  const cell = (gb: GreatBuilding, values: string[] | undefined, label: string) => {
-    const index = gb.levels.columns.findIndex((c) => c.label.en === label)
-    return index === -1 ? undefined : values?.[index] || undefined
+  ].sort((a, b) => Number(a.tier === "gold") - Number(b.tier === "gold"))
+  const cell = (gb: GreatBuilding, bonus: PrestigeColumn) => {
+    const column = gb.prestige?.columns.find((c) => key(c) === key(bonus))
+    if (!column || level > (gb.prestige?.maxLevel ?? 0)) return "–"
+    const value = prestigeValueAt(column, level)
+    if (!value) return "–"
+    const text = `${formatNumber(value.value, locale, 2)}${column.percent ? " %" : ""}`
+    return value.count === undefined ? text : `${formatNumber(value.count, locale)} × ${text}`
   }
 
   return (
@@ -361,18 +375,16 @@ function GreatBuildingsCompare({
             <CostRow label={t.greatBuilding.cost} values={columns.map((c) => c.cost)} />
             <CostRow label={t.greatBuilding.totalCost} values={columns.map((c) => c.total)} />
             {bonuses.map((bonus) => (
-              <tr key={bonus.label.en} className="border-b last:border-0">
+              <tr key={key(bonus)} className="border-b last:border-0">
                 <td className="px-3 py-2 text-muted-foreground">
                   <span className="inline-flex items-center gap-1.5">
-                    {bonus.icon && (
-                      <img src={bonus.icon} alt="" className="size-4 object-contain" />
-                    )}
-                    <span className="truncate">{localized(bonus.label, locale)}</span>
+                    <TierChip tier={bonus.tier} />
+                    <span className="truncate">{bonusLabel(bonus, locale)}</span>
                   </span>
                 </td>
-                {columns.map(({ gb, row }) => (
+                {columns.map(({ gb }) => (
                   <td key={gb.id} className="px-3 py-2 text-center">
-                    {formatValue(cell(gb, row?.values, bonus.label.en), locale)}
+                    {cell(gb, bonus)}
                   </td>
                 ))}
               </tr>
@@ -383,8 +395,9 @@ function GreatBuildingsCompare({
     </>
   )
 
-  function CostRow({ label, values }: { label: string; values: number[] }) {
-    const best = Math.min(...values)
+  function CostRow({ label, values }: { label: string; values: (number | undefined)[] }) {
+    const known = values.filter((value): value is number => value !== undefined)
+    const best = Math.min(...known)
     return (
       <tr className="border-b">
         <td className="px-3 py-2 text-muted-foreground">{label}</td>
@@ -394,11 +407,11 @@ function GreatBuildingsCompare({
             className={cn(
               "px-3 py-2 text-center",
               value === best &&
-                values.length > 1 &&
+                known.length > 1 &&
                 "font-semibold text-green-600 dark:text-green-400",
             )}
           >
-            {formatNumber(value, locale)}
+            {value === undefined ? "–" : formatNumber(value, locale)}
           </td>
         ))}
       </tr>

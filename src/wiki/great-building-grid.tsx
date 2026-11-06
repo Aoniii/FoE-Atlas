@@ -35,17 +35,17 @@ export function GreatBuildingGrid({ cards }: { cards: GreatBuildingCard[] }) {
               className="absolute top-2 right-2"
               item={{ kind: "great_building", id: card.id, name: card.name, image: card.image }}
             />
-            {card.betaTier && (
+            {card.tier && (
               <span
-                title={t.greatBuilding.betaBadgeTitle[card.betaTier]}
+                title={t.greatBuilding.tierTitle[card.tier]}
                 className={cn(
                   "absolute top-2 left-2 rounded px-1.5 py-0.5 text-[0.7rem] font-medium",
-                  card.betaTier === "gold"
+                  card.tier === "gold"
                     ? "bg-yellow-400 text-yellow-950"
                     : "bg-orange-700/80 text-white",
                 )}
               >
-                {t.greatBuilding.tiers[card.betaTier]}
+                {t.greatBuilding.tiers[card.tier]}
               </span>
             )}
             <span className="font-medium">{localized(card.name, locale)}</span>

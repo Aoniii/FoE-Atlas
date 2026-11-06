@@ -211,48 +211,46 @@
   },
   "greatBuilding": {
     "allAges": "All ages",
-    "levels": "Levels",
     "level": "Level",
     "cost": "Cost (FP)",
     "totalCost": "Total cost (FP)",
     "boosts": "Boosts",
     "atLevel": "At level {level}",
-    "available": "Bonuses from the official wiki up to level {count}. Beyond, they are computed (≈): with the exact formula of their progression when there is one, otherwise with an approximate curve fitted on the known levels.",
+    "available": "Game values since the prestige rework: exact at the breakpoints the game sends (levels 1, 101, 200, 301, 401, 500), within one in between. Copper bonuses grow up to level 200, Gold bonuses from level 101 to 500. Highest level of this GB: {level}.",
     "loading": "Loading the Great Building…",
     "notFound": "This Great Building does not exist.",
-    "computed": "≈: computed value, not checked in game",
-    "manualNote": "Some bonuses of this GB are computed with an approximate formula (within ±0.1), fitted on values read in game: the levels read show the exact value.",
-    "readingsNote": "Bonuses from level 81 to {level} come from players' readings collected by FOE Assistant (foe-assistant.com), where known.",
-    "beta": "On the beta",
-    "betaNote": "Prestige rework, from the beta server's data: copper bonuses grow up to level 200, gold bonuses (21 GBs) from level 101 to 500. Exact values at levels 1, 101, 201, 301, 401 and 500, very close in between (curve measured in game); approximate costs (≈). Max level of this GB: {level}.",
-    "betaUnlock": "Unlocks at level {level}",
-    "betaWarning": "Warning: beta data is very volatile and changes very often, it may no longer match what you see in game.",
-    "betaBadgeTitle": {
-      "gold": "This Great Building has the gold tier on the beta (prestige rework)",
-      "copper": "This Great Building stays at the copper tier on the beta (prestige rework), max level 200"
-    },
     "tiers": {
       "copper": "Copper",
       "gold": "Gold"
-    }
+    },
+    "unlock": "Unlocked at level {level}",
+    "tierTitle": {
+      "gold": "Gold Great Building: levels 1 to 500, Gold bonuses from level 101",
+      "copper": "Copper-only Great Building: highest level 200"
+    },
+    "noData": "No prestige rework data for this Great Building yet."
   },
   "rush": {
     "title": "Rush",
-    "intro": "What leveling the GB costs you when you give places P1 to P5 to other players, with their Arc bonus.",
+    "intro": "What leveling the GB costs you when you open the places to other players, with their Arc bonus: 5 places on copper levels, 7 on the Gold levels (from 101) of a Gold GB.",
     "from": "Current level",
     "to": "Target level",
     "place": "P{n}",
     "open": "Open",
-    "arc": "Arc bonus (%)",
+    "arc": "Copper Arc (%)",
     "levelsCost": "Levels cost",
     "patrons": "Brought by the places",
     "own": "Your share",
-    "estimated": "Some rewards are estimated (±5 FP): FoE Helper has no record for these levels yet.",
-    "maxLevel": "Highest level available: {level}",
+    "maxLevel": "Highest level: {level}",
     "detail": "Details per level",
     "level": "Level",
     "cost": "Cost",
-    "source": "Place rewards: FoE Helper"
+    "source": "Level costs and place rewards: the prestige rework rules, from FoE Helper.",
+    "arcGold": "Gold Arc (%)",
+    "copy": "Copy the level",
+    "copyAll": "Copy every level",
+    "copied": "Copied",
+    "colon": ": "
   },
   "changelog": {
     "title": "Changelog",

@@ -15,15 +15,14 @@ of the License, or (at your option) any later version. See [LICENSE](LICENSE).
   [FoE Helper](https://github.com/mainIine/foe-helfer-extension) (`city-buildings.js`), licensed
   under the GNU AGPL v3. English and French names and pictures come from the official wiki
   (`data/wiki-pages.json`, `pnpm wiki-pages`).
-- **Great Building patron rewards** (`data/gb-rewards.json`) and the rush calculation rules come
-  from [FoE Helper](https://github.com/mainIine/foe-helfer-extension), licensed under the
-  GNU AGPL v3. Refresh them with `pnpm gb-rewards`.
-- **Great Building bonuses beyond level 80** (`data/gb-readings.json`) come from
-  [FOE Assistant](https://foe-assistant.com). Refresh them with `pnpm gb-readings`.
-- **Great Buildings of the beta server** (`data/gb-beta.json`, prestige rework) come from the
-  game's own data, read in a network capture of the beta (`pnpm har-extract`, then
-  `pnpm gb-beta`). Values between milestone levels and level costs are measured approximations.
-  Their icons (`public/beta-icons/`) are cut from the game's icon sheet by `pnpm gb-beta`.
+- **Great Buildings since the prestige rework** (`data/gb-prestige.json`: bonuses at the game's
+  breakpoints, first level costs) come from the game's own data, read in a network capture of
+  the live servers (`pnpm har-extract`, then `pnpm gb-prestige`). Their icons
+  (`public/bonus-icons/`) are cut from the game's icon sheet by `pnpm gb-prestige`.
+- **Great Building level costs, patron rewards and bonus curve** follow the rules of
+  [FoE Helper](https://github.com/mainIine/foe-helfer-extension) (`src/core/gb-prestige.ts`; the
+  cost steps of each building in `data/gb-rewards.json`, `pnpm gb-rewards`), licensed under the
+  GNU AGPL v3.
 - **Historical allies** (`data/allies.json`: boosts, production and limited bonuses by
   rarity and level) come from the game's own definitions, read in a network capture of the
   live servers (`pnpm har-extract`, then `pnpm allies`), and from the official Forge of

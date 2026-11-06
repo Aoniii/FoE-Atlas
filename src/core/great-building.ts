@@ -1,8 +1,9 @@
 import { z } from "zod"
 import { AgeIdSchema, LocalizedSchema, RoadSchema, SizeSchema } from "./building"
-import { BetaGreatBuildingSchema, type BetaTier } from "./gb-beta"
+import { PrestigeSchema, type PrestigeTier } from "./gb-prestige"
 
-// Great Buildings: one page per building, stats per level (not per age)
+// Great Buildings: one page per building, stats per level (not per age). Names, picture,
+// description and copper bonus texts from the wiki; values from the game (prestige)
 export const GreatBuildingSchema = z.object({
   id: z.string().min(1),
   name: LocalizedSchema,
@@ -19,35 +20,34 @@ export const GreatBuildingSchema = z.object({
       text: z.object({ fr: z.string(), en: z.string() }),
     }),
   ),
-  // Level table as on the wiki: one column per bonus, raw values ("1,100", "12%")
-  levels: z.object({
-    columns: z.array(
-      z.object({ icon: z.url().optional(), label: z.object({ fr: z.string(), en: z.string() }) }),
-    ),
-    rows: z.array(
-      z.object({
-        level: z.number().int().positive(),
-        cost: z.number().optional(),
-        values: z.array(z.string()),
-        // Beyond the wiki: cost from the game formula, bonuses from a fitted progression
-        computed: z.boolean().optional(),
-      }),
-    ),
-  }),
+  // Level table of the wiki, from before the prestige rework: kept in data/great-buildings,
+  // left out of the site
+  levels: z
+    .object({
+      columns: z.array(
+        z.object({ icon: z.url().optional(), label: z.object({ fr: z.string(), en: z.string() }) }),
+      ),
+      rows: z.array(
+        z.object({
+          level: z.number().int().positive(),
+          cost: z.number().optional(),
+          values: z.array(z.string()),
+        }),
+      ),
+    })
+    .optional(),
   sourceUrl: z.url().optional(),
-  // Highest level with bonuses read on foe-assistant.com (set by build-data)
-  readingsUpTo: z.number().optional(),
-  // Same building on the beta server (set by build-data from data/gb-beta.json)
-  beta: BetaGreatBuildingSchema.optional(),
+  // Bonuses, costs and levels since the prestige rework (set by build-data)
+  prestige: PrestigeSchema.optional(),
 })
 
 export type GreatBuilding = z.infer<typeof GreatBuildingSchema>
 
-// Highest level offered by the level picker and the rush calculator
+// Highest level of a Gold Great Building
 export const GB_MAX_LEVEL = 500
 
 // Light entry of the Great Buildings grid
 export type GreatBuildingCard = Pick<GreatBuilding, "id" | "name" | "image" | "age"> & {
-  // Highest tier on the beta server (prestige rework)
-  betaTier?: BetaTier
+  // Highest tier: copper (up to level 200) or gold (up to 500)
+  tier?: PrestigeTier
 }

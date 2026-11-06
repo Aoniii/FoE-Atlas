@@ -6,6 +6,7 @@ import type { AgeBuilding, StatBlock } from "./building"
 import { aggregateStats, score, tileCount, type BoostBases, type References } from "./efficiency"
 import type { GameBuilding, LinkRegion } from "./game-building"
 import { isCityBuilding, toGameBuilding, type Definition } from "./game-definitions"
+import { prestigeValueAt } from "./gb-prestige"
 import type { GreatBuilding } from "./great-building"
 import type { StatKey } from "./stats"
 
@@ -134,40 +135,53 @@ export function greatBuildingId(entity: CityEntity, assets: CityAssets): string 
   return assets.greatBuildings[entity.assetId ?? entity.id] ?? assets.greatBuildings[entity.id]
 }
 
-const number = (value: string | undefined) => {
-  const match = value?.match(/^([\d,]+(?:\.\d+)?)\s*%?$/)
-  return match ? Number(match[1].replace(/,/g, "")) : 0
-}
 const ARMY = {
-  attackers: ["atk_army_att_classic", "atk_army_def_classic"],
-  defenders: ["def_army_att_classic", "def_army_def_classic"],
+  attackers: ["atk_army_att", "atk_army_def"],
+  defenders: ["def_army_att", "def_army_def"],
 } as const
-// Great Building bonuses counted in the score, by the wiki's column name; the others
-// (contribution boost, first strike, plunder repel...) are not stats of the score
-const GB_STATS: Record<string, readonly StatKey[]> = {
-  Research: ["fp"],
-  "Guild Goods": ["guild_goods"],
-  "Good production": ["goods"],
-  "Previous Era Goods Production": ["goods_prev"],
-  "Coin production": ["coins"],
-  "Supply production": ["supplies"],
-  "Medal production": ["medals"],
-  Happiness: ["happiness"],
-  Population: ["population"],
-  "Attackers - Attack & Defense": ARMY.attackers,
-  "Defenders - Attack & Defense": ARMY.defenders,
-  "Attackers & Defenders - Attack & Defense": [...ARMY.attackers, ...ARMY.defenders],
+const CONTEXTS: Record<string, string> = {
+  all: "classic",
+  battleground: "gbg",
+  guild_expedition: "ge",
+  guild_raids: "qi",
+}
+const army = (sides: readonly string[], context: string) =>
+  sides.map((side) => `${side}_${CONTEXTS[context] ?? "classic"}` as StatKey)
+// Great Building bonuses counted in the score, by the game's name; the others (contribution
+// boost, first strike, the Gold multipliers of existing army bonuses...) are not stats of it
+const GB_STATS: Record<string, (context: string) => readonly StatKey[]> = {
+  strategy_points: () => ["fp"],
+  random_goods: () => ["goods"],
+  age_reserves: () => ["goods"],
+  previous_era_goods: () => ["goods_prev"],
+  special_goods: () => ["special_goods"],
+  clan_goods: () => ["guild_goods"],
+  clan_goods_extended: () => ["guild_goods"],
+  money: () => ["coins"],
+  supplies: () => ["supplies"],
+  medals: () => ["medals"],
+  happiness: () => ["happiness"],
+  population: () => ["population"],
+  penal_unit: () => ["units"],
+  goods_production_boost: () => ["goods_boost"],
+  supplies_boost: () => ["supplies_boost"],
+  money_boost: () => ["coins_boost"],
+  military_boost: (context) => (context === "all" ? army(ARMY.attackers, context) : []),
+  fierce_resistance: (context) => (context === "all" ? army(ARMY.defenders, context) : []),
+  advanced_tactics: (context) => army([...ARMY.attackers, ...ARMY.defenders], context),
 }
 
-// Stats of a Great Building at a level (its level table, extended past the wiki)
+// Stats of a Great Building at a level (prestige rework values)
 export function greatBuildingStats(gb: GreatBuilding, level: number): StatBlock {
-  const row = gb.levels.rows.find((r) => r.level === level) ?? gb.levels.rows.at(-1)
   const stats: StatBlock = {}
-  gb.levels.columns.forEach((column, index) => {
-    for (const key of GB_STATS[column.label.en] ?? []) {
-      stats[key] = (stats[key] ?? 0) + number(row?.values[index])
+  for (const column of gb.prestige?.columns ?? []) {
+    const value = prestigeValueAt(column, level)
+    // Charges ("6 x 64%") are chances, not amounts
+    if (!value || value.count !== undefined) continue
+    for (const key of GB_STATS[column.bonus]?.(column.context) ?? []) {
+      stats[key] = (stats[key] ?? 0) + value.value
     }
-  })
+  }
   return stats
 }
 

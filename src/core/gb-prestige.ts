@@ -1,129 +1,179 @@
-// Great Buildings on the beta server (prestige rework), from the game's own data
-// (data/gb-beta.json, see scripts/gb-beta.ts). Copper bonuses grow from level 1 to 200, Gold
-// bonuses from level 101 to 500. The game only sends each bonus's exact value at milestone
-// levels (1, 101, 201, 301, 401, 500): levels in between follow one shared curve, measured on
-// ~300 values read in game (exact for 4 values out of 5, within 0.5% otherwise).
+// Great Buildings since the prestige rework (live servers, November 5, 2026), from the
+// game's own data (data/gb-prestige.json, see scripts/gb-prestige.ts). Copper bonuses grow
+// from level 1 to 200, Gold bonuses from level 101 to 500. The game only sends each bonus's
+// exact value at a few breakpoints (1, 101, 200 or 201, 301, 401, 500); levels in between,
+// level costs and patron rewards follow FoE Helper's rules (AGPL-3.0, see NOTICE.md), which
+// reproduce the game and the costs InnoGames announced.
 
 import { z } from "zod"
 
-export const BetaTierSchema = z.enum(["copper", "gold"])
-export type BetaTier = z.infer<typeof BetaTierSchema>
+export const PrestigeTierSchema = z.enum(["copper", "gold"])
+export type PrestigeTier = z.infer<typeof PrestigeTierSchema>
 
 // "6 x 64%": count 6 (charges, units...), value 64
-export const BetaValueSchema = z.object({ count: z.number().optional(), value: z.number() })
-export type BetaValue = z.infer<typeof BetaValueSchema>
+export const PrestigeValueSchema = z.object({ count: z.number().optional(), value: z.number() })
+export type PrestigeValue = z.infer<typeof PrestigeValueSchema>
 
-export const BetaColumnSchema = z.object({
-  // Game names ("clan_goods", "guild_expedition"), see BETA_BONUSES
+export const PrestigeColumnSchema = z.object({
+  // Game names ("clan_goods", "guild_expedition"), see BONUS_NAMES
   bonus: z.string(),
   context: z.string(),
-  tier: BetaTierSchema,
+  tier: PrestigeTierSchema,
   percent: z.boolean(),
-  // File in public/beta-icons/, from the game's icon sheet
+  // File in public/bonus-icons/, from the game's icon sheet
   icon: z.string().optional(),
-  // Exact values at the milestone levels, in level order
+  // Exact values at the breakpoints, in level order
   milestones: z.array(
-    z.object({ level: z.number().int().positive() }).extend(BetaValueSchema.shape),
+    z.object({ level: z.number().int().positive() }).extend(PrestigeValueSchema.shape),
   ),
 })
-export type BetaColumn = z.infer<typeof BetaColumnSchema>
+export type PrestigeColumn = z.infer<typeof PrestigeColumnSchema>
 
-export const BetaGreatBuildingSchema = z.object({
+export const PrestigeSchema = z.object({
+  // Game id ("X_IronAge_Landmark2")
+  gameId: z.string(),
   maxLevel: z.number().int().positive(),
-  // FP cost of level 1 (levels 1 to 10 cost 1x to 10x that)
-  firstLevelCost: z.number().positive(),
-  columns: z.array(BetaColumnSchema),
+  // FP of levels 1 to 10
+  firstTenCosts: z.array(z.number()),
+  // FP added per level past 10 (FoE Helper's steps for 10-39, 40-69, 70-99, 100-300, then
+  // 301-400 and 401+ for Gold), or every level costing as much as the first one more (linear)
+  steps: z.array(z.number()).optional(),
+  linear: z.boolean().optional(),
+  columns: z.array(PrestigeColumnSchema),
 })
-export type BetaGreatBuilding = z.infer<typeof BetaGreatBuildingSchema>
+export type Prestige = z.infer<typeof PrestigeSchema>
 
 export const COPPER_MAX_LEVEL = 200
 export const GOLD_FIRST_LEVEL = 101
 export const GOLD_MAX_LEVEL = 500
 
-// Share of a tier's growth reached at each 5% of its levels (copper 1-200, gold 101-500)
-const CURVE = [
-  0, 0.099, 0.2087, 0.3174, 0.4157, 0.5061, 0.5845, 0.653, 0.7135, 0.7627, 0.8091, 0.8466, 0.8785,
-  0.9056, 0.9268, 0.9457, 0.9611, 0.9741, 0.9841, 0.9928, 1,
-]
+// Shape constant of the curve every bonus follows between its breakpoints
+const BONUS_CURVE = 3.53612
 
-function curve(x: number): number {
-  const position = Math.min(Math.max(x, 0), 1) * (CURVE.length - 1)
-  const index = Math.min(Math.floor(position), CURVE.length - 2)
-  return CURVE[index] + (CURVE[index + 1] - CURVE[index]) * (position - index)
+// Value of a series of breakpoints at a level: exact on a breakpoint, else a + b * (1 -
+// e^(-k * x^1.2)) with x the progress within the tier (copper: levels 1-200, gold: from its
+// first level to its last breakpoint), a and b fitted on the breakpoints (FoE Helper)
+function curveAt(points: { level: number; value: number }[], level: number, gold: boolean) {
+  const exact = points.find((p) => p.level === level)
+  if (exact) return exact.value
+  const levels = points.map((p) => p.level)
+  const first = levels[gold ? 1 : 0]
+  if (first === undefined || level < first) return 0
+  const start = gold ? first - 1 : 0
+  const end = gold ? levels[levels.length - 1] : COPPER_MAX_LEVEL
+  const x = (l: number) =>
+    1 - Math.exp(-BONUS_CURVE * Math.pow(Math.min(Math.max(l - start, 0) / (end - start), 1), 1.2))
+  // Breakpoints the value still grows on (the ones past the end repeat the maximum)
+  const fitted = points.filter(
+    (p, i) => p.level >= first && (p.level <= end || levels[i - 1] < end),
+  )
+  const lower = points.filter((p) => p.level <= level).at(-1)!
+  const upper = points.find((p) => p.level > level)
+  let sx = 0
+  let sy = 0
+  let sxx = 0
+  let sxy = 0
+  for (const p of fitted) {
+    const v = x(p.level)
+    sx += v
+    sy += p.value
+    sxx += v * v
+    sxy += v * p.value
+  }
+  const divisor = fitted.length * sxx - sx * sx
+  if (fitted.length < 2 || !(divisor > 0)) return lower.value
+  const b = (fitted.length * sxy - sx * sy) / divisor
+  const a = (sy - b * sx) / fitted.length
+  // Never out of the surrounding breakpoints
+  return Math.round(Math.min(Math.max(a + b * x(level), lower.value), upper?.value ?? Infinity))
 }
 
-// Position of a level along its tier's growth
-function tierPosition(tier: BetaTier, level: number): number {
-  return tier === "copper"
-    ? (level - 1) / (COPPER_MAX_LEVEL - 1)
-    : (level - GOLD_FIRST_LEVEL) / (GOLD_MAX_LEVEL - GOLD_FIRST_LEVEL)
-}
-
-// Value of a bonus at a level: exact on milestones, along the shared curve in between;
-// null while its tier is locked
-export function betaValueAt(column: BetaColumn, level: number): BetaValue | null {
+// Value of a bonus at a level; null while its tier is locked
+export function prestigeValueAt(column: PrestigeColumn, level: number): PrestigeValue | null {
   if (column.tier === "gold" && level < GOLD_FIRST_LEVEL) return null
-  // Copper stops growing at 200 (its next milestone, 201, holds the same value)
-  const end = column.tier === "copper" ? COPPER_MAX_LEVEL : GOLD_MAX_LEVEL
-  const start = column.tier === "copper" ? 1 : GOLD_FIRST_LEVEL
-  const points = column.milestones
-    .filter((m) => m.level >= start)
-    .map((m) => ({ ...m, level: Math.min(m.level, end) }))
-  const next = points.findIndex((m) => m.level >= level)
-  if (next <= 0) {
-    const m = points[next === 0 ? 0 : points.length - 1]
-    return { value: m.value, ...(m.count !== undefined && { count: m.count }) }
-  }
-  const [a, b] = [points[next - 1], points[next]]
-  const [ga, gb, gl] = [a.level, b.level, level].map((l) => curve(tierPosition(column.tier, l)))
-  const share = gb > ga ? (gl - ga) / (gb - ga) : 0
-  const between = (from: number, to: number) => Math.round(from + (to - from) * share)
+  const gold = column.tier === "gold"
+  const value = curveAt(column.milestones, level, gold)
+  const counts = column.milestones.flatMap((m) =>
+    m.count === undefined ? [] : [{ level: m.level, value: m.count }],
+  )
   return {
-    value: between(a.value, b.value),
-    ...(a.count !== undefined && b.count !== undefined && { count: between(a.count, b.count) }),
+    value,
+    ...(counts.length === column.milestones.length && { count: curveAt(counts, level, gold) }),
   }
 }
 
-// Level cost, approximate (within ~3% up to level 260 for Gold buildings, ~15% for
-// copper-only ones past 101): scaled on the level 1 cost up to 101, then a shared part per
-// tier grows by the level. Past 260 (no reading there), Gold costs grow 1.65% a level: the
-// total to level 500 then matches the official ~755.8M FP.
-const COST_SHAPE: [level: number, times: number][] = [
-  [10, 10],
-  [11, 10.47],
-  [18, 13.8],
-  [26, 17.61],
-  [32, 20.62],
-  [51, 32.69],
-  [63, 42],
-  [67, 45.07],
-  [83, 72.16],
-  [101, 108.66],
-]
-const COST_STEP = { copper: 1134, gold: 1443 }
-const COST_READ_UP_TO = 260
-const COST_GROWTH = 1.0165
+// FP of a level (1-based): its own up to 10, then the steps of FoE Helper (level 100 costs
+// 5% more than the curve before it), or the linear curve (Shattered Horizon Siphon)
+export function prestigeCostAt(gb: Prestige, level: number): number | undefined {
+  const from = level - 1
+  if (level <= 10) return gb.firstTenCosts[from]
+  if (gb.linear) {
+    const entries = Math.min(2, Math.floor(from / 100))
+    const extra = from === 100 || from === 200 ? 1.5 : 0
+    return Math.round(gb.firstTenCosts[0] * (from + 1 - entries + extra))
+  }
+  const steps = gb.steps
+  if (!steps) return undefined
+  const segments: [end: number, step: number][] = [
+    [39, 0],
+    [69, 1],
+    [99, 2],
+    [300, 3],
+    [400, 4],
+    [Infinity, 5],
+  ]
+  let cost = gb.firstTenCosts[9]
+  let start = 9
+  for (const [end, index] of segments) {
+    if (steps[index] === undefined) return undefined
+    if (start === 99) {
+      cost = Math.round((cost * 21) / 20)
+      start = 100
+    }
+    if (from <= end) return cost + steps[index] * (from - start)
+    cost += steps[index] * (end - start)
+    start = end
+  }
+  return undefined
+}
 
-export function betaCostAt(gb: BetaGreatBuilding, level: number): number {
-  const gold = gb.maxLevel > COPPER_MAX_LEVEL
-  if (level <= 10) return gb.firstLevelCost * level
-  if (level <= 101) {
-    const next = COST_SHAPE.findIndex(([l]) => l >= level)
-    const [[l0, t0], [l1, t1]] = [COST_SHAPE[next - 1], COST_SHAPE[next]]
-    return Math.round(gb.firstLevelCost * (t0 + ((t1 - t0) * (level - l0)) / (l1 - l0)))
+// Share of a level's FP the patron places get back, by the level reached: [last level, %]
+export const PATRON_SHARES: [last: number, percent: number][] = [
+  [9, 25],
+  [39, 30],
+  [69, 40],
+  [100, 25],
+  [200, 15],
+  [300, 10],
+  [400, 7],
+  [Infinity, 5],
+]
+
+// Places rewarded at a level: five, seven on the Gold levels of a Gold building
+export const placeCount = (gb: Prestige, level: number) =>
+  gb.maxLevel > COPPER_MAX_LEVEL && level >= GOLD_FIRST_LEVEL ? 7 : 5
+
+// Base reward of each place for a level (before the arc bonus): the share of its cost split
+// by weights n!/k!, with the game's rounding (FoE Helper)
+export function patronBaseRewards(gb: Prestige, level: number, cost: number): number[] {
+  const share = PATRON_SHARES.find(([last]) => level <= last)![1]
+  const count = placeCount(gb, level)
+  const weights: number[] = []
+  for (let i = count, weight = 1; i >= 1; i--) {
+    weights[i - 1] = weight
+    weight *= i
   }
-  const linear = (l: number) =>
-    gb.firstLevelCost * 108.66 + COST_STEP[gold ? "gold" : "copper"] * (l - 101)
-  if (gold && level > COST_READ_UP_TO) {
-    return Math.round(linear(COST_READ_UP_TO) * COST_GROWTH ** (level - COST_READ_UP_TO))
-  }
-  return Math.round(linear(level))
+  const sum = weights.reduce((total, weight) => total + weight, 0)
+  return weights.map((weight) => {
+    const reward = Math.round(((cost * share) / 100) * (weight / sum))
+    return reward === 1 || reward === 3 ? reward + 1 : reward
+  })
 }
 
 type Localized = { fr: string; en: string }
 
 // Bonus names of the game, in the words of the rest of the site
-export const BETA_BONUSES: Record<string, Localized> = {
+export const BONUS_NAMES: Record<string, Localized> = {
   advanced_tactics: { fr: "Tactiques avancées", en: "Advanced Tactics" },
   age_reserves: { fr: "Réserve de ressources", en: "Goods Reserve" },
   aid_boost: { fr: "Bonus d'entraide", en: "Aid Boost" },
@@ -199,7 +249,7 @@ export const BETA_BONUSES: Record<string, Localized> = {
 }
 
 // Where the bonus applies; nothing for "all"
-export const BETA_CONTEXTS: Record<string, Localized> = {
+export const BONUS_CONTEXTS: Record<string, Localized> = {
   battleground: { fr: "CBG", en: "GBG" },
   guild_expedition: { fr: "EG", en: "GE" },
   guild_raids: { fr: "IQ", en: "QI" },
@@ -212,17 +262,20 @@ const MULTIPLIERS = new Set([
   "defender_attack_boost",
   "defense_boost",
 ])
-const isMultiplier = (column: Pick<BetaColumn, "bonus" | "context">) =>
+const isMultiplier = (column: Pick<PrestigeColumn, "bonus" | "context">) =>
   MULTIPLIERS.has(column.bonus) ||
   (["military_boost", "fierce_resistance"].includes(column.bonus) && column.context !== "all")
 
 // "Défenseurs - Attaque et défense (multiplicateur, CBG)"; unknown names as sent by the game
-export function betaLabel(column: Pick<BetaColumn, "bonus" | "context">, locale: string): string {
+export function bonusLabel(
+  column: Pick<PrestigeColumn, "bonus" | "context">,
+  locale: string,
+): string {
   const lang = locale === "fr" ? "fr" : "en"
-  const name = BETA_BONUSES[column.bonus]?.[lang] ?? column.bonus.replace(/_/g, " ")
+  const name = BONUS_NAMES[column.bonus]?.[lang] ?? column.bonus.replace(/_/g, " ")
   const details = [
     isMultiplier(column) && (lang === "fr" ? "multiplicateur" : "multiplier"),
-    BETA_CONTEXTS[column.context]?.[lang],
+    BONUS_CONTEXTS[column.context]?.[lang],
   ].filter(Boolean)
   return details.length ? `${name} (${details.join(", ")})` : name
 }
@@ -328,8 +381,8 @@ const DESCRIPTIONS: Record<string, Localized> = {
   },
 }
 
-export function betaDescription(
-  column: Pick<BetaColumn, "bonus" | "context">,
+export function bonusDescription(
+  column: Pick<PrestigeColumn, "bonus" | "context">,
   locale: string,
 ): string | undefined {
   const lang = locale === "fr" ? "fr" : "en"
@@ -338,7 +391,7 @@ export function betaDescription(
 }
 
 // New effects of the Gold tier, once each
-export function betaGoldEffects(gb: BetaGreatBuilding): BetaColumn[] {
+export function goldEffects(gb: Prestige): PrestigeColumn[] {
   const seen = new Set<string>()
   return gb.columns.filter((column) => {
     const key = `${column.bonus}/${column.context}`
@@ -348,9 +401,9 @@ export function betaGoldEffects(gb: BetaGreatBuilding): BetaColumn[] {
   })
 }
 
-// Live bonus of each beta bonus, by the live column's icon (".../icon_great_building_bonus_goods-<hash>.png"
-// -> "goods", "att_def_boost_defender"), to show the beta's copper bonuses in the live order
-const LIVE_ICONS: Record<string, string> = {
+// Wiki bonus of each game bonus, by the wiki's icon (".../icon_great_building_bonus_goods-<hash>.png"
+// -> "goods", "att_def_boost_defender"), to show the copper bonuses in the wiki's order
+const WIKI_ICONS: Record<string, string> = {
   advanced_tactics: "att_def_boost_attacker_defender",
   aid_boost: "aid_blueprints",
   aid_goods: "aid_goods",
@@ -386,17 +439,17 @@ const LIVE_ICONS: Record<string, string> = {
   totem_drop: "relic_hunt",
 }
 
-// Beta columns in the live columns' order (copper bonuses first, as the live ones), Gold
-// bonuses after in their own order
-export function betaInLiveOrder(columns: BetaColumn[], liveIcons: string[]): BetaColumn[] {
-  const keys = liveIcons.map((icon) =>
+// Columns in the order of the wiki's bonuses (copper bonuses first, as the wiki lists them),
+// Gold bonuses after in their own order
+export function inWikiOrder(columns: PrestigeColumn[], wikiIcons: string[]): PrestigeColumn[] {
+  const keys = wikiIcons.map((icon) =>
     (icon.split("/").pop() ?? "")
       .replace(/(-[0-9a-f]+)?\.\w+$/, "")
       .replace(/^icon_great_building_bonus_/, ""),
   )
-  const rank = (column: BetaColumn) => {
-    const live = LIVE_ICONS[column.bonus]
-    const index = live ? keys.indexOf(live) : -1
+  const rank = (column: PrestigeColumn) => {
+    const wiki = WIKI_ICONS[column.bonus]
+    const index = wiki ? keys.indexOf(wiki) : -1
     return column.tier === "gold" ? 2000 : index < 0 ? 1000 : index
   }
   return columns
