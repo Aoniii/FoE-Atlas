@@ -17,6 +17,10 @@ export const CHANGELOG: Release[] = [
         en: "Rush: the new place rewards (5 places on copper levels, 7 on Gold levels), with a copper and a Gold Arc bonus, from FoE Helper's rules; buttons to copy the rewards of one level or every level",
       },
       {
+        fr: "Ville : export en Excel avec l'analyse complète. Une feuille de réglages (références, stats comptées, bases de production), une ligne par bâtiment avec toutes ses stats et son score calculé par formule, et le total de la ville : change un réglage dans Excel et tous les scores se recalculent",
+        en: "City: Excel export with the whole analysis. A settings sheet (references, counted stats, production bases), one row per building with all its stats and its score as a formula, and the city's total: change a setting in Excel and every score recalculates",
+      },
+      {
         fr: "Ville et comparaison : les Grands Monuments comptent avec leurs nouvelles valeurs",
         en: "City and comparison: Great Buildings count with their new values",
       },

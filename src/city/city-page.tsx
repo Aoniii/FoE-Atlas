@@ -1,6 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import { Link, getRouteApi } from "@tanstack/react-router"
-import { ArrowDown, ArrowUp, ClipboardPaste, FileUp, MapPin, Trash2 } from "lucide-react"
+import {
+  ArrowDown,
+  ArrowUp,
+  ClipboardPaste,
+  FileSpreadsheet,
+  FileUp,
+  MapPin,
+  Trash2,
+} from "lucide-react"
 import { AGES, LATEST_AGE, type AgeId } from "@/core/ages"
 import type { AgeBuilding } from "@/core/building"
 import {
@@ -301,6 +309,7 @@ function CitySource({
 function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
   const { t, locale } = useI18n()
   const bases = useBoostBases()
+  const [exporting, setExporting] = useState(false)
   const { assets } = route.useLoaderData()
   const [buildings, setBuildings] = useState<Partial<Record<AgeId, AgeBuilding[]>>>({})
   const [ascending, setAscending] = useState(true)
@@ -418,9 +427,37 @@ function CityRating({ city, scoreKeys }: { city: City; scoreKeys: StatKey[] }) {
 
   return (
     <section className="flex flex-col gap-3">
-      <p className="text-sm text-muted-foreground">
-        {t.city.summary.replace("{count}", formatNumber(counted, locale))} {t.city.scoreSettings}
-      </p>
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <p className="text-sm text-muted-foreground">
+          {t.city.summary.replace("{count}", formatNumber(counted, locale))} {t.city.scoreSettings}
+        </p>
+        <Button
+          variant="outline"
+          size="sm"
+          disabled={exporting}
+          onClick={async () => {
+            setExporting(true)
+            try {
+              const { exportCity } = await import("./city-export")
+              const date = new Date().toISOString().slice(0, 10)
+              await exportCity({
+                rated,
+                scoreKeys,
+                bases,
+                t,
+                locale,
+                // "foe-atlas-fr10-1-2026-11-06.xlsx", the world left out when unknown
+                fileName: `${["foe-atlas", city.world !== UNKNOWN_WORLD && city.world, city.number ?? 1, date].filter(Boolean).join("-")}.xlsx`,
+              })
+            } finally {
+              setExporting(false)
+            }
+          }}
+        >
+          <FileSpreadsheet />
+          {exporting ? t.city.export.running : t.city.export.button}
+        </Button>
+      </div>
       <CityTotals rows={rated.rows} />
       <label className="flex w-fit items-center gap-2 text-sm">
         <Checkbox checked={showMap} onCheckedChange={(checked) => setShowMap(checked === true)} />
